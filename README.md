@@ -1,6 +1,7 @@
 # tiny-agents
 
 Local CLI for scanning and organizing personal AI agents and skills.
+用于整理 agents 和 skills。
 
 ## Commands
 

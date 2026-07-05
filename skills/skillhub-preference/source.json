@@ -1,0 +1,14 @@
+{
+  "name": "skillhub-preference",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "/Users/seminzhu/.codex/skills/skillhub-preference",
+  "entry_path": "/Users/seminzhu/.codex/skills/skillhub-preference/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "/Users/seminzhu/.codex/skills/skillhub-preference/SKILL.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "scan_generated_at": "2026-07-05T22:36:48+08:00"
+}

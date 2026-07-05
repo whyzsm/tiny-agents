@@ -1,0 +1,4 @@
+interface:
+  display_name: "Generate UI Code"
+  short_description: "HarmonyOS ArkUI page generator"
+  default_prompt: "Use $generate-ui-code to generate a HarmonyOS ArkUI page from this UI requirement."

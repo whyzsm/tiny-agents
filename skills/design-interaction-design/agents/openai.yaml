@@ -1,0 +1,4 @@
+interface:
+  display_name: "交互设计"
+  short_description: "用户研究、信息架构、UX 审计、微交互、前端实现和无障碍合规"
+  default_prompt: "Use $design-interaction-design to complete this interaction design task in Simplified Chinese."

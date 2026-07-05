@@ -1,0 +1,4 @@
+interface:
+  display_name: "Service Widget"
+  short_description: "HarmonyOS service widget builder"
+  default_prompt: "Use $service-widget to create or modify a HarmonyOS service widget for this app."

@@ -1,0 +1,21 @@
+{
+  "name": "superpowers",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "/Users/seminzhu/.codex/skills/superpowers",
+  "entry_path": "/Users/seminzhu/.codex/skills/superpowers/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "/Users/seminzhu/.codex/skills/superpowers/SKILL.md",
+    "/Users/seminzhu/.codex/skills/superpowers/_meta.json",
+    "/Users/seminzhu/.codex/skills/superpowers/references/brainstorming.md",
+    "/Users/seminzhu/.codex/skills/superpowers/references/finishing-branch.md",
+    "/Users/seminzhu/.codex/skills/superpowers/references/subagent-development.md",
+    "/Users/seminzhu/.codex/skills/superpowers/references/systematic-debugging.md",
+    "/Users/seminzhu/.codex/skills/superpowers/references/tdd.md",
+    "/Users/seminzhu/.codex/skills/superpowers/references/writing-plans.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "scan_generated_at": "2026-07-05T22:36:48+08:00"
+}

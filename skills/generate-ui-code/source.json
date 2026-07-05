@@ -1,0 +1,16 @@
+{
+  "name": "generate-ui-code",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "/Users/seminzhu/.codex/skills/generate-ui-code",
+  "entry_path": "/Users/seminzhu/.codex/skills/generate-ui-code/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "/Users/seminzhu/.codex/skills/generate-ui-code/SKILL.md",
+    "/Users/seminzhu/.codex/skills/generate-ui-code/agents/openai.yaml",
+    "/Users/seminzhu/.codex/skills/generate-ui-code/references/arkui-page-generation-checklist.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "scan_generated_at": "2026-07-05T22:36:48+08:00"
+}

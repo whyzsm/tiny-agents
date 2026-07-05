@@ -12,8 +12,8 @@ later imports confirmed safe items into this repository.
 
 - Scan scope: explicit AI configuration directories only.
 - Initial roots:
-  - `/Users/seminzhu/.codex`
-  - `/Users/seminzhu/.agents`
+  - `~/.codex`
+  - `~/.agents`
 - Target directories:
   - `agents/`
   - `skills/`
@@ -67,8 +67,8 @@ Commands:
 
 Default roots:
 
-- `/Users/seminzhu/.codex`
-- `/Users/seminzhu/.agents`
+- `~/.codex`
+- `~/.agents`
 
 Default exclusions:
 

@@ -52,9 +52,50 @@ def _copy_item(item: ScanItem, target: Path, report: ScanReport) -> None:
         destination = target / item.entry_path.name
         shutil.copy2(item.entry_path, destination)
 
-    source_data = item.to_dict()
+    source_data = _public_source_data(item, report)
     source_data["scan_generated_at"] = report.generated_at
     (target / "source.json").write_text(
         json.dumps(source_data, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
+
+
+def _public_source_data(item: ScanItem, report: ScanReport) -> dict[str, object]:
+    source_root = _matching_source_root(item, report)
+    data = item.to_dict()
+    data["source_path"] = _public_path(item.source_path, source_root)
+    data["entry_path"] = _public_path(item.entry_path, source_root)
+    data["files"] = [_public_path(path, source_root) for path in item.files]
+    data["source_root"] = _public_path(source_root, source_root) if source_root else None
+    return data
+
+
+def _matching_source_root(item: ScanItem, report: ScanReport) -> Path | None:
+    candidates = sorted(report.roots, key=lambda path: len(path.parts), reverse=True)
+    for root in candidates:
+        try:
+            item.source_path.relative_to(root)
+        except ValueError:
+            continue
+        return root
+    return None
+
+
+def _public_path(path: Path, source_root: Path | None) -> str:
+    if source_root is not None:
+        try:
+            relative = path.relative_to(source_root)
+        except ValueError:
+            pass
+        else:
+            root_label = _source_root_label(source_root)
+            if str(relative) == ".":
+                return root_label
+            return f"{root_label}/{relative.as_posix()}"
+    return path.name
+
+
+def _source_root_label(source_root: Path) -> str:
+    if source_root.name in {".codex", ".agents"}:
+        return f"~/{source_root.name}"
+    return source_root.name

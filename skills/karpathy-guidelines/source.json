@@ -2,13 +2,14 @@
   "name": "karpathy-guidelines",
   "kind": "skill",
   "status": "ready",
-  "source_path": "/Users/seminzhu/.codex/skills/karpathy-guidelines",
-  "entry_path": "/Users/seminzhu/.codex/skills/karpathy-guidelines/SKILL.md",
+  "source_path": "~/.codex/skills/karpathy-guidelines",
+  "entry_path": "~/.codex/skills/karpathy-guidelines/SKILL.md",
   "reason": "standard_skill",
   "files": [
-    "/Users/seminzhu/.codex/skills/karpathy-guidelines/SKILL.md"
+    "~/.codex/skills/karpathy-guidelines/SKILL.md"
   ],
   "warnings": [],
   "secret_findings": [],
-  "scan_generated_at": "2026-07-05T22:36:48+08:00"
+  "scan_generated_at": "2026-07-05T22:36:48+08:00",
+  "source_root": "~/.codex"
 }

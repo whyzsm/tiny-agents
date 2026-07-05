@@ -2,13 +2,14 @@
   "name": "tour-builder",
   "kind": "agent",
   "status": "ready",
-  "source_path": "/Users/seminzhu/.codex/understand-anything/understand-anything-plugin/agents/tour-builder.md",
-  "entry_path": "/Users/seminzhu/.codex/understand-anything/understand-anything-plugin/agents/tour-builder.md",
+  "source_path": "~/.codex/understand-anything/understand-anything-plugin/agents/tour-builder.md",
+  "entry_path": "~/.codex/understand-anything/understand-anything-plugin/agents/tour-builder.md",
   "reason": "agent_prompt",
   "files": [
-    "/Users/seminzhu/.codex/understand-anything/understand-anything-plugin/agents/tour-builder.md"
+    "~/.codex/understand-anything/understand-anything-plugin/agents/tour-builder.md"
   ],
   "warnings": [],
   "secret_findings": [],
-  "scan_generated_at": "2026-07-05T22:36:48+08:00"
+  "scan_generated_at": "2026-07-05T22:36:48+08:00",
+  "source_root": "~/.codex"
 }

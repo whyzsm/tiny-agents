@@ -2,14 +2,15 @@
   "name": "agent-evals-lab",
   "kind": "skill",
   "status": "ready",
-  "source_path": "/Users/seminzhu/.codex/skills/agent-evals-lab",
-  "entry_path": "/Users/seminzhu/.codex/skills/agent-evals-lab/SKILL.md",
+  "source_path": "~/.codex/skills/agent-evals-lab",
+  "entry_path": "~/.codex/skills/agent-evals-lab/SKILL.md",
   "reason": "standard_skill",
   "files": [
-    "/Users/seminzhu/.codex/skills/agent-evals-lab/SKILL.md",
-    "/Users/seminzhu/.codex/skills/agent-evals-lab/_meta.json"
+    "~/.codex/skills/agent-evals-lab/SKILL.md",
+    "~/.codex/skills/agent-evals-lab/_meta.json"
   ],
   "warnings": [],
   "secret_findings": [],
-  "scan_generated_at": "2026-07-05T22:36:48+08:00"
+  "scan_generated_at": "2026-07-05T22:36:48+08:00",
+  "source_root": "~/.codex"
 }

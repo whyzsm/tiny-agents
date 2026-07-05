@@ -2,21 +2,22 @@
   "name": "playwright",
   "kind": "skill",
   "status": "ready",
-  "source_path": "/Users/seminzhu/.codex/skills/playwright",
-  "entry_path": "/Users/seminzhu/.codex/skills/playwright/SKILL.md",
+  "source_path": "~/.codex/skills/playwright",
+  "entry_path": "~/.codex/skills/playwright/SKILL.md",
   "reason": "standard_skill",
   "files": [
-    "/Users/seminzhu/.codex/skills/playwright/LICENSE.txt",
-    "/Users/seminzhu/.codex/skills/playwright/NOTICE.txt",
-    "/Users/seminzhu/.codex/skills/playwright/SKILL.md",
-    "/Users/seminzhu/.codex/skills/playwright/agents/openai.yaml",
-    "/Users/seminzhu/.codex/skills/playwright/assets/playwright-small.svg",
-    "/Users/seminzhu/.codex/skills/playwright/assets/playwright.png",
-    "/Users/seminzhu/.codex/skills/playwright/references/cli.md",
-    "/Users/seminzhu/.codex/skills/playwright/references/workflows.md",
-    "/Users/seminzhu/.codex/skills/playwright/scripts/playwright_cli.sh"
+    "~/.codex/skills/playwright/LICENSE.txt",
+    "~/.codex/skills/playwright/NOTICE.txt",
+    "~/.codex/skills/playwright/SKILL.md",
+    "~/.codex/skills/playwright/agents/openai.yaml",
+    "~/.codex/skills/playwright/assets/playwright-small.svg",
+    "~/.codex/skills/playwright/assets/playwright.png",
+    "~/.codex/skills/playwright/references/cli.md",
+    "~/.codex/skills/playwright/references/workflows.md",
+    "~/.codex/skills/playwright/scripts/playwright_cli.sh"
   ],
   "warnings": [],
   "secret_findings": [],
-  "scan_generated_at": "2026-07-05T22:36:48+08:00"
+  "scan_generated_at": "2026-07-05T22:36:48+08:00",
+  "source_root": "~/.codex"
 }

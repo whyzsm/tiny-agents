@@ -2,13 +2,14 @@
   "name": "find-skills",
   "kind": "skill",
   "status": "ready",
-  "source_path": "/Users/seminzhu/.codex/skills/find-skills",
-  "entry_path": "/Users/seminzhu/.codex/skills/find-skills/SKILL.md",
+  "source_path": "~/.codex/skills/find-skills",
+  "entry_path": "~/.codex/skills/find-skills/SKILL.md",
   "reason": "standard_skill",
   "files": [
-    "/Users/seminzhu/.codex/skills/find-skills/SKILL.md"
+    "~/.codex/skills/find-skills/SKILL.md"
   ],
   "warnings": [],
   "secret_findings": [],
-  "scan_generated_at": "2026-07-05T22:36:48+08:00"
+  "scan_generated_at": "2026-07-05T22:36:48+08:00",
+  "source_root": "~/.codex"
 }

@@ -40,6 +40,33 @@ class ImporterTest(unittest.TestCase):
             self.assertTrue((base / "agents" / "worker" / "worker.md").exists())
             self.assertFalse((base / "skills" / "blocked").exists())
 
+    def test_source_metadata_uses_public_paths(self):
+        with tempfile.TemporaryDirectory() as temp:
+            base = Path(temp)
+            source_root = base / "home" / ".codex"
+            source_skill = source_root / "skills" / "demo"
+            source_skill.mkdir(parents=True)
+            skill_file = source_skill / "SKILL.md"
+            skill_file.write_text("# Skill\n")
+
+            report = ScanReport(
+                generated_at="2026-07-05T00:00:00+08:00",
+                roots=[source_root],
+                items=[ScanItem("demo", "skill", "ready", source_skill, skill_file, "standard_skill", [skill_file])],
+            )
+            report_path = base / "scan.json"
+            report_path.write_text(json.dumps(report.to_dict()))
+
+            import_report(report_path, base)
+
+            source_data = json.loads((base / "skills" / "demo" / "source.json").read_text())
+
+        self.assertEqual(source_data["source_path"], "~/.codex/skills/demo")
+        self.assertEqual(source_data["entry_path"], "~/.codex/skills/demo/SKILL.md")
+        self.assertEqual(source_data["files"], ["~/.codex/skills/demo/SKILL.md"])
+        self.assertEqual(source_data["source_root"], "~/.codex")
+        self.assertNotIn(str(base), json.dumps(source_data))
+
     def test_existing_target_is_not_overwritten(self):
         with tempfile.TemporaryDirectory() as temp:
             base = Path(temp)

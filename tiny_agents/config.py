@@ -10,11 +10,14 @@ EXCLUDED_PARTS = {
     ".system",
     ".tmp",
     "__pycache__",
+    "backups",
     "cache",
     "logs",
     "node_modules",
+    "plugins",
     "sessions",
     "tmp",
+    "vendor_imports",
 }
 
 SENSITIVE_PARTS = {

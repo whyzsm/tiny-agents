@@ -1,5 +1,6 @@
 import tempfile
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
 
 from tiny_agents.cli import main
@@ -23,8 +24,9 @@ class CliTest(unittest.TestCase):
             ])
 
             self.assertEqual(exit_code, 0)
-            self.assertTrue((base / "reports" / "scan-2026-07-05.json").exists())
-            self.assertTrue((base / "reports" / "scan-2026-07-05.md").exists())
+            report_date = datetime.now(timezone.utc).astimezone().date().isoformat()
+            self.assertTrue((base / "reports" / f"scan-{report_date}.json").exists())
+            self.assertTrue((base / "reports" / f"scan-{report_date}.md").exists())
 
 
 if __name__ == "__main__":

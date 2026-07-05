@@ -63,6 +63,4 @@ def _import(report_path: Path, project_root: Path) -> int:
 
 def _now_for_report() -> str:
     now = datetime.now(timezone.utc).astimezone()
-    if now.date().isoformat() == "2026-07-05":
-        return now.isoformat(timespec="seconds")
-    return "2026-07-05T00:00:00+08:00"
+    return now.isoformat(timespec="seconds")

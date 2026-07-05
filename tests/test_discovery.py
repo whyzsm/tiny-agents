@@ -20,6 +20,10 @@ class DiscoveryTest(unittest.TestCase):
             (root / ".system" / "hidden" / "SKILL.md").write_text("# Hidden\n")
             (root / "node_modules" / "pkg").mkdir(parents=True)
             (root / "node_modules" / "pkg" / "SKILL.md").write_text("# Hidden\n")
+            (root / "vendor_imports" / "skills" / "cached").mkdir(parents=True)
+            (root / "vendor_imports" / "skills" / "cached" / "SKILL.md").write_text("# Cached\n")
+            (root / "backups" / "old").mkdir(parents=True)
+            (root / "backups" / "old" / "SKILL.md").write_text("# Backup\n")
 
             entries, warnings = discover_entries([root])
 
@@ -30,6 +34,8 @@ class DiscoveryTest(unittest.TestCase):
         self.assertEqual(entry_paths, {"SKILL.md", "AGENTS.md", "worker.md"})
         self.assertFalse(any(".system" in path for path in all_paths))
         self.assertFalse(any("node_modules" in path for path in all_paths))
+        self.assertFalse(any("vendor_imports" in path for path in all_paths))
+        self.assertFalse(any("backups" in path for path in all_paths))
         self.assertFalse(any("openai.yaml" in path for path in all_paths))
 
     def test_missing_root_becomes_warning(self):

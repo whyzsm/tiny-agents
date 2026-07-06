@@ -1,0 +1,4 @@
+interface:
+  display_name: "Harmony Expert Team"
+  short_description: "HarmonyOS Ask, Act, ArkUI generation, and service widgets"
+  default_prompt: "Use $harmony-expert-team to handle this HarmonyOS task with the right specialist."

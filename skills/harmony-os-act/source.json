@@ -1,0 +1,17 @@
+{
+  "name": "harmony-os-act",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/harmony-os-act",
+  "entry_path": "~/.codex/skills/harmony-os-act/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/harmony-os-act/SKILL.md",
+    "~/.codex/skills/harmony-os-act/agents/openai.yaml",
+    "~/.codex/skills/harmony-os-act/references/harmonyos-project-checklist.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex/skills",
+  "scan_generated_at": "2026-07-06T14:55:13+08:00"
+}

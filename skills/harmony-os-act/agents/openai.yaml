@@ -1,0 +1,4 @@
+interface:
+  display_name: "HarmonyOS Act"
+  short_description: "HarmonyOS ArkTS implementation agent"
+  default_prompt: "Use $harmony-os-act to inspect this HarmonyOS project and implement the requested ArkTS change."

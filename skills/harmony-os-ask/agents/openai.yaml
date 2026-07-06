@@ -1,0 +1,4 @@
+interface:
+  display_name: "HarmonyOS Ask"
+  short_description: "HarmonyOS project-aware Q&A"
+  default_prompt: "Use $harmony-os-ask to answer this HarmonyOS ArkTS question with project-aware guidance."

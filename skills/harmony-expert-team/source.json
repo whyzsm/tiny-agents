@@ -1,0 +1,16 @@
+{
+  "name": "harmony-expert-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/harmony-expert-team",
+  "entry_path": "~/.codex/skills/harmony-expert-team/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/harmony-expert-team/SKILL.md",
+    "~/.codex/skills/harmony-expert-team/agents/openai.yaml"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex/skills",
+  "scan_generated_at": "2026-07-06T14:55:13+08:00"
+}

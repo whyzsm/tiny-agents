@@ -1,0 +1,17 @@
+{
+  "name": "harmony-os-ask",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/harmony-os-ask",
+  "entry_path": "~/.codex/skills/harmony-os-ask/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/harmony-os-ask/SKILL.md",
+    "~/.codex/skills/harmony-os-ask/agents/openai.yaml",
+    "~/.codex/skills/harmony-os-ask/references/harmonyos-answer-checklist.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex/skills",
+  "scan_generated_at": "2026-07-06T14:55:13+08:00"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Writing Workflow"
+  short_description: "End-to-end PRD creation, design handoff, and review"
+  default_prompt: "Use $design-prd-writing to turn this product idea into a complete PRD package."

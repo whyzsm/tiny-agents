@@ -1,8 +1,8 @@
 {
   "source_report": "reports/scan-2026-07-06.json",
-  "scan_generated_at": "2026-07-06T13:57:26+08:00",
+  "scan_generated_at": "2026-07-06T14:26:26+08:00",
   "selection_rule": "Exclude skipped, blocked, and conflict items, then keep the first item per name.",
-  "total": 76,
+  "total": 83,
   "entries": [
     {
       "name": ".codex",
@@ -302,6 +302,17 @@
       "entry_path": "~/.agents/skills/deploy/SKILL.md"
     },
     {
+      "name": "design-prd-writing",
+      "display_name": "design-prd-writing",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "End-to-end PRD writing workflow. Use when the user wants a complete product requirements workflow that spans requirement discovery, EPIC/user-story decomposition, prioritization, professional PRD drafting, PRD-to-design handoff, and PRD review/scoring. This skill coordinates the companion skills requirements-analysis, software-manager-skill, prd, prd-writer-pro, prd-to-design-doc, and prd-reviewer.",
+      "purpose": "metadata: short-description: Complete PRD writing workflow",
+      "source_path": "~/.codex/skills/design-prd-writing",
+      "entry_path": "~/.codex/skills/design-prd-writing/SKILL.md"
+    },
+    {
       "name": "figma",
       "display_name": "figma",
       "kind": "skill",
@@ -588,6 +599,50 @@
       "entry_path": "~/.agents/skills/notebooklm/SKILL.md"
     },
     {
+      "name": "prd",
+      "display_name": "prd",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Create and manage Product Requirements Documents (PRDs). Use when: (1) Creating structured task lists with user stories, (2) Specifying features with acceptance criteria, (3) Planning feature implementation for AI agents or human developers.",
+      "purpose": "metadata: author: Benjamin Jesuiter <bjesuiter@gmail.com> clawdbot: emoji: \"📋\" os: [\"darwin\", \"linux\"]",
+      "source_path": "~/.codex/skills/prd",
+      "entry_path": "~/.codex/skills/prd/SKILL.md"
+    },
+    {
+      "name": "prd-reviewer",
+      "display_name": "prd-reviewer",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "PRD需求评审评分专家工具。对产品PRD进行10分制严格量化评分，输出总分、各模块得分及详细扣分说明。触发场景：用户上传PRD并要求评审打分；用户要求按PRD评分标准对需求进行评分；需要生成PRD评审报告。",
+      "purpose": "| 4.项目/需求详述 | 3.0分 | 交互逻辑+产品逻辑（埋点酌情） | | 5.灰度方案 | 0.5分 | 灰度方案具体/标注无需灰度 | | 6.数据报表需求 | 0.5分 | 报表需求具体/标注无需报表 | | 7.风险/合规披露 | 1.5分 | 资金风险+数据泄露+合规披露 |",
+      "source_path": "~/.codex/skills/prd-reviewer",
+      "entry_path": "~/.codex/skills/prd-reviewer/SKILL.md"
+    },
+    {
+      "name": "prd-to-design-doc",
+      "display_name": "prd-to-design-doc",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "将产品需求文档(PRD)转换为完整的设计需求文档,包含信息架构、交互流程、页面布局、视觉规范等内容,并自动生成交互流程图。适用于产品设计、交互设计、UI设计等场景。当用户提供PRD文档并需要设计需求文档时触发此技能。",
+      "purpose": "项目背景 设计目标(体验/业务/品牌) 核心设计挑战",
+      "source_path": "~/.codex/skills/prd-to-design-doc",
+      "entry_path": "~/.codex/skills/prd-to-design-doc/SKILL.md"
+    },
+    {
+      "name": "prd-writer-pro",
+      "display_name": "prd-writer-pro",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "专业的产品需求文档（PRD）撰写助手。用于将产品需求转化为结构清晰、内容完整的 PRD 文档。 **使用场景：** (1) 新产品功能的需求文档撰写 (2) 现有功能的优化需求文档 (3) 将用户故事转化为 PRD (4) 快速生成 PRD 初稿 **触发词：** \"写PRD\"、\"生成PRD\"、\"产品需求文档\"、\"PRD文档\"",
+      "purpose": "(1) 新产品功能的需求文档撰写 (2) 现有功能的优化需求文档 (3) 将用户故事转化为 PRD (4) 快速生成 PRD 初稿",
+      "source_path": "~/.codex/skills/prd-writer-pro",
+      "entry_path": "~/.codex/skills/prd-writer-pro/SKILL.md"
+    },
+    {
       "name": "principles",
       "display_name": "principles",
       "kind": "skill",
@@ -597,6 +652,17 @@
       "purpose": "Explicit helper for development principles, safety guidelines, and diff-aware editing rules. Do NOT load for: implementation, review, workflow coaching, or VibeCoder onboarding.",
       "source_path": "~/.agents/skills/principles",
       "entry_path": "~/.agents/skills/principles/SKILL.md"
+    },
+    {
+      "name": "requirements-analysis",
+      "display_name": "requirements-analysis",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "专业需求分析师，通过多轮对话将简短想法转化为详细需求文档。使用此技能当用户需要：(1) 分析和记录需求，(2) 将 EPIC 分解为需求和用户故事，(3) 对多个需求进行优先级排序，(4) 识别利益相关者和依赖关系，(5) 定义验收标准，(6) 创建需求文档。支持单个需求分析、EPIC 分解、MoSCoW/RICE/Kano 等优先级排序方法。",
+      "purpose": "2. **分解为需求** - 将 EPIC 分解为逻辑功能或能力 3. **将需求分解为用户故事** - 从用户角度编写用户故事，使用 INVEST 标准 4. **验证层级结构** - 确保所有用户故事汇总到需求，所有需求汇总到 EPIC",
+      "source_path": "~/.codex/skills/requirements-analysis",
+      "entry_path": "~/.codex/skills/requirements-analysis/SKILL.md"
     },
     {
       "name": "session",
@@ -685,6 +751,17 @@
       "purpose": "| `holdout_fraction` | `0.3` | fraction of suite held for gating | | `checkpoint_every` | `1` | iterations between checkpoint summaries | | `parallelism` | `serial` | `serial` \\| integer fan-out width | | `edit_panel` | `1` | candidates per round; gate all, keep best |",
       "source_path": "~/.codex/skills/skillopt",
       "entry_path": "~/.codex/skills/skillopt/SKILL.md"
+    },
+    {
+      "name": "software-manager-skill",
+      "display_name": "software-manager-skill",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "软件产品经理/软件开发经理知识技能。当用户需要产品经理级别的专业支持时触发，包括： 需求分析、PRD撰写、产品设计、产品路线图规划、竞品分析、数据分析； 或用户询问产品经理职责、如何成为产品经理、产品经理技能要求； 或需要产品架构图、流程图、时序图、甘特图等 Mermaid 图表； 或需要从0到1输出PRD文档并自动生成可交互H5原型图； 或需要将PRD文档导出为Markdown(.md)或Word(.docx)格式。 注意：本 skill 采用主动式产品咨询流程。流程：确认需求 → 提问澄清 → 网络搜索 + RAG搜索 → 产品规划 → 方案对比 → 技术选型 → 需求确认 → PRD文档 + Mermaid图表 → 导出格式 → H5原型图（可选）。",
+      "purpose": "> 注意：本 skill 采用主动式产品咨询流程，不是单向知识问答。 > 流程：确认需求 → 提问澄清 → 网络搜索 + RAG搜索 → 产品规划 → 方案对比（用户选择） → 需求确认 → PRD文档输出 + Mermaid图表整合 → 导出格式选择 → H5可交互原型图（可选，PRD后主动询问，所有页面集成在同一HTML文件，本地Tailwind CSS内联）。",
+      "source_path": "~/.codex/skills/software-manager-skill",
+      "entry_path": "~/.codex/skills/software-manager-skill/SKILL.md"
     },
     {
       "name": "ui",

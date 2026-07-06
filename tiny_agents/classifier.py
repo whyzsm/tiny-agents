@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import re
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -9,17 +10,13 @@ from .config import LOCAL_ONLY_FILES
 from .discovery import DiscoveredEntry
 from .models import ScanItem, ScanReport
 
-PERSONA_MARKERS = (
-    "you are ",
-    "你是",
-    "身份",
-    "人格",
-    "性格",
-    "灵魂",
-    "persona",
-    "personality",
-    "mission",
-    "role",
+PERSONA_PATTERNS = (
+    re.compile(r"(?i)^\s*(persona|personality|identity)\s*:"),
+    re.compile(r"(?i)^\s*#+\s*(persona|personality|identity)\b"),
+    re.compile(r"(?i)\byou are (an?|the) [^.。\n]{1,80}"),
+    re.compile(r"你是[^。\n]{1,80}"),
+    re.compile(r"^\s*#+\s*(身份|人格|性格|灵魂)\b"),
+    re.compile(r"(人格|性格|灵魂)"),
 )
 
 
@@ -101,8 +98,21 @@ def _fallback_name(entry: DiscoveredEntry) -> str:
 
 
 def _contains_persona(text: str) -> bool:
-    lowered = text.lower()
-    return any(marker in lowered for marker in PERSONA_MARKERS)
+    return any(_line_contains_persona(line) for line in text.splitlines())
+
+
+def _line_contains_persona(line: str) -> bool:
+    stripped = line.strip()
+    if not stripped or stripped.startswith("|"):
+        return False
+    if _is_instructional_you_are(stripped):
+        return False
+    return any(pattern.search(stripped) for pattern in PERSONA_PATTERNS)
+
+
+def _is_instructional_you_are(stripped: str) -> bool:
+    lowered = stripped.lower()
+    return lowered.startswith(("if you are ", "when you are ", "- if you are ", "- when you are "))
 
 
 def _core_files(source_path: Path) -> list[Path]:

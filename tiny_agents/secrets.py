@@ -35,9 +35,32 @@ def _scan_file(path: Path) -> list[str]:
         return []
 
     findings: list[str] = []
+    lines = _scannable_lines(path, text)
+    scannable_text = "\n".join(lines)
     for name, pattern in SECRET_PATTERNS:
-        if pattern.search(text):
+        if pattern.search(scannable_text):
             findings.append(name)
     if "api_key_assignment" in findings and "openai_key" in findings:
         findings.remove("openai_key")
     return findings
+
+
+def _scannable_lines(path: Path, text: str) -> list[str]:
+    if path.suffix.lower() not in {".md", ".markdown"}:
+        return text.splitlines()
+
+    lines: list[str] = []
+    in_fence = False
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.startswith(("```", "~~~")):
+            in_fence = not in_fence
+            continue
+        if in_fence or _looks_like_markdown_table_row(stripped):
+            continue
+        lines.append(line)
+    return lines
+
+
+def _looks_like_markdown_table_row(stripped: str) -> bool:
+    return stripped.startswith("|") and stripped.endswith("|")

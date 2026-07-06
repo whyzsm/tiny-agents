@@ -1,0 +1,24 @@
+{
+  "name": "shadcn-ui",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/shadcn-ui",
+  "entry_path": "~/.agents/skills/shadcn-ui/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/shadcn-ui/README.md",
+    "~/.agents/skills/shadcn-ui/SKILL.md",
+    "~/.agents/skills/shadcn-ui/examples/auth-layout.tsx",
+    "~/.agents/skills/shadcn-ui/examples/data-table.tsx",
+    "~/.agents/skills/shadcn-ui/examples/form-pattern.tsx",
+    "~/.agents/skills/shadcn-ui/resources/component-catalog.md",
+    "~/.agents/skills/shadcn-ui/resources/customization-guide.md",
+    "~/.agents/skills/shadcn-ui/resources/migration-guide.md",
+    "~/.agents/skills/shadcn-ui/resources/setup-guide.md",
+    "~/.agents/skills/shadcn-ui/scripts/verify-setup.sh"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-06T13:50:32+08:00"
+}

@@ -48,6 +48,35 @@ class SecretsTest(unittest.TestCase):
         self.assertEqual(report.items[0].status, "ready")
         self.assertEqual(report.items[0].secret_findings, [])
 
+    def test_markdown_examples_do_not_block(self):
+        with tempfile.TemporaryDirectory() as temp:
+            doc = Path(temp) / "SKILL.md"
+            doc.write_text(
+                "\n".join(
+                    [
+                        "```js",
+                        'const API_KEY = "sk-12345678901234567890"',
+                        "```",
+                        '| `process.env.API_KEY` | `const API_KEY = "sk-12345678901234567890"` |',
+                    ]
+                )
+            )
+            item = ScanItem(
+                name="demo",
+                kind="skill",
+                status="ready",
+                source_path=doc.parent,
+                entry_path=doc,
+                reason="standard_skill",
+                files=[doc],
+            )
+            report = ScanReport("2026-07-05T00:00:00+08:00", [Path(temp)], [item])
+
+            apply_secret_scan(report)
+
+        self.assertEqual(report.items[0].status, "ready")
+        self.assertEqual(report.items[0].secret_findings, [])
+
 
 if __name__ == "__main__":
     unittest.main()

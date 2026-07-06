@@ -1,0 +1,28 @@
+{
+  "name": "hatch-pet",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/hatch-pet",
+  "entry_path": "~/.codex/skills/hatch-pet/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/hatch-pet/LICENSE.txt",
+    "~/.codex/skills/hatch-pet/SKILL.md",
+    "~/.codex/skills/hatch-pet/agents/openai.yaml",
+    "~/.codex/skills/hatch-pet/references/animation-rows.md",
+    "~/.codex/skills/hatch-pet/references/codex-pet-contract.md",
+    "~/.codex/skills/hatch-pet/references/qa-rubric.md",
+    "~/.codex/skills/hatch-pet/scripts/compose_atlas.py",
+    "~/.codex/skills/hatch-pet/scripts/derive_running_left_from_running_right.py",
+    "~/.codex/skills/hatch-pet/scripts/extract_strip_frames.py",
+    "~/.codex/skills/hatch-pet/scripts/inspect_frames.py",
+    "~/.codex/skills/hatch-pet/scripts/make_contact_sheet.py",
+    "~/.codex/skills/hatch-pet/scripts/prepare_pet_run.py",
+    "~/.codex/skills/hatch-pet/scripts/render_animation_previews.py",
+    "~/.codex/skills/hatch-pet/scripts/validate_atlas.py"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T13:39:24+08:00"
+}

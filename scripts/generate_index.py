@@ -2,28 +2,32 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Any
 
 
-REPORT_PATH = Path("reports/scan-2026-07-05.json")
+REPORT_GLOB = "scan-*.json"
 INDEX_DIR = Path("indexes")
 JSON_INDEX_PATH = INDEX_DIR / "agent-skill-index.json"
 MD_INDEX_PATH = INDEX_DIR / "agent-skill-index.md"
 
 
-def main() -> int:
-    report = json.loads(REPORT_PATH.read_text(encoding="utf-8"))
-    items = _unique_non_conflict_items(report["items"])
+def main(argv: list[str] | None = None) -> int:
+    args = sys.argv[1:] if argv is None else argv
+    report_path = _resolve_report_path(args)
+    report = json.loads(report_path.read_text(encoding="utf-8"))
+    report["source_report"] = str(report_path)
+    items = _unique_index_items(report["items"])
     entries = [_index_entry(item) for item in items]
 
     INDEX_DIR.mkdir(parents=True, exist_ok=True)
     JSON_INDEX_PATH.write_text(
         json.dumps(
             {
-                "source_report": str(REPORT_PATH),
+                "source_report": str(report_path),
                 "scan_generated_at": report["generated_at"],
-                "selection_rule": "Exclude conflict items, then keep the first item per name.",
+                "selection_rule": "Exclude skipped, blocked, and conflict items, then keep the first item per name.",
                 "total": len(entries),
                 "entries": entries,
             },
@@ -37,10 +41,19 @@ def main() -> int:
     return 0
 
 
-def _unique_non_conflict_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def _resolve_report_path(argv: list[str]) -> Path:
+    if argv:
+        return Path(argv[0])
+    reports = sorted(Path("reports").glob(REPORT_GLOB))
+    if not reports:
+        raise FileNotFoundError(f"No reports matching reports/{REPORT_GLOB}")
+    return reports[-1]
+
+
+def _unique_index_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     chosen: dict[str, dict[str, Any]] = {}
     for item in items:
-        if item["status"] == "conflict":
+        if item["status"] not in {"ready", "candidate"}:
             continue
         chosen.setdefault(item["name"], item)
     return sorted(chosen.values(), key=lambda item: (item["kind"], item["name"].lower()))
@@ -62,7 +75,7 @@ def _index_entry(item: dict[str, Any]) -> dict[str, Any]:
         "display_name": display_name,
         "kind": item["kind"],
         "status": item["status"],
-        "reason": item["reason"],
+        "reason": _clean_text(item["reason"]),
         "description": _clean_text(description),
         "purpose": _clean_text(purpose),
         "source_path": _public_path(source_path),
@@ -177,14 +190,18 @@ def _section_summary(text: str, headings: tuple[str, ...]) -> str:
 
 
 def _clean_text(value: str) -> str:
-    return re.sub(r"\s+", " ", value).strip()
+    return re.sub(r"\s+", " ", _public_text(value)).strip()
+
+
+def _public_text(value: str) -> str:
+    return value.replace(str(Path.home()), "~")
 
 
 def _public_path(path: Path) -> str:
-    parts = path.parts
-    if "zsm" in parts:
-        index = parts.index("zsm")
-        return "~/" + "/".join(parts[index:])
+    try:
+        return "~/" + path.relative_to(Path.home()).as_posix()
+    except ValueError:
+        pass
     return path.name
 
 
@@ -196,9 +213,9 @@ def _render_markdown(report: dict[str, Any], entries: list[dict[str, Any]]) -> s
     lines = [
         "# Agent And Skill Index",
         "",
-        f"- Source report: `{REPORT_PATH}`",
+        f"- Source report: `{report['source_report']}`",
         f"- Scan generated at: `{report['generated_at']}`",
-        "- Selection rule: exclude conflict items, then keep the first item per name.",
+        "- Selection rule: exclude skipped, blocked, and conflict items, then keep the first item per name.",
         f"- Total: `{len(entries)}`",
         f"- Agents: `{len(by_kind.get('agent', []))}`",
         f"- Skills: `{len(by_kind.get('skill', []))}`",

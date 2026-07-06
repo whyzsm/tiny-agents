@@ -37,6 +37,34 @@ class ClassifierTest(unittest.TestCase):
         self.assertEqual(report.items[0].status, "candidate")
         self.assertEqual(report.items[0].reason, "persona_in_skill")
 
+    def test_workflow_role_metadata_is_standard_skill(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            skill_dir = root / "skills" / "workflow"
+            skill_dir.mkdir(parents=True)
+            skill_file = skill_dir / "SKILL.md"
+            skill_file.write_text(
+                "\n".join(
+                    [
+                        "---",
+                        "name: workflow",
+                        "kind: workflow",
+                        "role: executor",
+                        "---",
+                        "# Workflow",
+                        "## Mission",
+                        "Check permissions and route work by role.",
+                    ]
+                )
+            )
+            entries = [DiscoveredEntry(skill_file, skill_dir, root, "skill_file")]
+
+            report = classify_entries(entries, [])
+
+        self.assertEqual(report.items[0].kind, "skill")
+        self.assertEqual(report.items[0].status, "ready")
+        self.assertEqual(report.items[0].reason, "standard_skill")
+
     def test_agent_markdown_is_ready_agent(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

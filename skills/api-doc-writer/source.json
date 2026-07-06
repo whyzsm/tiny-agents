@@ -1,0 +1,16 @@
+{
+  "name": "api-doc-writer",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "tech-api-documentation-codex/skills/api-doc-writer",
+  "entry_path": "tech-api-documentation-codex/skills/api-doc-writer/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "tech-api-documentation-codex/skills/api-doc-writer/SKILL.md",
+    "tech-api-documentation-codex/skills/api-doc-writer/agents/openai.yaml"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "tech-api-documentation-codex",
+  "scan_generated_at": "2026-07-06T17:31:30+08:00"
+}

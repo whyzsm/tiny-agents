@@ -1,8 +1,8 @@
 {
   "source_report": "reports/scan-2026-07-06.json",
-  "scan_generated_at": "2026-07-06T14:26:26+08:00",
+  "scan_generated_at": "2026-07-06T17:34:53+08:00",
   "selection_rule": "Exclude skipped, blocked, and conflict items, then keep the first item per name.",
-  "total": 83,
+  "total": 109,
   "entries": [
     {
       "name": ".codex",
@@ -148,6 +148,39 @@
       "entry_path": "~/.codex/understand-anything/understand-anything-plugin/agents/tour-builder.md"
     },
     {
+      "name": "afrexai-qa-test-plan",
+      "display_name": "afrexai-qa-test-plan",
+      "kind": "candidate",
+      "status": "candidate",
+      "reason": "persona_in_skill",
+      "description": "QA test plan generator for engineering teams. Use when creating test strategies, QA plans, coverage matrices, automation ROI calculations, release readiness checklists, bug severity frameworks, or quality dashboards for software products and features.",
+      "purpose": "QA test plan generator for engineering teams. Use when creating test strategies, QA plans, coverage matrices, automation ROI calculations, release readiness checklists, bug severity frameworks, or quality dashboards for software products and features.",
+      "source_path": "~/.codex/skills/afrexai-qa-test-plan",
+      "entry_path": "~/.codex/skills/afrexai-qa-test-plan/SKILL.md"
+    },
+    {
+      "name": "ah-api-designer",
+      "display_name": "ah-api-designer",
+      "kind": "candidate",
+      "status": "candidate",
+      "reason": "persona_in_skill",
+      "description": "You are an API design specialist with expertise in RESTful services, GraphQL, OpenAPI/Swagger specifications, and API-first development. Use when: restful api design and best practices, graphql schema design and optimization, openapi/swagger specification, api versioning and evolution, authentication and authorization patterns.",
+      "purpose": "You are an API design specialist with expertise in RESTful services, GraphQL, OpenAPI/Swagger specifications, and API-first development. Use when: restful api design and best practices, graphql schema design and optimization, openapi/swagger specification, api versioning and evolution, authentication and authorization patterns.",
+      "source_path": "~/Downloads/tech-api-documentation-codex/skills/ah-api-designer",
+      "entry_path": "~/Downloads/tech-api-documentation-codex/skills/ah-api-designer/SKILL.md"
+    },
+    {
+      "name": "afrexai-api-docs",
+      "display_name": "afrexai-api-docs",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Generate production-ready API documentation from endpoint descriptions. Use when creating OpenAPI 3.0 specs, markdown API references, SDK quickstart guides, curl examples, language snippets, authentication docs, pagination/filtering docs, error responses, or developer-facing API documentation.",
+      "purpose": "Generate production-ready API documentation from endpoint descriptions. Use when creating OpenAPI 3.0 specs, markdown API references, SDK quickstart guides, curl examples, language snippets, authentication docs, pagination/filtering docs, error responses, or developer-facing API documentation.",
+      "source_path": "~/Downloads/tech-api-documentation-codex/skills/afrexai-api-docs",
+      "entry_path": "~/Downloads/tech-api-documentation-codex/skills/afrexai-api-docs/SKILL.md"
+    },
+    {
       "name": "agent-browser",
       "display_name": "agent-browser",
       "kind": "skill",
@@ -157,6 +190,39 @@
       "purpose": "|--------|--------|------| | **agent-browser** | ★★★ | 第一選択。AI 向けスナップショットが強力 | | chrome-devtools MCP | ★★☆ | Chrome が既に開いている場合 | | playwright MCP | ★★☆ | 複雑な E2E テスト |",
       "source_path": "~/.agents/skills/agent-browser",
       "entry_path": "~/.agents/skills/agent-browser/SKILL.md"
+    },
+    {
+      "name": "api-dev",
+      "display_name": "api-dev",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Scaffold, test, document, and debug REST and GraphQL APIs. Use when the user needs to create API endpoints, write integration tests, generate OpenAPI specs, test with curl, mock APIs, or troubleshoot HTTP issues.",
+      "purpose": "metadata: {\"clawdbot\":{\"emoji\":\"🔌\",\"requires\":{\"anyBins\":[\"curl\",\"node\",\"python3\"]},\"os\":[\"linux\",\"darwin\",\"win32\"]}}",
+      "source_path": "~/Downloads/tech-api-documentation-codex/skills/api-dev",
+      "entry_path": "~/Downloads/tech-api-documentation-codex/skills/api-dev/SKILL.md"
+    },
+    {
+      "name": "api-doc-writer",
+      "display_name": "api-doc-writer",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "API接口文档助手。用于编写REST API文档、定义接口规范、生成接口说明。当需要编写API文档、接口规范时触发。",
+      "purpose": "|------|------|------| | GET | 查询 | GET /users | | POST | 创建 | POST /users | | PUT | 完整更新 | PUT /users/1 | | PATCH | 部分更新 | PATCH /users/1 | | DELETE | 删除 | DELETE /users/1 |",
+      "source_path": "~/Downloads/tech-api-documentation-codex/skills/api-doc-writer",
+      "entry_path": "~/Downloads/tech-api-documentation-codex/skills/api-doc-writer/SKILL.md"
+    },
+    {
+      "name": "api-test-automation",
+      "display_name": "api-test-automation",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "API接口测试自动化工具，支持REST/GraphQL，包含接口测试、性能测试、契约测试、Mock服务等功能 | API Test Automation for REST/GraphQL with performance, contract testing and Mock services",
+      "purpose": "API接口测试自动化工具，支持REST/GraphQL，包含接口测试、性能测试、契约测试、Mock服务等功能 | API Test Automation for REST/GraphQL with performance, contract testing and Mock services",
+      "source_path": "~/.codex/skills/api-test-automation",
+      "entry_path": "~/.codex/skills/api-test-automation/SKILL.md"
     },
     {
       "name": "app-skill",
@@ -179,6 +245,17 @@
       "purpose": "trigger: \"breezing, team execution, do everything, composer, composer 2.5, composer mode, コンポーザー\" shape: wrap role: orchestrator base: harness-work pair: harness-review owner: harness-core since: \"2026-05-05\" allowed-tools: [\"Read\", \"Write\", \"Edit\", \"Bash\", \"Grep\", \"Glob\", \"Task\", \"WebSearch\", \"Monitor\"]",
       "source_path": "~/.agents/skills/breezing",
       "entry_path": "~/.agents/skills/breezing/SKILL.md"
+    },
+    {
+      "name": "bug-fixing-openclaw",
+      "display_name": "bug-fixing-openclaw",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Zero-regression bug fix workflow for Codex: triage, reproduce, root cause, impact analysis, fix, verify, knowledge deposit, and self-reflection. Use when: Output: Bug summary + verification report + code review + self-reflection score. Not for: new features (use fullstack-developer); pure review (use code-review); optimization (use performance-optimization).",
+      "purpose": "Feature broken, incorrect behavior, wrong output, errors/exceptions Console errors/warnings even when feature appears functional Regressions, timeouts, degraded performance Keywords: \"fix bug\", \"debug\", \"not working\", \"error\", \"broken\"",
+      "source_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/bug-fixing-openclaw",
+      "entry_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/bug-fixing-openclaw/SKILL.md"
     },
     {
       "name": "cc-cursor-cc",
@@ -223,6 +300,17 @@
       "purpose": "argument-hint: \"[target-service-or-goal]\" disable-model-invocation: true user-invocable: false allowed-tools: Bash Read Grep",
       "source_path": "~/.codex/memories/skills/clash-verge-rule-routing-fix",
       "entry_path": "~/.codex/memories/skills/clash-verge-rule-routing-fix/SKILL.md"
+    },
+    {
+      "name": "code-error-fixer",
+      "display_name": "code-error-fixer",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Systematic code error diagnosis and fix skill. Handles compilation errors, runtime exceptions, type errors, logic bugs, crash analysis, dependency conflicts, and unexpected behavior. TRIGGER when: user reports an error/exception/bug/crash, build or test failures, unexpected behavior in code, type errors, runtime stack traces, dependency resolution failures, or asks \"why is this not working\" / \"fix this error\" / \"debug this\". DO NOT TRIGGER when: user asks for code review without errors, general architecture questions, feature requests without error context, or \"how would I implement X\" (use appropriate dev skill).",
+      "purpose": "必须收集的信息（缺一不可，逐项核对）：",
+      "source_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/code-error-fixer",
+      "entry_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/code-error-fixer/SKILL.md"
     },
     {
       "name": "crud",
@@ -291,6 +379,17 @@
       "entry_path": "~/.agents/skills/cursor-setup/SKILL.md"
     },
     {
+      "name": "debug-pro",
+      "display_name": "debug-pro",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Use when debugging software issues, reproducing bugs, isolating root causes, using language-specific debuggers, inspecting network/process/system state, or running git bisect. Provides a seven-step debugging protocol and practical commands for JavaScript, Python, Swift, CSS, network, and Git investigations.",
+      "purpose": "Use when debugging software issues, reproducing bugs, isolating root causes, using language-specific debuggers, inspecting network/process/system state, or running git bisect. Provides a seven-step debugging protocol and practical commands for JavaScript, Python, Swift, CSS, network, and Git investigations.",
+      "source_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/debug-pro",
+      "entry_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/debug-pro/SKILL.md"
+    },
+    {
       "name": "deploy",
       "display_name": "deploy",
       "kind": "skill",
@@ -311,6 +410,17 @@
       "purpose": "metadata: short-description: Complete PRD writing workflow",
       "source_path": "~/.codex/skills/design-prd-writing",
       "entry_path": "~/.codex/skills/design-prd-writing/SKILL.md"
+    },
+    {
+      "name": "e2e-testing-patterns",
+      "display_name": "e2e-testing-patterns",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Build reliable, fast E2E test suites with Playwright and Cypress. Critical user journey coverage, flaky test elimination, CI/CD integration.",
+      "purpose": "Build reliable, fast E2E test suites with Playwright and Cypress. Critical user journey coverage, flaky test elimination, CI/CD integration.",
+      "source_path": "~/.codex/skills/e2e-testing-patterns",
+      "entry_path": "~/.codex/skills/e2e-testing-patterns/SKILL.md"
     },
     {
       "name": "figma",
@@ -368,6 +478,17 @@
       "entry_path": "~/.agents/skills/generate-slide/SKILL.md"
     },
     {
+      "name": "generate-ui-code",
+      "display_name": "generate-ui-code",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Generate UI Code-style HarmonyOS ArkUI page and component generator. Use when creating or modifying HarmonyOS UI from requirements, screenshots, sketches, descriptions, product flows, or design specs; when adding ArkTS .ets pages/components, resources, routing, tabs, lists, forms, cards, preview pages, or page-generation workflows; or when the user mentions Generate UI Code, page_generate, harmonyPage, Harmony Page, 生成页面, 生成UI代码, ArkUI page generation, or CodeGenie page generation.",
+      "purpose": "Generate UI Code-style HarmonyOS ArkUI page and component generator. Use when creating or modifying HarmonyOS UI from requirements, screenshots, sketches, descriptions, product flows, or design specs; when adding ArkTS .ets pages/components, resources, routing, tabs, lists, forms, cards, preview pages, or page-generation workflows; or when the user mentions Generate UI Code, page_generate, harmonyPage, Harmony Page, 生成页面, 生成UI代码, ArkUI page generation, or CodeGenie page generation.",
+      "source_path": "~/.codex/skills/generate-ui-code",
+      "entry_path": "~/.codex/skills/generate-ui-code/SKILL.md"
+    },
+    {
       "name": "generate-video",
       "display_name": "generate-video",
       "kind": "skill",
@@ -399,6 +520,39 @@
       "purpose": "gogcli for Google Workspace ops (Drive/Sheets/Docs/Slides). Triggers: list/search/export/read/update Google files, URL/ID parsing, auth selection. Skip for: non-Google storage, generic shell.",
       "source_path": "~/.agents/skills/gogcli-ops",
       "entry_path": "~/.agents/skills/gogcli-ops/SKILL.md"
+    },
+    {
+      "name": "harmony-expert-team",
+      "display_name": "harmony-expert-team",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "HarmonyOS expert-team workflow for project-aware HarmonyOS/OpenHarmony work. Use when the user wants a Harmony specialist group for ArkTS, ArkUI, DevEco Studio, hvigor builds, .ets pages/components, routing, module.json5/app.json5/main_pages.json, service widgets/cards, meta services, UI generation, debugging, refactoring, Q&A, or end-to-end Harmony app delivery. Coordinates harmony-os-ask, harmony-os-act, generate-ui-code, and service-widget.",
+      "purpose": "metadata: short-description: HarmonyOS expert team router",
+      "source_path": "~/.codex/skills/harmony-expert-team",
+      "entry_path": "~/.codex/skills/harmony-expert-team/SKILL.md"
+    },
+    {
+      "name": "harmony-os-act",
+      "display_name": "harmony-os-act",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "HarmonyOS Act-style coding agent for implementing, fixing, refactoring, and explaining HarmonyOS projects. Use when working on HarmonyOS/OpenHarmony, DevEco Studio, ArkTS, ArkUI, .ets files, hvigor builds, module.json5, app.json5, main_pages.json, oh-package.json5, service widgets, pages, abilities, permissions, lifecycle/state management, or when the user mentions harmony_os_act, HarmonyOS Act, 鸿蒙开发, ArkTS, ArkUI, DevEco, or CodeGenie Act.",
+      "purpose": "Note HarmonyOS-specific implications: page route registration, permissions, ability metadata, lifecycle, state persistence, resources, and build configuration.",
+      "source_path": "~/.codex/skills/harmony-os-act",
+      "entry_path": "~/.codex/skills/harmony-os-act/SKILL.md"
+    },
+    {
+      "name": "harmony-os-ask",
+      "display_name": "harmony-os-ask",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "HarmonyOS Ask-style technical assistant for answering HarmonyOS/OpenHarmony, DevEco Studio, ArkTS, ArkUI, hvigor, module.json5, app.json5, main_pages.json, SDK API, lifecycle, state management, service widget, page generation, build, debugging, profiling, packaging, and publishing questions. Use when the user asks for explanation, diagnosis, guidance, best practices, API usage, or project-aware Q&A without primarily requesting code edits, or mentions HarmonyOS Ask, harmony_os_chat, 鸿蒙问答, ArkTS, ArkUI, DevEco, or CodeGenie Ask.",
+      "purpose": "HarmonyOS Ask-style technical assistant for answering HarmonyOS/OpenHarmony, DevEco Studio, ArkTS, ArkUI, hvigor, module.json5, app.json5, main_pages.json, SDK API, lifecycle, state management, service widget, page generation, build, debugging, profiling, packaging, and publishing questions. Use when the user asks for explanation, diagnosis, guidance, best practices, API usage, or project-aware Q&A without primarily requesting code edits, or mentions HarmonyOS Ask, harmony_os_chat, 鸿蒙问答, ArkTS, ArkUI, DevEco, or CodeGenie Ask.",
+      "source_path": "~/.codex/skills/harmony-os-ask",
+      "entry_path": "~/.codex/skills/harmony-os-ask/SKILL.md"
     },
     {
       "name": "harness-accept",
@@ -544,6 +698,17 @@
       "entry_path": "~/.codex/skills/karpathy-guidelines/SKILL.md"
     },
     {
+      "name": "log-analyzer",
+      "display_name": "log-analyzer",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Parse, search, and analyze application logs across formats. Use when debugging from log files, setting up structured logging, analyzing error patterns, correlating events across services, parsing stack traces, or monitoring log output in real time.",
+      "purpose": "When debugging a production issue: get the **time window** and **affected user/request ID** first, then filter logs to that scope before reading anything. `awk` is faster than `grep | sort | uniq -c` pipelines for large files. Use it for counting and aggregation.",
+      "source_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/log-analyzer",
+      "entry_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/log-analyzer/SKILL.md"
+    },
+    {
       "name": "macos-clash-atrust-network-check",
       "display_name": "macos-clash-atrust-network-check",
       "kind": "skill",
@@ -586,6 +751,17 @@
       "purpose": "allowed-tools: [\"Read\", \"Write\", \"Edit\", \"Bash\", \"mcp__harness__harness_mem_*\"] argument-hint: \"[ssot|sync|migrate|search|record]\" user-invocable: true context: fork",
       "source_path": "~/.agents/skills/memory",
       "entry_path": "~/.agents/skills/memory/SKILL.md"
+    },
+    {
+      "name": "nexus-error-explain",
+      "display_name": "nexus-error-explain",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Explain pasted error messages, stack traces, and exception text, then suggest likely causes and local fixes. Use local reasoning by default. Only discuss or call the external NEXUS paid service when the user explicitly asks for that service and confirms credentials, network use, and possible payment.",
+      "purpose": "Explain pasted error messages, stack traces, and exception text, then suggest likely causes and local fixes. Use local reasoning by default. Only discuss or call the external NEXUS paid service when the user explicitly asks for that service and confirms credentials, network use, and possible payment.",
+      "source_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/nexus-error-explain",
+      "entry_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/nexus-error-explain/SKILL.md"
     },
     {
       "name": "notebookLM",
@@ -654,6 +830,17 @@
       "entry_path": "~/.agents/skills/principles/SKILL.md"
     },
     {
+      "name": "qa-api-tester",
+      "display_name": "qa-api-tester",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "API interface testing and automation. Send HTTP requests, validate responses, chain API calls, generate test scripts (Python requests/pytest, curl, Postman collections). Use when: (1) testing API endpoints, (2) writing API test scripts, (3) validating response schema/status/data, (4) stress testing APIs, (5) generating Postman collections, (6) \"接口测试\", \"API测试\", \"发请求\", \"压测接口\", \"生成Postman集合\". NOT for: UI/browser testing (use web-tester), database testing, or test case design without execution (use test-case-gen).",
+      "purpose": "schema/status/data, (4) stress testing APIs, (5) generating Postman collections, (6) \"接口测试\", \"API测试\", \"发请求\", \"压测接口\", \"生成Postman集合\". NOT for: UI/browser testing (use web-tester), database testing, or test case design without execution (use test-case-gen).",
+      "source_path": "~/Downloads/tech-api-documentation-codex/skills/qa-api-tester",
+      "entry_path": "~/Downloads/tech-api-documentation-codex/skills/qa-api-tester/SKILL.md"
+    },
+    {
       "name": "requirements-analysis",
       "display_name": "requirements-analysis",
       "kind": "skill",
@@ -663,6 +850,17 @@
       "purpose": "2. **分解为需求** - 将 EPIC 分解为逻辑功能或能力 3. **将需求分解为用户故事** - 从用户角度编写用户故事，使用 INVEST 标准 4. **验证层级结构** - 确保所有用户故事汇总到需求，所有需求汇总到 EPIC",
       "source_path": "~/.codex/skills/requirements-analysis",
       "entry_path": "~/.codex/skills/requirements-analysis/SKILL.md"
+    },
+    {
+      "name": "service-widget",
+      "display_name": "service-widget",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Service Widget-style HarmonyOS service widget and meta-service card builder. Use when creating, modifying, explaining, or debugging HarmonyOS service widgets/cards, widget layouts, card resources, widget configuration, form_config.json, widget names, card abilities, static resources, logic insertion, preview/save flows, or when the user mentions Service Widget, serviceWidget, ServiceWidget, meta service, 元服务卡片, 服务卡片, 万能卡片, or CodeGenie Service Widget.",
+      "purpose": "Service Widget-style HarmonyOS service widget and meta-service card builder. Use when creating, modifying, explaining, or debugging HarmonyOS service widgets/cards, widget layouts, card resources, widget configuration, form_config.json, widget names, card abilities, static resources, logic insertion, preview/save flows, or when the user mentions Service Widget, serviceWidget, ServiceWidget, meta service, 元服务卡片, 服务卡片, 万能卡片, or CodeGenie Service Widget.",
+      "source_path": "~/.codex/skills/service-widget",
+      "entry_path": "~/.codex/skills/service-widget/SKILL.md"
     },
     {
       "name": "session",
@@ -762,6 +960,94 @@
       "purpose": "> 注意：本 skill 采用主动式产品咨询流程，不是单向知识问答。 > 流程：确认需求 → 提问澄清 → 网络搜索 + RAG搜索 → 产品规划 → 方案对比（用户选择） → 需求确认 → PRD文档输出 + Mermaid图表整合 → 导出格式选择 → H5可交互原型图（可选，PRD后主动询问，所有页面集成在同一HTML文件，本地Tailwind CSS内联）。",
       "source_path": "~/.codex/skills/software-manager-skill",
       "entry_path": "~/.codex/skills/software-manager-skill/SKILL.md"
+    },
+    {
+      "name": "sovereign-api-docs-generator",
+      "display_name": "sovereign-api-docs-generator",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Auto-generates comprehensive API docs from code. REST, GraphQL, WebSocket with examples and schemas.",
+      "purpose": "Auto-generates comprehensive API docs from code. REST, GraphQL, WebSocket with examples and schemas.",
+      "source_path": "~/Downloads/tech-api-documentation-codex/skills/sovereign-api-docs-generator",
+      "entry_path": "~/Downloads/tech-api-documentation-codex/skills/sovereign-api-docs-generator/SKILL.md"
+    },
+    {
+      "name": "superpowers-systematic-debugging",
+      "display_name": "superpowers-systematic-debugging",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Use when encountering any bug, test failure, or unexpected behavior. Enforces systematic four-phase debugging: root cause investigation, pattern analysis, hypothesis testing, and evidence-based fix verification.",
+      "purpose": "systematic four-phase debugging: root cause investigation, pattern analysis, hypothesis testing, and evidence-based fix verification.",
+      "source_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/superpowers-systematic-debugging",
+      "entry_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/superpowers-systematic-debugging/SKILL.md"
+    },
+    {
+      "name": "superpowers-tdd",
+      "display_name": "superpowers-tdd",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Use when implementing any feature or bugfix, before writing implementation code - enforces RED-GREEN-REFACTOR cycle: write failing test first, verify it fails, write minimal code, verify it passes, then refactor",
+      "purpose": "| \"我已经手动测试了\" | 手动测试是随意的。没有记录，不能重跑。 | | \"删除 X 小时的工作太浪费\" | 沉没成本谬误。留着不可信的代码是技术债。 | | \"留着当参考\" | 你会改编它。那就是之后测试。删除就是删除。 | | \"TDD 太教条\" | TDD 是务实的：比事后调试快。 |",
+      "source_path": "~/.codex/skills/superpowers-tdd",
+      "entry_path": "~/.codex/skills/superpowers-tdd/SKILL.md"
+    },
+    {
+      "name": "tech-api-documentation",
+      "display_name": "tech-api-documentation",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "End-to-end API documentation workflow. Use when the user wants a complete API documentation expert workflow covering REST/GraphQL API design, OpenAPI/Swagger specs, code-to-doc extraction, API development validation, curl/mock testing, endpoint reference docs, SDK quickstarts, authentication, pagination, error formats, and developer-facing API docs. Coordinates ah-api-designer, sovereign-api-docs-generator, api-dev, api-doc-writer, qa-api-tester, and afrexai-api-docs.",
+      "purpose": "metadata: short-description: Complete API documentation workflow",
+      "source_path": "~/Downloads/tech-api-documentation-codex/skills/tech-api-documentation",
+      "entry_path": "~/Downloads/tech-api-documentation-codex/skills/tech-api-documentation/SKILL.md"
+    },
+    {
+      "name": "tech-bug-troubleshooting",
+      "display_name": "tech-bug-troubleshooting",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Use this orchestrator skill for end-to-end technical bug troubleshooting in Codex, especially when the user asks for bug 排查, 多 agent debugging, root-cause analysis, log analysis, stack trace diagnosis, runtime error repair, regression-safe fixes, or a complete bug report. It coordinates log-analyzer, debug-pro, code-error-fixer, superpowers-systematic-debugging, bug-fixing-openclaw, and nexus-error-explain when those specialized skills are useful.",
+      "purpose": "Use this orchestrator skill for end-to-end technical bug troubleshooting in Codex, especially when the user asks for bug 排查, 多 agent debugging, root-cause analysis, log analysis, stack trace diagnosis, runtime error repair, regression-safe fixes, or a complete bug report. It coordinates log-analyzer, debug-pro, code-error-fixer, superpowers-systematic-debugging, bug-fixing-openclaw, and nexus-error-explain when those specialized skills are useful.",
+      "source_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/tech-bug-troubleshooting",
+      "entry_path": "~/.codex/plugins/cache/personal/tech-bug-troubleshooting/0.1.0/skills/tech-bug-troubleshooting/SKILL.md"
+    },
+    {
+      "name": "tech-test-automation",
+      "display_name": "tech-test-automation",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "End-to-end software test automation workflow. Use when the user wants a complete testing expert workflow covering TDD strategy, test case generation, unit/integration/E2E testing, API test automation, coverage, performance, QA test plans, release readiness, or quality dashboards. Coordinates superpowers-tdd, test-case-generator, test-patterns, e2e-testing-patterns, api-test-automation, and afrexai-qa-test-plan.",
+      "purpose": "metadata: short-description: Complete software test automation workflow",
+      "source_path": "~/.codex/skills/tech-test-automation",
+      "entry_path": "~/.codex/skills/tech-test-automation/SKILL.md"
+    },
+    {
+      "name": "test-case-generator",
+      "display_name": "test-case-generator",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Generate unit test cases from code. Use when the user asks to generate tests, create unit test files, produce Jest/Mocha/Pytest test cases, infer imports, mocks, assertions, parameters, happy paths, edge cases, and error-path coverage from source code.",
+      "purpose": "Generate unit test cases from code. Use when the user asks to generate tests, create unit test files, produce Jest/Mocha/Pytest test cases, infer imports, mocks, assertions, parameters, happy paths, edge cases, and error-path coverage from source code.",
+      "source_path": "~/.codex/skills/test-case-generator",
+      "entry_path": "~/.codex/skills/test-case-generator/SKILL.md"
+    },
+    {
+      "name": "test-patterns",
+      "display_name": "test-patterns",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Write and run tests across languages and frameworks. Use when setting up test suites, writing unit/integration/E2E tests, measuring coverage, mocking dependencies, or debugging test failures. Covers Node.js (Jest/Vitest), Python (pytest), Go, Rust, and Bash.",
+      "purpose": "metadata: {\"clawdbot\":{\"emoji\":\"🧪\",\"requires\":{\"anyBins\":[\"node\",\"python3\",\"go\",\"cargo\",\"bash\"]},\"os\":[\"linux\",\"darwin\",\"win32\"]}}",
+      "source_path": "~/.codex/skills/test-patterns",
+      "entry_path": "~/.codex/skills/test-patterns/SKILL.md"
     },
     {
       "name": "ui",

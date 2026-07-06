@@ -1,0 +1,4 @@
+interface:
+  display_name: "QA API Tester"
+  short_description: "HTTP requests, validation, curl, pytest, and Postman tests"
+  default_prompt: "Use $qa-api-tester to validate these API endpoints and generate executable test requests."

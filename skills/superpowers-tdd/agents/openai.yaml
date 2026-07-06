@@ -1,0 +1,4 @@
+interface:
+  display_name: "Superpowers TDD"
+  short_description: "Red-green-refactor workflow before implementation"
+  default_prompt: "Use $superpowers-tdd to implement this change with a failing test first."

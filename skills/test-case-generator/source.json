@@ -1,0 +1,16 @@
+{
+  "name": "test-case-generator",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "tech-test-automation-codex/skills/test-case-generator",
+  "entry_path": "tech-test-automation-codex/skills/test-case-generator/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "tech-test-automation-codex/skills/test-case-generator/SKILL.md",
+    "tech-test-automation-codex/skills/test-case-generator/agents/openai.yaml"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "tech-test-automation-codex",
+  "scan_generated_at": "2026-07-06T17:31:30+08:00"
+}

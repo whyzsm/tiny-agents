@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Case Generator"
+  short_description: "Generate unit tests from code for Jest, Mocha, and pytest"
+  default_prompt: "Use $test-case-generator to generate unit tests for this code."

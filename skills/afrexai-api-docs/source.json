@@ -1,0 +1,16 @@
+{
+  "name": "afrexai-api-docs",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "tech-api-documentation-codex/skills/afrexai-api-docs",
+  "entry_path": "tech-api-documentation-codex/skills/afrexai-api-docs/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "tech-api-documentation-codex/skills/afrexai-api-docs/SKILL.md",
+    "tech-api-documentation-codex/skills/afrexai-api-docs/agents/openai.yaml"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "tech-api-documentation-codex",
+  "scan_generated_at": "2026-07-06T17:31:30+08:00"
+}

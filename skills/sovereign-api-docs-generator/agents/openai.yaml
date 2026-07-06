@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sovereign API Docs"
+  short_description: "Generate API docs from code for REST, GraphQL, and WebSocket"
+  default_prompt: "Use $sovereign-api-docs-generator to generate comprehensive API docs from this code."

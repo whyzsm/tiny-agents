@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Doc Writer"
+  short_description: "Write structured REST API interface documentation"
+  default_prompt: "Use $api-doc-writer to write clear REST API documentation for these endpoints."

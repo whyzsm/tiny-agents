@@ -1,0 +1,15 @@
+{
+  "name": "debug-pro",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "tech-bug-troubleshooting/0.1.0/skills/debug-pro",
+  "entry_path": "tech-bug-troubleshooting/0.1.0/skills/debug-pro/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "tech-bug-troubleshooting/0.1.0/skills/debug-pro/SKILL.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "tech-bug-troubleshooting",
+  "scan_generated_at": "2026-07-06T17:31:30+08:00"
+}

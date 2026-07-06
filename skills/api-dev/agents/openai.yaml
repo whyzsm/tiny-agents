@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Development"
+  short_description: "Scaffold, test, document, mock, and debug HTTP APIs"
+  default_prompt: "Use $api-dev to build, test, and document these API endpoints."

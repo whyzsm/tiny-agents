@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Patterns"
+  short_description: "Unit, integration, coverage, mocking, and test debugging"
+  default_prompt: "Use $test-patterns to write and run the right tests for this project."

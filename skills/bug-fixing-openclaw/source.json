@@ -1,0 +1,22 @@
+{
+  "name": "bug-fixing-openclaw",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "tech-bug-troubleshooting/0.1.0/skills/bug-fixing-openclaw",
+  "entry_path": "tech-bug-troubleshooting/0.1.0/skills/bug-fixing-openclaw/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "tech-bug-troubleshooting/0.1.0/skills/bug-fixing-openclaw/SKILL.md",
+    "tech-bug-troubleshooting/0.1.0/skills/bug-fixing-openclaw/references/backend-patterns.md",
+    "tech-bug-troubleshooting/0.1.0/skills/bug-fixing-openclaw/references/blind-spots.md",
+    "tech-bug-troubleshooting/0.1.0/skills/bug-fixing-openclaw/references/bug-patterns.md",
+    "tech-bug-troubleshooting/0.1.0/skills/bug-fixing-openclaw/references/bug-records.md",
+    "tech-bug-troubleshooting/0.1.0/skills/bug-fixing-openclaw/references/frontend-patterns.md",
+    "tech-bug-troubleshooting/0.1.0/skills/bug-fixing-openclaw/references/regression-matrix.md",
+    "tech-bug-troubleshooting/0.1.0/skills/bug-fixing-openclaw/references/system-rca.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "tech-bug-troubleshooting",
+  "scan_generated_at": "2026-07-06T17:31:30+08:00"
+}

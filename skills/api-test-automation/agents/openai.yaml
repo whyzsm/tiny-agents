@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Test Automation"
+  short_description: "REST and GraphQL tests, contracts, mocks, and performance"
+  default_prompt: "Use $api-test-automation to design and implement API tests for this service."

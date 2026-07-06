@@ -1,0 +1,4 @@
+interface:
+  display_name: "API Docs Generator"
+  short_description: "OpenAPI specs, markdown references, and SDK quickstarts"
+  default_prompt: "Use $afrexai-api-docs to generate OpenAPI docs and an SDK quickstart for this API."

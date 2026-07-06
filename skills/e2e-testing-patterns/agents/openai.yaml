@@ -1,0 +1,4 @@
+interface:
+  display_name: "E2E Testing Patterns"
+  short_description: "Reliable Playwright and Cypress E2E test suites"
+  default_prompt: "Use $e2e-testing-patterns to design reliable E2E tests for this user flow."

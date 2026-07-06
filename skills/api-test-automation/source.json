@@ -1,0 +1,27 @@
+{
+  "name": "api-test-automation",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "tech-test-automation-codex/skills/api-test-automation",
+  "entry_path": "tech-test-automation-codex/skills/api-test-automation/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "tech-test-automation-codex/skills/api-test-automation/SKILL.md",
+    "tech-test-automation-codex/skills/api-test-automation/agents/openai.yaml",
+    "tech-test-automation-codex/skills/api-test-automation/examples/run_tests.py",
+    "tech-test-automation-codex/skills/api-test-automation/requirements.txt",
+    "tech-test-automation-codex/skills/api-test-automation/src/__init__.py",
+    "tech-test-automation-codex/skills/api-test-automation/src/assertions.py",
+    "tech-test-automation-codex/skills/api-test-automation/src/contract_tester.py",
+    "tech-test-automation-codex/skills/api-test-automation/src/graphql_client.py",
+    "tech-test-automation-codex/skills/api-test-automation/src/mock_server.py",
+    "tech-test-automation-codex/skills/api-test-automation/src/performance.py",
+    "tech-test-automation-codex/skills/api-test-automation/src/reporter.py",
+    "tech-test-automation-codex/skills/api-test-automation/src/rest_client.py",
+    "tech-test-automation-codex/skills/api-test-automation/tests/test_api_suite.py"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "tech-test-automation-codex",
+  "scan_generated_at": "2026-07-06T17:31:30+08:00"
+}

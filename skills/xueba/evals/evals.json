@@ -1,0 +1,83 @@
+{
+  "skill_name": "xueba",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我发现一篇讲 AI Agent 记忆系统设计的长文，链接是 https://example.com/agent-memory 。帮我系统学习后，按 TAG 流沉淀到 Obsidian，要求有概念卡、费曼自测和复习计划。",
+      "expected_output": "默认应先检测本机是否安装 Obsidian；如果未检测到 Obsidian，应通过官方 GitHub releases 仓库 https://github.com/obsidianmd/obsidian-releases 安装 Obsidian，并重新检测；不能只提示下载页，也不能要求用户提供 vault 路径来绕过软件安装。若已安装，则动态定位真实 Obsidian vault：优先用户显式路径，其次读取平台 Obsidian 配置中当前打开或最近使用的 vault，再搜索 `.obsidian` 目录；不能写死任何本机绝对路径，也不能把当前 Codex 工作区当 vault，除非它包含 `.obsidian` 或用户明确指定。然后生成一篇完整 Markdown 系统化专题，并保存到 vault 下的 `88-学习/`：如果没有该目录则创建，如果已有则复用，再根据学习内容智能分类为简洁直接的 `大学科/章节或知识要点/主题.md`，例如 `AI/智能体/` 或 `AI/skills/`，不得使用 `AI与智能体` 这类合并式个人目录结构，也不得只放到生成输出区。笔记主目录应简约为 `全景`、`概念`、`正文`、`练习`、`来源`，正文覆盖 Why/What/How/Limits，练习内包含费曼自测、闭卷回忆、迁移任务和复习节奏。只有用户明确要求多文件资产包时才拆出独立概念卡；若网页无法访问，应返回结构化失败原因并要求用户补充正文。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "下面是我从视频字幕里摘出来的一段关于 OKR 和 KPI 区别的内容，请不要简单总结，要帮我真正学懂，并整理成 Obsidian 标签流笔记：<视频转写内容占位>。",
+      "expected_output": "应输出一个单文件 Markdown 系统化专题，使用简约主目录：全景、概念、正文、练习、来源；正文按 Why/What/How/Limits 重构，生成 status/type/domain/source/confidence 标签，区分原文观点和 AI 转述，练习内提供闭卷回忆题、解释题、迁移题和真实任务。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我有三份关于 CRM 回款流程优化的资料，想做成一套可复习的学习资料，而不是项目文档。请生成轻文件夹、重标签的 Obsidian 结构，并指出哪些概念值得拆成原子卡。",
+      "expected_output": "如果用户明确要求 Obsidian 结构和原子卡，应进入可选资产包模式；否则默认先给一篇完整综合学习笔记。输出应使用 business/crm 或相近受控 domain 标签，避免伪双链，并明确哪些概念只是可拆卡候选。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "帮我看看这个 Obsidian vault 里有哪些知识可以升级或改善，重点看标签是否混乱、哪些笔记该拆成概念卡、哪些可以合并成 MOC。先只出报告，不要直接改文件。",
+      "expected_output": "应进入升级模式，先确认或定位 vault 范围，扫描 Markdown 元数据、标签、链接、标题和来源，输出知识库升级报告；报告应包含优先升级清单、问题类型、建议动作、影响/置信度/工作量评分，并明确未直接修改旧笔记。",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "测试技能，学习 https://github.com/kevinten-ai/agent-harness-guide 。我不想要一堆零散文件，希望一个 md 文件说清楚所有东西。",
+      "expected_output": "必须输出一个单文件 Markdown 系统化专题，并保存到动态解析出的真实 Obsidian vault 下的 `88-学习/AI/智能体/`、`88-学习/AI/harness/` 或等价简洁分类路径；必须先检查 Obsidian 是否安装，若未安装需从官方 GitHub releases 仓库 https://github.com/obsidianmd/obsidian-releases 安装 Obsidian，安装后重新检测，并通过用户路径、Obsidian 配置或 `.obsidian` 搜索定位 vault，不能写死本机绝对路径，不能写死 obsidian:// URL，也不能只写入当前 Codex 工作区或生成输出区；如果 `88-学习/` 不存在应创建，存在则复用；笔记结构必须简约：Frontmatter、一句话系统本质 callout、全景、概念、正文、练习、来源；不应默认拆成 concepts/questions/exercises 多个文件，也不应像多张零散卡片拼接。",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "测试技能，学习一个需要登录权限的飞书 Wiki：https://my.feishu.cn/wiki/MOEXwZtR9iKbXYkJttgcWQdcnUd 。如果直接访问是登录页，要解决登录授权问题，不要直接编内容。",
+      "expected_output": "应先识别这是 authenticated source，按授权访问梯度处理：公开读取校验正文、尝试官方导出/API/连接器、可用时请求使用已登录浏览器读取可见正文、否则要求用户提供导出或粘贴内容。若仍拿不到正文，应生成单文件结构化失败说明，使用 source/feishu 与 access/blocked 标签，明确没有伪造内容；不应把登录页当正文总结。",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "使用学霸技能学习 https://agentskills.io/home，并保存到 Obsidian。注意：最终回复不要暴露任何 /private/tmp 或 /tmp 临时草稿路径。",
+      "expected_output": "应读取公开网页并生成单文件系统化笔记；保存路径必须位于真实 Obsidian vault 的 `88-学习/AI/skills/` 或等价简洁分类路径下；最终回复只能报告正式 Obsidian 文件路径和来源访问方式，不得把 `/private/tmp`、`/tmp` 或其他临时中间文件作为用户可见产物。",
+      "files": [],
+      "expectations": [
+        "最终用户回复不包含 /private/tmp",
+        "最终用户回复不包含 /tmp 临时草稿路径",
+        "保存路径位于真实 Obsidian vault 内",
+        "保存路径包含 88-学习/",
+        "Agent Skills 主题保存到 88-学习/AI/skills/ 或等价简洁分类路径",
+        "输出是一篇单文件系统化 Markdown 笔记"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "我没有安装 Obsidian，但想让学霸把这段资料整理进 Obsidian：<资料占位>。",
+      "expected_output": "应先检测 Obsidian；若未安装或不可检测，应从官方 GitHub releases 仓库 https://github.com/obsidianmd/obsidian-releases 安装 Obsidian，并在安装后重新运行 vault 解析。可以生成 Markdown 内容，但不能只提示下载页、不能虚构保存成功，也不能使用当前工作区或临时目录冒充 Obsidian vault。只有 Obsidian 安装完成且解析到真实 vault 后，才可声称已保存到 Obsidian。",
+      "files": [],
+      "expectations": [
+        "未检测到 Obsidian 时使用 https://github.com/obsidianmd/obsidian-releases 作为安装来源",
+        "未检测到 Obsidian 时运行或要求运行 scripts/install_obsidian.py --json",
+        "安装后重新运行 scripts/resolve_obsidian_vault.py --json",
+        "不把 https://obsidian.md/zh/ 下载提示作为唯一处理方式",
+        "未解析到真实 vault 前不声称已保存到 Obsidian",
+        "不使用当前工作区冒充 Obsidian vault",
+        "不使用 /private/tmp 或 /tmp 冒充 Obsidian vault"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "使用学霸技能学习一个华为开发者联盟 ArkUI 页面：https://developer.huawei.com/consumer/cn/arkui/ 。页面正文可能是 JavaScript/CMS 渲染，不要只读 meta 就写完整笔记。",
+      "expected_output": "应先按普通网页读取；如果 HTML 只有导航、占位节点或动态页面壳，应读取 references/dynamic-web-sources.md，并运行 scripts/extract_web_source.py --url URL --json 或等价流程，尝试提取公开 CMS/encoded JSON/script-state/可见文本。只能把来自请求源的公开正文作为来源；如果只拿到 meta 或导航，必须在来源限制中说明，不能伪造 API、装饰器、生命周期等未读取到的细节。ArkUI、ArkTS、HarmonyOS UI 主题应分类到 88-学习/技术/前端/ 或等价前端/移动 UI 目录；默认不生成未解析双链。",
+      "files": [],
+      "expectations": [
+        "动态网页先尝试 CMS/script-state/API/浏览器可见文本提取",
+        "不把 meta description 当作完整正文",
+        "未读取到的文档/API 细节必须标来源限制",
+        "ArkUI 主题保存到 技术/前端 分类",
+        "不生成空双链"
+      ]
+    }
+  ]
+}

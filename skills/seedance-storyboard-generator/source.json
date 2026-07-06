@@ -1,0 +1,18 @@
+{
+  "name": "seedance-storyboard-generator",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/seedance2-storyboard-generator",
+  "entry_path": "~/.codex/skills/seedance2-storyboard-generator/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/seedance2-storyboard-generator/SKILL.md",
+    "~/.codex/skills/seedance2-storyboard-generator/_meta.json",
+    "~/.codex/skills/seedance2-storyboard-generator/references/seedance-manual.md",
+    "~/.codex/skills/seedance2-storyboard-generator/references/故事转视频脚本-转换工具.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

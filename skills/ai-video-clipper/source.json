@@ -1,0 +1,29 @@
+{
+  "name": "ai-video-clipper",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/ai-video-clipper",
+  "entry_path": "~/.codex/skills/ai-video-clipper/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/ai-video-clipper/INSTALL.md",
+    "~/.codex/skills/ai-video-clipper/README.md",
+    "~/.codex/skills/ai-video-clipper/SKILL.md",
+    "~/.codex/skills/ai-video-clipper/_meta.json",
+    "~/.codex/skills/ai-video-clipper/references/default_config.yaml",
+    "~/.codex/skills/ai-video-clipper/references/ffmpeg_guide.md",
+    "~/.codex/skills/ai-video-clipper/references/quickstart.md",
+    "~/.codex/skills/ai-video-clipper/requirements.txt",
+    "~/.codex/skills/ai-video-clipper/scripts/add_effects.py",
+    "~/.codex/skills/ai-video-clipper/scripts/add_subtitles.py",
+    "~/.codex/skills/ai-video-clipper/scripts/analyze_media.py",
+    "~/.codex/skills/ai-video-clipper/scripts/audio_process.py",
+    "~/.codex/skills/ai-video-clipper/scripts/auto_clip.py",
+    "~/.codex/skills/ai-video-clipper/scripts/export_final.py",
+    "~/.codex/skills/ai-video-clipper/scripts/full_pipeline.py"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

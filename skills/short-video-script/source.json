@@ -1,0 +1,16 @@
+{
+  "name": "short-video-script",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/short-video-script",
+  "entry_path": "~/.codex/skills/short-video-script/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/short-video-script/SKILL.md",
+    "~/.codex/skills/short-video-script/_meta.json"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

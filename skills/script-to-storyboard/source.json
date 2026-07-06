@@ -1,0 +1,19 @@
+{
+  "name": "script-to-storyboard",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/script-to-storyboard",
+  "entry_path": "~/.codex/skills/script-to-storyboard/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/script-to-storyboard/SKILL.md",
+    "~/.codex/skills/script-to-storyboard/_meta.json",
+    "~/.codex/skills/script-to-storyboard/references/示例分镜.md",
+    "~/.codex/skills/script-to-storyboard/references/示例剧本.md",
+    "~/.codex/skills/script-to-storyboard/scripts/convert.py"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "frontend-design-pro",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/frontend-design-pro",
+  "entry_path": "~/.codex/skills/frontend-design-pro/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/frontend-design-pro/SKILL.md",
+    "~/.codex/skills/frontend-design-pro/_meta.json"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

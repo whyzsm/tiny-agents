@@ -1,0 +1,19 @@
+{
+  "name": "make-interfaces-feel-better",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/make-interfaces-feel-better",
+  "entry_path": "~/.codex/skills/make-interfaces-feel-better/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/make-interfaces-feel-better/SKILL.md",
+    "~/.codex/skills/make-interfaces-feel-better/animations.md",
+    "~/.codex/skills/make-interfaces-feel-better/performance.md",
+    "~/.codex/skills/make-interfaces-feel-better/surfaces.md",
+    "~/.codex/skills/make-interfaces-feel-better/typography.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

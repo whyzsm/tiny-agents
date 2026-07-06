@@ -1,0 +1,18 @@
+{
+  "name": "accessibility",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/oliver-accessibility",
+  "entry_path": "~/.codex/skills/oliver-accessibility/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/oliver-accessibility/README.md",
+    "~/.codex/skills/oliver-accessibility/SKILL.md",
+    "~/.codex/skills/oliver-accessibility/_meta.json",
+    "~/.codex/skills/oliver-accessibility/clawhub.json"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

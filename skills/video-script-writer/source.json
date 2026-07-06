@@ -1,0 +1,19 @@
+{
+  "name": "video-script-writer",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/cn-video-script-writer",
+  "entry_path": "~/.codex/skills/cn-video-script-writer/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/cn-video-script-writer/SKILL.md",
+    "~/.codex/skills/cn-video-script-writer/_meta.json",
+    "~/.codex/skills/cn-video-script-writer/references/hook-formulas.md",
+    "~/.codex/skills/cn-video-script-writer/references/platform-styles.md",
+    "~/.codex/skills/cn-video-script-writer/references/script-templates.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

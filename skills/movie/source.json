@@ -1,0 +1,22 @@
+{
+  "name": "Movie",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/movie",
+  "entry_path": "~/.codex/skills/movie/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/movie/SKILL.md",
+    "~/.codex/skills/movie/_meta.json",
+    "~/.codex/skills/movie/commercial.md",
+    "~/.codex/skills/movie/experimental.md",
+    "~/.codex/skills/movie/generation.md",
+    "~/.codex/skills/movie/postproduction.md",
+    "~/.codex/skills/movie/preproduction.md",
+    "~/.codex/skills/movie/tools.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

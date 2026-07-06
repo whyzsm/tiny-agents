@@ -1,0 +1,16 @@
+{
+  "name": "Visual",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/visual",
+  "entry_path": "~/.codex/skills/visual/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/visual/SKILL.md",
+    "~/.codex/skills/visual/_meta.json"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

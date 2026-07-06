@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -37,7 +38,12 @@ def import_report(report_path: Path, project_root: Path) -> ImportResult:
 
 def _target_dir(project_root: Path, item: ScanItem) -> Path:
     parent = "agents" if item.kind == "agent" else "skills"
-    return project_root / parent / item.name
+    return project_root / parent / _safe_target_name(item.name)
+
+
+def _safe_target_name(name: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+    return slug or "unnamed"
 
 
 def _copy_item(item: ScanItem, target: Path, report: ScanReport) -> None:

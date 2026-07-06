@@ -1,0 +1,27 @@
+{
+  "name": "theme-factory",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/theme-factory",
+  "entry_path": "~/.codex/skills/theme-factory/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/theme-factory/README.md",
+    "~/.codex/skills/theme-factory/SKILL.md",
+    "~/.codex/skills/theme-factory/_meta.json",
+    "~/.codex/skills/theme-factory/themes/arctic-frost.md",
+    "~/.codex/skills/theme-factory/themes/botanical-garden.md",
+    "~/.codex/skills/theme-factory/themes/desert-rose.md",
+    "~/.codex/skills/theme-factory/themes/forest-canopy.md",
+    "~/.codex/skills/theme-factory/themes/golden-hour.md",
+    "~/.codex/skills/theme-factory/themes/midnight-galaxy.md",
+    "~/.codex/skills/theme-factory/themes/modern-minimalist.md",
+    "~/.codex/skills/theme-factory/themes/ocean-depths.md",
+    "~/.codex/skills/theme-factory/themes/sunset-boulevard.md",
+    "~/.codex/skills/theme-factory/themes/tech-innovation.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

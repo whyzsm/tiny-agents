@@ -1,0 +1,20 @@
+{
+  "name": "viral-title-generator",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/viral-title-generator",
+  "entry_path": "~/.codex/skills/viral-title-generator/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/viral-title-generator/SKILL.md",
+    "~/.codex/skills/viral-title-generator/_meta.json",
+    "~/.codex/skills/viral-title-generator/references/examples.md",
+    "~/.codex/skills/viral-title-generator/references/platform-rules.md",
+    "~/.codex/skills/viral-title-generator/references/title-formulas.md",
+    "~/.codex/skills/viral-title-generator/scripts/generate_titles.py"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "video-cinematography",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/video-cinematography",
+  "entry_path": "~/.codex/skills/video-cinematography/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/video-cinematography/SKILL.md",
+    "~/.codex/skills/video-cinematography/references/movements.md",
+    "~/.codex/skills/video-cinematography/references/storyboard.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

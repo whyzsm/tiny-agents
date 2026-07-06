@@ -1,0 +1,16 @@
+{
+  "name": "brand-cog",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/brand-cog",
+  "entry_path": "~/.codex/skills/brand-cog/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/brand-cog/SKILL.md",
+    "~/.codex/skills/brand-cog/_meta.json"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

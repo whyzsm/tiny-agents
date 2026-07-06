@@ -1,0 +1,19 @@
+{
+  "name": "svg-draw",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/svg-draw",
+  "entry_path": "~/.codex/skills/svg-draw/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/svg-draw/SKILL.md",
+    "~/.codex/skills/svg-draw/_meta.json",
+    "~/.codex/skills/svg-draw/assets/dragon_template.svg",
+    "~/.codex/skills/svg-draw/assets/lobster_template.svg",
+    "~/.codex/skills/svg-draw/scripts/svg_to_png.sh"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

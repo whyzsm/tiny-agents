@@ -1,0 +1,24 @@
+{
+  "name": "prompt-bozo",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/prompt-bozo",
+  "entry_path": "~/.codex/skills/prompt-bozo/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/prompt-bozo/SKILL.md",
+    "~/.codex/skills/prompt-bozo/_meta.json",
+    "~/.codex/skills/prompt-bozo/evals/evals.json",
+    "~/.codex/skills/prompt-bozo/references/camera.md",
+    "~/.codex/skills/prompt-bozo/references/character-design.md",
+    "~/.codex/skills/prompt-bozo/references/chinese-style.md",
+    "~/.codex/skills/prompt-bozo/references/framework.md",
+    "~/.codex/skills/prompt-bozo/references/hairstyles.md",
+    "~/.codex/skills/prompt-bozo/references/locations.md",
+    "~/.codex/skills/prompt-bozo/references/poses.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

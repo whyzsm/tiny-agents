@@ -90,6 +90,40 @@ class ImporterTest(unittest.TestCase):
             self.assertEqual(len(result.errors), 1)
             self.assertIn("already exists", result.errors[0])
 
+    def test_target_directory_uses_safe_slug_but_keeps_source_name(self):
+        with tempfile.TemporaryDirectory() as temp:
+            base = Path(temp)
+            source_skill = base / "home" / ".codex" / "skills" / "prd-to-prototype"
+            source_skill.mkdir(parents=True)
+            skill_file = source_skill / "SKILL.md"
+            skill_file.write_text("---\nname: PRD to Prototype\n---\n# Skill\n")
+
+            report = ScanReport(
+                generated_at="2026-07-05T00:00:00+08:00",
+                roots=[base / "home" / ".codex"],
+                items=[
+                    ScanItem(
+                        "PRD to Prototype",
+                        "skill",
+                        "ready",
+                        source_skill,
+                        skill_file,
+                        "standard_skill",
+                        [skill_file],
+                    )
+                ],
+            )
+            report_path = base / "scan.json"
+            report_path.write_text(json.dumps(report.to_dict()))
+
+            result = import_report(report_path, base)
+
+            source_data = json.loads((base / "skills" / "prd-to-prototype" / "source.json").read_text())
+
+        self.assertEqual(result.imported, ["PRD to Prototype"])
+        self.assertEqual(source_data["name"], "PRD to Prototype")
+        self.assertEqual(source_data["source_path"], "~/.codex/skills/prd-to-prototype")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,17 @@
+{
+  "name": "muapi-logo-creator",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/logo-creator",
+  "entry_path": "~/.codex/skills/logo-creator/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/logo-creator/SKILL.md",
+    "~/.codex/skills/logo-creator/_meta.json",
+    "~/.codex/skills/logo-creator/scripts/create-logo.sh"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

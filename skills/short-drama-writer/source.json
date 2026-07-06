@@ -1,0 +1,20 @@
+{
+  "name": "Short Drama Writer",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/short-drama-writer",
+  "entry_path": "~/.codex/skills/short-drama-writer/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/short-drama-writer/SKILL.md",
+    "~/.codex/skills/short-drama-writer/_meta.json",
+    "~/.codex/skills/short-drama-writer/scripts/drama.sh",
+    "~/.codex/skills/short-drama-writer/scripts/drama_gen.py",
+    "~/.codex/skills/short-drama-writer/scripts/script.sh",
+    "~/.codex/skills/short-drama-writer/tips.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

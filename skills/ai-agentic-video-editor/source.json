@@ -1,0 +1,18 @@
+{
+  "name": "ai_agentic_video_editor",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/ai-agentic-video-editor",
+  "entry_path": "~/.codex/skills/ai-agentic-video-editor/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/ai-agentic-video-editor/README.md",
+    "~/.codex/skills/ai-agentic-video-editor/SKILL.md",
+    "~/.codex/skills/ai-agentic-video-editor/_meta.json",
+    "~/.codex/skills/ai-agentic-video-editor/skill-card.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

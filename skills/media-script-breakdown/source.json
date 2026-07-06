@@ -1,0 +1,19 @@
+{
+  "name": "media-script-breakdown",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/media-script-breakdown",
+  "entry_path": "~/.codex/skills/media-script-breakdown/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/media-script-breakdown/SKILL.md",
+    "~/.codex/skills/media-script-breakdown/agents/openai.yaml",
+    "~/.codex/skills/media-script-breakdown/references/guide.md",
+    "~/.codex/skills/media-script-breakdown/references/manifest.json",
+    "~/.codex/skills/media-script-breakdown/references/workflow.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

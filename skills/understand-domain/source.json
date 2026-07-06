@@ -1,0 +1,16 @@
+{
+  "name": "understand-domain",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/understand-domain",
+  "entry_path": "~/.codex/skills/understand-domain/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/understand-domain/SKILL.md",
+    "~/.codex/skills/understand-domain/extract-domain-context.py"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

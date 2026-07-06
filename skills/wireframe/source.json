@@ -1,0 +1,17 @@
+{
+  "name": "wireframe",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/wireframe",
+  "entry_path": "~/.codex/skills/wireframe/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/wireframe/SKILL.md",
+    "~/.codex/skills/wireframe/_meta.json",
+    "~/.codex/skills/wireframe/scripts/script.sh"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

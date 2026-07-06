@@ -1,0 +1,24 @@
+{
+  "name": "video-editor",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/video-editor",
+  "entry_path": "~/.codex/skills/video-editor/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/video-editor/SKILL.md",
+    "~/.codex/skills/video-editor/_meta.json",
+    "~/.codex/skills/video-editor/scripts/add-subtitles.sh",
+    "~/.codex/skills/video-editor/scripts/convert.sh",
+    "~/.codex/skills/video-editor/scripts/crop.sh",
+    "~/.codex/skills/video-editor/scripts/cut.sh",
+    "~/.codex/skills/video-editor/scripts/extract-audio.sh",
+    "~/.codex/skills/video-editor/scripts/merge.sh",
+    "~/.codex/skills/video-editor/scripts/resize.sh",
+    "~/.codex/skills/video-editor/scripts/speed.sh"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

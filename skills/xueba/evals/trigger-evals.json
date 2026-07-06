@@ -1,0 +1,51 @@
+{
+  "skill_name": "xueba",
+  "should_trigger": [
+    {
+      "prompt": "学习这个网页并存到 Obsidian",
+      "reason": "学习资料 + Obsidian 沉淀"
+    },
+    {
+      "prompt": "把这篇论文整理成 TAG 流学习笔记",
+      "reason": "学习整理 + TAG 流"
+    },
+    {
+      "prompt": "看看我的 Obsidian 哪些知识可以升级",
+      "reason": "Obsidian 知识库升级模式"
+    },
+    {
+      "prompt": "这个飞书文档需要登录，帮我学习整理",
+      "reason": "登录授权资料学习"
+    },
+    {
+      "prompt": "帮我把这段资料做成费曼自测和复习计划",
+      "reason": "学习资料 + 费曼自测 + 复习"
+    },
+    {
+      "prompt": "使用学霸技能学习 https://agentskills.io/home 并保存到 Obsidian",
+      "reason": "显式技能名 + 网页学习 + Obsidian 保存"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "prompt": "解释一下 Python list 怎么用",
+      "reason": "普通编程问答，不涉及学习资料沉淀或 Obsidian"
+    },
+    {
+      "prompt": "帮我写一个 React Button",
+      "reason": "普通代码生成，不是知识沉淀"
+    },
+    {
+      "prompt": "翻译这句话",
+      "reason": "普通翻译任务"
+    },
+    {
+      "prompt": "今天上海天气如何",
+      "reason": "实时信息查询，不是学霸场景"
+    },
+    {
+      "prompt": "帮我压缩这段 CSS",
+      "reason": "代码处理任务，不是学习笔记或知识库升级"
+    }
+  ]
+}

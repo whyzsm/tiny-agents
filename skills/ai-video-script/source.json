@@ -1,0 +1,17 @@
+{
+  "name": "ai-video-script",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/ai-video-script",
+  "entry_path": "~/.codex/skills/ai-video-script/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/ai-video-script/SKILL.md",
+    "~/.codex/skills/ai-video-script/_meta.json",
+    "~/.codex/skills/ai-video-script/test.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

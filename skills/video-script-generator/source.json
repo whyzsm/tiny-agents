@@ -1,0 +1,19 @@
+{
+  "name": "video-script-generator",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/video-script-generator",
+  "entry_path": "~/.codex/skills/video-script-generator/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/video-script-generator/SKILL.md",
+    "~/.codex/skills/video-script-generator/_meta.json",
+    "~/.codex/skills/video-script-generator/templates/before-after.md",
+    "~/.codex/skills/video-script-generator/templates/pain-solution.md",
+    "~/.codex/skills/video-script-generator/templates/plot-twist.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

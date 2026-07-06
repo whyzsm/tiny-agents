@@ -2,14 +2,14 @@
   "name": "find-skills",
   "kind": "skill",
   "status": "ready",
-  "source_path": "~/.codex/skills/find-skills",
-  "entry_path": "~/.codex/skills/find-skills/SKILL.md",
+  "source_path": "~/.agents/skills/find-skills",
+  "entry_path": "~/.agents/skills/find-skills/SKILL.md",
   "reason": "standard_skill",
   "files": [
-    "~/.codex/skills/find-skills/SKILL.md"
+    "~/.agents/skills/find-skills/SKILL.md"
   ],
   "warnings": [],
   "secret_findings": [],
-  "scan_generated_at": "2026-07-05T22:36:48+08:00",
-  "source_root": "~/.codex"
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-06T10:31:40+08:00"
 }

@@ -35,6 +35,7 @@ def render_markdown(report: ScanReport) -> str:
 
     sections = [
         ("Ready", lambda item: item.status == "ready"),
+        ("Skipped", lambda item: item.status == "skipped"),
         ("Candidates", lambda item: item.status == "candidate"),
         ("Blocked", lambda item: item.status == "blocked"),
         ("Conflicts", lambda item: item.status == "conflict"),

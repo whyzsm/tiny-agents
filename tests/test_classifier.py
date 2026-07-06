@@ -72,6 +72,31 @@ class ClassifierTest(unittest.TestCase):
         self.assertEqual({item.status for item in report.items}, {"conflict"})
         self.assertEqual({item.reason for item in report.items}, {"duplicate_name"})
 
+    def test_identical_duplicates_keep_one_ready_item(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            codex = root / ".codex" / "skills" / "same" / "SKILL.md"
+            agents = root / ".agents" / "skills" / "same" / "SKILL.md"
+            codex.parent.mkdir(parents=True)
+            agents.parent.mkdir(parents=True)
+            text = "---\nname: same\n---\n# Same\n"
+            codex.write_text(text)
+            agents.write_text(text)
+
+            report = classify_entries(
+                [
+                    DiscoveredEntry(codex, codex.parent, root / ".codex", "skill_file"),
+                    DiscoveredEntry(agents, agents.parent, root / ".agents", "skill_file"),
+                ],
+                [],
+            )
+
+        statuses = {item.source_path.parts[-3]: item.status for item in report.items}
+        reasons = {item.status: item.reason for item in report.items}
+        self.assertEqual(statuses[".codex"], "ready")
+        self.assertEqual(statuses[".agents"], "skipped")
+        self.assertEqual(reasons["skipped"], "duplicate_same_content")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -16,6 +16,7 @@ class ReportTest(unittest.TestCase):
                 roots=[Path("/tmp/root")],
                 items=[
                     ScanItem("ready", "skill", "ready", Path("/s"), Path("/s/SKILL.md"), "standard_skill"),
+                    ScanItem("skipped", "skill", "skipped", Path("/d"), Path("/d/SKILL.md"), "duplicate_same_content"),
                     ScanItem("candidate", "candidate", "candidate", Path("/c"), Path("/c/SKILL.md"), "persona_in_skill"),
                     ScanItem("blocked", "skill", "blocked", Path("/b"), Path("/b/SKILL.md"), "suspected_secret"),
                     ScanItem("conflict", "skill", "conflict", Path("/x"), Path("/x/SKILL.md"), "duplicate_name"),
@@ -30,12 +31,13 @@ class ReportTest(unittest.TestCase):
 
         self.assertIn("# Agent and Skill Scan Report", markdown)
         self.assertIn("## Ready", markdown)
+        self.assertIn("## Skipped", markdown)
         self.assertIn("## Candidates", markdown)
         self.assertIn("## Blocked", markdown)
         self.assertIn("## Conflicts", markdown)
         self.assertIn("## Warnings", markdown)
         self.assertEqual(data["schema_version"], ScanReport.SCHEMA_VERSION)
-        self.assertEqual(len(data["items"]), 4)
+        self.assertEqual(len(data["items"]), 5)
 
 
 if __name__ == "__main__":

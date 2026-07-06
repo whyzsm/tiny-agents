@@ -16,6 +16,8 @@ EXCLUDED_PARTS = {
     "node_modules",
     "plugins",
     "sessions",
+    "skill-backups",
+    "skill-update-backups",
     "tmp",
     "vendor_imports",
 }
@@ -31,4 +33,9 @@ SENSITIVE_PARTS = {
     "secrets",
     "token",
     "tokens",
+}
+
+LOCAL_ONLY_FILES = {
+    ".DS_Store",
+    "config.env",
 }

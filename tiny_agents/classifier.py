@@ -1,9 +1,11 @@
 from __future__ import annotations
 
+import hashlib
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+from .config import LOCAL_ONLY_FILES
 from .discovery import DiscoveredEntry
 from .models import ScanItem, ScanReport
 
@@ -115,6 +117,8 @@ def _core_files(source_path: Path) -> list[Path]:
 
 def _should_skip_core_file(path: Path) -> bool:
     lowered_parts = {part.lower() for part in path.parts}
+    if path.name in LOCAL_ONLY_FILES:
+        return True
     skip_parts = {
         ".git",
         ".tmp",
@@ -137,6 +141,57 @@ def _mark_conflicts(items: list[ScanItem]) -> None:
     for duplicates in by_key.values():
         if len(duplicates) < 2:
             continue
+        representatives: list[ScanItem] = []
+        by_digest: dict[str, list[ScanItem]] = defaultdict(list)
         for item in duplicates:
+            by_digest[_content_digest(item)].append(item)
+
+        for same_content_items in by_digest.values():
+            winner = min(same_content_items, key=_source_priority_key)
+            representatives.append(winner)
+            for item in same_content_items:
+                if item is winner:
+                    continue
+                item.status = "skipped"
+                item.reason = "duplicate_same_content"
+
+        if len(representatives) < 2:
+            continue
+        for item in representatives:
             item.status = "conflict"
             item.reason = "duplicate_name"
+
+
+def _content_digest(item: ScanItem) -> str:
+    digest = hashlib.sha256()
+    for file_path in item.files or [item.entry_path]:
+        digest.update(_relative_digest_path(item, file_path).encode("utf-8"))
+        digest.update(b"\0")
+        try:
+            digest.update(file_path.read_bytes())
+        except OSError:
+            digest.update(b"<unreadable>")
+        digest.update(b"\0")
+    return digest.hexdigest()
+
+
+def _relative_digest_path(item: ScanItem, file_path: Path) -> str:
+    if item.source_path.is_dir():
+        try:
+            return file_path.relative_to(item.source_path).as_posix()
+        except ValueError:
+            pass
+    return file_path.name
+
+
+def _source_priority_key(item: ScanItem) -> tuple[int, int, str]:
+    parts = set(item.source_path.parts)
+    if ".codex" in parts and "skills" in parts:
+        priority = 0
+    elif ".agents" in parts and "skills" in parts:
+        priority = 1
+    elif "understand-anything" in parts:
+        priority = 2
+    else:
+        priority = 10
+    return (priority, len(item.source_path.parts), str(item.source_path))

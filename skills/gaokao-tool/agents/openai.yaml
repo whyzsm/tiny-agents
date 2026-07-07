@@ -1,0 +1,6 @@
+interface:
+  display_name: "高考志愿填报顾问"
+  short_description: "高考志愿填报顾问技能。当用户提到高考志愿、报考大学、填志愿、模拟分数报什么学校、专业选择、录取分数线查询、六边形分析、冲稳保、…"
+  default_prompt: "Use $gaokao-tool to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "score-range"
+  short_description: "高考一分一段信息检索助手，帮助考生根据分数查询全省排名位次，或根据位次估算对应分数区间，或提供一分一段表。"
+  default_prompt: "Use $tencent-yuanbao-gaokao-score-to-rank-lookup to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

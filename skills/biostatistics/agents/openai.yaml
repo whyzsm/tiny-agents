@@ -1,0 +1,6 @@
+interface:
+  display_name: "Biostatistics & Computational Analytics Skill"
+  short_description: "Biostatistics & Computational Analytics Skill. DNAI operates at…"
+  default_prompt: "Use $biostatistics to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

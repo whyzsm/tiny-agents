@@ -1,0 +1,6 @@
+interface:
+  display_name: "DeepXiv CLI"
+  short_description: "Search, inspect, and progressively read open-access academic pa…"
+  default_prompt: "Use $deepxiv-cli to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

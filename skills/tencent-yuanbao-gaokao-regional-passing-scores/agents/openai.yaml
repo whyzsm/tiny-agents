@@ -1,0 +1,6 @@
+interface:
+  display_name: "province-score-line"
+  short_description: "高考地区分数线的信息检索助手，帮助考生查询各地区高考录取分数线、录取批次和对应排名。"
+  default_prompt: "Use $tencent-yuanbao-gaokao-regional-passing-scores to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

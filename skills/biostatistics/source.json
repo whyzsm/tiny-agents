@@ -1,0 +1,13 @@
+{
+  "name": "biostatistics",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "academic-statistical-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "academic-statistical-analysis/skills/biostatistics.zip",
+    "academic-statistical-analysis 2/skills/biostatistics.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

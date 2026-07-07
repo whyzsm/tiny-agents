@@ -1,0 +1,6 @@
+interface:
+  display_name: "Academic Research Hub"
+  short_description: "Use this skill when users need to search academic papers, downl…"
+  default_prompt: "Use $academic-research-hub to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

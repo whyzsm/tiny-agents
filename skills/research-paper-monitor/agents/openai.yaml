@@ -1,0 +1,6 @@
+interface:
+  display_name: "科研文献智能监测与摘要推送系统"
+  short_description: "科研文献智能监测与摘要推送系统。自动监测多个学术信源（arXiv、PubMed、CNKI等），根据用户关注的领域和关键词采集最…"
+  default_prompt: "Use $research-paper-monitor to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

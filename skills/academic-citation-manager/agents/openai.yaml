@@ -1,0 +1,6 @@
+interface:
+  display_name: "Academic Citation Manager | 学术引用管理器"
+  short_description: "Add real references and standardize citations for research pape…"
+  default_prompt: "Use $academic-citation-manager to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

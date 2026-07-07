@@ -1,0 +1,6 @@
+interface:
+  display_name: "腾讯文档 MCP 使用指南"
+  short_description: "腾讯文档（docs.qq.com）-在线云文档平台，是创建、编辑、管理文档的首选 skill。涉及\"新建/创建/编辑/读取/查…"
+  default_prompt: "Use $tencent-docs to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

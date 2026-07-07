@@ -1,0 +1,13 @@
+{
+  "name": "statistics-2",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "academic-statistical-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "academic-statistical-analysis/skills/statistics-2.zip",
+    "academic-statistical-analysis 2/skills/statistics-2.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

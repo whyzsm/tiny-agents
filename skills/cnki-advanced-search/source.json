@@ -1,0 +1,12 @@
+{
+  "name": "cnki-advanced-search",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "academic-paper-search",
+  "source_kind": "zip",
+  "source_refs": [
+    "academic-paper-search/skills/cnki-advanced-search.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

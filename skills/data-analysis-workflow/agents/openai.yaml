@@ -1,0 +1,6 @@
+interface:
+  display_name: "Data Analysis Workflow"
+  short_description: "Standardized data analysis workflow integrating data-analysis,…"
+  default_prompt: "Use $data-analysis-workflow to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

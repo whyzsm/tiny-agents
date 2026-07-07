@@ -1,0 +1,12 @@
+{
+  "name": "tencent-yuanbao-gaokao-score-to-rank-lookup",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "academic-gaokao-expert",
+  "source_kind": "zip",
+  "source_refs": [
+    "academic-gaokao-expert/skills/tencent-yuanbao-gaokao-score-to-rank-lookup.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

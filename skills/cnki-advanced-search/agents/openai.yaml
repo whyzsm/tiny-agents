@@ -1,0 +1,6 @@
+interface:
+  display_name: "知网高级检索论文工具"
+  short_description: "知网（CNKI）高级检索论文自动化工具。当用户提供研究关键词（一组或多组）时，自动在知网 高级检索页面模拟人类检索行为：选择学…"
+  default_prompt: "Use $cnki-advanced-search to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

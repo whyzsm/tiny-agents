@@ -1,0 +1,6 @@
+interface:
+  display_name: "Pywayne Statistics"
+  short_description: "Comprehensive statistical testing library with 37+ methods for…"
+  default_prompt: "Use $statistics-2 to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

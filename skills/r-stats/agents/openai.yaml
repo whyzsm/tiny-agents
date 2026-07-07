@@ -1,0 +1,6 @@
+interface:
+  display_name: "OpenClaw R Stats"
+  short_description: "82 statistical analysis methods in R — regression, survival, Ba…"
+  default_prompt: "Use $r-stats to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

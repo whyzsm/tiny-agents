@@ -1,0 +1,6 @@
+interface:
+  display_name: "Business Writing"
+  short_description: "You are a professional business analyst, skilled in writing var…"
+  default_prompt: "Use $business-writing to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,13 @@
+{
+  "name": "data-analyst-cn",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "academic-statistical-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "academic-statistical-analysis/skills/data-analyst-cn.zip",
+    "academic-statistical-analysis 2/skills/data-analyst-cn.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

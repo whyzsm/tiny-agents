@@ -1,0 +1,12 @@
+{
+  "name": "marketing-competitor-analysis",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "marketing-competitor-analysis",
+  "source_kind": "skillset",
+  "source_refs": [
+    "marketing-competitor-analysis/skillsets/marketing-competitor-analysis.md"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

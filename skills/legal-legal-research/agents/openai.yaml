@@ -1,0 +1,6 @@
+interface:
+  display_name: "法规检索"
+  short_description: "从法律知识库检索（法律法规查询/合同条款检索/司法解释查找）与财税法律案例法规检索（税务判例/行政复议/税收法规/税务实践…"
+  default_prompt: "Use $legal-legal-research to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

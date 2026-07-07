@@ -1,0 +1,6 @@
+interface:
+  display_name: "contract-risk-reviewer"
+  short_description: "专业级合同风险审查工具，自动识别 20+ 类常见风险条款，给出修改建议和法律依据"
+  default_prompt: "Use $contract-risk-reviewer to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

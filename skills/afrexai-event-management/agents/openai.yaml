@@ -1,0 +1,7 @@
+interface:
+  display_name: Event Management & Conference Engine
+  short_description: Event Management & Conference Engine skill. Afrexai Event Manage
+  default_prompt: Use $afrexai-event-management to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

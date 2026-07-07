@@ -1,0 +1,6 @@
+interface:
+  display_name: "academic-deep-research"
+  short_description: "Transparent, rigorous research with full methodology — not a…"
+  default_prompt: "Use $academic-deep-research-pro to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

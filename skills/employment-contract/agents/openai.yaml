@@ -1,0 +1,6 @@
+interface:
+  display_name: "employment-contract"
+  short_description: "Draft and fill employment contract templates — offer letter,…"
+  default_prompt: "Use $employment-contract to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

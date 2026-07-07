@@ -1,0 +1,7 @@
+interface:
+  display_name: Copywriting
+  short_description: Write persuasive copy for landing pages, emails, ads, sales page
+  default_prompt: Use $copywriting to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "legal-hybrid-skill"
+  short_description: "合法合规类案与法条查询，优先API，失败自动降级本地库"
+  default_prompt: "Use $legal-hybrid-skill to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

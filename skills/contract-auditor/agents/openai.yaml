@@ -1,0 +1,6 @@
+interface:
+  display_name: "contract_auditor"
+  short_description: "合同审计 Skill - AI 辅助审查合同条款，识别风险和问题 功能： - 自动提取合同文本（Word 格式） - 审查…"
+  default_prompt: "Use $contract-auditor to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

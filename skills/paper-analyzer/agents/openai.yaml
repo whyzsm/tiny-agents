@@ -1,0 +1,6 @@
+interface:
+  display_name: "paper-analyzer"
+  short_description: "学术论文结构化阅读、拆解与分析工具。基于12个阅读要素（研究背景、研究问题、研究结论、文献综合、文献批评、研究方法、理论视…"
+  default_prompt: "Use $paper-analyzer to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

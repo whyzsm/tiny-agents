@@ -1,0 +1,12 @@
+{
+  "name": "audit-new",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-contract-review",
+  "source_kind": "zip",
+  "source_refs": [
+    "legal-contract-review/skills/audit-new.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

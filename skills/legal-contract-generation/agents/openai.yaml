@@ -1,0 +1,6 @@
+interface:
+  display_name: "合同生成"
+  short_description: "从模板参考到风险审查再到专业合同文书输出的一站式合同生成工作流，覆盖劳动合同、保密协议、租赁合同、服务协议等主流合同类型。"
+  default_prompt: "Use $legal-contract-generation to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

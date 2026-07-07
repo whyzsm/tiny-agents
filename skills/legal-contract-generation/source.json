@@ -1,0 +1,12 @@
+{
+  "name": "legal-contract-generation",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-contract-generation",
+  "source_kind": "skillset",
+  "source_refs": [
+    "legal-contract-generation/skillsets/legal-contract-generation.md"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

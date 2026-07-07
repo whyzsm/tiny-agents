@@ -1,0 +1,13 @@
+{
+  "name": "nathan-legal-os-pro",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-compliance-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "legal-contract-generation/skills/nathan-legal-os-pro.zip",
+    "legal-compliance-analysis/skills/nathan-legal-os-pro.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

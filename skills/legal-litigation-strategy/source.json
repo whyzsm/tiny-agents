@@ -1,0 +1,12 @@
+{
+  "name": "legal-litigation-strategy",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-litigation-strategy",
+  "source_kind": "skillset",
+  "source_refs": [
+    "legal-litigation-strategy/skillsets/legal-litigation-strategy.md"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

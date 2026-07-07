@@ -1,0 +1,6 @@
+interface:
+  display_name: "合同智能助手 v1.0.3"
+  short_description: "全能型合同管理工具，覆盖合同生成、审查、归档、风险识别、合规审查、条款对比、修改建议和结构化报告输出，适用于企业法务、个人…"
+  default_prompt: "Use $hetongzhushou to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

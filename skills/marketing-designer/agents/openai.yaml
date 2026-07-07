@@ -1,0 +1,7 @@
+interface:
+  display_name: Marketing Designer
+  short_description: Expert marketing creative-strategic skill combining Peggy Olson'
+  default_prompt: Use $marketing-designer to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

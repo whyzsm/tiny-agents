@@ -1,0 +1,6 @@
+interface:
+  display_name: "compliance-audit-pro"
+  short_description: "面向法律/财务/采购场景的合规审计引擎，自动提取风险条款、映射法规基线、生成审计底稿与澄清模板"
+  default_prompt: "Use $compliance-audit-pro to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

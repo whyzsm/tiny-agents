@@ -1,0 +1,6 @@
+interface:
+  display_name: "ai-legal-assistant-pro"
+  short_description: "China legal triage assistant. Input a contract, labor dispute…"
+  default_prompt: "Use $ai-legal-assistant-pro to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

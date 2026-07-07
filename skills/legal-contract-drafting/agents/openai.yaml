@@ -1,0 +1,6 @@
+interface:
+  display_name: "合同起草"
+  short_description: "从多类型合同模板生成（劳动合同/服务协议/合作协议/租赁合同/协议书模板）与专业合同生成审查（销售合同/租赁合同/劳动合同…"
+  default_prompt: "Use $legal-contract-drafting to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

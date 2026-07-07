@@ -1,0 +1,6 @@
+interface:
+  display_name: "legal-concept-deep-dive-mctmilk"
+  short_description: "深入分析法条中的不确定法律概念（如\"合理期限\"、\"重大误解\"、\"明显不当\"）的内涵、外延、裁判标准和边界案例。当用户想穿透…"
+  default_prompt: "Use $legal-concept-deep-dive-mctmilk to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

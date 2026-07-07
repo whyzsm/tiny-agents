@@ -1,0 +1,6 @@
+interface:
+  display_name: "literature-reviewer-skill"
+  short_description: "根据用户提供的论文主题，进行系统性中英文文献回顾（Literature Survey）。 采用8阶段工作流，支持CNKI、…"
+  default_prompt: "Use $ai-powered-literature-review-skills to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

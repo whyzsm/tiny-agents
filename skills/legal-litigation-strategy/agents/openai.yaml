@@ -1,0 +1,6 @@
+interface:
+  display_name: "诉讼策略"
+  short_description: "从诉讼准备指南（流程指引/文书准备/证据整理/时间线/费用估算）与法律辅助分析（合同风险初筛/诉讼成本估算/文书骨架生成）…"
+  default_prompt: "Use $legal-litigation-strategy to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

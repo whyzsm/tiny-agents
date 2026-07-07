@@ -1,0 +1,8 @@
+interface:
+  display_name: 竞品调研 · Competitive Product Research
+  short_description: 'Dual-track competitive research: experience benchmarking (8
+    UX d'
+  default_prompt: Use $competitive-product-research to complete this workflow and
+    produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,12 @@
+{
+  "name": "market-analysis-cn",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "marketing-competitor-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "marketing-competitor-analysis/skills/market-analysis-cn.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

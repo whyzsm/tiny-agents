@@ -1,0 +1,6 @@
+interface:
+  display_name: "contract-guardian"
+  short_description: "合同卫士 — AI合同审查助手，识别风险条款、提取关键信息、追踪到期日"
+  default_prompt: "Use $contract-guardian to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

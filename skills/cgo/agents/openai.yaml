@@ -1,0 +1,6 @@
+interface:
+  display_name: CGO / Chief Growth Officer
+  short_description: 'Drive systematic growth with acquisition loops, experimentation '
+  default_prompt: Use $cgo to complete this workflow and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

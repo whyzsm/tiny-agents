@@ -1,0 +1,12 @@
+{
+  "name": "ai-powered-literature-review-skills",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "academic-literature-review",
+  "source_kind": "zip",
+  "source_refs": [
+    "academic-literature-review/skills/ai-powered-literature-review-skills.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

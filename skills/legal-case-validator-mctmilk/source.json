@@ -1,0 +1,12 @@
+{
+  "name": "legal-case-validator-mctmilk",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-legal-research",
+  "source_kind": "zip",
+  "source_refs": [
+    "legal-legal-research/skills/legal-case-validator-mctmilk.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

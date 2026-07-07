@@ -1,0 +1,12 @@
+{
+  "name": "ai-legal-assistant-pro",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-litigation-strategy",
+  "source_kind": "zip",
+  "source_refs": [
+    "legal-litigation-strategy/skills/ai-legal-assistant-pro.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

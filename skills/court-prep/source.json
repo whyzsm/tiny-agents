@@ -1,0 +1,12 @@
+{
+  "name": "court-prep",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-litigation-strategy",
+  "source_kind": "zip",
+  "source_refs": [
+    "legal-litigation-strategy/skills/court-prep.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

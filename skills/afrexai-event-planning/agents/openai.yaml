@@ -1,0 +1,7 @@
+interface:
+  display_name: Event Planning Business Operations
+  short_description: Event Planning Business Operations skill. Afrexai Event Planning
+  default_prompt: Use $afrexai-event-planning to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

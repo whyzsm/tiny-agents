@@ -1,0 +1,12 @@
+{
+  "name": "academic-researcher",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "academic-literature-review",
+  "source_kind": "zip",
+  "source_refs": [
+    "academic-literature-review/skills/academic-researcher.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

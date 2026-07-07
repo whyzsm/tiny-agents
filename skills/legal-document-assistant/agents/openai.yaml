@@ -1,0 +1,6 @@
+interface:
+  display_name: "legal-document-assistant"
+  short_description: "提供常见法律文书模板与撰写指导，涵盖劳务纠纷、离婚协议、交通事故、租房协议等场景；当用户需要法律文书模板、撰写建议或遇到法…"
+  default_prompt: "Use $legal-document-assistant to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

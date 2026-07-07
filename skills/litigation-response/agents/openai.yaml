@@ -1,0 +1,6 @@
+interface:
+  display_name: "litigation-response"
+  short_description: "解析起诉状内容，提炼争议焦点，制定系统化应诉策略；当收到原告起诉状需要梳理诉讼思路、分析法律关系或制定答辩方向时使用"
+  default_prompt: "Use $litigation-response to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

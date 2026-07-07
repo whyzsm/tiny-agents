@@ -1,0 +1,6 @@
+interface:
+  display_name: "contract-reviewer"
+  short_description: "Review business contracts for risks, missing clauses, unfavor…"
+  default_prompt: "Use $contract-reviewer to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

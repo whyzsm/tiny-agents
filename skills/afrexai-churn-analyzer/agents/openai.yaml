@@ -1,0 +1,8 @@
+interface:
+  display_name: Churn Risk Analyzer
+  short_description: Churn Risk Analyzer skill. Afrexai Churn Analyzer skill from
+    the
+  default_prompt: Use $afrexai-churn-analyzer to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

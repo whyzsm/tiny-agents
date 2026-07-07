@@ -1,0 +1,7 @@
+interface:
+  display_name: '📊 SECTION A: SALES TECH COMPETITIVE INTELLIGENCE'
+  short_description: B2B SaaS competitive intelligence with 24 scenarios across Sales
+  default_prompt: Use $competitive-intelligence-market-research to complete this workflow
+    and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

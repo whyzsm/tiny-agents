@@ -1,0 +1,12 @@
+{
+  "name": "marketing-official-document-writing",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "marketing-official-document-writing",
+  "source_kind": "skillset",
+  "source_refs": [
+    "marketing-official-document-writing/skillsets/marketing-official-document-writing.md"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

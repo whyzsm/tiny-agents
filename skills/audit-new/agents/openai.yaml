@@ -1,0 +1,6 @@
+interface:
+  display_name: "contract-review"
+  short_description: "合同风险识别与条款分析 - 智能合同审查工具，自动识别风险条款、补充缺失条款、对比差异条款"
+  default_prompt: "Use $audit-new to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

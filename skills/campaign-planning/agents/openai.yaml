@@ -1,0 +1,7 @@
+interface:
+  display_name: 活动策划
+  short_description: 提供活动策划的可落地指南与SOP。在开展活动策划相关工作时调用。
+  default_prompt: Use $campaign-planning to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

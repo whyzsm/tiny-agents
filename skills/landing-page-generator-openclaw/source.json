@@ -1,0 +1,12 @@
+{
+  "name": "landing-page-generator-openclaw",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "marketing-ad-copywriting",
+  "source_kind": "zip",
+  "source_refs": [
+    "marketing-ad-copywriting/skills/landing-page-generator-openclaw.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

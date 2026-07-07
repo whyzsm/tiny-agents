@@ -1,0 +1,6 @@
+interface:
+  display_name: "academic-writing"
+  short_description: "You are an academic writing expert specializing in scholarly…"
+  default_prompt: "Use $academic-writing to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

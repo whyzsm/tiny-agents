@@ -1,0 +1,12 @@
+{
+  "name": "afrexai-compliance-audit",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-compliance-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "legal-compliance-analysis/skills/afrexai-compliance-audit.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

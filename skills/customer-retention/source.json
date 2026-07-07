@@ -2,10 +2,12 @@
   "name": "customer-retention",
   "kind": "skill",
   "status": "ready",
-  "source_package": "ecommerce-user-profiling",
+  "source_package": "marketing-user-growth",
   "source_kind": "zip",
   "source_refs": [
-    "ecommerce-user-profiling/skills/customer-retention.zip"
+    "ecommerce-user-profiling/skills/customer-retention.zip",
+    "marketing-user-growth/skills/customer-retention.zip"
   ],
-  "converted_for": "codex-skills"
+  "converted_for": "codex-skills",
+  "repo_only": true
 }

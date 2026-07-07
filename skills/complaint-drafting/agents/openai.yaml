@@ -1,0 +1,6 @@
+interface:
+  display_name: "complaint-drafting"
+  short_description: "从聊天记录中提取案情要素和证据材料，生成规范的民事起诉状；当用户需要制作起诉状、梳理诉讼材料、整理案件事实时使用"
+  default_prompt: "Use $complaint-drafting to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

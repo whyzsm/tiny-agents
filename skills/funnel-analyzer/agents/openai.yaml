@@ -1,0 +1,8 @@
+interface:
+  display_name: funnel-analyzer
+  short_description: 漏斗分析工具。创建转化漏斗、诊断流失环节、行业对标、优化建议、分析报告、漏斗对比。Funnel analyzer with
+    co
+  default_prompt: Use $funnel-analyzer to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

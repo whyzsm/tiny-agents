@@ -1,0 +1,12 @@
+{
+  "name": "marketing-designer",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "marketing-event-planning",
+  "source_kind": "zip",
+  "source_refs": [
+    "marketing-event-planning/skills/marketing-designer.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

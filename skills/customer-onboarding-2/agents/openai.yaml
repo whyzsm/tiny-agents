@@ -1,0 +1,8 @@
+interface:
+  display_name: Customer Onboarding
+  short_description: Design and execute customer onboarding that drives activation
+    an
+  default_prompt: Use $customer-onboarding-2 to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

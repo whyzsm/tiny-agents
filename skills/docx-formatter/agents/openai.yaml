@@ -1,0 +1,7 @@
+interface:
+  display_name: docx-formatter
+  short_description: docx-formatter skill. Docx Formatter skill from the marketing-of
+  default_prompt: Use $docx-formatter to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

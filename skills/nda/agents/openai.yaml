@@ -1,0 +1,6 @@
+interface:
+  display_name: "nda"
+  short_description: "Draft and fill NDA templates — mutual NDA, one-way NDA, confi…"
+  default_prompt: "Use $nda to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

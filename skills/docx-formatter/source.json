@@ -1,0 +1,12 @@
+{
+  "name": "docx-formatter",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "marketing-official-document-writing",
+  "source_kind": "zip",
+  "source_refs": [
+    "marketing-official-document-writing/skills/docx-formatter.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

@@ -1,0 +1,12 @@
+{
+  "name": "official-doc-writer",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "marketing-official-document-writing",
+  "source_kind": "zip",
+  "source_refs": [
+    "marketing-official-document-writing/skills/official-doc-writer.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

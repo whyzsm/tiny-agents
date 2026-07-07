@@ -1,0 +1,6 @@
+interface:
+  display_name: "academic-researcher"
+  short_description: "Academic research assistant for literature reviews, paper ana…"
+  default_prompt: "Use $academic-researcher to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

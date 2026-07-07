@@ -1,0 +1,7 @@
+interface:
+  display_name: activity-campaign-from-ui
+  short_description: activity-campaign-from-ui skill. Activity Campaign From Ui skill
+  default_prompt: Use $activity-campaign-from-ui to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

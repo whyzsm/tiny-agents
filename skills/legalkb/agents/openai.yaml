@@ -1,0 +1,6 @@
+interface:
+  display_name: "legal-kb"
+  short_description: "法律知识库检索技能。当用户需要查询法律法规、合同条款、司法解释时激活。触发词：搜一下法律、查一下这个条款、总结这份合同、法…"
+  default_prompt: "Use $legalkb to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

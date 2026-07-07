@@ -1,0 +1,12 @@
+{
+  "name": "funnel-analyzer",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "marketing-user-growth",
+  "source_kind": "zip",
+  "source_refs": [
+    "marketing-user-growth/skills/funnel-analyzer.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

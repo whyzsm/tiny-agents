@@ -1,0 +1,6 @@
+interface:
+  display_name: "LegalDoc AI"
+  short_description: "Comprehensive legal document automation for clause extraction…"
+  default_prompt: "Use $nathan-legal-os-pro to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

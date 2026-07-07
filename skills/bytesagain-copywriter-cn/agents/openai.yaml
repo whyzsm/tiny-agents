@@ -1,0 +1,8 @@
+interface:
+  display_name: bytesagain-copywriter-cn
+  short_description: Generate Chinese and English marketing copy using AIDA and A/B
+    f
+  default_prompt: Use $bytesagain-copywriter-cn to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

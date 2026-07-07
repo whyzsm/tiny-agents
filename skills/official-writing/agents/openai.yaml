@@ -1,0 +1,7 @@
+interface:
+  display_name: Official Writing 公文写作技能
+  short_description: 党政机关公文写作技能 - 提供国家标准格式规范、各类公文模板、写作技巧
+  default_prompt: Use $official-writing to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

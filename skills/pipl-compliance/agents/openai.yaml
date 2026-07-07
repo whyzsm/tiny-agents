@@ -1,0 +1,6 @@
+interface:
+  display_name: "pipl-compliance-enhanced"
+  short_description: "中国个人信息保护法（PIPL）合规检查、风险评估和文档生成工具。 为企业提供全面的PIPL合规解决方案。 Use when…"
+  default_prompt: "Use $pipl-compliance to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

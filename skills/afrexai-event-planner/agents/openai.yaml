@@ -1,0 +1,7 @@
+interface:
+  display_name: Event Planner Pro
+  short_description: Plan, execute, and measure business events — conferences, webina
+  default_prompt: Use $afrexai-event-planner to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

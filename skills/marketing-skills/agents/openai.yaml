@@ -1,0 +1,7 @@
+interface:
+  display_name: Marketing Skills
+  short_description: Marketing Skills skill. Marketing Skills skill from the marketin
+  default_prompt: Use $marketing-skills to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

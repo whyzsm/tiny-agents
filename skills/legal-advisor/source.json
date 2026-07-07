@@ -1,0 +1,14 @@
+{
+  "name": "legal-advisor",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-litigation-strategy",
+  "source_kind": "zip",
+  "source_refs": [
+    "legal-contract-generation/skills/legal-advisor.zip",
+    "legal-contract-drafting/skills/legal-advisor.zip",
+    "legal-litigation-strategy/skills/legal-advisor.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

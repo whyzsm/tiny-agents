@@ -1,0 +1,8 @@
+interface:
+  display_name: Growth Engineering Mastery
+  short_description: Growth Engineering Mastery skill. Afrexai Growth Engine skill
+    fr
+  default_prompt: Use $afrexai-growth-engine to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: 竞品分析
+  short_description: 从市场规模估算、行业细分与竞品图谱绘制，到企业市场趋势分析与用…
+  default_prompt: Use $marketing-competitor-analysis to complete this workflow and
+    produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

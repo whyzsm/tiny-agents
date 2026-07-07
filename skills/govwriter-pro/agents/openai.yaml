@@ -1,0 +1,7 @@
+interface:
+  display_name: 体制内写作·灵析 (GovWriter-Pro)
+  short_description: 政府公文创作与重构专家，支持修改模式（原文素材重构）和创作模式（主题+提纲+过往材料 → 初稿），输出符合党政机关公文格式（GB
+  default_prompt: Use $govwriter-pro to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

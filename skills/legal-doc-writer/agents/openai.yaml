@@ -1,0 +1,6 @@
+interface:
+  display_name: "legal-doc-writer"
+  short_description: "中国财税法律文书起草助手。当用户需要起草、审查或修改法律文书时应使用本 Skill，包括：税务筹划报告、法律意见书、合同税…"
+  default_prompt: "Use $legal-doc-writer to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

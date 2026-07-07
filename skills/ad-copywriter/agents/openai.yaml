@@ -1,0 +1,7 @@
+interface:
+  display_name: ad-copywriter
+  short_description: ad-copywriter skill. Ad Copywriter skill from the marketing-ad-c
+  default_prompt: Use $ad-copywriter to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

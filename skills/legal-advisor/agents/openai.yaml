@@ -1,0 +1,6 @@
+interface:
+  display_name: "Legal Advisor — Bilingual Enhanced Edition"
+  short_description: "Generate legal templates for labor, consumer, rental, and tra…"
+  default_prompt: "Use $legal-advisor to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

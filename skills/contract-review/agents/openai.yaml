@@ -1,0 +1,6 @@
+interface:
+  display_name: "contract-review"
+  short_description: "Legal contract analysis using CUAD dataset (41 risk categorie…"
+  default_prompt: "Use $contract-review to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

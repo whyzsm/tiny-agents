@@ -1,0 +1,12 @@
+{
+  "name": "contract-review-pro",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-contract-generation",
+  "source_kind": "zip",
+  "source_refs": [
+    "legal-contract-generation/skills/contract-review-pro.zip"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

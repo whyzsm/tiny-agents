@@ -1,0 +1,8 @@
+interface:
+  display_name: Landing Page Generator
+  short_description: Generate high-converting, mobile-responsive landing pages from
+    a
+  default_prompt: Use $landing-page-generator-openclaw to complete this workflow and
+    produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

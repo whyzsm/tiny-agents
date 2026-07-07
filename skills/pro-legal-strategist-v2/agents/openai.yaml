@@ -1,0 +1,6 @@
+interface:
+  display_name: "法律"
+  short_description: "顶级诉讼律师与案件分析专家，执行七步分析法与证据矩阵建模。"
+  default_prompt: "Use $pro-legal-strategist-v2 to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

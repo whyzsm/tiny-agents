@@ -1,0 +1,7 @@
+interface:
+  display_name: 党政机关公文生成技能
+  short_description: 党政机关公文生成技能，支持通知、报告、请示、函等公文类型，符合GB/T 9704-2012标准。当用户需要生成党政机关公文、创建
+  default_prompt: Use $official-doc-writer to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

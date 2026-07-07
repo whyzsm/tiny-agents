@@ -1,0 +1,6 @@
+interface:
+  display_name: "case-research"
+  short_description: "中国财税法律案例与法规检索助手。当用户需要检索税务相关判例、行政复议决定、税收法规政策、国家税务总局公告、各地税务实践案例…"
+  default_prompt: "Use $case-research to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

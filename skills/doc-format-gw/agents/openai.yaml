@@ -1,0 +1,7 @@
+interface:
+  display_name: 公文排版工具
+  short_description: 公文排版工具 - 根据公文格式规范自动排版Word文档。适用于发送Word文件前进行格式调整。
+  default_prompt: Use $doc-format-gw to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

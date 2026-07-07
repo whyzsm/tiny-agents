@@ -1,0 +1,6 @@
+interface:
+  display_name: "legal-system-mapper-mctmilk"
+  short_description: "以某个法条为核心节点，构建其上下游法条关联网络，包括上位规范、并列条款、下位细化、程序衔接、竞合分析。当用户想了解某个法条…"
+  default_prompt: "Use $legal-system-mapper-mctmilk to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

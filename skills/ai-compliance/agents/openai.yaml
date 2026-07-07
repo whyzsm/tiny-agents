@@ -1,0 +1,6 @@
+interface:
+  display_name: "ai-compliance"
+  short_description: "AI compliance analysis for EU AI Act, ISO 42001, NIST AI RMF,…"
+  default_prompt: "Use $ai-compliance to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

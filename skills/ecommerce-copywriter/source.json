@@ -2,10 +2,12 @@
   "name": "ecommerce-copywriter",
   "kind": "skill",
   "status": "ready",
-  "source_package": "ecommerce-product-copywriting",
+  "source_package": "marketing-ad-copywriting",
   "source_kind": "zip",
   "source_refs": [
-    "ecommerce-product-copywriting/skills/ecommerce-copywriter.zip"
+    "ecommerce-product-copywriting/skills/ecommerce-copywriter.zip",
+    "marketing-ad-copywriting/skills/ecommerce-copywriter.zip"
   ],
-  "converted_for": "codex-skills"
+  "converted_for": "codex-skills",
+  "repo_only": true
 }

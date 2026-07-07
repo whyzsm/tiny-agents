@@ -1,0 +1,7 @@
+interface:
+  display_name: OneQuant 4.0 量化交易系统
+  short_description: OneQuant 4.0 量化交易系统 — A股本地量化平台。5种调用方式：①Web界面(浏览器点点点) ②REST API(P
+  default_prompt: Use $quant-backtest-strategy to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

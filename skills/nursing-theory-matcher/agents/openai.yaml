@@ -1,0 +1,7 @@
+interface:
+  display_name: Nursing Theory Matcher v4
+  short_description: v4 大而全版护理研究理论匹配 skill；根据研究题目、对象、场景、设计和结局，推荐最合适的理论基础/理论框架/模型/方法论，
+  default_prompt: Use $nursing-theory-matcher to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

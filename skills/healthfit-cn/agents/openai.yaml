@@ -1,0 +1,7 @@
+interface:
+  display_name: HealthFit — 个人全维度健康管理系统（v4.0 专家矩阵版）
+  short_description: 个人全维度健康管理系统，中西医融合。当用户涉及运动训练计划、饮食营养建议、 健康数据记录追踪、中医体质辨识、节气养生、舌诊分析、
+  default_prompt: Use $healthfit-cn to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

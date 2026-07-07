@@ -1,0 +1,8 @@
+interface:
+  display_name: Search by company name (English)
+  short_description: Portfolio risk management and analytics. Use when user asks to
+    c
+  default_prompt: Use $riskofficer to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

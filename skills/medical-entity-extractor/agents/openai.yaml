@@ -1,0 +1,8 @@
+interface:
+  display_name: Medical Entity Extractor
+  short_description: Extract medical entities (symptoms, medications, lab values,
+    dia
+  default_prompt: Use $medical-entity-extractor to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: Earnings Reader — 财报研读
+  short_description: A股财报研读助手 - 解读利润表/资产负债表/现金流量表
+  default_prompt: Use $earnings-reader to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,11 @@
+{
+  "name": "quant-strategy",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "finance-quant-backtesting",
+  "source_kind": "zip",
+  "source_refs": [
+    "finance-quant-backtesting/skills/quant-strategy.zip"
+  ],
+  "converted_for": "codex-skills"
+}

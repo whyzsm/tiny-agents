@@ -1,0 +1,7 @@
+interface:
+  display_name: Health Checkup Report
+  short_description: Interpret routine health checkup reports and lab results in plai
+  default_prompt: Use $health-checkup-report to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

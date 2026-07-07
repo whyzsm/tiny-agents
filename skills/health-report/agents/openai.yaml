@@ -1,0 +1,8 @@
+interface:
+  display_name: Health Report
+  short_description: Generate structured health summary reports from user-provided
+    he
+  default_prompt: Use $health-report to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

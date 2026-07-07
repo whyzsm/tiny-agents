@@ -1,0 +1,11 @@
+{
+  "name": "health-checkup-report",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "healthcare-health-report",
+  "source_kind": "zip",
+  "source_refs": [
+    "healthcare-health-report/skills/health-checkup-report.zip"
+  ],
+  "converted_for": "codex-skills"
+}

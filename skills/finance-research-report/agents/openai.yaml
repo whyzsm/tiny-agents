@@ -1,0 +1,7 @@
+interface:
+  display_name: 每周金融投研报告生成器
+  short_description: A股每周金融投研报告生成器 — 基于 AKShare / 新浪财经 / 东方财富数据源，自动生成包含技术分析、交易信号、风险评估
+  default_prompt: Use $finance-research-report to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

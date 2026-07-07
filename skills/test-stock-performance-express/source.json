@@ -1,0 +1,11 @@
+{
+  "name": "test-stock-performance-express",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "finance-business-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "finance-business-analysis/skills/test-stock-performance-express.zip"
+  ],
+  "converted_for": "codex-skills"
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: 护理监护计划生成技能
+  short_description: 护理监护计划生成技能 v3.2。用户输入诊断、症状或病历信息后， 自动检索中华护理学会团体标准网站（hltb.kxj.org.c
+  default_prompt: Use $nurse-monistor-pathway to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,11 @@
+{
+  "name": "ai-medical-record-guide",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "healthcare-medical-record-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "healthcare-medical-record-analysis/skills/ai-medical-record-guide.zip"
+  ],
+  "converted_for": "codex-skills"
+}

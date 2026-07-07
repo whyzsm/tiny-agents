@@ -1,0 +1,11 @@
+{
+  "name": "finance-financial-report-analysis",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "finance-financial-report-analysis",
+  "source_kind": "skillset",
+  "source_refs": [
+    "finance-financial-report-analysis/skillsets/finance-financial-report-analysis.md"
+  ],
+  "converted_for": "codex-skills"
+}

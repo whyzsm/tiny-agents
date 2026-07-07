@@ -1,0 +1,7 @@
+interface:
+  display_name: MarketPulse 📊
+  short_description: Query real-time and historical financial data for equities—price
+  default_prompt: Use $marketpulse to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

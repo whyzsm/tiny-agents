@@ -1,0 +1,11 @@
+{
+  "name": "health-score-pro",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "healthcare-health-report",
+  "source_kind": "zip",
+  "source_refs": [
+    "healthcare-health-report/skills/health-score-pro.zip"
+  ],
+  "converted_for": "codex-skills"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "nurse-monistor-pathway",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "healthcare-nursing-plan",
+  "source_kind": "zip",
+  "source_refs": [
+    "healthcare-nursing-plan/skills/nurse-monistor-pathway.zip"
+  ],
+  "converted_for": "codex-skills"
+}

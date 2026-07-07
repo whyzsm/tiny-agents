@@ -1,0 +1,7 @@
+interface:
+  display_name: 健康管理助手
+  short_description: '健康管理助手 - 基于十本畅销健康书籍共识的数据驱动健康管理系统。**快速暗号**: 健康记录、饮食分析、健康评分、周报、月报。'
+  default_prompt: Use $health-score-pro to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

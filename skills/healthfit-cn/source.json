@@ -1,0 +1,11 @@
+{
+  "name": "healthfit-cn",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "healthcare-health-report",
+  "source_kind": "zip",
+  "source_refs": [
+    "healthcare-health-report/skills/healthfit-cn.zip"
+  ],
+  "converted_for": "codex-skills"
+}

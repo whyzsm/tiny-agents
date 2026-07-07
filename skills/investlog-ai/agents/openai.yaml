@@ -1,0 +1,7 @@
+interface:
+  display_name: 1. Get current price and valuation
+  short_description: 美股实时数据研究工具：股价行情、估值分析、财报数据、分析师评级、目标价、内部人交易、国会议员交易、机构持仓、ETF持仓、技术指标
+  default_prompt: Use $investlog-ai to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

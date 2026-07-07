@@ -1,0 +1,6 @@
+interface:
+  display_name: quant — 你的智能量化投资助手
+  short_description: quant — 你的智能量化投资助手 skill. Quant skill from the finance-quant-bac
+  default_prompt: Use $quant to complete this workflow and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

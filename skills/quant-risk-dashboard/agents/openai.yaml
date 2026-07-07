@@ -1,0 +1,8 @@
+interface:
+  display_name: Quant Risk Dashboard
+  short_description: Professional quantitative trading risk management dashboard.
+    Rea
+  default_prompt: Use $quant-risk-dashboard to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

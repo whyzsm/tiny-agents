@@ -1,0 +1,11 @@
+{
+  "name": "auto-data-analysis-claw",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "finance-business-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "finance-business-analysis/skills/auto-data-analysis-claw.zip"
+  ],
+  "converted_for": "codex-skills"
+}

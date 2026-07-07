@@ -1,0 +1,11 @@
+{
+  "name": "finance-business-analysis",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "finance-business-analysis",
+  "source_kind": "skillset",
+  "source_refs": [
+    "finance-business-analysis/skillsets/finance-business-analysis.md"
+  ],
+  "converted_for": "codex-skills"
+}

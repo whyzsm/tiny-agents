@@ -1,0 +1,7 @@
+interface:
+  display_name: 💼 股票仓位管理与风控专家 (Position & Risk Management Expert)
+  short_description: 股票仓位管理与风控专家。不负责选股，专注仓位管理和头寸调度。提供移动跟踪止盈、阶梯式止盈、核心 - 卫星策略、动态再平衡等经典模
+  default_prompt: Use $position-risk-manager to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

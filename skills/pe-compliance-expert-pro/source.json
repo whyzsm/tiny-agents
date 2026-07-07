@@ -1,0 +1,11 @@
+{
+  "name": "pe-compliance-expert-pro",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "finance-risk-assessment",
+  "source_kind": "zip",
+  "source_refs": [
+    "finance-risk-assessment/skills/pe-compliance-expert-pro.zip"
+  ],
+  "converted_for": "codex-skills"
+}

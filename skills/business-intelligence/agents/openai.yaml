@@ -1,0 +1,7 @@
+interface:
+  display_name: Business Intelligence
+  short_description: Model business performance, define KPIs, and turn data into deci
+  default_prompt: Use $business-intelligence to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

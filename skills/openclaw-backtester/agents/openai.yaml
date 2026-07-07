@@ -1,0 +1,7 @@
+interface:
+  display_name: Beta Backtester
+  short_description: Professional backtesting framework for trading strategies. Tests
+  default_prompt: Use $openclaw-backtester to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

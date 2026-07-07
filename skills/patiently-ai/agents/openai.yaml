@@ -1,0 +1,8 @@
+interface:
+  display_name: Patiently AI
+  short_description: Patiently AI simplifies medical documents for patients. Takes
+    do
+  default_prompt: Use $patiently-ai to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

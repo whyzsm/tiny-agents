@@ -1,0 +1,6 @@
+interface:
+  display_name: Nurse — Clinical Intelligence for Frontline Care
+  short_description: Clinical support system for nurses and frontline healthcare work
+  default_prompt: Use $nurse to complete this workflow and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

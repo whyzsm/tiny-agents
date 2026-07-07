@@ -1,0 +1,7 @@
+interface:
+  display_name: Health Manager - 健康管理
+  short_description: Health data management system for tracking blood pressure, heart
+  default_prompt: Use $health-manager to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

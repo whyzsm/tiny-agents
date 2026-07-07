@@ -1,0 +1,7 @@
+interface:
+  display_name: 个股研究引擎 3.0
+  short_description: 个股基本面深度研究引擎。当用户输入股票代码、公司名称或要求分析某只股票时触发。覆盖A股、港股、美股。输出买方基金经理视角的投资分
+  default_prompt: Use $stock-research-engine to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

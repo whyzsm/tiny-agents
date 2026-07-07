@@ -1,0 +1,8 @@
+interface:
+  display_name: Budget vs. Actual Variance Analysis Skill
+  short_description: Monthly and quarterly budget vs. actual variance analysis for
+    bu
+  default_prompt: Use $budget-vs-actual to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,11 @@
+{
+  "name": "openclaw-backtester",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "finance-quant-backtesting",
+  "source_kind": "zip",
+  "source_refs": [
+    "finance-quant-backtesting/skills/openclaw-backtester.zip"
+  ],
+  "converted_for": "codex-skills"
+}

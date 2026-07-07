@@ -1,0 +1,8 @@
+interface:
+  display_name: 腾讯健康-AI临床助手-智能病历
+  short_description: 腾讯健康-AI临床助手-智能病历。This skill should be used when users need to
+    st
+  default_prompt: Use $ai-medical-record-guide to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

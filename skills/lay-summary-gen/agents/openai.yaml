@@ -1,0 +1,7 @@
+interface:
+  display_name: Lay Summary Gen
+  short_description: Converts complex medical abstracts into plain language summaries
+  default_prompt: Use $lay-summary-gen to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

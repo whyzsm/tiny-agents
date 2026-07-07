@@ -1,0 +1,7 @@
+interface:
+  display_name: 自动化数据分析虾 🦐
+  short_description: 自动化财务与业务数据分析，深度挖掘数据价值，生成专业报表。激活场景：用户提供财务报表（利润表、资产负债表、现金流量表）、业务数据
+  default_prompt: Use $auto-data-analysis-claw to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

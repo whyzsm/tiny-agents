@@ -1,0 +1,7 @@
+interface:
+  display_name: Finance Report Analyzer
+  short_description: Analyze financial data from uploaded Excel/PDF files and generat
+  default_prompt: Use $finance-report-analyzer to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

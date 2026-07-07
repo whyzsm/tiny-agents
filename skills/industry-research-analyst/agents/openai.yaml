@@ -1,0 +1,7 @@
+interface:
+  display_name: 行业研究分析师
+  short_description: 行业研究分析师 — 结构化深度行业研究skill。输入行业名称、产业链环节或研究课题，输出投行级别的行业深度研究报告。覆盖行业概
+  default_prompt: Use $industry-research-analyst to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

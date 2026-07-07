@@ -1,0 +1,11 @@
+{
+  "name": "smart-charts",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "finance-business-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "finance-business-analysis/skills/smart-charts.zip"
+  ],
+  "converted_for": "codex-skills"
+}

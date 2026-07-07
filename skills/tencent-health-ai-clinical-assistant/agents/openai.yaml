@@ -1,0 +1,8 @@
+interface:
+  display_name: 腾讯健康-AI临床助手-辅助诊断
+  short_description: 腾讯健康-AI临床助手-辅助诊断。分析病历文本和实验室结果，提供系统化诊断推理决策支持。This skill should
+    be
+  default_prompt: Use $tencent-health-ai-clinical-assistant to complete this workflow
+    and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

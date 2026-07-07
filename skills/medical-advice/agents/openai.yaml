@@ -1,0 +1,7 @@
+interface:
+  display_name: 医疗咨询技能
+  short_description: 提供医疗咨询和就医建议。根据症状、病史等信息分析可能的原因，提供初步判断和建议，包括是否需要就医、挂什么科、可能的检查项目等。支
+  default_prompt: Use $medical-advice to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

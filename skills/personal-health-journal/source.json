@@ -1,0 +1,11 @@
+{
+  "name": "personal-health-journal",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "healthcare-health-report",
+  "source_kind": "zip",
+  "source_refs": [
+    "healthcare-health-report/skills/personal-health-journal.zip"
+  ],
+  "converted_for": "codex-skills"
+}

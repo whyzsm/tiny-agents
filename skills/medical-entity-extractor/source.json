@@ -1,0 +1,11 @@
+{
+  "name": "medical-entity-extractor",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "healthcare-medical-record-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "healthcare-medical-record-analysis/skills/medical-entity-extractor.zip"
+  ],
+  "converted_for": "codex-skills"
+}

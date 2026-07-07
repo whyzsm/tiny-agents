@@ -1,0 +1,7 @@
+interface:
+  display_name: Personal Health Journal
+  short_description: 个人健康档案记录与每日总结技能。用于用户描述身体不适、体征数据（体温/血压/心率/血氧）、 排便或疼痛变化时，按日期生成结构化健
+  default_prompt: Use $personal-health-journal to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

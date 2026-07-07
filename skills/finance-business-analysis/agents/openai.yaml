@@ -1,0 +1,7 @@
+interface:
+  display_name: 经营分析
+  short_description: 从A股上市公司业绩快报数据获取到自动化财务分析、杜邦体系ROE…
+  default_prompt: Use $finance-business-analysis to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

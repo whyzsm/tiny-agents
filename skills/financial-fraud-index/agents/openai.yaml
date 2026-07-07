@@ -1,0 +1,7 @@
+interface:
+  display_name: Financial Fraud Index
+  short_description: Use when analyzing annual reports, audit reports, financial stat
+  default_prompt: Use $financial-fraud-index to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

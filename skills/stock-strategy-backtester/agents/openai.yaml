@@ -1,0 +1,8 @@
+interface:
+  display_name: Stock Strategy Backtester
+  short_description: Backtest stock trading strategies on historical OHLCV data and
+    r
+  default_prompt: Use $stock-strategy-backtester to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: Smart Charts
+  short_description: Intelligent chart generation and data analysis skill. Reads user
+  default_prompt: Use $smart-charts to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

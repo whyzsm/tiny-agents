@@ -1,0 +1,7 @@
+interface:
+  display_name: 风控评估
+  short_description: 覆盖信用风控建模、量化风险管理（VaR/压力测试/蒙特卡洛模拟…
+  default_prompt: Use $finance-risk-assessment to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: AI Stock Analyst - Chinese A-Share Analysis Skill
+  short_description: AI-powered Chinese A-share stock analyst. Fetches real-time mark
+  default_prompt: Use $ai-stock-analyst to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: 医学术语规范化
+  short_description: 将口语化通用医学记录转换为标准化、规范化的医学记录。输入口语化病历文本，调用内部医疗大模型，输出符合临床病历书写规范的标准化记录
+  default_prompt: Use $unisound-medical-term-normalization to complete this workflow
+    and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

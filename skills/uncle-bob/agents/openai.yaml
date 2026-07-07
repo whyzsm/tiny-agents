@@ -1,0 +1,4 @@
+interface:
+  display_name: "Uncle Bob"
+  short_description: "Clean Code, SOLID, and Clean Architecture review"
+  default_prompt: "Use $uncle-bob for this task."

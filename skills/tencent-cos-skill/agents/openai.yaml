@@ -1,0 +1,6 @@
+interface:
+  display_name: Tencent COS
+  short_description: COS 对象存储与媒体处理
+  default_prompt: Use $tencent-cos-skill to handle the relevant Tencent Cloud task.
+policy:
+  allow_implicit_invocation: true

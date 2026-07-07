@@ -1,0 +1,17 @@
+{
+  "name": "generate-slide",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/generate-slide",
+  "entry_path": "~/.agents/skills/generate-slide/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/generate-slide/SKILL.md",
+    "~/.agents/skills/generate-slide/references/slide-generator.md",
+    "~/.agents/skills/generate-slide/references/slide-quality-check.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

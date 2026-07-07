@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Git Oracle"
+  short_description: "Git-history technical-debt and hotspot analysis"
+  default_prompt: "Use $agent-git-oracle for this task."

@@ -1,0 +1,20 @@
+{
+  "name": "prd",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/prd",
+  "entry_path": "~/.codex/skills/prd/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/prd/SKILL.md",
+    "~/.codex/skills/prd/agents/openai.yaml",
+    "~/.codex/skills/prd/references/agent-usage.md",
+    "~/.codex/skills/prd/references/output-patterns.md",
+    "~/.codex/skills/prd/references/workflows.md",
+    "~/.codex/skills/prd/skill-card.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

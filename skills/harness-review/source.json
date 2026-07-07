@@ -1,0 +1,26 @@
+{
+  "name": "harness-review",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/harness-review",
+  "entry_path": "~/.agents/skills/harness-review/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/harness-review/SKILL.md",
+    "~/.agents/skills/harness-review/references/code-review.md",
+    "~/.agents/skills/harness-review/references/codex-closeout.md",
+    "~/.agents/skills/harness-review/references/cursor-review.md",
+    "~/.agents/skills/harness-review/references/dual-review.md",
+    "~/.agents/skills/harness-review/references/governance.md",
+    "~/.agents/skills/harness-review/references/plan-review.md",
+    "~/.agents/skills/harness-review/references/scope-review.md",
+    "~/.agents/skills/harness-review/references/security-profile.md",
+    "~/.agents/skills/harness-review/references/team-debate.md",
+    "~/.agents/skills/harness-review/references/ui-rubric.md",
+    "~/.agents/skills/harness-review/references/vision-high-res-flow.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

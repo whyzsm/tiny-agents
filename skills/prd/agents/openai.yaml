@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Task Planner"
+  short_description: "Structure PRDs into stories and acceptance criteria"
+  default_prompt: "Use $prd to turn this feature idea into implementation-ready user stories and acceptance criteria."

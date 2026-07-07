@@ -1,0 +1,7 @@
+interface:
+  display_name: Tencent Cloud DNSPod
+  short_description: DNSPod 域名解析管理
+  default_prompt: Use $tencentcloud-dnspod-skill to handle the relevant Tencent Cloud
+    task.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,9 @@
+{
+  "name": "tencentcloud-ocr-general",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "tech-tencentcloud-expert",
+  "source_kind": "zip",
+  "source_ref": "tech-tencentcloud-expert/skills/tencentcloud-ocr-general.zip",
+  "converted_for": "codex-skills"
+}

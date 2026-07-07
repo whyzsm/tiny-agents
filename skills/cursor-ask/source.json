@@ -1,0 +1,15 @@
+{
+  "name": "cursor-ask",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/cursor-ask",
+  "entry_path": "~/.agents/skills/cursor-ask/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/cursor-ask/SKILL.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "skill-opt",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/skillopt",
+  "entry_path": "~/.codex/skills/skillopt/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/skillopt/SKILL.md",
+    "~/.codex/skills/skillopt/references/feedback-sources.md",
+    "~/.codex/skills/skillopt/references/fidelity.md",
+    "~/.codex/skills/skillopt/references/loop.md",
+    "~/.codex/skills/skillopt/references/rubrics.md",
+    "~/.codex/skills/skillopt/scripts/ledger.py",
+    "~/.codex/skills/skillopt/templates/config.yml",
+    "~/.codex/skills/skillopt/templates/report.md",
+    "~/.codex/skills/skillopt/templates/task.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

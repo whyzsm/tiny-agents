@@ -1,3 +1,13 @@
+---
+name: ui-ux-design
+description: Modern UI/UX design principles, patterns, and best practices for web
+  and mobile applications. Use when building user interfaces, designing layouts, choosing
+  color palettes, implementing responsive design, ensuring accessibility (WCAG), or
+  creating beautiful modern applications. Includes 2026 design trends, Tailwind CSS
+  patterns, Shadcn/ui integration, micro-interactions, and mobile-first responsive
+  design.
+---
+
 # UI/UX Design
 
 **Name:** ui-ux-design  

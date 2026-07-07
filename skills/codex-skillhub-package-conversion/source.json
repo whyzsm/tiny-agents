@@ -1,0 +1,15 @@
+{
+  "name": "codex-skillhub-package-conversion",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/memories/skills/codex-skillhub-package-conversion",
+  "entry_path": "~/.codex/memories/skills/codex-skillhub-package-conversion/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/memories/skills/codex-skillhub-package-conversion/SKILL.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

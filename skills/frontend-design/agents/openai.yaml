@@ -1,0 +1,6 @@
+interface:
+  display_name: Frontend Design
+  short_description: 高质量前端界面实现
+  default_prompt: Use $frontend-design to build a distinctive, polished frontend interface.
+policy:
+  allow_implicit_invocation: true

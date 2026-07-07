@@ -1,0 +1,17 @@
+{
+  "name": "simplify",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/simplify",
+  "entry_path": "~/.codex/skills/simplify/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/simplify/SKILL.md",
+    "~/.codex/skills/simplify/_meta.json",
+    "~/.codex/skills/simplify/agents/openai.yaml"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

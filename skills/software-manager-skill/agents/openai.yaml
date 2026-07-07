@@ -1,0 +1,4 @@
+interface:
+  display_name: "Software Product Manager"
+  short_description: "Product manager workflow for PRDs, planning, and diagrams"
+  default_prompt: "Use $software-manager-skill to plan this product idea, prioritize scope, and draft the PRD workflow."

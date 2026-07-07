@@ -1,0 +1,27 @@
+{
+  "name": "code-review-assistant",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/code-review-assistant",
+  "entry_path": "~/.codex/skills/code-review-assistant/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/code-review-assistant/SKILL.md",
+    "~/.codex/skills/code-review-assistant/_meta.json",
+    "~/.codex/skills/code-review-assistant/agents/openai.yaml",
+    "~/.codex/skills/code-review-assistant/references/languages/go.md",
+    "~/.codex/skills/code-review-assistant/references/languages/java.md",
+    "~/.codex/skills/code-review-assistant/references/languages/javascript.md",
+    "~/.codex/skills/code-review-assistant/references/languages/python.md",
+    "~/.codex/skills/code-review-assistant/references/languages/rust.md",
+    "~/.codex/skills/code-review-assistant/references/report-template.md",
+    "~/.codex/skills/code-review-assistant/references/review-dimensions.md",
+    "~/.codex/skills/code-review-assistant/references/severity-guide.md",
+    "~/.codex/skills/code-review-assistant/scripts/get_diff.py",
+    "~/.codex/skills/code-review-assistant/scripts/get_pr_diff.py"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

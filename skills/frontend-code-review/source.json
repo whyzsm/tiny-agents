@@ -1,0 +1,18 @@
+{
+  "name": "frontend-code-review",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/frontend-code-review",
+  "entry_path": "~/.codex/skills/frontend-code-review/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/frontend-code-review/SKILL.md",
+    "~/.codex/skills/frontend-code-review/references/business-logic.md",
+    "~/.codex/skills/frontend-code-review/references/code-quality.md",
+    "~/.codex/skills/frontend-code-review/references/performance.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

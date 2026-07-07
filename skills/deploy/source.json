@@ -1,0 +1,18 @@
+{
+  "name": "deploy",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/deploy",
+  "entry_path": "~/.agents/skills/deploy/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/deploy/SKILL.md",
+    "~/.agents/skills/deploy/references/analytics.md",
+    "~/.agents/skills/deploy/references/deployment-setup.md",
+    "~/.agents/skills/deploy/references/health-checking.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

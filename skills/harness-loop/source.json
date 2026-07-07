@@ -1,0 +1,16 @@
+{
+  "name": "harness-loop",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/harness-loop",
+  "entry_path": "~/.agents/skills/harness-loop/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/harness-loop/SKILL.md",
+    "~/.agents/skills/harness-loop/references/flow.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

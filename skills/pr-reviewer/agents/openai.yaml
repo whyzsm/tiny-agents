@@ -1,0 +1,4 @@
+interface:
+  display_name: "PR Reviewer"
+  short_description: "GitHub PR diff review with risk and lint checks"
+  default_prompt: "Use $pr-reviewer for this task."

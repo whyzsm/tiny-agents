@@ -1,0 +1,4 @@
+interface:
+  display_name: "Simplify"
+  short_description: "Behavior-preserving simplification"
+  default_prompt: "Use $simplify for this task."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Code Standard"
+  short_description: "Lint, formatting, naming, and team conventions"
+  default_prompt: "Use $project-code-standard for this task."

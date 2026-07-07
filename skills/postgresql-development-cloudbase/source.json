@@ -1,0 +1,23 @@
+{
+  "name": "postgresql-development-cloudbase",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/cloudbase/references/postgresql-development",
+  "entry_path": "~/.codex/skills/cloudbase/references/postgresql-development/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/cloudbase/references/postgresql-development/SKILL.md",
+    "~/.codex/skills/cloudbase/references/postgresql-development/references/app-workflow.md",
+    "~/.codex/skills/cloudbase/references/postgresql-development/references/auth-and-rls.md",
+    "~/.codex/skills/cloudbase/references/postgresql-development/references/http-api.md",
+    "~/.codex/skills/cloudbase/references/postgresql-development/references/index.md",
+    "~/.codex/skills/cloudbase/references/postgresql-development/references/pg-mode-overview.md",
+    "~/.codex/skills/cloudbase/references/postgresql-development/references/rls-patterns.md",
+    "~/.codex/skills/cloudbase/references/postgresql-development/references/storage-pg.md",
+    "~/.codex/skills/cloudbase/references/postgresql-development/references/troubleshooting.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

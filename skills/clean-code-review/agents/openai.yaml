@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean Code Review"
+  short_description: "Clean-code smells and maintainability review"
+  default_prompt: "Use $clean-code-review for this task."

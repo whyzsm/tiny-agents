@@ -1,0 +1,4 @@
+interface:
+  display_name: "App Skill"
+  short_description: "App React project workflow"
+  default_prompt: "Use $app-skill to work on the T-MAX H5-demo React app."

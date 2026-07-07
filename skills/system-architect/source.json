@@ -1,0 +1,23 @@
+{
+  "name": "system-architect",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/system-architect",
+  "entry_path": "~/.codex/skills/system-architect/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/system-architect/SKILL.md",
+    "~/.codex/skills/system-architect/_meta.json",
+    "~/.codex/skills/system-architect/agents/openai.yaml",
+    "~/.codex/skills/system-architect/assets/templates/ARCHITECTURE.md",
+    "~/.codex/skills/system-architect/assets/templates/README.md",
+    "~/.codex/skills/system-architect/references/js-ts-standards.md",
+    "~/.codex/skills/system-architect/references/python-standards.md",
+    "~/.codex/skills/system-architect/references/scaffolding.md",
+    "~/.codex/skills/system-architect/references/security-checklist.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

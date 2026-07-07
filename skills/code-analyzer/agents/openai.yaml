@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Analyzer"
+  short_description: "Architecture, DDD, flow, and complexity analysis"
+  default_prompt: "Use $code-analyzer for this task."

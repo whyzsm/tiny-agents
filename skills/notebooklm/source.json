@@ -1,0 +1,17 @@
+{
+  "name": "notebookLM",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/notebooklm",
+  "entry_path": "~/.agents/skills/notebooklm/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/notebooklm/SKILL.md",
+    "~/.agents/skills/notebooklm/references/notebooklm-slides.md",
+    "~/.agents/skills/notebooklm/references/notebooklm-yaml.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

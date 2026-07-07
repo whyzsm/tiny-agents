@@ -1,0 +1,17 @@
+{
+  "name": "critical-code-reviewer",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/critical-code-reviewer",
+  "entry_path": "~/.codex/skills/critical-code-reviewer/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/critical-code-reviewer/SKILL.md",
+    "~/.codex/skills/critical-code-reviewer/_meta.json",
+    "~/.codex/skills/critical-code-reviewer/agents/openai.yaml"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

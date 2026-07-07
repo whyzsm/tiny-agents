@@ -1,0 +1,16 @@
+{
+  "name": "getskill",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/getskill",
+  "entry_path": "~/.codex/skills/getskill/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/getskill/SKILL.md",
+    "~/.codex/skills/getskill/_meta.json"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

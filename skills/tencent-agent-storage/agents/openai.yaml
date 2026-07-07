@@ -1,0 +1,7 @@
+interface:
+  display_name: Tencent Agent Storage
+  short_description: 专属云盘文件交付与管理
+  default_prompt: Use $tencent-agent-storage to handle the relevant Tencent Cloud
+    task.
+policy:
+  allow_implicit_invocation: true

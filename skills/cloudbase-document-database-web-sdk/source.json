@@ -1,0 +1,22 @@
+{
+  "name": "cloudbase-document-database-web-sdk",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/cloudbase/references/no-sql-web-sdk",
+  "entry_path": "~/.codex/skills/cloudbase/references/no-sql-web-sdk/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/cloudbase/references/no-sql-web-sdk/SKILL.md",
+    "~/.codex/skills/cloudbase/references/no-sql-web-sdk/aggregation.md",
+    "~/.codex/skills/cloudbase/references/no-sql-web-sdk/complex-queries.md",
+    "~/.codex/skills/cloudbase/references/no-sql-web-sdk/crud-operations.md",
+    "~/.codex/skills/cloudbase/references/no-sql-web-sdk/geolocation.md",
+    "~/.codex/skills/cloudbase/references/no-sql-web-sdk/pagination.md",
+    "~/.codex/skills/cloudbase/references/no-sql-web-sdk/realtime.md",
+    "~/.codex/skills/cloudbase/references/no-sql-web-sdk/security-rules.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

@@ -2,17 +2,8 @@
   "name": "ui-ux-pro-max",
   "kind": "skill",
   "status": "ready",
-  "source_path": "~/.codex/skills/ui-ux-pro-max",
-  "entry_path": "~/.codex/skills/ui-ux-pro-max/SKILL.md",
-  "reason": "standard_skill",
-  "files": [
-    "~/.codex/skills/ui-ux-pro-max/SKILL.md",
-    "~/.codex/skills/ui-ux-pro-max/references/design-tokens.md",
-    "~/.codex/skills/ui-ux-pro-max/references/examples.md",
-    "~/.codex/skills/ui-ux-pro-max/references/style-presets.md"
-  ],
-  "warnings": [],
-  "secret_findings": [],
-  "scan_generated_at": "2026-07-05T22:36:48+08:00",
-  "source_root": "~/.codex"
+  "source_package": "design-interaction-design",
+  "source_kind": "zip",
+  "source_ref": "design-interaction-design/skills/ui-ux-pro-max.zip",
+  "converted_for": "codex-skills"
 }

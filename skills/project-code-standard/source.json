@@ -1,0 +1,17 @@
+{
+  "name": "project-code-standard",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/project-code-standard",
+  "entry_path": "~/.codex/skills/project-code-standard/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/project-code-standard/SKILL.md",
+    "~/.codex/skills/project-code-standard/_meta.json",
+    "~/.codex/skills/project-code-standard/agents/openai.yaml"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

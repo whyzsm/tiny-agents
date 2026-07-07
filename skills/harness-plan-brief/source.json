@@ -1,0 +1,16 @@
+{
+  "name": "harness-plan-brief",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/harness-plan-brief",
+  "entry_path": "~/.agents/skills/harness-plan-brief/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/harness-plan-brief/SKILL.md",
+    "~/.agents/skills/harness-plan-brief/schemas/plan-brief-context.v1.schema.json"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

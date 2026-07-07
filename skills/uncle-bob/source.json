@@ -1,0 +1,19 @@
+{
+  "name": "uncle-bob",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/uncle-bob",
+  "entry_path": "~/.codex/skills/uncle-bob/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/uncle-bob/SKILL.md",
+    "~/.codex/skills/uncle-bob/_meta.json",
+    "~/.codex/skills/uncle-bob/agents/openai.yaml",
+    "~/.codex/skills/uncle-bob/references/clean-architecture.md",
+    "~/.codex/skills/uncle-bob/references/solid.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

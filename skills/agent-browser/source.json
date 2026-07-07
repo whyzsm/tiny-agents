@@ -1,0 +1,17 @@
+{
+  "name": "agent-browser",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/agent-browser",
+  "entry_path": "~/.agents/skills/agent-browser/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/agent-browser/SKILL.md",
+    "~/.agents/skills/agent-browser/references/ai-snapshot-workflow.md",
+    "~/.agents/skills/agent-browser/references/browser-automation.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

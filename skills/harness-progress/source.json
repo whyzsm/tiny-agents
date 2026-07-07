@@ -1,0 +1,19 @@
+{
+  "name": "harness-progress",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/harness-progress",
+  "entry_path": "~/.agents/skills/harness-progress/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/harness-progress/SKILL.md",
+    "~/.agents/skills/harness-progress/schemas/orchestration-ledger.v1.schema.json",
+    "~/.agents/skills/harness-progress/schemas/orchestration-scorecard.v1.schema.json",
+    "~/.agents/skills/harness-progress/schemas/orchestration-totals.v1.schema.json",
+    "~/.agents/skills/harness-progress/schemas/progress-snapshot.v1.schema.json"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: Tencent Cloud Lighthouse
+  short_description: 轻量服务器运维与应用部署
+  default_prompt: Use $tencentcloud-lighthouse-skill to handle the relevant Tencent
+    Cloud task.
+policy:
+  allow_implicit_invocation: true

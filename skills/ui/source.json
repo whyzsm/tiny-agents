@@ -1,0 +1,19 @@
+{
+  "name": "ui",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/ui",
+  "entry_path": "~/.agents/skills/ui/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/ui/SKILL.md",
+    "~/.agents/skills/ui/references/component-generation.md",
+    "~/.agents/skills/ui/references/feedback-forms.md",
+    "~/.agents/skills/ui/references/frontend-design.md",
+    "~/.agents/skills/ui/references/ui-skills.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

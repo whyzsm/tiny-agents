@@ -1,0 +1,4 @@
+interface:
+  display_name: "Security Audit"
+  short_description: "Secrets, vulnerability, and hardening audit"
+  default_prompt: "Use $security-audit for this task."

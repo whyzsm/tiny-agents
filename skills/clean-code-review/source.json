@@ -1,0 +1,24 @@
+{
+  "name": "clean-code-review",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/clean-code-review",
+  "entry_path": "~/.codex/skills/clean-code-review/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/clean-code-review/README.md",
+    "~/.codex/skills/clean-code-review/SKILL.md",
+    "~/.codex/skills/clean-code-review/_meta.json",
+    "~/.codex/skills/clean-code-review/agents/openai.yaml",
+    "~/.codex/skills/clean-code-review/references/anti-patterns.md",
+    "~/.codex/skills/clean-code-review/references/code-smells.md",
+    "~/.codex/skills/clean-code-review/references/refactoring-catalog.md",
+    "~/.codex/skills/clean-code-review/templates/platforms/claude-knowledge.md",
+    "~/.codex/skills/clean-code-review/templates/platforms/copilot-instructions.md",
+    "~/.codex/skills/clean-code-review/templates/platforms/cursorrules.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

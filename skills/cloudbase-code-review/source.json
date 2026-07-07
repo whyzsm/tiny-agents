@@ -1,0 +1,24 @@
+{
+  "name": "cloudbase-code-review",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/cloudbase/references/cloudbase-code-review",
+  "entry_path": "~/.codex/skills/cloudbase/references/cloudbase-code-review/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/cloudbase/references/cloudbase-code-review/SKILL.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-code-review/references/RULES_INDEX.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-code-review/references/rules/cross-cutting/AUTH001.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-code-review/references/rules/cross-cutting/SKILL001.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-code-review/references/rules/postgresql/PG-CR001.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-code-review/references/rules/postgresql/PG-CR002.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-code-review/references/rules/postgresql/PG-CR003.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-code-review/references/rules/postgresql/PG-CR004.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-code-review/references/rules/postgresql/PG-CR005.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-code-review/references/rules/storage/STORAGE001.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

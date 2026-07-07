@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD to Design Doc"
+  short_description: "Convert PRDs into design handoff documents"
+  default_prompt: "Use $prd-to-design-doc to convert this PRD into a design requirements document."

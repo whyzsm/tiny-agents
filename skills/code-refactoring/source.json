@@ -1,0 +1,17 @@
+{
+  "name": "code-refactoring",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/code-refactoring",
+  "entry_path": "~/.codex/skills/code-refactoring/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/code-refactoring/SKILL.md",
+    "~/.codex/skills/code-refactoring/_meta.json",
+    "~/.codex/skills/code-refactoring/agents/openai.yaml"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

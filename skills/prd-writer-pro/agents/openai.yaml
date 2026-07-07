@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Writer Pro"
+  short_description: "Draft polished product requirements documents"
+  default_prompt: "Use $prd-writer-pro to write a professional PRD from this requirement outline."

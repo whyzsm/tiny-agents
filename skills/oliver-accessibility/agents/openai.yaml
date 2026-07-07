@@ -1,0 +1,6 @@
+interface:
+  display_name: Accessibility
+  short_description: WCAG 无障碍合规实现
+  default_prompt: Use $oliver-accessibility to make this web UI accessible and WCAG-aligned.
+policy:
+  allow_implicit_invocation: true

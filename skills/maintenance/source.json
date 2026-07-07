@@ -1,0 +1,16 @@
+{
+  "name": "maintenance",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/maintenance",
+  "entry_path": "~/.agents/skills/maintenance/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/maintenance/SKILL.md",
+    "~/.agents/skills/maintenance/references/cleanup.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

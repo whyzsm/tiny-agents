@@ -1,0 +1,19 @@
+{
+  "name": "principles",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/principles",
+  "entry_path": "~/.agents/skills/principles/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/principles/SKILL.md",
+    "~/.agents/skills/principles/references/diff-aware-editing.md",
+    "~/.agents/skills/principles/references/general-principles.md",
+    "~/.agents/skills/principles/references/repo-context-reading.md",
+    "~/.agents/skills/principles/references/vibecoder-guide.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

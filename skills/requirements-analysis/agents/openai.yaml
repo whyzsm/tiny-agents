@@ -1,0 +1,4 @@
+interface:
+  display_name: "Requirements Analysis"
+  short_description: "Explore requirements, stories, priorities, and criteria"
+  default_prompt: "Use $requirements-analysis to turn this product idea into structured requirements and user stories."

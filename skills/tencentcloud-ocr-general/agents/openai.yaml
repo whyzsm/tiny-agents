@@ -1,0 +1,7 @@
+interface:
+  display_name: TencentCloud OCR
+  short_description: 腾讯云图片文字识别
+  default_prompt: Use $tencentcloud-ocr-general to handle the relevant Tencent Cloud
+    task.
+policy:
+  allow_implicit_invocation: true

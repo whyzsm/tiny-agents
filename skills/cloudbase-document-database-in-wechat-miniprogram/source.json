@@ -1,0 +1,21 @@
+{
+  "name": "cloudbase-document-database-in-wechat-miniprogram",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/cloudbase/references/no-sql-wx-mp-sdk",
+  "entry_path": "~/.codex/skills/cloudbase/references/no-sql-wx-mp-sdk/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/cloudbase/references/no-sql-wx-mp-sdk/SKILL.md",
+    "~/.codex/skills/cloudbase/references/no-sql-wx-mp-sdk/aggregation.md",
+    "~/.codex/skills/cloudbase/references/no-sql-wx-mp-sdk/complex-queries.md",
+    "~/.codex/skills/cloudbase/references/no-sql-wx-mp-sdk/crud-operations.md",
+    "~/.codex/skills/cloudbase/references/no-sql-wx-mp-sdk/geolocation.md",
+    "~/.codex/skills/cloudbase/references/no-sql-wx-mp-sdk/pagination.md",
+    "~/.codex/skills/cloudbase/references/no-sql-wx-mp-sdk/security-rules.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

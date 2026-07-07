@@ -1,0 +1,7 @@
+interface:
+  display_name: UI/UX Design Guide
+  short_description: 微交互、动效与响应式设计规范
+  default_prompt: Use $ui-ux-design to define responsive UI/UX patterns, micro-interactions,
+    and accessibility details.
+policy:
+  allow_implicit_invocation: true

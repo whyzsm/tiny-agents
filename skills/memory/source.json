@@ -1,0 +1,20 @@
+{
+  "name": "memory",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/memory",
+  "entry_path": "~/.agents/skills/memory/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/memory/SKILL.md",
+    "~/.agents/skills/memory/references/plans-merging.md",
+    "~/.agents/skills/memory/references/ssot-initialization.md",
+    "~/.agents/skills/memory/references/sync-project-specs.md",
+    "~/.agents/skills/memory/references/sync-ssot-from-memory.md",
+    "~/.agents/skills/memory/references/workflow-migration.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

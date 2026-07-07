@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Refactoring"
+  short_description: "Safe refactoring patterns and plans"
+  default_prompt: "Use $code-refactoring for this task."

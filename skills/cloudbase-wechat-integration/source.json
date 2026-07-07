@@ -1,0 +1,21 @@
+{
+  "name": "cloudbase-wechat-integration",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/cloudbase/references/cloudbase-wechat-integration",
+  "entry_path": "~/.codex/skills/cloudbase/references/cloudbase-wechat-integration/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/cloudbase/references/cloudbase-wechat-integration/SKILL.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-wechat-integration/references/mini-program-pay.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-wechat-integration/references/native-qr-pay.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-wechat-integration/references/official-account-jsapi-pay.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-wechat-integration/references/official-account-oauth.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-wechat-integration/references/overview.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-wechat-integration/references/troubleshooting.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

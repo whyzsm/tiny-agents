@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Reviewer"
+  short_description: "Score PRDs and list evidence-based improvements"
+  default_prompt: "Use $prd-reviewer to review and score this PRD with concrete deductions and improvement suggestions."

@@ -1,0 +1,7 @@
+interface:
+  display_name: UI Audit
+  short_description: UX 可用性审计与优化建议
+  default_prompt: Use $ui-audit to audit this interface for visual hierarchy, cognitive
+    load, navigation, and accessibility.
+policy:
+  allow_implicit_invocation: true

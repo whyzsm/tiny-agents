@@ -1,0 +1,20 @@
+{
+  "name": "cloud-functions",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/cloudbase/references/cloud-functions",
+  "entry_path": "~/.codex/skills/cloudbase/references/cloud-functions/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/cloudbase/references/cloud-functions/SKILL.md",
+    "~/.codex/skills/cloudbase/references/cloud-functions/checklist.md",
+    "~/.codex/skills/cloudbase/references/cloud-functions/references.md",
+    "~/.codex/skills/cloudbase/references/cloud-functions/references/event-functions.md",
+    "~/.codex/skills/cloudbase/references/cloud-functions/references/http-functions.md",
+    "~/.codex/skills/cloudbase/references/cloud-functions/references/operations-and-config.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

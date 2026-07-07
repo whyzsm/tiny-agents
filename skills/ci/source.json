@@ -1,0 +1,17 @@
+{
+  "name": "ci",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/ci",
+  "entry_path": "~/.agents/skills/ci/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/ci/SKILL.md",
+    "~/.agents/skills/ci/references/analyzing-failures.md",
+    "~/.agents/skills/ci/references/fixing-tests.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

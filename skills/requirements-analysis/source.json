@@ -1,0 +1,21 @@
+{
+  "name": "requirements-analysis",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/requirements-analysis",
+  "entry_path": "~/.codex/skills/requirements-analysis/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/requirements-analysis/SKILL.md",
+    "~/.codex/skills/requirements-analysis/agents/openai.yaml",
+    "~/.codex/skills/requirements-analysis/references/complete-example.md",
+    "~/.codex/skills/requirements-analysis/references/epic-template.md",
+    "~/.codex/skills/requirements-analysis/references/prioritization-methods.md",
+    "~/.codex/skills/requirements-analysis/references/requirement-template.md",
+    "~/.codex/skills/requirements-analysis/references/user-story-template.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

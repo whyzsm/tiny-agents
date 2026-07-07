@@ -1,0 +1,20 @@
+{
+  "name": "code-analyzer",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/code-analyzer",
+  "entry_path": "~/.codex/skills/code-analyzer/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/code-analyzer/SKILL.md",
+    "~/.codex/skills/code-analyzer/_meta.json",
+    "~/.codex/skills/code-analyzer/agents/openai.yaml",
+    "~/.codex/skills/code-analyzer/references/best-practices.md",
+    "~/.codex/skills/code-analyzer/scripts/analyze.py",
+    "~/.codex/skills/code-analyzer/scripts/ddd-analyzer.py"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

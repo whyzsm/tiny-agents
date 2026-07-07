@@ -1,0 +1,9 @@
+{
+  "name": "oliver-accessibility",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "design-interaction-design",
+  "source_kind": "zip",
+  "source_ref": "design-interaction-design/skills/oliver-accessibility.zip",
+  "converted_for": "codex-skills"
+}

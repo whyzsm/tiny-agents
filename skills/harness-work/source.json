@@ -1,0 +1,19 @@
+{
+  "name": "harness-work",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/harness-work",
+  "entry_path": "~/.agents/skills/harness-work/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/harness-work/SKILL.md",
+    "~/.agents/skills/harness-work/references/completion-report.md",
+    "~/.agents/skills/harness-work/references/execution-modes.md",
+    "~/.agents/skills/harness-work/references/failure-reticketing.md",
+    "~/.agents/skills/harness-work/references/review-loop.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

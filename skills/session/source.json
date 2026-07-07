@@ -1,0 +1,17 @@
+{
+  "name": "session",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/session",
+  "entry_path": "~/.agents/skills/session/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/session/SKILL.md",
+    "~/.agents/skills/session/references/session-control.md",
+    "~/.agents/skills/session/references/state-transition.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "workflow-guide",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/workflow-guide",
+  "entry_path": "~/.agents/skills/workflow-guide/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/workflow-guide/SKILL.md",
+    "~/.agents/skills/workflow-guide/examples/typical-workflow.md",
+    "~/.agents/skills/workflow-guide/references/commands.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

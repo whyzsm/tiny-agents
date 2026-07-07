@@ -1,0 +1,21 @@
+{
+  "name": "using-superpowers",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/using-superpowers",
+  "entry_path": "~/.codex/skills/using-superpowers/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/using-superpowers/SKILL.md",
+    "~/.codex/skills/using-superpowers/references/antigravity-tools.md",
+    "~/.codex/skills/using-superpowers/references/claude-code-tools.md",
+    "~/.codex/skills/using-superpowers/references/codex-tools.md",
+    "~/.codex/skills/using-superpowers/references/copilot-tools.md",
+    "~/.codex/skills/using-superpowers/references/gemini-tools.md",
+    "~/.codex/skills/using-superpowers/references/pi-tools.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

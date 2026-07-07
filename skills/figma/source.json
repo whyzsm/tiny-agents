@@ -1,0 +1,22 @@
+{
+  "name": "figma",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/figma",
+  "entry_path": "~/.agents/skills/figma/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/figma/LICENSE.txt",
+    "~/.agents/skills/figma/SKILL.md",
+    "~/.agents/skills/figma/agents/openai.yaml",
+    "~/.agents/skills/figma/assets/figma-small.svg",
+    "~/.agents/skills/figma/assets/figma.png",
+    "~/.agents/skills/figma/assets/icon.svg",
+    "~/.agents/skills/figma/references/figma-mcp-config.md",
+    "~/.agents/skills/figma/references/figma-tools-and-prompts.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

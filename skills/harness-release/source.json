@@ -1,0 +1,18 @@
+{
+  "name": "harness-release",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.agents/skills/harness-release",
+  "entry_path": "~/.agents/skills/harness-release/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.agents/skills/harness-release/SKILL.md",
+    "~/.agents/skills/harness-release/references/bump-detection.md",
+    "~/.agents/skills/harness-release/references/release-notes.md",
+    "~/.agents/skills/harness-release/references/version-files.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.agents",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

@@ -1,36 +1,30 @@
 ---
 name: design-interaction-design
-description: 交互设计智能体。用于完整交互设计工作流：用户研究、信息架构、交互规格、UX 审计、微交互、前端界面实现和无障碍合规交付。触发于“交互设计、用户旅程、信息架构、UX 审计、微交互、无障碍、界面原型、前端交互实现”等任务。
+description: 从数据驱动的用户画像构建与旅程映射、UI/UX信息架构与视觉风格设计、自动化UX可用性审计（视觉层级/认知负荷/导航评估）、微交互设计与WCAG
+  2.2无障碍规范，到前端界面实现与WCAG 2.1 AA合规实现的完整交互设计工作流。覆盖用户研究、交互方案、可用性评估和无障碍实现全链路。
 ---
 
-# 交互设计智能体
+# 交互设计
 
-当用户要求做交互设计、界面体验方案、UX 审计、微交互设计、前端交互实现或无障碍合规时，使用本智能体串联以下已安装技能：
+Use this skill as the routing entry point for interaction design work. It coordinates the companion design, UX, frontend, and accessibility skills in this bundle instead of replacing them.
 
-1. `ux-researcher`
-2. `ui-ux-pro-max`
-3. `ui-audit`
-4. `ui-ux-design`
-5. `frontend-design`
-6. `oliver-accessibility`
+## Workflow
 
-## 工作流
+1. Read `references/guide.md` to classify the request and decide which companion skills are needed.
+2. Start with user research when product context is unclear; otherwise enter at the narrowest useful step.
+3. Preserve the user's product facts, constraints, brand direction, and target platform. Mark assumptions explicitly.
+4. For implementation work, follow the current repo stack and component system before introducing new UI patterns or dependencies.
+5. Return concrete deliverables: research findings, IA, interaction specs, UX audit, motion/microinteraction guidance, frontend code, accessibility evidence, or blockers.
 
-先读取 `references/workflow.md`，按任务范围选择必要步骤，不要机械输出无关文档。
+## Companion Skills
 
-默认交付顺序：
+- `$ux-researcher`: 用户画像、旅程地图与研究洞察
+- `$ui-ux-pro-max`: 信息架构、视觉风格与设计系统
+- `$ui-audit`: UX 可用性审计与优化建议
+- `$ui-ux-design`: 微交互、动效与响应式设计规范
+- `$frontend-design`: 高质量前端界面实现
+- `$oliver-accessibility`: WCAG 无障碍合规实现
 
-1. 用户研究与画像构建
-2. 信息架构与交互方案设计
-3. UX 可用性审计
-4. 微交互与动效设计
-5. 交互原型优化与前端实现
-6. 无障碍合规实现
+## Output
 
-## 输出要求
-
-- 明确区分事实、推断和待确认问题。
-- 设计方案必须能被前端实现，不输出空泛设计口号。
-- 若涉及代码实现，优先遵循当前项目已有技术栈和组件体系。
-- 若涉及 UI，必须覆盖响应式、交互状态、错误态、加载态、空态和可访问性。
-- 若没有足够产品背景，先基于已有信息产出最小可执行方案，并列出缺口。
+Produce only the deliverables that match the request. For full interaction-design packages, include user research, information architecture, interaction specifications, UX audit findings, microinteraction guidance, frontend implementation notes or code, and accessibility compliance notes.

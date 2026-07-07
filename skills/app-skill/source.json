@@ -1,0 +1,16 @@
+{
+  "name": "app-skill",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/app-skill",
+  "entry_path": "~/.codex/skills/app-skill/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/app-skill/SKILL.md",
+    "~/.codex/skills/app-skill/agents/openai.yaml"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

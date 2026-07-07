@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Review Assistant"
+  short_description: "Structured Chinese code review reports"
+  default_prompt: "Use $code-review-assistant for this task."

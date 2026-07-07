@@ -1,0 +1,4 @@
+interface:
+  display_name: "System Architect"
+  short_description: "Architecture and modular design planning"
+  default_prompt: "Use $system-architect for this task."

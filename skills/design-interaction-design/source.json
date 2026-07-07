@@ -2,16 +2,8 @@
   "name": "design-interaction-design",
   "kind": "skill",
   "status": "ready",
-  "source_path": "~/.codex/skills/design-interaction-design",
-  "entry_path": "~/.codex/skills/design-interaction-design/SKILL.md",
-  "reason": "standard_skill",
-  "files": [
-    "~/.codex/skills/design-interaction-design/SKILL.md",
-    "~/.codex/skills/design-interaction-design/agents/openai.yaml",
-    "~/.codex/skills/design-interaction-design/references/workflow.md"
-  ],
-  "warnings": [],
-  "secret_findings": [],
-  "scan_generated_at": "2026-07-05T22:36:48+08:00",
-  "source_root": "~/.codex"
+  "source_package": "design-interaction-design",
+  "source_kind": "skillset",
+  "source_ref": "design-interaction-design/skillsets/design-interaction-design.md",
+  "converted_for": "codex-skills"
 }

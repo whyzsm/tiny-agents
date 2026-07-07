@@ -1,0 +1,25 @@
+{
+  "name": "cloudbase-cli",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/cloudbase/references/cloudbase-cli",
+  "entry_path": "~/.codex/skills/cloudbase/references/cloudbase-cli/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/cloudbase/references/cloudbase-cli/SKILL.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-cli/references/access.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-cli/references/app.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-cli/references/cloudrun.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-cli/references/core.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-cli/references/functions.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-cli/references/hosting.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-cli/references/mysql.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-cli/references/nosql.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-cli/references/permission.md",
+    "~/.codex/skills/cloudbase/references/cloudbase-cli/references/storage.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

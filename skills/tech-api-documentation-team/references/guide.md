@@ -1,4 +1,4 @@
-# Codex API 文档专家团
+# API 文档专家团
 
 `$tech-api-documentation-team` API 文档工作流入口
 

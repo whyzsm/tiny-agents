@@ -5,7 +5,7 @@
 | 分类 | 专家团 | 名称 | 子技能 |
 |---|---|---|---|
 | 技术 | `harmony-expert-team` | HarmonyOS 专家团 | `harmony-os-ask`<br>`harmony-os-act`<br>`generate-ui-code`<br>`service-widget` |
-| 技术 | `tech-api-documentation` | Codex API 文档专家团 | `sovereign-api-docs-generator`<br>`api-dev`<br>`api-doc-writer`<br>`qa-api-tester`<br>`afrexai-api-docs` |
+| 技术 | `tech-api-documentation` | API 文档专家团 | `sovereign-api-docs-generator`<br>`api-dev`<br>`api-doc-writer`<br>`qa-api-tester`<br>`afrexai-api-docs` |
 | 技术 | `tech-bug-troubleshooting` | BUG 排查专家团 | `log-analyzer`<br>`debug-pro`<br>`code-error-fixer`<br>`superpowers-systematic-debugging`<br>`bug-fixing-openclaw`<br>`nexus-error-explain` |
 | 技术 | `tech-code-refactoring` | 代码重构专家团 | `code-analyzer`<br>`agent-git-oracle`<br>`uncle-bob`<br>`code-refactoring`<br>`system-architect`<br>`simplify` |
 | 技术 | `tech-code-review` | 代码审查专家团 | `pr-reviewer`<br>`critical-code-reviewer`<br>`project-code-standard`<br>`security-audit`<br>`clean-code-review`<br>`code-review-assistant` |

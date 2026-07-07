@@ -2,10 +2,10 @@
   "name": "afrexai-event-management",
   "kind": "skill",
   "status": "ready",
-  "source_package": "marketing-event-planning",
+  "source_package": "marketing-event-planning-team",
   "source_kind": "zip",
   "source_refs": [
-    "marketing-event-planning/skills/afrexai-event-management.zip"
+    "marketing-event-planning-team/skills/afrexai-event-management.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

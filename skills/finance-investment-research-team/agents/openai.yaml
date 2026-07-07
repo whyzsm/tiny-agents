@@ -1,0 +1,7 @@
+interface:
+  display_name: 投研报告
+  short_description: 从A股/美股实时行情数据获取到个股基本面深度研究、行业分析、D…
+  default_prompt: Use $finance-investment-research-team to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

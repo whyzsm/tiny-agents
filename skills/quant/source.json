@@ -2,10 +2,10 @@
   "name": "quant",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-quant-backtesting",
+  "source_package": "finance-quant-backtesting-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-quant-backtesting/skills/quant.zip"
+    "finance-quant-backtesting-team/skills/quant.zip"
   ],
   "converted_for": "codex-skills"
 }

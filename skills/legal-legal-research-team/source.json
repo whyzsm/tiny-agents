@@ -1,0 +1,12 @@
+{
+  "name": "legal-legal-research-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-legal-research-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "legal-legal-research-team/skillsets/legal-legal-research-team.md"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

@@ -1,9 +1,0 @@
-{
-  "name": "tech-tencentcloud-expert",
-  "kind": "skill",
-  "status": "ready",
-  "source_package": "tech-tencentcloud-expert",
-  "source_kind": "skillset",
-  "source_ref": "tech-tencentcloud-expert/skillsets/tech-tencentcloud-expert.md",
-  "converted_for": "codex-skills"
-}

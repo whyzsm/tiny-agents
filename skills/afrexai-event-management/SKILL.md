@@ -1,7 +1,7 @@
 ---
 name: afrexai-event-management
 description: Event Management & Conference Engine skill. Afrexai Event Management
-  skill from the marketing-event-planning expert package.
+  skill from the marketing-event-planning-team expert package.
 ---
 
 # Event Management & Conference Engine

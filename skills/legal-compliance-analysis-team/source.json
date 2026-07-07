@@ -1,0 +1,12 @@
+{
+  "name": "legal-compliance-analysis-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-compliance-analysis-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "legal-compliance-analysis-team/skillsets/legal-compliance-analysis-team.md"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

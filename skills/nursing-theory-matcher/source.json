@@ -2,10 +2,10 @@
   "name": "nursing-theory-matcher",
   "kind": "skill",
   "status": "ready",
-  "source_package": "healthcare-nursing-plan",
+  "source_package": "healthcare-nursing-plan-team",
   "source_kind": "zip",
   "source_refs": [
-    "healthcare-nursing-plan/skills/nursing-theory-matcher.zip"
+    "healthcare-nursing-plan-team/skills/nursing-theory-matcher.zip"
   ],
   "converted_for": "codex-skills"
 }

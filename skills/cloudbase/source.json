@@ -2,8 +2,8 @@
   "name": "cloudbase",
   "kind": "skill",
   "status": "ready",
-  "source_package": "tech-tencentcloud-expert",
+  "source_package": "tech-tencentcloud-expert-team",
   "source_kind": "zip",
-  "source_ref": "tech-tencentcloud-expert/skills/cloudbase.zip",
+  "source_ref": "tech-tencentcloud-expert-team/skills/cloudbase.zip",
   "converted_for": "codex-skills"
 }

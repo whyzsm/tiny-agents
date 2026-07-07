@@ -1,7 +1,0 @@
-interface:
-  display_name: 简历筛选
-  short_description: 从简历漏斗式量化评估（基础匹配度/能力匹配度/动机稳定匹配度）…
-  default_prompt: Use $hr-resume-screening to complete this workflow and produce concrete
-    deliverables.
-policy:
-  allow_implicit_invocation: true

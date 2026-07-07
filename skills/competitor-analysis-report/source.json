@@ -2,11 +2,11 @@
   "name": "competitor-analysis-report",
   "kind": "skill",
   "status": "ready",
-  "source_package": "marketing-competitor-analysis",
+  "source_package": "marketing-competitor-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "ecommerce-pricing-analysis/skills/competitor-analysis-report.zip",
-    "marketing-competitor-analysis/skills/competitor-analysis-report.zip"
+    "ecommerce-pricing-analysis-team/skills/competitor-analysis-report.zip",
+    "marketing-competitor-analysis-team/skills/competitor-analysis-report.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

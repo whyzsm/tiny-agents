@@ -1,0 +1,5 @@
+interface:
+  display_name: "品牌视觉"
+  short_description: "从品牌策略到 Logo、配色与视觉物料"
+  default_prompt: "Use $design-brand-visual-team to create a complete brand visual system in Simplified Chinese."
+

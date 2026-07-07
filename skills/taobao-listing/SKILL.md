@@ -1,6 +1,6 @@
 ---
 name: taobao-listing
-description: Taobao Listing skill. Taobao Listing skill from the ecommerce-product-copywriting
+description: Taobao Listing skill. Taobao Listing skill from the ecommerce-product-copywriting-team
   expert package.
 ---
 

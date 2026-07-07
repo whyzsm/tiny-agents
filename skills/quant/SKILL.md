@@ -1,6 +1,6 @@
 ---
 name: quant
-description: quant — 你的智能量化投资助手 skill. Quant skill from the finance-quant-backtesting
+description: quant — 你的智能量化投资助手 skill. Quant skill from the finance-quant-backtesting-team
   expert package.
 ---
 

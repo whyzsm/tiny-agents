@@ -1,0 +1,7 @@
+interface:
+  display_name: 周报日报
+  short_description: 从工作周报日报月报全类型模板化生成与职场人日报周报结构化输出（…
+  default_prompt: Use $hr-weekly-daily-report-team to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,7 +1,7 @@
 ---
 name: ida-instructional-design-agent
 description: IDA – Instructional Design Agent skill. Ida Instructional Design Agent
-  skill from the education-training-program expert package.
+  skill from the education-training-program-team expert package.
 ---
 
 # IDA – Instructional Design Agent

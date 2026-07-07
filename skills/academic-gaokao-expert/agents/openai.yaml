@@ -1,6 +1,0 @@
-interface:
-  display_name: "高考专家"
-  short_description: "面向高考出分后的家庭决策场景，覆盖分数线与一分一段查询、位次判断、冲稳保志愿方案、院校与专业选择、专业背后的行业研究和企业调研…"
-  default_prompt: "Use $academic-gaokao-expert to complete this workflow and produce concrete deliverables."
-policy:
-  allow_implicit_invocation: true

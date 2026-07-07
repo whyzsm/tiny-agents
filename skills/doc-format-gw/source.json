@@ -2,10 +2,10 @@
   "name": "doc-format-gw",
   "kind": "skill",
   "status": "ready",
-  "source_package": "marketing-official-document-writing",
+  "source_package": "marketing-official-document-writing-team",
   "source_kind": "zip",
   "source_refs": [
-    "marketing-official-document-writing/skills/doc-format-gw.zip"
+    "marketing-official-document-writing-team/skills/doc-format-gw.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

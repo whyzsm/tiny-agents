@@ -1,0 +1,19 @@
+{
+  "name": "media-video-editing-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/media-video-editing-team",
+  "entry_path": "~/.codex/skills/media-video-editing-team/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/media-video-editing-team/SKILL.md",
+    "~/.codex/skills/media-video-editing-team/agents/openai.yaml",
+    "~/.codex/skills/media-video-editing-team/references/guide.md",
+    "~/.codex/skills/media-video-editing-team/references/manifest.json",
+    "~/.codex/skills/media-video-editing-team/references/workflow.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

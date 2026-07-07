@@ -1,0 +1,6 @@
+interface:
+  display_name: "论文检索"
+  short_description: "从多数据库学术论文检索下载与引文提取（arXiv/PubMed/Semantic Scholar/Google Scholar…"
+  default_prompt: "Use $academic-paper-search-team to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

@@ -2,10 +2,10 @@
   "name": "meeting-minutes-organizer",
   "kind": "skill",
   "status": "ready",
-  "source_package": "hr-meeting-minutes",
+  "source_package": "hr-meeting-minutes-team",
   "source_kind": "zip",
   "source_refs": [
-    "hr-meeting-minutes/skills/meeting-minutes-organizer.zip"
+    "hr-meeting-minutes-team/skills/meeting-minutes-organizer.zip"
   ],
   "converted_for": "codex-skills"
 }

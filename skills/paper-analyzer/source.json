@@ -2,10 +2,10 @@
   "name": "paper-analyzer",
   "kind": "skill",
   "status": "ready",
-  "source_package": "academic-literature-review",
+  "source_package": "academic-literature-review-team",
   "source_kind": "zip",
   "source_refs": [
-    "academic-literature-review/skills/paper-analyzer.zip"
+    "academic-literature-review-team/skills/paper-analyzer.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

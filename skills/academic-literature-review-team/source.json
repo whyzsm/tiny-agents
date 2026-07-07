@@ -1,0 +1,12 @@
+{
+  "name": "academic-literature-review-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "academic-literature-review-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "academic-literature-review-team/skillsets/academic-literature-review-team.md"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

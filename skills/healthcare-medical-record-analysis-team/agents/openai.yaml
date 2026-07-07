@@ -1,0 +1,7 @@
+interface:
+  display_name: 病历分析
+  short_description: 从智能病历结构化组织（病历规范化/主诉提取/病史整理/电子病历…
+  default_prompt: Use $healthcare-medical-record-analysis-team to complete this workflow
+    and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

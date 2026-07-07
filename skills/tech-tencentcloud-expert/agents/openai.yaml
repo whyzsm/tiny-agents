@@ -1,7 +1,0 @@
-interface:
-  display_name: 腾讯云专家
-  short_description: 腾讯云场景路由与专家包入口
-  default_prompt: Use $tech-tencentcloud-expert to route my Tencent Cloud task to
-    the right skills and produce verified results.
-policy:
-  allow_implicit_invocation: true

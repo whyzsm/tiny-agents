@@ -1,0 +1,11 @@
+{
+  "name": "finance-risk-assessment-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "finance-risk-assessment-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "finance-risk-assessment-team/skillsets/finance-risk-assessment-team.md"
+  ],
+  "converted_for": "codex-skills"
+}

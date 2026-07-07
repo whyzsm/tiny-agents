@@ -1,6 +1,6 @@
 ---
 name: error-analysis
-description: error-analysis skill. Error Analysis skill from the education-student-assessment
+description: error-analysis skill. Error Analysis skill from the education-student-assessment-team
   expert package.
 ---
 

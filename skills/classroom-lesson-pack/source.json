@@ -2,10 +2,10 @@
   "name": "classroom-lesson-pack",
   "kind": "skill",
   "status": "ready",
-  "source_package": "education-lesson-planning",
+  "source_package": "education-lesson-planning-team",
   "source_kind": "zip",
   "source_refs": [
-    "education-lesson-planning/skills/classroom-lesson-pack.zip"
+    "education-lesson-planning-team/skills/classroom-lesson-pack.zip"
   ],
   "converted_for": "codex-skills"
 }

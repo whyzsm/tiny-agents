@@ -2,10 +2,10 @@
   "name": "cn-business-compliance-check",
   "kind": "skill",
   "status": "ready",
-  "source_package": "legal-compliance-analysis",
+  "source_package": "legal-compliance-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "legal-compliance-analysis/skills/cn-business-compliance-check.zip"
+    "legal-compliance-analysis-team/skills/cn-business-compliance-check.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

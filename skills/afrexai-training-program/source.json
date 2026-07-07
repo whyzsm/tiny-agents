@@ -2,10 +2,10 @@
   "name": "afrexai-training-program",
   "kind": "skill",
   "status": "ready",
-  "source_package": "education-training-program",
+  "source_package": "education-training-program-team",
   "source_kind": "zip",
   "source_refs": [
-    "education-training-program/skills/afrexai-training-program.zip"
+    "education-training-program-team/skills/afrexai-training-program.zip"
   ],
   "converted_for": "codex-skills"
 }

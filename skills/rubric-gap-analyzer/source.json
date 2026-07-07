@@ -2,10 +2,10 @@
   "name": "rubric-gap-analyzer",
   "kind": "skill",
   "status": "ready",
-  "source_package": "education-student-assessment",
+  "source_package": "education-student-assessment-team",
   "source_kind": "zip",
   "source_refs": [
-    "education-student-assessment/skills/rubric-gap-analyzer.zip"
+    "education-student-assessment-team/skills/rubric-gap-analyzer.zip"
   ],
   "converted_for": "codex-skills"
 }

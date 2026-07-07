@@ -2,10 +2,10 @@
   "name": "transcript-to-content",
   "kind": "skill",
   "status": "ready",
-  "source_package": "education-training-program",
+  "source_package": "education-training-program-team",
   "source_kind": "zip",
   "source_refs": [
-    "education-training-program/skills/transcript-to-content.zip"
+    "education-training-program-team/skills/transcript-to-content.zip"
   ],
   "converted_for": "codex-skills"
 }

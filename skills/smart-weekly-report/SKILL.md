@@ -1,7 +1,7 @@
 ---
 name: smart-weekly-report
 description: 周报生成器 · Weekly Report Generator skill. Smart Weekly Report skill from
-  the hr-weekly-daily-report expert package.
+  the hr-weekly-daily-report-team expert package.
 ---
 
 # 周报生成器 · Weekly Report Generator

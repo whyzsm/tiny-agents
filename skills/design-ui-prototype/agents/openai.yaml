@@ -1,5 +1,0 @@
-interface:
-  display_name: "UI 原型设计"
-  short_description: "从需求或设计稿到高保真 HTML 原型"
-  default_prompt: "Use $design-ui-prototype to create a complete UI prototype design package in Simplified Chinese."
-

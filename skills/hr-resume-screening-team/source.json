@@ -1,0 +1,11 @@
+{
+  "name": "hr-resume-screening-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "hr-resume-screening-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "hr-resume-screening-team/skillsets/hr-resume-screening-team.md"
+  ],
+  "converted_for": "codex-skills"
+}

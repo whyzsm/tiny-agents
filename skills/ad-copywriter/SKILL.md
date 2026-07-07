@@ -1,6 +1,6 @@
 ---
 name: ad-copywriter
-description: ad-copywriter skill. Ad Copywriter skill from the marketing-ad-copywriting
+description: ad-copywriter skill. Ad Copywriter skill from the marketing-ad-copywriting-team
   expert package.
 ---
 

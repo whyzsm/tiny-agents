@@ -1,7 +1,0 @@
-interface:
-  display_name: 用户增长
-  short_description: 从AARRR+增长框架与北极星指标定义、获客闭环与实验框架设计…
-  default_prompt: Use $marketing-user-growth to complete this workflow and produce
-    concrete deliverables.
-policy:
-  allow_implicit_invocation: true

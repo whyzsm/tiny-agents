@@ -1,4 +1,0 @@
-interface:
-  display_name: "Tech Code Review"
-  short_description: "End-to-end code review workflow"
-  default_prompt: "Use $tech-code-review for this task."

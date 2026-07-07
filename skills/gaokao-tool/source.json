@@ -2,10 +2,10 @@
   "name": "gaokao-tool",
   "kind": "skill",
   "status": "ready",
-  "source_package": "academic-gaokao-expert",
+  "source_package": "academic-gaokao-expert-team",
   "source_kind": "zip",
   "source_refs": [
-    "academic-gaokao-expert/skills/gaokao-tool.zip"
+    "academic-gaokao-expert-team/skills/gaokao-tool.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

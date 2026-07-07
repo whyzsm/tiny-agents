@@ -2,10 +2,10 @@
   "name": "activity-campaign-from-ui",
   "kind": "skill",
   "status": "ready",
-  "source_package": "marketing-event-planning",
+  "source_package": "marketing-event-planning-team",
   "source_kind": "zip",
   "source_refs": [
-    "marketing-event-planning/skills/activity-campaign-from-ui.zip"
+    "marketing-event-planning-team/skills/activity-campaign-from-ui.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

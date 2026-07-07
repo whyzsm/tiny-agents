@@ -2,10 +2,10 @@
   "name": "teaching-plan-writer",
   "kind": "skill",
   "status": "ready",
-  "source_package": "education-lesson-planning",
+  "source_package": "education-lesson-planning-team",
   "source_kind": "zip",
   "source_refs": [
-    "education-lesson-planning/skills/teaching-plan-writer.zip"
+    "education-lesson-planning-team/skills/teaching-plan-writer.zip"
   ],
   "converted_for": "codex-skills"
 }

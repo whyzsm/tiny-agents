@@ -2,10 +2,10 @@
   "name": "walter-product-research",
   "kind": "skill",
   "status": "ready",
-  "source_package": "ecommerce-product-selection",
+  "source_package": "ecommerce-product-selection-team",
   "source_kind": "zip",
   "source_refs": [
-    "ecommerce-product-selection/skills/walter-product-research.zip"
+    "ecommerce-product-selection-team/skills/walter-product-research.zip"
   ],
   "converted_for": "codex-skills"
 }

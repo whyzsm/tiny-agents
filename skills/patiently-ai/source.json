@@ -2,10 +2,10 @@
   "name": "patiently-ai",
   "kind": "skill",
   "status": "ready",
-  "source_package": "healthcare-medical-record-analysis",
+  "source_package": "healthcare-medical-record-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "healthcare-medical-record-analysis/skills/patiently-ai.zip"
+    "healthcare-medical-record-analysis-team/skills/patiently-ai.zip"
   ],
   "converted_for": "codex-skills"
 }

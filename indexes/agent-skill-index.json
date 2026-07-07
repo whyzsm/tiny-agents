@@ -632,26 +632,26 @@
       "entry_path": "~/.agents/skills/deploy/SKILL.md"
     },
     {
-      "name": "design-interaction-design",
-      "display_name": "design-interaction-design",
+      "name": "design-interaction-design-team",
+      "display_name": "design-interaction-design-team",
       "kind": "skill",
       "status": "ready",
       "reason": "standard_skill",
       "description": "从数据驱动的用户画像构建与旅程映射、UI/UX信息架构与视觉风格设计、自动化UX可用性审计（视觉层级/认知负荷/导航评估）、微交互设计与WCAG 2.2无障碍规范，到前端界面实现与WCAG 2.1 AA合规实现的完整交互设计工作流。覆盖用户研究、交互方案、可用性评估和无障碍实现全链路。",
       "purpose": "从数据驱动的用户画像构建与旅程映射、UI/UX信息架构与视觉风格设计、自动化UX可用性审计（视觉层级/认知负荷/导航评估）、微交互设计与WCAG 2.2无障碍规范，到前端界面实现与WCAG 2.1 AA合规实现的完整交互设计工作流。覆盖用户研究、交互方案、可用性评估和无障碍实现全链路。",
-      "source_path": "~/.codex/skills/design-interaction-design",
-      "entry_path": "~/.codex/skills/design-interaction-design/SKILL.md"
+      "source_path": "~/.codex/skills/design-interaction-design-team",
+      "entry_path": "~/.codex/skills/design-interaction-design-team/SKILL.md"
     },
     {
-      "name": "design-prd-writing",
-      "display_name": "design-prd-writing",
+      "name": "design-prd-writing-team",
+      "display_name": "design-prd-writing-team",
       "kind": "skill",
       "status": "ready",
       "reason": "standard_skill",
       "description": "End-to-end PRD writing workflow. Use when the user wants a complete product requirements workflow that spans requirement discovery, EPIC/user-story decomposition, prioritization, professional PRD drafting, PRD-to-design handoff, and PRD review/scoring. This skill coordinates the companion skills requirements-analysis, software-manager-skill, prd, prd-writer-pro, prd-to-design-doc, and prd-reviewer.",
       "purpose": "metadata: short-description: Complete PRD writing workflow",
-      "source_path": "~/.codex/skills/design-prd-writing",
-      "entry_path": "~/.codex/skills/design-prd-writing/SKILL.md"
+      "source_path": "~/.codex/skills/design-prd-writing-team",
+      "entry_path": "~/.codex/skills/design-prd-writing-team/SKILL.md"
     },
     {
       "name": "e2e-testing-patterns",
@@ -1314,48 +1314,48 @@
       "entry_path": "~/.codex/skills/system-architect/SKILL.md"
     },
     {
-      "name": "tech-code-refactoring",
-      "display_name": "tech-code-refactoring",
+      "name": "tech-code-refactoring-team",
+      "display_name": "tech-code-refactoring-team",
       "kind": "skill",
       "status": "ready",
       "reason": "standard_skill",
       "description": "End-to-end code refactoring workflow. Use when the user wants a complete refactoring package covering code structure analysis, git-history technical debt signals, Clean Code/SOLID/Clean Architecture review, refactoring pattern selection, target architecture design, behavior-preserving simplification, migration planning, and verification. Coordinates code-analyzer, agent-git-oracle, uncle-bob, code-refactoring, system-architect, and simplify.",
       "purpose": "metadata: short-description: Complete code refactoring workflow",
-      "source_path": "~/.codex/skills/tech-code-refactoring",
-      "entry_path": "~/.codex/skills/tech-code-refactoring/SKILL.md"
+      "source_path": "~/.codex/skills/tech-code-refactoring-team",
+      "entry_path": "~/.codex/skills/tech-code-refactoring-team/SKILL.md"
     },
     {
-      "name": "tech-code-review",
-      "display_name": "tech-code-review",
+      "name": "tech-code-review-team",
+      "display_name": "tech-code-review-team",
       "kind": "skill",
       "status": "ready",
       "reason": "standard_skill",
       "description": "End-to-end code review workflow. Use when the user wants a complete code review package covering GitHub PR or git diff intake, strict bug/security/performance review, project coding standards, security auditing, clean-code maintainability checks, and structured Chinese review reports. Coordinates pr-reviewer, critical-code-reviewer, project-code-standard, security-audit, clean-code-review, and code-review-assistant.",
       "purpose": "metadata: short-description: Complete code review workflow",
-      "source_path": "~/.codex/skills/tech-code-review",
-      "entry_path": "~/.codex/skills/tech-code-review/SKILL.md"
+      "source_path": "~/.codex/skills/tech-code-review-team",
+      "entry_path": "~/.codex/skills/tech-code-review-team/SKILL.md"
     },
     {
-      "name": "tech-tencentcloud-expert",
-      "display_name": "tech-tencentcloud-expert",
+      "name": "tech-tencentcloud-expert-team",
+      "display_name": "tech-tencentcloud-expert-team",
       "kind": "skill",
       "status": "ready",
       "reason": "standard_skill",
       "description": "面向腾讯云资源治理、应用上线、域名访问、云存储、文件交付、图片文字识别和音频转写等场景，按业务目标、异常现象和预期交付物选择合适能力：可巡检服务器、证书、权限和监控，处理 CloudBase、Web、微信小程序和轻量服务器部署，修复 DNSPod 解析问题，管理 COS 对象存储与专属云盘文件，调用 OCR/ASR 完成文字识别和音频转写。交付部署地址、解析记录、文件链接、识别文本、转写稿、问题定位结论、待确认事项或明确失败原因。",
       "purpose": "CloudBase、Web、微信小程序和轻量服务器部署，修复 DNSPod 解析问题，管理 COS 对象存储与专属云盘文件，调用 OCR/ASR 完成文字识别和音频转写。交付部署地址、解析记录、文件链接、识别文本、转写稿、问题定位结论、待确认事项或明确失败原因。",
-      "source_path": "~/.codex/skills/tech-tencentcloud-expert",
-      "entry_path": "~/.codex/skills/tech-tencentcloud-expert/SKILL.md"
+      "source_path": "~/.codex/skills/tech-tencentcloud-expert-team",
+      "entry_path": "~/.codex/skills/tech-tencentcloud-expert-team/SKILL.md"
     },
     {
-      "name": "tech-test-automation",
-      "display_name": "tech-test-automation",
+      "name": "tech-test-automation-team",
+      "display_name": "tech-test-automation-team",
       "kind": "skill",
       "status": "ready",
       "reason": "standard_skill",
       "description": "End-to-end software test automation workflow. Use when the user wants a complete testing expert workflow covering TDD strategy, test case generation, unit/integration/E2E testing, API test automation, coverage, performance, QA test plans, release readiness, or quality dashboards. Coordinates superpowers-tdd, test-case-generator, test-patterns, e2e-testing-patterns, api-test-automation, and afrexai-qa-test-plan.",
       "purpose": "metadata: short-description: Complete software test automation workflow",
-      "source_path": "~/.codex/skills/tech-test-automation",
-      "entry_path": "~/.codex/skills/tech-test-automation/SKILL.md"
+      "source_path": "~/.codex/skills/tech-test-automation-team",
+      "entry_path": "~/.codex/skills/tech-test-automation-team/SKILL.md"
     },
     {
       "name": "tencent-agent-storage",

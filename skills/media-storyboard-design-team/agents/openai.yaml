@@ -1,0 +1,4 @@
+interface:
+  display_name: "分镜设计"
+  short_description: "分镜表、镜头运动、AI 视频提示词与素材包"
+  default_prompt: "Use $media-storyboard-design-team to create a complete storyboard and AI video prompt package in Simplified Chinese."

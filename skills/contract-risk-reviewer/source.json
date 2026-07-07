@@ -2,10 +2,10 @@
   "name": "contract-risk-reviewer",
   "kind": "skill",
   "status": "ready",
-  "source_package": "legal-contract-review",
+  "source_package": "legal-contract-review-team",
   "source_kind": "zip",
   "source_refs": [
-    "legal-contract-review/skills/contract-risk-reviewer.zip"
+    "legal-contract-review-team/skills/contract-risk-reviewer.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

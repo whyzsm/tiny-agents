@@ -1,6 +1,6 @@
 ---
 name: walter-product-research
-description: 亚马逊选品调研 skill. Walter Product Research skill from the ecommerce-product-selection
+description: 亚马逊选品调研 skill. Walter Product Research skill from the ecommerce-product-selection-team
   expert package.
 ---
 

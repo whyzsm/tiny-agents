@@ -2,10 +2,10 @@
   "name": "powerpoint-pptx",
   "kind": "skill",
   "status": "ready",
-  "source_package": "hr-ppt-creation",
+  "source_package": "hr-ppt-creation-team",
   "source_kind": "zip",
   "source_refs": [
-    "hr-ppt-creation/skills/powerpoint-pptx.zip"
+    "hr-ppt-creation-team/skills/powerpoint-pptx.zip"
   ],
   "converted_for": "codex-skills"
 }

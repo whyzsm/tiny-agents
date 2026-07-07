@@ -1,6 +1,6 @@
 ---
 name: marketing-skills
-description: Marketing Skills skill. Marketing Skills skill from the marketing-ad-copywriting
+description: Marketing Skills skill. Marketing Skills skill from the marketing-ad-copywriting-team
   expert package.
 ---
 

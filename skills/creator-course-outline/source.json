@@ -2,10 +2,10 @@
   "name": "creator-course-outline",
   "kind": "skill",
   "status": "ready",
-  "source_package": "education-lesson-planning",
+  "source_package": "education-lesson-planning-team",
   "source_kind": "zip",
   "source_refs": [
-    "education-lesson-planning/skills/creator-course-outline.zip"
+    "education-lesson-planning-team/skills/creator-course-outline.zip"
   ],
   "converted_for": "codex-skills"
 }

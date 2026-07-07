@@ -2,10 +2,10 @@
   "name": "compliance-audit-pro",
   "kind": "skill",
   "status": "ready",
-  "source_package": "legal-compliance-analysis",
+  "source_package": "legal-compliance-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "legal-compliance-analysis/skills/compliance-audit-pro.zip"
+    "legal-compliance-analysis-team/skills/compliance-audit-pro.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

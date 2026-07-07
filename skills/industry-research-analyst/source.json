@@ -2,10 +2,10 @@
   "name": "industry-research-analyst",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-investment-research",
+  "source_package": "finance-investment-research-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-investment-research/skills/industry-research-analyst.zip"
+    "finance-investment-research-team/skills/industry-research-analyst.zip"
   ],
   "converted_for": "codex-skills"
 }

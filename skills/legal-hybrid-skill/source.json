@@ -2,10 +2,10 @@
   "name": "legal-hybrid-skill",
   "kind": "skill",
   "status": "ready",
-  "source_package": "legal-legal-research",
+  "source_package": "legal-legal-research-team",
   "source_kind": "zip",
   "source_refs": [
-    "legal-legal-research/skills/legal-hybrid-skill.zip"
+    "legal-legal-research-team/skills/legal-hybrid-skill.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

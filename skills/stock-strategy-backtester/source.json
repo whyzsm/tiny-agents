@@ -2,10 +2,10 @@
   "name": "stock-strategy-backtester",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-quant-backtesting",
+  "source_package": "finance-quant-backtesting-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-quant-backtesting/skills/stock-strategy-backtester.zip"
+    "finance-quant-backtesting-team/skills/stock-strategy-backtester.zip"
   ],
   "converted_for": "codex-skills"
 }

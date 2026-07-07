@@ -2,10 +2,10 @@
   "name": "joinquant",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-quant-backtesting",
+  "source_package": "finance-quant-backtesting-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-quant-backtesting/skills/joinquant.zip"
+    "finance-quant-backtesting-team/skills/joinquant.zip"
   ],
   "converted_for": "codex-skills"
 }

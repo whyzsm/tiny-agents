@@ -2,8 +2,8 @@
   "name": "tencentcloud-infra",
   "kind": "skill",
   "status": "ready",
-  "source_package": "tech-tencentcloud-expert",
+  "source_package": "tech-tencentcloud-expert-team",
   "source_kind": "zip",
-  "source_ref": "tech-tencentcloud-expert/skills/tencentcloud-infra.zip",
+  "source_ref": "tech-tencentcloud-expert-team/skills/tencentcloud-infra.zip",
   "converted_for": "codex-skills"
 }

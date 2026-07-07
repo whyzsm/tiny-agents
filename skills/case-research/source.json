@@ -2,10 +2,10 @@
   "name": "case-research",
   "kind": "skill",
   "status": "ready",
-  "source_package": "legal-legal-research",
+  "source_package": "legal-legal-research-team",
   "source_kind": "zip",
   "source_refs": [
-    "legal-legal-research/skills/case-research.zip"
+    "legal-legal-research-team/skills/case-research.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

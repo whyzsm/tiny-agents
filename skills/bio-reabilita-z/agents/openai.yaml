@@ -1,6 +1,6 @@
 interface:
   display_name: Bio Reabilita Z
-  short_description: Bio Reabilita Z skill from the healthcare-nursing-plan expert
+  short_description: Bio Reabilita Z skill from the healthcare-nursing-plan-team expert
     pa
   default_prompt: Use $bio-reabilita-z to complete this workflow and produce concrete
     deliverables.

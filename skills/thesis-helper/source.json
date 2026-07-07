@@ -2,10 +2,10 @@
   "name": "thesis-helper",
   "kind": "skill",
   "status": "ready",
-  "source_package": "academic-literature-review",
+  "source_package": "academic-literature-review-team",
   "source_kind": "zip",
   "source_refs": [
-    "academic-literature-review/skills/thesis-helper.zip"
+    "academic-literature-review-team/skills/thesis-helper.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

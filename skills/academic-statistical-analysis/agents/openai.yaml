@@ -1,6 +1,0 @@
-interface:
-  display_name: "统计分析"
-  short_description: "从R语言82种统计方法（回归/生存/贝叶斯/荟萃/因果推断/结构方程）与高级生物统计分析（贝叶斯推断/蒙特卡洛模拟/机器学习/…"
-  default_prompt: "Use $academic-statistical-analysis to complete this workflow and produce concrete deliverables."
-policy:
-  allow_implicit_invocation: true

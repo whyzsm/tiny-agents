@@ -2,10 +2,10 @@
   "name": "unisound-medical-term-normalization",
   "kind": "skill",
   "status": "ready",
-  "source_package": "healthcare-medical-record-analysis",
+  "source_package": "healthcare-medical-record-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "healthcare-medical-record-analysis/skills/unisound-medical-term-normalization.zip"
+    "healthcare-medical-record-analysis-team/skills/unisound-medical-term-normalization.zip"
   ],
   "converted_for": "codex-skills"
 }

@@ -1,0 +1,7 @@
+interface:
+  display_name: 会议纪要
+  short_description: 从会议纪要模板化生成（行动项/待办事项/站会模板）与凌乱笔记快…
+  default_prompt: Use $hr-meeting-minutes-team to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

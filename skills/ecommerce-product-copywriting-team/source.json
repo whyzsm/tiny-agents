@@ -1,0 +1,11 @@
+{
+  "name": "ecommerce-product-copywriting-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-product-copywriting-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "ecommerce-product-copywriting-team/skillsets/ecommerce-product-copywriting-team.md"
+  ],
+  "converted_for": "codex-skills"
+}

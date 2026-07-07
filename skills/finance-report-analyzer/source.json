@@ -2,10 +2,10 @@
   "name": "finance-report-analyzer",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-financial-report-analysis",
+  "source_package": "finance-financial-report-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-financial-report-analysis/skills/finance-report-analyzer.zip"
+    "finance-financial-report-analysis-team/skills/finance-report-analyzer.zip"
   ],
   "converted_for": "codex-skills"
 }

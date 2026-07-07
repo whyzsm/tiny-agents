@@ -1,0 +1,12 @@
+{
+  "name": "legal-contract-review-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-contract-review-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "legal-contract-review-team/skillsets/legal-contract-review-team.md"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

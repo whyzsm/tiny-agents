@@ -1,0 +1,11 @@
+{
+  "name": "healthcare-nursing-plan-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "healthcare-nursing-plan-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "healthcare-nursing-plan-team/skillsets/healthcare-nursing-plan-team.md"
+  ],
+  "converted_for": "codex-skills"
+}

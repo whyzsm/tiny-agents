@@ -1,7 +1,7 @@
 ---
 name: ecommerce-copy-humanizer-zh
 description: Ecommerce Copy Humanizer ZH skill. Ecommerce Copy Humanizer Zh skill
-  from the ecommerce-product-copywriting expert package.
+  from the ecommerce-product-copywriting-team expert package.
 ---
 
 # Ecommerce Copy Humanizer ZH

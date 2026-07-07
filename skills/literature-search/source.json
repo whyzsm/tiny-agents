@@ -2,10 +2,10 @@
   "name": "literature-search",
   "kind": "skill",
   "status": "ready",
-  "source_package": "academic-paper-search",
+  "source_package": "academic-paper-search-team",
   "source_kind": "zip",
   "source_refs": [
-    "academic-paper-search/skills/literature-search.zip"
+    "academic-paper-search-team/skills/literature-search.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

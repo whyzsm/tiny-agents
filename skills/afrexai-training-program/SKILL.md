@@ -1,7 +1,7 @@
 ---
 name: afrexai-training-program
 description: Employee Training Program Builder skill. Afrexai Training Program skill
-  from the education-training-program expert package.
+  from the education-training-program-team expert package.
 ---
 
 # Employee Training Program Builder

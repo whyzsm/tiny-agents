@@ -2,10 +2,10 @@
   "name": "marketpulse",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-financial-report-analysis",
+  "source_package": "finance-financial-report-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-financial-report-analysis/skills/marketpulse.zip"
+    "finance-financial-report-analysis-team/skills/marketpulse.zip"
   ],
   "converted_for": "codex-skills"
 }

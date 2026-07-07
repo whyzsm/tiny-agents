@@ -2,10 +2,10 @@
   "name": "earnings-reader",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-financial-report-analysis",
+  "source_package": "finance-financial-report-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-financial-report-analysis/skills/earnings-reader.zip"
+    "finance-financial-report-analysis-team/skills/earnings-reader.zip"
   ],
   "converted_for": "codex-skills"
 }

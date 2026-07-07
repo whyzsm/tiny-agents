@@ -2,10 +2,10 @@
   "name": "xueersi-parent-comment",
   "kind": "skill",
   "status": "ready",
-  "source_package": "education-student-assessment",
+  "source_package": "education-student-assessment-team",
   "source_kind": "zip",
   "source_refs": [
-    "education-student-assessment/skills/xueersi-parent-comment.zip"
+    "education-student-assessment-team/skills/xueersi-parent-comment.zip"
   ],
   "converted_for": "codex-skills"
 }

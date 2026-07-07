@@ -2,10 +2,10 @@
   "name": "ai-stock-analyst",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-investment-research",
+  "source_package": "finance-investment-research-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-investment-research/skills/ai-stock-analyst.zip"
+    "finance-investment-research-team/skills/ai-stock-analyst.zip"
   ],
   "converted_for": "codex-skills"
 }

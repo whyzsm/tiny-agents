@@ -2,10 +2,10 @@
   "name": "riskofficer",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-risk-assessment",
+  "source_package": "finance-risk-assessment-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-risk-assessment/skills/riskofficer.zip"
+    "finance-risk-assessment-team/skills/riskofficer.zip"
   ],
   "converted_for": "codex-skills"
 }

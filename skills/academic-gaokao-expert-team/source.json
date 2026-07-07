@@ -1,0 +1,12 @@
+{
+  "name": "academic-gaokao-expert-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "academic-gaokao-expert-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "academic-gaokao-expert-team/skillsets/academic-gaokao-expert-team.md"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

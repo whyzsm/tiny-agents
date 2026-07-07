@@ -1,7 +1,0 @@
-interface:
-  display_name: 财报分析
-  short_description: 从A股/美股财务数据获取到三表深度解读、财务造假识别再到专业分…
-  default_prompt: Use $finance-financial-report-analysis to complete this workflow
-    and produce concrete deliverables.
-policy:
-  allow_implicit_invocation: true

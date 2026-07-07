@@ -1,0 +1,12 @@
+{
+  "name": "academic-paper-search-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "academic-paper-search-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "academic-paper-search-team/skillsets/academic-paper-search-team.md"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

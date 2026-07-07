@@ -2,10 +2,10 @@
   "name": "tencent-docs",
   "kind": "skill",
   "status": "ready",
-  "source_package": "academic-gaokao-expert",
+  "source_package": "academic-gaokao-expert-team",
   "source_kind": "zip",
   "source_refs": [
-    "academic-gaokao-expert/skills/tencent-docs.zip"
+    "academic-gaokao-expert-team/skills/tencent-docs.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

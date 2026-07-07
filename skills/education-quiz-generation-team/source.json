@@ -1,0 +1,11 @@
+{
+  "name": "education-quiz-generation-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "education-quiz-generation-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "education-quiz-generation-team/skillsets/education-quiz-generation-team.md"
+  ],
+  "converted_for": "codex-skills"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "healthcare-medical-record-analysis-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "healthcare-medical-record-analysis-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "healthcare-medical-record-analysis-team/skillsets/healthcare-medical-record-analysis-team.md"
+  ],
+  "converted_for": "codex-skills"
+}

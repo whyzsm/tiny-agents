@@ -2,10 +2,10 @@
   "name": "legalkb",
   "kind": "skill",
   "status": "ready",
-  "source_package": "legal-legal-research",
+  "source_package": "legal-legal-research-team",
   "source_kind": "zip",
   "source_refs": [
-    "legal-legal-research/skills/legalkb.zip"
+    "legal-legal-research-team/skills/legalkb.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

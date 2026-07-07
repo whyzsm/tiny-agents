@@ -1,0 +1,17 @@
+{
+  "name": "tech-code-refactoring-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/tech-code-refactoring-team",
+  "entry_path": "~/.codex/skills/tech-code-refactoring-team/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/tech-code-refactoring-team/SKILL.md",
+    "~/.codex/skills/tech-code-refactoring-team/agents/openai.yaml",
+    "~/.codex/skills/tech-code-refactoring-team/references/guide.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-07T15:16:35+08:00"
+}

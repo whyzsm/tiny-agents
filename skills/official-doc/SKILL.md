@@ -1,6 +1,6 @@
 ---
 name: official-doc
-description: 公文生成器 skill. Official Doc skill from the marketing-official-document-writing
+description: 公文生成器 skill. Official Doc skill from the marketing-official-document-writing-team
   expert package.
 ---
 

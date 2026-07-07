@@ -2,10 +2,10 @@
   "name": "marketing-skills",
   "kind": "skill",
   "status": "ready",
-  "source_package": "marketing-ad-copywriting",
+  "source_package": "marketing-ad-copywriting-team",
   "source_kind": "zip",
   "source_refs": [
-    "marketing-ad-copywriting/skills/marketing-skills.zip"
+    "marketing-ad-copywriting-team/skills/marketing-skills.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

@@ -2,10 +2,10 @@
   "name": "instructional-design-cn",
   "kind": "skill",
   "status": "ready",
-  "source_package": "education-training-program",
+  "source_package": "education-training-program-team",
   "source_kind": "zip",
   "source_refs": [
-    "education-training-program/skills/instructional-design-cn.zip"
+    "education-training-program-team/skills/instructional-design-cn.zip"
   ],
   "converted_for": "codex-skills"
 }

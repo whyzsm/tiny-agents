@@ -2,8 +2,8 @@
   "name": "ui-audit",
   "kind": "skill",
   "status": "ready",
-  "source_package": "design-interaction-design",
+  "source_package": "design-interaction-design-team",
   "source_kind": "zip",
-  "source_ref": "design-interaction-design/skills/ui-audit.zip",
+  "source_ref": "design-interaction-design-team/skills/ui-audit.zip",
   "converted_for": "codex-skills"
 }

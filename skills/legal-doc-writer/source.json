@@ -2,11 +2,11 @@
   "name": "legal-doc-writer",
   "kind": "skill",
   "status": "ready",
-  "source_package": "legal-contract-drafting",
+  "source_package": "legal-contract-drafting-team",
   "source_kind": "zip",
   "source_refs": [
-    "legal-contract-generation/skills/legal-doc-writer.zip",
-    "legal-contract-drafting/skills/legal-doc-writer.zip"
+    "legal-contract-generation-team/skills/legal-doc-writer.zip",
+    "legal-contract-drafting-team/skills/legal-doc-writer.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

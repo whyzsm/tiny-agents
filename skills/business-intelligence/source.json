@@ -2,10 +2,10 @@
   "name": "business-intelligence",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-business-analysis",
+  "source_package": "finance-business-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-business-analysis/skills/business-intelligence.zip"
+    "finance-business-analysis-team/skills/business-intelligence.zip"
   ],
   "converted_for": "codex-skills"
 }

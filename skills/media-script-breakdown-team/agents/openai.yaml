@@ -1,0 +1,4 @@
+interface:
+  display_name: "脚本拆解"
+  short_description: "剧本创作、分镜拆解与制片规划工作流"
+  default_prompt: "Use $media-script-breakdown-team to break my story or video idea into scripts, storyboards, hooks, structured data, and production planning in Simplified Chinese."

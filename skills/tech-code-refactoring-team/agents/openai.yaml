@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tech Code Refactoring"
+  short_description: "End-to-end code refactoring workflow"
+  default_prompt: "Use $tech-code-refactoring-team for this task."

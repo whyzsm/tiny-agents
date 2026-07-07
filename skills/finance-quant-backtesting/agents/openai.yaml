@@ -1,7 +1,0 @@
-interface:
-  display_name: 量化回测
-  short_description: 从A股/期货历史数据获取到量化策略编写、多因子选股模型、回测引…
-  default_prompt: Use $finance-quant-backtesting to complete this workflow and produce
-    concrete deliverables.
-policy:
-  allow_implicit_invocation: true

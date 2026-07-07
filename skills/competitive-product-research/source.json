@@ -2,10 +2,10 @@
   "name": "competitive-product-research",
   "kind": "skill",
   "status": "ready",
-  "source_package": "marketing-competitor-analysis",
+  "source_package": "marketing-competitor-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "marketing-competitor-analysis/skills/competitive-product-research.zip"
+    "marketing-competitor-analysis-team/skills/competitive-product-research.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

@@ -2,10 +2,10 @@
   "name": "quant-risk-dashboard",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-risk-assessment",
+  "source_package": "finance-risk-assessment-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-risk-assessment/skills/quant-risk-dashboard.zip"
+    "finance-risk-assessment-team/skills/quant-risk-dashboard.zip"
   ],
   "converted_for": "codex-skills"
 }

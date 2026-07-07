@@ -1,4 +1,0 @@
-interface:
-  display_name: "Tech API Documentation"
-  short_description: "API design, OpenAPI, docs, SDK quickstarts, and testing"
-  default_prompt: "Use $tech-api-documentation to create a complete API documentation package for this service."

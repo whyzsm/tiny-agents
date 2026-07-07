@@ -2,10 +2,10 @@
   "name": "stock-research-engine",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-investment-research",
+  "source_package": "finance-investment-research-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-investment-research/skills/stock-research-engine.zip"
+    "finance-investment-research-team/skills/stock-research-engine.zip"
   ],
   "converted_for": "codex-skills"
 }

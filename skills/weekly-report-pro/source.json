@@ -2,10 +2,10 @@
   "name": "weekly-report-pro",
   "kind": "skill",
   "status": "ready",
-  "source_package": "hr-weekly-daily-report",
+  "source_package": "hr-weekly-daily-report-team",
   "source_kind": "zip",
   "source_refs": [
-    "hr-weekly-daily-report/skills/weekly-report-pro.zip"
+    "hr-weekly-daily-report-team/skills/weekly-report-pro.zip"
   ],
   "converted_for": "codex-skills"
 }

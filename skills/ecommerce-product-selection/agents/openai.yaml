@@ -1,7 +1,0 @@
-interface:
-  display_name: 选品分析
-  short_description: 从多平台爆款产品筛选（淘宝/京东/拼多多/抖音/亚马逊数据分析…
-  default_prompt: Use $ecommerce-product-selection to complete this workflow and produce
-    concrete deliverables.
-policy:
-  allow_implicit_invocation: true

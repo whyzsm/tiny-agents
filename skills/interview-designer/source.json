@@ -2,10 +2,10 @@
   "name": "interview-designer",
   "kind": "skill",
   "status": "ready",
-  "source_package": "hr-resume-screening",
+  "source_package": "hr-resume-screening-team",
   "source_kind": "zip",
   "source_refs": [
-    "hr-resume-screening/skills/interview-designer.zip"
+    "hr-resume-screening-team/skills/interview-designer.zip"
   ],
   "converted_for": "codex-skills"
 }

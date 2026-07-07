@@ -2,10 +2,10 @@
   "name": "quiz-creator",
   "kind": "skill",
   "status": "ready",
-  "source_package": "education-quiz-generation",
+  "source_package": "education-quiz-generation-team",
   "source_kind": "zip",
   "source_refs": [
-    "education-quiz-generation/skills/quiz-creator.zip"
+    "education-quiz-generation-team/skills/quiz-creator.zip"
   ],
   "converted_for": "codex-skills"
 }

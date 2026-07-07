@@ -1,0 +1,7 @@
+interface:
+  display_name: 教案设计
+  short_description: 从基于教学评一致性原则的专业教案写作（新课标/个性化教案/教学…
+  default_prompt: Use $education-lesson-planning-team to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

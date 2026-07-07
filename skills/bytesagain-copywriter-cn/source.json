@@ -2,10 +2,10 @@
   "name": "bytesagain-copywriter-cn",
   "kind": "skill",
   "status": "ready",
-  "source_package": "marketing-ad-copywriting",
+  "source_package": "marketing-ad-copywriting-team",
   "source_kind": "zip",
   "source_refs": [
-    "marketing-ad-copywriting/skills/bytesagain-copywriter-cn.zip"
+    "marketing-ad-copywriting-team/skills/bytesagain-copywriter-cn.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

@@ -1,0 +1,7 @@
+interface:
+  display_name: 培训方案
+  short_description: 从培训计划整体设计（培训方案/课程体系/效果评估/日程安排/证…
+  default_prompt: Use $education-training-program-team to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

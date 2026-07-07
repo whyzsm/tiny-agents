@@ -2,10 +2,10 @@
   "name": "health-report",
   "kind": "skill",
   "status": "ready",
-  "source_package": "healthcare-health-report",
+  "source_package": "healthcare-health-report-team",
   "source_kind": "zip",
   "source_refs": [
-    "healthcare-health-report/skills/health-report.zip"
+    "healthcare-health-report-team/skills/health-report.zip"
   ],
   "converted_for": "codex-skills"
 }

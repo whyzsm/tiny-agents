@@ -1,7 +1,7 @@
 ---
 name: activity-campaign-from-ui
 description: activity-campaign-from-ui skill. Activity Campaign From Ui skill from
-  the marketing-event-planning expert package.
+  the marketing-event-planning-team expert package.
 ---
 
 # activity-campaign-from-ui

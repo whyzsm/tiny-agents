@@ -2,10 +2,10 @@
   "name": "a-share-risk-alert",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-risk-assessment",
+  "source_package": "finance-risk-assessment-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-risk-assessment/skills/a-share-risk-alert.zip"
+    "finance-risk-assessment-team/skills/a-share-risk-alert.zip"
   ],
   "converted_for": "codex-skills"
 }

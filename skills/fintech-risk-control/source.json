@@ -2,10 +2,10 @@
   "name": "fintech-risk-control",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-risk-assessment",
+  "source_package": "finance-risk-assessment-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-risk-assessment/skills/fintech-risk-control.zip"
+    "finance-risk-assessment-team/skills/fintech-risk-control.zip"
   ],
   "converted_for": "codex-skills"
 }

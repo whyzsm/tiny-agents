@@ -1,6 +1,6 @@
 ---
 name: exam-analyzer
-description: SKILL.md - 考点作战地图生成器 skill. Exam Analyzer skill from the education-quiz-generation
+description: SKILL.md - 考点作战地图生成器 skill. Exam Analyzer skill from the education-quiz-generation-team
   expert package.
 ---
 

@@ -1,0 +1,14 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "design-brand-visual-team",
+  "displayName": "品牌视觉",
+  "summary": "从品牌圣经构建（品牌定位/语调/视觉识别/规范文档）、平面设计与品牌调性升级指引、品牌配色方案生成与WCAG对比度校验，到几何图元与负空间极简Logo设计、基于算法设计哲学的品牌海报与视觉物料制作、SVG矢量插图与品牌图形资源生成的完整品牌视觉工作流。覆盖品牌策略、视觉识别系统、配色排版和物料输出全链路。",
+  "skillSlugs": [
+    "brand-cog",
+    "visual",
+    "theme-factory",
+    "logo-creator",
+    "poster",
+    "svg-draw"
+  ]
+}

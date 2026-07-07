@@ -1,0 +1,6 @@
+interface:
+  display_name: "合同审查"
+  short_description: "从基于CUAD数据集41个风险类别的法律合同分析（保密协议/SaaS协议/并购协议/雇佣协议/支付协议/寻源协议）与智能合…"
+  default_prompt: "Use $legal-contract-review-team to complete this workflow and produce concrete deliverables."
+policy:
+  allow_implicit_invocation: true

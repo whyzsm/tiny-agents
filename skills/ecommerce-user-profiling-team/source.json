@@ -1,0 +1,11 @@
+{
+  "name": "ecommerce-user-profiling-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-user-profiling-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "ecommerce-user-profiling-team/skillsets/ecommerce-user-profiling-team.md"
+  ],
+  "converted_for": "codex-skills"
+}

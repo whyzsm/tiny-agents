@@ -1,6 +1,0 @@
-interface:
-  display_name: "合规分析"
-  short_description: "从中国商业合规风险初筛（合法性/红线风险/灰色地带/待确认问题）与全流程法律合规智库（实时监管检索/条款穿透分析/时效追踪…"
-  default_prompt: "Use $legal-compliance-analysis to complete this workflow and produce concrete deliverables."
-policy:
-  allow_implicit_invocation: true

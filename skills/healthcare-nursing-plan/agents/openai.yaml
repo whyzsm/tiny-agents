@@ -1,7 +1,0 @@
-interface:
-  display_name: 护理方案
-  short_description: 从护理研究理论支持论证（理论选择/文献检索/护理科研开题）与临…
-  default_prompt: Use $healthcare-nursing-plan to complete this workflow and produce
-    concrete deliverables.
-policy:
-  allow_implicit_invocation: true

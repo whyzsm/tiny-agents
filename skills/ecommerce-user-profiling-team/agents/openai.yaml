@@ -1,0 +1,7 @@
+interface:
+  display_name: 用户画像
+  short_description: 电商零售用户画像工作流：从行为数据接入、客户分层与RFM分群、…
+  default_prompt: Use $ecommerce-user-profiling-team to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

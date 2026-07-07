@@ -2,8 +2,8 @@
   "name": "tencent-agent-storage",
   "kind": "skill",
   "status": "ready",
-  "source_package": "tech-tencentcloud-expert",
+  "source_package": "tech-tencentcloud-expert-team",
   "source_kind": "zip",
-  "source_ref": "tech-tencentcloud-expert/skills/tencent-agent-storage.zip",
+  "source_ref": "tech-tencentcloud-expert-team/skills/tencent-agent-storage.zip",
   "converted_for": "codex-skills"
 }

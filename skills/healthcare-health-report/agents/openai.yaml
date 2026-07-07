@@ -1,7 +1,0 @@
-interface:
-  display_name: 健康报告
-  short_description: 从全维度健康管理与中西医融合（运动训练/饮食营养/健康数据追踪…
-  default_prompt: Use $healthcare-health-report to complete this workflow and produce
-    concrete deliverables.
-policy:
-  allow_implicit_invocation: true

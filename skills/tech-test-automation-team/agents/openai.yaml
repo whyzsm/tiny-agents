@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tech Test Automation"
+  short_description: "TDD, unit, integration, E2E, API, and QA planning"
+  default_prompt: "Use $tech-test-automation-team to build a complete automated testing plan and test suite for this project."

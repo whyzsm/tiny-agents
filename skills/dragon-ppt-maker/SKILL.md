@@ -1,6 +1,6 @@
 ---
 name: dragon-ppt-maker
-description: ppt-maker skill. Dragon PPT Maker skill from the hr-ppt-creation expert
+description: ppt-maker skill. Dragon PPT Maker skill from the hr-ppt-creation-team expert
   package.
 ---
 

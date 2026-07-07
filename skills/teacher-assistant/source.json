@@ -2,11 +2,11 @@
   "name": "teacher-assistant",
   "kind": "skill",
   "status": "ready",
-  "source_package": "education-lesson-planning",
+  "source_package": "education-lesson-planning-team",
   "source_kind": "zip",
   "source_refs": [
-    "education-student-assessment/skills/teacher-assistant.zip",
-    "education-lesson-planning/skills/teacher-assistant.zip"
+    "education-student-assessment-team/skills/teacher-assistant.zip",
+    "education-lesson-planning-team/skills/teacher-assistant.zip"
   ],
   "converted_for": "codex-skills"
 }

@@ -1,0 +1,11 @@
+{
+  "name": "ecommerce-product-selection-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-product-selection-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "ecommerce-product-selection-team/skillsets/ecommerce-product-selection-team.md"
+  ],
+  "converted_for": "codex-skills"
+}

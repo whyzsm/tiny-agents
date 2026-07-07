@@ -2,8 +2,8 @@
   "name": "ui-ux-pro-max",
   "kind": "skill",
   "status": "ready",
-  "source_package": "design-interaction-design",
+  "source_package": "design-interaction-design-team",
   "source_kind": "zip",
-  "source_ref": "design-interaction-design/skills/ui-ux-pro-max.zip",
+  "source_ref": "design-interaction-design-team/skills/ui-ux-pro-max.zip",
   "converted_for": "codex-skills"
 }

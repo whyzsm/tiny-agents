@@ -2,10 +2,10 @@
   "name": "budget-vs-actual",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-business-analysis",
+  "source_package": "finance-business-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-business-analysis/skills/budget-vs-actual.zip"
+    "finance-business-analysis-team/skills/budget-vs-actual.zip"
   ],
   "converted_for": "codex-skills"
 }

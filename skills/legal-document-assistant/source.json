@@ -2,10 +2,10 @@
   "name": "legal-document-assistant",
   "kind": "skill",
   "status": "ready",
-  "source_package": "legal-contract-drafting",
+  "source_package": "legal-contract-drafting-team",
   "source_kind": "zip",
   "source_refs": [
-    "legal-contract-drafting/skills/legal-document-assistant.zip"
+    "legal-contract-drafting-team/skills/legal-document-assistant.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

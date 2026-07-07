@@ -2,15 +2,15 @@
   "name": "nexus-error-explain",
   "kind": "skill",
   "status": "ready",
-  "source_path": "tech-bug-troubleshooting/0.1.0/skills/nexus-error-explain",
-  "entry_path": "tech-bug-troubleshooting/0.1.0/skills/nexus-error-explain/SKILL.md",
+  "source_path": "tech-bug-troubleshooting-team/0.1.0/skills/nexus-error-explain",
+  "entry_path": "tech-bug-troubleshooting-team/0.1.0/skills/nexus-error-explain/SKILL.md",
   "reason": "standard_skill",
   "files": [
-    "tech-bug-troubleshooting/0.1.0/skills/nexus-error-explain/SKILL.md",
-    "tech-bug-troubleshooting/0.1.0/skills/nexus-error-explain/references/nexus-api.md"
+    "tech-bug-troubleshooting-team/0.1.0/skills/nexus-error-explain/SKILL.md",
+    "tech-bug-troubleshooting-team/0.1.0/skills/nexus-error-explain/references/nexus-api.md"
   ],
   "warnings": [],
   "secret_findings": [],
-  "source_root": "tech-bug-troubleshooting",
+  "source_root": "tech-bug-troubleshooting-team",
   "scan_generated_at": "2026-07-06T17:31:30+08:00"
 }

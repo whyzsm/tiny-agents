@@ -2,10 +2,10 @@
   "name": "position-risk-manager",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-risk-assessment",
+  "source_package": "finance-risk-assessment-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-risk-assessment/skills/position-risk-manager.zip"
+    "finance-risk-assessment-team/skills/position-risk-manager.zip"
   ],
   "converted_for": "codex-skills"
 }

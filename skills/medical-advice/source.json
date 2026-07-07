@@ -2,10 +2,10 @@
   "name": "medical-advice",
   "kind": "skill",
   "status": "ready",
-  "source_package": "healthcare-medical-record-analysis",
+  "source_package": "healthcare-medical-record-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "healthcare-medical-record-analysis/skills/medical-advice.zip"
+    "healthcare-medical-record-analysis-team/skills/medical-advice.zip"
   ],
   "converted_for": "codex-skills"
 }

@@ -2,11 +2,11 @@
   "name": "data-analysis-workflow",
   "kind": "skill",
   "status": "ready",
-  "source_package": "academic-statistical-analysis",
+  "source_package": "academic-statistical-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "academic-statistical-analysis/skills/data-analysis-workflow.zip",
-    "academic-statistical-analysis 2/skills/data-analysis-workflow.zip"
+    "academic-statistical-analysis-team/skills/data-analysis-workflow.zip",
+    "academic-statistical-analysis-team 2/skills/data-analysis-workflow.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

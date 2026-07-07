@@ -1,7 +1,7 @@
 ---
 name: afrexai-growth-engine
 description: Growth Engineering Mastery skill. Afrexai Growth Engine skill from the
-  marketing-user-growth expert package.
+  marketing-user-growth-team expert package.
 ---
 
 # Growth Engineering Mastery

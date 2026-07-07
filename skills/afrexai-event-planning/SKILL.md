@@ -1,7 +1,7 @@
 ---
 name: afrexai-event-planning
 description: Event Planning Business Operations skill. Afrexai Event Planning skill
-  from the marketing-event-planning expert package.
+  from the marketing-event-planning-team expert package.
 ---
 
 # Event Planning Business Operations

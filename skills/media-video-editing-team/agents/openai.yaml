@@ -1,0 +1,4 @@
+interface:
+  display_name: "视频剪辑"
+  short_description: "AI剪辑、FFmpeg处理、字幕文案与Remotion创作"
+  default_prompt: "Use $media-video-editing-team to complete a video editing workflow from rough cut to export in Simplified Chinese."

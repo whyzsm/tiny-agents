@@ -2,10 +2,10 @@
   "name": "tencent-yuanbao-gaokao-regional-passing-scores",
   "kind": "skill",
   "status": "ready",
-  "source_package": "academic-gaokao-expert",
+  "source_package": "academic-gaokao-expert-team",
   "source_kind": "zip",
   "source_refs": [
-    "academic-gaokao-expert/skills/tencent-yuanbao-gaokao-regional-passing-scores.zip"
+    "academic-gaokao-expert-team/skills/tencent-yuanbao-gaokao-regional-passing-scores.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

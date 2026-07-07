@@ -2,10 +2,10 @@
   "name": "student-growth-ops",
   "kind": "skill",
   "status": "ready",
-  "source_package": "education-student-assessment",
+  "source_package": "education-student-assessment-team",
   "source_kind": "zip",
   "source_refs": [
-    "education-student-assessment/skills/student-growth-ops.zip"
+    "education-student-assessment-team/skills/student-growth-ops.zip"
   ],
   "converted_for": "codex-skills"
 }

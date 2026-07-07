@@ -1,0 +1,11 @@
+{
+  "name": "finance-quant-backtesting-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "finance-quant-backtesting-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "finance-quant-backtesting-team/skillsets/finance-quant-backtesting-team.md"
+  ],
+  "converted_for": "codex-skills"
+}

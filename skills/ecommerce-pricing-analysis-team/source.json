@@ -1,0 +1,11 @@
+{
+  "name": "ecommerce-pricing-analysis-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-pricing-analysis-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "ecommerce-pricing-analysis-team/skillsets/ecommerce-pricing-analysis-team.md"
+  ],
+  "converted_for": "codex-skills"
+}

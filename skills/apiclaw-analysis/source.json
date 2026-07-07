@@ -2,10 +2,10 @@
   "name": "apiclaw-analysis",
   "kind": "skill",
   "status": "ready",
-  "source_package": "ecommerce-product-selection",
+  "source_package": "ecommerce-product-selection-team",
   "source_kind": "zip",
   "source_refs": [
-    "ecommerce-product-selection/skills/apiclaw-analysis.zip"
+    "ecommerce-product-selection-team/skills/apiclaw-analysis.zip"
   ],
   "converted_for": "codex-skills"
 }

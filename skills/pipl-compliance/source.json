@@ -2,10 +2,10 @@
   "name": "pipl-compliance",
   "kind": "skill",
   "status": "ready",
-  "source_package": "legal-compliance-analysis",
+  "source_package": "legal-compliance-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "legal-compliance-analysis/skills/pipl-compliance.zip"
+    "legal-compliance-analysis-team/skills/pipl-compliance.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

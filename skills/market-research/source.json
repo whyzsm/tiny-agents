@@ -2,11 +2,11 @@
   "name": "market-research",
   "kind": "skill",
   "status": "ready",
-  "source_package": "marketing-competitor-analysis",
+  "source_package": "marketing-competitor-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "ecommerce-pricing-analysis/skills/market-research.zip",
-    "marketing-competitor-analysis/skills/market-research.zip"
+    "ecommerce-pricing-analysis-team/skills/market-research.zip",
+    "marketing-competitor-analysis-team/skills/market-research.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

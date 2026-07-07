@@ -2,10 +2,10 @@
   "name": "exam",
   "kind": "skill",
   "status": "ready",
-  "source_package": "education-quiz-generation",
+  "source_package": "education-quiz-generation-team",
   "source_kind": "zip",
   "source_refs": [
-    "education-quiz-generation/skills/exam.zip"
+    "education-quiz-generation-team/skills/exam.zip"
   ],
   "converted_for": "codex-skills"
 }

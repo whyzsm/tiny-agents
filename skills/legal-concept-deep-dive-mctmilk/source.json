@@ -2,10 +2,10 @@
   "name": "legal-concept-deep-dive-mctmilk",
   "kind": "skill",
   "status": "ready",
-  "source_package": "legal-legal-research",
+  "source_package": "legal-legal-research-team",
   "source_kind": "zip",
   "source_refs": [
-    "legal-legal-research/skills/legal-concept-deep-dive-mctmilk.zip"
+    "legal-legal-research-team/skills/legal-concept-deep-dive-mctmilk.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

@@ -2,10 +2,10 @@
   "name": "financial-roe-analysis",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-business-analysis",
+  "source_package": "finance-business-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-business-analysis/skills/financial-roe-analysis.zip"
+    "finance-business-analysis-team/skills/financial-roe-analysis.zip"
   ],
   "converted_for": "codex-skills"
 }

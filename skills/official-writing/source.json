@@ -2,10 +2,10 @@
   "name": "official-writing",
   "kind": "skill",
   "status": "ready",
-  "source_package": "marketing-official-document-writing",
+  "source_package": "marketing-official-document-writing-team",
   "source_kind": "zip",
   "source_refs": [
-    "marketing-official-document-writing/skills/official-writing.zip"
+    "marketing-official-document-writing-team/skills/official-writing.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

@@ -1,0 +1,12 @@
+{
+  "name": "legal-contract-drafting-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "legal-contract-drafting-team",
+  "source_kind": "skillset",
+  "source_refs": [
+    "legal-contract-drafting-team/skillsets/legal-contract-drafting-team.md"
+  ],
+  "converted_for": "codex-skills",
+  "repo_only": true
+}

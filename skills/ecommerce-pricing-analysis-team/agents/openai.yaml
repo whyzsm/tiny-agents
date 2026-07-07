@@ -1,0 +1,7 @@
+interface:
+  display_name: 定价分析
+  short_description: 电商商品的长期定价策略与日常调价管理：跨境与国内全球比价、竞品…
+  default_prompt: Use $ecommerce-pricing-analysis-team to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: 交互设计
+  short_description: 交互设计专家团总入口
+  default_prompt: Use $design-interaction-design-team to complete an interaction design
+    workflow from research to accessible implementation.
+policy:
+  allow_implicit_invocation: true

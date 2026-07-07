@@ -2,10 +2,10 @@
   "name": "ecommerce-product-description-generator",
   "kind": "skill",
   "status": "ready",
-  "source_package": "ecommerce-product-copywriting",
+  "source_package": "ecommerce-product-copywriting-team",
   "source_kind": "zip",
   "source_refs": [
-    "ecommerce-product-copywriting/skills/ecommerce-product-description-generator.zip"
+    "ecommerce-product-copywriting-team/skills/ecommerce-product-description-generator.zip"
   ],
   "converted_for": "codex-skills"
 }

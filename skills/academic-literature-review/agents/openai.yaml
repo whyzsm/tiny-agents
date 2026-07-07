@@ -1,6 +1,0 @@
-interface:
-  display_name: "文献综述"
-  short_description: "从透明严谨的双轮深度调研（APA引用/证据分级/用户确认）与专精文献综述论文分析学术写作、12要素结构化论文拆解（研究背景…"
-  default_prompt: "Use $academic-literature-review to complete this workflow and produce concrete deliverables."
-policy:
-  allow_implicit_invocation: true

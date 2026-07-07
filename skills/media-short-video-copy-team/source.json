@@ -1,0 +1,19 @@
+{
+  "name": "media-short-video-copy-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/media-short-video-copy-team",
+  "entry_path": "~/.codex/skills/media-short-video-copy-team/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/media-short-video-copy-team/SKILL.md",
+    "~/.codex/skills/media-short-video-copy-team/agents/openai.yaml",
+    "~/.codex/skills/media-short-video-copy-team/references/guide.md",
+    "~/.codex/skills/media-short-video-copy-team/references/manifest.json",
+    "~/.codex/skills/media-short-video-copy-team/references/workflow.md"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T22:26:27+08:00"
+}

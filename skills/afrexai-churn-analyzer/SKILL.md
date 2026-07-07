@@ -1,6 +1,6 @@
 ---
 name: afrexai-churn-analyzer
-description: Churn Risk Analyzer skill. Afrexai Churn Analyzer skill from the marketing-user-growth
+description: Churn Risk Analyzer skill. Afrexai Churn Analyzer skill from the marketing-user-growth-team
   expert package.
 ---
 

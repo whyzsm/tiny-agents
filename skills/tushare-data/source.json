@@ -2,10 +2,10 @@
   "name": "tushare-data",
   "kind": "skill",
   "status": "ready",
-  "source_package": "finance-financial-report-analysis",
+  "source_package": "finance-financial-report-analysis-team",
   "source_kind": "zip",
   "source_refs": [
-    "finance-financial-report-analysis/skills/tushare-data.zip"
+    "finance-financial-report-analysis-team/skills/tushare-data.zip"
   ],
   "converted_for": "codex-skills"
 }

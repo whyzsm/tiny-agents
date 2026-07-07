@@ -1,0 +1,16 @@
+{
+  "name": "design-prd-writing-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/.codex/skills/design-prd-writing-team",
+  "entry_path": "~/.codex/skills/design-prd-writing-team/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "~/.codex/skills/design-prd-writing-team/SKILL.md",
+    "~/.codex/skills/design-prd-writing-team/agents/openai.yaml"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/.codex",
+  "scan_generated_at": "2026-07-06T14:26:05+08:00"
+}

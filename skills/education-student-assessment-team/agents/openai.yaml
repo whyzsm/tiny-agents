@@ -1,0 +1,7 @@
+interface:
+  display_name: 学生评估
+  short_description: 从教师评估工具箱（评分标准Rubric设计/评估方案/学生反馈…
+  default_prompt: Use $education-student-assessment-team to complete this workflow and
+    produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

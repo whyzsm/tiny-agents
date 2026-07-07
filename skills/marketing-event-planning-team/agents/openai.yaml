@@ -1,0 +1,7 @@
+interface:
+  display_name: 活动策划
+  short_description: 从商业活动全品类策划（会议/发布会/展览/企业聚会）与可落地S…
+  default_prompt: Use $marketing-event-planning-team to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

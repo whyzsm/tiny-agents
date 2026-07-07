@@ -2,10 +2,10 @@
   "name": "audience-segmentation-analyst",
   "kind": "skill",
   "status": "ready",
-  "source_package": "ecommerce-user-profiling",
+  "source_package": "ecommerce-user-profiling-team",
   "source_kind": "zip",
   "source_refs": [
-    "ecommerce-user-profiling/skills/audience-segmentation-analyst.zip"
+    "ecommerce-user-profiling-team/skills/audience-segmentation-analyst.zip"
   ],
   "converted_for": "codex-skills"
 }

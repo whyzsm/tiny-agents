@@ -2,10 +2,10 @@
   "name": "afrexai-growth-engine",
   "kind": "skill",
   "status": "ready",
-  "source_package": "marketing-user-growth",
+  "source_package": "marketing-user-growth-team",
   "source_kind": "zip",
   "source_refs": [
-    "marketing-user-growth/skills/afrexai-growth-engine.zip"
+    "marketing-user-growth-team/skills/afrexai-growth-engine.zip"
   ],
   "converted_for": "codex-skills",
   "repo_only": true

@@ -1,6 +1,6 @@
 ---
 name: docx-formatter
-description: docx-formatter skill. Docx Formatter skill from the marketing-official-document-writing
+description: docx-formatter skill. Docx Formatter skill from the marketing-official-document-writing-team
   expert package.
 ---
 

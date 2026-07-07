@@ -1,0 +1,7 @@
+interface:
+  display_name: Ads Audience Targeting
+  short_description: Build audience segmentation and targeting plans for Meta (Facebo
+  default_prompt: Use $audience-segmentation-analyst to complete this workflow and
+    produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

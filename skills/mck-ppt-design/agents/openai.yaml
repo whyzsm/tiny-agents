@@ -1,0 +1,8 @@
+interface:
+  display_name: McKinsey PPT Design Framework
+  short_description: Create professional, consultant-grade PowerPoint presentations
+    f
+  default_prompt: Use $mck-ppt-design to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

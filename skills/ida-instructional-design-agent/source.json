@@ -1,0 +1,11 @@
+{
+  "name": "ida-instructional-design-agent",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "education-training-program",
+  "source_kind": "zip",
+  "source_refs": [
+    "education-training-program/skills/ida-instructional-design-agent.zip"
+  ],
+  "converted_for": "codex-skills"
+}

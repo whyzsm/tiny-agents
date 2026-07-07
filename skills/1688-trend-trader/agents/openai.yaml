@@ -1,0 +1,7 @@
+interface:
+  display_name: 1688 爆款操盘手 (1688 Trend Trader)
+  short_description: 1688 爆款操盘手是一款全栈式供应链 Agent，模拟资深买手加运营主管工作流，实现选、找、谈三步走。 触发场景：用户需要跨境
+  default_prompt: Use $1688-trend-trader to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

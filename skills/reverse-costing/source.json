@@ -1,0 +1,11 @@
+{
+  "name": "reverse-costing",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-pricing-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "ecommerce-pricing-analysis/skills/reverse-costing.zip"
+  ],
+  "converted_for": "codex-skills"
+}

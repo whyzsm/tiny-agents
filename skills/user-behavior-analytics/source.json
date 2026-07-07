@@ -1,0 +1,11 @@
+{
+  "name": "user-behavior-analytics",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-user-profiling",
+  "source_kind": "zip",
+  "source_refs": [
+    "ecommerce-user-profiling/skills/user-behavior-analytics.zip"
+  ],
+  "converted_for": "codex-skills"
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: 周报生成器
+  short_description: 周报/日报生成与润色技能。当用户需要写周报、日报、工作总结、工作汇报，或提到"周报""日报""工作总结""汇报一下""这周干了啥
+  default_prompt: Use $weekly-report-pro to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

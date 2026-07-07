@@ -1,0 +1,7 @@
+interface:
+  display_name: IDA – Instructional Design Agent
+  short_description: IDA – Instructional Design Agent skill. Ida Instructional Design
+  default_prompt: Use $ida-instructional-design-agent to complete this workflow and
+    produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

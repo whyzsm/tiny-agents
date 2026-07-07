@@ -1,0 +1,7 @@
+interface:
+  display_name: Customer Retention
+  short_description: Build and execute customer retention strategies for a solopreneu
+  default_prompt: Use $customer-retention to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

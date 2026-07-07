@@ -1,0 +1,7 @@
+interface:
+  display_name: 会议/谈话纪要（强产出版）
+  short_description: '探讨/决策型会议与谈话纪要（结论/共识/分歧/决策轨迹/隐含假设/风险机会/行动项）+ Zettelkasten 连接。Use '
+  default_prompt: Use $meeting-note to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

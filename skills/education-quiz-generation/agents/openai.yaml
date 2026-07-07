@@ -1,0 +1,7 @@
+interface:
+  display_name: 题库生成
+  short_description: 从多题型自动生成（选择题/填空题/简答题/模拟考试/难度分级/…
+  default_prompt: Use $education-quiz-generation to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

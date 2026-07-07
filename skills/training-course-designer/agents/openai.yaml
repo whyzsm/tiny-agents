@@ -1,0 +1,7 @@
+interface:
+  display_name: Training Course Designer - Enhanced Edition
+  short_description: Professional training course design for corporate L&D with ONE-C
+  default_prompt: Use $training-course-designer to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

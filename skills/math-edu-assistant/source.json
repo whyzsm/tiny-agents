@@ -1,0 +1,11 @@
+{
+  "name": "math-edu-assistant",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "education-quiz-generation",
+  "source_kind": "zip",
+  "source_refs": [
+    "education-quiz-generation/skills/math-edu-assistant.zip"
+  ],
+  "converted_for": "codex-skills"
+}

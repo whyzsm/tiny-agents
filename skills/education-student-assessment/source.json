@@ -1,0 +1,11 @@
+{
+  "name": "education-student-assessment",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "education-student-assessment",
+  "source_kind": "skillset",
+  "source_refs": [
+    "education-student-assessment/skillsets/education-student-assessment.md"
+  ],
+  "converted_for": "codex-skills"
+}

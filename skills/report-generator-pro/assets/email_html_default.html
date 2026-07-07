@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ report_title }}</title>
+<style>
+  body { font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', sans-serif; background: #f5f7fa; margin: 0; padding: 0; -webkit-text-size-adjust: 100%; }
+  .wrapper { max-width: 600px; margin: 20px auto; background: #ffffff; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden; }
+  .header { background: linear-gradient(135deg, #1E88E5 0%, #1565C0 100%); padding: 28px 24px; text-align: center; }
+  .header h2 { color: white; margin: 0 0 6px; font-size: 20px; font-weight: 600; }
+  .header .period { color: rgba(255,255,255,0.85); font-size: 13px; }
+  .body { padding: 24px; }
+  .greeting { color: #333; font-size: 15px; margin-bottom: 16px; line-height: 1.6; }
+  .section { margin-bottom: 20px; }
+  .section-title { font-size: 15px; font-weight: 600; color: #1E88E5; margin-bottom: 10px; padding-left: 10px; border-left: 3px solid #1E88E5; }
+  .section-content { color: #444; font-size: 14px; line-height: 1.8; padding-left: 13px; }
+  .section-content ul { padding-left: 18px; margin: 6px 0; }
+  .section-content li { margin-bottom: 4px; }
+  .highlight { display: inline-block; background: #E3F2FD; color: #1565C0; padding: 2px 8px; border-radius: 4px; font-weight: 600; margin: 0 2px; }
+  .metric-table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 13px; }
+  .metric-table th { background: #E3F2FD; color: #1565C0; padding: 8px 10px; text-align: left; font-weight: 600; border: 1px solid #BBDEFB; }
+  .metric-table td { padding: 8px 10px; border: 1px solid #E0E0E0; color: #444; }
+  .stamp { display: inline-block; padding: 5px 14px; border-radius: 4px; font-size: 13px; font-weight: 600; margin: 3px 4px 3px 0; }
+  .stamp-done { background: #E8F5E9; color: #2E7D32; }
+  .stamp-progress { background: #FFF3E0; color: #E65100; }
+  .stamp-blocked { background: #FFEBEE; color: #C62828; }
+  .footer { border-top: 1px solid #EEEEEE; padding: 16px 24px; color: #999; font-size: 12px; line-height: 1.6; text-align: center; }
+  .footer a { color: #1E88E5; text-decoration: none; }
+  @media only screen and (max-width: 480px) {
+    .wrapper { border-radius: 0; margin: 0; }
+    .header { padding: 20px 16px; }
+    .header h2 { font-size: 17px; }
+    .body { padding: 16px; }
+    .section-content { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f5f7fa;">
+<tr><td align="center" style="padding: 20px 10px;">
+
+<div class="wrapper">
+  <!-- 头部 -->
+  <div class="header">
+    <h2>{{ report_title }}</h2>
+    <div class="period">{{ period }}</div>
+  </div>
+
+  <!-- 正文 -->
+  <div class="body">
+    {{ greeting_html }}
+    {{ summary_html }}
+    {{ content_html }}
+  </div>
+
+  <!-- 底部 -->
+  <div class="footer">
+    <p>{{ signature }}</p>
+    <p>报告由 智能报告生成助手 自动生成 · {{ generate_time }}</p>
+    {{ attachments_note }}
+  </div>
+</div>
+
+</td></tr>
+</table>
+</body>
+</html>

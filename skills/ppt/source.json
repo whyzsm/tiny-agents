@@ -1,0 +1,11 @@
+{
+  "name": "ppt",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "hr-ppt-creation",
+  "source_kind": "zip",
+  "source_refs": [
+    "hr-ppt-creation/skills/ppt.zip"
+  ],
+  "converted_for": "codex-skills"
+}

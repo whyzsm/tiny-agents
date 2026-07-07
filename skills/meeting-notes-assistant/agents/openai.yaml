@@ -1,0 +1,7 @@
+interface:
+  display_name: Meeting Notes Assistant v1.0.0
+  short_description: 会议纪要智能助手。使用本地 Whisper 音频转写（离线、隐私安全），生成结构化会议纪要（时间、议题、结论、待办、关键词），提
+  default_prompt: Use $meeting-notes-assistant to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: Web Development
+  short_description: Web 应用实现与验证
+  default_prompt: Use $web-development to handle the relevant Tencent Cloud task.
+policy:
+  allow_implicit_invocation: true

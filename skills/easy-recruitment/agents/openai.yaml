@@ -1,0 +1,7 @@
+interface:
+  display_name: 招聘助手
+  short_description: 智能招聘助手。根据职位JD自动筛选和评估简历，输出候选人排序报告，并为每个候选人生成定制化面试问题清单。当用户需要筛选简历、评估
+  default_prompt: Use $easy-recruitment to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

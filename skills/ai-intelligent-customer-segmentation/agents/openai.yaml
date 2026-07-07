@@ -1,0 +1,7 @@
+interface:
+  display_name: AI 智能客户分层系统
+  short_description: 客户分层，RFM分析 + 精准营销。
+  default_prompt: Use $ai-intelligent-customer-segmentation to complete this workflow
+    and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

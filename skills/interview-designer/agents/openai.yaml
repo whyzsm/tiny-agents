@@ -1,0 +1,7 @@
+interface:
+  display_name: Interview Designer Skill
+  short_description: Analyze resumes and design interview strategies using evidence-b
+  default_prompt: Use $interview-designer to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

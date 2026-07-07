@@ -1,0 +1,7 @@
+interface:
+  display_name: Rubric Gap Analyzer
+  short_description: 读取评分标准、作业要求或评估rubric，分析当前草稿的差距并给出提分计划。
+  default_prompt: Use $rubric-gap-analyzer to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

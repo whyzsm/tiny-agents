@@ -1,0 +1,11 @@
+{
+  "name": "pricing-strategy",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-pricing-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "ecommerce-pricing-analysis/skills/pricing-strategy.zip"
+  ],
+  "converted_for": "codex-skills"
+}

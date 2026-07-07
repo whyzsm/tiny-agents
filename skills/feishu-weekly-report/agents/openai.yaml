@@ -1,0 +1,7 @@
+interface:
+  display_name: 飞书周报 Skill
+  short_description: 生成飞书周报。通过两种方式收集工作内容：(1) 调用飞书API拉取指定时间范围的聊天记录，(2) 读取本地daily memor
+  default_prompt: Use $feishu-weekly-report to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

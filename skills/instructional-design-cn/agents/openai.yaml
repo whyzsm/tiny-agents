@@ -1,0 +1,7 @@
+interface:
+  display_name: 教学设计
+  short_description: 培训课程大纲设计、效果评估、内部分享材料生成
+  default_prompt: Use $instructional-design-cn to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

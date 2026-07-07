@@ -1,0 +1,7 @@
+interface:
+  display_name: Product Description Generator 📝
+  short_description: E-commerce product description generator for any platform. Gener
+  default_prompt: Use $ecommerce-product-description-generator to complete this workflow
+    and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

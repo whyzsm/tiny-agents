@@ -1,0 +1,7 @@
+interface:
+  display_name: 电商用户行为分析
+  short_description: 电商用户行为分析 - 活跃度趋势追踪与可视化图表生成
+  default_prompt: Use $user-behavior-analytics to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

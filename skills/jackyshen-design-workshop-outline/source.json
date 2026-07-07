@@ -1,0 +1,11 @@
+{
+  "name": "jackyshen-design-workshop-outline",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "education-training-program",
+  "source_kind": "zip",
+  "source_refs": [
+    "education-training-program/skills/jackyshen-design-workshop-outline.zip"
+  ],
+  "converted_for": "codex-skills"
+}

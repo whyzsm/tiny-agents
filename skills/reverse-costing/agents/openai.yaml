@@ -1,0 +1,8 @@
+interface:
+  display_name: Reverse Costing
+  short_description: Deconstruct competitor products to understand cost structure.
+    Us
+  default_prompt: Use $reverse-costing to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

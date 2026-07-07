@@ -1,0 +1,7 @@
+interface:
+  display_name: Meeting Minutes Skill — Short Internal Meetings
+  short_description: Generate concise, actionable meeting minutes for internal meetin
+  default_prompt: Use $meeting-minutes-pro to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

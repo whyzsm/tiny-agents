@@ -1,0 +1,11 @@
+{
+  "name": "error-analysis",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "education-student-assessment",
+  "source_kind": "zip",
+  "source_refs": [
+    "education-student-assessment/skills/error-analysis.zip"
+  ],
+  "converted_for": "codex-skills"
+}

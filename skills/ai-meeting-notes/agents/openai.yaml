@@ -1,0 +1,8 @@
+interface:
+  display_name: 📋 AI Meeting Notes
+  short_description: Messy notes → Clear action items. Instantly. Paste any meeting
+    n
+  default_prompt: Use $ai-meeting-notes to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

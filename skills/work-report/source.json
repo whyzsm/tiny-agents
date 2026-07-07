@@ -1,0 +1,11 @@
+{
+  "name": "work-report",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "hr-weekly-daily-report",
+  "source_kind": "zip",
+  "source_refs": [
+    "hr-weekly-daily-report/skills/work-report.zip"
+  ],
+  "converted_for": "codex-skills"
+}

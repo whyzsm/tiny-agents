@@ -1,0 +1,11 @@
+{
+  "name": "training-course-designer",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "education-training-program",
+  "source_kind": "zip",
+  "source_refs": [
+    "education-training-program/skills/training-course-designer.zip"
+  ],
+  "converted_for": "codex-skills"
+}

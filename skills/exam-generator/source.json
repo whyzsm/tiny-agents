@@ -1,0 +1,11 @@
+{
+  "name": "exam-generator",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "education-quiz-generation",
+  "source_kind": "zip",
+  "source_refs": [
+    "education-quiz-generation/skills/exam-generator.zip"
+  ],
+  "converted_for": "codex-skills"
+}

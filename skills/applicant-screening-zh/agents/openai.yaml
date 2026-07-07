@@ -1,0 +1,7 @@
+interface:
+  display_name: 简历筛选与候选人评分
+  short_description: 简历筛选 / 招聘筛选 / 候选人评估 / resume screening / applicant screening。HR招
+  default_prompt: Use $applicant-screening-zh to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

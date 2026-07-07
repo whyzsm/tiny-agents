@@ -1,0 +1,7 @@
+interface:
+  display_name: Competitor Watch — Your 24/7 Competitive Intelligence Agent
+  short_description: Know what your competitors ship before their customers do. Autom
+  default_prompt: Use $competitor-watch to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

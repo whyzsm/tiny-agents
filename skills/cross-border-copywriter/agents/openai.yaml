@@ -1,0 +1,7 @@
+interface:
+  display_name: 跨境电商商品文案智能生成器
+  short_description: 跨境电商商品文案智能生成器 skill. Cross Border Copywriter skill from the ecom
+  default_prompt: Use $cross-border-copywriter to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

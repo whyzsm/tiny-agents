@@ -1,0 +1,7 @@
+interface:
+  display_name: error-analysis
+  short_description: error-analysis skill. Error Analysis skill from the education-st
+  default_prompt: Use $error-analysis to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

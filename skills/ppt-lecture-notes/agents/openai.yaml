@@ -1,0 +1,7 @@
+interface:
+  display_name: 功能说明
+  short_description: 每周一键更新PPT讲师备注。从教案中提取讲师活动，自动写入对应PPT幻灯片备注。
+  default_prompt: Use $ppt-lecture-notes to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

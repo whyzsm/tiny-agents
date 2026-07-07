@@ -1,0 +1,11 @@
+{
+  "name": "cross-border-ecommerce-product-analysis",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-product-selection",
+  "source_kind": "zip",
+  "source_refs": [
+    "ecommerce-product-selection/skills/cross-border-ecommerce-product-analysis.zip"
+  ],
+  "converted_for": "codex-skills"
+}

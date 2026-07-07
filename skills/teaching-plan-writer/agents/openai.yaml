@@ -1,0 +1,7 @@
+interface:
+  display_name: 教学评一致性教案写作助手
+  short_description: 专业教案写作助手，基于教学评一致性原则生成符合《义务教育课程标准（2022年版）》的个性化教案。使用场景：当用户需要编写中小学各
+  default_prompt: Use $teaching-plan-writer to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

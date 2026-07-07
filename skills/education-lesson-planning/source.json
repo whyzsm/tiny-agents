@@ -1,0 +1,11 @@
+{
+  "name": "education-lesson-planning",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "education-lesson-planning",
+  "source_kind": "skillset",
+  "source_refs": [
+    "education-lesson-planning/skillsets/education-lesson-planning.md"
+  ],
+  "converted_for": "codex-skills"
+}

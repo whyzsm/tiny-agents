@@ -1,0 +1,11 @@
+{
+  "name": "crossborder-listing",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-product-copywriting",
+  "source_kind": "zip",
+  "source_refs": [
+    "ecommerce-product-copywriting/skills/crossborder-listing.zip"
+  ],
+  "converted_for": "codex-skills"
+}

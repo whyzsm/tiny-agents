@@ -1,0 +1,7 @@
+interface:
+  display_name: 职场人日报/周报生成器
+  short_description: 职场人日报/周报生成器 - 根据工作记录自动生成结构化日报周报，含问题复盘板块
+  default_prompt: Use $chinese-daily-report-generator to complete this workflow and
+    produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

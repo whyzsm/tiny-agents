@@ -1,0 +1,6 @@
+interface:
+  display_name: Exam
+  short_description: 'Generate practice tests, flashcards, study schedules, and timed '
+  default_prompt: Use $exam to complete this workflow and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

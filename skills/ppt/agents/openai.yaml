@@ -1,0 +1,6 @@
+interface:
+  display_name: PPT Generator
+  short_description: 将用户讲稿一键生成乔布斯风极简科技感竖屏HTML演示稿。当用户需要生成PPT、演示文稿、Slides、幻灯片，或要求科技风/极简
+  default_prompt: Use $ppt to complete this workflow and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

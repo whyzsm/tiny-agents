@@ -1,0 +1,7 @@
+interface:
+  display_name: Price Hunter
+  short_description: Global price comparison tool with international platform support
+  default_prompt: Use $price-hunter to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

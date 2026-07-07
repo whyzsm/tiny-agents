@@ -1,0 +1,11 @@
+{
+  "name": "rfm-segmenter",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-user-profiling",
+  "source_kind": "zip",
+  "source_refs": [
+    "ecommerce-user-profiling/skills/rfm-segmenter.zip"
+  ],
+  "converted_for": "codex-skills"
+}

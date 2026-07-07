@@ -1,0 +1,9 @@
+{
+  "name": "web-development",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "tech-tencentcloud-expert",
+  "source_kind": "zip",
+  "source_ref": "tech-tencentcloud-expert/skills/web-development.zip",
+  "converted_for": "codex-skills"
+}

@@ -1,0 +1,8 @@
+interface:
+  display_name: Ecommerce Copy Humanizer ZH
+  short_description: Ecommerce Copy Humanizer ZH skill. Ecommerce Copy Humanizer Zh
+    s
+  default_prompt: Use $ecommerce-copy-humanizer-zh to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

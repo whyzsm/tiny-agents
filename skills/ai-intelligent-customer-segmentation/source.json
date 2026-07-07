@@ -1,0 +1,11 @@
+{
+  "name": "ai-intelligent-customer-segmentation",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-user-profiling",
+  "source_kind": "zip",
+  "source_refs": [
+    "ecommerce-user-profiling/skills/ai-intelligent-customer-segmentation.zip"
+  ],
+  "converted_for": "codex-skills"
+}

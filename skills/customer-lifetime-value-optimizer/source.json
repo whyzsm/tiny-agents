@@ -1,0 +1,11 @@
+{
+  "name": "customer-lifetime-value-optimizer",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-user-profiling",
+  "source_kind": "zip",
+  "source_refs": [
+    "ecommerce-user-profiling/skills/customer-lifetime-value-optimizer.zip"
+  ],
+  "converted_for": "codex-skills"
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: 智能报告生成助手
+  short_description: 一句话完成日/周/月/季/年报全流程：上传文件或口述工作内容 → AI 抽取整理 → 生成结构化报告 → 导出 Word/Exc
+  default_prompt: Use $report-generator-pro to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

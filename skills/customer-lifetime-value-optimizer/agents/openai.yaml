@@ -1,0 +1,7 @@
+interface:
+  display_name: Customer Lifetime Value Optimizer
+  short_description: 'Segment ecommerce customers by repeat behavior, margin quality, '
+  default_prompt: Use $customer-lifetime-value-optimizer to complete this workflow
+    and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

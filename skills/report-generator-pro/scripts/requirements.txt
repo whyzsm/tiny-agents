@@ -1,0 +1,26 @@
+# 智能报告生成助手 - Python 依赖
+# 安装方式：pip install -r requirements.txt
+# 可选依赖用 #optional 标注
+
+# 文件解析（必备）
+python-docx>=0.8.11    # Word 文件提取 + Word 报告生成
+openpyxl>=3.1.0        # Excel 文件提取 + Excel 报告生成
+pdfplumber>=0.10.0     # PDF 文件提取
+pandas>=2.0.0          # CSV/Excel 数据处理
+
+# 报告生成（必备）
+python-pptx>=0.6.21    # PPT 报告生成
+reportlab>=4.0.0       # PDF 报告生成
+
+# 邮件发送（必备）
+# smtplib + email.mime 是 Python 标准库，无需安装
+
+# 模板渲染（必备）
+jinja2>=3.1.0          # HTML 邮件模板渲染
+
+# 加密存储（推荐）
+cryptography>=41.0.0   # 密码加密存储 #optional
+
+# 其他工具
+pyyaml>=6.0            # YAML 配置解析
+python-frontmatter>=1.0 # Markdown frontmatter 解析 #optional

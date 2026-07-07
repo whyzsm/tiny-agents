@@ -1,0 +1,11 @@
+{
+  "name": "taobao-product-research",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-product-selection",
+  "source_kind": "zip",
+  "source_refs": [
+    "ecommerce-product-selection/skills/taobao-product-research.zip"
+  ],
+  "converted_for": "codex-skills"
+}

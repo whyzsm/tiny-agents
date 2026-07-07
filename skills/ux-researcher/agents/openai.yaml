@@ -1,0 +1,7 @@
+interface:
+  display_name: UX Researcher
+  short_description: 用户画像、旅程地图与研究洞察
+  default_prompt: Use $ux-researcher to create personas, journey maps, pain points,
+    and UX recommendations.
+policy:
+  allow_implicit_invocation: true

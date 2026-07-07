@@ -1,0 +1,7 @@
+interface:
+  display_name: Employee Training Program Builder
+  short_description: Employee Training Program Builder skill. Afrexai Training Progra
+  default_prompt: Use $afrexai-training-program to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

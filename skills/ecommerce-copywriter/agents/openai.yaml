@@ -1,0 +1,8 @@
+interface:
+  display_name: 电商爆款文案生成器
+  short_description: 电商爆款文案生成技能。为淘宝/拼多多/抖音/京东卖家生成高转化率的商品标题、详情页文案、卖点提炼和促销文案。使用场景：(1)
+    商
+  default_prompt: Use $ecommerce-copywriter to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

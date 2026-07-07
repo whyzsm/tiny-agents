@@ -1,0 +1,7 @@
+interface:
+  display_name: RFM Segmenter
+  short_description: Segment your customer base using Recency, Frequency, and Monetar
+  default_prompt: Use $rfm-segmenter to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

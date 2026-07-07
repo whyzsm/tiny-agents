@@ -1,0 +1,7 @@
+interface:
+  display_name: 中国中小学试卷生成器
+  short_description: 中国中小学试卷生成器。Use when teacher needs to create exam papers for Chin
+  default_prompt: Use $exam-generator to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

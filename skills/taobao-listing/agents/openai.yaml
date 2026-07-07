@@ -1,0 +1,7 @@
+interface:
+  display_name: Taobao Listing
+  short_description: Taobao Listing skill. Taobao Listing skill from the ecommerce-pr
+  default_prompt: Use $taobao-listing to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

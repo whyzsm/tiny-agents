@@ -1,0 +1,11 @@
+{
+  "name": "cn-ppt-outline-writer",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "hr-ppt-creation",
+  "source_kind": "zip",
+  "source_refs": [
+    "hr-ppt-creation/skills/cn-ppt-outline-writer.zip"
+  ],
+  "converted_for": "codex-skills"
+}

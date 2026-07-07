@@ -1,0 +1,7 @@
+interface:
+  display_name: SKILL.md - 考点作战地图生成器
+  short_description: SKILL.md - 考点作战地图生成器 skill. Exam Analyzer skill from the educati
+  default_prompt: Use $exam-analyzer to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

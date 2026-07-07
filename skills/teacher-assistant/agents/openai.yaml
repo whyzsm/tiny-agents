@@ -1,0 +1,7 @@
+interface:
+  display_name: 新知绘宇·教师助手
+  short_description: 教师助手全集Skill。覆盖教师日常教学全流程：教案生成、智能出题、成绩分析、家校沟通、教学总结、作业设计、学生档案、班级管理、
+  default_prompt: Use $teacher-assistant to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

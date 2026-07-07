@@ -1,0 +1,7 @@
+interface:
+  display_name: 数学教材同步教育助手
+  short_description: 数学教材同步教育助手。本技能应在用户提出数学学习相关请求时触发，涵盖知识点讲解、 智能出题、作业批改、解题答疑等场景。支持小学至
+  default_prompt: Use $math-edu-assistant to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

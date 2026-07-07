@@ -1,0 +1,7 @@
+interface:
+  display_name: 少儿英语学员成长档案
+  short_description: 记录少儿英语学习情况与家长反馈（本地档案）。适用于学情记录、家长沟通、学员建档、咨询留档等场景。
+  default_prompt: Use $student-growth-ops to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,8 @@
+interface:
+  display_name: 创作者课程大纲师
+  short_description: 为创作者课程生成模块结构、单元目标、作业与里程碑。；use for course, creator, curriculum
+    wo
+  default_prompt: Use $creator-course-outline to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

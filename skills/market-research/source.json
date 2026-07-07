@@ -1,0 +1,11 @@
+{
+  "name": "market-research",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-pricing-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "ecommerce-pricing-analysis/skills/market-research.zip"
+  ],
+  "converted_for": "codex-skills"
+}

@@ -1,0 +1,8 @@
+interface:
+  display_name: Xueersi Parent Comment Generator · 学而思家长签字评语生成器
+  short_description: 'Xueersi Parent Comment Generator: Generate warm, appropriate
+    par'
+  default_prompt: Use $xueersi-parent-comment to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: Quiz Generator
+  short_description: Generate quizzes and assessments from any topic or content. Crea
+  default_prompt: Use $quiz-creator to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

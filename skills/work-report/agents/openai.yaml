@@ -1,0 +1,7 @@
+interface:
+  display_name: Work Report PPT Generator
+  short_description: 生成工作汇报PPT。使用python-pptx库创建演示文稿，用于生成工作周报、月报、项目汇报等。第一页标题用宋体48号，内容页
+  default_prompt: Use $work-report to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

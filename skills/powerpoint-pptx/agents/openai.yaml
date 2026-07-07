@@ -1,0 +1,8 @@
+interface:
+  display_name: Powerpoint / PPTX
+  short_description: Create, inspect, and edit Microsoft PowerPoint presentations
+    and
+  default_prompt: Use $powerpoint-pptx to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

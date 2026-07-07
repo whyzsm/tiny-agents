@@ -1,0 +1,7 @@
+interface:
+  display_name: 亚马逊选品调研
+  short_description: 亚马逊选品调研 skill. Walter Product Research skill from the ecommerce-
+  default_prompt: Use $walter-product-research to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

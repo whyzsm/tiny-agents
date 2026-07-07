@@ -1,0 +1,7 @@
+interface:
+  display_name: 课堂教案打包师
+  short_description: 根据课程目标生成教案、互动题、作业与分层教学建议。；use for education, lesson-plan, teachi
+  default_prompt: Use $classroom-lesson-pack to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

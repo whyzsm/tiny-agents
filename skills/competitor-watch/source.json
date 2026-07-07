@@ -1,0 +1,11 @@
+{
+  "name": "competitor-watch",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "ecommerce-pricing-analysis",
+  "source_kind": "zip",
+  "source_refs": [
+    "ecommerce-pricing-analysis/skills/competitor-watch.zip"
+  ],
+  "converted_for": "codex-skills"
+}

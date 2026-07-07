@@ -1,0 +1,7 @@
+interface:
+  display_name: K12智能老师
+  short_description: K12智能老师辅导系统，支持作业批改、错题分析、举一反三练习生成。覆盖小学/初中/高中全学段，语文/数学/英语/物理/化学/生物
+  default_prompt: Use $k12-smart-teacher to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

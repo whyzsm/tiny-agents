@@ -1,0 +1,7 @@
+interface:
+  display_name: 会议纪要自动整理工具
+  short_description: 会议纪要自动整理工具 | 将原始会议记录智能整理为结构化会议纪要（议题、决议、待办、责任人和截止日期）
+  default_prompt: Use $meeting-minutes-organizer to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

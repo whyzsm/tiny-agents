@@ -1,0 +1,11 @@
+{
+  "name": "resume-screening",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "hr-resume-screening",
+  "source_kind": "zip",
+  "source_refs": [
+    "hr-resume-screening/skills/resume-screening.zip"
+  ],
+  "converted_for": "codex-skills"
+}

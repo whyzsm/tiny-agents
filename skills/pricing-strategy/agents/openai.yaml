@@ -1,0 +1,7 @@
+interface:
+  display_name: Pricing Strategy
+  short_description: 'Price a product or service for a solopreneur business. Use when '
+  default_prompt: Use $pricing-strategy to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

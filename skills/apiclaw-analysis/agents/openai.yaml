@@ -1,0 +1,8 @@
+interface:
+  display_name: Amazon Product Research & Seller Analytics
+  short_description: Amazon product research and seller analytics for FBA and FBM
+    bus
+  default_prompt: Use $apiclaw-analysis to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

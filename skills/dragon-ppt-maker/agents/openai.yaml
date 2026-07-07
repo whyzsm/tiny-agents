@@ -1,0 +1,7 @@
+interface:
+  display_name: ppt-maker
+  short_description: ppt-maker skill. Dragon PPT Maker skill from the hr-ppt-creation
+  default_prompt: Use $dragon-ppt-maker to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

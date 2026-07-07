@@ -1,0 +1,7 @@
+interface:
+  display_name: Mini Program Development
+  short_description: 微信小程序开发与发布
+  default_prompt: Use $miniprogram-development to handle the relevant Tencent Cloud
+    task.
+policy:
+  allow_implicit_invocation: true

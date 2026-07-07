@@ -1,0 +1,11 @@
+{
+  "name": "hr-meeting-minutes",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "hr-meeting-minutes",
+  "source_kind": "skillset",
+  "source_refs": [
+    "hr-meeting-minutes/skillsets/hr-meeting-minutes.md"
+  ],
+  "converted_for": "codex-skills"
+}

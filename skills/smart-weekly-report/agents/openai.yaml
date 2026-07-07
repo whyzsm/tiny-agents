@@ -1,0 +1,7 @@
+interface:
+  display_name: 周报生成器 · Weekly Report Generator
+  short_description: 周报生成器 · Weekly Report Generator skill. Smart Weekly Report skill
+  default_prompt: Use $smart-weekly-report to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

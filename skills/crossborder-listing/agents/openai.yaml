@@ -1,0 +1,7 @@
+interface:
+  display_name: 跨境电商 Listing 本地化
+  short_description: 为 Amazon、Shopee、Lazada、独立站商品做英文/多语 listing 本地化和卖点结构。 核心模块：标题、五点描
+  default_prompt: Use $crossborder-listing to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

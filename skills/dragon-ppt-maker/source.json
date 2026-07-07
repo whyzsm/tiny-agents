@@ -1,0 +1,11 @@
+{
+  "name": "dragon-ppt-maker",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "hr-ppt-creation",
+  "source_kind": "zip",
+  "source_refs": [
+    "hr-ppt-creation/skills/dragon-ppt-maker.zip"
+  ],
+  "converted_for": "codex-skills"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "k12-smart-teacher",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "education-quiz-generation",
+  "source_kind": "zip",
+  "source_refs": [
+    "education-student-assessment/skills/k12-smart-teacher.zip",
+    "education-quiz-generation/skills/k12-smart-teacher.zip"
+  ],
+  "converted_for": "codex-skills"
+}

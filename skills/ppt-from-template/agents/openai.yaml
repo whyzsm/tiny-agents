@@ -1,0 +1,7 @@
+interface:
+  display_name: PPT from Template
+  short_description: Generate presentations by extracting visual style from a referen
+  default_prompt: Use $ppt-from-template to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

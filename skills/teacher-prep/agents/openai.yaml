@@ -1,0 +1,7 @@
+interface:
+  display_name: 教师备课助手
+  short_description: 教师备课助手，用于小学语文教学备课。支持古诗、现代文、寓言、童话等各类课文。当用户提出备课需求时，自动执行：(1)搜索课文相关资
+  default_prompt: Use $teacher-prep to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

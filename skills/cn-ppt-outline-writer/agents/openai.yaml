@@ -1,0 +1,7 @@
+interface:
+  display_name: PPT 大纲生成器 CN PPT Outline Writer
+  short_description: PPT大纲生成器，专为职场汇报、商业提案、演讲PPT提供结构设计与内容生成。触发场景：用户提到"做PPT"、"PPT大纲"、"汇
+  default_prompt: Use $cn-ppt-outline-writer to complete this workflow and produce
+    concrete deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: Market Research
+  short_description: 'Research markets with sizing, segmentation, competitor mapping, '
+  default_prompt: Use $market-research to complete this workflow and produce concrete
+    deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: Workshop Outline Generator
+  short_description: Use when user asks to "generate workshop outline", "create train
+  default_prompt: Use $jackyshen-design-workshop-outline to complete this workflow
+    and produce concrete deliverables.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,37 @@
+{
+  "name": "sales-key-account-strategist-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/销售商务/sales-key-account-strategist",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 大客户策略师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "销售商务",
+    "title": "大客户策略师",
+    "author": "拓客客",
+    "summary": "精通大客户经营和账户扩展策略，将客户发展为长期战略伙伴。",
+    "tags": [
+      "大客户战略",
+      "客户规划",
+      "关系管理"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/sales-key-account-strategist-team/SKILL.md",
+    "skills/sales-key-account-strategist-team/agents/openai.yaml",
+    "skills/sales-key-account-strategist-team/references/guide.md",
+    "skills/sales-key-account-strategist-team/references/manifest.json",
+    "skills/sales-key-account-strategist-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/销售商务/sales-key-account-strategist",
+    "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 大客户策略师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

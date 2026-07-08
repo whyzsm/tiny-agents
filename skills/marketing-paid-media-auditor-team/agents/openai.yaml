@@ -1,0 +1,6 @@
+interface:
+  display_name: 付费媒体审计师
+  short_description: 深度审计广告投放数据和预算分配，找出被浪费的广告费。
+  default_prompt: Use $marketing-paid-media-auditor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

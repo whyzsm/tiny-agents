@@ -1,0 +1,6 @@
+interface:
+  display_name: Jira工作流管理员
+  short_description: 精通 Jira 配置和敏捷工作流设计，让工具真正服务于团队效率。
+  default_prompt: Use $project-jira-workflow-admin-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

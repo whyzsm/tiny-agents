@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-wechat-miniprogram-developer-team",
+  "displayName": "微信小程序开发者",
+  "summary": "精通微信小程序开发框架和生态，打造流畅微信原生体验应用。",
+  "source": "workbuddy-expert-center/技术/tech-wechat-miniprogram-developer",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "微信小程序开发者",
+    "author": "小程达",
+    "tags": [
+      "小程序开发",
+      "微信生态",
+      "WXML开发"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-wechat-miniprogram-developer-intake",
+    "tech-wechat-miniprogram-developer-strategy",
+    "tech-wechat-miniprogram-developer-execution",
+    "tech-wechat-miniprogram-developer-quality",
+    "tech-wechat-miniprogram-developer-measurement",
+    "tech-wechat-miniprogram-developer-handoff"
+  ]
+}

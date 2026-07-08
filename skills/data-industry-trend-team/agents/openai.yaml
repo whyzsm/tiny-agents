@@ -1,0 +1,6 @@
+interface:
+  display_name: 行业趋势专家
+  short_description: 持续追踪行业和技术趋势，为产品战略提供前瞻性洞察。
+  default_prompt: Use $data-industry-trend-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

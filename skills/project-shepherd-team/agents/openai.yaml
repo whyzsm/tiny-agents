@@ -1,0 +1,6 @@
+interface:
+  display_name: 项目牧羊人
+  short_description: 温和坚定地引导项目按计划推进，确保里程碑准时交付。
+  default_prompt: Use $project-shepherd-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

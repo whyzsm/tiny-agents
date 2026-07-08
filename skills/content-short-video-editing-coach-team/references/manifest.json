@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-short-video-editing-coach-team",
+  "displayName": "短视频剪辑教练",
+  "summary": "精通知识视频剪辑技巧和节奏把控，让每条视频具有专业冲击力。",
+  "source": "workbuddy-expert-center/内容创作/content-short-video-editing-coach",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "短视频剪辑教练",
+    "author": "剪神神",
+    "tags": [
+      "短视频剪辑",
+      "后期制作",
+      "剪辑教学"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-short-video-editing-coach-intake",
+    "content-short-video-editing-coach-strategy",
+    "content-short-video-editing-coach-execution",
+    "content-short-video-editing-coach-quality",
+    "content-short-video-editing-coach-measurement",
+    "content-short-video-editing-coach-handoff"
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: 爆款选题策划专家
+  short_description: 投热点出爆款，基于心法预筛和多形态产出，做公众号视频号小红书 H5 通吃的选题策划。
+  default_prompt: Use $content-viral-topic-planner-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

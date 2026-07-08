@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-social-ads-strategist-team",
+  "displayName": "社交广告策略师",
+  "summary": "精通社交平台广告投放，以精准定向实现最优获客成本。",
+  "source": "workbuddy-expert-center/营销增长/marketing-social-ads-strategist",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "社交广告策略师",
+    "author": "精投投",
+    "tags": [
+      "社媒广告",
+      "投放策略",
+      "受众分析"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-social-ads-strategist-intake",
+    "marketing-social-ads-strategist-strategy",
+    "marketing-social-ads-strategist-execution",
+    "marketing-social-ads-strategist-quality",
+    "marketing-social-ads-strategist-measurement",
+    "marketing-social-ads-strategist-handoff"
+  ]
+}

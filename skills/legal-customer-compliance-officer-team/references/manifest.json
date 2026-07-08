@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-customer-compliance-officer-team",
+  "displayName": "客户与合规官",
+  "summary": "小企业客户与合规官，处理客户反馈、客诉工单、CRM 清理和合同风险审查。",
+  "source": "workbuddy-expert-center/法务安全/legal-customer-compliance-officer",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "客户与合规官",
+    "author": "严守约",
+    "tags": [
+      "客户洞察",
+      "合同审查",
+      "合规管理"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-customer-compliance-officer-intake",
+    "legal-customer-compliance-officer-strategy",
+    "legal-customer-compliance-officer-execution",
+    "legal-customer-compliance-officer-quality",
+    "legal-customer-compliance-officer-measurement",
+    "legal-customer-compliance-officer-handoff"
+  ]
+}

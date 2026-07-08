@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-litigation-support-advisor-team",
+  "displayName": "诉讼支持顾问",
+  "summary": "面向诉讼律师的案件支持专家，梳理案件、证据、时间线、质证准备、索赔图表和文书草稿。",
+  "source": "workbuddy-expert-center/法务安全/legal-litigation-support-advisor",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "诉讼支持顾问",
+    "author": "诉讼法务专家",
+    "tags": [
+      "诉讼支持",
+      "证据时间线",
+      "文书准备"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-litigation-support-advisor-intake",
+    "legal-litigation-support-advisor-strategy",
+    "legal-litigation-support-advisor-execution",
+    "legal-litigation-support-advisor-quality",
+    "legal-litigation-support-advisor-measurement",
+    "legal-litigation-support-advisor-handoff"
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: 轮播内容增长专家
+  short_description: 专精设计高互动率轮播图内容，驱动社交平台用户参与和增长。
+  default_prompt: Use $marketing-carousel-growth-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

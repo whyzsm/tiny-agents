@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-medical-marketing-compliance-team",
+  "displayName": "医疗营销合规专家",
+  "summary": "确保医疗营销内容符合法规要求，守护信息准确性。",
+  "source": "workbuddy-expert-center/法务安全/legal-medical-marketing-compliance",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "医疗营销合规专家",
+    "author": "医合合",
+    "tags": [
+      "医疗合规",
+      "医疗营销",
+      "法规审核"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-medical-marketing-compliance-intake",
+    "legal-medical-marketing-compliance-strategy",
+    "legal-medical-marketing-compliance-execution",
+    "legal-medical-marketing-compliance-quality",
+    "legal-medical-marketing-compliance-measurement",
+    "legal-medical-marketing-compliance-handoff"
+  ]
+}

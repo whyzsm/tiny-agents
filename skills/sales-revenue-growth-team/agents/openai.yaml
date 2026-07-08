@@ -1,0 +1,6 @@
+interface:
+  display_name: 营收增长师
+  short_description: 小企业营收增长师，从线索打分到内容策略再到营销活动，一条龙驱动营收增长。
+  default_prompt: Use $sales-revenue-growth-team to complete a WorkBuddy-derived sales-commerce expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

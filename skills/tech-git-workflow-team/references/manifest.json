@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-git-workflow-team",
+  "displayName": "Git工作流专家",
+  "summary": "精通 Git 高级工作流和分支策略，让团队协作像行云流水般顺畅。",
+  "source": "workbuddy-expert-center/技术/tech-git-workflow",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "Git工作流专家",
+    "author": "分支通",
+    "tags": [
+      "Git工作流",
+      "分支策略",
+      "代码管理"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-git-workflow-intake",
+    "tech-git-workflow-strategy",
+    "tech-git-workflow-execution",
+    "tech-git-workflow-quality",
+    "tech-git-workflow-measurement",
+    "tech-git-workflow-handoff"
+  ]
+}

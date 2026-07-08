@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-weibo-strategist-team",
+  "displayName": "微博策略师",
+  "summary": "精通微博话题营销和舆论传播规律，让品牌在热搜持续出圈。",
+  "source": "workbuddy-expert-center/内容创作/content-weibo-strategist",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "微博策略师",
+    "author": "热搜搜",
+    "tags": [
+      "微博策略",
+      "话题运营",
+      "超话社区"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-weibo-strategist-intake",
+    "content-weibo-strategist-strategy",
+    "content-weibo-strategist-execution",
+    "content-weibo-strategist-quality",
+    "content-weibo-strategist-measurement",
+    "content-weibo-strategist-handoff"
+  ]
+}

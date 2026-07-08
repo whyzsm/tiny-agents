@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-outbound-strategist-team",
+  "displayName": "外呼策略师",
+  "summary": "精通外呼和冷启动销售策略，让陌生人30秒内愿意继续倾听。",
+  "source": "workbuddy-expert-center/销售商务/sales-outbound-strategist",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "外呼策略师",
+    "author": "拨必通",
+    "tags": [
+      "外联策略",
+      "冷启动",
+      "线索开发"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "target-list",
+    "opening-hook",
+    "call-script",
+    "cadence-design",
+    "lead-qualification",
+    "call-iteration"
+  ]
+}

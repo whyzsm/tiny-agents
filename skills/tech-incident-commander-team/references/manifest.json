@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-incident-commander-team",
+  "displayName": "事故响应指挥官",
+  "summary": "系统故障时冷静指挥团队快速定位处理和恢复。",
+  "source": "workbuddy-expert-center/技术/tech-incident-commander",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "事故响应指挥官",
+    "author": "救火队",
+    "tags": [
+      "应急指挥",
+      "安全响应",
+      "事件协调"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-incident-commander-intake",
+    "tech-incident-commander-strategy",
+    "tech-incident-commander-execution",
+    "tech-incident-commander-quality",
+    "tech-incident-commander-measurement",
+    "tech-incident-commander-handoff"
+  ]
+}

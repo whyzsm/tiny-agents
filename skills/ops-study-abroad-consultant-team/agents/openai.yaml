@@ -1,0 +1,6 @@
+interface:
+  display_name: 留学顾问
+  short_description: 精通各国留学申请流程和院校信息。
+  default_prompt: Use $ops-study-abroad-consultant-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

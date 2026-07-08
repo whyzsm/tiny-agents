@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "ops-recruiting-specialist-team",
+  "displayName": "招聘专家",
+  "summary": "精通人才招聘全流程，为团队找到最佳人才。",
+  "source": "workbuddy-expert-center/运营人力/ops-recruiting-specialist",
+  "workbuddy": {
+    "category": "运营人力",
+    "cardTitle": "招聘专家",
+    "author": "伯乐乐",
+    "tags": [
+      "招聘管理",
+      "人才筛选",
+      "面试评估"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "ops-recruiting-specialist-intake",
+    "ops-recruiting-specialist-strategy",
+    "ops-recruiting-specialist-execution",
+    "ops-recruiting-specialist-quality",
+    "ops-recruiting-specialist-measurement",
+    "ops-recruiting-specialist-handoff"
+  ]
+}

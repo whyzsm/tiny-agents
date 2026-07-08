@@ -1,0 +1,37 @@
+{
+  "name": "legal-compliance-reviewer-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-compliance-reviewer",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 法律合规审查员",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "法律合规审查员",
+    "author": "律守正",
+    "summary": "确保业务运营和产品功能符合法律法规要求，防范合规风险。",
+    "tags": [
+      "合规审核",
+      "法规检查",
+      "风险审查"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-compliance-reviewer-team/SKILL.md",
+    "skills/legal-compliance-reviewer-team/agents/openai.yaml",
+    "skills/legal-compliance-reviewer-team/references/guide.md",
+    "skills/legal-compliance-reviewer-team/references/manifest.json",
+    "skills/legal-compliance-reviewer-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/法务安全/legal-compliance-reviewer",
+    "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 法律合规审查员",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

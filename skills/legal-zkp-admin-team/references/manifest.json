@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-zkp-admin-team",
+  "displayName": "零知识证明管理员",
+  "summary": "精通知识证明技术的应用和管理。",
+  "source": "workbuddy-expert-center/法务安全/legal-zkp-admin",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "零知识证明管理员",
+    "author": "零知知",
+    "tags": [
+      "知识管理",
+      "卡片笔记",
+      "知识图谱"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-zkp-admin-intake",
+    "legal-zkp-admin-strategy",
+    "legal-zkp-admin-execution",
+    "legal-zkp-admin-quality",
+    "legal-zkp-admin-measurement",
+    "legal-zkp-admin-handoff"
+  ]
+}

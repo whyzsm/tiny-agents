@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-podcast-strategist-team",
+  "displayName": "播客策略师",
+  "summary": "精通播客内容策划和增长策略，通过音频建立深度用户连接。",
+  "source": "workbuddy-expert-center/内容创作/content-podcast-strategist",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "播客策略师",
+    "author": "声浪浪",
+    "tags": [
+      "播客策划",
+      "音频内容",
+      "听众增长"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-podcast-strategist-intake",
+    "content-podcast-strategist-strategy",
+    "content-podcast-strategist-execution",
+    "content-podcast-strategist-quality",
+    "content-podcast-strategist-measurement",
+    "content-podcast-strategist-handoff"
+  ]
+}

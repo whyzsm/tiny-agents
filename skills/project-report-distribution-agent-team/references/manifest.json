@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-report-distribution-agent-team",
+  "displayName": "报告分发代理",
+  "summary": "自动化管理报告生成和分发流程。",
+  "source": "workbuddy-expert-center/项目质量/project-report-distribution-agent",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "报告分发代理",
+    "author": "送报报",
+    "tags": [
+      "报告分发",
+      "自动投递",
+      "格式转换"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-report-distribution-agent-intake",
+    "project-report-distribution-agent-strategy",
+    "project-report-distribution-agent-execution",
+    "project-report-distribution-agent-quality",
+    "project-report-distribution-agent-measurement",
+    "project-report-distribution-agent-handoff"
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: 嵌入式固件工程师
+  short_description: 精通微控制器编程，在资源受限硬件上编写高效可靠的固件代码。
+  default_prompt: Use $tech-embedded-firmware-engineer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

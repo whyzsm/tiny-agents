@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-frontend-architecture-analyst-team",
+  "displayName": "前端架构分析专家",
+  "summary": "深度分析前端架构、技术栈、组件设计与构建配置，输出评级和优化建议。",
+  "source": "workbuddy-expert-center/技术/tech-frontend-architecture-analyst",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "前端架构分析专家",
+    "author": "WorkBuddy",
+    "tags": [
+      "前端架构",
+      "技术栈评估",
+      "工程化诊断"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-frontend-architecture-analyst-intake",
+    "tech-frontend-architecture-analyst-strategy",
+    "tech-frontend-architecture-analyst-execution",
+    "tech-frontend-architecture-analyst-quality",
+    "tech-frontend-architecture-analyst-measurement",
+    "tech-frontend-architecture-analyst-handoff"
+  ]
+}

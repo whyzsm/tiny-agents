@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-government-digital-presales-team",
+  "displayName": "政府数字化售前顾问",
+  "summary": "精通政府数字化转型需求和采购流程。",
+  "source": "workbuddy-expert-center/销售商务/sales-government-digital-presales",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "政府数字化售前顾问",
+    "author": "政通通",
+    "tags": [
+      "政务售前",
+      "数字政务",
+      "招投标"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "policy-context",
+    "government-needs",
+    "procurement-process",
+    "solution-architecture",
+    "bid-document-support",
+    "stakeholder-map"
+  ]
+}

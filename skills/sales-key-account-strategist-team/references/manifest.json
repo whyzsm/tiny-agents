@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-key-account-strategist-team",
+  "displayName": "大客户策略师",
+  "summary": "精通大客户经营和账户扩展策略，将客户发展为长期战略伙伴。",
+  "source": "workbuddy-expert-center/销售商务/sales-key-account-strategist",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "大客户策略师",
+    "author": "拓客客",
+    "tags": [
+      "大客户战略",
+      "客户规划",
+      "关系管理"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "account-mapping",
+    "account-plan",
+    "stakeholder-strategy",
+    "expansion-strategy",
+    "risk-management",
+    "qbr-playbook"
+  ]
+}

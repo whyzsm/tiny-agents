@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-knowledge-management-team",
+  "displayName": "知识管理专家",
+  "summary": "基于 LLM Wiki 模式，帮助用户构建、维护和查询持久化个人知识库。",
+  "source": "workbuddy-expert-center/数据智能/data-knowledge-management",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "知识管理专家",
+    "author": "知识库",
+    "tags": [
+      "LLM知识库",
+      "模型文档",
+      "技术百科"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-knowledge-management-intake",
+    "data-knowledge-management-strategy",
+    "data-knowledge-management-execution",
+    "data-knowledge-management-quality",
+    "data-knowledge-management-measurement",
+    "data-knowledge-management-handoff"
+  ]
+}

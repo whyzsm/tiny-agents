@@ -1,0 +1,6 @@
+interface:
+  display_name: 文档管家
+  short_description: 支持新建、搜索、分类整理、分享授权和内容读取。
+  default_prompt: Use $content-document-butler-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

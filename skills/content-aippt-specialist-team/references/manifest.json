@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-aippt-specialist-team",
+  "displayName": "AIPPT专家",
+  "summary": "WPS 官方出品，一句话主题或参考文档生成 PPT。",
+  "source": "workbuddy-expert-center/内容创作/content-aippt-specialist",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "AIPPT专家",
+    "author": "WPS AIPPT创作助手",
+    "tags": [
+      "一句话生成PPT",
+      "文档生成PPT",
+      "智能布局"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-aippt-specialist-intake",
+    "content-aippt-specialist-strategy",
+    "content-aippt-specialist-execution",
+    "content-aippt-specialist-quality",
+    "content-aippt-specialist-measurement",
+    "content-aippt-specialist-handoff"
+  ]
+}

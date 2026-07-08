@@ -1,0 +1,37 @@
+{
+  "name": "tech-git-workflow-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/技术/tech-git-workflow",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 技术 / Git工作流专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术",
+    "title": "Git工作流专家",
+    "author": "分支通",
+    "summary": "精通 Git 高级工作流和分支策略，让团队协作像行云流水般顺畅。",
+    "tags": [
+      "Git工作流",
+      "分支策略",
+      "代码管理"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/tech-git-workflow-team/SKILL.md",
+    "skills/tech-git-workflow-team/agents/openai.yaml",
+    "skills/tech-git-workflow-team/references/guide.md",
+    "skills/tech-git-workflow-team/references/manifest.json",
+    "skills/tech-git-workflow-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/技术/tech-git-workflow",
+    "WorkBuddy v5.2.3 Expert Center card: 技术 / Git工作流专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

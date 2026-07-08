@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-jira-workflow-admin-team",
+  "displayName": "Jira工作流管理员",
+  "summary": "精通 Jira 配置和敏捷工作流设计，让工具真正服务于团队效率。",
+  "source": "workbuddy-expert-center/项目质量/project-jira-workflow-admin",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "Jira工作流管理员",
+    "author": "看板达",
+    "tags": [
+      "Jira管理",
+      "工作流配置",
+      "项目模板"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-jira-workflow-admin-intake",
+    "project-jira-workflow-admin-strategy",
+    "project-jira-workflow-admin-execution",
+    "project-jira-workflow-admin-quality",
+    "project-jira-workflow-admin-measurement",
+    "project-jira-workflow-admin-handoff"
+  ]
+}

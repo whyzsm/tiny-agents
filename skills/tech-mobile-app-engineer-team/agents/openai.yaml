@@ -1,0 +1,6 @@
+interface:
+  display_name: 移动应用开发工程师
+  short_description: 精通 iOS 和 Android 原生及跨平台开发，打造流畅美观的移动应用。
+  default_prompt: Use $tech-mobile-app-engineer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

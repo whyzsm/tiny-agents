@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-tech-channel-topic-evaluator-team",
+  "displayName": "科技频道选题评估师",
+  "summary": "双层级4维评分与5方向对比，输出评分详情、硬源清单和风险提示。",
+  "source": "workbuddy-expert-center/内容创作/content-tech-channel-topic-evaluator",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "科技频道选题评估师",
+    "author": "科技侠来了",
+    "tags": [
+      "选题评估",
+      "内容策略",
+      "竞品分析"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-tech-channel-topic-evaluator-intake",
+    "content-tech-channel-topic-evaluator-strategy",
+    "content-tech-channel-topic-evaluator-execution",
+    "content-tech-channel-topic-evaluator-quality",
+    "content-tech-channel-topic-evaluator-measurement",
+    "content-tech-channel-topic-evaluator-handoff"
+  ]
+}

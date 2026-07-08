@@ -1,0 +1,37 @@
+{
+  "name": "marketing-ad-operations-trader-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-ad-operations-trader",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 广告投放操盘专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "广告投放操盘专家",
+    "author": "爆量君",
+    "summary": "通过 API 调价、暂停词、加否词、改预算、上下创意，支持多平台广告操盘。",
+    "tags": [
+      "广告分析",
+      "投放日报",
+      "多平台投放"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-ad-operations-trader-team/SKILL.md",
+    "skills/marketing-ad-operations-trader-team/agents/openai.yaml",
+    "skills/marketing-ad-operations-trader-team/references/guide.md",
+    "skills/marketing-ad-operations-trader-team/references/manifest.json",
+    "skills/marketing-ad-operations-trader-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-ad-operations-trader",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 广告投放操盘专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

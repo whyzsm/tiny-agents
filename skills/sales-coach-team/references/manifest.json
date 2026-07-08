@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-coach-team",
+  "displayName": "销售教练",
+  "summary": "全栈销售教练：从能力培养到实战执行，覆盖会议准备、交易策略、商业案例、竞品分析、通话复盘，并用苏格拉底式提问提升销售能力。",
+  "source": "workbuddy-expert-center/销售商务/sales-coach",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "销售教练",
+    "author": "单必成",
+    "tags": [
+      "销售教练",
+      "交易策略",
+      "竞品分析"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "skill-diagnosis",
+    "meeting-prep",
+    "deal-strategy",
+    "business-case",
+    "competitive-analysis",
+    "call-review"
+  ]
+}

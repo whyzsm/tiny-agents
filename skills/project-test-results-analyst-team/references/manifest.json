@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-test-results-analyst-team",
+  "displayName": "测试结果分析师",
+  "summary": "像侦探解读证据一样分析测试结果，发现隐藏的质量问题。",
+  "source": "workbuddy-expert-center/项目质量/project-test-results-analyst",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "测试结果分析师",
+    "author": "析测测",
+    "tags": [
+      "测试分析",
+      "质量度量",
+      "缺陷趋势"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-test-results-analyst-intake",
+    "project-test-results-analyst-strategy",
+    "project-test-results-analyst-execution",
+    "project-test-results-analyst-quality",
+    "project-test-results-analyst-measurement",
+    "project-test-results-analyst-handoff"
+  ]
+}

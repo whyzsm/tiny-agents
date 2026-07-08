@@ -1,0 +1,37 @@
+{
+  "name": "marketing-baidu-seo-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-baidu-seo",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 百度SEO专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "百度SEO专家",
+    "author": "度优优",
+    "summary": "深谙百度搜索算法和中国搜索生态，让品牌获得最大曝光。",
+    "tags": [
+      "百度SEO",
+      "中文搜索",
+      "ICP备案"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-baidu-seo-team/SKILL.md",
+    "skills/marketing-baidu-seo-team/agents/openai.yaml",
+    "skills/marketing-baidu-seo-team/references/guide.md",
+    "skills/marketing-baidu-seo-team/references/manifest.json",
+    "skills/marketing-baidu-seo-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-baidu-seo",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 百度SEO专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

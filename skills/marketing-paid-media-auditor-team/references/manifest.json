@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-paid-media-auditor-team",
+  "displayName": "付费媒体审计师",
+  "summary": "深度审计广告投放数据和预算分配，找出被浪费的广告费。",
+  "source": "workbuddy-expert-center/营销增长/marketing-paid-media-auditor",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "付费媒体审计师",
+    "author": "查账账",
+    "tags": [
+      "投放审计",
+      "费用核查",
+      "效果审计"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-paid-media-auditor-intake",
+    "marketing-paid-media-auditor-strategy",
+    "marketing-paid-media-auditor-execution",
+    "marketing-paid-media-auditor-quality",
+    "marketing-paid-media-auditor-measurement",
+    "marketing-paid-media-auditor-handoff"
+  ]
+}

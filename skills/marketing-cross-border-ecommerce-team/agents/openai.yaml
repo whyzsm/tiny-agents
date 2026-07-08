@@ -1,0 +1,6 @@
+interface:
+  display_name: 跨境电商专家
+  short_description: 精通亚马逊 Shopify 等国际电商平台，助力品牌出海全球。
+  default_prompt: Use $marketing-cross-border-ecommerce-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

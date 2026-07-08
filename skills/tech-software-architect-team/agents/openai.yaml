@@ -1,0 +1,6 @@
+interface:
+  display_name: 软件架构师
+  short_description: 站在全局高度设计可扩展高可用的软件架构，为技术团队指明方向。
+  default_prompt: Use $tech-software-architect-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

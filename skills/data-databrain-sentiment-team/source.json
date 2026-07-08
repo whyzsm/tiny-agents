@@ -1,0 +1,37 @@
+{
+  "name": "data-databrain-sentiment-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/数据智能/data-databrain-sentiment",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 数据智能 / DataBrain舆情分析专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "数据智能",
+    "title": "DataBrain舆情分析专家",
+    "author": "WorkBuddy",
+    "summary": "面向口碑与舆情侦察，覆盖评分告警、内容趋势、竞品对比与热点挖掘。",
+    "tags": [
+      "舆情指标",
+      "评分告警",
+      "内容趋势"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/data-databrain-sentiment-team/SKILL.md",
+    "skills/data-databrain-sentiment-team/agents/openai.yaml",
+    "skills/data-databrain-sentiment-team/references/guide.md",
+    "skills/data-databrain-sentiment-team/references/manifest.json",
+    "skills/data-databrain-sentiment-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/数据智能/data-databrain-sentiment",
+    "WorkBuddy v5.2.3 Expert Center card: 数据智能 / DataBrain舆情分析专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

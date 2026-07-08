@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-tiktok-strategist-team",
+  "displayName": "TikTok策略师",
+  "summary": "精通 TikTok 算法和海外短视频生态，帮助品牌在全球平台爆发。",
+  "source": "workbuddy-expert-center/内容创作/content-tiktok-strategist",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "TikTok策略师",
+    "author": "拓刻刻",
+    "tags": [
+      "TikTok策略",
+      "海外短视频",
+      "全球营销"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-tiktok-strategist-intake",
+    "content-tiktok-strategist-strategy",
+    "content-tiktok-strategist-execution",
+    "content-tiktok-strategist-quality",
+    "content-tiktok-strategist-measurement",
+    "content-tiktok-strategist-handoff"
+  ]
+}

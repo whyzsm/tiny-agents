@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-compliance-auditor-team",
+  "displayName": "合规审计师",
+  "summary": "全面审计企业运营合规性，确保符合行业标准。",
+  "source": "workbuddy-expert-center/法务安全/legal-compliance-auditor",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "合规审计师",
+    "author": "合规规",
+    "tags": [
+      "合规审计",
+      "标准认证",
+      "审计报告"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-compliance-auditor-intake",
+    "legal-compliance-auditor-strategy",
+    "legal-compliance-auditor-execution",
+    "legal-compliance-auditor-quality",
+    "legal-compliance-auditor-measurement",
+    "legal-compliance-auditor-handoff"
+  ]
+}

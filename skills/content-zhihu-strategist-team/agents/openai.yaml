@@ -1,0 +1,6 @@
+interface:
+  display_name: 知乎策略师
+  short_description: 精通知乎推荐机制和知识营销策略，通过高质量回答建立权威。
+  default_prompt: Use $content-zhihu-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,37 @@
+{
+  "name": "marketing-programmatic-ad-buyer-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-programmatic-ad-buyer",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 程序化广告买手",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "程序化广告买手",
+    "author": "算法投",
+    "summary": "精通程序化广告购买和 DSP 平台，通过算法实现大规模精准投放。",
+    "tags": [
+      "程序化购买",
+      "RTB竞价",
+      "广告交易"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-programmatic-ad-buyer-team/SKILL.md",
+    "skills/marketing-programmatic-ad-buyer-team/agents/openai.yaml",
+    "skills/marketing-programmatic-ad-buyer-team/references/guide.md",
+    "skills/marketing-programmatic-ad-buyer-team/references/manifest.json",
+    "skills/marketing-programmatic-ad-buyer-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-programmatic-ad-buyer",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 程序化广告买手",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

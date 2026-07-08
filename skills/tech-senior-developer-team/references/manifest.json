@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-senior-developer-team",
+  "displayName": "高级开发工程师",
+  "summary": "10年以上全栈经验，精通多种语言和框架，是团队的技术中坚。",
+  "source": "workbuddy-expert-center/技术/tech-senior-developer",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "高级开发工程师",
+    "author": "吴八哥",
+    "tags": [
+      "高级开发",
+      "架构设计",
+      "代码质量"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-senior-developer-intake",
+    "tech-senior-developer-strategy",
+    "tech-senior-developer-execution",
+    "tech-senior-developer-quality",
+    "tech-senior-developer-measurement",
+    "tech-senior-developer-handoff"
+  ]
+}

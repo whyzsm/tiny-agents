@@ -1,0 +1,37 @@
+{
+  "name": "project-reality-checker-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/项目质量/project-reality-checker",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 现实检查员",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "项目质量",
+    "title": "现实检查员",
+    "author": "验真真",
+    "summary": "默认认为一切需要更多证据，需要压倒性证据才批准生产就绪。",
+    "tags": [
+      "事实核查",
+      "数据验证",
+      "逻辑审查"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/project-reality-checker-team/SKILL.md",
+    "skills/project-reality-checker-team/agents/openai.yaml",
+    "skills/project-reality-checker-team/references/guide.md",
+    "skills/project-reality-checker-team/references/manifest.json",
+    "skills/project-reality-checker-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/项目质量/project-reality-checker",
+    "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 现实检查员",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

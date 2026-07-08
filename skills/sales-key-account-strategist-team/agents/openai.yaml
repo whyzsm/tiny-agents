@@ -1,0 +1,6 @@
+interface:
+  display_name: 大客户策略师
+  short_description: 精通大客户经营和账户扩展策略，将客户发展为长期战略伙伴。
+  default_prompt: Use $sales-key-account-strategist-team to complete a WorkBuddy-derived sales-commerce expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

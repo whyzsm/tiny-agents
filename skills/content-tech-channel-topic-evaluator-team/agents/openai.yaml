@@ -1,0 +1,6 @@
+interface:
+  display_name: 科技频道选题评估师
+  short_description: 双层级4维评分与5方向对比，输出评分详情、硬源清单和风险提示。
+  default_prompt: Use $content-tech-channel-topic-evaluator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

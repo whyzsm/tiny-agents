@@ -1,0 +1,37 @@
+{
+  "name": "sales-meituan-life-assistant-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/销售商务/sales-meituan-life-assistant",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 美团生活助手",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "销售商务",
+    "title": "美团生活助手",
+    "author": "领券下单找我",
+    "summary": "帮您一键领取美团优惠券，搜索附近团购美食并下单，探索今日活动，覆盖餐饮饮品等生活服务，省钱省心。",
+    "tags": [
+      "美团优惠",
+      "团购下单",
+      "生活服务"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/sales-meituan-life-assistant-team/SKILL.md",
+    "skills/sales-meituan-life-assistant-team/agents/openai.yaml",
+    "skills/sales-meituan-life-assistant-team/references/guide.md",
+    "skills/sales-meituan-life-assistant-team/references/manifest.json",
+    "skills/sales-meituan-life-assistant-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/销售商务/sales-meituan-life-assistant",
+    "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 美团生活助手",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

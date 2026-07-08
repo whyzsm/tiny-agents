@@ -1,0 +1,6 @@
+interface:
+  display_name: TikTok策略师
+  short_description: 精通 TikTok 算法和海外短视频生态，帮助品牌在全球平台爆发。
+  default_prompt: Use $content-tiktok-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

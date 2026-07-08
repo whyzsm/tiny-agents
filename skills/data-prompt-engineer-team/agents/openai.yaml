@@ -1,0 +1,6 @@
+interface:
+  display_name: AI提示词工程专家
+  short_description: 提供提示词撰写、系统提示设计、自定义指令、优化迭代与评估。
+  default_prompt: Use $data-prompt-engineer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

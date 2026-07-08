@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-agent-identity-trust-team",
+  "displayName": "智能体身份信任专家",
+  "summary": "构建 AI 智能体间的身份认证和信任机制。",
+  "source": "workbuddy-expert-center/法务安全/legal-agent-identity-trust",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "智能体身份信任专家",
+    "author": "信链链",
+    "tags": [
+      "智能体身份",
+      "信任验证",
+      "多智能体安全"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-agent-identity-trust-intake",
+    "legal-agent-identity-trust-strategy",
+    "legal-agent-identity-trust-execution",
+    "legal-agent-identity-trust-quality",
+    "legal-agent-identity-trust-measurement",
+    "legal-agent-identity-trust-handoff"
+  ]
+}

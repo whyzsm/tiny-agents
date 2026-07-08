@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-devops-automation-team",
+  "displayName": "DevOps自动化工程师",
+  "summary": "将手动运维自动化，从 CI/CD 到基础设施即代码，部署一键搞定。",
+  "source": "workbuddy-expert-center/技术/tech-devops-automation",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "DevOps自动化工程师",
+    "author": "一键达",
+    "tags": [
+      "DevOps自动化",
+      "基础设施",
+      "流水线开发"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-devops-automation-intake",
+    "tech-devops-automation-strategy",
+    "tech-devops-automation-execution",
+    "tech-devops-automation-quality",
+    "tech-devops-automation-measurement",
+    "tech-devops-automation-handoff"
+  ]
+}

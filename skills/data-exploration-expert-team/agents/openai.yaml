@@ -1,0 +1,6 @@
+interface:
+  display_name: 数据探索专家
+  short_description: 支持 SQL 查询、数据探索、可视化、仪表板构建和洞察生成。
+  default_prompt: Use $data-exploration-expert-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

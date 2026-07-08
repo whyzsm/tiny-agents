@@ -1,0 +1,37 @@
+{
+  "name": "marketing-growth-hacker-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-growth-hacker",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 增长黑客",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "增长黑客",
+    "author": "裂变变",
+    "summary": "用数据驱动的实验方法论找到未开发的增长渠道，实现指数级增长。",
+    "tags": [
+      "增长黑客",
+      "裂变实验",
+      "转化优化"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-growth-hacker-team/SKILL.md",
+    "skills/marketing-growth-hacker-team/agents/openai.yaml",
+    "skills/marketing-growth-hacker-team/references/guide.md",
+    "skills/marketing-growth-hacker-team/references/manifest.json",
+    "skills/marketing-growth-hacker-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-growth-hacker",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 增长黑客",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

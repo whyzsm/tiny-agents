@@ -1,0 +1,6 @@
+interface:
+  display_name: 法律合规审查员
+  short_description: 确保业务运营和产品功能符合法律法规要求，防范合规风险。
+  default_prompt: Use $legal-compliance-reviewer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

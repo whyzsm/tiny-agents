@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-pipeline-analyst-team",
+  "displayName": "销售管道分析师",
+  "summary": "用数据驱动方法分析销售管道健康度，让预测从猜测变科学。",
+  "source": "workbuddy-expert-center/销售商务/sales-pipeline-analyst",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "销售管道分析师",
+    "author": "漏斗通",
+    "tags": [
+      "销售漏斗",
+      "预测分析",
+      "转化优化"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "pipeline-health",
+    "forecast-model",
+    "conversion-analysis",
+    "cohort-segmentation",
+    "resource-optimization",
+    "dashboard-report"
+  ]
+}

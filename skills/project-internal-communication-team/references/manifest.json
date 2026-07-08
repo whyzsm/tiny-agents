@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-internal-communication-team",
+  "displayName": "内部沟通专家",
+  "summary": "提供状态报告、领导汇报、公司简报、FAQ 和事故报告等沟通模板。",
+  "source": "workbuddy-expert-center/项目质量/project-internal-communication",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "内部沟通专家",
+    "author": "传令令",
+    "tags": [
+      "内部沟通",
+      "企业传播",
+      "员工沟通"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-internal-communication-intake",
+    "project-internal-communication-strategy",
+    "project-internal-communication-execution",
+    "project-internal-communication-quality",
+    "project-internal-communication-measurement",
+    "project-internal-communication-handoff"
+  ]
+}

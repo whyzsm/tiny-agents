@@ -1,0 +1,6 @@
+interface:
+  display_name: 前端开发工程师
+  short_description: 精通现代 Web 技术和主流框架，构建响应式高性能 Web 应用。
+  default_prompt: Use $tech-frontend-engineer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

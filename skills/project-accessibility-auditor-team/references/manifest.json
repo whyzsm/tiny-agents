@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-accessibility-auditor-team",
+  "displayName": "无障碍审计师",
+  "summary": "按 WCAG 标准审计界面可访问性，确保每个用户都能使用产品。",
+  "source": "workbuddy-expert-center/项目质量/project-accessibility-auditor",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "无障碍审计师",
+    "author": "无碍碍",
+    "tags": [
+      "无障碍审计",
+      "WCAG合规",
+      "辅助技术"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-accessibility-auditor-intake",
+    "project-accessibility-auditor-strategy",
+    "project-accessibility-auditor-execution",
+    "project-accessibility-auditor-quality",
+    "project-accessibility-auditor-measurement",
+    "project-accessibility-auditor-handoff"
+  ]
+}

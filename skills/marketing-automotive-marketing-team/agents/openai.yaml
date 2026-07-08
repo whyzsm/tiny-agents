@@ -1,0 +1,6 @@
+interface:
+  display_name: 汽车营销专家
+  short_description: 精通用户选车购车决策，覆盖品牌营销、用户增长、车型分析、购车咨询等汽车服务。
+  default_prompt: Use $marketing-automotive-marketing-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-bilibili-strategist-team",
+  "displayName": "B站内容策略师",
+  "summary": "精通 B 站平台生态和年轻用户偏好，打造高播放量视频策略。",
+  "source": "workbuddy-expert-center/内容创作/content-bilibili-strategist",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "B站内容策略师",
+    "author": "弹幕幕",
+    "tags": [
+      "B站策略",
+      "UP主运营",
+      "弹幕文化"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-bilibili-strategist-intake",
+    "content-bilibili-strategist-strategy",
+    "content-bilibili-strategist-execution",
+    "content-bilibili-strategist-quality",
+    "content-bilibili-strategist-measurement",
+    "content-bilibili-strategist-handoff"
+  ]
+}

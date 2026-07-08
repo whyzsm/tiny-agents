@@ -1,0 +1,6 @@
+interface:
+  display_name: PDF 处理专家
+  short_description: 支持拆分合并、格式转换、翻译导出和内容读取。
+  default_prompt: Use $content-pdf-processor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

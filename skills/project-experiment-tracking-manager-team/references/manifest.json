@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-experiment-tracking-manager-team",
+  "displayName": "实验追踪管理者",
+  "summary": "系统化管理实验全生命周期，确保每个实验有假设有执行有结论。",
+  "source": "workbuddy-expert-center/项目质量/project-experiment-tracking-manager",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "实验追踪管理者",
+    "author": "实验通",
+    "tags": [
+      "实验追踪",
+      "A/B管理",
+      "效果度量"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-experiment-tracking-manager-intake",
+    "project-experiment-tracking-manager-strategy",
+    "project-experiment-tracking-manager-execution",
+    "project-experiment-tracking-manager-quality",
+    "project-experiment-tracking-manager-measurement",
+    "project-experiment-tracking-manager-handoff"
+  ]
+}

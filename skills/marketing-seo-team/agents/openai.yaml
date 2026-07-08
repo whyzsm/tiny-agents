@@ -1,0 +1,6 @@
+interface:
+  display_name: SEO专家
+  short_description: 精通 Google 搜索算法和技术 SEO，让网站在搜索结果中稳居前列。
+  default_prompt: Use $marketing-seo-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

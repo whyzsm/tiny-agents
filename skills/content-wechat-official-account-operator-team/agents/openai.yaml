@@ -1,0 +1,6 @@
+interface:
+  display_name: 微信公众号运营专家
+  short_description: 精通公众号内容策略和粉丝增长，打造品牌自媒体矩阵。
+  default_prompt: Use $content-wechat-official-account-operator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,37 @@
+{
+  "name": "marketing-egypt-market-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-egypt-market",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 埃及市场营销专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "埃及市场营销专家",
+    "author": "WorkBuddy",
+    "summary": "中国企业出海埃及的 CMO 级营销引擎，覆盖数字生态、斋月营销、品牌本地化、消费者洞察与 ROI 预估全链路。",
+    "tags": [
+      "埃及市场",
+      "品牌策略",
+      "营销分析"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-egypt-market-team/SKILL.md",
+    "skills/marketing-egypt-market-team/agents/openai.yaml",
+    "skills/marketing-egypt-market-team/references/guide.md",
+    "skills/marketing-egypt-market-team/references/manifest.json",
+    "skills/marketing-egypt-market-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-egypt-market",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 埃及市场营销专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

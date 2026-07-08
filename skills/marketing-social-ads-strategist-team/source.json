@@ -1,0 +1,37 @@
+{
+  "name": "marketing-social-ads-strategist-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-social-ads-strategist",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 社交广告策略师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "社交广告策略师",
+    "author": "精投投",
+    "summary": "精通社交平台广告投放，以精准定向实现最优获客成本。",
+    "tags": [
+      "社媒广告",
+      "投放策略",
+      "受众分析"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-social-ads-strategist-team/SKILL.md",
+    "skills/marketing-social-ads-strategist-team/agents/openai.yaml",
+    "skills/marketing-social-ads-strategist-team/references/guide.md",
+    "skills/marketing-social-ads-strategist-team/references/manifest.json",
+    "skills/marketing-social-ads-strategist-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-social-ads-strategist",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 社交广告策略师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

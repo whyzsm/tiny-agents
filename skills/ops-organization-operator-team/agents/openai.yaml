@@ -1,0 +1,6 @@
+interface:
+  display_name: 组织运营师
+  short_description: 小企业组织运营师，负责招聘入职、工具初始化和业务快照，让运营不掉链子。
+  default_prompt: Use $ops-organization-operator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

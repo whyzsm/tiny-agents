@@ -1,0 +1,37 @@
+{
+  "name": "content-video-generator-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-video-generator",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 视频生成专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "视频生成专家",
+    "author": "动画画",
+    "summary": "基于 Remotion 的视频生成专家，创建产品演示、解说视频和社交媒体内容。",
+    "tags": [
+      "编程式视频",
+      "视频生成",
+      "React视频"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-video-generator-team/SKILL.md",
+    "skills/content-video-generator-team/agents/openai.yaml",
+    "skills/content-video-generator-team/references/guide.md",
+    "skills/content-video-generator-team/references/manifest.json",
+    "skills/content-video-generator-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-video-generator",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 视频生成专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

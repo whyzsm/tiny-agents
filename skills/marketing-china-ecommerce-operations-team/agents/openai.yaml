@@ -1,0 +1,6 @@
+interface:
+  display_name: 中国电商运营专家
+  short_description: 精通天猫京东拼多多等平台运营，从选品到爆款一站式操盘。
+  default_prompt: Use $marketing-china-ecommerce-operations-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

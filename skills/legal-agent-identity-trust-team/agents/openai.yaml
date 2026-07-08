@@ -1,0 +1,6 @@
+interface:
+  display_name: 智能体身份信任专家
+  short_description: 构建 AI 智能体间的身份认证和信任机制。
+  default_prompt: Use $legal-agent-identity-trust-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

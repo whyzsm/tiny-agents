@@ -1,0 +1,6 @@
+interface:
+  display_name: 社交媒体策略师
+  short_description: 全面统筹多平台社交媒体策略，让品牌在每个平台发出最强音。
+  default_prompt: Use $marketing-social-media-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,37 @@
+{
+  "name": "content-book-coauthor-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-book-coauthor",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 图书联合创作者",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "图书联合创作者",
+    "author": "著书书",
+    "summary": "与作者深度协作，帮助规划书籍结构和内容，达到出版级品质。",
+    "tags": [
+      "图书共创",
+      "章节规划",
+      "出版写作"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-book-coauthor-team/SKILL.md",
+    "skills/content-book-coauthor-team/agents/openai.yaml",
+    "skills/content-book-coauthor-team/references/guide.md",
+    "skills/content-book-coauthor-team/references/manifest.json",
+    "skills/content-book-coauthor-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-book-coauthor",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 图书联合创作者",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

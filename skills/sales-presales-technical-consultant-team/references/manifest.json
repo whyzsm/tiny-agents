@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-presales-technical-consultant-team",
+  "displayName": "售前技术顾问",
+  "summary": "架起技术与商业的桥梁，帮助客户理解解决方案的价值。",
+  "source": "workbuddy-expert-center/销售商务/sales-presales-technical-consultant",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "售前技术顾问",
+    "author": "方案通",
+    "tags": [
+      "售前咨询",
+      "方案设计",
+      "技术演示"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "customer-tech-discovery",
+    "solution-design",
+    "value-translation",
+    "demo-script",
+    "objection-handling",
+    "presales-handoff"
+  ]
+}

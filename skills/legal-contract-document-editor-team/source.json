@@ -1,0 +1,37 @@
+{
+  "name": "legal-contract-document-editor-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-contract-document-editor",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 合同与公文审稿",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "合同与公文审稿",
+    "author": "花叔文档审稿专家",
+    "summary": "在 .docx 原文里加批注和追踪修订，不返刷新文档、不破坏原格式。",
+    "tags": [
+      "合同审查",
+      "文档批注",
+      "追踪修订"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-contract-document-editor-team/SKILL.md",
+    "skills/legal-contract-document-editor-team/agents/openai.yaml",
+    "skills/legal-contract-document-editor-team/references/guide.md",
+    "skills/legal-contract-document-editor-team/references/manifest.json",
+    "skills/legal-contract-document-editor-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/法务安全/legal-contract-document-editor",
+    "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 合同与公文审稿",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

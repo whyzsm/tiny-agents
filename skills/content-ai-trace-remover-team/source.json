@@ -1,0 +1,37 @@
+{
+  "name": "content-ai-trace-remover-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-ai-trace-remover",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / AI痕迹消除专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "AI痕迹消除专家",
+    "author": "WorkBuddy",
+    "summary": "识别AI写作模式与词汇，重写为自然真实的人类表达。",
+    "tags": [
+      "AI痕迹检测",
+      "文本去AI化",
+      "自然语言润色"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-ai-trace-remover-team/SKILL.md",
+    "skills/content-ai-trace-remover-team/agents/openai.yaml",
+    "skills/content-ai-trace-remover-team/references/guide.md",
+    "skills/content-ai-trace-remover-team/references/manifest.json",
+    "skills/content-ai-trace-remover-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-ai-trace-remover",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / AI痕迹消除专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

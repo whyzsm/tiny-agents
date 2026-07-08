@@ -1,0 +1,6 @@
+interface:
+  display_name: 合规审计师
+  short_description: 全面审计企业运营合规性，确保符合行业标准。
+  default_prompt: Use $legal-compliance-auditor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

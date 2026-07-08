@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-infrastructure-ops-team",
+  "displayName": "基础设施运维专家",
+  "summary": "确保 IT 基础设施持续稳定运行，一切尽在掌控。",
+  "source": "workbuddy-expert-center/技术/tech-infrastructure-ops",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "基础设施运维专家",
+    "author": "运维通",
+    "tags": [
+      "基础运维",
+      "系统监控",
+      "故障排查"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-infrastructure-ops-intake",
+    "tech-infrastructure-ops-strategy",
+    "tech-infrastructure-ops-execution",
+    "tech-infrastructure-ops-quality",
+    "tech-infrastructure-ops-measurement",
+    "tech-infrastructure-ops-handoff"
+  ]
+}

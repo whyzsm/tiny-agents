@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-social-media-strategist-team",
+  "displayName": "社交媒体策略师",
+  "summary": "全面统筹多平台社交媒体策略，让品牌在每个平台发出最强音。",
+  "source": "workbuddy-expert-center/营销增长/marketing-social-media-strategist",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "社交媒体策略师",
+    "author": "传声声",
+    "tags": [
+      "社媒策略",
+      "跨平台运营",
+      "内容规划"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-social-media-strategist-intake",
+    "marketing-social-media-strategist-strategy",
+    "marketing-social-media-strategist-execution",
+    "marketing-social-media-strategist-quality",
+    "marketing-social-media-strategist-measurement",
+    "marketing-social-media-strategist-handoff"
+  ]
+}

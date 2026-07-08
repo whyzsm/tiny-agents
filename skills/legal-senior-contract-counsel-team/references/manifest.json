@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-senior-contract-counsel-team",
+  "displayName": "资深合同法务专家",
+  "summary": "擅长合同起草、审查、对比及法规检索，覆盖劳动、租赁、买卖等场景。",
+  "source": "workbuddy-expert-center/法务安全/legal-senior-contract-counsel",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "资深合同法务专家",
+    "author": "腾讯电子签合同法务专家",
+    "tags": [
+      "合同起草",
+      "合同审查",
+      "法规检索"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-senior-contract-counsel-intake",
+    "legal-senior-contract-counsel-strategy",
+    "legal-senior-contract-counsel-execution",
+    "legal-senior-contract-counsel-quality",
+    "legal-senior-contract-counsel-measurement",
+    "legal-senior-contract-counsel-handoff"
+  ]
+}

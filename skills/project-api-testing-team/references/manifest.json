@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-api-testing-team",
+  "displayName": "API测试专家",
+  "summary": "在用户之前发现 API 的每一个缺陷，确保接口稳定性和正确性。",
+  "source": "workbuddy-expert-center/项目质量/project-api-testing",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "API测试专家",
+    "author": "接口探",
+    "tags": [
+      "接口测试",
+      "自动化验证",
+      "性能测试"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-api-testing-intake",
+    "project-api-testing-strategy",
+    "project-api-testing-execution",
+    "project-api-testing-quality",
+    "project-api-testing-measurement",
+    "project-api-testing-handoff"
+  ]
+}

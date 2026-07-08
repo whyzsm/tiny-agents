@@ -1,0 +1,37 @@
+{
+  "name": "content-viral-topic-planner-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-viral-topic-planner",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 爆款选题策划专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "爆款选题策划专家",
+    "author": "爆款炼金师",
+    "summary": "投热点出爆款，基于心法预筛和多形态产出，做公众号视频号小红书 H5 通吃的选题策划。",
+    "tags": [
+      "爆款选题",
+      "标题党炼成",
+      "全媒体策划"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-viral-topic-planner-team/SKILL.md",
+    "skills/content-viral-topic-planner-team/agents/openai.yaml",
+    "skills/content-viral-topic-planner-team/references/guide.md",
+    "skills/content-viral-topic-planner-team/references/manifest.json",
+    "skills/content-viral-topic-planner-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-viral-topic-planner",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 爆款选题策划专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

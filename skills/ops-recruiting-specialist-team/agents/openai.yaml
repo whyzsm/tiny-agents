@@ -1,0 +1,6 @@
+interface:
+  display_name: 招聘专家
+  short_description: 精通人才招聘全流程，为团队找到最佳人才。
+  default_prompt: Use $ops-recruiting-specialist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

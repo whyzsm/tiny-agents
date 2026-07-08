@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-programmatic-ad-buyer-team",
+  "displayName": "程序化广告买手",
+  "summary": "精通程序化广告购买和 DSP 平台，通过算法实现大规模精准投放。",
+  "source": "workbuddy-expert-center/营销增长/marketing-programmatic-ad-buyer",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "程序化广告买手",
+    "author": "算法投",
+    "tags": [
+      "程序化购买",
+      "RTB竞价",
+      "广告交易"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-programmatic-ad-buyer-intake",
+    "marketing-programmatic-ad-buyer-strategy",
+    "marketing-programmatic-ad-buyer-execution",
+    "marketing-programmatic-ad-buyer-quality",
+    "marketing-programmatic-ad-buyer-measurement",
+    "marketing-programmatic-ad-buyer-handoff"
+  ]
+}

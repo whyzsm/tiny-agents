@@ -1,0 +1,6 @@
+interface:
+  display_name: 私域营销专家
+  short_description: 深谙私域运营增长，盘活现有数据资源，洞察营销机会，实现业绩增长。
+  default_prompt: Use $marketing-private-domain-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

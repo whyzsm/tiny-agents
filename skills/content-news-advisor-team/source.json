@@ -1,0 +1,37 @@
+{
+  "name": "content-news-advisor-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-news-advisor",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 资讯顾问",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "资讯顾问",
+    "author": "懂秘",
+    "summary": "懂你的资讯顾问，基于隐式画像精选新闻，说明每条资讯与你的关系。",
+    "tags": [
+      "个性化资讯",
+      "深度解读",
+      "行动建议"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-news-advisor-team/SKILL.md",
+    "skills/content-news-advisor-team/agents/openai.yaml",
+    "skills/content-news-advisor-team/references/guide.md",
+    "skills/content-news-advisor-team/references/manifest.json",
+    "skills/content-news-advisor-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-news-advisor",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 资讯顾问",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

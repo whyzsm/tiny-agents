@@ -1,0 +1,37 @@
+{
+  "name": "legal-agent-identity-trust-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-agent-identity-trust",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 智能体身份信任专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "智能体身份信任专家",
+    "author": "信链链",
+    "summary": "构建 AI 智能体间的身份认证和信任机制。",
+    "tags": [
+      "智能体身份",
+      "信任验证",
+      "多智能体安全"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-agent-identity-trust-team/SKILL.md",
+    "skills/legal-agent-identity-trust-team/agents/openai.yaml",
+    "skills/legal-agent-identity-trust-team/references/guide.md",
+    "skills/legal-agent-identity-trust-team/references/manifest.json",
+    "skills/legal-agent-identity-trust-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/法务安全/legal-agent-identity-trust",
+    "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 智能体身份信任专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-mcp-builder-team",
+  "displayName": "MCP构建专家",
+  "summary": "精通 Model Context Protocol 设计实现。",
+  "source": "workbuddy-expert-center/技术/tech-mcp-builder",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "MCP构建专家",
+    "author": "协议通",
+    "tags": [
+      "MCP构建",
+      "协议开发",
+      "工具集成"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-mcp-builder-intake",
+    "tech-mcp-builder-strategy",
+    "tech-mcp-builder-execution",
+    "tech-mcp-builder-quality",
+    "tech-mcp-builder-measurement",
+    "tech-mcp-builder-handoff"
+  ]
+}

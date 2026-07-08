@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "ops-supply-chain-strategist-team",
+  "displayName": "供应链策略师",
+  "summary": "优化供应链每个环节，实现成本效率韧性的最佳平衡。",
+  "source": "workbuddy-expert-center/运营人力/ops-supply-chain-strategist",
+  "workbuddy": {
+    "category": "运营人力",
+    "cardTitle": "供应链策略师",
+    "author": "链优优",
+    "tags": [
+      "供应链战略",
+      "采购规划",
+      "库存优化"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "ops-supply-chain-strategist-intake",
+    "ops-supply-chain-strategist-strategy",
+    "ops-supply-chain-strategist-execution",
+    "ops-supply-chain-strategist-quality",
+    "ops-supply-chain-strategist-measurement",
+    "ops-supply-chain-strategist-handoff"
+  ]
+}

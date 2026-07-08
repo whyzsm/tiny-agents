@@ -1,0 +1,6 @@
+interface:
+  display_name: 诉讼助手
+  short_description: 支持起诉状起草、证据整理、流程指引、执行和利息计算。
+  default_prompt: Use $legal-litigation-assistant-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

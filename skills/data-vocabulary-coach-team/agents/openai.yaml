@@ -1,0 +1,6 @@
+interface:
+  display_name: 智能词汇教练
+  short_description: 融合间隔重复记忆科学与键盘输入训练，支持每日定时推送、错词强化和练习模式。
+  default_prompt: Use $data-vocabulary-coach-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-identity-graph-operator-team",
+  "displayName": "身份图谱运营师",
+  "summary": "构建维护用户身份图谱系统，实现跨平台身份识别。",
+  "source": "workbuddy-expert-center/营销增长/marketing-identity-graph-operator",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "身份图谱运营师",
+    "author": "识图图",
+    "tags": [
+      "身份图谱",
+      "实体解析",
+      "数据关联"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-identity-graph-operator-intake",
+    "marketing-identity-graph-operator-strategy",
+    "marketing-identity-graph-operator-execution",
+    "marketing-identity-graph-operator-quality",
+    "marketing-identity-graph-operator-measurement",
+    "marketing-identity-graph-operator-handoff"
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: Reddit社区建设者
+  short_description: 深谙 Reddit 社区文化，在全球最大论坛上建立真实社区影响力。
+  default_prompt: Use $marketing-reddit-community-builder-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

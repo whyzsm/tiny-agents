@@ -1,0 +1,37 @@
+{
+  "name": "sales-government-digital-presales-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/销售商务/sales-government-digital-presales",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 政府数字化售前顾问",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "销售商务",
+    "title": "政府数字化售前顾问",
+    "author": "政通通",
+    "summary": "精通政府数字化转型需求和采购流程。",
+    "tags": [
+      "政务售前",
+      "数字政务",
+      "招投标"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/sales-government-digital-presales-team/SKILL.md",
+    "skills/sales-government-digital-presales-team/agents/openai.yaml",
+    "skills/sales-government-digital-presales-team/references/guide.md",
+    "skills/sales-government-digital-presales-team/references/manifest.json",
+    "skills/sales-government-digital-presales-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/销售商务/sales-government-digital-presales",
+    "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 政府数字化售前顾问",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

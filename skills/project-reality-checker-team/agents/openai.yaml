@@ -1,0 +1,6 @@
+interface:
+  display_name: 现实检查员
+  short_description: 默认认为一切需要更多证据，需要压倒性证据才批准生产就绪。
+  default_prompt: Use $project-reality-checker-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

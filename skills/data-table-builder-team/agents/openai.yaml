@@ -1,0 +1,6 @@
+interface:
+  display_name: 数据建表专家
+  short_description: 将输入资料转为结构化表格，支持收集表、美化、校验和去重。
+  default_prompt: Use $data-table-builder-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

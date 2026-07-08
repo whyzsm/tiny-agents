@@ -1,0 +1,6 @@
+interface:
+  display_name: Web应用测试专家
+  short_description: 引导用户完成 Web 应用的启动、配置和测试流程。
+  default_prompt: Use $project-web-app-testing-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

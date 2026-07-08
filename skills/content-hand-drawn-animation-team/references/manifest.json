@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-hand-drawn-animation-team",
+  "displayName": "手绘动画创作",
+  "summary": "把主题或文档变成像手绘般逐步画出、最后定格成清晰画面的动画短片。",
+  "source": "workbuddy-expert-center/内容创作/content-hand-drawn-animation",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "手绘动画创作",
+    "author": "手绘动画师",
+    "tags": [
+      "手绘动画",
+      "视频生成",
+      "插画"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-hand-drawn-animation-intake",
+    "content-hand-drawn-animation-strategy",
+    "content-hand-drawn-animation-execution",
+    "content-hand-drawn-animation-quality",
+    "content-hand-drawn-animation-measurement",
+    "content-hand-drawn-animation-handoff"
+  ]
+}

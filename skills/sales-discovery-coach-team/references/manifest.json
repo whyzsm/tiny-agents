@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-discovery-coach-team",
+  "displayName": "需求发现教练",
+  "summary": "训练销售掌握深度需求挖掘技巧，发现真正的业务痛点。",
+  "source": "workbuddy-expert-center/销售商务/sales-discovery-coach",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "需求发现教练",
+    "author": "掘需需",
+    "tags": [
+      "需求挖掘",
+      "客户洞察",
+      "提问技巧"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "discovery-plan",
+    "question-framework",
+    "pain-mapping",
+    "customer-insight",
+    "active-listening",
+    "discovery-review"
+  ]
+}

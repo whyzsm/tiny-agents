@@ -1,0 +1,6 @@
+interface:
+  display_name: 自主优化架构师
+  short_description: 设计能自主优化和进化的智能系统架构，让系统越用越聪明。
+  default_prompt: Use $data-autonomous-optimization-architect-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,37 @@
+{
+  "name": "sales-revenue-growth-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/销售商务/sales-revenue-growth",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 营收增长师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "销售商务",
+    "title": "营收增长师",
+    "author": "甄客来",
+    "summary": "小企业营收增长师，从线索打分到内容策略再到营销活动，一条龙驱动营收增长。",
+    "tags": [
+      "线索管理",
+      "内容策略",
+      "营销活动"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/sales-revenue-growth-team/SKILL.md",
+    "skills/sales-revenue-growth-team/agents/openai.yaml",
+    "skills/sales-revenue-growth-team/references/guide.md",
+    "skills/sales-revenue-growth-team/references/manifest.json",
+    "skills/sales-revenue-growth-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/销售商务/sales-revenue-growth",
+    "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 营收增长师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

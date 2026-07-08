@@ -1,0 +1,6 @@
+interface:
+  display_name: 客户支持专家
+  short_description: 将每次沮丧的用户互动转化为忠实拥护者，用卓越服务创口碑。
+  default_prompt: Use $ops-customer-support-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

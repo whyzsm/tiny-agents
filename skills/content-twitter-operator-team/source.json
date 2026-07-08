@@ -1,0 +1,37 @@
+{
+  "name": "content-twitter-operator-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-twitter-operator",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / Twitter运营专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "Twitter运营专家",
+    "author": "推文文",
+    "summary": "精通 Twitter/X 平台互动策略和话题运营，让品牌占据全球对话。",
+    "tags": [
+      "推特运营",
+      "实时互动",
+      "话题营销"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-twitter-operator-team/SKILL.md",
+    "skills/content-twitter-operator-team/agents/openai.yaml",
+    "skills/content-twitter-operator-team/references/guide.md",
+    "skills/content-twitter-operator-team/references/manifest.json",
+    "skills/content-twitter-operator-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-twitter-operator",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / Twitter运营专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

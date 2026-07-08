@@ -1,0 +1,37 @@
+{
+  "name": "ops-resume-customization-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/运营人力/ops-resume-customization",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 运营人力 / 简历优化与求职定制专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "运营人力",
+    "title": "简历优化与求职定制专家",
+    "author": "简历优化专家",
+    "summary": "提供百分制专业评分、深度清单润色、岗位匹配定制与多格式导出。",
+    "tags": [
+      "简历润色",
+      "岗位定制",
+      "简历评分"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/ops-resume-customization-team/SKILL.md",
+    "skills/ops-resume-customization-team/agents/openai.yaml",
+    "skills/ops-resume-customization-team/references/guide.md",
+    "skills/ops-resume-customization-team/references/manifest.json",
+    "skills/ops-resume-customization-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/运营人力/ops-resume-customization",
+    "WorkBuddy v5.2.3 Expert Center card: 运营人力 / 简历优化与求职定制专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "name": "content-tiktok-strategist-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-tiktok-strategist",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / TikTok策略师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "TikTok策略师",
+    "author": "拓刻刻",
+    "summary": "精通 TikTok 算法和海外短视频生态，帮助品牌在全球平台爆发。",
+    "tags": [
+      "TikTok策略",
+      "海外短视频",
+      "全球营销"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-tiktok-strategist-team/SKILL.md",
+    "skills/content-tiktok-strategist-team/agents/openai.yaml",
+    "skills/content-tiktok-strategist-team/references/guide.md",
+    "skills/content-tiktok-strategist-team/references/manifest.json",
+    "skills/content-tiktok-strategist-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-tiktok-strategist",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / TikTok策略师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

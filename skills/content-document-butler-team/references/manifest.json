@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-document-butler-team",
+  "displayName": "文档管家",
+  "summary": "支持新建、搜索、分类整理、分享授权和内容读取。",
+  "source": "workbuddy-expert-center/内容创作/content-document-butler",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "文档管家",
+    "author": "金山文档文档管家助手",
+    "tags": [
+      "文档创建",
+      "智能整理",
+      "文档搜索"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-document-butler-intake",
+    "content-document-butler-strategy",
+    "content-document-butler-execution",
+    "content-document-butler-quality",
+    "content-document-butler-measurement",
+    "content-document-butler-handoff"
+  ]
+}

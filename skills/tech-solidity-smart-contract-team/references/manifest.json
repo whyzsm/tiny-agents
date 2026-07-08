@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-solidity-smart-contract-team",
+  "displayName": "Solidity智能合约工程师",
+  "summary": "精通 Solidity 和 EVM 生态，编写安全高效的智能合约。",
+  "source": "workbuddy-expert-center/技术/tech-solidity-smart-contract",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "Solidity智能合约工程师",
+    "author": "链合约",
+    "tags": [
+      "智能合约",
+      "Solidity",
+      "DeFi开发"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-solidity-smart-contract-intake",
+    "tech-solidity-smart-contract-strategy",
+    "tech-solidity-smart-contract-execution",
+    "tech-solidity-smart-contract-quality",
+    "tech-solidity-smart-contract-measurement",
+    "tech-solidity-smart-contract-handoff"
+  ]
+}

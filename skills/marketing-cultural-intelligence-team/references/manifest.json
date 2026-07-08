@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-cultural-intelligence-team",
+  "displayName": "文化智能策略师",
+  "summary": "帮助品牌建立全球化过程中的文化敏感度。",
+  "source": "workbuddy-expert-center/营销增长/marketing-cultural-intelligence",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "文化智能策略师",
+    "author": "知文文",
+    "tags": [
+      "文化智能",
+      "全球适配",
+      "包容策略"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-cultural-intelligence-intake",
+    "marketing-cultural-intelligence-strategy",
+    "marketing-cultural-intelligence-execution",
+    "marketing-cultural-intelligence-quality",
+    "marketing-cultural-intelligence-measurement",
+    "marketing-cultural-intelligence-handoff"
+  ]
+}

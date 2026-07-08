@@ -1,0 +1,6 @@
+interface:
+  display_name: 简历优化与求职定制专家
+  short_description: 提供百分制专业评分、深度清单润色、岗位匹配定制与多格式导出。
+  default_prompt: Use $ops-resume-customization-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

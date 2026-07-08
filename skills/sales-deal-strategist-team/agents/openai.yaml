@@ -1,0 +1,6 @@
+interface:
+  display_name: 交易策略师
+  short_description: 精通复杂交易策略制定和推进，帮助销售团队赢得大单。
+  default_prompt: Use $sales-deal-strategist-team to complete a WorkBuddy-derived sales-commerce expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

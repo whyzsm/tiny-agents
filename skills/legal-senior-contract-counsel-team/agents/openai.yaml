@@ -1,0 +1,6 @@
+interface:
+  display_name: 资深合同法务专家
+  short_description: 擅长合同起草、审查、对比及法规检索，覆盖劳动、租赁、买卖等场景。
+  default_prompt: Use $legal-senior-contract-counsel-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

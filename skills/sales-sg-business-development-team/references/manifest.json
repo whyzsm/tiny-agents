@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-sg-business-development-team",
+  "displayName": "Sg Business Development",
+  "summary": "帮助企业在新加坡发现客户、伙伴、渠道、供应商与代理商，对接园区、展会、招商资源并确认市场进入路径。",
+  "source": "workbuddy-expert-center/销售商务/sales-sg-business-development",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "Sg Business Development",
+    "author": "新加坡商务拓展专家",
+    "tags": [
+      "寻找客户",
+      "商务合作",
+      "市场评估"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "market-entry",
+    "customer-discovery",
+    "partner-channel",
+    "event-resource",
+    "localization-strategy",
+    "bd-action-plan"
+  ]
+}

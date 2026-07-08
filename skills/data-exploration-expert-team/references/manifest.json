@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-exploration-expert-team",
+  "displayName": "数据探索专家",
+  "summary": "支持 SQL 查询、数据探索、可视化、仪表板构建和洞察生成。",
+  "source": "workbuddy-expert-center/数据智能/data-exploration-expert",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "数据探索专家",
+    "author": "探数数",
+    "tags": [
+      "数据探索",
+      "数据清洗",
+      "特征工程"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-exploration-expert-intake",
+    "data-exploration-expert-strategy",
+    "data-exploration-expert-execution",
+    "data-exploration-expert-quality",
+    "data-exploration-expert-measurement",
+    "data-exploration-expert-handoff"
+  ]
+}

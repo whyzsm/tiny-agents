@@ -1,0 +1,6 @@
+interface:
+  display_name: Twitter运营专家
+  short_description: 精通 Twitter/X 平台互动策略和话题运营，让品牌占据全球对话。
+  default_prompt: Use $content-twitter-operator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

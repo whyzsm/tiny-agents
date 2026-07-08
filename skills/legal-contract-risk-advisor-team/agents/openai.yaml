@@ -1,0 +1,6 @@
+interface:
+  display_name: 合同风控顾问
+  short_description: 覆盖合同起草、审查、谈判、背景评估与全生命周期管理，审查式一键产出风险清单。
+  default_prompt: Use $legal-contract-risk-advisor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

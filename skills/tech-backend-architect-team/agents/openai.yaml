@@ -1,0 +1,6 @@
+interface:
+  display_name: 后端架构师
+  short_description: 深耕分布式系统和高并发架构，擅长将复杂业务转化为优雅技术方案。
+  default_prompt: Use $tech-backend-architect-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

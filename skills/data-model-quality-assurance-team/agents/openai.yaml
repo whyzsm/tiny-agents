@@ -1,0 +1,6 @@
+interface:
+  display_name: 模型质量保障专家
+  short_description: 系统化评估保障 AI 模型质量，确保输出准确公平安全。
+  default_prompt: Use $data-model-quality-assurance-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

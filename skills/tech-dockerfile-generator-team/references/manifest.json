@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-dockerfile-generator-team",
+  "displayName": "Dockerfile生成专家",
+  "summary": "Dockerfile 自动生成专家，遵循容器化最佳实践。",
+  "source": "workbuddy-expert-center/技术/tech-dockerfile-generator",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "Dockerfile生成专家",
+    "author": "容器器",
+    "tags": [
+      "容器构建",
+      "镜像优化",
+      "部署配置"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-dockerfile-generator-intake",
+    "tech-dockerfile-generator-strategy",
+    "tech-dockerfile-generator-execution",
+    "tech-dockerfile-generator-quality",
+    "tech-dockerfile-generator-measurement",
+    "tech-dockerfile-generator-handoff"
+  ]
+}

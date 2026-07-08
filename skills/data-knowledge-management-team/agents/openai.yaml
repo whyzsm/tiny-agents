@@ -1,0 +1,6 @@
+interface:
+  display_name: 知识管理专家
+  short_description: 基于 LLM Wiki 模式，帮助用户构建、维护和查询持久化个人知识库。
+  default_prompt: Use $data-knowledge-management-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

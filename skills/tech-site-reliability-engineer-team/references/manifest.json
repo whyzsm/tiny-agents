@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-site-reliability-engineer-team",
+  "displayName": "站点可靠性工程师",
+  "summary": "用软件工程方法论解决运维问题，确保 99.99% 可用性。",
+  "source": "workbuddy-expert-center/技术/tech-site-reliability-engineer",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "站点可靠性工程师",
+    "author": "稳如山",
+    "tags": [
+      "站点可靠",
+      "SLO管理",
+      "运维自动化"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-site-reliability-engineer-intake",
+    "tech-site-reliability-engineer-strategy",
+    "tech-site-reliability-engineer-execution",
+    "tech-site-reliability-engineer-quality",
+    "tech-site-reliability-engineer-measurement",
+    "tech-site-reliability-engineer-handoff"
+  ]
+}

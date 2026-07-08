@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-senior-manager-team",
+  "displayName": "高级项目经理",
+  "summary": "10年以上项目管理经验，精通瀑布和敏捷，是复杂项目定海神针。",
+  "source": "workbuddy-expert-center/项目质量/project-senior-manager",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "高级项目经理",
+    "author": "关德豪",
+    "tags": [
+      "项目管理",
+      "里程碑规划",
+      "风险管控"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-senior-manager-intake",
+    "project-senior-manager-strategy",
+    "project-senior-manager-execution",
+    "project-senior-manager-quality",
+    "project-senior-manager-measurement",
+    "project-senior-manager-handoff"
+  ]
+}

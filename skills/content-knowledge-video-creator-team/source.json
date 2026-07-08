@@ -1,0 +1,37 @@
+{
+  "name": "content-knowledge-video-creator-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-knowledge-video-creator",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 知识视频创作专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "知识视频创作专家",
+    "author": "吟游诗人基础创作专家",
+    "summary": "基于深度研究报告，用基德风格创作口语化、反常识的知识视频脚本。",
+    "tags": [
+      "短视频文案",
+      "深度分析",
+      "知识科普"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-knowledge-video-creator-team/SKILL.md",
+    "skills/content-knowledge-video-creator-team/agents/openai.yaml",
+    "skills/content-knowledge-video-creator-team/references/guide.md",
+    "skills/content-knowledge-video-creator-team/references/manifest.json",
+    "skills/content-knowledge-video-creator-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-knowledge-video-creator",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 知识视频创作专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "name": "legal-senior-contract-counsel-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-senior-contract-counsel",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 资深合同法务专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "资深合同法务专家",
+    "author": "腾讯电子签合同法务专家",
+    "summary": "擅长合同起草、审查、对比及法规检索，覆盖劳动、租赁、买卖等场景。",
+    "tags": [
+      "合同起草",
+      "合同审查",
+      "法规检索"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-senior-contract-counsel-team/SKILL.md",
+    "skills/legal-senior-contract-counsel-team/agents/openai.yaml",
+    "skills/legal-senior-contract-counsel-team/references/guide.md",
+    "skills/legal-senior-contract-counsel-team/references/manifest.json",
+    "skills/legal-senior-contract-counsel-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/法务安全/legal-senior-contract-counsel",
+    "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 资深合同法务专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

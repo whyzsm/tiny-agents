@@ -1,0 +1,6 @@
+interface:
+  display_name: 微博策略师
+  short_description: 精通微博话题营销和舆论传播规律，让品牌在热搜持续出圈。
+  default_prompt: Use $content-weibo-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

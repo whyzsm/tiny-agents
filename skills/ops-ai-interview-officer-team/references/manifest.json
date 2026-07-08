@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "ops-ai-interview-officer-team",
+  "displayName": "AI面谈官",
+  "summary": "提供九大智能面谈大纲与线上实时指引，基于云录制自动生成结构化纪要与待办。",
+  "source": "workbuddy-expert-center/运营人力/ops-ai-interview-officer",
+  "workbuddy": {
+    "category": "运营人力",
+    "cardTitle": "AI面谈官",
+    "author": "利唐智语AI面谈官",
+    "tags": [
+      "智能面谈",
+      "组织绩效",
+      "沟通提效"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "ops-ai-interview-officer-intake",
+    "ops-ai-interview-officer-strategy",
+    "ops-ai-interview-officer-execution",
+    "ops-ai-interview-officer-quality",
+    "ops-ai-interview-officer-measurement",
+    "ops-ai-interview-officer-handoff"
+  ]
+}

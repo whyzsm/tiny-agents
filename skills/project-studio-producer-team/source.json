@@ -1,0 +1,37 @@
+{
+  "name": "project-studio-producer-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/项目质量/project-studio-producer",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 工作室制片人",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "项目质量",
+    "title": "工作室制片人",
+    "author": "制片达",
+    "summary": "统筹项目从立项到交付的全过程，平衡创意预算和时间。",
+    "tags": [
+      "制作管理",
+      "项目排期",
+      "质量把控"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/project-studio-producer-team/SKILL.md",
+    "skills/project-studio-producer-team/agents/openai.yaml",
+    "skills/project-studio-producer-team/references/guide.md",
+    "skills/project-studio-producer-team/references/manifest.json",
+    "skills/project-studio-producer-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/项目质量/project-studio-producer",
+    "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 工作室制片人",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

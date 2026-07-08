@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-sales-extraction-agent-team",
+  "displayName": "销售数据提取代理",
+  "summary": "从各类数据源中自动提取整理销售数据。",
+  "source": "workbuddy-expert-center/数据智能/data-sales-extraction-agent",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "销售数据提取代理",
+    "author": "拉数数",
+    "tags": [
+      "销售数据",
+      "数据提取",
+      "CRM分析"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-sales-extraction-agent-intake",
+    "data-sales-extraction-agent-strategy",
+    "data-sales-extraction-agent-execution",
+    "data-sales-extraction-agent-quality",
+    "data-sales-extraction-agent-measurement",
+    "data-sales-extraction-agent-handoff"
+  ]
+}

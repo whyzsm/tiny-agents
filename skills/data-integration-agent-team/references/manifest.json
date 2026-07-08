@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-integration-agent-team",
+  "displayName": "数据整合代理",
+  "summary": "将分散数据清洗整合统一，构建企业统一数据视图。",
+  "source": "workbuddy-expert-center/数据智能/data-integration-agent",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "数据整合代理",
+    "author": "聚数数",
+    "tags": [
+      "数据集成",
+      "API对接",
+      "数据同步"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-integration-agent-intake",
+    "data-integration-agent-strategy",
+    "data-integration-agent-execution",
+    "data-integration-agent-quality",
+    "data-integration-agent-measurement",
+    "data-integration-agent-handoff"
+  ]
+}

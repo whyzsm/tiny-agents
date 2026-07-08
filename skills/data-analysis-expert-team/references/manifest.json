@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-analysis-expert-team",
+  "displayName": "数据分析专家",
+  "summary": "支持 Excel 电子表格的创建、编辑、分析、公式计算、格式化和数据可视化。",
+  "source": "workbuddy-expert-center/数据智能/data-analysis-expert",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "数据分析专家",
+    "author": "析数数",
+    "tags": [
+      "数据分析",
+      "统计建模",
+      "业务洞察"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-analysis-expert-intake",
+    "data-analysis-expert-strategy",
+    "data-analysis-expert-execution",
+    "data-analysis-expert-quality",
+    "data-analysis-expert-measurement",
+    "data-analysis-expert-handoff"
+  ]
+}

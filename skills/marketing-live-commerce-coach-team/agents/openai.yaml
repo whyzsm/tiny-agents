@@ -1,0 +1,6 @@
+interface:
+  display_name: 直播电商教练
+  short_description: 精通直播带货全链路运营，从话术到投流帮助实现 GMV 突破。
+  default_prompt: Use $marketing-live-commerce-coach-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

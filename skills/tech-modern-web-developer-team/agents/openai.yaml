@@ -1,0 +1,6 @@
+interface:
+  display_name: 现代Web开发专家
+  short_description: 基于 React + TypeScript + Vite + Tailwind CSS + shadcn/ui 技术栈构建 Web 应用。
+  default_prompt: Use $tech-modern-web-developer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

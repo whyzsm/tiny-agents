@@ -1,0 +1,37 @@
+{
+  "name": "tech-ai-programming-methodology-cn-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/技术/tech-ai-programming-methodology-cn",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 技术 / AI编程方法论与中文开发规范专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术",
+    "title": "AI编程方法论与中文开发规范专家",
+    "author": "AI编程方法论专家",
+    "summary": "覆盖头脑风暴、测试驱动开发、系统化调试、代码审查、适配中文文档与国产AI规范。",
+    "tags": [
+      "工作方法论",
+      "代码审查",
+      "中文开发规范"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/tech-ai-programming-methodology-cn-team/SKILL.md",
+    "skills/tech-ai-programming-methodology-cn-team/agents/openai.yaml",
+    "skills/tech-ai-programming-methodology-cn-team/references/guide.md",
+    "skills/tech-ai-programming-methodology-cn-team/references/manifest.json",
+    "skills/tech-ai-programming-methodology-cn-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/技术/tech-ai-programming-methodology-cn",
+    "WorkBuddy v5.2.3 Expert Center card: 技术 / AI编程方法论与中文开发规范专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

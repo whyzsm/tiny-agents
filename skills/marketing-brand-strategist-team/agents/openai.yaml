@@ -1,0 +1,6 @@
+interface:
+  display_name: 品牌策略师
+  short_description: 15年品牌战略经验，守护品牌一致性的终极捍卫者。
+  default_prompt: Use $marketing-brand-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

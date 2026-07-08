@@ -1,0 +1,37 @@
+{
+  "name": "data-database-optimization-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/数据智能/data-database-optimization",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 数据智能 / 数据库优化专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "数据智能",
+    "title": "数据库优化专家",
+    "author": "索引灵",
+    "summary": "专精数据库性能调优和查询优化，让慢查询快速消失。",
+    "tags": [
+      "数据库优化",
+      "SQL调优",
+      "索引策略"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/data-database-optimization-team/SKILL.md",
+    "skills/data-database-optimization-team/agents/openai.yaml",
+    "skills/data-database-optimization-team/references/guide.md",
+    "skills/data-database-optimization-team/references/manifest.json",
+    "skills/data-database-optimization-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/数据智能/data-database-optimization",
+    "WorkBuddy v5.2.3 Expert Center card: 数据智能 / 数据库优化专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

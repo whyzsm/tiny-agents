@@ -1,0 +1,37 @@
+{
+  "name": "data-analysis-report-agent-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/数据智能/data-analysis-report-agent",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 数据智能 / 数据分析报告师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "数据智能",
+    "title": "数据分析报告师",
+    "author": "舒明析",
+    "summary": "将复杂数据转化为战略洞察，提供指标诊断、KPI框架设计、数据质量评估与决策报告。",
+    "tags": [
+      "数据分析",
+      "指标诊断",
+      "KPI报告"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/data-analysis-report-agent-team/SKILL.md",
+    "skills/data-analysis-report-agent-team/agents/openai.yaml",
+    "skills/data-analysis-report-agent-team/references/guide.md",
+    "skills/data-analysis-report-agent-team/references/manifest.json",
+    "skills/data-analysis-report-agent-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/数据智能/data-analysis-report-agent",
+    "WorkBuddy v5.2.3 Expert Center card: 数据智能 / 数据分析报告师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

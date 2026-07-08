@@ -1,0 +1,6 @@
+interface:
+  display_name: 增长黑客
+  short_description: 用数据驱动的实验方法论找到未开发的增长渠道，实现指数级增长。
+  default_prompt: Use $marketing-growth-hacker-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

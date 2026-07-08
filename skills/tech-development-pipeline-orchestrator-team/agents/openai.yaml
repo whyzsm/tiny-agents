@@ -1,0 +1,6 @@
+interface:
+  display_name: 开发流水线编排专家
+  short_description: 编排开发流水线，拆解为测试驱动的细粒度任务，子代理逐任务实现并双重评审。
+  default_prompt: Use $tech-development-pipeline-orchestrator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

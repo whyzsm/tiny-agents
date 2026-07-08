@@ -1,0 +1,37 @@
+{
+  "name": "ops-ai-interview-officer-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/运营人力/ops-ai-interview-officer",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 运营人力 / AI面谈官",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "运营人力",
+    "title": "AI面谈官",
+    "author": "利唐智语AI面谈官",
+    "summary": "提供九大智能面谈大纲与线上实时指引，基于云录制自动生成结构化纪要与待办。",
+    "tags": [
+      "智能面谈",
+      "组织绩效",
+      "沟通提效"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/ops-ai-interview-officer-team/SKILL.md",
+    "skills/ops-ai-interview-officer-team/agents/openai.yaml",
+    "skills/ops-ai-interview-officer-team/references/guide.md",
+    "skills/ops-ai-interview-officer-team/references/manifest.json",
+    "skills/ops-ai-interview-officer-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/运营人力/ops-ai-interview-officer",
+    "WorkBuddy v5.2.3 Expert Center card: 运营人力 / AI面谈官",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

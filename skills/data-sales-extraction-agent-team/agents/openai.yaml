@@ -1,0 +1,6 @@
+interface:
+  display_name: 销售数据提取代理
+  short_description: 从各类数据源中自动提取整理销售数据。
+  default_prompt: Use $data-sales-extraction-agent-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

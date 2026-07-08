@@ -1,0 +1,37 @@
+{
+  "name": "project-report-distribution-agent-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/项目质量/project-report-distribution-agent",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 报告分发代理",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "项目质量",
+    "title": "报告分发代理",
+    "author": "送报报",
+    "summary": "自动化管理报告生成和分发流程。",
+    "tags": [
+      "报告分发",
+      "自动投递",
+      "格式转换"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/project-report-distribution-agent-team/SKILL.md",
+    "skills/project-report-distribution-agent-team/agents/openai.yaml",
+    "skills/project-report-distribution-agent-team/references/guide.md",
+    "skills/project-report-distribution-agent-team/references/manifest.json",
+    "skills/project-report-distribution-agent-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/项目质量/project-report-distribution-agent",
+    "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 报告分发代理",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

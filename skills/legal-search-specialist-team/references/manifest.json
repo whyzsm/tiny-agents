@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-search-specialist-team",
+  "displayName": "法律检索专家",
+  "summary": "识别检索意图与场景，按法源位阶检索法规与类案，验证效力评估相似度。",
+  "source": "workbuddy-expert-center/法务安全/legal-search-specialist",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "法律检索专家",
+    "author": "法检 Pro",
+    "tags": [
+      "法规类案检索",
+      "效力核验溯源",
+      "合规依据汇编"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-search-specialist-intake",
+    "legal-search-specialist-strategy",
+    "legal-search-specialist-execution",
+    "legal-search-specialist-quality",
+    "legal-search-specialist-measurement",
+    "legal-search-specialist-handoff"
+  ]
+}

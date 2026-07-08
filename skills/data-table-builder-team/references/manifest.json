@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-table-builder-team",
+  "displayName": "数据建表专家",
+  "summary": "将输入资料转为结构化表格，支持收集表、美化、校验和去重。",
+  "source": "workbuddy-expert-center/数据智能/data-table-builder",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "数据建表专家",
+    "author": "金山文档智能建表助手",
+    "tags": [
+      "按龙转表格",
+      "信息收集表",
+      "智能表格"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-table-builder-intake",
+    "data-table-builder-strategy",
+    "data-table-builder-execution",
+    "data-table-builder-quality",
+    "data-table-builder-measurement",
+    "data-table-builder-handoff"
+  ]
+}

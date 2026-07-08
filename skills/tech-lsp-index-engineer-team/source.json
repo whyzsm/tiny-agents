@@ -1,0 +1,37 @@
+{
+  "name": "tech-lsp-index-engineer-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/技术/tech-lsp-index-engineer",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 技术 / LSP索引工程师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术",
+    "title": "LSP索引工程师",
+    "author": "索引引",
+    "summary": "精通语言服务器协议和代码索引技术。",
+    "tags": [
+      "语言服务",
+      "代码索引",
+      "智能补全"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/tech-lsp-index-engineer-team/SKILL.md",
+    "skills/tech-lsp-index-engineer-team/agents/openai.yaml",
+    "skills/tech-lsp-index-engineer-team/references/guide.md",
+    "skills/tech-lsp-index-engineer-team/references/manifest.json",
+    "skills/tech-lsp-index-engineer-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/技术/tech-lsp-index-engineer",
+    "WorkBuddy v5.2.3 Expert Center card: 技术 / LSP索引工程师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

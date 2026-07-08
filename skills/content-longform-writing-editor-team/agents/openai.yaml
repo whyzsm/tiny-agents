@@ -1,0 +1,6 @@
+interface:
+  display_name: 长文档写作与改稿专家
+  short_description: 擅长把提纲、访谈、旧稿和零散素材整理成长文档手稿，独立完成结构规划、章节扩写与交付前质检。
+  default_prompt: Use $content-longform-writing-editor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

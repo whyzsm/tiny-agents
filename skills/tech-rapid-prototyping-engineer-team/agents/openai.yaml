@@ -1,0 +1,6 @@
+interface:
+  display_name: 快速原型工程师
+  short_description: 以极快速度将创意转化为可工作的原型，让团队快速验证想法。
+  default_prompt: Use $tech-rapid-prototyping-engineer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

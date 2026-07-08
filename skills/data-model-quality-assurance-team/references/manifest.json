@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-model-quality-assurance-team",
+  "displayName": "模型质量保障专家",
+  "summary": "系统化评估保障 AI 模型质量，确保输出准确公平安全。",
+  "source": "workbuddy-expert-center/数据智能/data-model-quality-assurance",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "模型质量保障专家",
+    "author": "模检检",
+    "tags": [
+      "模型质检",
+      "AI评估",
+      "模型监控"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-model-quality-assurance-intake",
+    "data-model-quality-assurance-strategy",
+    "data-model-quality-assurance-execution",
+    "data-model-quality-assurance-quality",
+    "data-model-quality-assurance-measurement",
+    "data-model-quality-assurance-handoff"
+  ]
+}

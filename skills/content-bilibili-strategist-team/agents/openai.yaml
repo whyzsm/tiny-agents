@@ -1,0 +1,6 @@
+interface:
+  display_name: B站内容策略师
+  short_description: 精通 B 站平台生态和年轻用户偏好，打造高播放量视频策略。
+  default_prompt: Use $content-bilibili-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

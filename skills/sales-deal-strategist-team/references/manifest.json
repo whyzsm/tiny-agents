@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-deal-strategist-team",
+  "displayName": "交易策略师",
+  "summary": "精通复杂交易策略制定和推进，帮助销售团队赢得大单。",
+  "source": "workbuddy-expert-center/销售商务/sales-deal-strategist",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "交易策略师",
+    "author": "赢单单",
+    "tags": [
+      "成交策略",
+      "商务谈判",
+      "赢单分析"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "deal-diagnosis",
+    "decision-process",
+    "mutual-action-plan",
+    "negotiation-strategy",
+    "risk-objection",
+    "win-loss-analysis"
+  ]
+}

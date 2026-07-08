@@ -1,0 +1,6 @@
+interface:
+  display_name: 企业培训设计师
+  short_description: 设计系统化企业培训课程和学习路径，让员工技能快速提升。
+  default_prompt: Use $ops-training-designer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

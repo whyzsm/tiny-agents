@@ -1,0 +1,6 @@
+interface:
+  display_name: 安全工程师
+  short_description: 全方位保障系统安全，在黑客之前发现并修复安全漏洞。
+  default_prompt: Use $tech-security-engineer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

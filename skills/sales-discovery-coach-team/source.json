@@ -1,0 +1,37 @@
+{
+  "name": "sales-discovery-coach-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/销售商务/sales-discovery-coach",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 需求发现教练",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "销售商务",
+    "title": "需求发现教练",
+    "author": "掘需需",
+    "summary": "训练销售掌握深度需求挖掘技巧，发现真正的业务痛点。",
+    "tags": [
+      "需求挖掘",
+      "客户洞察",
+      "提问技巧"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/sales-discovery-coach-team/SKILL.md",
+    "skills/sales-discovery-coach-team/agents/openai.yaml",
+    "skills/sales-discovery-coach-team/references/guide.md",
+    "skills/sales-discovery-coach-team/references/manifest.json",
+    "skills/sales-discovery-coach-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/销售商务/sales-discovery-coach",
+    "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 需求发现教练",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

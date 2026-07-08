@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-analysis-report-agent-team",
+  "displayName": "数据分析报告师",
+  "summary": "将复杂数据转化为战略洞察，提供指标诊断、KPI框架设计、数据质量评估与决策报告。",
+  "source": "workbuddy-expert-center/数据智能/data-analysis-report-agent",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "数据分析报告师",
+    "author": "舒明析",
+    "tags": [
+      "数据分析",
+      "指标诊断",
+      "KPI报告"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-analysis-report-agent-intake",
+    "data-analysis-report-agent-strategy",
+    "data-analysis-report-agent-execution",
+    "data-analysis-report-agent-quality",
+    "data-analysis-report-agent-measurement",
+    "data-analysis-report-agent-handoff"
+  ]
+}

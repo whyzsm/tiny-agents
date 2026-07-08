@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-ai-trace-remover-team",
+  "displayName": "AI痕迹消除专家",
+  "summary": "识别AI写作模式与词汇，重写为自然真实的人类表达。",
+  "source": "workbuddy-expert-center/内容创作/content-ai-trace-remover",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "AI痕迹消除专家",
+    "author": "WorkBuddy",
+    "tags": [
+      "AI痕迹检测",
+      "文本去AI化",
+      "自然语言润色"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-ai-trace-remover-intake",
+    "content-ai-trace-remover-strategy",
+    "content-ai-trace-remover-execution",
+    "content-ai-trace-remover-quality",
+    "content-ai-trace-remover-measurement",
+    "content-ai-trace-remover-handoff"
+  ]
+}

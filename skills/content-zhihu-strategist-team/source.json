@@ -1,0 +1,37 @@
+{
+  "name": "content-zhihu-strategist-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-zhihu-strategist",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 知乎策略师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "知乎策略师",
+    "author": "答有道",
+    "summary": "精通知乎推荐机制和知识营销策略，通过高质量回答建立权威。",
+    "tags": [
+      "知乎策略",
+      "知识领导力",
+      "专业问答"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-zhihu-strategist-team/SKILL.md",
+    "skills/content-zhihu-strategist-team/agents/openai.yaml",
+    "skills/content-zhihu-strategist-team/references/guide.md",
+    "skills/content-zhihu-strategist-team/references/manifest.json",
+    "skills/content-zhihu-strategist-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-zhihu-strategist",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 知乎策略师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

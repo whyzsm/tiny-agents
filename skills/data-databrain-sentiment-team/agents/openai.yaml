@@ -1,0 +1,6 @@
+interface:
+  display_name: DataBrain舆情分析专家
+  short_description: 面向口碑与舆情侦察，覆盖评分告警、内容趋势、竞品对比与热点挖掘。
+  default_prompt: Use $data-databrain-sentiment-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

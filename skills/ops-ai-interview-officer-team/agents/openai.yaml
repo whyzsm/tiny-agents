@@ -1,0 +1,6 @@
+interface:
+  display_name: AI面谈官
+  short_description: 提供九大智能面谈大纲与线上实时指引，基于云录制自动生成结构化纪要与待办。
+  default_prompt: Use $ops-ai-interview-officer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

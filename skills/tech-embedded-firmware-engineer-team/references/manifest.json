@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-embedded-firmware-engineer-team",
+  "displayName": "嵌入式固件工程师",
+  "summary": "精通微控制器编程，在资源受限硬件上编写高效可靠的固件代码。",
+  "source": "workbuddy-expert-center/技术/tech-embedded-firmware-engineer",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "嵌入式固件工程师",
+    "author": "固件通",
+    "tags": [
+      "嵌入式固件",
+      "RTOS开发",
+      "物联网固件"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-embedded-firmware-engineer-intake",
+    "tech-embedded-firmware-engineer-strategy",
+    "tech-embedded-firmware-engineer-execution",
+    "tech-embedded-firmware-engineer-quality",
+    "tech-embedded-firmware-engineer-measurement",
+    "tech-embedded-firmware-engineer-handoff"
+  ]
+}

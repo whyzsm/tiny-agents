@@ -1,0 +1,37 @@
+{
+  "name": "content-podcast-strategist-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-podcast-strategist",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 播客策略师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "播客策略师",
+    "author": "声浪浪",
+    "summary": "精通播客内容策划和增长策略，通过音频建立深度用户连接。",
+    "tags": [
+      "播客策划",
+      "音频内容",
+      "听众增长"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-podcast-strategist-team/SKILL.md",
+    "skills/content-podcast-strategist-team/agents/openai.yaml",
+    "skills/content-podcast-strategist-team/references/guide.md",
+    "skills/content-podcast-strategist-team/references/manifest.json",
+    "skills/content-podcast-strategist-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-podcast-strategist",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 播客策略师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

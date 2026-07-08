@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-compliance-reviewer-team",
+  "displayName": "法律合规审查员",
+  "summary": "确保业务运营和产品功能符合法律法规要求，防范合规风险。",
+  "source": "workbuddy-expert-center/法务安全/legal-compliance-reviewer",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "法律合规审查员",
+    "author": "律守正",
+    "tags": [
+      "合规审核",
+      "法规检查",
+      "风险审查"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-compliance-reviewer-intake",
+    "legal-compliance-reviewer-strategy",
+    "legal-compliance-reviewer-execution",
+    "legal-compliance-reviewer-quality",
+    "legal-compliance-reviewer-measurement",
+    "legal-compliance-reviewer-handoff"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-cross-border-ecommerce-team",
+  "displayName": "跨境电商专家",
+  "summary": "精通亚马逊 Shopify 等国际电商平台，助力品牌出海全球。",
+  "source": "workbuddy-expert-center/营销增长/marketing-cross-border-ecommerce",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "跨境电商专家",
+    "author": "海跨洋",
+    "tags": [
+      "跨境电商",
+      "海外仓配",
+      "国际合规"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-cross-border-ecommerce-intake",
+    "marketing-cross-border-ecommerce-strategy",
+    "marketing-cross-border-ecommerce-execution",
+    "marketing-cross-border-ecommerce-quality",
+    "marketing-cross-border-ecommerce-measurement",
+    "marketing-cross-border-ecommerce-handoff"
+  ]
+}

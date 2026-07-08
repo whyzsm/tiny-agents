@@ -1,0 +1,6 @@
+interface:
+  display_name: API测试专家
+  short_description: 在用户之前发现 API 的每一个缺陷，确保接口稳定性和正确性。
+  default_prompt: Use $project-api-testing-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

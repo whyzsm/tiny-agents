@@ -1,0 +1,37 @@
+{
+  "name": "marketing-ad-tracking-technologist-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-ad-tracking-technologist",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 广告追踪技术专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "广告追踪技术专家",
+    "author": "追踪踪",
+    "summary": "精通广告追踪代码和转化归因技术，确保投放效果可追踪。",
+    "tags": [
+      "广告追踪",
+      "归因建模",
+      "标签管理"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-ad-tracking-technologist-team/SKILL.md",
+    "skills/marketing-ad-tracking-technologist-team/agents/openai.yaml",
+    "skills/marketing-ad-tracking-technologist-team/references/guide.md",
+    "skills/marketing-ad-tracking-technologist-team/references/manifest.json",
+    "skills/marketing-ad-tracking-technologist-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-ad-tracking-technologist",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 广告追踪技术专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "name": "project-performance-testing-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/项目质量/project-performance-testing",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 性能测试专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "项目质量",
+    "title": "性能测试专家",
+    "author": "压测测",
+    "summary": "精通性能测试和基准评估，用数据证明性能改进。",
+    "tags": [
+      "性能测试",
+      "压力测试",
+      "容量规划"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/project-performance-testing-team/SKILL.md",
+    "skills/project-performance-testing-team/agents/openai.yaml",
+    "skills/project-performance-testing-team/references/guide.md",
+    "skills/project-performance-testing-team/references/manifest.json",
+    "skills/project-performance-testing-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/项目质量/project-performance-testing",
+    "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 性能测试专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

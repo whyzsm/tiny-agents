@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-skill-governance-team",
+  "displayName": "法律技能治理专家",
+  "summary": "面向法律运营和技能开发者的治理助手，评估技能来源、工具权限、新鲜度、许可证和信任边界。",
+  "source": "workbuddy-expert-center/法务安全/legal-skill-governance",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "法律技能治理专家",
+    "author": "法律技能运营官",
+    "tags": [
+      "技能治理",
+      "信任层",
+      "法律运营"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-skill-governance-intake",
+    "legal-skill-governance-strategy",
+    "legal-skill-governance-execution",
+    "legal-skill-governance-quality",
+    "legal-skill-governance-measurement",
+    "legal-skill-governance-handoff"
+  ]
+}

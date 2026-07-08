@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-blockchain-security-auditor-team",
+  "displayName": "区块链安全审计师",
+  "summary": "专精区块链智能合约和 DeFi 协议安全审计。",
+  "source": "workbuddy-expert-center/法务安全/legal-blockchain-security-auditor",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "区块链安全审计师",
+    "author": "链审审",
+    "tags": [
+      "合约审计",
+      "漏洞检测",
+      "链上安全"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-blockchain-security-auditor-intake",
+    "legal-blockchain-security-auditor-strategy",
+    "legal-blockchain-security-auditor-execution",
+    "legal-blockchain-security-auditor-quality",
+    "legal-blockchain-security-auditor-measurement",
+    "legal-blockchain-security-auditor-handoff"
+  ]
+}

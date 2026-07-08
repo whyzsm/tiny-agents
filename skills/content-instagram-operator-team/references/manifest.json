@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-instagram-operator-team",
+  "displayName": "Instagram运营专家",
+  "summary": "精通 Instagram 视觉美学和内容策略，打造令人向往的品牌形象。",
+  "source": "workbuddy-expert-center/内容创作/content-instagram-operator",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "Instagram运营专家",
+    "author": "晒图图",
+    "tags": [
+      "图片社媒",
+      "内容策略",
+      "品牌视觉"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-instagram-operator-intake",
+    "content-instagram-operator-strategy",
+    "content-instagram-operator-execution",
+    "content-instagram-operator-quality",
+    "content-instagram-operator-measurement",
+    "content-instagram-operator-handoff"
+  ]
+}

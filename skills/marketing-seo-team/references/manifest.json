@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-seo-team",
+  "displayName": "SEO专家",
+  "summary": "精通 Google 搜索算法和技术 SEO，让网站在搜索结果中稳居前列。",
+  "source": "workbuddy-expert-center/营销增长/marketing-seo",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "SEO专家",
+    "author": "搜霸霸",
+    "tags": [
+      "SEO优化",
+      "关键词策略",
+      "技术SEO"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-seo-intake",
+    "marketing-seo-strategy",
+    "marketing-seo-execution",
+    "marketing-seo-quality",
+    "marketing-seo-measurement",
+    "marketing-seo-handoff"
+  ]
+}

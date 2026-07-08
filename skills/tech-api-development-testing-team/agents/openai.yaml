@@ -1,0 +1,6 @@
+interface:
+  display_name: API接口开发测试专家
+  short_description: 专注接口全生命周期，覆盖端点搭建、自动化测试、OpenAPI 文档生成、Mock 和联调。
+  default_prompt: Use $tech-api-development-testing-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

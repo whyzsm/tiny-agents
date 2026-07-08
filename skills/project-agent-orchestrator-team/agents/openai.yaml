@@ -1,0 +1,6 @@
+interface:
+  display_name: 智能体编排师
+  short_description: 精通多智能体系统的编排和协调，让 AI 团队高效协作。
+  default_prompt: Use $project-agent-orchestrator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

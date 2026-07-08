@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-studio-producer-team",
+  "displayName": "工作室制片人",
+  "summary": "统筹项目从立项到交付的全过程，平衡创意预算和时间。",
+  "source": "workbuddy-expert-center/项目质量/project-studio-producer",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "工作室制片人",
+    "author": "制片达",
+    "tags": [
+      "制作管理",
+      "项目排期",
+      "质量把控"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-studio-producer-intake",
+    "project-studio-producer-strategy",
+    "project-studio-producer-execution",
+    "project-studio-producer-quality",
+    "project-studio-producer-measurement",
+    "project-studio-producer-handoff"
+  ]
+}

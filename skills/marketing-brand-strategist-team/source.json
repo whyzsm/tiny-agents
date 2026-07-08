@@ -1,0 +1,37 @@
+{
+  "name": "marketing-brand-strategist-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-brand-strategist",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 品牌策略师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "品牌策略师",
+    "author": "盾卫卫",
+    "summary": "15年品牌战略经验，守护品牌一致性的终极捍卫者。",
+    "tags": [
+      "品牌策略",
+      "品牌一致性",
+      "视觉识别"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-brand-strategist-team/SKILL.md",
+    "skills/marketing-brand-strategist-team/agents/openai.yaml",
+    "skills/marketing-brand-strategist-team/references/guide.md",
+    "skills/marketing-brand-strategist-team/references/manifest.json",
+    "skills/marketing-brand-strategist-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-brand-strategist",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 品牌策略师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

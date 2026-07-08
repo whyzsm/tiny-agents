@@ -1,0 +1,6 @@
+interface:
+  display_name: 证据收集员
+  short_description: 不放过任何没有截图证据的问题，用视觉证据确保缺陷无处遁形。
+  default_prompt: Use $project-evidence-collector-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

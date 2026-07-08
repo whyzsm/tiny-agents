@@ -1,0 +1,6 @@
+interface:
+  display_name: 广告追踪技术专家
+  short_description: 精通广告追踪代码和转化归因技术，确保投放效果可追踪。
+  default_prompt: Use $marketing-ad-tracking-technologist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

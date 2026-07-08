@@ -1,0 +1,6 @@
+interface:
+  display_name: 实验追踪管理者
+  short_description: 系统化管理实验全生命周期，确保每个实验有假设有执行有结论。
+  default_prompt: Use $project-experiment-tracking-manager-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: 法律诊所督导顾问
+  short_description: 面向法学院诊所导师的监督助手，支持客户接待、研究启动、期限追踪、学生入职和学期交接。
+  default_prompt: Use $legal-clinic-supervisor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

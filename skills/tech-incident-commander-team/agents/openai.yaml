@@ -1,0 +1,6 @@
+interface:
+  display_name: 事故响应指挥官
+  short_description: 系统故障时冷静指挥团队快速定位处理和恢复。
+  default_prompt: Use $tech-incident-commander-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

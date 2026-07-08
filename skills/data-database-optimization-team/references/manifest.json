@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-database-optimization-team",
+  "displayName": "数据库优化专家",
+  "summary": "专精数据库性能调优和查询优化，让慢查询快速消失。",
+  "source": "workbuddy-expert-center/数据智能/data-database-optimization",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "数据库优化专家",
+    "author": "索引灵",
+    "tags": [
+      "数据库优化",
+      "SQL调优",
+      "索引策略"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-database-optimization-intake",
+    "data-database-optimization-strategy",
+    "data-database-optimization-execution",
+    "data-database-optimization-quality",
+    "data-database-optimization-measurement",
+    "data-database-optimization-handoff"
+  ]
+}

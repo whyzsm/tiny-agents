@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-contract-risk-advisor-team",
+  "displayName": "合同风控顾问",
+  "summary": "覆盖合同起草、审查、谈判、背景评估与全生命周期管理，审查式一键产出风险清单。",
+  "source": "workbuddy-expert-center/法务安全/legal-contract-risk-advisor",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "合同风控顾问",
+    "author": "何同守",
+    "tags": [
+      "合同起草拟制",
+      "合同审查风控",
+      "交易结构与谈判"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-contract-risk-advisor-intake",
+    "legal-contract-risk-advisor-strategy",
+    "legal-contract-risk-advisor-execution",
+    "legal-contract-risk-advisor-quality",
+    "legal-contract-risk-advisor-measurement",
+    "legal-contract-risk-advisor-handoff"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-agent-orchestrator-team",
+  "displayName": "智能体编排师",
+  "summary": "精通多智能体系统的编排和协调，让 AI 团队高效协作。",
+  "source": "workbuddy-expert-center/项目质量/project-agent-orchestrator",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "智能体编排师",
+    "author": "调度达",
+    "tags": [
+      "流程编排",
+      "开发工作流",
+      "自动化调度"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-agent-orchestrator-intake",
+    "project-agent-orchestrator-strategy",
+    "project-agent-orchestrator-execution",
+    "project-agent-orchestrator-quality",
+    "project-agent-orchestrator-measurement",
+    "project-agent-orchestrator-handoff"
+  ]
+}

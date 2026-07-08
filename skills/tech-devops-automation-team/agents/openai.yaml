@@ -1,0 +1,6 @@
+interface:
+  display_name: DevOps自动化工程师
+  short_description: 将手动运维自动化，从 CI/CD 到基础设施即代码，部署一键搞定。
+  default_prompt: Use $tech-devops-automation-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

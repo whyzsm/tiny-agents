@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-knowledge-video-creator-team",
+  "displayName": "知识视频创作专家",
+  "summary": "基于深度研究报告，用基德风格创作口语化、反常识的知识视频脚本。",
+  "source": "workbuddy-expert-center/内容创作/content-knowledge-video-creator",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "知识视频创作专家",
+    "author": "吟游诗人基础创作专家",
+    "tags": [
+      "短视频文案",
+      "深度分析",
+      "知识科普"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-knowledge-video-creator-intake",
+    "content-knowledge-video-creator-strategy",
+    "content-knowledge-video-creator-execution",
+    "content-knowledge-video-creator-quality",
+    "content-knowledge-video-creator-measurement",
+    "content-knowledge-video-creator-handoff"
+  ]
+}

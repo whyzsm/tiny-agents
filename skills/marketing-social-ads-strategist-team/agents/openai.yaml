@@ -1,0 +1,6 @@
+interface:
+  display_name: 社交广告策略师
+  short_description: 精通社交平台广告投放，以精准定向实现最优获客成本。
+  default_prompt: Use $marketing-social-ads-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

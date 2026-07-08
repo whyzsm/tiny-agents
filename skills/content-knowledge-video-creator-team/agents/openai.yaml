@@ -1,0 +1,6 @@
+interface:
+  display_name: 知识视频创作专家
+  short_description: 基于深度研究报告，用基德风格创作口语化、反常识的知识视频脚本。
+  default_prompt: Use $content-knowledge-video-creator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

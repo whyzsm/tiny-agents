@@ -1,0 +1,6 @@
+interface:
+  display_name: 小红书运营专家
+  short_description: 深谙小红书种草生态和推荐机制，打造高互动率种草内容。
+  default_prompt: Use $content-xiaohongshu-operator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-databrain-sentiment-team",
+  "displayName": "DataBrain舆情分析专家",
+  "summary": "面向口碑与舆情侦察，覆盖评分告警、内容趋势、竞品对比与热点挖掘。",
+  "source": "workbuddy-expert-center/数据智能/data-databrain-sentiment",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "DataBrain舆情分析专家",
+    "author": "WorkBuddy",
+    "tags": [
+      "舆情指标",
+      "评分告警",
+      "内容趋势"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-databrain-sentiment-intake",
+    "data-databrain-sentiment-strategy",
+    "data-databrain-sentiment-execution",
+    "data-databrain-sentiment-quality",
+    "data-databrain-sentiment-measurement",
+    "data-databrain-sentiment-handoff"
+  ]
+}

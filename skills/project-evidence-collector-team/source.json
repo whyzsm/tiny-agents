@@ -1,0 +1,37 @@
+{
+  "name": "project-evidence-collector-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/项目质量/project-evidence-collector",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 证据收集员",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "项目质量",
+    "title": "证据收集员",
+    "author": "截图图",
+    "summary": "不放过任何没有截图证据的问题，用视觉证据确保缺陷无处遁形。",
+    "tags": [
+      "证据收集",
+      "截图取证",
+      "缺陷定位"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/project-evidence-collector-team/SKILL.md",
+    "skills/project-evidence-collector-team/agents/openai.yaml",
+    "skills/project-evidence-collector-team/references/guide.md",
+    "skills/project-evidence-collector-team/references/manifest.json",
+    "skills/project-evidence-collector-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/项目质量/project-evidence-collector",
+    "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 证据收集员",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

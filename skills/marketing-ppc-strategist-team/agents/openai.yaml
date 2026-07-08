@@ -1,0 +1,6 @@
+interface:
+  display_name: PPC竞价广告策略师
+  short_description: 精通 Google Ads 和百度竞价，以最低点击成本获取高质量流量。
+  default_prompt: Use $marketing-ppc-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

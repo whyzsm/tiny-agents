@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-shepherd-team",
+  "displayName": "项目牧羊人",
+  "summary": "温和坚定地引导项目按计划推进，确保里程碑准时交付。",
+  "source": "workbuddy-expert-center/项目质量/project-shepherd",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "项目牧羊人",
+    "author": "牧羊羊",
+    "tags": [
+      "项目守护",
+      "交付保障",
+      "进度追踪"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-shepherd-intake",
+    "project-shepherd-strategy",
+    "project-shepherd-execution",
+    "project-shepherd-quality",
+    "project-shepherd-measurement",
+    "project-shepherd-handoff"
+  ]
+}

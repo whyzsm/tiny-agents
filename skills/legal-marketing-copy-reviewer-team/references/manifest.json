@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-marketing-copy-reviewer-team",
+  "displayName": "营销文案审查官",
+  "summary": "按规则扫描营销文案，定位广告法与隐私合规风险，输出分级 Excel 与 HTML 审查报告。",
+  "source": "workbuddy-expert-center/法务安全/legal-marketing-copy-reviewer",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "营销文案审查官",
+    "author": "营文稳",
+    "tags": [
+      "营销合规",
+      "文案审查",
+      "广告法"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-marketing-copy-reviewer-intake",
+    "legal-marketing-copy-reviewer-strategy",
+    "legal-marketing-copy-reviewer-execution",
+    "legal-marketing-copy-reviewer-quality",
+    "legal-marketing-copy-reviewer-measurement",
+    "legal-marketing-copy-reviewer-handoff"
+  ]
+}

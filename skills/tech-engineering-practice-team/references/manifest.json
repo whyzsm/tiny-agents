@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-engineering-practice-team",
+  "displayName": "工程实践专家",
+  "summary": "基于 Google 工程师的 Agent Skills，覆盖规范驱动开发、代码评审、CI/CD 发布。",
+  "source": "workbuddy-expert-center/技术/tech-engineering-practice",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "工程实践专家",
+    "author": "工序达",
+    "tags": [
+      "规约驱动开发",
+      "代码评审与安全",
+      "CI/CD发布"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-engineering-practice-intake",
+    "tech-engineering-practice-strategy",
+    "tech-engineering-practice-execution",
+    "tech-engineering-practice-quality",
+    "tech-engineering-practice-measurement",
+    "tech-engineering-practice-handoff"
+  ]
+}

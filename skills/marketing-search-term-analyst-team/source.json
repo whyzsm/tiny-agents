@@ -1,0 +1,37 @@
+{
+  "name": "marketing-search-term-analyst-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-search-term-analyst",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 搜索词分析师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "搜索词分析师",
+    "author": "词探探",
+    "summary": "深度分析搜索词数据，挖掘用户真实搜索意图。",
+    "tags": [
+      "搜索词分析",
+      "关键词挖掘",
+      "搜索意图"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-search-term-analyst-team/SKILL.md",
+    "skills/marketing-search-term-analyst-team/agents/openai.yaml",
+    "skills/marketing-search-term-analyst-team/references/guide.md",
+    "skills/marketing-search-term-analyst-team/references/manifest.json",
+    "skills/marketing-search-term-analyst-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-search-term-analyst",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 搜索词分析师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

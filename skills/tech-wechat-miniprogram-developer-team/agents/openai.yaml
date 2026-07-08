@@ -1,0 +1,6 @@
+interface:
+  display_name: 微信小程序开发者
+  short_description: 精通微信小程序开发框架和生态，打造流畅微信原生体验应用。
+  default_prompt: Use $tech-wechat-miniprogram-developer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

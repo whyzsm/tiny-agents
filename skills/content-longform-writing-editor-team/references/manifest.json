@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-longform-writing-editor-team",
+  "displayName": "长文档写作与改稿专家",
+  "summary": "擅长把提纲、访谈、旧稿和零散素材整理成长文档手稿，独立完成结构规划、章节扩写与交付前质检。",
+  "source": "workbuddy-expert-center/内容创作/content-longform-writing-editor",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "长文档写作与改稿专家",
+    "author": "福帮手",
+    "tags": [
+      "提纲成稿",
+      "章节扩写",
+      "成稿收口"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-longform-writing-editor-intake",
+    "content-longform-writing-editor-strategy",
+    "content-longform-writing-editor-execution",
+    "content-longform-writing-editor-quality",
+    "content-longform-writing-editor-measurement",
+    "content-longform-writing-editor-handoff"
+  ]
+}

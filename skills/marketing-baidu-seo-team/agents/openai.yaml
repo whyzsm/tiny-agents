@@ -1,0 +1,6 @@
+interface:
+  display_name: 百度SEO专家
+  short_description: 深谙百度搜索算法和中国搜索生态，让品牌获得最大曝光。
+  default_prompt: Use $marketing-baidu-seo-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

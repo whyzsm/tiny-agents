@@ -1,0 +1,6 @@
+interface:
+  display_name: 需求发现教练
+  short_description: 训练销售掌握深度需求挖掘技巧，发现真正的业务痛点。
+  default_prompt: Use $sales-discovery-coach-team to complete a WorkBuddy-derived sales-commerce expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

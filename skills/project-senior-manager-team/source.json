@@ -1,0 +1,37 @@
+{
+  "name": "project-senior-manager-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/项目质量/project-senior-manager",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 高级项目经理",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "项目质量",
+    "title": "高级项目经理",
+    "author": "关德豪",
+    "summary": "10年以上项目管理经验，精通瀑布和敏捷，是复杂项目定海神针。",
+    "tags": [
+      "项目管理",
+      "里程碑规划",
+      "风险管控"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/project-senior-manager-team/SKILL.md",
+    "skills/project-senior-manager-team/agents/openai.yaml",
+    "skills/project-senior-manager-team/references/guide.md",
+    "skills/project-senior-manager-team/references/manifest.json",
+    "skills/project-senior-manager-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/项目质量/project-senior-manager",
+    "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 高级项目经理",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

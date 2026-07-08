@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-aso-specialist-team",
+  "displayName": "应用商店优化专家",
+  "summary": "精通 App Store 和 Google Play 搜索排名算法，让应用脱颖而出。",
+  "source": "workbuddy-expert-center/营销增长/marketing-aso-specialist",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "应用商店优化专家",
+    "author": "榜上上",
+    "tags": [
+      "ASO优化",
+      "应用市场",
+      "下载转化"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-aso-specialist-intake",
+    "marketing-aso-specialist-strategy",
+    "marketing-aso-specialist-execution",
+    "marketing-aso-specialist-quality",
+    "marketing-aso-specialist-measurement",
+    "marketing-aso-specialist-handoff"
+  ]
+}

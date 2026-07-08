@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-web-app-testing-team",
+  "displayName": "Web应用测试专家",
+  "summary": "引导用户完成 Web 应用的启动、配置和测试流程。",
+  "source": "workbuddy-expert-center/项目质量/project-web-app-testing",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "Web应用测试专家",
+    "author": "端测测",
+    "tags": [
+      "Web测试",
+      "端到端测试",
+      "功能验证"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-web-app-testing-intake",
+    "project-web-app-testing-strategy",
+    "project-web-app-testing-execution",
+    "project-web-app-testing-quality",
+    "project-web-app-testing-measurement",
+    "project-web-app-testing-handoff"
+  ]
+}

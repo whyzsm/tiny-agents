@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "ops-study-abroad-consultant-team",
+  "displayName": "留学顾问",
+  "summary": "精通各国留学申请流程和院校信息。",
+  "source": "workbuddy-expert-center/运营人力/ops-study-abroad-consultant",
+  "workbuddy": {
+    "category": "运营人力",
+    "cardTitle": "留学顾问",
+    "author": "留洋洋",
+    "tags": [
+      "留学咨询",
+      "院校选择",
+      "申请规划"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "ops-study-abroad-consultant-intake",
+    "ops-study-abroad-consultant-strategy",
+    "ops-study-abroad-consultant-execution",
+    "ops-study-abroad-consultant-quality",
+    "ops-study-abroad-consultant-measurement",
+    "ops-study-abroad-consultant-handoff"
+  ]
+}

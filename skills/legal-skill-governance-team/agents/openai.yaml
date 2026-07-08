@@ -1,0 +1,6 @@
+interface:
+  display_name: 法律技能治理专家
+  short_description: 面向法律运营和技能开发者的治理助手，评估技能来源、工具权限、新鲜度、许可证和信任边界。
+  default_prompt: Use $legal-skill-governance-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

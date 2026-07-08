@@ -1,0 +1,37 @@
+{
+  "name": "project-strategy-report-advisor-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/项目质量/project-strategy-report-advisor",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 战略报告顾问",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "项目质量",
+    "title": "战略报告顾问",
+    "author": "简明明",
+    "summary": "将冗长报告浓缩为高管可快速消化的精华摘要，节省每分钟。",
+    "tags": [
+      "执行摘要",
+      "战略报告",
+      "决策简报"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/project-strategy-report-advisor-team/SKILL.md",
+    "skills/project-strategy-report-advisor-team/agents/openai.yaml",
+    "skills/project-strategy-report-advisor-team/references/guide.md",
+    "skills/project-strategy-report-advisor-team/references/manifest.json",
+    "skills/project-strategy-report-advisor-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/项目质量/project-strategy-report-advisor",
+    "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 战略报告顾问",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

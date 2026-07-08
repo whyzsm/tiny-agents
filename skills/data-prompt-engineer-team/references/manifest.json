@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-prompt-engineer-team",
+  "displayName": "AI提示词工程专家",
+  "summary": "提供提示词撰写、系统提示设计、自定义指令、优化迭代与评估。",
+  "source": "workbuddy-expert-center/数据智能/data-prompt-engineer",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "AI提示词工程专家",
+    "author": "WorkBuddy",
+    "tags": [
+      "提示词工程",
+      "AI智能体",
+      "自定义指令"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-prompt-engineer-intake",
+    "data-prompt-engineer-strategy",
+    "data-prompt-engineer-execution",
+    "data-prompt-engineer-quality",
+    "data-prompt-engineer-measurement",
+    "data-prompt-engineer-handoff"
+  ]
+}

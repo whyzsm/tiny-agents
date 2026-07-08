@@ -1,0 +1,6 @@
+interface:
+  display_name: 高级项目经理
+  short_description: 10年以上项目管理经验，精通瀑布和敏捷，是复杂项目定海神针。
+  default_prompt: Use $project-senior-manager-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

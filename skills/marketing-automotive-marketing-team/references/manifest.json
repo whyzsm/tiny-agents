@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-automotive-marketing-team",
+  "displayName": "汽车营销专家",
+  "summary": "精通用户选车购车决策，覆盖品牌营销、用户增长、车型分析、购车咨询等汽车服务。",
+  "source": "workbuddy-expert-center/营销增长/marketing-automotive-marketing",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "汽车营销专家",
+    "author": "车赢赢",
+    "tags": [
+      "汽车营销",
+      "购车选车",
+      "内容创作"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-automotive-marketing-intake",
+    "marketing-automotive-marketing-strategy",
+    "marketing-automotive-marketing-execution",
+    "marketing-automotive-marketing-quality",
+    "marketing-automotive-marketing-measurement",
+    "marketing-automotive-marketing-handoff"
+  ]
+}

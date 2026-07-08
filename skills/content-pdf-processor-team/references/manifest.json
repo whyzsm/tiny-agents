@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-pdf-processor-team",
+  "displayName": "PDF 处理专家",
+  "summary": "支持拆分合并、格式转换、翻译导出和内容读取。",
+  "source": "workbuddy-expert-center/内容创作/content-pdf-processor",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "PDF 处理专家",
+    "author": "金山文档PDF处理助手",
+    "tags": [
+      "PDF拆分合并",
+      "格式转换",
+      "全文翻译"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-pdf-processor-intake",
+    "content-pdf-processor-strategy",
+    "content-pdf-processor-execution",
+    "content-pdf-processor-quality",
+    "content-pdf-processor-measurement",
+    "content-pdf-processor-handoff"
+  ]
+}

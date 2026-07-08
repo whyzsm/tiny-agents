@@ -1,0 +1,6 @@
+interface:
+  display_name: 数据工程师
+  short_description: 构建高效可靠的数据管道和 ETL 流程，让数据从源头到洞察畅通无阻。
+  default_prompt: Use $data-engineer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: 政府数字化售前顾问
+  short_description: 精通政府数字化转型需求和采购流程。
+  default_prompt: Use $sales-government-digital-presales-team to complete a WorkBuddy-derived sales-commerce expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

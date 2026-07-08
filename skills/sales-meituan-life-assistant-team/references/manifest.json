@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-meituan-life-assistant-team",
+  "displayName": "美团生活助手",
+  "summary": "帮您一键领取美团优惠券，搜索附近团购美食并下单，探索今日活动，覆盖餐饮饮品等生活服务，省钱省心。",
+  "source": "workbuddy-expert-center/销售商务/sales-meituan-life-assistant",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "美团生活助手",
+    "author": "领券下单找我",
+    "tags": [
+      "美团优惠",
+      "团购下单",
+      "生活服务"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "coupon-discovery",
+    "local-merchant-search",
+    "deal-comparison",
+    "order-guidance",
+    "daily-activity-scout",
+    "budget-summary"
+  ]
+}

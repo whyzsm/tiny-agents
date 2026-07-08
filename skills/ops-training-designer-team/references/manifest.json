@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "ops-training-designer-team",
+  "displayName": "企业培训设计师",
+  "summary": "设计系统化企业培训课程和学习路径，让员工技能快速提升。",
+  "source": "workbuddy-expert-center/运营人力/ops-training-designer",
+  "workbuddy": {
+    "category": "运营人力",
+    "cardTitle": "企业培训设计师",
+    "author": "育才才",
+    "tags": [
+      "企业培训",
+      "课程体系",
+      "教学设计"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "ops-training-designer-intake",
+    "ops-training-designer-strategy",
+    "ops-training-designer-execution",
+    "ops-training-designer-quality",
+    "ops-training-designer-measurement",
+    "ops-training-designer-handoff"
+  ]
+}

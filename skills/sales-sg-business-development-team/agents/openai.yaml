@@ -1,0 +1,6 @@
+interface:
+  display_name: Sg Business Development
+  short_description: 帮助企业在新加坡发现客户、伙伴、渠道、供应商与代理商，对接园区、展会、招商资源并确认市场进入路径。
+  default_prompt: Use $sales-sg-business-development-team to complete a WorkBuddy-derived sales-commerce expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

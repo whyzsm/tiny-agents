@@ -1,0 +1,37 @@
+{
+  "name": "legal-clinic-supervisor-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-clinic-supervisor",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 法律诊所督导顾问",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "法律诊所督导顾问",
+    "author": "法律诊所督导",
+    "summary": "面向法学院诊所导师的监督助手，支持客户接待、研究启动、期限追踪、学生入职和学期交接。",
+    "tags": [
+      "诊所接待",
+      "学生监督",
+      "案件交接"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-clinic-supervisor-team/SKILL.md",
+    "skills/legal-clinic-supervisor-team/agents/openai.yaml",
+    "skills/legal-clinic-supervisor-team/references/guide.md",
+    "skills/legal-clinic-supervisor-team/references/manifest.json",
+    "skills/legal-clinic-supervisor-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/法务安全/legal-clinic-supervisor",
+    "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 法律诊所督导顾问",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

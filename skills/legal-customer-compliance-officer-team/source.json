@@ -1,0 +1,37 @@
+{
+  "name": "legal-customer-compliance-officer-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-customer-compliance-officer",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 客户与合规官",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "客户与合规官",
+    "author": "严守约",
+    "summary": "小企业客户与合规官，处理客户反馈、客诉工单、CRM 清理和合同风险审查。",
+    "tags": [
+      "客户洞察",
+      "合同审查",
+      "合规管理"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-customer-compliance-officer-team/SKILL.md",
+    "skills/legal-customer-compliance-officer-team/agents/openai.yaml",
+    "skills/legal-customer-compliance-officer-team/references/guide.md",
+    "skills/legal-customer-compliance-officer-team/references/manifest.json",
+    "skills/legal-customer-compliance-officer-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/法务安全/legal-customer-compliance-officer",
+    "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 客户与合规官",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

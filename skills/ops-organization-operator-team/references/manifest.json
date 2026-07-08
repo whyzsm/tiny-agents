@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "ops-organization-operator-team",
+  "displayName": "组织运营师",
+  "summary": "小企业组织运营师，负责招聘入职、工具初始化和业务快照，让运营不掉链子。",
+  "source": "workbuddy-expert-center/运营人力/ops-organization-operator",
+  "workbuddy": {
+    "category": "运营人力",
+    "cardTitle": "组织运营师",
+    "author": "毕运营",
+    "tags": [
+      "招聘入职",
+      "业务快照",
+      "运营管理"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "ops-organization-operator-intake",
+    "ops-organization-operator-strategy",
+    "ops-organization-operator-execution",
+    "ops-organization-operator-quality",
+    "ops-organization-operator-measurement",
+    "ops-organization-operator-handoff"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-reality-checker-team",
+  "displayName": "现实检查员",
+  "summary": "默认认为一切需要更多证据，需要压倒性证据才批准生产就绪。",
+  "source": "workbuddy-expert-center/项目质量/project-reality-checker",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "现实检查员",
+    "author": "验真真",
+    "tags": [
+      "事实核查",
+      "数据验证",
+      "逻辑审查"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-reality-checker-intake",
+    "project-reality-checker-strategy",
+    "project-reality-checker-execution",
+    "project-reality-checker-quality",
+    "project-reality-checker-measurement",
+    "project-reality-checker-handoff"
+  ]
+}

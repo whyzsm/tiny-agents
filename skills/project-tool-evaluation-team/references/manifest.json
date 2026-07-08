@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-tool-evaluation-team",
+  "displayName": "工具评估专家",
+  "summary": "系统化评估推荐最适合团队的工具，避免浪费时间在错误工具上。",
+  "source": "workbuddy-expert-center/项目质量/project-tool-evaluation",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "工具评估专家",
+    "author": "选品品",
+    "tags": [
+      "工具评估",
+      "选型对比",
+      "技术选型"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-tool-evaluation-intake",
+    "project-tool-evaluation-strategy",
+    "project-tool-evaluation-execution",
+    "project-tool-evaluation-quality",
+    "project-tool-evaluation-measurement",
+    "project-tool-evaluation-handoff"
+  ]
+}

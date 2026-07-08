@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-douyin-strategist-team",
+  "displayName": "抖音策略师",
+  "summary": "精通抖音算法和内容生态，打造短视频爆款并实现商业化变现。",
+  "source": "workbuddy-expert-center/内容创作/content-douyin-strategist",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "抖音策略师",
+    "author": "抖音音",
+    "tags": [
+      "抖音运营",
+      "短视频策略",
+      "流量变现"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-douyin-strategist-intake",
+    "content-douyin-strategist-strategy",
+    "content-douyin-strategist-execution",
+    "content-douyin-strategist-quality",
+    "content-douyin-strategist-measurement",
+    "content-douyin-strategist-handoff"
+  ]
+}

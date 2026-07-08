@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-strategy-report-advisor-team",
+  "displayName": "战略报告顾问",
+  "summary": "将冗长报告浓缩为高管可快速消化的精华摘要，节省每分钟。",
+  "source": "workbuddy-expert-center/项目质量/project-strategy-report-advisor",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "战略报告顾问",
+    "author": "简明明",
+    "tags": [
+      "执行摘要",
+      "战略报告",
+      "决策简报"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-strategy-report-advisor-intake",
+    "project-strategy-report-advisor-strategy",
+    "project-strategy-report-advisor-execution",
+    "project-strategy-report-advisor-quality",
+    "project-strategy-report-advisor-measurement",
+    "project-strategy-report-advisor-handoff"
+  ]
+}

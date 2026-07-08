@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-reddit-community-builder-team",
+  "displayName": "Reddit社区建设者",
+  "summary": "深谙 Reddit 社区文化，在全球最大论坛上建立真实社区影响力。",
+  "source": "workbuddy-expert-center/营销增长/marketing-reddit-community-builder",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "Reddit社区建设者",
+    "author": "红迪迪",
+    "tags": [
+      "Reddit社区",
+      "社区运营",
+      "话题引导"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-reddit-community-builder-intake",
+    "marketing-reddit-community-builder-strategy",
+    "marketing-reddit-community-builder-execution",
+    "marketing-reddit-community-builder-quality",
+    "marketing-reddit-community-builder-measurement",
+    "marketing-reddit-community-builder-handoff"
+  ]
+}

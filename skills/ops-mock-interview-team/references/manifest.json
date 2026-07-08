@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "ops-mock-interview-team",
+  "displayName": "面试模拟专家",
+  "summary": "模拟任意职位的真实面试官，覆盖技术产品销售人事等全岗位，逐题评分并给出建议。",
+  "source": "workbuddy-expert-center/运营人力/ops-mock-interview",
+  "workbuddy": {
+    "category": "运营人力",
+    "cardTitle": "面试模拟专家",
+    "author": "WorkBuddy",
+    "tags": [
+      "模拟面试",
+      "面试准备",
+      "职业发展"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "ops-mock-interview-intake",
+    "ops-mock-interview-strategy",
+    "ops-mock-interview-execution",
+    "ops-mock-interview-quality",
+    "ops-mock-interview-measurement",
+    "ops-mock-interview-handoff"
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: AIPPT专家
+  short_description: WPS 官方出品，一句话主题或参考文档生成 PPT。
+  default_prompt: Use $content-aippt-specialist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

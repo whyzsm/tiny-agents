@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-modern-web-developer-team",
+  "displayName": "现代Web开发专家",
+  "summary": "基于 React + TypeScript + Vite + Tailwind CSS + shadcn/ui 技术栈构建 Web 应用。",
+  "source": "workbuddy-expert-center/技术/tech-modern-web-developer",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "现代Web开发专家",
+    "author": "建构构",
+    "tags": [
+      "浏览器自动化",
+      "Web测试",
+      "数据采集"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-modern-web-developer-intake",
+    "tech-modern-web-developer-strategy",
+    "tech-modern-web-developer-execution",
+    "tech-modern-web-developer-quality",
+    "tech-modern-web-developer-measurement",
+    "tech-modern-web-developer-handoff"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-mobile-app-engineer-team",
+  "displayName": "移动应用开发工程师",
+  "summary": "精通 iOS 和 Android 原生及跨平台开发，打造流畅美观的移动应用。",
+  "source": "workbuddy-expert-center/技术/tech-mobile-app-engineer",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "移动应用开发工程师",
+    "author": "掌中灵",
+    "tags": [
+      "移动应用",
+      "原生开发",
+      "跨平台开发"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-mobile-app-engineer-intake",
+    "tech-mobile-app-engineer-strategy",
+    "tech-mobile-app-engineer-execution",
+    "tech-mobile-app-engineer-quality",
+    "tech-mobile-app-engineer-measurement",
+    "tech-mobile-app-engineer-handoff"
+  ]
+}

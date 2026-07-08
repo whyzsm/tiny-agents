@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-baidu-seo-team",
+  "displayName": "百度SEO专家",
+  "summary": "深谙百度搜索算法和中国搜索生态，让品牌获得最大曝光。",
+  "source": "workbuddy-expert-center/营销增长/marketing-baidu-seo",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "百度SEO专家",
+    "author": "度优优",
+    "tags": [
+      "百度SEO",
+      "中文搜索",
+      "ICP备案"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-baidu-seo-intake",
+    "marketing-baidu-seo-strategy",
+    "marketing-baidu-seo-execution",
+    "marketing-baidu-seo-quality",
+    "marketing-baidu-seo-measurement",
+    "marketing-baidu-seo-handoff"
+  ]
+}

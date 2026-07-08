@@ -1,0 +1,6 @@
+interface:
+  display_name: 图书联合创作者
+  short_description: 与作者深度协作，帮助规划书籍结构和内容，达到出版级品质。
+  default_prompt: Use $content-book-coauthor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

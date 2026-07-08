@@ -1,0 +1,6 @@
+interface:
+  display_name: 数据分析报告师
+  short_description: 将复杂数据转化为战略洞察，提供指标诊断、KPI框架设计、数据质量评估与决策报告。
+  default_prompt: Use $data-analysis-report-agent-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

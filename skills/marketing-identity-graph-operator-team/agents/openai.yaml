@@ -1,0 +1,6 @@
+interface:
+  display_name: 身份图谱运营师
+  short_description: 构建维护用户身份图谱系统，实现跨平台身份识别。
+  default_prompt: Use $marketing-identity-graph-operator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

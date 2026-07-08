@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-wechat-official-account-operator-team",
+  "displayName": "微信公众号运营专家",
+  "summary": "精通公众号内容策略和粉丝增长，打造品牌自媒体矩阵。",
+  "source": "workbuddy-expert-center/内容创作/content-wechat-official-account-operator",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "微信公众号运营专家",
+    "author": "郭文昌",
+    "tags": [
+      "公众号运营",
+      "图文排版",
+      "粉丝运营"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-wechat-official-account-operator-intake",
+    "content-wechat-official-account-operator-strategy",
+    "content-wechat-official-account-operator-execution",
+    "content-wechat-official-account-operator-quality",
+    "content-wechat-official-account-operator-measurement",
+    "content-wechat-official-account-operator-handoff"
+  ]
+}

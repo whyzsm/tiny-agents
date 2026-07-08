@@ -1,0 +1,6 @@
+interface:
+  display_name: 面试模拟专家
+  short_description: 模拟任意职位的真实面试官，覆盖技术产品销售人事等全岗位，逐题评分并给出建议。
+  default_prompt: Use $ops-mock-interview-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

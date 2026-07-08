@@ -1,0 +1,6 @@
+interface:
+  display_name: 报告分发代理
+  short_description: 自动化管理报告生成和分发流程。
+  default_prompt: Use $project-report-distribution-agent-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

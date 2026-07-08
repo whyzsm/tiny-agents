@@ -1,0 +1,37 @@
+{
+  "name": "sales-coach-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/销售商务/sales-coach",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 销售教练",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "销售商务",
+    "title": "销售教练",
+    "author": "单必成",
+    "summary": "全栈销售教练：从能力培养到实战执行，覆盖会议准备、交易策略、商业案例、竞品分析、通话复盘，并用苏格拉底式提问提升销售能力。",
+    "tags": [
+      "销售教练",
+      "交易策略",
+      "竞品分析"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/sales-coach-team/SKILL.md",
+    "skills/sales-coach-team/agents/openai.yaml",
+    "skills/sales-coach-team/references/guide.md",
+    "skills/sales-coach-team/references/manifest.json",
+    "skills/sales-coach-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/销售商务/sales-coach",
+    "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 销售教练",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

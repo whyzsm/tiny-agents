@@ -1,0 +1,37 @@
+{
+  "name": "content-xiaohongshu-operator-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-xiaohongshu-operator",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 小红书运营专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "小红书运营专家",
+    "author": "薛红笙",
+    "summary": "深谙小红书种草生态和推荐机制，打造高互动率种草内容。",
+    "tags": [
+      "小红书运营",
+      "种草营销",
+      "笔记创作"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-xiaohongshu-operator-team/SKILL.md",
+    "skills/content-xiaohongshu-operator-team/agents/openai.yaml",
+    "skills/content-xiaohongshu-operator-team/references/guide.md",
+    "skills/content-xiaohongshu-operator-team/references/manifest.json",
+    "skills/content-xiaohongshu-operator-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-xiaohongshu-operator",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 小红书运营专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

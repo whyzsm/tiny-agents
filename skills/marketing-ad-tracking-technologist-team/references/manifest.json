@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-ad-tracking-technologist-team",
+  "displayName": "广告追踪技术专家",
+  "summary": "精通广告追踪代码和转化归因技术，确保投放效果可追踪。",
+  "source": "workbuddy-expert-center/营销增长/marketing-ad-tracking-technologist",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "广告追踪技术专家",
+    "author": "追踪踪",
+    "tags": [
+      "广告追踪",
+      "归因建模",
+      "标签管理"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-ad-tracking-technologist-intake",
+    "marketing-ad-tracking-technologist-strategy",
+    "marketing-ad-tracking-technologist-execution",
+    "marketing-ad-tracking-technologist-quality",
+    "marketing-ad-tracking-technologist-measurement",
+    "marketing-ad-tracking-technologist-handoff"
+  ]
+}

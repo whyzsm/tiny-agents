@@ -1,0 +1,37 @@
+{
+  "name": "data-analysis-expert-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/数据智能/data-analysis-expert",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 数据智能 / 数据分析专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "数据智能",
+    "title": "数据分析专家",
+    "author": "析数数",
+    "summary": "支持 Excel 电子表格的创建、编辑、分析、公式计算、格式化和数据可视化。",
+    "tags": [
+      "数据分析",
+      "统计建模",
+      "业务洞察"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/data-analysis-expert-team/SKILL.md",
+    "skills/data-analysis-expert-team/agents/openai.yaml",
+    "skills/data-analysis-expert-team/references/guide.md",
+    "skills/data-analysis-expert-team/references/manifest.json",
+    "skills/data-analysis-expert-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/数据智能/data-analysis-expert",
+    "WorkBuddy v5.2.3 Expert Center card: 数据智能 / 数据分析专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

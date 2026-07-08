@@ -1,0 +1,37 @@
+{
+  "name": "sales-presales-technical-consultant-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/销售商务/sales-presales-technical-consultant",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 售前技术顾问",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "销售商务",
+    "title": "售前技术顾问",
+    "author": "方案通",
+    "summary": "架起技术与商业的桥梁，帮助客户理解解决方案的价值。",
+    "tags": [
+      "售前咨询",
+      "方案设计",
+      "技术演示"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/sales-presales-technical-consultant-team/SKILL.md",
+    "skills/sales-presales-technical-consultant-team/agents/openai.yaml",
+    "skills/sales-presales-technical-consultant-team/references/guide.md",
+    "skills/sales-presales-technical-consultant-team/references/manifest.json",
+    "skills/sales-presales-technical-consultant-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/销售商务/sales-presales-technical-consultant",
+    "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 售前技术顾问",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

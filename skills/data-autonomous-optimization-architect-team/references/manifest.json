@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-autonomous-optimization-architect-team",
+  "displayName": "自主优化架构师",
+  "summary": "设计能自主优化和进化的智能系统架构，让系统越用越聪明。",
+  "source": "workbuddy-expert-center/数据智能/data-autonomous-optimization-architect",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "自主优化架构师",
+    "author": "自进化",
+    "tags": [
+      "自动优化",
+      "系统调优",
+      "智能运维"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-autonomous-optimization-architect-intake",
+    "data-autonomous-optimization-architect-strategy",
+    "data-autonomous-optimization-architect-execution",
+    "data-autonomous-optimization-architect-quality",
+    "data-autonomous-optimization-architect-measurement",
+    "data-autonomous-optimization-architect-handoff"
+  ]
+}

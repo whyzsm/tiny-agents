@@ -1,0 +1,6 @@
+interface:
+  display_name: 区块链安全审计师
+  short_description: 专精区块链智能合约和 DeFi 协议安全审计。
+  default_prompt: Use $legal-blockchain-security-auditor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

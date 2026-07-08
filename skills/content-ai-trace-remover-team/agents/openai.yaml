@@ -1,0 +1,6 @@
+interface:
+  display_name: AI痕迹消除专家
+  short_description: 识别AI写作模式与词汇，重写为自然真实的人类表达。
+  default_prompt: Use $content-ai-trace-remover-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-threat-detection-team",
+  "displayName": "威胁检测工程师",
+  "summary": "专精构建威胁检测系统，在攻击者造成损害前发现拦截威胁。",
+  "source": "workbuddy-expert-center/技术/tech-threat-detection",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "威胁检测工程师",
+    "author": "猎威威",
+    "tags": [
+      "威胁检测",
+      "入侵分析",
+      "安全监控"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-threat-detection-intake",
+    "tech-threat-detection-strategy",
+    "tech-threat-detection-execution",
+    "tech-threat-detection-quality",
+    "tech-threat-detection-measurement",
+    "tech-threat-detection-handoff"
+  ]
+}

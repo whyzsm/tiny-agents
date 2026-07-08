@@ -1,0 +1,37 @@
+{
+  "name": "marketing-private-domain-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-private-domain",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 私域营销专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "私域营销专家",
+    "author": "司玉琦",
+    "summary": "深谙私域运营增长，盘活现有数据资源，洞察营销机会，实现业绩增长。",
+    "tags": [
+      "私域运营",
+      "营销自动化",
+      "会员体系"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-private-domain-team/SKILL.md",
+    "skills/marketing-private-domain-team/agents/openai.yaml",
+    "skills/marketing-private-domain-team/references/guide.md",
+    "skills/marketing-private-domain-team/references/manifest.json",
+    "skills/marketing-private-domain-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-private-domain",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 私域营销专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-software-architect-team",
+  "displayName": "软件架构师",
+  "summary": "站在全局高度设计可扩展高可用的软件架构，为技术团队指明方向。",
+  "source": "workbuddy-expert-center/技术/tech-software-architect",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "软件架构师",
+    "author": "架构通",
+    "tags": [
+      "软件架构",
+      "系统设计",
+      "技术决策"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-software-architect-intake",
+    "tech-software-architect-strategy",
+    "tech-software-architect-execution",
+    "tech-software-architect-quality",
+    "tech-software-architect-measurement",
+    "tech-software-architect-handoff"
+  ]
+}

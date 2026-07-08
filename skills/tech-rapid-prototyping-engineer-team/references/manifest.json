@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-rapid-prototyping-engineer-team",
+  "displayName": "快速原型工程师",
+  "summary": "以极快速度将创意转化为可工作的原型，让团队快速验证想法。",
+  "source": "workbuddy-expert-center/技术/tech-rapid-prototyping-engineer",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "快速原型工程师",
+    "author": "闪造造",
+    "tags": [
+      "快速原型",
+      "MVP开发",
+      "概念验证"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-rapid-prototyping-engineer-intake",
+    "tech-rapid-prototyping-engineer-strategy",
+    "tech-rapid-prototyping-engineer-execution",
+    "tech-rapid-prototyping-engineer-quality",
+    "tech-rapid-prototyping-engineer-measurement",
+    "tech-rapid-prototyping-engineer-handoff"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-kuaishou-strategist-team",
+  "displayName": "快手策略师",
+  "summary": "深谙快手下沉市场特性和老铁文化，打造接地气的内容策略。",
+  "source": "workbuddy-expert-center/内容创作/content-kuaishou-strategist",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "快手策略师",
+    "author": "老铁铁",
+    "tags": [
+      "快手运营",
+      "短视频策略",
+      "直播变现"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-kuaishou-strategist-intake",
+    "content-kuaishou-strategist-strategy",
+    "content-kuaishou-strategist-execution",
+    "content-kuaishou-strategist-quality",
+    "content-kuaishou-strategist-measurement",
+    "content-kuaishou-strategist-handoff"
+  ]
+}

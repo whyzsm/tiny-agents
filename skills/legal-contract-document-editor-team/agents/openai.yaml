@@ -1,0 +1,6 @@
+interface:
+  display_name: 合同与公文审稿
+  short_description: 在 .docx 原文里加批注和追踪修订，不返刷新文档、不破坏原格式。
+  default_prompt: Use $legal-contract-document-editor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

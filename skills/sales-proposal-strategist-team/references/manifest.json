@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-proposal-strategist-team",
+  "displayName": "方案策划师",
+  "summary": "精通销售提案和方案设计，将价值转化为无法拒绝的商业论证。",
+  "source": "workbuddy-expert-center/销售商务/sales-proposal-strategist",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "方案策划师",
+    "author": "策必中",
+    "tags": [
+      "方案撰写",
+      "投标策略",
+      "RFP响应"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "proposal-brief",
+    "value-argument",
+    "solution-structure",
+    "rfp-response",
+    "bid-strategy",
+    "proposal-review"
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: 金融数据检索专家
+  short_description: 通过自然语言查询金融数据 API，覆盖股票、指数、期货、债券、基金和宏观经济。
+  default_prompt: Use $data-financial-data-search-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

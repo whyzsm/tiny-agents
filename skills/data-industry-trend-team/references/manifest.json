@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-industry-trend-team",
+  "displayName": "行业趋势专家",
+  "summary": "持续追踪行业和技术趋势，为产品战略提供前瞻性洞察。",
+  "source": "workbuddy-expert-center/数据智能/data-industry-trend",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "行业趋势专家",
+    "author": "风向标",
+    "tags": [
+      "趋势研究",
+      "市场情报",
+      "机会识别"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-industry-trend-intake",
+    "data-industry-trend-strategy",
+    "data-industry-trend-execution",
+    "data-industry-trend-quality",
+    "data-industry-trend-measurement",
+    "data-industry-trend-handoff"
+  ]
+}

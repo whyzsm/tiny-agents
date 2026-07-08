@@ -1,0 +1,6 @@
+interface:
+  display_name: 私域运营专家
+  short_description: 精通微信私域流量池搭建运营，将公域流量沉淀为私域资产。
+  default_prompt: Use $marketing-private-traffic-operator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

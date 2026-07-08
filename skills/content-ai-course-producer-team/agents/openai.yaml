@@ -1,0 +1,6 @@
+interface:
+  display_name: AI师傅课程制作专家
+  short_description: 基于教学需求和原始内容，快速做门AI一对一互动课。
+  default_prompt: Use $content-ai-course-producer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-book-coauthor-team",
+  "displayName": "图书联合创作者",
+  "summary": "与作者深度协作，帮助规划书籍结构和内容，达到出版级品质。",
+  "source": "workbuddy-expert-center/内容创作/content-book-coauthor",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "图书联合创作者",
+    "author": "著书书",
+    "tags": [
+      "图书共创",
+      "章节规划",
+      "出版写作"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-book-coauthor-intake",
+    "content-book-coauthor-strategy",
+    "content-book-coauthor-execution",
+    "content-book-coauthor-quality",
+    "content-book-coauthor-measurement",
+    "content-book-coauthor-handoff"
+  ]
+}

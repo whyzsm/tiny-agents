@@ -1,0 +1,37 @@
+{
+  "name": "project-web-app-testing-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/项目质量/project-web-app-testing",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 项目质量 / Web应用测试专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "项目质量",
+    "title": "Web应用测试专家",
+    "author": "端测测",
+    "summary": "引导用户完成 Web 应用的启动、配置和测试流程。",
+    "tags": [
+      "Web测试",
+      "端到端测试",
+      "功能验证"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/project-web-app-testing-team/SKILL.md",
+    "skills/project-web-app-testing-team/agents/openai.yaml",
+    "skills/project-web-app-testing-team/references/guide.md",
+    "skills/project-web-app-testing-team/references/manifest.json",
+    "skills/project-web-app-testing-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/项目质量/project-web-app-testing",
+    "WorkBuddy v5.2.3 Expert Center card: 项目质量 / Web应用测试专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

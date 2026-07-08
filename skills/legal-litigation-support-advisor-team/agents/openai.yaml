@@ -1,0 +1,6 @@
+interface:
+  display_name: 诉讼支持顾问
+  short_description: 面向诉讼律师的案件支持专家，梳理案件、证据、时间线、质证准备、索赔图表和文书草稿。
+  default_prompt: Use $legal-litigation-support-advisor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-revenue-growth-team",
+  "displayName": "营收增长师",
+  "summary": "小企业营收增长师，从线索打分到内容策略再到营销活动，一条龙驱动营收增长。",
+  "source": "workbuddy-expert-center/销售商务/sales-revenue-growth",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "营收增长师",
+    "author": "甄客来",
+    "tags": [
+      "线索管理",
+      "内容策略",
+      "营销活动"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "lead-scoring",
+    "content-strategy",
+    "campaign-design",
+    "funnel-operations",
+    "revenue-metrics",
+    "growth-experiment"
+  ]
+}

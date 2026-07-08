@@ -1,0 +1,6 @@
+interface:
+  display_name: 威胁检测工程师
+  short_description: 专精构建威胁检测系统，在攻击者造成损害前发现拦截威胁。
+  default_prompt: Use $tech-threat-detection-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

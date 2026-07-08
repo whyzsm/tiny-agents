@@ -1,0 +1,6 @@
+interface:
+  display_name: 性能测试专家
+  short_description: 精通性能测试和基准评估，用数据证明性能改进。
+  default_prompt: Use $project-performance-testing-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

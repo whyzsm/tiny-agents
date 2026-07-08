@@ -1,0 +1,6 @@
+interface:
+  display_name: Instagram运营专家
+  short_description: 精通 Instagram 视觉美学和内容策略，打造令人向往的品牌形象。
+  default_prompt: Use $content-instagram-operator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,37 @@
+{
+  "name": "legal-blockchain-security-auditor-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-blockchain-security-auditor",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 区块链安全审计师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "区块链安全审计师",
+    "author": "链审审",
+    "summary": "专精区块链智能合约和 DeFi 协议安全审计。",
+    "tags": [
+      "合约审计",
+      "漏洞检测",
+      "链上安全"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-blockchain-security-auditor-team/SKILL.md",
+    "skills/legal-blockchain-security-auditor-team/agents/openai.yaml",
+    "skills/legal-blockchain-security-auditor-team/references/guide.md",
+    "skills/legal-blockchain-security-auditor-team/references/manifest.json",
+    "skills/legal-blockchain-security-auditor-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/法务安全/legal-blockchain-security-auditor",
+    "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 区块链安全审计师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

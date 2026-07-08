@@ -1,0 +1,37 @@
+{
+  "name": "marketing-cross-border-ecommerce-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-cross-border-ecommerce",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 跨境电商专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "跨境电商专家",
+    "author": "海跨洋",
+    "summary": "精通亚马逊 Shopify 等国际电商平台，助力品牌出海全球。",
+    "tags": [
+      "跨境电商",
+      "海外仓配",
+      "国际合规"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-cross-border-ecommerce-team/SKILL.md",
+    "skills/marketing-cross-border-ecommerce-team/agents/openai.yaml",
+    "skills/marketing-cross-border-ecommerce-team/references/guide.md",
+    "skills/marketing-cross-border-ecommerce-team/references/manifest.json",
+    "skills/marketing-cross-border-ecommerce-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-cross-border-ecommerce",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 跨境电商专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

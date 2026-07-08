@@ -1,0 +1,37 @@
+{
+  "name": "tech-engineering-practice-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/技术/tech-engineering-practice",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 技术 / 工程实践专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术",
+    "title": "工程实践专家",
+    "author": "工序达",
+    "summary": "基于 Google 工程师的 Agent Skills，覆盖规范驱动开发、代码评审、CI/CD 发布。",
+    "tags": [
+      "规约驱动开发",
+      "代码评审与安全",
+      "CI/CD发布"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/tech-engineering-practice-team/SKILL.md",
+    "skills/tech-engineering-practice-team/agents/openai.yaml",
+    "skills/tech-engineering-practice-team/references/guide.md",
+    "skills/tech-engineering-practice-team/references/manifest.json",
+    "skills/tech-engineering-practice-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/技术/tech-engineering-practice",
+    "WorkBuddy v5.2.3 Expert Center card: 技术 / 工程实践专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

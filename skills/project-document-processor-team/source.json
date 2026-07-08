@@ -1,0 +1,37 @@
+{
+  "name": "project-document-processor-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/项目质量/project-document-processor",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 文档处理专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "项目质量",
+    "title": "文档处理专家",
+    "author": "理文文",
+    "summary": "处理 Excel、Word、PowerPoint 和 PDF 文件的创建、编辑与转换。",
+    "tags": [
+      "文档处理",
+      "Word操作",
+      "格式转换"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/project-document-processor-team/SKILL.md",
+    "skills/project-document-processor-team/agents/openai.yaml",
+    "skills/project-document-processor-team/references/guide.md",
+    "skills/project-document-processor-team/references/manifest.json",
+    "skills/project-document-processor-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/项目质量/project-document-processor",
+    "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 文档处理专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

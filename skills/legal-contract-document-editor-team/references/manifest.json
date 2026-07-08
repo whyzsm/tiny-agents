@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-contract-document-editor-team",
+  "displayName": "合同与公文审稿",
+  "summary": "在 .docx 原文里加批注和追踪修订，不返刷新文档、不破坏原格式。",
+  "source": "workbuddy-expert-center/法务安全/legal-contract-document-editor",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "合同与公文审稿",
+    "author": "花叔文档审稿专家",
+    "tags": [
+      "合同审查",
+      "文档批注",
+      "追踪修订"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-contract-document-editor-intake",
+    "legal-contract-document-editor-strategy",
+    "legal-contract-document-editor-execution",
+    "legal-contract-document-editor-quality",
+    "legal-contract-document-editor-measurement",
+    "legal-contract-document-editor-handoff"
+  ]
+}

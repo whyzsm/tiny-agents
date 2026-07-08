@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-egypt-market-team",
+  "displayName": "埃及市场营销专家",
+  "summary": "中国企业出海埃及的 CMO 级营销引擎，覆盖数字生态、斋月营销、品牌本地化、消费者洞察与 ROI 预估全链路。",
+  "source": "workbuddy-expert-center/营销增长/marketing-egypt-market",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "埃及市场营销专家",
+    "author": "WorkBuddy",
+    "tags": [
+      "埃及市场",
+      "品牌策略",
+      "营销分析"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-egypt-market-intake",
+    "marketing-egypt-market-strategy",
+    "marketing-egypt-market-execution",
+    "marketing-egypt-market-quality",
+    "marketing-egypt-market-measurement",
+    "marketing-egypt-market-handoff"
+  ]
+}

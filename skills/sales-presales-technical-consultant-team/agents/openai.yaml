@@ -1,0 +1,6 @@
+interface:
+  display_name: 售前技术顾问
+  short_description: 架起技术与商业的桥梁，帮助客户理解解决方案的价值。
+  default_prompt: Use $sales-presales-technical-consultant-team to complete a WorkBuddy-derived sales-commerce expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

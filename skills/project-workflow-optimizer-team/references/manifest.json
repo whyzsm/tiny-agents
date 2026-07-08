@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-workflow-optimizer-team",
+  "displayName": "工作流优化专家",
+  "summary": "找到瓶颈修复流程并自动化一切，让团队效率最大化。",
+  "source": "workbuddy-expert-center/项目质量/project-workflow-optimizer",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "工作流优化专家",
+    "author": "流畅畅",
+    "tags": [
+      "流程优化",
+      "效率提升",
+      "自动化设计"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-workflow-optimizer-intake",
+    "project-workflow-optimizer-strategy",
+    "project-workflow-optimizer-execution",
+    "project-workflow-optimizer-quality",
+    "project-workflow-optimizer-measurement",
+    "project-workflow-optimizer-handoff"
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: 无障碍审计师
+  short_description: 按 WCAG 标准审计界面可访问性，确保每个用户都能使用产品。
+  default_prompt: Use $project-accessibility-auditor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

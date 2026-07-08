@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-carousel-growth-team",
+  "displayName": "轮播内容增长专家",
+  "summary": "专精设计高互动率轮播图内容，驱动社交平台用户参与和增长。",
+  "source": "workbuddy-expert-center/营销增长/marketing-carousel-growth",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "轮播内容增长专家",
+    "author": "翻页页",
+    "tags": [
+      "轮播内容",
+      "社媒增长",
+      "爆款图文"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-carousel-growth-intake",
+    "marketing-carousel-growth-strategy",
+    "marketing-carousel-growth-execution",
+    "marketing-carousel-growth-quality",
+    "marketing-carousel-growth-measurement",
+    "marketing-carousel-growth-handoff"
+  ]
+}

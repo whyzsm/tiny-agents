@@ -1,0 +1,6 @@
+interface:
+  display_name: 外呼策略师
+  short_description: 精通外呼和冷启动销售策略，让陌生人30秒内愿意继续倾听。
+  default_prompt: Use $sales-outbound-strategist-team to complete a WorkBuddy-derived sales-commerce expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

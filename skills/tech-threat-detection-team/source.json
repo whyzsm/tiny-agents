@@ -1,0 +1,37 @@
+{
+  "name": "tech-threat-detection-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/技术/tech-threat-detection",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 技术 / 威胁检测工程师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术",
+    "title": "威胁检测工程师",
+    "author": "猎威威",
+    "summary": "专精构建威胁检测系统，在攻击者造成损害前发现拦截威胁。",
+    "tags": [
+      "威胁检测",
+      "入侵分析",
+      "安全监控"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/tech-threat-detection-team/SKILL.md",
+    "skills/tech-threat-detection-team/agents/openai.yaml",
+    "skills/tech-threat-detection-team/references/guide.md",
+    "skills/tech-threat-detection-team/references/manifest.json",
+    "skills/tech-threat-detection-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/技术/tech-threat-detection",
+    "WorkBuddy v5.2.3 Expert Center card: 技术 / 威胁检测工程师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

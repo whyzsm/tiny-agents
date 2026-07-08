@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-xiaohongshu-operator-team",
+  "displayName": "小红书运营专家",
+  "summary": "深谙小红书种草生态和推荐机制，打造高互动率种草内容。",
+  "source": "workbuddy-expert-center/内容创作/content-xiaohongshu-operator",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "小红书运营专家",
+    "author": "薛红笙",
+    "tags": [
+      "小红书运营",
+      "种草营销",
+      "笔记创作"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-xiaohongshu-operator-intake",
+    "content-xiaohongshu-operator-strategy",
+    "content-xiaohongshu-operator-execution",
+    "content-xiaohongshu-operator-quality",
+    "content-xiaohongshu-operator-measurement",
+    "content-xiaohongshu-operator-handoff"
+  ]
+}

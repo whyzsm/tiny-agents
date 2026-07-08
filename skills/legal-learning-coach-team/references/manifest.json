@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-learning-coach-team",
+  "displayName": "法学学习教练",
+  "summary": "面向法学生的学习陪练，训练苏格拉底问答、案例摘要、IRAC、课程大纲和律考复习。",
+  "source": "workbuddy-expert-center/法务安全/legal-learning-coach",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "法学学习教练",
+    "author": "法学生陪练",
+    "tags": [
+      "苏格拉底训练",
+      "IRAC练习",
+      "考试备考"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-learning-coach-intake",
+    "legal-learning-coach-strategy",
+    "legal-learning-coach-execution",
+    "legal-learning-coach-quality",
+    "legal-learning-coach-measurement",
+    "legal-learning-coach-handoff"
+  ]
+}

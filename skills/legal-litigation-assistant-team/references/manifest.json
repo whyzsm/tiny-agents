@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-litigation-assistant-team",
+  "displayName": "诉讼助手",
+  "summary": "支持起诉状起草、证据整理、流程指引、执行和利息计算。",
+  "source": "workbuddy-expert-center/法务安全/legal-litigation-assistant",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "诉讼助手",
+    "author": "小法同学",
+    "tags": [
+      "诉讼助手",
+      "自助办案",
+      "文书起草"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-litigation-assistant-intake",
+    "legal-litigation-assistant-strategy",
+    "legal-litigation-assistant-execution",
+    "legal-litigation-assistant-quality",
+    "legal-litigation-assistant-measurement",
+    "legal-litigation-assistant-handoff"
+  ]
+}

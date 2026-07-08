@@ -1,0 +1,6 @@
+interface:
+  display_name: Solidity智能合约工程师
+  short_description: 精通 Solidity 和 EVM 生态，编写安全高效的智能合约。
+  default_prompt: Use $tech-solidity-smart-contract-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

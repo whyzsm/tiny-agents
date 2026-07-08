@@ -1,0 +1,6 @@
+interface:
+  display_name: 文档处理专家
+  short_description: 处理 Excel、Word、PowerPoint 和 PDF 文件的创建、编辑与转换。
+  default_prompt: Use $project-document-processor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

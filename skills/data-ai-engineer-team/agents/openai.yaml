@@ -1,0 +1,6 @@
+interface:
+  display_name: AI工程师
+  short_description: 精通 ML 模型开发部署优化的全栈 AI 工程师，将 AI 从论文带到生产环境。
+  default_prompt: Use $data-ai-engineer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

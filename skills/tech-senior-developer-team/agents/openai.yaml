@@ -1,0 +1,6 @@
+interface:
+  display_name: 高级开发工程师
+  short_description: 10年以上全栈经验，精通多种语言和框架，是团队的技术中坚。
+  default_prompt: Use $tech-senior-developer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: 数据库优化专家
+  short_description: 专精数据库性能调优和查询优化，让慢查询快速消失。
+  default_prompt: Use $data-database-optimization-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

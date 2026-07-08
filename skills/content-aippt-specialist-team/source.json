@@ -1,0 +1,37 @@
+{
+  "name": "content-aippt-specialist-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-aippt-specialist",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / AIPPT专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "AIPPT专家",
+    "author": "WPS AIPPT创作助手",
+    "summary": "WPS 官方出品，一句话主题或参考文档生成 PPT。",
+    "tags": [
+      "一句话生成PPT",
+      "文档生成PPT",
+      "智能布局"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-aippt-specialist-team/SKILL.md",
+    "skills/content-aippt-specialist-team/agents/openai.yaml",
+    "skills/content-aippt-specialist-team/references/guide.md",
+    "skills/content-aippt-specialist-team/references/manifest.json",
+    "skills/content-aippt-specialist-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-aippt-specialist",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / AIPPT专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

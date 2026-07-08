@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-news-briefing-team",
+  "displayName": "资讯速递专家",
+  "summary": "将每日 AI 模型、产品、行业和论文动态自动整理成中文简报。",
+  "source": "workbuddy-expert-center/数据智能/data-news-briefing",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "资讯速递专家",
+    "author": "数字生命卡兹克",
+    "tags": [
+      "AI资讯",
+      "每日简报",
+      "AI行业动态"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-news-briefing-intake",
+    "data-news-briefing-strategy",
+    "data-news-briefing-execution",
+    "data-news-briefing-quality",
+    "data-news-briefing-measurement",
+    "data-news-briefing-handoff"
+  ]
+}

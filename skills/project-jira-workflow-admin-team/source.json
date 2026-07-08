@@ -1,0 +1,37 @@
+{
+  "name": "project-jira-workflow-admin-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/项目质量/project-jira-workflow-admin",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 项目质量 / Jira工作流管理员",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "项目质量",
+    "title": "Jira工作流管理员",
+    "author": "看板达",
+    "summary": "精通 Jira 配置和敏捷工作流设计，让工具真正服务于团队效率。",
+    "tags": [
+      "Jira管理",
+      "工作流配置",
+      "项目模板"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/project-jira-workflow-admin-team/SKILL.md",
+    "skills/project-jira-workflow-admin-team/agents/openai.yaml",
+    "skills/project-jira-workflow-admin-team/references/guide.md",
+    "skills/project-jira-workflow-admin-team/references/manifest.json",
+    "skills/project-jira-workflow-admin-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/项目质量/project-jira-workflow-admin",
+    "WorkBuddy v5.2.3 Expert Center card: 项目质量 / Jira工作流管理员",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

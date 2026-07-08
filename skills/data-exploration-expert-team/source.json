@@ -1,0 +1,37 @@
+{
+  "name": "data-exploration-expert-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/数据智能/data-exploration-expert",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 数据智能 / 数据探索专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "数据智能",
+    "title": "数据探索专家",
+    "author": "探数数",
+    "summary": "支持 SQL 查询、数据探索、可视化、仪表板构建和洞察生成。",
+    "tags": [
+      "数据探索",
+      "数据清洗",
+      "特征工程"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/data-exploration-expert-team/SKILL.md",
+    "skills/data-exploration-expert-team/agents/openai.yaml",
+    "skills/data-exploration-expert-team/references/guide.md",
+    "skills/data-exploration-expert-team/references/manifest.json",
+    "skills/data-exploration-expert-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/数据智能/data-exploration-expert",
+    "WorkBuddy v5.2.3 Expert Center card: 数据智能 / 数据探索专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

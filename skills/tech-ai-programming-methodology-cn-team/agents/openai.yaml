@@ -1,0 +1,6 @@
+interface:
+  display_name: AI编程方法论与中文开发规范专家
+  short_description: 覆盖头脑风暴、测试驱动开发、系统化调试、代码审查、适配中文文档与国产AI规范。
+  default_prompt: Use $tech-ai-programming-methodology-cn-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

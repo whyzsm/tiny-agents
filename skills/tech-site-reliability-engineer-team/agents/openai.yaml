@@ -1,0 +1,6 @@
+interface:
+  display_name: 站点可靠性工程师
+  short_description: 用软件工程方法论解决运维问题，确保 99.99% 可用性。
+  default_prompt: Use $tech-site-reliability-engineer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-lsp-index-engineer-team",
+  "displayName": "LSP索引工程师",
+  "summary": "精通语言服务器协议和代码索引技术。",
+  "source": "workbuddy-expert-center/技术/tech-lsp-index-engineer",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "LSP索引工程师",
+    "author": "索引引",
+    "tags": [
+      "语言服务",
+      "代码索引",
+      "智能补全"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-lsp-index-engineer-intake",
+    "tech-lsp-index-engineer-strategy",
+    "tech-lsp-index-engineer-execution",
+    "tech-lsp-index-engineer-quality",
+    "tech-lsp-index-engineer-measurement",
+    "tech-lsp-index-engineer-handoff"
+  ]
+}

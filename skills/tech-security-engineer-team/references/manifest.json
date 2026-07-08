@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-security-engineer-team",
+  "displayName": "安全工程师",
+  "summary": "全方位保障系统安全，在黑客之前发现并修复安全漏洞。",
+  "source": "workbuddy-expert-center/技术/tech-security-engineer",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "安全工程师",
+    "author": "盾甲甲",
+    "tags": [
+      "安全工程",
+      "漏洞修复",
+      "安全加固"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-security-engineer-intake",
+    "tech-security-engineer-strategy",
+    "tech-security-engineer-execution",
+    "tech-security-engineer-quality",
+    "tech-security-engineer-measurement",
+    "tech-security-engineer-handoff"
+  ]
+}

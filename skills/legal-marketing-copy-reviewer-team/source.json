@@ -1,0 +1,37 @@
+{
+  "name": "legal-marketing-copy-reviewer-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-marketing-copy-reviewer",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 营销文案审查官",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "营销文案审查官",
+    "author": "营文稳",
+    "summary": "按规则扫描营销文案，定位广告法与隐私合规风险，输出分级 Excel 与 HTML 审查报告。",
+    "tags": [
+      "营销合规",
+      "文案审查",
+      "广告法"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-marketing-copy-reviewer-team/SKILL.md",
+    "skills/legal-marketing-copy-reviewer-team/agents/openai.yaml",
+    "skills/legal-marketing-copy-reviewer-team/references/guide.md",
+    "skills/legal-marketing-copy-reviewer-team/references/manifest.json",
+    "skills/legal-marketing-copy-reviewer-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/法务安全/legal-marketing-copy-reviewer",
+    "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 营销文案审查官",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

@@ -1,0 +1,37 @@
+{
+  "name": "sales-deal-strategist-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/销售商务/sales-deal-strategist",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 交易策略师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "销售商务",
+    "title": "交易策略师",
+    "author": "赢单单",
+    "summary": "精通复杂交易策略制定和推进，帮助销售团队赢得大单。",
+    "tags": [
+      "成交策略",
+      "商务谈判",
+      "赢单分析"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/sales-deal-strategist-team/SKILL.md",
+    "skills/sales-deal-strategist-team/agents/openai.yaml",
+    "skills/sales-deal-strategist-team/references/guide.md",
+    "skills/sales-deal-strategist-team/references/manifest.json",
+    "skills/sales-deal-strategist-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/销售商务/sales-deal-strategist",
+    "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 交易策略师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

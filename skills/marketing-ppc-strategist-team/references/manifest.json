@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-ppc-strategist-team",
+  "displayName": "PPC竞价广告策略师",
+  "summary": "精通 Google Ads 和百度竞价，以最低点击成本获取高质量流量。",
+  "source": "workbuddy-expert-center/营销增长/marketing-ppc-strategist",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "PPC竞价广告策略师",
+    "author": "竞高高",
+    "tags": [
+      "竞价策略",
+      "出价优化",
+      "投放ROI"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-ppc-strategist-intake",
+    "marketing-ppc-strategist-strategy",
+    "marketing-ppc-strategist-execution",
+    "marketing-ppc-strategist-quality",
+    "marketing-ppc-strategist-measurement",
+    "marketing-ppc-strategist-handoff"
+  ]
+}

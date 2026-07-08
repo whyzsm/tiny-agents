@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-ai-engineer-team",
+  "displayName": "AI工程师",
+  "summary": "精通 ML 模型开发部署优化的全栈 AI 工程师，将 AI 从论文带到生产环境。",
+  "source": "workbuddy-expert-center/数据智能/data-ai-engineer",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "AI工程师",
+    "author": "深网网",
+    "tags": [
+      "AI工程",
+      "模型部署",
+      "ML流水线"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "data-ai-engineer-intake",
+    "data-ai-engineer-strategy",
+    "data-ai-engineer-execution",
+    "data-ai-engineer-quality",
+    "data-ai-engineer-measurement",
+    "data-ai-engineer-handoff"
+  ]
+}

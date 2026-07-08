@@ -1,0 +1,37 @@
+{
+  "name": "sales-pipeline-analyst-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/销售商务/sales-pipeline-analyst",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 销售管道分析师",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "销售商务",
+    "title": "销售管道分析师",
+    "author": "漏斗通",
+    "summary": "用数据驱动方法分析销售管道健康度，让预测从猜测变科学。",
+    "tags": [
+      "销售漏斗",
+      "预测分析",
+      "转化优化"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/sales-pipeline-analyst-team/SKILL.md",
+    "skills/sales-pipeline-analyst-team/agents/openai.yaml",
+    "skills/sales-pipeline-analyst-team/references/guide.md",
+    "skills/sales-pipeline-analyst-team/references/manifest.json",
+    "skills/sales-pipeline-analyst-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/销售商务/sales-pipeline-analyst",
+    "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 销售管道分析师",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

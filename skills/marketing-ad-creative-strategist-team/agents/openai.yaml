@@ -1,0 +1,6 @@
+interface:
+  display_name: 广告创意策略师
+  short_description: 精通广告创意设计和效果预判，创作高转化广告素材。
+  default_prompt: Use $marketing-ad-creative-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

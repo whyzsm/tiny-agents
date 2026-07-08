@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-linkedin-content-creator-team",
+  "displayName": "LinkedIn内容创作者",
+  "summary": "精通 LinkedIn 专业社交平台内容策略，帮助建立思想领袖地位。",
+  "source": "workbuddy-expert-center/营销增长/marketing-linkedin-content-creator",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "LinkedIn内容创作者",
+    "author": "领英达",
+    "tags": [
+      "职场内容",
+      "领英创作",
+      "个人品牌"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-linkedin-content-creator-intake",
+    "marketing-linkedin-content-creator-strategy",
+    "marketing-linkedin-content-creator-execution",
+    "marketing-linkedin-content-creator-quality",
+    "marketing-linkedin-content-creator-measurement",
+    "marketing-linkedin-content-creator-handoff"
+  ]
+}

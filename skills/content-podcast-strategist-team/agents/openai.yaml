@@ -1,0 +1,6 @@
+interface:
+  display_name: 播客策略师
+  short_description: 精通播客内容策划和增长策略，通过音频建立深度用户连接。
+  default_prompt: Use $content-podcast-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: 营销文案审查官
+  short_description: 按规则扫描营销文案，定位广告法与隐私合规风险，输出分级 Excel 与 HTML 审查报告。
+  default_prompt: Use $legal-marketing-copy-reviewer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

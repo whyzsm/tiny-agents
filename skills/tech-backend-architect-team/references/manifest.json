@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-backend-architect-team",
+  "displayName": "后端架构师",
+  "summary": "深耕分布式系统和高并发架构，擅长将复杂业务转化为优雅技术方案。",
+  "source": "workbuddy-expert-center/技术/tech-backend-architect",
+  "workbuddy": {
+    "category": "技术",
+    "cardTitle": "后端架构师",
+    "author": "磐石石",
+    "tags": [
+      "后端架构",
+      "微服务",
+      "高可用设计"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "tech-backend-architect-intake",
+    "tech-backend-architect-strategy",
+    "tech-backend-architect-execution",
+    "tech-backend-architect-quality",
+    "tech-backend-architect-measurement",
+    "tech-backend-architect-handoff"
+  ]
+}

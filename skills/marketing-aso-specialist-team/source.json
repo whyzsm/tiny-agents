@@ -1,0 +1,37 @@
+{
+  "name": "marketing-aso-specialist-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-aso-specialist",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 应用商店优化专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "应用商店优化专家",
+    "author": "榜上上",
+    "summary": "精通 App Store 和 Google Play 搜索排名算法，让应用脱颖而出。",
+    "tags": [
+      "ASO优化",
+      "应用市场",
+      "下载转化"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-aso-specialist-team/SKILL.md",
+    "skills/marketing-aso-specialist-team/agents/openai.yaml",
+    "skills/marketing-aso-specialist-team/references/guide.md",
+    "skills/marketing-aso-specialist-team/references/manifest.json",
+    "skills/marketing-aso-specialist-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-aso-specialist",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / 应用商店优化专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

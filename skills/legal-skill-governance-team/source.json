@@ -1,0 +1,37 @@
+{
+  "name": "legal-skill-governance-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-skill-governance",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 法律技能治理专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "法律技能治理专家",
+    "author": "法律技能运营官",
+    "summary": "面向法律运营和技能开发者的治理助手，评估技能来源、工具权限、新鲜度、许可证和信任边界。",
+    "tags": [
+      "技能治理",
+      "信任层",
+      "法律运营"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-skill-governance-team/SKILL.md",
+    "skills/legal-skill-governance-team/agents/openai.yaml",
+    "skills/legal-skill-governance-team/references/guide.md",
+    "skills/legal-skill-governance-team/references/manifest.json",
+    "skills/legal-skill-governance-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/法务安全/legal-skill-governance",
+    "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 法律技能治理专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

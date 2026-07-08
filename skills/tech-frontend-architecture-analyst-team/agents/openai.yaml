@@ -1,0 +1,6 @@
+interface:
+  display_name: 前端架构分析专家
+  short_description: 深度分析前端架构、技术栈、组件设计与构建配置，输出评级和优化建议。
+  default_prompt: Use $tech-frontend-architecture-analyst-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

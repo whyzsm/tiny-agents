@@ -1,0 +1,6 @@
+interface:
+  display_name: 战略报告顾问
+  short_description: 将冗长报告浓缩为高管可快速消化的精华摘要，节省每分钟。
+  default_prompt: Use $project-strategy-report-advisor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

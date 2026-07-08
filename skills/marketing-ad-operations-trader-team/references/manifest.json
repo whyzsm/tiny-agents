@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-ad-operations-trader-team",
+  "displayName": "广告投放操盘专家",
+  "summary": "通过 API 调价、暂停词、加否词、改预算、上下创意，支持多平台广告操盘。",
+  "source": "workbuddy-expert-center/营销增长/marketing-ad-operations-trader",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "广告投放操盘专家",
+    "author": "爆量君",
+    "tags": [
+      "广告分析",
+      "投放日报",
+      "多平台投放"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-ad-operations-trader-intake",
+    "marketing-ad-operations-trader-strategy",
+    "marketing-ad-operations-trader-execution",
+    "marketing-ad-operations-trader-quality",
+    "marketing-ad-operations-trader-measurement",
+    "marketing-ad-operations-trader-handoff"
+  ]
+}

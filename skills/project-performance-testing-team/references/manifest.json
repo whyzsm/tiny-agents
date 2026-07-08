@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-performance-testing-team",
+  "displayName": "性能测试专家",
+  "summary": "精通性能测试和基准评估，用数据证明性能改进。",
+  "source": "workbuddy-expert-center/项目质量/project-performance-testing",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "性能测试专家",
+    "author": "压测测",
+    "tags": [
+      "性能测试",
+      "压力测试",
+      "容量规划"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-performance-testing-intake",
+    "project-performance-testing-strategy",
+    "project-performance-testing-execution",
+    "project-performance-testing-quality",
+    "project-performance-testing-measurement",
+    "project-performance-testing-handoff"
+  ]
+}

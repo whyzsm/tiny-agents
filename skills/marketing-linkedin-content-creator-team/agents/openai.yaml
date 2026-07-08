@@ -1,0 +1,6 @@
+interface:
+  display_name: LinkedIn内容创作者
+  short_description: 精通 LinkedIn 专业社交平台内容策略，帮助建立思想领袖地位。
+  default_prompt: Use $marketing-linkedin-content-creator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-search-term-analyst-team",
+  "displayName": "搜索词分析师",
+  "summary": "深度分析搜索词数据，挖掘用户真实搜索意图。",
+  "source": "workbuddy-expert-center/营销增长/marketing-search-term-analyst",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "搜索词分析师",
+    "author": "词探探",
+    "tags": [
+      "搜索词分析",
+      "关键词挖掘",
+      "搜索意图"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-search-term-analyst-intake",
+    "marketing-search-term-analyst-strategy",
+    "marketing-search-term-analyst-execution",
+    "marketing-search-term-analyst-quality",
+    "marketing-search-term-analyst-measurement",
+    "marketing-search-term-analyst-handoff"
+  ]
+}

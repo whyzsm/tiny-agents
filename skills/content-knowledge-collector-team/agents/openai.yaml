@@ -1,0 +1,6 @@
+interface:
+  display_name: 知识收藏专家
+  short_description: 剪藏网页和笔记，提炼摘要并归档到个人知识库。
+  default_prompt: Use $content-knowledge-collector-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

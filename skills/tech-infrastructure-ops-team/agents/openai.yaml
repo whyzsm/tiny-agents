@@ -1,0 +1,6 @@
+interface:
+  display_name: 基础设施运维专家
+  short_description: 确保 IT 基础设施持续稳定运行，一切尽在掌控。
+  default_prompt: Use $tech-infrastructure-ops-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

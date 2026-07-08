@@ -1,0 +1,37 @@
+{
+  "name": "content-longform-writing-editor-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-longform-writing-editor",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 长文档写作与改稿专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "长文档写作与改稿专家",
+    "author": "福帮手",
+    "summary": "擅长把提纲、访谈、旧稿和零散素材整理成长文档手稿，独立完成结构规划、章节扩写与交付前质检。",
+    "tags": [
+      "提纲成稿",
+      "章节扩写",
+      "成稿收口"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-longform-writing-editor-team/SKILL.md",
+    "skills/content-longform-writing-editor-team/agents/openai.yaml",
+    "skills/content-longform-writing-editor-team/references/guide.md",
+    "skills/content-longform-writing-editor-team/references/manifest.json",
+    "skills/content-longform-writing-editor-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-longform-writing-editor",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 长文档写作与改稿专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

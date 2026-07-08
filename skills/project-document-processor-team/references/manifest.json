@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-document-processor-team",
+  "displayName": "文档处理专家",
+  "summary": "处理 Excel、Word、PowerPoint 和 PDF 文件的创建、编辑与转换。",
+  "source": "workbuddy-expert-center/项目质量/project-document-processor",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "文档处理专家",
+    "author": "理文文",
+    "tags": [
+      "文档处理",
+      "Word操作",
+      "格式转换"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-document-processor-intake",
+    "project-document-processor-strategy",
+    "project-document-processor-execution",
+    "project-document-processor-quality",
+    "project-document-processor-measurement",
+    "project-document-processor-handoff"
+  ]
+}

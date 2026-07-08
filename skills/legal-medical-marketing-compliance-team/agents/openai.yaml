@@ -1,0 +1,6 @@
+interface:
+  display_name: 医疗营销合规专家
+  short_description: 确保医疗营销内容符合法规要求，守护信息准确性。
+  default_prompt: Use $legal-medical-marketing-compliance-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

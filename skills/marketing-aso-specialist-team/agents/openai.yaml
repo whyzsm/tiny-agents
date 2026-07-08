@@ -1,0 +1,6 @@
+interface:
+  display_name: 应用商店优化专家
+  short_description: 精通 App Store 和 Google Play 搜索排名算法，让应用脱颖而出。
+  default_prompt: Use $marketing-aso-specialist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

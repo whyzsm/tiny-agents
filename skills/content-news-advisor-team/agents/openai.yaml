@@ -1,0 +1,6 @@
+interface:
+  display_name: 资讯顾问
+  short_description: 懂你的资讯顾问，基于隐式画像精选新闻，说明每条资讯与你的关系。
+  default_prompt: Use $content-news-advisor-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

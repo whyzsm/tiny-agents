@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-private-traffic-operator-team",
+  "displayName": "私域运营专家",
+  "summary": "精通微信私域流量池搭建运营，将公域流量沉淀为私域资产。",
+  "source": "workbuddy-expert-center/营销增长/marketing-private-traffic-operator",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "私域运营专家",
+    "author": "留客客",
+    "tags": [
+      "私域运营",
+      "社群管理",
+      "用户裂变"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-private-traffic-operator-intake",
+    "marketing-private-traffic-operator-strategy",
+    "marketing-private-traffic-operator-execution",
+    "marketing-private-traffic-operator-quality",
+    "marketing-private-traffic-operator-measurement",
+    "marketing-private-traffic-operator-handoff"
+  ]
+}

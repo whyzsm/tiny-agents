@@ -1,0 +1,6 @@
+interface:
+  display_name: 方案策划师
+  short_description: 精通销售提案和方案设计，将价值转化为无法拒绝的商业论证。
+  default_prompt: Use $sales-proposal-strategist-team to complete a WorkBuddy-derived sales-commerce expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

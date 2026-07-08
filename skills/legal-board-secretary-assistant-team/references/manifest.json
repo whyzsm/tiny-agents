@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-board-secretary-assistant-team",
+  "displayName": "董秘助手",
+  "summary": "面向公告、路演、投资者问答、互动回复和沟通稿，在对外使用前做合规审查。",
+  "source": "workbuddy-expert-center/法务安全/legal-board-secretary-assistant",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "董秘助手",
+    "author": "福帮手",
+    "tags": [
+      "信息披露合规",
+      "投资者关系",
+      "合规红队"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-board-secretary-assistant-intake",
+    "legal-board-secretary-assistant-strategy",
+    "legal-board-secretary-assistant-execution",
+    "legal-board-secretary-assistant-quality",
+    "legal-board-secretary-assistant-measurement",
+    "legal-board-secretary-assistant-handoff"
+  ]
+}

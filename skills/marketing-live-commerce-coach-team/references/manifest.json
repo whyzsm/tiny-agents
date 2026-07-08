@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-live-commerce-coach-team",
+  "displayName": "直播电商教练",
+  "summary": "精通直播带货全链路运营，从话术到投流帮助实现 GMV 突破。",
+  "source": "workbuddy-expert-center/营销增长/marketing-live-commerce-coach",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "直播电商教练",
+    "author": "播旺旺",
+    "tags": [
+      "直播带货",
+      "话术设计",
+      "主播培训"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-live-commerce-coach-intake",
+    "marketing-live-commerce-coach-strategy",
+    "marketing-live-commerce-coach-execution",
+    "marketing-live-commerce-coach-quality",
+    "marketing-live-commerce-coach-measurement",
+    "marketing-live-commerce-coach-handoff"
+  ]
+}

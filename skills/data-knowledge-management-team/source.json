@@ -1,0 +1,37 @@
+{
+  "name": "data-knowledge-management-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/数据智能/data-knowledge-management",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 数据智能 / 知识管理专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "数据智能",
+    "title": "知识管理专家",
+    "author": "知识库",
+    "summary": "基于 LLM Wiki 模式，帮助用户构建、维护和查询持久化个人知识库。",
+    "tags": [
+      "LLM知识库",
+      "模型文档",
+      "技术百科"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/data-knowledge-management-team/SKILL.md",
+    "skills/data-knowledge-management-team/agents/openai.yaml",
+    "skills/data-knowledge-management-team/references/guide.md",
+    "skills/data-knowledge-management-team/references/manifest.json",
+    "skills/data-knowledge-management-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/数据智能/data-knowledge-management",
+    "WorkBuddy v5.2.3 Expert Center card: 数据智能 / 知识管理专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

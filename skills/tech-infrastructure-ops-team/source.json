@@ -1,0 +1,37 @@
+{
+  "name": "tech-infrastructure-ops-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/技术/tech-infrastructure-ops",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 技术 / 基础设施运维专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术",
+    "title": "基础设施运维专家",
+    "author": "运维通",
+    "summary": "确保 IT 基础设施持续稳定运行，一切尽在掌控。",
+    "tags": [
+      "基础运维",
+      "系统监控",
+      "故障排查"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/tech-infrastructure-ops-team/SKILL.md",
+    "skills/tech-infrastructure-ops-team/agents/openai.yaml",
+    "skills/tech-infrastructure-ops-team/references/guide.md",
+    "skills/tech-infrastructure-ops-team/references/manifest.json",
+    "skills/tech-infrastructure-ops-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/技术/tech-infrastructure-ops",
+    "WorkBuddy v5.2.3 Expert Center card: 技术 / 基础设施运维专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

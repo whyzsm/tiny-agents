@@ -1,0 +1,6 @@
+interface:
+  display_name: 客户与合规官
+  short_description: 小企业客户与合规官，处理客户反馈、客诉工单、CRM 清理和合同风险审查。
+  default_prompt: Use $legal-customer-compliance-officer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

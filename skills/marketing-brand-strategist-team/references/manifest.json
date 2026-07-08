@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-brand-strategist-team",
+  "displayName": "品牌策略师",
+  "summary": "15年品牌战略经验，守护品牌一致性的终极捍卫者。",
+  "source": "workbuddy-expert-center/营销增长/marketing-brand-strategist",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "品牌策略师",
+    "author": "盾卫卫",
+    "tags": [
+      "品牌策略",
+      "品牌一致性",
+      "视觉识别"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-brand-strategist-intake",
+    "marketing-brand-strategist-strategy",
+    "marketing-brand-strategist-execution",
+    "marketing-brand-strategist-quality",
+    "marketing-brand-strategist-measurement",
+    "marketing-brand-strategist-handoff"
+  ]
+}

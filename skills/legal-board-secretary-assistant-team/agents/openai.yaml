@@ -1,0 +1,6 @@
+interface:
+  display_name: 董秘助手
+  short_description: 面向公告、路演、投资者问答、互动回复和沟通稿，在对外使用前做合规审查。
+  default_prompt: Use $legal-board-secretary-assistant-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

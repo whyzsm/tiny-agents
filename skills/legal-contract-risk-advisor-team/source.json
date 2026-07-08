@@ -1,0 +1,37 @@
+{
+  "name": "legal-contract-risk-advisor-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-contract-risk-advisor",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 合同风控顾问",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "合同风控顾问",
+    "author": "何同守",
+    "summary": "覆盖合同起草、审查、谈判、背景评估与全生命周期管理，审查式一键产出风险清单。",
+    "tags": [
+      "合同起草拟制",
+      "合同审查风控",
+      "交易结构与谈判"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-contract-risk-advisor-team/SKILL.md",
+    "skills/legal-contract-risk-advisor-team/agents/openai.yaml",
+    "skills/legal-contract-risk-advisor-team/references/guide.md",
+    "skills/legal-contract-risk-advisor-team/references/manifest.json",
+    "skills/legal-contract-risk-advisor-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/法务安全/legal-contract-risk-advisor",
+    "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 合同风控顾问",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

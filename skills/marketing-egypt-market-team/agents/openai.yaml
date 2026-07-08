@@ -1,0 +1,6 @@
+interface:
+  display_name: 埃及市场营销专家
+  short_description: 中国企业出海埃及的 CMO 级营销引擎，覆盖数字生态、斋月营销、品牌本地化、消费者洞察与 ROI 预估全链路。
+  default_prompt: Use $marketing-egypt-market-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

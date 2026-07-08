@@ -1,0 +1,6 @@
+interface:
+  display_name: 供应链策略师
+  short_description: 优化供应链每个环节，实现成本效率韧性的最佳平衡。
+  default_prompt: Use $ops-supply-chain-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

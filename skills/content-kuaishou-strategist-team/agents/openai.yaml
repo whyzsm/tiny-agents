@@ -1,0 +1,6 @@
+interface:
+  display_name: 快手策略师
+  short_description: 深谙快手下沉市场特性和老铁文化，打造接地气的内容策略。
+  default_prompt: Use $content-kuaishou-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

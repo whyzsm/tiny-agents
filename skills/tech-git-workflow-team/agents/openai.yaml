@@ -1,0 +1,6 @@
+interface:
+  display_name: Git工作流专家
+  short_description: 精通 Git 高级工作流和分支策略，让团队协作像行云流水般顺畅。
+  default_prompt: Use $tech-git-workflow-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

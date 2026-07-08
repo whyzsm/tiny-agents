@@ -1,0 +1,6 @@
+interface:
+  display_name: 美团生活助手
+  short_description: 帮您一键领取美团优惠券，搜索附近团购美食并下单，探索今日活动，覆盖餐饮饮品等生活服务，省钱省心。
+  default_prompt: Use $sales-meituan-life-assistant-team to complete a WorkBuddy-derived sales-commerce expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

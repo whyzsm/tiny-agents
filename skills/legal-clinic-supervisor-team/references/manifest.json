@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-clinic-supervisor-team",
+  "displayName": "法律诊所督导顾问",
+  "summary": "面向法学院诊所导师的监督助手，支持客户接待、研究启动、期限追踪、学生入职和学期交接。",
+  "source": "workbuddy-expert-center/法务安全/legal-clinic-supervisor",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "法律诊所督导顾问",
+    "author": "法律诊所督导",
+    "tags": [
+      "诊所接待",
+      "学生监督",
+      "案件交接"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "legal-clinic-supervisor-intake",
+    "legal-clinic-supervisor-strategy",
+    "legal-clinic-supervisor-execution",
+    "legal-clinic-supervisor-quality",
+    "legal-clinic-supervisor-measurement",
+    "legal-clinic-supervisor-handoff"
+  ]
+}

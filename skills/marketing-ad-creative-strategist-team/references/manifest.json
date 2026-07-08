@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "marketing-ad-creative-strategist-team",
+  "displayName": "广告创意策略师",
+  "summary": "精通广告创意设计和效果预判，创作高转化广告素材。",
+  "source": "workbuddy-expert-center/营销增长/marketing-ad-creative-strategist",
+  "workbuddy": {
+    "category": "营销增长",
+    "cardTitle": "广告创意策略师",
+    "author": "点睛睛",
+    "tags": [
+      "广告创意",
+      "素材优化",
+      "A/B测试"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "marketing-ad-creative-strategist-intake",
+    "marketing-ad-creative-strategist-strategy",
+    "marketing-ad-creative-strategist-execution",
+    "marketing-ad-creative-strategist-quality",
+    "marketing-ad-creative-strategist-measurement",
+    "marketing-ad-creative-strategist-handoff"
+  ]
+}

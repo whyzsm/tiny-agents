@@ -1,0 +1,6 @@
+interface:
+  display_name: 文化智能策略师
+  short_description: 帮助品牌建立全球化过程中的文化敏感度。
+  default_prompt: Use $marketing-cultural-intelligence-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

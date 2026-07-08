@@ -1,0 +1,37 @@
+{
+  "name": "ops-recruiting-specialist-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/运营人力/ops-recruiting-specialist",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 运营人力 / 招聘专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "运营人力",
+    "title": "招聘专家",
+    "author": "伯乐乐",
+    "summary": "精通人才招聘全流程，为团队找到最佳人才。",
+    "tags": [
+      "招聘管理",
+      "人才筛选",
+      "面试评估"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/ops-recruiting-specialist-team/SKILL.md",
+    "skills/ops-recruiting-specialist-team/agents/openai.yaml",
+    "skills/ops-recruiting-specialist-team/references/guide.md",
+    "skills/ops-recruiting-specialist-team/references/manifest.json",
+    "skills/ops-recruiting-specialist-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/运营人力/ops-recruiting-specialist",
+    "WorkBuddy v5.2.3 Expert Center card: 运营人力 / 招聘专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

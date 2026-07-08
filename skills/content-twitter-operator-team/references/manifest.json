@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "content-twitter-operator-team",
+  "displayName": "Twitter运营专家",
+  "summary": "精通 Twitter/X 平台互动策略和话题运营，让品牌占据全球对话。",
+  "source": "workbuddy-expert-center/内容创作/content-twitter-operator",
+  "workbuddy": {
+    "category": "内容创作",
+    "cardTitle": "Twitter运营专家",
+    "author": "推文文",
+    "tags": [
+      "推特运营",
+      "实时互动",
+      "话题营销"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "content-twitter-operator-intake",
+    "content-twitter-operator-strategy",
+    "content-twitter-operator-execution",
+    "content-twitter-operator-quality",
+    "content-twitter-operator-measurement",
+    "content-twitter-operator-handoff"
+  ]
+}

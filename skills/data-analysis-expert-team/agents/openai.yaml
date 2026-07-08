@@ -1,0 +1,6 @@
+interface:
+  display_name: 数据分析专家
+  short_description: 支持 Excel 电子表格的创建、编辑、分析、公式计算、格式化和数据可视化。
+  default_prompt: Use $data-analysis-expert-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

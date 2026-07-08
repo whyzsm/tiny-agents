@@ -1,0 +1,6 @@
+interface:
+  display_name: 抖音策略师
+  short_description: 精通抖音算法和内容生态，打造短视频爆款并实现商业化变现。
+  default_prompt: Use $content-douyin-strategist-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,37 @@
+{
+  "name": "marketing-seo-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/营销增长/marketing-seo",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 营销增长 / SEO专家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "营销增长",
+    "title": "SEO专家",
+    "author": "搜霸霸",
+    "summary": "精通 Google 搜索算法和技术 SEO，让网站在搜索结果中稳居前列。",
+    "tags": [
+      "SEO优化",
+      "关键词策略",
+      "技术SEO"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/marketing-seo-team/SKILL.md",
+    "skills/marketing-seo-team/agents/openai.yaml",
+    "skills/marketing-seo-team/references/guide.md",
+    "skills/marketing-seo-team/references/manifest.json",
+    "skills/marketing-seo-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/营销增长/marketing-seo",
+    "WorkBuddy v5.2.3 Expert Center card: 营销增长 / SEO专家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

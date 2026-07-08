@@ -1,0 +1,6 @@
+interface:
+  display_name: LSP索引工程师
+  short_description: 精通语言服务器协议和代码索引技术。
+  default_prompt: Use $tech-lsp-index-engineer-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

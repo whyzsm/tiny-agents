@@ -1,0 +1,6 @@
+interface:
+  display_name: 短视频剪辑教练
+  short_description: 精通知识视频剪辑技巧和节奏把控，让每条视频具有专业冲击力。
+  default_prompt: Use $content-short-video-editing-coach-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

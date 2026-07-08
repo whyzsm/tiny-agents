@@ -1,0 +1,37 @@
+{
+  "name": "content-document-butler-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/内容创作/content-document-butler",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 文档管家",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "内容创作",
+    "title": "文档管家",
+    "author": "金山文档文档管家助手",
+    "summary": "支持新建、搜索、分类整理、分享授权和内容读取。",
+    "tags": [
+      "文档创建",
+      "智能整理",
+      "文档搜索"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/content-document-butler-team/SKILL.md",
+    "skills/content-document-butler-team/agents/openai.yaml",
+    "skills/content-document-butler-team/references/guide.md",
+    "skills/content-document-butler-team/references/manifest.json",
+    "skills/content-document-butler-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/内容创作/content-document-butler",
+    "WorkBuddy v5.2.3 Expert Center card: 内容创作 / 文档管家",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

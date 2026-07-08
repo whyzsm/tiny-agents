@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-evidence-collector-team",
+  "displayName": "证据收集员",
+  "summary": "不放过任何没有截图证据的问题，用视觉证据确保缺陷无处遁形。",
+  "source": "workbuddy-expert-center/项目质量/project-evidence-collector",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "证据收集员",
+    "author": "截图图",
+    "tags": [
+      "证据收集",
+      "截图取证",
+      "缺陷定位"
+    ],
+    "extractionStatus": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "project-evidence-collector-intake",
+    "project-evidence-collector-strategy",
+    "project-evidence-collector-execution",
+    "project-evidence-collector-quality",
+    "project-evidence-collector-measurement",
+    "project-evidence-collector-handoff"
+  ]
+}

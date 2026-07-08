@@ -1,0 +1,37 @@
+{
+  "name": "legal-board-secretary-assistant-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-board-secretary-assistant",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 董秘助手",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "董秘助手",
+    "author": "福帮手",
+    "summary": "面向公告、路演、投资者问答、互动回复和沟通稿，在对外使用前做合规审查。",
+    "tags": [
+      "信息披露合规",
+      "投资者关系",
+      "合规红队"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-board-secretary-assistant-team/SKILL.md",
+    "skills/legal-board-secretary-assistant-team/agents/openai.yaml",
+    "skills/legal-board-secretary-assistant-team/references/guide.md",
+    "skills/legal-board-secretary-assistant-team/references/manifest.json",
+    "skills/legal-board-secretary-assistant-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/法务安全/legal-board-secretary-assistant",
+    "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 董秘助手",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

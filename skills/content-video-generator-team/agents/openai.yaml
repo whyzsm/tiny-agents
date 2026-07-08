@@ -1,0 +1,6 @@
+interface:
+  display_name: 视频生成专家
+  short_description: 基于 Remotion 的视频生成专家，创建产品演示、解说视频和社交媒体内容。
+  default_prompt: Use $content-video-generator-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

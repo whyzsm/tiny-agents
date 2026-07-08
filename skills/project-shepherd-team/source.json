@@ -1,0 +1,37 @@
+{
+  "name": "project-shepherd-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/项目质量/project-shepherd",
+  "source_kind": "workbuddy-expert-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 项目牧羊人",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-expert-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见专家名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "项目质量",
+    "title": "项目牧羊人",
+    "author": "牧羊羊",
+    "summary": "温和坚定地引导项目按计划推进，确保里程碑准时交付。",
+    "tags": [
+      "项目守护",
+      "交付保障",
+      "进度追踪"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/project-shepherd-team/SKILL.md",
+    "skills/project-shepherd-team/agents/openai.yaml",
+    "skills/project-shepherd-team/references/guide.md",
+    "skills/project-shepherd-team/references/manifest.json",
+    "skills/project-shepherd-team/references/workflow.md"
+  ],
+  "source_refs": [
+    "workbuddy-expert-center/项目质量/project-shepherd",
+    "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 项目牧羊人",
+    "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json"
+  ],
+  "repo_only": true
+}

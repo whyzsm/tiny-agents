@@ -1,0 +1,6 @@
+interface:
+  display_name: 零知识证明管理员
+  short_description: 精通知识证明技术的应用和管理。
+  default_prompt: Use $legal-zkp-admin-team to complete a WorkBuddy-derived expert workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

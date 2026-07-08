@@ -1,0 +1,6 @@
+interface:
+  display_name: 销售作战
+  short_description: 销售攻坚体系，客户研究锁定目标、外联策略提升触达、竞品情报预警风险、销售预测优化资源分配。
+  default_prompt: Use $sales-war-room-team to complete a WorkBuddy-derived expert-team workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

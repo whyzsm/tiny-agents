@@ -1,0 +1,34 @@
+{
+  "name": "tech-tencentcloud-industry-sre-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/technical-engineering/tech-tencentcloud-industry-sre",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center 技术工程 card: 腾讯云行业 SRE 专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术工程",
+    "title": "腾讯云行业 SRE 专家团",
+    "author": "Lonnie Hu",
+    "summary": "12 位行业 SRE 按游戏、零售、教育、金融、出行、互联网、电商、医疗、工业制造、直播、社交通信、SaaS 等行业提供云巡检与架构治理。",
+    "tags": [
+      "SRE",
+      "云巡检",
+      "架构治理"
+    ]
+  },
+  "candidate_plugins": [
+    "dockerfile-gen",
+    "webapp-testing"
+  ],
+  "files": [
+    "skills/tech-tencentcloud-industry-sre-team/SKILL.md",
+    "skills/tech-tencentcloud-industry-sre-team/agents/openai.yaml",
+    "skills/tech-tencentcloud-industry-sre-team/references/guide.md",
+    "skills/tech-tencentcloud-industry-sre-team/references/manifest.json",
+    "skills/tech-tencentcloud-industry-sre-team/references/workflow.md"
+  ]
+}

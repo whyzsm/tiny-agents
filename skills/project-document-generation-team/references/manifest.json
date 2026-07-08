@@ -1,0 +1,29 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "project-document-generation-team",
+  "displayName": "专业文档生成",
+  "summary": "企业级长文档生成，4角色协作完成深度调研、大纲规划、内容撰写与合规审核全流程。",
+  "source": "workbuddy-expert-center/项目质量/project-document-generation",
+  "workbuddy": {
+    "category": "项目质量",
+    "cardTitle": "专业文档生成团队",
+    "author": "Expert Marketplace",
+    "tags": [
+      "文档团队",
+      "规格文档",
+      "文档审计"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": [
+      "deep-research"
+    ]
+  },
+  "skillSlugs": [
+    "document-research",
+    "outline-planning",
+    "content-writing",
+    "spec-normalization",
+    "compliance-audit",
+    "review-loop"
+  ]
+}

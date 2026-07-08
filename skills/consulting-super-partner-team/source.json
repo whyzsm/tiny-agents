@@ -1,0 +1,31 @@
+{
+  "name": "consulting-super-partner-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/行业顾问/consulting-super-partner",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 行业顾问 / 超级合伙人",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "行业顾问",
+    "title": "超级合伙人",
+    "author": "福帮手",
+    "summary": "面向企业家和创业者的虚拟合伙人团队，先判断公司下一步，再给出可执行、可复盘的结果卡。",
+    "tags": [
+      "超级合伙人",
+      "经营协同",
+      "智能化交付"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/consulting-super-partner-team/SKILL.md",
+    "skills/consulting-super-partner-team/agents/openai.yaml",
+    "skills/consulting-super-partner-team/references/guide.md",
+    "skills/consulting-super-partner-team/references/manifest.json",
+    "skills/consulting-super-partner-team/references/workflow.md"
+  ]
+}

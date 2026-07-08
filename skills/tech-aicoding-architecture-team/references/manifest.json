@@ -1,0 +1,33 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-aicoding-architecture-team",
+  "displayName": "AICoding 架构",
+  "summary": "面向复杂系统架构设计，协同完成资料摄入、调研、业务、系统、部署、安全与用户故事全流程交付。",
+  "source": "workbuddy-expert-center/technical-engineering/tech-aicoding-architecture",
+  "workbuddy": {
+    "category": "技术工程",
+    "cardTitle": "AICoding 架构专家团",
+    "author": "WorkBuddy",
+    "tags": [
+      "架构设计",
+      "文档交付",
+      "专家协作"
+    ],
+    "extractionStatus": "截图卡片可见团队名、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": [
+      "agent-sdk-dev",
+      "codebuddy-chat-web",
+      "skill-creator",
+      "modern-webapp"
+    ]
+  },
+  "skillSlugs": [
+    "context-ingestion",
+    "architecture-research",
+    "business-modeling",
+    "system-design",
+    "deployment-security",
+    "user-story-delivery",
+    "adr-package"
+  ]
+}

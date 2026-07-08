@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "sales-war-room-team",
+  "displayName": "销售作战",
+  "summary": "销售攻坚体系，客户研究锁定目标、外联策略提升触达、竞品情报预警风险、销售预测优化资源分配。",
+  "source": "workbuddy-expert-center/销售商务/sales-war-room",
+  "workbuddy": {
+    "category": "销售商务",
+    "cardTitle": "销售作战团队",
+    "author": "Expert Marketplace",
+    "tags": [
+      "销售作战",
+      "客户调研",
+      "竞情分析"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "account-research",
+    "outreach-strategy",
+    "competitive-intel",
+    "sales-forecast",
+    "deal-playbook",
+    "resource-allocation"
+  ]
+}

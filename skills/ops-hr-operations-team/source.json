@@ -1,0 +1,31 @@
+{
+  "name": "ops-hr-operations-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/运营人力/ops-hr-operations",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 运营人力 / HR 运营团队",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "运营人力",
+    "title": "HR 运营团队",
+    "author": "Expert Marketplace",
+    "summary": "人力资源管理流程化，招聘筛选、薪酬体系设计、组织发展与 HR 运营流程化管理，助力企业人才战略落地。",
+    "tags": [
+      "HR运营",
+      "薪酬分析",
+      "组织发展"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/ops-hr-operations-team/SKILL.md",
+    "skills/ops-hr-operations-team/agents/openai.yaml",
+    "skills/ops-hr-operations-team/references/guide.md",
+    "skills/ops-hr-operations-team/references/manifest.json",
+    "skills/ops-hr-operations-team/references/workflow.md"
+  ]
+}

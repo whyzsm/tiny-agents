@@ -1,0 +1,6 @@
+interface:
+  display_name: 腾讯云行业 SRE
+  short_description: 12 位行业 SRE 按游戏、零售、教育、金融、出行、互联网、电商、医疗、工业制造、直播、社交通信、SaaS 等行业提供云巡检与架构治理。
+  default_prompt: Use $tech-tencentcloud-industry-sre-team to complete a WorkBuddy-derived technical expert-team workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

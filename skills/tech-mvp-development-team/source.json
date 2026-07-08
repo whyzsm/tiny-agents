@@ -1,0 +1,35 @@
+{
+  "name": "tech-mvp-development-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/technical-engineering/tech-mvp-development",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center 技术工程 card: MVP 开发专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术工程",
+    "title": "MVP 开发专家团",
+    "author": "Excellent",
+    "summary": "7位专家AI驱动全流程MVP开发：需求挖掘->竞品调研->三文档->Spec锁定->前后端并行开发自检->测试部署，用户反馈驱动迭代。",
+    "tags": [
+      "MVP开发",
+      "全栈开发",
+      "快速原型"
+    ]
+  },
+  "candidate_plugins": [
+    "product-management",
+    "modern-webapp",
+    "design-to-code"
+  ],
+  "files": [
+    "skills/tech-mvp-development-team/SKILL.md",
+    "skills/tech-mvp-development-team/agents/openai.yaml",
+    "skills/tech-mvp-development-team/references/guide.md",
+    "skills/tech-mvp-development-team/references/manifest.json",
+    "skills/tech-mvp-development-team/references/workflow.md"
+  ]
+}

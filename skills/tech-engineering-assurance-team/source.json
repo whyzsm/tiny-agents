@@ -1,0 +1,35 @@
+{
+  "name": "tech-engineering-assurance-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/technical-engineering/tech-engineering-assurance",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center 技术工程 card: 工程保障团队",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术工程",
+    "title": "工程保障团队",
+    "author": "Expert Marketplace",
+    "summary": "由工程总监领导的5人工程专家团队：代码审查师（安全/性能/正确性）、架构师（系统设计/ADR）、SRE 工程师等协作保障交付。",
+    "tags": [
+      "工程保障",
+      "代码审查",
+      "架构评审"
+    ]
+  },
+  "candidate_plugins": [
+    "webapp-testing",
+    "dockerfile-gen",
+    "agent-sdk-dev"
+  ],
+  "files": [
+    "skills/tech-engineering-assurance-team/SKILL.md",
+    "skills/tech-engineering-assurance-team/agents/openai.yaml",
+    "skills/tech-engineering-assurance-team/references/guide.md",
+    "skills/tech-engineering-assurance-team/references/manifest.json",
+    "skills/tech-engineering-assurance-team/references/workflow.md"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "data-intelligence-analysis-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-cb-teams-marketplace/data",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 数据智能 / 智数分析专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；WorkBuddy marketplace 中存在 data/data-analysis 插件，可作为底层候选能力。",
+  "workbuddy_card": {
+    "category": "数据智能",
+    "title": "智数分析专家团",
+    "author": "WorkBuddy Team",
+    "summary": "6人AI数据分析团队，擅长自然语言转SQL、Python建模、RAG知识问答、仪表盘可视化与报告生成。",
+    "tags": [
+      "数据分析",
+      "SQL生成",
+      "报告生成"
+    ]
+  },
+  "candidate_plugins": [
+    "data",
+    "data-analysis"
+  ],
+  "files": [
+    "skills/data-intelligence-analysis-team/SKILL.md",
+    "skills/data-intelligence-analysis-team/agents/openai.yaml",
+    "skills/data-intelligence-analysis-team/references/guide.md",
+    "skills/data-intelligence-analysis-team/references/manifest.json",
+    "skills/data-intelligence-analysis-team/references/workflow.md"
+  ]
+}

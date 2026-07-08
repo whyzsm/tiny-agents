@@ -1,0 +1,31 @@
+{
+  "name": "consulting-one-person-company-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/行业顾问/consulting-one-person-company",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 行业顾问 / 一人公司专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "行业顾问",
+    "title": "一人公司专家团",
+    "author": "WorkBuddy",
+    "summary": "基于 Easy 创作的《一人企业方法论》，9位专家陪你走完资源盘点、利基定位到 MVP、转化、复盘的一人公司全流程。",
+    "tags": [
+      "一人公司",
+      "商业模式",
+      "经营复盘"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/consulting-one-person-company-team/SKILL.md",
+    "skills/consulting-one-person-company-team/agents/openai.yaml",
+    "skills/consulting-one-person-company-team/references/guide.md",
+    "skills/consulting-one-person-company-team/references/manifest.json",
+    "skills/consulting-one-person-company-team/references/workflow.md"
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: 财税合规
+  short_description: 覆盖票据处理、记账核算、报表编制、税务申报、合规审计五大环节的企业财税合规全链路管理专家团。
+  default_prompt: Use $legal-tax-compliance-team to complete a WorkBuddy-derived expert-team workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

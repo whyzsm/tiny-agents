@@ -1,0 +1,6 @@
+interface:
+  display_name: AICoding 架构
+  short_description: 面向复杂系统架构设计，协同完成资料摄入、调研、业务、系统、部署、安全与用户故事全流程交付。
+  default_prompt: Use $tech-aicoding-architecture-team to complete a WorkBuddy-derived technical expert-team workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

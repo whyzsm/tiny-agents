@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-tax-compliance-team",
+  "displayName": "财税合规",
+  "summary": "覆盖票据处理、记账核算、报表编制、税务申报、合规审计五大环节的企业财税合规全链路管理专家团。",
+  "source": "workbuddy-expert-center/法务安全/legal-tax-compliance",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "财税合规专家团",
+    "author": "CodeBuddy Teams",
+    "tags": [
+      "税务合规",
+      "财务核算",
+      "合规审计"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "invoice-processing",
+    "bookkeeping",
+    "financial-reporting",
+    "tax-filing",
+    "compliance-audit",
+    "management-closure"
+  ]
+}

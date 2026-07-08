@@ -1,0 +1,6 @@
+interface:
+  display_name: 计算机等级考试
+  short_description: NCRE一至四级专家团，覆盖Office、编程、数据库与网络安全，分工协作，量身定制备考方案。
+  default_prompt: Use $tech-ncre-exam-team to complete a WorkBuddy-derived technical expert-team workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

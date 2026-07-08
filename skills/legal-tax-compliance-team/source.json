@@ -1,0 +1,31 @@
+{
+  "name": "legal-tax-compliance-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-tax-compliance",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 财税合规专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "财税合规专家团",
+    "author": "CodeBuddy Teams",
+    "summary": "覆盖票据处理、记账核算、报表编制、税务申报、合规审计五大环节的企业财税合规全链路管理专家团。",
+    "tags": [
+      "税务合规",
+      "财务核算",
+      "合规审计"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-tax-compliance-team/SKILL.md",
+    "skills/legal-tax-compliance-team/agents/openai.yaml",
+    "skills/legal-tax-compliance-team/references/guide.md",
+    "skills/legal-tax-compliance-team/references/manifest.json",
+    "skills/legal-tax-compliance-team/references/workflow.md"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "legal-chinese-consulting-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-chinese-consulting",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 中文法律咨询团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "中文法律咨询团",
+    "author": "WorkBuddy Team",
+    "summary": "案情采集、法条研究、判例分析、建议撰写，为民事、婚姻、合同、劳动等高频场景出具专业法律咨询报告。",
+    "tags": [
+      "法律咨询",
+      "法条研究",
+      "判例分析"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-chinese-consulting-team/SKILL.md",
+    "skills/legal-chinese-consulting-team/agents/openai.yaml",
+    "skills/legal-chinese-consulting-team/references/guide.md",
+    "skills/legal-chinese-consulting-team/references/manifest.json",
+    "skills/legal-chinese-consulting-team/references/workflow.md"
+  ]
+}

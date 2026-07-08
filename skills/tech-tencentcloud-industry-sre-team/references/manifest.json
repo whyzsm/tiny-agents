@@ -1,0 +1,30 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-tencentcloud-industry-sre-team",
+  "displayName": "腾讯云行业 SRE",
+  "summary": "12 位行业 SRE 按游戏、零售、教育、金融、出行、互联网、电商、医疗、工业制造、直播、社交通信、SaaS 等行业提供云巡检与架构治理。",
+  "source": "workbuddy-expert-center/technical-engineering/tech-tencentcloud-industry-sre",
+  "workbuddy": {
+    "category": "技术工程",
+    "cardTitle": "腾讯云行业 SRE 专家团",
+    "author": "Lonnie Hu",
+    "tags": [
+      "SRE",
+      "云巡检",
+      "架构治理"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": [
+      "dockerfile-gen",
+      "webapp-testing"
+    ]
+  },
+  "skillSlugs": [
+    "industry-sre-playbook",
+    "cloud-inspection",
+    "architecture-governance",
+    "incident-response",
+    "service-reliability",
+    "industry-runbook"
+  ]
+}

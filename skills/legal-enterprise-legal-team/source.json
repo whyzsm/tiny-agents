@@ -1,0 +1,31 @@
+{
+  "name": "legal-enterprise-legal-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-enterprise-legal",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 企业法务专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "企业法务专家团",
+    "author": "WorkBuddy团队",
+    "summary": "面向企业法务的多角色专家团，覆盖合同、交易、隐私、产品、监管、AI治理、雇佣与知识产权分诊。",
+    "tags": [
+      "企业法务",
+      "合同与交易",
+      "合规分诊"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-enterprise-legal-team/SKILL.md",
+    "skills/legal-enterprise-legal-team/agents/openai.yaml",
+    "skills/legal-enterprise-legal-team/references/guide.md",
+    "skills/legal-enterprise-legal-team/references/manifest.json",
+    "skills/legal-enterprise-legal-team/references/workflow.md"
+  ]
+}

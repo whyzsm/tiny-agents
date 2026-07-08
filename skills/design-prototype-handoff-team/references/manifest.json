@@ -1,0 +1,17 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "design-prototype-handoff-team",
+  "displayName": "设计原型",
+  "summary": "从 Figma JSON、UI 截图或组件规格出发，完成 React/Svelte/Vue 组件生成、无障碍审查、设计评审、开发交付规格、设计系统审计/扩展、用户研究综合和 UX 文案优化的完整设计原型交付工作流。来源于 WorkBuddy design-to-code 团队能力，适合把设计输入推进为工程可实现、可审查、可交付的前端设计包。",
+  "source": "workbuddy-cb-teams-marketplace/design-to-code",
+  "skillSlugs": [
+    "design-to-code-workflows",
+    "accessibility-review",
+    "design-critique",
+    "design-handoff",
+    "design-system",
+    "research-synthesis",
+    "user-research",
+    "ux-copy"
+  ]
+}

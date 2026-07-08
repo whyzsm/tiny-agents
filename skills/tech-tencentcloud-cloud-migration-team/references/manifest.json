@@ -1,0 +1,29 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-tencentcloud-cloud-migration-team",
+  "displayName": "腾讯云上云迁移",
+  "summary": "7位专家协作完成上云迁移：产品选型、Landing Zone、架构设计、交付实施、运维与FDE部署。",
+  "source": "workbuddy-expert-center/technical-engineering/tech-tencentcloud-cloud-migration",
+  "workbuddy": {
+    "category": "技术工程",
+    "cardTitle": "腾讯云上云迁移专家团",
+    "author": "WorkBuddy",
+    "tags": [
+      "云迁移",
+      "方案设计",
+      "Landing Zone"
+    ],
+    "extractionStatus": "截图卡片可见团队名、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": [
+      "dockerfile-gen"
+    ]
+  },
+  "skillSlugs": [
+    "cloud-product-selection",
+    "landing-zone",
+    "architecture-design",
+    "migration-delivery",
+    "operations-fde",
+    "cutover-readiness"
+  ]
+}

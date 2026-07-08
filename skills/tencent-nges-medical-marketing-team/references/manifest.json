@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tencent-nges-medical-marketing-team",
+  "displayName": "腾讯健康 NGES 医药营销",
+  "summary": "整合 HCP 客户洞察、互动病例生成与合规审核的医药营销专家团，覆盖营销全流程。",
+  "source": "workbuddy-expert-center/腾讯专区/tencent-nges-medical-marketing",
+  "workbuddy": {
+    "category": "腾讯专区",
+    "cardTitle": "腾讯健康 NGES 医药营销专家团",
+    "author": "Tencent Health",
+    "tags": [
+      "HCP 洞察",
+      "互动病例",
+      "合规审核"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "hcp-insight",
+    "medical-content-strategy",
+    "interactive-case",
+    "compliance-review",
+    "campaign-journey",
+    "effect-review"
+  ]
+}

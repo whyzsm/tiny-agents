@@ -1,0 +1,36 @@
+{
+  "name": "tech-aicoding-architecture-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/technical-engineering/tech-aicoding-architecture",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center 技术工程 card: AICoding 架构专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术工程",
+    "title": "AICoding 架构专家团",
+    "author": "WorkBuddy",
+    "summary": "面向复杂系统架构设计，协同完成资料摄入、调研、业务、系统、部署、安全与用户故事全流程交付。",
+    "tags": [
+      "架构设计",
+      "文档交付",
+      "专家协作"
+    ]
+  },
+  "candidate_plugins": [
+    "agent-sdk-dev",
+    "codebuddy-chat-web",
+    "skill-creator",
+    "modern-webapp"
+  ],
+  "files": [
+    "skills/tech-aicoding-architecture-team/SKILL.md",
+    "skills/tech-aicoding-architecture-team/agents/openai.yaml",
+    "skills/tech-aicoding-architecture-team/references/guide.md",
+    "skills/tech-aicoding-architecture-team/references/manifest.json",
+    "skills/tech-aicoding-architecture-team/references/workflow.md"
+  ]
+}

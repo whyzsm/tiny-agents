@@ -1,0 +1,31 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-software-workshop-team",
+  "displayName": "软件工坊",
+  "summary": "6位工程专业角色：产品评审、代码审查、安全审计、QA测试、设计系统、调试运维，覆盖从想法到生产的完整软件交付。",
+  "source": "workbuddy-expert-center/technical-engineering/tech-software-workshop",
+  "workbuddy": {
+    "category": "技术工程",
+    "cardTitle": "软件工坊专家团",
+    "author": "gstack",
+    "tags": [
+      "代码审查",
+      "安全审计",
+      "质量测试"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": [
+      "modern-webapp",
+      "general-skills",
+      "design-to-code"
+    ]
+  },
+  "skillSlugs": [
+    "product-review",
+    "code-review",
+    "security-audit",
+    "qa-testing",
+    "design-system",
+    "debug-operations"
+  ]
+}

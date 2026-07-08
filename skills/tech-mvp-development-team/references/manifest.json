@@ -1,0 +1,32 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-mvp-development-team",
+  "displayName": "MVP 开发",
+  "summary": "7位专家AI驱动全流程MVP开发：需求挖掘->竞品调研->三文档->Spec锁定->前后端并行开发自检->测试部署，用户反馈驱动迭代。",
+  "source": "workbuddy-expert-center/technical-engineering/tech-mvp-development",
+  "workbuddy": {
+    "category": "技术工程",
+    "cardTitle": "MVP 开发专家团",
+    "author": "Excellent",
+    "tags": [
+      "MVP开发",
+      "全栈开发",
+      "快速原型"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": [
+      "product-management",
+      "modern-webapp",
+      "design-to-code"
+    ]
+  },
+  "skillSlugs": [
+    "requirement-discovery",
+    "competitive-research",
+    "three-doc-package",
+    "spec-lock",
+    "frontend-backend-build",
+    "test-deploy",
+    "user-feedback-loop"
+  ]
+}

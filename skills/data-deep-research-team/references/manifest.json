@@ -1,0 +1,29 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-deep-research-team",
+  "displayName": "深度研究",
+  "summary": "深度研究报告输出，7角色5阶段聚合多源信息，经审稿修订循环输出带引用的专业报告。",
+  "source": "workbuddy-cb-teams-marketplace/deep-research",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "深度研究团队",
+    "author": "Expert Marketplace",
+    "tags": [
+      "深度调研",
+      "报告撰写",
+      "多源研究"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；WorkBuddy marketplace 中存在 deep-research 插件，可作为底层候选能力。",
+    "candidatePlugins": [
+      "deep-research"
+    ]
+  },
+  "skillSlugs": [
+    "research-planning",
+    "multi-source-search",
+    "evidence-synthesis",
+    "draft-writing",
+    "editor-review",
+    "citation-delivery"
+  ]
+}

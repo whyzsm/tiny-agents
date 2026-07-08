@@ -1,0 +1,6 @@
+interface:
+  display_name: 设计原型
+  short_description: 从 Figma/截图到代码组件、设计交付、无障碍和 UX 文案
+  default_prompt: Use $design-prototype-handoff-team to complete a design prototype handoff workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

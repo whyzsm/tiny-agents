@@ -1,0 +1,31 @@
+{
+  "name": "legal-intelligent-invoice-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/法务安全/legal-intelligent-invoice",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 法务安全 / 智能发票专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "法务安全",
+    "title": "智能发票专家团",
+    "author": "百望",
+    "summary": "五位 AI 专家接力协作，通过上传文件、表格或文件夹，完成识别、税局验真、信用核查与归档。",
+    "tags": [
+      "识别验真",
+      "商业信用",
+      "智能票夹"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/legal-intelligent-invoice-team/SKILL.md",
+    "skills/legal-intelligent-invoice-team/agents/openai.yaml",
+    "skills/legal-intelligent-invoice-team/references/guide.md",
+    "skills/legal-intelligent-invoice-team/references/manifest.json",
+    "skills/legal-intelligent-invoice-team/references/workflow.md"
+  ]
+}

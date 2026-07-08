@@ -1,0 +1,6 @@
+interface:
+  display_name: MVP 开发
+  short_description: 7位专家AI驱动全流程MVP开发：需求挖掘->竞品调研->三文档->Spec锁定->前后端并行开发自检->测试部署，用户反馈驱动迭代。
+  default_prompt: Use $tech-mvp-development-team to complete a WorkBuddy-derived technical expert-team workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

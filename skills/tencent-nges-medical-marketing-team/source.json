@@ -1,0 +1,31 @@
+{
+  "name": "tencent-nges-medical-marketing-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/腾讯专区/tencent-nges-medical-marketing",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 腾讯专区 / 腾讯健康 NGES 医药营销专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "腾讯专区",
+    "title": "腾讯健康 NGES 医药营销专家团",
+    "author": "Tencent Health",
+    "summary": "整合 HCP 客户洞察、互动病例生成与合规审核的医药营销专家团，覆盖营销全流程。",
+    "tags": [
+      "HCP 洞察",
+      "互动病例",
+      "合规审核"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/tencent-nges-medical-marketing-team/SKILL.md",
+    "skills/tencent-nges-medical-marketing-team/agents/openai.yaml",
+    "skills/tencent-nges-medical-marketing-team/references/guide.md",
+    "skills/tencent-nges-medical-marketing-team/references/manifest.json",
+    "skills/tencent-nges-medical-marketing-team/references/workflow.md"
+  ]
+}

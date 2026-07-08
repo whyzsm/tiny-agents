@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-academic-journal-selection-team",
+  "displayName": "学术选刊",
+  "summary": "学术选刊专家团，并行双管道架构，中文刊和外文刊各自独立分析学科匹配、期刊情报与安全检测，输出冲稳保分层投稿策略。",
+  "source": "workbuddy-expert-center/数据智能/data-academic-journal-selection",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "学术选刊顾问团 v3.0",
+    "author": "Wanfang Data",
+    "tags": [
+      "选刊投稿",
+      "SCI/SSCI分析",
+      "投稿策略"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "manuscript-profiling",
+    "cn-journal-matching",
+    "sci-ssci-matching",
+    "journal-risk-check",
+    "submission-strategy",
+    "cover-letter-pack"
+  ]
+}

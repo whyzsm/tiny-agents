@@ -1,0 +1,6 @@
+interface:
+  display_name: 工程保障
+  short_description: 由工程总监领导的5人工程专家团队：代码审查师（安全/性能/正确性）、架构师（系统设计/ADR）、SRE 工程师等协作保障交付。
+  default_prompt: Use $tech-engineering-assurance-team to complete a WorkBuddy-derived technical expert-team workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

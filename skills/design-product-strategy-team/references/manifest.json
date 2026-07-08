@@ -1,0 +1,18 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "design-product-strategy-team",
+  "displayName": "产品战略",
+  "summary": "从产品机会探索、PRD/功能规格编写、产品路线图规划、利益相关者沟通、用户研究综合、竞品分析、产品指标审查，到产品头脑风暴和冲刺规划的完整产品管理工作流。来源于 WorkBuddy product-management 团队能力，适合把模糊产品想法推进为可评审、可排期、可度量的产品决策包。",
+  "source": "workbuddy-cb-teams-marketplace/product-management",
+  "skillSlugs": [
+    "product-management-workflows",
+    "feature-spec",
+    "roadmap-management",
+    "stakeholder-comms",
+    "user-research-synthesis",
+    "competitive-analysis",
+    "metrics-tracking",
+    "product-brainstorming",
+    "sprint-planning"
+  ]
+}

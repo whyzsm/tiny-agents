@@ -1,0 +1,35 @@
+{
+  "name": "tech-software-development-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/technical-engineering/tech-software-development",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center 技术工程 card: 软件开发团队",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术工程",
+    "title": "软件开发团队",
+    "author": "WorkBuddy",
+    "summary": "高效软件开发团队，产品经理定需求、架构师设计+拆任务、工程师批量实现代码、QA验证质量，小需求支持快速交付。",
+    "tags": [
+      "软件公司",
+      "组织管理",
+      "产品交付"
+    ]
+  },
+  "candidate_plugins": [
+    "modern-webapp",
+    "codebuddy-chat-web",
+    "agent-sdk-dev"
+  ],
+  "files": [
+    "skills/tech-software-development-team/SKILL.md",
+    "skills/tech-software-development-team/agents/openai.yaml",
+    "skills/tech-software-development-team/references/guide.md",
+    "skills/tech-software-development-team/references/manifest.json",
+    "skills/tech-software-development-team/references/workflow.md"
+  ]
+}

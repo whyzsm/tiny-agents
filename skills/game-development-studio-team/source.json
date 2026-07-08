@@ -1,0 +1,31 @@
+{
+  "name": "game-development-studio-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/游戏空间/game-development-studio",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 游戏空间 / 游戏开发工作室",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "游戏空间",
+    "title": "游戏开发工作室",
+    "author": "WorkBuddy",
+    "summary": "统筹策划、技术、美术、音频、质量、运营六大专业成员，以七阶段工作流驱动游戏从概念到上线流程协同开发。",
+    "tags": [
+      "游戏开发",
+      "工作室流程",
+      "设计到发布"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/game-development-studio-team/SKILL.md",
+    "skills/game-development-studio-team/agents/openai.yaml",
+    "skills/game-development-studio-team/references/guide.md",
+    "skills/game-development-studio-team/references/manifest.json",
+    "skills/game-development-studio-team/references/workflow.md"
+  ]
+}

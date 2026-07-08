@@ -1,0 +1,18 @@
+{
+  "name": "design-product-strategy-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-cb-teams-marketplace/product-management",
+  "source_kind": "workbuddy-team-plugin",
+  "source_ref": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.zip#plugins/product-management",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "team-entry-with-embedded-workflow",
+  "files": [
+    "skills/design-product-strategy-team/SKILL.md",
+    "skills/design-product-strategy-team/agents/openai.yaml",
+    "skills/design-product-strategy-team/references/guide.md",
+    "skills/design-product-strategy-team/references/manifest.json",
+    "skills/design-product-strategy-team/references/workflow.md"
+  ]
+}

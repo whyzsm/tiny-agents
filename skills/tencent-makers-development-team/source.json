@@ -1,0 +1,35 @@
+{
+  "name": "tencent-makers-development-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/腾讯专区/tencent-makers-development",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 腾讯专区 / Makers 开发专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "腾讯专区",
+    "title": "Makers 开发专家团",
+    "author": "WorkBuddy",
+    "summary": "EdgeOne Makers 应用开发部署专家，覆盖前端、后端、AI Agent 与全球加速。",
+    "tags": [
+      "Web 开发",
+      "AI Agent",
+      "Serverless"
+    ]
+  },
+  "candidate_plugins": [
+    "modern-webapp",
+    "codebuddy-chat-web",
+    "agent-sdk-dev"
+  ],
+  "files": [
+    "skills/tencent-makers-development-team/SKILL.md",
+    "skills/tencent-makers-development-team/agents/openai.yaml",
+    "skills/tencent-makers-development-team/references/guide.md",
+    "skills/tencent-makers-development-team/references/manifest.json",
+    "skills/tencent-makers-development-team/references/workflow.md"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tencent-makers-development-team",
+  "displayName": "Makers 开发",
+  "summary": "EdgeOne Makers 应用开发部署专家，覆盖前端、后端、AI Agent 与全球加速。",
+  "source": "workbuddy-expert-center/腾讯专区/tencent-makers-development",
+  "workbuddy": {
+    "category": "腾讯专区",
+    "cardTitle": "Makers 开发专家团",
+    "author": "WorkBuddy",
+    "tags": [
+      "Web 开发",
+      "AI Agent",
+      "Serverless"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": [
+      "modern-webapp",
+      "codebuddy-chat-web",
+      "agent-sdk-dev"
+    ]
+  },
+  "skillSlugs": [
+    "frontend-build",
+    "backend-api",
+    "ai-agent-integration",
+    "edgeone-deploy",
+    "serverless-ops",
+    "delivery-verification"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "tech-tencentcloud-cloud-ops-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/technical-engineering/tech-tencentcloud-cloud-ops",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center 技术工程 card: 腾讯云技术支持专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术工程",
+    "title": "腾讯云技术支持专家团",
+    "author": "Cloud Ops Team",
+    "summary": "三位专家组成的运维团队：CloudQ 负责多云统一治理与架构可视化，AndonQ 负责工单管理与智能问答，MigraQ 负责迁移支持。",
+    "tags": [
+      "云运维",
+      "多云治理",
+      "云迁移"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/tech-tencentcloud-cloud-ops-team/SKILL.md",
+    "skills/tech-tencentcloud-cloud-ops-team/agents/openai.yaml",
+    "skills/tech-tencentcloud-cloud-ops-team/references/guide.md",
+    "skills/tech-tencentcloud-cloud-ops-team/references/manifest.json",
+    "skills/tech-tencentcloud-cloud-ops-team/references/workflow.md"
+  ]
+}

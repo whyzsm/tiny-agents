@@ -1,0 +1,33 @@
+{
+  "name": "data-deep-research-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-cb-teams-marketplace/deep-research",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 数据智能 / 深度研究团队",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；WorkBuddy marketplace 中存在 deep-research 插件，可作为底层候选能力。",
+  "workbuddy_card": {
+    "category": "数据智能",
+    "title": "深度研究团队",
+    "author": "Expert Marketplace",
+    "summary": "深度研究报告输出，7角色5阶段聚合多源信息，经审稿修订循环输出带引用的专业报告。",
+    "tags": [
+      "深度调研",
+      "报告撰写",
+      "多源研究"
+    ]
+  },
+  "candidate_plugins": [
+    "deep-research"
+  ],
+  "files": [
+    "skills/data-deep-research-team/SKILL.md",
+    "skills/data-deep-research-team/agents/openai.yaml",
+    "skills/data-deep-research-team/references/guide.md",
+    "skills/data-deep-research-team/references/manifest.json",
+    "skills/data-deep-research-team/references/workflow.md"
+  ]
+}

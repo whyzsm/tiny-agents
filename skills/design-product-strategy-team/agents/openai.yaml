@@ -1,0 +1,6 @@
+interface:
+  display_name: 产品战略
+  short_description: 从产品机会探索到 PRD、路线图、研究、竞品和指标审查
+  default_prompt: Use $design-product-strategy-team to complete a product strategy workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,33 @@
+{
+  "name": "project-document-generation-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/项目质量/project-document-generation",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 项目质量 / 专业文档生成团队",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "项目质量",
+    "title": "专业文档生成团队",
+    "author": "Expert Marketplace",
+    "summary": "企业级长文档生成，4角色协作完成深度调研、大纲规划、内容撰写与合规审核全流程。",
+    "tags": [
+      "文档团队",
+      "规格文档",
+      "文档审计"
+    ]
+  },
+  "candidate_plugins": [
+    "deep-research"
+  ],
+  "files": [
+    "skills/project-document-generation-team/SKILL.md",
+    "skills/project-document-generation-team/agents/openai.yaml",
+    "skills/project-document-generation-team/references/guide.md",
+    "skills/project-document-generation-team/references/manifest.json",
+    "skills/project-document-generation-team/references/workflow.md"
+  ]
+}

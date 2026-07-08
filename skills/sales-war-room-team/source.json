@@ -1,0 +1,31 @@
+{
+  "name": "sales-war-room-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/销售商务/sales-war-room",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 销售作战团队",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "销售商务",
+    "title": "销售作战团队",
+    "author": "Expert Marketplace",
+    "summary": "销售攻坚体系，客户研究锁定目标、外联策略提升触达、竞品情报预警风险、销售预测优化资源分配。",
+    "tags": [
+      "销售作战",
+      "客户调研",
+      "竞情分析"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/sales-war-room-team/SKILL.md",
+    "skills/sales-war-room-team/agents/openai.yaml",
+    "skills/sales-war-room-team/references/guide.md",
+    "skills/sales-war-room-team/references/manifest.json",
+    "skills/sales-war-room-team/references/workflow.md"
+  ]
+}

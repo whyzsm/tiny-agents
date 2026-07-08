@@ -1,0 +1,6 @@
+interface:
+  display_name: 企业法务
+  short_description: 面向企业法务的多角色专家团，覆盖合同、交易、隐私、产品、监管、AI治理、雇佣与知识产权分诊。
+  default_prompt: Use $legal-enterprise-legal-team to complete a WorkBuddy-derived expert-team workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

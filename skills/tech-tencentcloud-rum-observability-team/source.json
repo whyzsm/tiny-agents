@@ -1,0 +1,31 @@
+{
+  "name": "tech-tencentcloud-rum-observability-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/technical-engineering/tech-tencentcloud-rum-observability",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center 技术工程 card: 腾讯云 RUM 全链路专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术工程",
+    "title": "腾讯云 RUM 全链路专家团",
+    "author": "Expert Marketplace",
+    "summary": "腾讯云 RUM 全链路服务：10 大平台 aegis SDK 接入 + WebVitals/异常/接口/资源分析，支持 RUM-APM 联动。",
+    "tags": [
+      "前端监控",
+      "RUM 接入",
+      "性能分析"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/tech-tencentcloud-rum-observability-team/SKILL.md",
+    "skills/tech-tencentcloud-rum-observability-team/agents/openai.yaml",
+    "skills/tech-tencentcloud-rum-observability-team/references/guide.md",
+    "skills/tech-tencentcloud-rum-observability-team/references/manifest.json",
+    "skills/tech-tencentcloud-rum-observability-team/references/workflow.md"
+  ]
+}

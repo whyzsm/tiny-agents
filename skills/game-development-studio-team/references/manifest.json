@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "game-development-studio-team",
+  "displayName": "游戏开发工作室",
+  "summary": "统筹策划、技术、美术、音频、质量、运营六大专业成员，以七阶段工作流驱动游戏从概念到上线流程协同开发。",
+  "source": "workbuddy-expert-center/游戏空间/game-development-studio",
+  "workbuddy": {
+    "category": "游戏空间",
+    "cardTitle": "游戏开发工作室",
+    "author": "WorkBuddy",
+    "tags": [
+      "游戏开发",
+      "工作室流程",
+      "设计到发布"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "game-concept",
+    "game-design",
+    "technical-development",
+    "art-audio-production",
+    "qa-playtest",
+    "live-ops-launch"
+  ]
+}

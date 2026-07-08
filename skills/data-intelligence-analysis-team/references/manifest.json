@@ -1,0 +1,30 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "data-intelligence-analysis-team",
+  "displayName": "智数分析",
+  "summary": "6人AI数据分析团队，擅长自然语言转SQL、Python建模、RAG知识问答、仪表盘可视化与报告生成。",
+  "source": "workbuddy-cb-teams-marketplace/data",
+  "workbuddy": {
+    "category": "数据智能",
+    "cardTitle": "智数分析专家团",
+    "author": "WorkBuddy Team",
+    "tags": [
+      "数据分析",
+      "SQL生成",
+      "报告生成"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；WorkBuddy marketplace 中存在 data/data-analysis 插件，可作为底层候选能力。",
+    "candidatePlugins": [
+      "data",
+      "data-analysis"
+    ]
+  },
+  "skillSlugs": [
+    "nl-to-sql",
+    "python-modeling",
+    "rag-qa",
+    "data-validation",
+    "dashboard-visualization",
+    "insight-reporting"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "legal-chinese-consulting-team",
+  "displayName": "中文法律咨询",
+  "summary": "案情采集、法条研究、判例分析、建议撰写，为民事、婚姻、合同、劳动等高频场景出具专业法律咨询报告。",
+  "source": "workbuddy-expert-center/法务安全/legal-chinese-consulting",
+  "workbuddy": {
+    "category": "法务安全",
+    "cardTitle": "中文法律咨询团",
+    "author": "WorkBuddy Team",
+    "tags": [
+      "法律咨询",
+      "法条研究",
+      "判例分析"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "case-intake",
+    "statute-research",
+    "case-analysis",
+    "legal-advice",
+    "document-drafting",
+    "disclaimer-review"
+  ]
+}

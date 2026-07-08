@@ -1,0 +1,18 @@
+{
+  "name": "design-prototype-handoff-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-cb-teams-marketplace/design-to-code",
+  "source_kind": "workbuddy-team-plugin",
+  "source_ref": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.zip#plugins/design-to-code",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "team-entry-with-embedded-workflow",
+  "files": [
+    "skills/design-prototype-handoff-team/SKILL.md",
+    "skills/design-prototype-handoff-team/agents/openai.yaml",
+    "skills/design-prototype-handoff-team/references/guide.md",
+    "skills/design-prototype-handoff-team/references/manifest.json",
+    "skills/design-prototype-handoff-team/references/workflow.md"
+  ]
+}

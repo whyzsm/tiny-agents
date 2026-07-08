@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "consulting-business-general-manager-team",
+  "displayName": "经营总管",
+  "summary": "经营总管调度四位领域专家，覆盖财务、营收、客户合规和运营，小企业管理一站搞定。",
+  "source": "workbuddy-expert-center/行业顾问/consulting-business-general-manager",
+  "workbuddy": {
+    "category": "行业顾问",
+    "cardTitle": "经营总管",
+    "author": "WorkBuddy团队",
+    "tags": [
+      "小企业管理",
+      "经营管理",
+      "多角色协作"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "finance-control",
+    "revenue-growth",
+    "customer-compliance",
+    "operations-management",
+    "decision-dashboard",
+    "action-tracking"
+  ]
+}

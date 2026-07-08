@@ -1,0 +1,31 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-engineering-assurance-team",
+  "displayName": "工程保障",
+  "summary": "由工程总监领导的5人工程专家团队：代码审查师（安全/性能/正确性）、架构师（系统设计/ADR）、SRE 工程师等协作保障交付。",
+  "source": "workbuddy-expert-center/technical-engineering/tech-engineering-assurance",
+  "workbuddy": {
+    "category": "技术工程",
+    "cardTitle": "工程保障团队",
+    "author": "Expert Marketplace",
+    "tags": [
+      "工程保障",
+      "代码审查",
+      "架构评审"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": [
+      "webapp-testing",
+      "dockerfile-gen",
+      "agent-sdk-dev"
+    ]
+  },
+  "skillSlugs": [
+    "engineering-director",
+    "code-reviewer",
+    "architecture-adr",
+    "sre-readiness",
+    "quality-gate",
+    "release-risk"
+  ]
+}

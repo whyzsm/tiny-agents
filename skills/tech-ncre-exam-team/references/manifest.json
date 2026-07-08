@@ -1,0 +1,29 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-ncre-exam-team",
+  "displayName": "计算机等级考试",
+  "summary": "NCRE一至四级专家团，覆盖Office、编程、数据库与网络安全，分工协作，量身定制备考方案。",
+  "source": "workbuddy-expert-center/technical-engineering/tech-ncre-exam",
+  "workbuddy": {
+    "category": "技术工程",
+    "cardTitle": "计算机等级考试专家团",
+    "author": "Xu Qingchu",
+    "tags": [
+      "计算机等级考试",
+      "程序设计",
+      "Office办公软件"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": [
+      "gaokao-advisor"
+    ]
+  },
+  "skillSlugs": [
+    "ncre-level-planning",
+    "office-practice",
+    "programming-practice",
+    "database-practice",
+    "network-security-practice",
+    "mock-exam-grading"
+  ]
+}

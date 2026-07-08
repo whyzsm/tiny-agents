@@ -1,0 +1,6 @@
+interface:
+  display_name: 软件开发
+  short_description: 高效软件开发团队，产品经理定需求、架构师设计+拆任务、工程师批量实现代码、QA验证质量，小需求支持快速交付。
+  default_prompt: Use $tech-software-development-team to complete a WorkBuddy-derived technical expert-team workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

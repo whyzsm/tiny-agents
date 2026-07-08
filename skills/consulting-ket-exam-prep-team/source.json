@@ -1,0 +1,31 @@
+{
+  "name": "consulting-ket-exam-prep-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/行业顾问/consulting-ket-exam-prep",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center card: 行业顾问 / KET备考专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "行业顾问",
+    "title": "KET备考专家团",
+    "author": "AI 科学局",
+    "summary": "剑桥认证考官领衔，为小学生提供 KET 全流程备考：学情测评、词汇语法地基、听说读写专项提升、考前冲刺模考。",
+    "tags": [
+      "KET考试备考",
+      "少儿英语教学",
+      "剑桥英语考评"
+    ]
+  },
+  "candidate_plugins": [],
+  "files": [
+    "skills/consulting-ket-exam-prep-team/SKILL.md",
+    "skills/consulting-ket-exam-prep-team/agents/openai.yaml",
+    "skills/consulting-ket-exam-prep-team/references/guide.md",
+    "skills/consulting-ket-exam-prep-team/references/manifest.json",
+    "skills/consulting-ket-exam-prep-team/references/workflow.md"
+  ]
+}

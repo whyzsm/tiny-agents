@@ -1,0 +1,35 @@
+{
+  "name": "tech-software-workshop-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/technical-engineering/tech-software-workshop",
+  "source_kind": "workbuddy-expert-center-card",
+  "source_ref": "WorkBuddy v5.2.3 Expert Center 技术工程 card: 软件工坊专家团",
+  "source_meta": "https://download.codebuddy.cn/plugin-marketplace/cb_teams_marketplace.json",
+  "converted_for": "codex-skills",
+  "conversion_mode": "card-derived-team-entry-with-embedded-workflow",
+  "extraction_note": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+  "workbuddy_card": {
+    "category": "技术工程",
+    "title": "软件工坊专家团",
+    "author": "gstack",
+    "summary": "6位工程专业角色：产品评审、代码审查、安全审计、QA测试、设计系统、调试运维，覆盖从想法到生产的完整软件交付。",
+    "tags": [
+      "代码审查",
+      "安全审计",
+      "质量测试"
+    ]
+  },
+  "candidate_plugins": [
+    "modern-webapp",
+    "general-skills",
+    "design-to-code"
+  ],
+  "files": [
+    "skills/tech-software-workshop-team/SKILL.md",
+    "skills/tech-software-workshop-team/agents/openai.yaml",
+    "skills/tech-software-workshop-team/references/guide.md",
+    "skills/tech-software-workshop-team/references/manifest.json",
+    "skills/tech-software-workshop-team/references/workflow.md"
+  ]
+}

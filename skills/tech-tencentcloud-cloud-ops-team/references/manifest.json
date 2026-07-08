@@ -1,0 +1,26 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-tencentcloud-cloud-ops-team",
+  "displayName": "腾讯云技术支持",
+  "summary": "三位专家组成的运维团队：CloudQ 负责多云统一治理与架构可视化，AndonQ 负责工单管理与智能问答，MigraQ 负责迁移支持。",
+  "source": "workbuddy-expert-center/technical-engineering/tech-tencentcloud-cloud-ops",
+  "workbuddy": {
+    "category": "技术工程",
+    "cardTitle": "腾讯云技术支持专家团",
+    "author": "Cloud Ops Team",
+    "tags": [
+      "云运维",
+      "多云治理",
+      "云迁移"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "cloudq-governance",
+    "andonq-ticketing",
+    "migration-support",
+    "architecture-visualization",
+    "cloud-ops-qa"
+  ]
+}

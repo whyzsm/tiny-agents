@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "consulting-super-partner-team",
+  "displayName": "超级合伙人",
+  "summary": "面向企业家和创业者的虚拟合伙人团队，先判断公司下一步，再给出可执行、可复盘的结果卡。",
+  "source": "workbuddy-expert-center/行业顾问/consulting-super-partner",
+  "workbuddy": {
+    "category": "行业顾问",
+    "cardTitle": "超级合伙人",
+    "author": "福帮手",
+    "tags": [
+      "超级合伙人",
+      "经营协同",
+      "智能化交付"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "company-diagnosis",
+    "next-step-strategy",
+    "partner-collaboration",
+    "execution-card",
+    "review-mechanism",
+    "automation-delivery"
+  ]
+}

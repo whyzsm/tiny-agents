@@ -1,0 +1,6 @@
+interface:
+  display_name: 腾讯云上云迁移
+  short_description: 7位专家协作完成上云迁移：产品选型、Landing Zone、架构设计、交付实施、运维与FDE部署。
+  default_prompt: Use $tech-tencentcloud-cloud-migration-team to complete a WorkBuddy-derived technical expert-team workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: 软件工坊
+  short_description: 6位工程专业角色：产品评审、代码审查、安全审计、QA测试、设计系统、调试运维，覆盖从想法到生产的完整软件交付。
+  default_prompt: Use $tech-software-workshop-team to complete a WorkBuddy-derived technical expert-team workflow in Simplified Chinese.
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,31 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-software-development-team",
+  "displayName": "软件开发",
+  "summary": "高效软件开发团队，产品经理定需求、架构师设计+拆任务、工程师批量实现代码、QA验证质量，小需求支持快速交付。",
+  "source": "workbuddy-expert-center/technical-engineering/tech-software-development",
+  "workbuddy": {
+    "category": "技术工程",
+    "cardTitle": "软件开发团队",
+    "author": "WorkBuddy",
+    "tags": [
+      "软件公司",
+      "组织管理",
+      "产品交付"
+    ],
+    "extractionStatus": "截图卡片可见团队名、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": [
+      "modern-webapp",
+      "codebuddy-chat-web",
+      "agent-sdk-dev"
+    ]
+  },
+  "skillSlugs": [
+    "product-requirements",
+    "architecture-design",
+    "task-breakdown",
+    "parallel-implementation",
+    "qa-validation",
+    "delivery-management"
+  ]
+}

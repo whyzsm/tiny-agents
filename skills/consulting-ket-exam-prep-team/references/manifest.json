@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "consulting-ket-exam-prep-team",
+  "displayName": "KET备考",
+  "summary": "剑桥认证考官领衔，为小学生提供 KET 全流程备考：学情测评、词汇语法地基、听说读写专项提升、考前冲刺模考。",
+  "source": "workbuddy-expert-center/行业顾问/consulting-ket-exam-prep",
+  "workbuddy": {
+    "category": "行业顾问",
+    "cardTitle": "KET备考专家团",
+    "author": "AI 科学局",
+    "tags": [
+      "KET考试备考",
+      "少儿英语教学",
+      "剑桥英语考评"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "student-assessment",
+    "vocabulary-grammar",
+    "listening-speaking",
+    "reading-writing",
+    "mock-exam",
+    "parent-coaching"
+  ]
+}

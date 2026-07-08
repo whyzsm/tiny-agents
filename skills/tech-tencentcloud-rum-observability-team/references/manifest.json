@@ -1,0 +1,27 @@
+{
+  "type": "skillhub-expert-package",
+  "slug": "tech-tencentcloud-rum-observability-team",
+  "displayName": "腾讯云 RUM 全链路",
+  "summary": "腾讯云 RUM 全链路服务：10 大平台 aegis SDK 接入 + WebVitals/异常/接口/资源分析，支持 RUM-APM 联动。",
+  "source": "workbuddy-expert-center/technical-engineering/tech-tencentcloud-rum-observability",
+  "workbuddy": {
+    "category": "技术工程",
+    "cardTitle": "腾讯云 RUM 全链路专家团",
+    "author": "Expert Marketplace",
+    "tags": [
+      "前端监控",
+      "RUM 接入",
+      "性能分析"
+    ],
+    "extractionStatus": "截图卡片可见团队名、作者、摘要和标签；本地 WorkBuddy marketplace 包未包含完整专家详情 payload。",
+    "candidatePlugins": []
+  },
+  "skillSlugs": [
+    "aegis-sdk-integration",
+    "web-vitals-analysis",
+    "exception-monitoring",
+    "api-resource-analysis",
+    "rum-apm-correlation",
+    "observability-report"
+  ]
+}

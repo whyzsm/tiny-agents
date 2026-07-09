@@ -1,0 +1,29 @@
+{
+  "name": "motion-expert-team",
+  "display_name": "Motion 动效专家团",
+  "category": "设计",
+  "source_package": "motion-expert-agent",
+  "source_version": "0.1.0",
+  "source_primary_skill": "skills/motion-expert/SKILL.md",
+  "capability_modules": [
+    "motion-direction",
+    "ui-animation-implementation",
+    "scroll-animation-patterns",
+    "gsap-animation-expertise",
+    "motion-performance-review"
+  ],
+  "references": [
+    "references/guide.md",
+    "references/motion-decision-matrix.md",
+    "references/performance-guardrails.md",
+    "references/review-rubric.md",
+    "references/scroll-patterns.md"
+  ],
+  "assets": [
+    "assets/examples/css-motion-tokens.css",
+    "assets/examples/gsap-scrolltrigger-section.tsx",
+    "assets/examples/motion-card.tsx"
+  ],
+  "repo_only": true,
+  "install_upstream_skills": false
+}

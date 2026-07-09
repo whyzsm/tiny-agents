@@ -1,0 +1,49 @@
+:root {
+  --motion-duration-press: 140ms;
+  --motion-duration-fast: 180ms;
+  --motion-duration-base: 240ms;
+  --motion-duration-slow: 320ms;
+
+  --motion-ease-enter: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-ease-move: cubic-bezier(0.25, 1, 0.5, 1);
+  --motion-ease-exit: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.motion-pressable {
+  transform: translateZ(0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .motion-pressable {
+    transition:
+      transform var(--motion-duration-press) var(--motion-ease-enter),
+      opacity var(--motion-duration-press) ease;
+  }
+
+  .motion-pressable:active {
+    transform: scale(0.98);
+  }
+
+  .motion-reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+      opacity var(--motion-duration-base) ease,
+      transform var(--motion-duration-base) var(--motion-ease-enter);
+  }
+
+  @starting-style {
+    .motion-reveal {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-pressable,
+  .motion-reveal {
+    transition: opacity 120ms ease;
+    transform: none;
+  }
+}

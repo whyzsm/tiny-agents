@@ -1,0 +1,73 @@
+{
+  "name": "motion-expert-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "motion-expert-agent",
+  "source_kind": "composite-agent-package",
+  "source_version": "0.1.0",
+  "source_primary_skill": "skills/motion-expert/SKILL.md",
+  "converted_for": "tiny-agents-repository",
+  "conversion_mode": "repo-only-expert-team",
+  "repo_only": true,
+  "installed": false,
+  "summary": "Purposeful, production-safe UI motion expert for CSS, Motion/Framer, GSAP, Lottie, scroll-driven animation, accessibility, and performance review.",
+  "capability_modules": [
+    {
+      "name": "motion-direction",
+      "source": "LottieFiles/motion-design-skill",
+      "role": "Motion intent, emotional semantics, choreography, timing, and easing philosophy."
+    },
+    {
+      "name": "ui-animation-implementation",
+      "source": "mblode/agent-skills/ui-animation",
+      "role": "UI implementation rules for CSS, Motion/Framer, springs, gestures, accessibility, and interaction behavior."
+    },
+    {
+      "name": "scroll-animation-patterns",
+      "source": "github/awesome-copilot/gsap-framer-scroll-animation",
+      "role": "Scroll animation patterns for GSAP ScrollTrigger and Motion/Framer."
+    },
+    {
+      "name": "gsap-animation-expertise",
+      "source": "greensock/gsap-skills",
+      "role": "GSAP API, timelines, ScrollTrigger, plugins, React cleanup, and performance guidance."
+    },
+    {
+      "name": "motion-performance-review",
+      "source": "ibelick/ui-skills/fixing-motion-performance",
+      "role": "Performance review, layout thrashing prevention, compositor boundaries, paint/layout risk, and reduced-motion safety."
+    }
+  ],
+  "source_refs": [
+    "https://github.com/LottieFiles/motion-design-skill",
+    "https://github.com/mblode/agent-skills",
+    "https://github.com/github/awesome-copilot",
+    "https://github.com/greensock/gsap-skills",
+    "https://github.com/ibelick/ui-skills"
+  ],
+  "files": [
+    "skills/motion-expert-team/SKILL.md",
+    "skills/motion-expert-team/agents/openai.yaml",
+    "skills/motion-expert-team/references/guide.md",
+    "skills/motion-expert-team/references/manifest.json",
+    "skills/motion-expert-team/references/motion-decision-matrix.md",
+    "skills/motion-expert-team/references/performance-guardrails.md",
+    "skills/motion-expert-team/references/review-rubric.md",
+    "skills/motion-expert-team/references/scroll-patterns.md",
+    "skills/motion-expert-team/assets/examples/css-motion-tokens.css",
+    "skills/motion-expert-team/assets/examples/gsap-scrolltrigger-section.tsx",
+    "skills/motion-expert-team/assets/examples/motion-card.tsx",
+    "skills/motion-expert-team/source.json"
+  ],
+  "excluded_source_files": [
+    ".DS_Store",
+    ".cursor/rules/motion-expert.mdc",
+    ".github/copilot-instructions.md",
+    "README.md",
+    "AGENTS.md",
+    "MOTION_EXPERT_AGENT.md",
+    "agent-prompts/code-review-prompt.md",
+    "agent-prompts/system-prompt.md",
+    "scripts/install-upstream-skills.sh"
+  ]
+}

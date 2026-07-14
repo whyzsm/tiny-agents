@@ -88,6 +88,45 @@ class ComposeTeamTest(unittest.TestCase):
         self.assertEqual(phases[1]["depends_on"], ["phase-1-contract"])
         self.assertTrue(phases[1]["parallel"])
 
+    def test_local_installed_capabilities_precede_catalog_and_use_name_boundaries(self):
+        installed = self.root / "installed-skills"
+        (installed / "playwright").mkdir(parents=True)
+        (installed / "service-widget").mkdir(parents=True)
+        (installed / "ui-audit").mkdir(parents=True)
+        (installed / "playwright/SKILL.md").write_text(
+            '---\nname: playwright\ndescription: Browser journeys\n---\n# Playwright\n',
+            encoding="utf-8",
+        )
+        (installed / "service-widget/SKILL.md").write_text(
+            '---\nname: service-widget\ndescription: Build service widgets\n---\n# Service Widget\n',
+            encoding="utf-8",
+        )
+        (installed / "ui-audit/SKILL.md").write_text(
+            '---\nname: ui-audit\ndescription: Review UI accessibility and quality\n---\n# UI Audit\n',
+            encoding="utf-8",
+        )
+        task = "测试页面 API mock 和回归风险"
+        scan = COMPOSE.scan_project(self.root, task)
+        local, discovery = COMPOSE.discover_local_candidates(
+            self.root,
+            task,
+            scan,
+            [(installed, "installed-skill")],
+            [],
+        )
+
+        self.assertEqual(discovery["skills"], 3)
+        self.assertEqual(local["e2e-testing"][0]["skill"], "playwright")
+        self.assertEqual(local["review"][0]["skill"], "ui-audit")
+        self.assertFalse(any(item["skill"] == "service-widget" for item in local["api-testing"]))
+
+        catalog = {
+            key: [{"skill": "remote-skill", "source_kind": "remote-catalog", "score": 1}]
+            for key in (slot.key for slot in COMPOSE.SLOTS)
+        }
+        merged = COMPOSE.merge_candidates(local, catalog)
+        self.assertEqual(merged["e2e-testing"][0]["skill"], "playwright")
+
 
 if __name__ == "__main__":
     unittest.main()

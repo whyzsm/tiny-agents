@@ -72,6 +72,24 @@ ROUTE_NAME_RE = re.compile(r"(^|/)(routes?|router|pages?|views?)(/|$)|route", re
 API_RE = re.compile(r"/(?:api|graphql|rpc)/|\b(?:axios|fetch|request|graphql)\b", re.IGNORECASE)
 MOCK_RE = re.compile(r"(^|/)(mock|mocks|fixtures?)(/|$)|\bmock\b", re.IGNORECASE)
 CI_RE = re.compile(r"(^|/)(\.github/workflows|\.gitlab-ci|jenkins|azure-pipelines)(/|$)", re.IGNORECASE)
+LOCAL_SOURCE_PRIORITY = {
+    "project-expert-team": 1000,
+    "project-agent": 900,
+    "project-skill": 850,
+    "installed-agent": 800,
+    "installed-skill": 800,
+}
+LOCAL_SOURCE_KINDS = set(LOCAL_SOURCE_PRIORITY)
+LOCAL_EXCLUDED_NAMES = {"README.md", "AGENTS.md", "CLAUDE.md", "CONTRIBUTING.md"}
+LOCAL_NAME_KEYWORDS = {
+    "requirements": {"requirement", "requirements", "prd", "acceptance", "需求", "验收"},
+    "implementation": {"implement", "implementation", "build", "developer", "frontend", "backend", "code", "开发", "实现"},
+    "unit-testing": {"test", "testing", "unit", "integration", "regression", "coverage", "qa", "测试", "回归"},
+    "e2e-testing": {"e2e", "browser", "playwright", "cypress", "selenium", "puppeteer", "用户流程"},
+    "api-testing": {"api", "http", "graphql", "mock", "contract", "接口"},
+    "review": {"review", "audit", "quality", "security", "审查", "审计", "质量"},
+    "architecture": {"architecture", "architect", "refactor", "migration", "system", "架构", "重构", "迁移"},
+}
 
 
 @dataclass(frozen=True)
@@ -167,6 +185,23 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--catalog-root", default=str(discover.DEFAULT_CATALOG_ROOT))
     parser.add_argument("--index", help="Local index path; enables offline catalog mode")
     parser.add_argument("--index-url", default=DEFAULT_INDEX_URL)
+    parser.add_argument(
+        "--skill-root",
+        action="append",
+        dest="skill_roots",
+        help="Additional installed or project Skill root; may be repeated",
+    )
+    parser.add_argument(
+        "--agent-root",
+        action="append",
+        dest="agent_roots",
+        help="Additional installed or project Agent root; may be repeated",
+    )
+    parser.add_argument(
+        "--no-local",
+        action="store_true",
+        help="Disable local Skill, Agent, and project-team discovery",
+    )
     parser.add_argument("--timeout", type=float, default=15.0)
     parser.add_argument("--candidate-limit", type=int, default=40)
     parser.add_argument("--max-members", type=int, default=5)
@@ -184,6 +219,81 @@ def safe_read(path: Path, limit: int = 12000) -> str:
         return path.read_text(encoding="utf-8", errors="ignore")[:limit]
     except OSError:
         return ""
+
+
+def frontmatter_value(text: str, key: str) -> str:
+    if not text.startswith("---"):
+        return ""
+    end = text.find("\n---", 3)
+    if end < 0:
+        return ""
+    frontmatter = text[3:end]
+    match = re.search(rf"^{re.escape(key)}:\s*(?:[\"']([^\"']+)[\"']|([^\n]+))", frontmatter, re.MULTILINE)
+    if not match:
+        return ""
+    value = (match.group(1) or match.group(2)).strip()
+    if value in {"|", ">"}:
+        lines = frontmatter[match.end() :].splitlines()
+        block = []
+        for line in lines:
+            if line and not line[0].isspace():
+                break
+            if line.strip():
+                block.append(line.strip())
+        return (" " if value == ">" else "\n").join(block)
+    return value
+
+
+def default_local_roots(project_root: Path) -> tuple[list[tuple[Path, str]], list[tuple[Path, str]]]:
+    codex_home = Path(os.environ.get("CODEX_HOME", str(Path.home() / ".codex"))).expanduser()
+    skill_roots = [
+        (codex_home / "skills", "installed-skill"),
+        (Path.home() / ".agents/skills", "installed-skill"),
+        (project_root / "skills", "project-skill"),
+    ]
+    agent_roots = [
+        (codex_home / "agents", "installed-agent"),
+        (Path.home() / ".agents/agents", "installed-agent"),
+        (project_root / "agents", "project-agent"),
+    ]
+    return dedupe_roots(skill_roots), dedupe_roots(agent_roots)
+
+
+def dedupe_roots(roots: Iterable[tuple[Path, str]]) -> list[tuple[Path, str]]:
+    seen: set[tuple[str, str]] = set()
+    result: list[tuple[Path, str]] = []
+    for path, source_kind in roots:
+        resolved = path.expanduser().resolve()
+        key = (str(resolved), source_kind)
+        if key not in seen:
+            seen.add(key)
+            result.append((resolved, source_kind))
+    return result
+
+
+def local_skill_files(root: Path) -> Iterable[tuple[Path, str, str, str]]:
+    if not root.is_dir():
+        return
+    for path in sorted(root.rglob("SKILL.md")):
+        if any(part in SKIP_DIRS for part in path.parts):
+            continue
+        text = safe_read(path, 24000)
+        name = frontmatter_value(text, "name") or path.parent.name
+        description = frontmatter_value(text, "description")
+        yield path, name, description, text
+
+
+def local_agent_files(root: Path) -> Iterable[tuple[Path, str, str, str]]:
+    if not root.is_dir():
+        return
+    for path in sorted(root.rglob("*.md")):
+        if path.name in LOCAL_EXCLUDED_NAMES or any(part in SKIP_DIRS for part in path.parts):
+            continue
+        text = safe_read(path, 24000)
+        name = frontmatter_value(text, "name") or path.stem
+        description = frontmatter_value(text, "description")
+        if name and (description or text.startswith("---")):
+            yield path, name, description, text
 
 
 def iter_project_files(root: Path) -> Iterable[Path]:
@@ -332,6 +442,117 @@ def slot_is_required(slot: Slot, task: str, scan: dict[str, Any], mode: str) -> 
     return False
 
 
+def local_candidate_score(name: str, text: str, slot: Slot, task: str, scan: dict[str, Any], source_kind: str) -> tuple[int, list[str]]:
+    lowered_name = name.lower()
+    lowered_text = text.lower() if source_kind == "project-expert-team" else lowered_name
+    query = f"{task} {' '.join(scan['stack'])} {' '.join(scan['affected_files'])}".lower()
+    local_keywords = LOCAL_NAME_KEYWORDS[slot.key] if source_kind != "project-expert-team" else slot.keywords
+    direct_terms = {
+        keyword
+        for keyword in local_keywords
+        if discover.contains_term(lowered_name, keyword.lower())
+        or (source_kind == "project-expert-team" and keyword.lower() in lowered_text)
+    }
+    if not direct_terms and name not in slot.preferred:
+        return 0, []
+    score = LOCAL_SOURCE_PRIORITY[source_kind]
+    if name in slot.preferred:
+        score += 80 - slot.preferred.index(name) * 5
+    score += len(direct_terms) * 18
+    score += sum(2 for keyword in slot.keywords if keyword.lower() in query)
+    if slot.key == "e2e-testing" and scan["signals"]["has_browser_tooling"]:
+        score += 12
+    if slot.key == "api-testing" and scan["signals"]["has_api"]:
+        score += 12
+    return score, sorted(direct_terms)
+
+
+def discover_local_candidates(
+    project_root: Path,
+    task: str,
+    scan: dict[str, Any],
+    skill_roots: list[tuple[Path, str]],
+    agent_roots: list[tuple[Path, str]],
+) -> tuple[dict[str, list[dict[str, Any]]], dict[str, Any]]:
+    candidates: dict[str, list[dict[str, Any]]] = {slot.key: [] for slot in SLOTS}
+    discovered = {"skills": 0, "agents": 0, "expert_teams": 0, "roots": []}
+
+    def add_local_item(
+        path: Path,
+        name: str,
+        description: str,
+        content: str,
+        source_kind: str,
+        team_id: str,
+        team_name: str,
+    ) -> None:
+        # Use frontmatter identity for qualification. Full bodies often mention
+        # unrelated concepts and would make a PRD or UI Skill look like an API tester.
+        searchable = f"{name}\n{description}"
+        for slot in SLOTS:
+            score, matched_terms = local_candidate_score(name, searchable, slot, task, scan, source_kind)
+            if not score:
+                continue
+            candidates[slot.key].append(
+                {
+                    "skill": name,
+                    "team_id": team_id,
+                    "team_name": team_name,
+                    "team_path": str(path.parent),
+                    "source": str(path),
+                    "source_kind": source_kind,
+                    "availability": "local-ready",
+                    "local_path": str(path),
+                    "score": score,
+                    "matched_terms": matched_terms,
+                    "verification": {
+                        "status": "local-ready",
+                        "path": str(path),
+                        "declared_name": frontmatter_value(content, "name") or name,
+                    },
+                }
+            )
+
+    for root, root_kind in skill_roots:
+        if root.is_dir():
+            discovered["roots"].append({"kind": root_kind, "path": str(root)})
+        for path, name, description, content in local_skill_files(root):
+            discovered["skills"] += 1
+            team_like = root_kind == "project-skill" and (
+                path.parent.name.endswith("-team") or "expert-team" in path.parent.name
+            )
+            source_kind = "project-expert-team" if team_like else root_kind
+            add_local_item(path, name, description, content, source_kind, path.parent.name, path.parent.name)
+
+    for root, root_kind in agent_roots:
+        if root.is_dir():
+            discovered["roots"].append({"kind": root_kind, "path": str(root)})
+        for path, name, description, content in local_agent_files(root):
+            discovered["agents"] += 1
+            add_local_item(path, name, description, content, root_kind, path.parent.name, path.parent.name)
+
+    for path in iter_project_files(project_root):
+        if path.name != "plugin.json":
+            continue
+        try:
+            data = json.loads(safe_read(path, 100000))
+        except json.JSONDecodeError:
+            continue
+        if data.get("expertType") != "team" and not data.get("teamInfo"):
+            continue
+        discovered["expert_teams"] += 1
+        name = data.get("name") or data.get("plugin") or path.parent.name
+        display_name = data.get("displayName")
+        if isinstance(display_name, dict):
+            display_name = " / ".join(str(value) for value in display_name.values())
+        team_name = str(display_name or name)
+        add_local_item(path, str(name), team_name, json.dumps(data, ensure_ascii=False), "project-expert-team", str(name), team_name)
+
+    for key in candidates:
+        candidates[key].sort(key=lambda item: (-item["score"], item["skill"], item["source"]))
+    return candidates, discovered
+
+
 def candidate_score(skill_name: str, team: Any, slot: Slot, task: str, scan: dict[str, Any]) -> int:
     lowered = skill_name.lower()
     query = f"{task} {' '.join(scan['stack'])} {' '.join(scan['affected_files'])}".lower()
@@ -377,6 +598,8 @@ def build_candidates(entries: list[Any], task: str, scan: dict[str, Any], local_
                         "team_name": team.display_name,
                         "team_path": team.path,
                         "source": source_by_name.get(child),
+                        "source_kind": "catalog-local" if local_mode else "remote-catalog",
+                        "availability": "catalog-local" if local_mode else "remote",
                         "score": score,
                         "matched_terms": list(team.matched_terms),
                     }
@@ -384,6 +607,19 @@ def build_candidates(entries: list[Any], task: str, scan: dict[str, Any], local_
     for key in candidates:
         candidates[key].sort(key=lambda item: (-item["score"], item["skill"]))
     return candidates
+
+
+def merge_candidates(
+    local_candidates: dict[str, list[dict[str, Any]]],
+    catalog_candidates: dict[str, list[dict[str, Any]]],
+) -> dict[str, list[dict[str, Any]]]:
+    merged: dict[str, list[dict[str, Any]]] = {}
+    for slot in SLOTS:
+        key = slot.key
+        # Local candidates are intentionally placed first. Their score still
+        # orders local options, while remote entries only fill local gaps.
+        merged[key] = local_candidates.get(key, []) + catalog_candidates.get(key, [])
+    return merged
 
 
 def verify_skill(source: str | None, expected_name: str, local_mode: bool, timeout: float, catalog_root: Path | None = None) -> dict[str, Any]:
@@ -409,6 +645,17 @@ def verify_skill(source: str | None, expected_name: str, local_mode: bool, timeo
     }
 
 
+def verify_candidate(
+    candidate: dict[str, Any], local_mode: bool, timeout: float, catalog_root: Path
+) -> dict[str, Any]:
+    if candidate.get("source_kind") in LOCAL_SOURCE_KINDS:
+        return candidate.get("verification") or {
+            "status": "local-ready",
+            "path": candidate.get("local_path") or candidate.get("source"),
+        }
+    return verify_skill(candidate.get("source"), candidate["skill"], local_mode, timeout, catalog_root)
+
+
 def choose_roster(
     candidates: dict[str, list[dict[str, Any]]], task: str, scan: dict[str, Any], mode: str, local_mode: bool, catalog_root: Path, timeout: float, max_members: int, verify: bool
 ) -> list[dict[str, Any]]:
@@ -422,19 +669,17 @@ def choose_roster(
         selected = dict(options[0])
         verification = {"status": "skipped"}
         if verify:
-            fallback_verification = verify_skill(
-                options[0].get("source"), options[0]["skill"], local_mode, timeout, catalog_root
-            )
+            fallback_verification = verify_candidate(options[0], local_mode, timeout, catalog_root)
             verification = fallback_verification
-            if fallback_verification["status"] != "verified":
+            if fallback_verification["status"] not in {"verified", "local-ready"}:
                 for option in options[1:]:
-                    candidate_verification = verify_skill(
-                        option.get("source"), option["skill"], local_mode, timeout, catalog_root
-                    )
-                    if candidate_verification["status"] == "verified":
+                    candidate_verification = verify_candidate(option, local_mode, timeout, catalog_root)
+                    if candidate_verification["status"] in {"verified", "local-ready"}:
                         selected = dict(option)
                         verification = candidate_verification
                         break
+        if verify and verification["status"] not in {"verified", "local-ready"}:
+            continue
         selected.update(
             {
                 "id": f"{slot.key}-specialist",
@@ -453,8 +698,10 @@ def choose_roster(
 
     if not chosen and candidates["unit-testing"]:
         selected = dict(candidates["unit-testing"][0])
-        selected.update({"id": "quality-specialist", "slot": "unit-testing", "role": {"en": "Quality specialist", "zh": "质量专家"}, "responsibility": {"en": "Produce an evidence-based quality assessment.", "zh": "产出基于证据的质量评估。"}, "selection_evidence": {"score": selected.pop("score"), "matched_terms": selected.pop("matched_terms"), "project_signals": []}, "verification": {"status": "skipped"}})
-        chosen.append(selected)
+        fallback_verification = verify_candidate(selected, local_mode, timeout, catalog_root) if verify else {"status": "skipped"}
+        if not verify or fallback_verification["status"] in {"verified", "local-ready"}:
+            selected.update({"id": "quality-specialist", "slot": "unit-testing", "role": {"en": "Quality specialist", "zh": "质量专家"}, "responsibility": {"en": "Produce an evidence-based quality assessment.", "zh": "产出基于证据的质量评估。"}, "selection_evidence": {"score": selected.pop("score"), "matched_terms": selected.pop("matched_terms"), "project_signals": []}, "verification": fallback_verification})
+            chosen.append(selected)
     return chosen[:max_members]
 
 
@@ -517,6 +764,22 @@ def compose(args: argparse.Namespace) -> dict[str, Any]:
     mode = normalize_mode(args.mode)
     scan = scan_project(root, args.task)
     catalog_root = Path(args.catalog_root).expanduser().resolve()
+    default_skill_roots, default_agent_roots = default_local_roots(root)
+    skill_roots = default_skill_roots + [
+        (Path(value).expanduser(), "installed-skill") for value in (args.skill_roots or [])
+    ]
+    agent_roots = default_agent_roots + [
+        (Path(value).expanduser(), "installed-agent") for value in (args.agent_roots or [])
+    ]
+    if args.no_local:
+        skill_roots = []
+        agent_roots = []
+    else:
+        skill_roots = dedupe_roots(skill_roots)
+        agent_roots = dedupe_roots(agent_roots)
+    local_candidates, local_discovery = discover_local_candidates(
+        root, args.task, scan, skill_roots, agent_roots
+    )
     if args.index:
         index_path = discover.resolve_index(catalog_root, args.index)
         entries = discover.rank(discover.read_local_index(catalog_root, index_path), build_query(args.task, scan))
@@ -527,17 +790,18 @@ def compose(args: argparse.Namespace) -> dict[str, Any]:
         entries = discover.rank(discover.read_remote_index(index_source, args.timeout), build_query(args.task, scan))
         local_mode = False
     candidate_entries = entries[: args.candidate_limit]
-    candidates = build_candidates(candidate_entries, args.task, scan, local_mode)
+    catalog_candidates = build_candidates(candidate_entries, args.task, scan, local_mode)
     required_slots = {
         slot.key for slot in SLOTS if slot_is_required(slot, args.task, scan, mode)
     }
-    if any(not candidates[key] for key in required_slots):
+    if any(not catalog_candidates[key] for key in required_slots):
         # Keep normal routing focused, but search the complete index when a
         # required capability was absent from the top-ranked teams.
         all_candidates = build_candidates(entries, args.task, scan, local_mode)
         for key in required_slots:
-            if not candidates[key]:
-                candidates[key] = all_candidates[key]
+            if not catalog_candidates[key]:
+                catalog_candidates[key] = all_candidates[key]
+    candidates = merge_candidates(local_candidates, catalog_candidates)
     roster = choose_roster(candidates, args.task, scan, mode, local_mode, catalog_root, args.timeout, args.max_members, not args.skip_verify)
     for member in roster:
         member["prompt"] = prompt_for_member(member, str(root), args.task, mode, scan)
@@ -548,10 +812,25 @@ def compose(args: argparse.Namespace) -> dict[str, Any]:
     for slot in SLOTS:
         if slot_is_required(slot, args.task, scan, mode) and slot.key not in {member["slot"] for member in roster}:
             rejected.append({"slot": slot.key, "reason": "no indexed candidate or max-members limit"})
+    remote_selected = [member["skill"] for member in roster if member.get("source_kind") == "remote-catalog"]
+    local_selected = [member["skill"] for member in roster if member.get("source_kind") in LOCAL_SOURCE_KINDS]
+    prerequisites = []
+    if remote_selected:
+        prerequisites.append("remote access to selected SKILL.md sources")
+    if local_selected:
+        prerequisites.append("local Skill or Agent files are readable")
+    prerequisites.append("project-specific credentials, services, test data, and browser runner when required")
     return {
         "schema": "expert-team-composition.v1",
         "project": {"root": str(root), "task": args.task, "mode": mode},
-        "catalog": {"index": index_source, "local": local_mode, "selection_policy": "rank index, score capability slots, verify selected SKILL.md only"},
+        "catalog": {
+            "index": index_source,
+            "local": local_mode,
+            "selection_policy": "project expert team > project/local Skill or Agent > verified catalog capability",
+            "local_discovery": local_discovery,
+            "local_selected": local_selected,
+            "remote_selected": remote_selected,
+        },
         "scan": scan,
         "query": build_query(args.task, scan),
         "roster": roster,
@@ -560,7 +839,7 @@ def compose(args: argparse.Namespace) -> dict[str, Any]:
         "runtime": {"formal_team": "Use TeamCreate once, then spawn Agent members and collect SendMessage reports by phase when those primitives exist.", "codex_fallback": "Use spawn_agent, send_input, wait_agent, and resume_agent equivalents when available; otherwise execute the same prompts as one coordinator and label the result as coordinated capability execution.", "installation": "never install or copy selected skills into the target project", "avatars": "omitted by design"},
         "selected_skills": sorted(selected_skills),
         "rejected_or_missing_slots": rejected,
-        "prerequisites": ["remote access to selected SKILL.md sources" if not local_mode else "local selected SKILL.md files", "project-specific credentials, services, test data, and browser runner when required"],
+        "prerequisites": prerequisites,
     }
 
 
@@ -576,11 +855,11 @@ def render_markdown(result: dict[str, Any]) -> str:
         "",
         "## Roster / 成员",
         "",
-        "| ID | Role / 角色 | Skill | Source / 来源 | Verification / 校验 |",
-        "|---|---|---|---|---|",
+        "| ID | Role / 角色 | Skill | Source kind / 来源 | Source / 地址 | Verification / 校验 |",
+        "|---|---|---|---|---|---|",
     ]
     for member in result["roster"]:
-        lines.append(f"| `{member['id']}` | {member['role']['en']} / {member['role']['zh']} | `{member['skill']}` | `{member['source']}` | `{member['verification']['status']}` |")
+        lines.append(f"| `{member['id']}` | {member['role']['en']} / {member['role']['zh']} | `{member['skill']}` | `{member.get('source_kind', 'unknown')}` | `{member['source']}` | `{member['verification']['status']}` |")
     lines.extend(["", "## Phases / 阶段", ""])
     for phase in result["phases"]:
         lines.append(f"- **{phase['id']}** {phase['name']['en']} / {phase['name']['zh']}: `{', '.join(phase['members'])}`; depends on `{', '.join(phase['depends_on']) or 'none'}`; gate: {phase['gate']}")

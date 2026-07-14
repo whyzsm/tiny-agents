@@ -19,6 +19,8 @@ For implementation, test, debugging, review, or delivery requests, run `scripts/
 
 The resulting JSON is authoritative for the initial roster and phase DAG. Read `references/runtime-orchestration.md` after composition to dispatch members with the primitives available in the current runtime. 生成的 JSON 是初始成员清单和阶段 DAG 的权威来源；编排后读取 `references/runtime-orchestration.md`，使用当前运行时可用的原语调度成员。
 
+Composition order is local-first: qualified project teams, project Skills or Agents, installed local Skills or Agents, then verified catalog candidates. 编排顺序为本地优先：目标仓库专家团、仓库 Skill/Agent、本机已安装 Skill/Agent，最后才是已校验目录候选。
+
 ## 步骤 1：任务契约 / Step 1: Task Contract
 
 Clarify the goal, deliverable, target project, affected scope, acceptance criteria, timeline, permissions, environment, test data, and prohibited actions. 明确目标、交付物、目标项目、影响范围、验收标准、时间约束、权限、环境、测试数据和不可执行事项。

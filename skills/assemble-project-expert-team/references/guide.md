@@ -34,6 +34,14 @@ python3 <assemble-project-expert-team-dir>/scripts/compose_team.py \
 
 The generated JSON is the roster and dispatch contract. It includes project signals, selected remote sources, member prompts, phase dependencies, verification status, prerequisites, and rejected slots. 生成的 JSON 就是成员清单和调度契约，包含项目信号、远端来源、成员 Prompt、阶段依赖、校验状态、前置条件和被排除槽位。
 
+### Local-first source selection / 本地优先来源选择
+
+Before reading the remote catalog, inspect qualified expert-team packages, Skills, and Agents already present in the target repository. Then inspect installed local roots such as `$CODEX_HOME/skills`, `~/.agents/skills`, and their Agent roots. 在读取远端目录前，先检查目标仓库已有且符合条件的专家团包、Skill 和 Agent；再检查 `$CODEX_HOME/skills`、`~/.agents/skills` 及其 Agent 目录。
+
+Use the remote catalog only to fill capability gaps. A remote router is directly usable only after its selected child sources are verified; an index row with 404 child sources must be rejected and recorded as a gap. 远端目录只用于填补能力缺口；远端入口只有在选中子源校验通过后才能直接使用，子源返回 404 的索引行必须排除并记录为缺口。
+
+The composer exposes `source_kind` and `local_discovery` in its JSON output so the lead can explain why each member was selected. 编排器会在 JSON 中输出 `source_kind` 和 `local_discovery`，主理人可以解释每个成员为何被选中。
+
 ### Blueprint / 蓝图
 
 Use only when the user explicitly asks for planning only, a dry-run, simulation, or no execution. 用户明确要求“只规划”“dry-run”“模拟”或“不执行”时使用。

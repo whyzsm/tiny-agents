@@ -39,6 +39,16 @@ python3 <assemble-project-expert-team-dir>/scripts/compose_team.py \
 
 The JSON is the dispatch contract. Each roster item contains an exact Skill source, one owned output, selection evidence, verification status, and a ready-to-send member prompt. JSON 是调度契约；每个成员包含准确 Skill 来源、一个负责产出、选择证据、校验状态和可直接发送的成员 Prompt。
 
+## 本地优先 / Local-First Routing
+
+Select sources in this order: qualified expert teams already in the target repository; target-repository Skills or Agents; locally installed Skills and Agents from `$CODEX_HOME/skills`, `~/.agents/skills`, and their Agent roots; then catalog entries. 按以下顺序选择来源：目标仓库中已符合条件的专家团；目标仓库已有 Skill 或 Agent；`$CODEX_HOME/skills`、`~/.agents/skills` 及其 Agent 目录中的本机能力；最后才使用目录中的远端能力。
+
+The composer marks every member with `project-expert-team`, `project-skill`, `project-agent`, `installed-skill`, `installed-agent`, `catalog-local`, or `remote-catalog`. 编排器会为每个成员标记 `source_kind`，明确它来自仓库专家团、仓库 Skill/Agent、本机安装能力、本地目录还是远端目录。
+
+Only use a remote expert-team entry directly when its router and selected child `SKILL.md` files are reachable and have matching frontmatter names. A catalog row with broken child sources is a candidate gap, not a usable team. 只有远端专家团入口及选中的子 `SKILL.md` 均可访问且 frontmatter 名称匹配时，才可直接使用；子源损坏的目录行只是候选缺口，不是可用专家团。
+
+Use `--skill-root` or `--agent-root` to add an explicit local installation path, and `--no-local` only for testing remote-only routing. 使用 `--skill-root` 或 `--agent-root` 添加明确的本机路径；只有测试纯远端路由时才使用 `--no-local`。
+
 Use `--mode blueprint` only when the user explicitly asks for planning only, simulation, or no execution. 用户明确要求“只规划”“模拟”或“不执行”时，才使用 `--mode blueprint`。
 
 Do not generate avatar assets for dynamic teams or draft packages. 动态专家团和草稿团队包均不生成头像资源。

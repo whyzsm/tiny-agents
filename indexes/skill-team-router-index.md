@@ -18,6 +18,8 @@
 - **运行时协议 / Runtime protocol**：支持 `TeamCreate`、`Agent`、`SendMessage`；Codex 环境映射到可用的 `spawn_agent`、`send_input`、`wait_agent` 和 `resume_agent` / use formal team primitives or their Codex-compatible equivalents when available
 - **常见编排能力 / Common capabilities**：需求澄清、测试设计、E2E 测试、API 契约验证、架构、实现、审查和交付 / requirements, test design, E2E, API contracts, architecture, implementation, review, and delivery
 - **资源边界 / Asset boundary**：不安装 Skill、不把能力复制到目标项目、不生成头像资源 / never install or copy Skills into the target project, and do not generate avatar assets
+- **来源优先级 / Source priority**：目标仓库专家团 > 目标仓库 Skill/Agent > 本机已安装 Skill/Agent > 已校验的远端目录能力 / project expert team > project Skill/Agent > installed local Skill/Agent > verified remote catalog capability
+- **远端可用性 / Remote usability**：远端入口只有在 router 和选中子 `SKILL.md` 均可访问、名称匹配时才能直接使用 / a remote entry is usable only when its router and selected child `SKILL.md` files are reachable with matching names
 
 ## 使用边界
 

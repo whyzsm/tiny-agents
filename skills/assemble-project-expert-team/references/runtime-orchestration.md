@@ -6,9 +6,10 @@ This reference turns the JSON from `compose_team.py` into an actual coordinated 
 
 1. Resolve the assembler Skill directory from the installed Skill file, not from the target project's working directory. 从已安装的 Skill 文件解析编排器目录，不要从目标项目工作目录解析。
 2. Run `compose_team.py` with the target root, complete task, mode, and remote catalog URL. 使用目标根目录、完整任务、模式和远端目录 URL 运行 `compose_team.py`。
-3. Treat `roster`, `phases`, `handoff`, `prerequisites`, and `runtime` as the dispatch contract. 将 `roster`、`phases`、`handoff`、`prerequisites` 和 `runtime` 视为调度契约。
-4. Read the selected router and child `SKILL.md` files completely before sending a member prompt. 发送成员 Prompt 前，完整读取选中的入口和子 `SKILL.md`。
-5. Remove a member only when its output has no downstream consumer; record the exclusion in the final report. 只有当成员产出没有下游消费者时才删除成员，并在最终报告中记录排除。
+3. Accept local qualified teams, Skills, and Agents before catalog candidates. Treat `source_kind` as part of the dispatch contract. 先接受本地符合条件的专家团、Skill 和 Agent；将 `source_kind` 作为调度契约的一部分。
+4. Treat `roster`, `phases`, `handoff`, `prerequisites`, and `runtime` as the dispatch contract. 将 `roster`、`phases`、`handoff`、`prerequisites` 和 `runtime` 视为调度契约。
+5. Read the selected router and child `SKILL.md` files completely before sending a member prompt. 发送成员 Prompt 前，完整读取选中的入口和子 `SKILL.md`。
+6. Remove a member only when its output has no downstream consumer; record the exclusion in the final report. 只有当成员产出没有下游消费者时才删除成员，并在最终报告中记录排除。
 
 ## 2. Formal Team Runtime / 正式团队运行时
 
@@ -71,5 +72,7 @@ An execution member may edit only the files required by its assignment and must 
 The composer is read-only. Package mode may write requested text manifests or Agent prompts, but it must never write to the target project unless the user explicitly requests implementation. 编排器是只读的；团队包模式可以写用户要求的文本 manifest 或 Agent Prompt，但除非用户明确要求实现，否则不得写入目标项目。
 
 Remote Skills remain remote references. A source marked `unverified` is a prerequisite to check, not evidence that the capability was executed. 远端 Skill 保持为远程引用；标记为 `unverified` 的源只是待核对前置条件，不是能力已执行的证据。
+
+An indexed expert-team router is directly usable only when its router and selected child sources both verify successfully. A broken child source must be reported as a catalog gap and replaced by a local capability or another verified remote candidate. 远端索引中的专家团入口只有在入口和选中的子源均校验成功时才能直接使用；子源损坏时必须报告为目录缺口，并替换为本地能力或其他已校验的远端候选。
 
 Avatar resources are omitted by design. 头像资源按设计省略。

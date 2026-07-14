@@ -7,6 +7,15 @@
   "catalog": "expert-team-file-list.md",
   "selectionMode": "dynamic",
   "defaultMode": "auto-execute",
+  "sourcePriority": [
+    "project-expert-team",
+    "project-skill",
+    "project-agent",
+    "installed-skill",
+    "installed-agent",
+    "verified-catalog"
+  ],
+  "localDiscovery": true,
   "composer": "scripts/compose_team.py",
   "runtimeReference": "references/runtime-orchestration.md",
   "avatarPolicy": "omitted",

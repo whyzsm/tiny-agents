@@ -1,0 +1,15 @@
+{
+  "type": "dynamic-expert-team-router",
+  "slug": "assemble-project-expert-team",
+  "displayName": "项目专家团编排器",
+  "summary": "读取远端专家团索引，按项目上下文和任务要求动态选择最小充分的专家团。",
+  "source": "https://github.com/whyzsm/tiny-agents/tree/main/indexes",
+  "catalog": "expert-team-file-list.md",
+  "selectionMode": "dynamic",
+  "skillSlugs": [
+    "requirements-analysis",
+    "test-patterns",
+    "e2e-testing-patterns",
+    "qa-api-tester"
+  ]
+}

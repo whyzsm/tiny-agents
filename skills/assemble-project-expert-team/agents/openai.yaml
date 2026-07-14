@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目专家团编排器"
+  short_description: "按项目上下文与任务要求动态选择仓库技能并编排专家团队工作流"
+  default_prompt: "Use $assemble-project-expert-team to inspect this repository and assemble the smallest expert team for requirement clarification, implementation, and testing."

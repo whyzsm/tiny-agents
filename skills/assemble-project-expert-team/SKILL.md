@@ -16,11 +16,32 @@ It reads the remote expert-team catalog, inspects the target repository, and com
 ## 工作流 / Workflow
 
 1. Read `references/guide.md` to separate the target project from the remote capability catalog and classify the delivery mode. 读取 `references/guide.md`，区分目标项目与远端能力目录，并判断交付模式。
-2. Inspect repository instructions, manifests, affected code, tests, CI, and runtime constraints. 检查仓库规则、项目清单、受影响代码、测试、CI 和运行时约束。
-3. Run `scripts/discover_skills.py` from this skill directory to rank expert-team entries in the remote catalog. 从本 Skill 目录运行 `scripts/discover_skills.py`，对远端目录中的专家团入口排序。
-4. Read shortlisted router and child `SKILL.md` files before selecting capabilities. 选择能力前，完整读取入选的专家团入口和子 `SKILL.md`。
-5. Follow `references/workflow.md` to create a blueprint, coordinate execution, or generate a reusable team package. 按 `references/workflow.md` 生成蓝图、协调执行或生成可复用团队包。
+2. Run `scripts/compose_team.py` from this skill directory to scan the target project and generate the roster, member prompts, phase DAG, and prerequisites. 从本 Skill 目录运行 `scripts/compose_team.py`，扫描目标项目并生成成员清单、成员 Prompt、阶段 DAG 和前置条件。
+3. Read shortlisted router and child `SKILL.md` files before dispatching members; read only selected sources and never install them into the target project. 调度成员前完整读取入选入口和子 `SKILL.md`；只读取选中源，不把 Skill 安装到目标项目。
+4. Follow `references/runtime-orchestration.md` for automatic team creation, phase dispatch, lead handoff, and the Codex fallback. 按 `references/runtime-orchestration.md` 执行自动建团、阶段调度、主理人中转和 Codex 兼容回退。
+5. Follow `references/workflow.md` to coordinate execution or generate a reusable team package. 按 `references/workflow.md` 协调执行或生成可复用团队包。
 6. Return the roster, phase dependencies, handoff contracts, exclusions, verification evidence, and remaining gaps. 返回成员清单、阶段依赖、交接契约、排除项、验证证据和剩余缺口。
+
+## 自动组团 / Automatic Team Assembly
+
+The default for requests to build, test, fix, review, or deliver is `auto-execute`: scan the project, compose the smallest sufficient team, dispatch independent members by phase, and integrate their reports. 用户要求实现、测试、修复、审查或交付时，默认使用 `auto-execute`：扫描项目、自动组建最小充分专家团、按阶段调度独立成员并集成报告。
+
+Run the deterministic composer before making a manual roster:
+先运行确定性编排脚本，再手工决定成员：
+
+```bash
+python3 <assemble-project-expert-team-dir>/scripts/compose_team.py \
+  --project-root <target-project> \
+  --task "<user request, risks, and deliverable>" \
+  --mode auto-execute \
+  --format json
+```
+
+The JSON is the dispatch contract. Each roster item contains an exact Skill source, one owned output, selection evidence, verification status, and a ready-to-send member prompt. JSON 是调度契约；每个成员包含准确 Skill 来源、一个负责产出、选择证据、校验状态和可直接发送的成员 Prompt。
+
+Use `--mode blueprint` only when the user explicitly asks for planning only, simulation, or no execution. 用户明确要求“只规划”“模拟”或“不执行”时，才使用 `--mode blueprint`。
+
+Do not generate avatar assets for dynamic teams or draft packages. 动态专家团和草稿团队包均不生成头像资源。
 
 ## 能力来源 / Source Capability Modules
 

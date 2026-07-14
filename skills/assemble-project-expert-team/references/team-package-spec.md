@@ -56,11 +56,9 @@ Use this minimum layout. 使用以下最小布局：
 ├── agents/
 │   ├── <team-name>-team-lead.md
 │   └── <member-id>.md
-└── avatars/
-    ├── team.png
-    ├── <team-name>-team-lead.png
-    └── <member-id>.png
 ```
+
+Avatar files are optional and omitted by default. If `plugin.json` needs an `avatar` field, set it to `null` or an empty value; do not create an `avatars/` directory unless publication-ready visuals are explicitly requested. 头像文件是可选的，默认省略；如果 `plugin.json` 必须保留 `avatar` 字段，将其设为 `null` 或空值；除非用户明确要求发布级视觉物料，否则不要创建 `avatars/` 目录。
 
 `settings.json` must contain the following. `settings.json` 必须包含：
 
@@ -155,11 +153,11 @@ Avoid random names, function words, repeated syllables, and Agent IDs as English
 
 Give the lead a business-specific profession instead of `Team Lead` or `主理人`. 主理人的职业应体现业务调度定位，不要使用 `Team Lead` 或 `主理人`。
 
-Generate one team avatar, one lead avatar, and one avatar per member only when publication-ready visuals are requested. 只有用户要求发布级视觉物料时，才生成团队头像、主理人头像和每个成员头像。
+Do not generate team, lead, or member avatars unless publication-ready visuals are explicitly requested. 本任务默认不生成团队、主理人或成员头像；只有用户明确要求发布级视觉物料时才生成。
 
 Derive each prompt from the corresponding agent document, keep one professional illustration style, and do not use generic role templates. 每个 prompt 必须从对应 Agent 文档提取，保持统一的专业插画风格，不要使用通用角色模板。
 
-Validate avatar files as square PNG/JPG assets, preferably 512x512 and no larger than 500 KB. 头像应校验为正方形 PNG/JPG，推荐 512x512，且不超过 500 KB。
+If avatar files are present because the user requested them, validate them as square PNG/JPG assets, preferably 512x512 and no larger than 500 KB. 如果用户明确要求头像并且文件存在，应校验其为正方形 PNG/JPG，推荐 512x512，且不超过 500 KB。
 
 If visuals cannot be generated, report the package as incomplete; do not create placeholders or claim publication readiness. 如果无法生成视觉资源，应报告团队包不完整，不要创建占位文件或声称已达到发布标准。
 

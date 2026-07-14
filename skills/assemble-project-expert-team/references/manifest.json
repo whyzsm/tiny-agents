@@ -6,6 +6,10 @@
   "source": "https://github.com/whyzsm/tiny-agents/tree/main/indexes",
   "catalog": "expert-team-file-list.md",
   "selectionMode": "dynamic",
+  "defaultMode": "auto-execute",
+  "composer": "scripts/compose_team.py",
+  "runtimeReference": "references/runtime-orchestration.md",
+  "avatarPolicy": "omitted",
   "skillSlugs": [
     "requirements-analysis",
     "test-patterns",

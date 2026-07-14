@@ -17,9 +17,26 @@ Do not scan or install a complete external skill collection merely because the t
 
 ## 模式 / Modes
 
+### Auto-Execute / 自动执行
+
+Use this mode by default when the user asks to implement, test, fix, review, or deliver. It scans the project, composes a roster, dispatches members by the phase DAG, and integrates the result. 用户要求实现、测试、修复、审查或交付时默认使用此模式；它扫描项目、生成成员清单、按阶段 DAG 调度成员并集成结果。
+
+Run the composer from the installed Skill directory:
+从已安装的 Skill 目录运行编排脚本：
+
+```bash
+python3 <assemble-project-expert-team-dir>/scripts/compose_team.py \
+  --project-root <target-project> \
+  --task "<task, risks, and deliverable>" \
+  --mode auto-execute \
+  --format json
+```
+
+The generated JSON is the roster and dispatch contract. It includes project signals, selected remote sources, member prompts, phase dependencies, verification status, prerequisites, and rejected slots. 生成的 JSON 就是成员清单和调度契约，包含项目信号、远端来源、成员 Prompt、阶段依赖、校验状态、前置条件和被排除槽位。
+
 ### Blueprint / 蓝图
 
-Use when the user asks to assemble a team, design collaboration, or decide who should participate. 用户要求“组专家团”“设计协作方案”或“判断谁参与”时使用。
+Use only when the user explicitly asks for planning only, a dry-run, simulation, or no execution. 用户明确要求“只规划”“dry-run”“模拟”或“不执行”时使用。
 
 Return only a team contract; do not modify the target project, install skills, or perform destructive actions. 只返回团队契约；不要修改目标项目、安装 Skill 或执行破坏性操作。
 
@@ -55,6 +72,8 @@ It returns expert-team entries, declared child skills, and raw source addresses.
 
 The remote flow works without a local `tiny-agents` checkout. 远端流程不要求本地存在 `tiny-agents`。
 
+`compose_team.py` reads the index first and verifies only the selected child `SKILL.md` sources. It does not bulk-download or install the catalog. `compose_team.py` 先读取索引，只校验被选中的子 `SKILL.md`，不会批量下载或安装目录内容。
+
 Use a local offline catalog only when the user explicitly requests it or provides a local copy. 只有用户明确要求离线或提供本地副本时，才使用本地目录。
 
 ```bash
@@ -79,7 +98,7 @@ Ask only questions that can change team composition, safety, or execution feasib
 
 ## 候选读取与选择 / Candidate Reading And Selection
 
-1. Select relevant expert-team entries from the index; do not infer capability from names alone. 从索引选择相关专家团入口，不要只根据名称推断能力。
+1. Let `compose_team.py` rank the index and score capability slots from project signals; do not infer capability from names alone. 让 `compose_team.py` 根据项目信号对索引和能力槽位评分，不要只根据名称推断能力。
 2. Read each shortlisted router `SKILL.md` completely. 完整读取每个入选入口的 `SKILL.md`。
 3. Read only the child skill `SKILL.md` files being compared; verify complete HTTP content and matching frontmatter `name`. 只读取正在比较的子 Skill `SKILL.md`，确认 HTTP 内容完整且 frontmatter 的 `name` 匹配。
 4. Prefer narrow capabilities with real paths, usable dependencies, and downstream-consumable outputs. 优先选择路径真实、依赖可用且输出有下游消费者的窄能力。
@@ -91,3 +110,5 @@ Ask only questions that can change team composition, safety, or execution feasib
 Record missing runners, credentials, test data, or service URLs as execution prerequisites. 将缺少的 runner、凭据、测试数据或服务地址记录为执行前置条件。
 
 For complex work, read `references/selection-model.md`, score candidates, and explain rejected candidates in the final report. 复杂任务读取 `references/selection-model.md`，对候选评分，并在最终报告中解释淘汰项。
+
+Dynamic teams and draft packages omit avatar assets by design. 动态专家团和草稿团队包按设计不包含头像资源。

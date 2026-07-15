@@ -37,13 +37,70 @@
 - 写引用，不把长内容塞进主文件 / move long material into references.
 - 对齐 Skill 和 Agent 的命名与职责 / keep the Skill and Agent aligned.
 
+## 可复用公式 / Reusable Formula
+
+Use this formula when teaching the user how a Skill is written:
+
+```text
+Skill = Trigger + Boundary + Workflow + Decision Rules + References + Output Contract + Validation
+```
+
+中文理解：
+
+```text
+一个好 Skill =
+什么时候触发
++ 能做什么/不能做什么
++ 执行步骤
++ 判断规则
++ 参考资料分层
++ 产出格式
++ 验证方式
+```
+
+English version:
+
+```text
+A strong Skill =
+when to invoke
++ what it can and cannot do
++ execution workflow
++ decision rules
++ layered references
++ output contract
++ validation method
+```
+
+### 公式拆解 / Formula Breakdown
+
+| Part | 中文写法 | English Writing Rule |
+|---|---|---|
+| Trigger | 写用户会真实说出口的触发请求。 | Write real user requests that should invoke the Skill. |
+| Boundary | 写清能做什么、不能做什么、哪些动作需要授权。 | Define what it can do, cannot do, and which actions need permission. |
+| Workflow | 用编号步骤写发现、执行、验证和交付。 | Use numbered steps for inspect, execute, validate, and deliver. |
+| Decision Rules | 把分支判断写成 if/when 规则或表格。 | Express branching as if/when rules or decision tables. |
+| References | 把长知识放进一层 `references/`，并说明何时读取。 | Put long knowledge into one-level `references/` files and state when to read them. |
+| Output Contract | 固定最终产物的结构、字段和必要证据。 | Fix the structure, fields, and evidence expected in the final output. |
+| Validation | 写出可观察的检查命令、测试、审查标准或安全扫描。 | Provide observable checks, tests, review criteria, or safety scans. |
+
+### 一句话原则 / One-Sentence Principle
+
+```text
+不要写“我是一个专家”，要写“遇到什么问题时，按什么步骤，读取哪些资料，产出什么结果，并用什么标准验证”。
+```
+
+```text
+Do not write "I am an expert." Write "When this problem appears, follow these steps, read these references, produce this output, and validate it by these standards."
+```
+
 ## 可复用回答模板 / Reusable Answer Template
 
 1. 它是做什么的 / What it does.
 2. 它是怎么写的 / How it is written.
 3. 哪些地方写得好 / What is already strong.
 4. 哪些地方可以改 / What to improve.
-5. 一个可复用骨架 / A reusable skeleton.
+5. 可复用公式 / A reusable formula.
+6. 一个可复用骨架 / A reusable skeleton.
 
 ## 常见错误 / Common Mistakes
 
@@ -59,34 +116,68 @@
 2. 结构拆解 / Structure Breakdown
 3. Skill 写作建议 / Skill Writing Advice
 4. Agent 写作建议 / Agent Writing Advice
-5. 可直接复用模板 / Reusable Template
+5. 可复用公式 / Reusable Formula
+6. 可直接复用模板 / Reusable Template
 
-## 可复用骨架 / Reusable Skeleton
+## 通用 SKILL.md 格式 / Reusable SKILL.md Format
 
 ### Skill / SKILL.md
 
 ```markdown
 ---
 name: example-skill
-description: "Do X. Use when ..."
+description: "Do X. Use when the user needs ..., asks for ..., or provides ..., especially when ..."
 ---
 
 # Title
 
-## Overview
-...
+## Purpose
+Explain what capability this Skill provides and what outcome it should produce.
+
+## When to Use
+- Use when ...
+- Use when ...
+- Do not use when ...
 
 ## Triggers
-- "..."
+- "Natural-language request example"
+- "Another realistic user request"
 
 ## Workflow
+1. Identify the user's goal and input.
+2. Read the required reference file.
+3. Choose the right path based on decision rules.
+4. Produce the output in the required format.
+5. Validate the result before delivery.
+
+## Decision Rules
+- If the task is simple, use ...
+- If the task is complex, read ...
+- If implementation is requested, ...
+- If review is requested, ...
+
+## References
+- `references/guide.md`: main routing guide
+- `references/checklist.md`: validation checklist
+- `references/patterns.md`: reusable patterns
+
+## Output Contract
+When answering, include:
 1. ...
+2. ...
+3. ...
 
 ## Guardrails
 - ...
 
 ## Validation
 - ...
+```
+
+## Agent Manifest 公式 / Agent Formula
+
+```text
+Agent = Display Identity + Short Capability + Default Invocation + Policy
 ```
 
 ### Agent manifest / agents/openai.yaml
@@ -98,4 +189,31 @@ interface:
   default_prompt: "Use $example-skill to ..."
 policy:
   allow_implicit_invocation: true
+```
+
+## 套公式示例 / Formula Mapping Example
+
+When analyzing a target Skill, map visible files into this shape:
+
+```text
+Trigger:
+What user requests or frontmatter description activate the Skill?
+
+Boundary:
+What does the Skill explicitly allow, forbid, or require permission for?
+
+Workflow:
+What ordered steps does it require?
+
+Decision Rules:
+What if/when branches, matrices, checklists, or routing rules does it use?
+
+References:
+Which reference files are loaded, and under what conditions?
+
+Output Contract:
+What final structure or artifacts must the Skill produce?
+
+Validation:
+How does it check correctness, safety, or completeness?
 ```

@@ -1,6 +1,6 @@
 ---
 name: skill-breakdown-workbench
-description: "Analyze Codex Skills and agent manifests. Use when the user wants to拆解 a Skill, explain how a Skill or agent is written, or learn how to write one with bilingual Chinese/English guidance, especially when the target is an existing SKILL.md or agents/openai.yaml."
+description: "Analyze Codex Skills and agent manifests. Use when the user wants to拆解 a Skill, explain how a Skill or agent is written, or learn how to write one with bilingual Chinese/English guidance, reusable Skill formulas, and templates, especially when the target is an existing SKILL.md or agents/openai.yaml."
 ---
 
 # Skill 拆解工作台
@@ -14,6 +14,7 @@ This skill turns a target Skill or agent manifest into a bilingual teardown and 
 Read `references/guide.md` when the user asks for:
 
 - a full Skill-vs-agent comparison
+- reusable Skill formulas or authoring formats
 - a reusable writing template
 - a rewrite or improvement plan
 - a stricter checklist for authoring or reviewing a package
@@ -34,11 +35,15 @@ Read `references/guide.md` when the user asks for:
    - 结构拆解 / Structure Breakdown
    - Skill 写作法 / Skill Writing
    - Agent 写作法 / Agent Writing
+   - 可复用公式 / Reusable Formula
    - 可复用模板 / Reusable Template
-4. Turn the analysis into concrete lessons: triggers, boundaries, references, workflow, and validation.
-5. If the user wants a rewrite, keep the original capability and boundary, then produce a draft or patch instead of a generic summary.
-6. If the task is only review or explanation, do not install, publish, commit, or push anything.
-7. If the task edits files, verify that every claim and every recommendation maps back to the visible text.
+4. Turn the analysis into concrete lessons: triggers, boundaries, workflow, decision rules, references, output contract, and validation.
+5. When teaching how to write a Skill, include the reusable formula:
+   `Skill = Trigger + Boundary + Workflow + Decision Rules + References + Output Contract + Validation`.
+6. When useful, map the target artifact back into the formula so the user can see how each part is represented in visible files.
+7. If the user wants a rewrite, keep the original capability and boundary, then produce a draft or patch instead of a generic summary.
+8. If the task is only review or explanation, do not install, publish, commit, or push anything.
+9. If the task edits files, verify that every claim and every recommendation maps back to the visible text.
 
 ## Guardrails
 

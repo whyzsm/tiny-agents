@@ -1,6 +1,6 @@
 interface:
   display_name: "Skill 拆解与写作教练"
   short_description: "拆解 Skill/Agent 写法并给出中英双语建议"
-  default_prompt: "Use $skill-breakdown-workbench to analyze a Codex Skill or agent manifest and produce a bilingual Chinese/English breakdown plus practical guidance for writing better Skills and Agents."
+  default_prompt: "Use $skill-breakdown-workbench to analyze a Codex Skill or agent manifest, write the bilingual Chinese/English breakdown to a Markdown file, and provide practical guidance for writing better Skills and Agents."
 policy:
   allow_implicit_invocation: true

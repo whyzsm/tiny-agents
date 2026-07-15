@@ -102,6 +102,40 @@ Do not write "I am an expert." Write "When this problem appears, follow these st
 5. 可复用公式 / A reusable formula.
 6. 一个可复用骨架 / A reusable skeleton.
 
+## Markdown 文件输出契约 / Markdown Artifact Contract
+
+Every teardown, writing lesson, formula explanation, or rewrite proposal must be written to a Markdown file before the final response. 每次 Skill 拆解、写作教学、公式说明或改进方案，都必须先写入 Markdown 文件，再发送最终回复。
+
+### 默认文件 / Default File
+
+- If the user provides an output path, use that path only when it ends with `.md`. 用户提供输出路径时，仅在路径以 `.md` 结尾时使用。
+- Otherwise create `<target-name>-skill-breakdown.md` in the current workspace. 未提供路径时，在当前工作区生成 `<target-name>-skill-breakdown.md`。
+- Normalize `<target-name>` to lowercase kebab-case and avoid local absolute paths in the document body. 将 `<target-name>` 规范化为小写 kebab-case，并避免在文件正文写入本机绝对路径。
+- Return the generated file as a clickable local file link. 在最终回复中返回可点击的本地文件链接。
+
+### 必需章节 / Required Sections
+
+```markdown
+# <Target> Skill 拆解与写作指南 / Skill Breakdown and Writing Guide
+
+## 结论 / Verdict
+## 结构拆解 / Structure Breakdown
+## Skill 写作法 / Skill Writing
+## Agent 写作法 / Agent Writing
+## 可复用公式 / Reusable Formula
+## 可复用模板 / Reusable Template
+## 验证结果 / Validation
+```
+
+The document must separate observed facts, recommendations, and assumptions. 文件必须区分已观察事实、改进建议和假设，不得把推测写成事实。
+
+### 交付前校验 / Handoff Checks
+
+1. The path ends in `.md` and the file exists. 路径以 `.md` 结尾且文件存在。
+2. The file contains all required bilingual headings. 文件包含全部必需的双语标题。
+3. Claims point to visible source files or are explicitly labeled as recommendations. 结论能指向可见源文件，或明确标记为建议。
+4. The final response links to the artifact and briefly summarizes its contents. 最终回复链接到文件，并简要说明文件内容。
+
 ## 常见错误 / Common Mistakes
 
 - 把 Skill 写成角色扮演 / turning a Skill into role-play.

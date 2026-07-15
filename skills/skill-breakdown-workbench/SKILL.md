@@ -9,6 +9,8 @@ description: "Analyze Codex Skills and agent manifests. Use when the user wants 
 
 This skill turns a target Skill or agent manifest into a bilingual teardown and a writing lesson. It explains what the artifact does, how it is structured, and how to write a stronger version without inventing hidden behavior.
 
+The deliverable is always a Markdown artifact. 每次拆解、写作教学或改进分析都必须生成一个 `.md` 文件，不能只在对话中返回散文说明。
+
 ## When to Read References
 
 Read `references/guide.md` when the user asks for:
@@ -44,6 +46,7 @@ Read `references/guide.md` when the user asks for:
 7. If the user wants a rewrite, keep the original capability and boundary, then produce a draft or patch instead of a generic summary.
 8. If the task is only review or explanation, do not install, publish, commit, or push anything.
 9. If the task edits files, verify that every claim and every recommendation maps back to the visible text.
+10. Write the final teardown to a `.md` file and return a clickable link to that file. 将最终拆解写入 `.md` 文件，并在回复中返回可点击文件链接。
 
 ## Guardrails
 
@@ -58,3 +61,5 @@ Read `references/guide.md` when the user asks for:
 - For analysis, check that each conclusion is grounded in visible content.
 - For authoring, validate `SKILL.md`, `agents/openai.yaml`, and any references before handing off.
 - When files change, run the repository's structural checks and a path/secret scan before delivery.
+- Confirm the output path ends in `.md`, the file exists, and the required bilingual sections are present.
+- Do not claim the teardown was delivered until the Markdown file was written successfully.

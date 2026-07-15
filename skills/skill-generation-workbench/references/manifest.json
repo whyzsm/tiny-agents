@@ -1,0 +1,20 @@
+{
+  "name": "skill-generation-workbench",
+  "display_name": "Skill 生成工作台",
+  "category": "技术",
+  "source_kind": "repo-authored",
+  "converted_for": "tiny-agents-repository",
+  "capability_modules": [
+    "skill-creator",
+    "intake",
+    "blueprint",
+    "scaffold",
+    "validation"
+  ],
+  "references": [
+    "references/guide.md",
+    "references/skill-contract.md",
+    "references/generation-checklist.md"
+  ],
+  "repo_only": true
+}

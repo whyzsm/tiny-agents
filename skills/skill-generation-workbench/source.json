@@ -1,0 +1,18 @@
+{
+  "name": "skill-generation-workbench",
+  "kind": "skill",
+  "status": "ready",
+  "source_kind": "repo-authored",
+  "source_ref": "repo-local/skills/skill-generation-workbench",
+  "converted_for": "codex-skills",
+  "files": [
+    "skills/skill-generation-workbench/SKILL.md",
+    "skills/skill-generation-workbench/agents/openai.yaml",
+    "skills/skill-generation-workbench/references/guide.md",
+    "skills/skill-generation-workbench/references/manifest.json",
+    "skills/skill-generation-workbench/references/skill-contract.md",
+    "skills/skill-generation-workbench/references/generation-checklist.md",
+    "skills/skill-generation-workbench/scripts/scaffold_skill.py"
+  ],
+  "repo_only": true
+}

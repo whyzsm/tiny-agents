@@ -1,0 +1,6 @@
+interface:
+  display_name: "Skill 生成工作台"
+  short_description: "澄清需求并自动生成可验证的 Codex Skill 工作流包"
+  default_prompt: "Use $skill-generation-workbench to design and generate a production-ready Skill package in Simplified Chinese."
+policy:
+  allow_implicit_invocation: true

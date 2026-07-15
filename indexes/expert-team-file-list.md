@@ -1,6 +1,6 @@
 # 专家团列表
 
-共 237 个专家团。按前端分类顺序整理；“专家团”是入口，“子技能”是该入口会协调调用的能力包。
+共 238 个专家团。按前端分类顺序整理；“专家团”是入口，“子技能”是该入口会协调调用的能力包。
 
 | 分类 | 专家团 | 名称 | 子技能 |
 |---|---|---|---|
@@ -11,6 +11,7 @@
 | 技术 | [`tech-code-review`](../skills/tech-code-review-team/SKILL.md) | 代码审查专家团 | `pr-reviewer`<br>`critical-code-reviewer`<br>`project-code-standard`<br>`security-audit`<br>`clean-code-review`<br>`code-review-assistant` |
 | 技术 | [`tech-tencentcloud-expert`](../skills/tech-tencentcloud-expert-team/SKILL.md) | 腾讯云专家团 | `tencentcloud-infra`<br>`tencentcloud-lighthouse-skill`<br>`tencentcloud-dnspod-skill`<br>`cloudbase`<br>`tencent-cos-skill`<br>`tencent-agent-storage`<br>`tencentcloud-ocr-general`<br>`tencentcloud-asr`<br>`web-development`<br>`miniprogram-development` |
 | 技术 | [`tech-test-automation`](../skills/tech-test-automation-team/SKILL.md) | 测试自动化专家团 | `superpowers-tdd`<br>`test-case-generator`<br>`test-patterns`<br>`e2e-testing-patterns`<br>`api-test-automation` |
+| 技术 | [`skill-generation-workbench`](../skills/skill-generation-workbench/SKILL.md) | Skill 生成工作台 | `skill-creator` |
 | 技术 | [`tech-software-workshop`](../skills/tech-software-workshop-team/SKILL.md) | 软件工坊专家团 | `product-review`<br>`code-review`<br>`security-audit`<br>`qa-testing`<br>`design-system`<br>`debug-operations` |
 | 技术 | [`tech-software-development`](../skills/tech-software-development-team/SKILL.md) | 软件开发团队 | `product-requirements`<br>`architecture-design`<br>`task-breakdown`<br>`parallel-implementation`<br>`qa-validation`<br>`delivery-management` |
 | 技术 | [`tech-mvp-development`](../skills/tech-mvp-development-team/SKILL.md) | MVP 开发专家团 | `requirement-discovery`<br>`competitive-research`<br>`three-doc-package`<br>`spec-lock`<br>`frontend-backend-build`<br>`test-deploy`<br>`user-feedback-loop` |

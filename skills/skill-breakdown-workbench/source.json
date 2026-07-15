@@ -1,0 +1,18 @@
+{
+  "name": "skill-breakdown-workbench",
+  "kind": "skill",
+  "status": "ready",
+  "source_kind": "repo-authored",
+  "source_ref": "repo-local/skills/skill-breakdown-workbench",
+  "converted_for": "codex-skills",
+  "resources": [
+    "references"
+  ],
+  "files": [
+    "skills/skill-breakdown-workbench/SKILL.md",
+    "skills/skill-breakdown-workbench/agents/openai.yaml",
+    "skills/skill-breakdown-workbench/references/guide.md",
+    "skills/skill-breakdown-workbench/source.json"
+  ],
+  "repo_only": true
+}

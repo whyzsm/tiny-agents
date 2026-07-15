@@ -2,10 +2,15 @@
 
 本索引登记“负责动态编排专家团或生成 Skill 包的 Skill”，不登记固定专家团、Agent 成员或具体业务专家。
 
+普通 skill 查找请先看 `indexes/skill-registry.md` / `indexes/skill-registry.json`；本文件只保留动态编排类 Skill。
+
+For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/skill-registry.json`; this file only keeps dynamic orchestration Skills.
+
 | 类型 / Type | Skill | 位置 / Location | 作用 / Purpose | 能力来源 / Source |
 |---|---|---|---|---|
 | 动态专家团编排 Skill / Dynamic expert-team assembler | [`assemble-project-expert-team`](../skills/assemble-project-expert-team/SKILL.md) | `skills/assemble-project-expert-team/` | 扫描目标项目，读取远端专家团目录，自动生成成员 roster、成员 Prompt、阶段 DAG 和质量门，并按运行时能力协调执行 / Scan the target project, read the remote expert-team catalog, generate the roster, member prompts, phase DAG, and quality gates, then coordinate execution according to runtime capabilities | `https://github.com/whyzsm/tiny-agents/tree/main/indexes` |
 | Skill 生成工作台 / Skill generation workbench | [`skill-generation-workbench`](../skills/skill-generation-workbench/SKILL.md) | `skills/skill-generation-workbench/` | 设计、生成、转换、升级和验证 Codex Skill 包，产出 `SKILL.md`、`agents/openai.yaml`、引用文件和脚本 / Design, generate, convert, upgrade, and validate Codex Skill packages; produce `SKILL.md`, `agents/openai.yaml`, references, and scripts | `repo-local/skills/skill-generation-workbench` |
+| Skill 拆解与写作工作台 / Skill breakdown and writing coach | [`skill-breakdown-workbench`](../skills/skill-breakdown-workbench/SKILL.md) | `skills/skill-breakdown-workbench/` | 分析 Skill/Agent 的写法，并输出中英双语教学、模板和改写建议 / Analyze Skill and agent writing, then produce bilingual teaching notes, templates, and rewrite guidance | `repo-local/skills/skill-breakdown-workbench` |
 
 ## assemble-project-expert-team
 
@@ -39,3 +44,13 @@ After execution, `assemble-project-expert-team` should return member IDs, select
 - **默认产物 / Default outputs**：`SKILL.md`、`agents/openai.yaml`、`references/`、`scripts/`、`source.json` / `SKILL.md`, `agents/openai.yaml`, `references/`, `scripts/`, `source.json`
 - **默认边界 / Default boundary**：默认只生成和验证；安装、提交、推送和发布都必须先获得明确授权 / only generate and validate by default; installation, commits, pushes, and publication require explicit authorization
 - **验证 / Validation**：`quick_validate.py`、`python3 -m unittest`、`git diff --check`、路径和敏感信息扫描 / structural validation, unit tests, diff checks, and path/secret scans
+
+## skill-breakdown-workbench
+
+- **Skill 类型 / Skill type**：Skill 和 agent 的拆解、教学与写作教练 / breakdown, teaching, and writing coach for Skills and agents
+- **不是 / Not**：自动发布器、隐藏提示词猜测器、固定专家团或简单摘要器 / auto-publisher, hidden-prompt guesser, fixed expert team, or plain summarizer
+- **目标 / Target**：分析现有 Skill 或 agent manifest 的写法，并教会用户如何写出更好的 Skill 和 Agent / analyze an existing Skill or agent manifest and teach better Skill and Agent authorship
+- **默认输入 / Default inputs**：`SKILL.md`、`agents/openai.yaml`、用户提供的技能卡片、写作目标 / `SKILL.md`, `agents/openai.yaml`, user-provided skill cards, and writing goals
+- **默认产物 / Default outputs**：中英双语拆解、写作建议、可复用模板和改写方向 / bilingual breakdowns, writing advice, reusable templates, and rewrite directions
+- **默认边界 / Default boundary**：只分析可见内容；不猜隐藏 prompt；默认不安装、不提交、不发布 / analyze only visible content; do not guess hidden prompts; do not install, commit, or publish by default
+- **验证 / Validation**：每个结论都能回指到可见文件，且中英部分结构对齐 / every conclusion must map back to visible files, with aligned Chinese and English sections

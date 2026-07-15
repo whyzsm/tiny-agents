@@ -22,12 +22,40 @@ Import confirmed ready items from a report:
 python3 -m tiny_agents import reports/scan-2026-07-05.json
 ```
 
+Refresh the canonical skill registry:
+
+刷新技能主索引：
+
+```bash
+python3 scripts/generate_skill_registry.py
+```
+
 The first version scans `~/.codex` and `~/.agents`, excludes system, cache, and
 sensitive paths, blocks suspected secrets, and imports only ready agents and
 skills.
 
 第一版会扫描 `~/.codex` 和 `~/.agents`，排除系统、缓存和敏感路径，阻断疑似密钥，并只导入
 ready 状态的 agents 和 skills。
+
+## Indexes
+
+`indexes/skill-registry.md` and `indexes/skill-registry.json` are the canonical
+lookup entry points for installable skills in this repository.
+
+`indexes/skill-registry.md` 和 `indexes/skill-registry.json` 是本仓库可安装
+skills 的主查找入口。
+
+`indexes/agent-skill-index.md` and `indexes/agent-skill-index.json` are the
+local scan inventory for imported agents and skills.
+
+`indexes/agent-skill-index.md` 和 `indexes/agent-skill-index.json` 是导入后的
+本地扫描库存。
+
+`indexes/skill-team-router-index.md` and `indexes/expert-team-file-list.md`
+are specialized catalogs for orchestration, not the primary install lookup.
+
+`indexes/skill-team-router-index.md` 和 `indexes/expert-team-file-list.md` 是
+编排专用目录，不是主安装查找入口。
 
 ## Agent And Skill Boundary
 

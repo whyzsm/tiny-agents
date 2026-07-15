@@ -26,6 +26,18 @@ conflict sections, then import only confirmed ready items.
 
 导入新内容时，先运行扫描，检查 candidate、blocked 和 conflict 区块，再只导入确认过的 ready 项。
 
+For repository skill lookup, use `indexes/skill-registry.md` and
+`indexes/skill-registry.json` first. Treat `indexes/agent-skill-index.md` and
+`indexes/agent-skill-index.json` as the local scan inventory, and keep
+`indexes/skill-team-router-index.md` plus `indexes/expert-team-file-list.md`
+as specialized catalogs.
+
+仓库内查找 skill 时，优先使用 `indexes/skill-registry.md` 和
+`indexes/skill-registry.json`。将 `indexes/agent-skill-index.md` 和
+`indexes/agent-skill-index.json` 视为本地扫描库存，并把
+`indexes/skill-team-router-index.md` 与 `indexes/expert-team-file-list.md`
+视为专项目录。
+
 ## Verification / 验证
 
 Run the unit test suite before committing changes to the CLI or import logic.

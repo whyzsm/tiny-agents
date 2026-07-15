@@ -2,6 +2,10 @@
 
 共 238 个专家团。按前端分类顺序整理；“专家团”是入口，“子技能”是该入口会协调调用的能力包。
 
+普通 skill 查找请先看 `indexes/skill-registry.md` / `indexes/skill-registry.json`；本文件只列固定专家团入口。
+
+For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/skill-registry.json`; this file only lists fixed expert-team entries.
+
 | 分类 | 专家团 | 名称 | 子技能 |
 |---|---|---|---|
 | 技术 | [`harmony-expert-team`](../skills/harmony-expert-team/SKILL.md) | HarmonyOS 专家团 | `harmony-os-ask`<br>`harmony-os-act`<br>`generate-ui-code`<br>`service-widget` |

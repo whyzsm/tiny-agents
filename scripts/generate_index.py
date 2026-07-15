@@ -24,13 +24,17 @@ def main(argv: list[str] | None = None) -> int:
     INDEX_DIR.mkdir(parents=True, exist_ok=True)
     JSON_INDEX_PATH.write_text(
         json.dumps(
-            {
-                "source_report": str(report_path),
-                "scan_generated_at": report["generated_at"],
-                "selection_rule": "Exclude skipped, blocked, and conflict items, then keep the first item per name.",
-                "total": len(entries),
-                "entries": entries,
-            },
+                {
+                    "source_report": str(report_path),
+                    "scan_generated_at": report["generated_at"],
+                    "selection_rule": (
+                        "Exclude skipped, blocked, and conflict items, then keep the first "
+                        "item per name. Use indexes/skill-registry.md for repository skill "
+                        "lookup."
+                    ),
+                    "total": len(entries),
+                    "entries": entries,
+                },
             ensure_ascii=False,
             indent=2,
         )
@@ -211,10 +215,12 @@ def _render_markdown(report: dict[str, Any], entries: list[dict[str, Any]]) -> s
         by_kind.setdefault(entry["kind"], []).append(entry)
 
     lines = [
-        "# Agent And Skill Index",
+        "# Local Agent And Skill Inventory",
         "",
         f"- Source report: `{report['source_report']}`",
         f"- Scan generated at: `{report['generated_at']}`",
+        "- Scope: local scan inventory, not the canonical repository skill registry.",
+        "- Lookup note: use `indexes/skill-registry.md` for repository skill discovery.",
         "- Selection rule: exclude skipped, blocked, and conflict items, then keep the first item per name.",
         f"- Total: `{len(entries)}`",
         f"- Agents: `{len(by_kind.get('agent', []))}`",

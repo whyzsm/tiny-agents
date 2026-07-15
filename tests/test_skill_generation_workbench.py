@@ -76,6 +76,8 @@ class ScaffoldSkillTest(unittest.TestCase):
 
         self.assertIn("skill-generation-workbench", index)
         self.assertIn("Skill 生成工作台", index)
+        self.assertIn("skill-breakdown-workbench", index)
+        self.assertIn("Skill 拆解与写作工作台", index)
 
 
 if __name__ == "__main__":

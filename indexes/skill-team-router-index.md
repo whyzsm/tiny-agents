@@ -1,10 +1,11 @@
 # Skill Team Router Index
 
-本索引登记“负责动态编排专家团的 Skill”，不登记固定专家团、Agent 成员或具体业务专家。
+本索引登记“负责动态编排专家团或生成 Skill 包的 Skill”，不登记固定专家团、Agent 成员或具体业务专家。
 
 | 类型 / Type | Skill | 位置 / Location | 作用 / Purpose | 能力来源 / Source |
 |---|---|---|---|---|
 | 动态专家团编排 Skill / Dynamic expert-team assembler | [`assemble-project-expert-team`](../skills/assemble-project-expert-team/SKILL.md) | `skills/assemble-project-expert-team/` | 扫描目标项目，读取远端专家团目录，自动生成成员 roster、成员 Prompt、阶段 DAG 和质量门，并按运行时能力协调执行 / Scan the target project, read the remote expert-team catalog, generate the roster, member prompts, phase DAG, and quality gates, then coordinate execution according to runtime capabilities | `https://github.com/whyzsm/tiny-agents/tree/main/indexes` |
+| Skill 生成工作台 / Skill generation workbench | [`skill-generation-workbench`](../skills/skill-generation-workbench/SKILL.md) | `skills/skill-generation-workbench/` | 设计、生成、转换、升级和验证 Codex Skill 包，产出 `SKILL.md`、`agents/openai.yaml`、引用文件和脚本 / Design, generate, convert, upgrade, and validate Codex Skill packages; produce `SKILL.md`, `agents/openai.yaml`, references, and scripts | `repo-local/skills/skill-generation-workbench` |
 
 ## assemble-project-expert-team
 
@@ -28,3 +29,13 @@
 `assemble-project-expert-team` 运行后应返回成员 ID、选中 Skill、来源校验、成员 Prompt、阶段依赖、交接契约、前置条件和剩余缺口。没有团队或多 Agent 原语时，只能标记为协调式能力执行，不得声称已经创建真实成员。
 
 After execution, `assemble-project-expert-team` should return member IDs, selected Skills, source verification, member prompts, phase dependencies, handoff contracts, prerequisites, and remaining gaps. When team or multi-agent primitives are unavailable, it must label the run as coordinated capability execution instead of claiming that real members were created.
+
+## skill-generation-workbench
+
+- **Skill 类型 / Skill type**：Skill 生成、转换、升级与验证工作台 / skill generation, conversion, upgrade, and validation workbench
+- **不是 / Not**：固定专家团、Agent 成员、自动安装器或自动发布器 / a fixed expert team, agent roster, auto-installer, or auto-publisher
+- **目标 / Target**：为新 Skill 或现有 Skill 生成可验证的仓库包 / generate verifiable repository packages for new or existing Skills
+- **默认输入 / Default inputs**：需求想法、现有 `SKILL.md`、外部提示词、专家卡片、验证要求 / ideas, existing `SKILL.md`, external prompts, expert cards, and validation requirements
+- **默认产物 / Default outputs**：`SKILL.md`、`agents/openai.yaml`、`references/`、`scripts/`、`source.json` / `SKILL.md`, `agents/openai.yaml`, `references/`, `scripts/`, `source.json`
+- **默认边界 / Default boundary**：默认只生成和验证；安装、提交、推送和发布都必须先获得明确授权 / only generate and validate by default; installation, commits, pushes, and publication require explicit authorization
+- **验证 / Validation**：`quick_validate.py`、`python3 -m unittest`、`git diff --check`、路径和敏感信息扫描 / structural validation, unit tests, diff checks, and path/secret scans

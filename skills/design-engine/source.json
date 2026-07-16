@@ -1,0 +1,39 @@
+{
+  "name": "design-engine",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "user-provided/design-engine",
+  "entry_path": "user-provided/design-engine/skills/design-systems/SKILL.md",
+  "reason": "converted_to_harmony_expert_team_router_format",
+  "files": [
+    "skills/design-engine/SKILL.md",
+    "skills/design-engine/agents/openai.yaml",
+    "skills/design-engine/references/guide.md",
+    "skills/design-engine/source.json"
+  ],
+  "converted_from": [
+    ".codebuddy-plugin/plugin.json",
+    "README.md",
+    "agents/design-engine-team-lead.md",
+    "agents/discovery-analyst.md",
+    "agents/design-system-expert.md",
+    "agents/prototype-builder.md",
+    "agents/critique-reviewer.md",
+    "agents/export-specialist.md",
+    "skills/design-systems/SKILL.md",
+    "skills/prototype-templates/SKILL.md",
+    "skills/quality-review/SKILL.md"
+  ],
+  "omitted_import_artifacts": [
+    "settings.json",
+    "avatars/"
+  ],
+  "source_attribution": [
+    "Original README states that part of the design methodology and quality framework references Open Design, Apache-2.0."
+  ],
+  "warnings": [
+    "Original package used formal plugin team members and avatars; this repository version follows the lightweight harmony-expert-team router shape and does not require the original plugin runtime."
+  ],
+  "secret_findings": [],
+  "repo_only": true
+}

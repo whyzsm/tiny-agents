@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Engine"
+  short_description: "Discovery, design systems, HTML prototypes, critique, and export"
+  default_prompt: "Use $design-engine to handle this design prototype task with the right specialist."

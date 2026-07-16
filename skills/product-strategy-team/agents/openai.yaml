@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Strategy Team"
+  short_description: "PRD, research, competitive analysis, metrics, roadmap, and sprint planning"
+  default_prompt: "Use $product-strategy-team to handle this product strategy task with the right specialist."

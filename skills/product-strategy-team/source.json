@@ -1,0 +1,35 @@
+{
+  "name": "product-strategy-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "user-provided/product-strategy-team",
+  "entry_path": "user-provided/product-strategy-team/skills/product-playbook/SKILL.md",
+  "reason": "converted_to_harmony_expert_team_router_format",
+  "files": [
+    "skills/product-strategy-team/SKILL.md",
+    "skills/product-strategy-team/agents/openai.yaml",
+    "skills/product-strategy-team/references/guide.md",
+    "skills/product-strategy-team/source.json"
+  ],
+  "converted_from": [
+    ".codebuddy-plugin/plugin.json",
+    "README.md",
+    "agents/product-director.md",
+    "agents/requirement-analyst.md",
+    "agents/user-researcher.md",
+    "agents/competitive-analyst.md",
+    "agents/data-analyst.md",
+    "agents/roadmap-planner.md",
+    "skills/product-playbook/SKILL.md"
+  ],
+  "omitted_import_artifacts": [
+    ".DS_Store",
+    "settings.json",
+    "avatars/"
+  ],
+  "warnings": [
+    "Original package used formal plugin team members and avatars; this repository version follows the lightweight harmony-expert-team router shape and does not require the original plugin runtime."
+  ],
+  "secret_findings": [],
+  "repo_only": true
+}

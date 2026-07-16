@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-15T21:11:41+08:00",
+  "generated_at": "2026-07-16T21:15:10+08:00",
   "project_root": ".",
   "skills_root": "skills",
   "selection_rule": "Keep top-level skill packages with SKILL.md or skill.md, skip draft/candidate/blocked/conflict/skipped packages, and use the package path as the install target.",
-  "total": 614,
+  "total": 617,
   "omitted": 0,
   "entries": [
     {
@@ -1795,6 +1795,16 @@
       "entry_path": "skills/design-brand-visual-team/SKILL.md",
       "status": "ready",
       "source_ref": "~/.codex/skills/design-brand-visual-team"
+    },
+    {
+      "name": "design-engine",
+      "display_name": "design-engine",
+      "description": "Design engine expert-team router for UI/UX prototype delivery: requirement discovery, design system selection, brand extraction, design tokens, high-fidelity HTML prototypes, prototype templates, quality critique, anti-slop review, and HTML/PDF/PPTX/ZIP export. Coordinates discovery analysis, design systems, prototype building, critique review, and export delivery.",
+      "purpose": "1. Use `discovery-analyst` when the user has a vague idea, needs design requirements clarified, or has not specified surface, audience, tone, brand context, or scale. 2. Use `design-system-expert` when the user asks for style direction, brand-grade visual language, design tokens, brand extraction, DESIGN.md, color palette, typography, component style, or a specific reference brand such as Stripe, Linear, Apple, Vercel, Notion, or Tesla.",
+      "package_path": "skills/design-engine",
+      "entry_path": "skills/design-engine/SKILL.md",
+      "status": "ready",
+      "source_ref": "user-provided/design-engine"
     },
     {
       "name": "design-interaction-design-team",
@@ -4187,6 +4197,16 @@
       "source_ref": "repo-local/skills/pro-legal-strategist-v2"
     },
     {
+      "name": "product-strategy-team",
+      "display_name": "product-strategy-team",
+      "description": "Product strategy expert-team router for product management work: PRD and feature specs, requirement analysis, user research synthesis, competitive analysis, product metrics review, roadmap planning, sprint planning, stakeholder updates, and end-to-end product strategy delivery. Coordinates requirement analysis, user research, competitive intelligence, product data analysis, and roadmap planning.",
+      "purpose": "1. Use `requirement-analyst` when the user asks for a PRD, feature spec, requirement document, user stories, acceptance criteria, MVP scope, or scope management. 2. Use `user-researcher` when the task includes user interviews, surveys, usability tests, NPS/CSAT, support tickets, app reviews, behavior data, or feedback synthesis.",
+      "package_path": "skills/product-strategy-team",
+      "entry_path": "skills/product-strategy-team/SKILL.md",
+      "status": "ready",
+      "source_ref": "user-provided/product-strategy-team"
+    },
+    {
       "name": "project-accessibility-auditor-team",
       "display_name": "project-accessibility-auditor-team",
       "description": "无障碍审计师。用于按 WCAG 标准审计界面可访问性，确保每个用户都能使用产品。来源于 WorkBuddy 项目质量卡片，并转换为 Codex 可安装的专家入口格式。",
@@ -5565,6 +5585,16 @@
       "entry_path": "skills/tech-wechat-miniprogram-developer-team/SKILL.md",
       "status": "ready",
       "source_ref": "WorkBuddy v5.2.3 Expert Center card: 技术 / 微信小程序开发者"
+    },
+    {
+      "name": "tech-zcode-ane-spec-usage-doc-team",
+      "display_name": "tech-zcode-ane-spec-usage-doc-team",
+      "description": "zcode 与 ane-spec 使用文档专家团。用于根据 KDocs、内部说明、安装日志或项目仓库资料，撰写、重构或审查 zcode 配置、ane-spec 脚手架安装、OpenSpec/spec 变更流程、superpowers 插件、spsx/opsx 命令、验证门和故障排查相关的使用文档。",
+      "purpose": "It coordinates existing narrow capabilities instead of duplicating them. 它只编排已有窄能力，不复制底层 Skill。",
+      "package_path": "skills/tech-zcode-ane-spec-usage-doc-team",
+      "entry_path": "skills/tech-zcode-ane-spec-usage-doc-team/SKILL.md",
+      "status": "ready",
+      "source_ref": "repo-local/generated-from-user-supplied-kdocs-summary"
     },
     {
       "name": "tencent-agent-storage",

@@ -1,6 +1,6 @@
 # 专家团列表
 
-共 239 个专家团。按前端分类顺序整理；“专家团”是入口，“子技能”是该入口会协调调用的能力包。
+共 241 个专家团。按前端分类顺序整理；“专家团”是入口，“子技能”是该入口会协调调用的能力包。
 
 普通 skill 查找请先看 `indexes/skill-registry.md` / `indexes/skill-registry.json`；本文件只列固定专家团入口。
 
@@ -57,8 +57,10 @@ For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/ski
 | 腾讯专区 | [`tencent-nges-medical-marketing`](../skills/tencent-nges-medical-marketing-team/SKILL.md) | 腾讯健康 NGES 医药营销专家团 | `hcp-insight`<br>`medical-content-strategy`<br>`interactive-case`<br>`compliance-review`<br>`campaign-journey`<br>`effect-review` |
 | 设计 | [`design-brand-visual`](../skills/design-brand-visual-team/SKILL.md) | 品牌视觉专家团 | `brand-cog`<br>`visual`<br>`theme-factory`<br>`logo-creator`<br>`poster`<br>`svg-draw` |
 | 设计 | [`design-interaction-design`](../skills/design-interaction-design-team/SKILL.md) | 交互设计专家团 | `ux-researcher`<br>`ui-ux-pro-max`<br>`ui-audit`<br>`ui-ux-design`<br>`frontend-design`<br>`oliver-accessibility` |
+| 设计 | [`design-engine`](../skills/design-engine/SKILL.md) | 设计引擎团队 | `discovery-analyst`<br>`design-system-expert`<br>`prototype-builder`<br>`critique-reviewer`<br>`export-specialist` |
 | 设计 | [`motion-expert-team`](../skills/motion-expert-team/SKILL.md) | Motion 动效专家团 | `motion-direction`<br>`ui-animation-implementation`<br>`scroll-animation-patterns`<br>`gsap-animation-expertise`<br>`motion-performance-review` |
 | 设计 | [`design-product-strategy`](../skills/design-product-strategy-team/SKILL.md) | 产品战略专家团 | `product-management-workflows`<br>`feature-spec`<br>`roadmap-management`<br>`stakeholder-comms`<br>`user-research-synthesis`<br>`competitive-analysis`<br>`metrics-tracking`<br>`product-brainstorming`<br>`sprint-planning` |
+| 设计 | [`product-strategy-team`](../skills/product-strategy-team/SKILL.md) | 产品战略团队 | `requirement-analyst`<br>`user-researcher`<br>`competitive-analyst`<br>`data-analyst`<br>`roadmap-planner` |
 | 设计 | [`design-prototype-handoff`](../skills/design-prototype-handoff-team/SKILL.md) | 设计原型专家团 | `design-to-code-workflows`<br>`accessibility-review`<br>`design-critique`<br>`design-handoff`<br>`design-system`<br>`research-synthesis`<br>`user-research`<br>`ux-copy` |
 | 设计 | [`design-prd-writing`](../skills/design-prd-writing-team/SKILL.md) | PRD 写作专家团 | `requirements-analysis`<br>`software-manager-skill`<br>`prd`<br>`prd-writer-pro`<br>`prd-to-design-doc`<br>`prd-reviewer` |
 | 设计 | [`design-ui-prototype`](../skills/design-ui-prototype-team/SKILL.md) | UI 原型设计专家团 | `prd-to-prototype`<br>`design-to-code`<br>`afrexai-ui-design-system`<br>`ui-design`<br>`wireframe`<br>`frontend-design-pro` |

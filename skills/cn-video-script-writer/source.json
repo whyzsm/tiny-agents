@@ -1,5 +1,5 @@
 {
-  "name": "video-script-writer",
+  "name": "cn-video-script-writer",
   "kind": "skill",
   "status": "ready",
   "source_path": "~/.codex/skills/cn-video-script-writer",

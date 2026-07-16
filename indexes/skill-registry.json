@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T21:52:30+08:00",
+  "generated_at": "2026-07-16T22:13:14+08:00",
   "project_root": ".",
   "skills_root": "skills",
   "selection_rule": "Keep top-level skill packages with SKILL.md or skill.md, skip draft/candidate/blocked/conflict/skipped packages, and use the package path as the install target.",
@@ -385,16 +385,6 @@
       "entry_path": "skills/ai-agentic-video-editor/SKILL.md",
       "status": "ready",
       "source_ref": "~/.codex/skills/ai-agentic-video-editor"
-    },
-    {
-      "name": "algorithmic-poster-philosophy",
-      "display_name": "algorithmic-poster-philosophy",
-      "description": "当用户提到海报、视觉设计、品牌视觉、排版系统、极简风格、设计哲学、美学方案，或说\"帮我做张海报\"时，必须触发此技能。该技能先构建一套设计哲学（Algorithmic Philosophy），再基于该哲学用 show_widget 生成可渲染的 SVG 海报 artifact。即使用户没有明确提到\"哲学\"或\"系统\"，只要涉及视觉设计或海报生成，都应触发。适用于品牌视觉、作品集封面、极简主义海报、AI 生成艺术、任何需要系统性美学表达的场景。",
-      "purpose": "This skill transforms the task from: \"generate a design\"",
-      "package_path": "skills/algorithmic-poster-philosophy",
-      "entry_path": "skills/algorithmic-poster-philosophy/SKILL.md",
-      "status": "ready",
-      "source_ref": "~/.codex/skills/poster"
     },
     {
       "name": "alzheimer-care",
@@ -855,6 +845,16 @@
       "entry_path": "skills/cn-ppt-outline-writer/SKILL.md",
       "status": "ready",
       "source_ref": "repo-local/skills/cn-ppt-outline-writer"
+    },
+    {
+      "name": "cn-video-script-writer",
+      "display_name": "cn-video-script-writer",
+      "description": "短视频脚本生成专家，面向抖音、B站、YouTube、小红书、视频号内容创作者，快速生成爆款脚本和文案。触发场景：用户提到\"写脚本\"、\"短视频脚本\"、\"抖音文案\"、\"B站脚本\"、\"视频选题\"、\"直播话术\"、\"爆款标题\"、\"小红书笔记\"、\"视频号脚本\"、\"YouTube脚本\"、\"口播稿\"、\"分镜脚本\"、\"带货话术\"、\"内容创作\"、\"帮我写一个视频\"、\"开场白\"、\"钩子\"、\"封面文案\"、\"话题标签\"等关键词时激活。支持知识科普、情感故事、产品测评、带货直播等多种内容类型。",
+      "purpose": "2. **完整视频脚本**：开场钩子 → 内容展开 → 结尾CTA 完整结构 3. **口播稿**：自然口语化，含停顿标注、语气词、节奏控制 4. **分镜脚本**：含画面描述、字幕文案、BGM建议、转场方式 5. **标题和封面**：多版本爆款标题 + 封面文案 + 话题标签 6. **多平台适配**：自动调整风格、时长、格式匹配目标平台",
+      "package_path": "skills/cn-video-script-writer",
+      "entry_path": "skills/cn-video-script-writer/SKILL.md",
+      "status": "ready",
+      "source_ref": "~/.codex/skills/cn-video-script-writer"
     },
     {
       "name": "cnki-advanced-search",
@@ -3167,6 +3167,16 @@
       "source_ref": "tech-bug-troubleshooting-team/0.1.0/skills/log-analyzer"
     },
     {
+      "name": "logo-creator",
+      "display_name": "logo-creator",
+      "description": "Engineer professional-grade brand logos using geometric primitives and negative space — generates minimalist, scalable vector-style marks via muapi.ai",
+      "purpose": "Engineer professional-grade brand logos using geometric primitives and negative space — generates minimalist, scalable vector-style marks via muapi.ai",
+      "package_path": "skills/logo-creator",
+      "entry_path": "skills/logo-creator/SKILL.md",
+      "status": "ready",
+      "source_ref": "~/.codex/skills/logo-creator"
+    },
+    {
       "name": "macos-clash-atrust-network-check",
       "display_name": "macos-clash-atrust-network-check",
       "description": "Reuse this when the user asks things like \"看看clash和atrust 是不是又干架了\" or \"看一下网终情况\" on the Mac. It provides the repeatable low-level checklist for separating Clash proxy health from direct-routing or aTrust route problems.",
@@ -3747,16 +3757,6 @@
       "source_ref": "~/.codex/skills/movie"
     },
     {
-      "name": "muapi-logo-creator",
-      "display_name": "muapi-logo-creator",
-      "description": "Engineer professional-grade brand logos using geometric primitives and negative space — generates minimalist, scalable vector-style marks via muapi.ai",
-      "purpose": "Engineer professional-grade brand logos using geometric primitives and negative space — generates minimalist, scalable vector-style marks via muapi.ai",
-      "package_path": "skills/muapi-logo-creator",
-      "entry_path": "skills/muapi-logo-creator/SKILL.md",
-      "status": "ready",
-      "source_ref": "~/.codex/skills/logo-creator"
-    },
-    {
       "name": "nathan-legal-os-pro",
       "display_name": "nathan-legal-os-pro",
       "description": ">- Comprehensive legal document automation for clause extraction, document summarization, legal research, deadline tracking, contract analysis, regulatory workflows, and legal operations support.",
@@ -4057,6 +4057,16 @@
       "source_ref": "repo-local/skills/position-risk-manager"
     },
     {
+      "name": "poster",
+      "display_name": "poster",
+      "description": "当用户提到海报、视觉设计、品牌视觉、排版系统、极简风格、设计哲学、美学方案，或说\"帮我做张海报\"时，必须触发此技能。该技能先构建一套设计哲学（Algorithmic Philosophy），再基于该哲学用 show_widget 生成可渲染的 SVG 海报 artifact。即使用户没有明确提到\"哲学\"或\"系统\"，只要涉及视觉设计或海报生成，都应触发。适用于品牌视觉、作品集封面、极简主义海报、AI 生成艺术、任何需要系统性美学表达的场景。",
+      "purpose": "This skill transforms the task from: \"generate a design\"",
+      "package_path": "skills/poster",
+      "entry_path": "skills/poster/SKILL.md",
+      "status": "ready",
+      "source_ref": "~/.codex/skills/poster"
+    },
+    {
       "name": "postgresql-development-cloudbase",
       "display_name": "postgresql-development-cloudbase",
       "description": "Use when building, debugging, or evaluating CloudBase PostgreSQL / CloudBase PG / PG mode apps, including Postgres schema setup, queryPgDatabase/managePgDatabase, JS SDK v3 app.rdb() CRUD/RPC, PG HTTP API fallback, RLS-style permissions, username-password auth, and Web CMS/admin CRUD flows backed by CloudBase PG.",
@@ -4210,7 +4220,7 @@
       "name": "product-strategy-team",
       "display_name": "product-strategy-team",
       "description": "Product strategy expert-team router for product management work: PRD and feature specs, requirement analysis, user research synthesis, competitive analysis, product metrics review, roadmap planning, sprint planning, stakeholder updates, and end-to-end product strategy delivery. Coordinates requirement analysis, user research, competitive intelligence, product data analysis, and roadmap planning.",
-      "purpose": "1. Use `requirement-analyst` when the user asks for a PRD, feature spec, requirement document, user stories, acceptance criteria, MVP scope, or scope management. 2. Use `user-researcher` when the task includes user interviews, surveys, usability tests, NPS/CSAT, support tickets, app reviews, behavior data, or feedback synthesis.",
+      "purpose": "Team mode: `internal-router-labels`. The role names below are internal capability labels handled inside `$product-strategy-team`; they are not standalone `$requirement-analyst`, `$user-researcher`, `$competitive-analyst`, `$data-analyst`, or `$roadmap-planner` skills unless separate top-level packages are created later.",
       "package_path": "skills/product-strategy-team",
       "entry_path": "skills/product-strategy-team/SKILL.md",
       "status": "ready",
@@ -4817,22 +4827,22 @@
       "source_ref": "~/.codex/skills/security-audit"
     },
     {
-      "name": "seedance-storyboard-generator",
-      "display_name": "seedance-storyboard-generator",
+      "name": "seedance2-storyboard-generator",
+      "display_name": "seedance2-storyboard-generator",
       "description": "Professional AI video script and storyboard generator for Seedance 2.0 platform. Use when user asks to: (1) Convert articles/stories into video scripts, (2) Generate Seedance 2.0 storyboard prompts, (3) Plan multi-episode AI video series, (4) Create character/scene/prop generation prompts for image models like Nana Banana Pro. Input can be full novels, articles, or brief story outlines. Output includes four-act script structure, episode breakdown, asset generation prompts, and Seedance 2.0 formatted storyboard scripts.",
       "purpose": "Follow this sequential process to convert source material into production-ready video scripts:",
-      "package_path": "skills/seedance-storyboard-generator",
-      "entry_path": "skills/seedance-storyboard-generator/SKILL.md",
+      "package_path": "skills/seedance2-storyboard-generator",
+      "entry_path": "skills/seedance2-storyboard-generator/SKILL.md",
       "status": "ready",
       "source_ref": "~/.codex/skills/seedance2-storyboard-generator"
     },
     {
-      "name": "seedance2-0-video-prompter",
-      "display_name": "seedance2.0-video-prompter",
+      "name": "seedance2-video-prompter",
+      "display_name": "seedance2-video-prompter",
       "description": "Seedance 2.0（即梦）视频生成提示词工程（中文优化版）。当用户提到 Seedance、即梦、视频提示词、视频生成、AI视频、prompt、镜头语言、分镜、电商视频、产品展示视频 等关键词时激活。",
       "purpose": "@video1: [用途，如：镜头语言+运动节奏] @audio1: [用途，如：音乐节奏参考] （Text-only 模式写 \"- none\"）",
-      "package_path": "skills/seedance2-0-video-prompter",
-      "entry_path": "skills/seedance2-0-video-prompter/SKILL.md",
+      "package_path": "skills/seedance2-video-prompter",
+      "entry_path": "skills/seedance2-video-prompter/SKILL.md",
       "status": "ready",
       "source_ref": "~/.codex/skills/seedance2-video-prompter"
     },
@@ -4939,7 +4949,7 @@
     {
       "name": "skill-breakdown-workbench",
       "display_name": "skill-breakdown-workbench",
-      "description": "Analyze Codex Skills and agent manifests. Use when the user wants to拆解 a Skill, explain how a Skill or agent is written, or learn how to write one with bilingual Chinese/English guidance, especially when the target is an existing SKILL.md or agents/openai.yaml.",
+      "description": "Analyze Codex Skills and agent manifests. Use when the user wants to拆解 a Skill, explain how a Skill or agent is written, or learn how to write one with bilingual Chinese/English guidance, reusable Skill formulas, and templates, especially when the target is an existing SKILL.md or agents/openai.yaml.",
       "purpose": "This skill turns a target Skill or agent manifest into a bilingual teardown and a writing lesson. It explains what the artifact does, how it is structured, and how to write a stronger version without inventing hidden behavior.",
       "package_path": "skills/skill-breakdown-workbench",
       "entry_path": "skills/skill-breakdown-workbench/SKILL.md",
@@ -6055,16 +6065,6 @@
       "entry_path": "skills/video-script-generator/SKILL.md",
       "status": "ready",
       "source_ref": "~/.codex/skills/video-script-generator"
-    },
-    {
-      "name": "video-script-writer",
-      "display_name": "video-script-writer",
-      "description": "短视频脚本生成专家，面向抖音、B站、YouTube、小红书、视频号内容创作者，快速生成爆款脚本和文案。触发场景：用户提到\"写脚本\"、\"短视频脚本\"、\"抖音文案\"、\"B站脚本\"、\"视频选题\"、\"直播话术\"、\"爆款标题\"、\"小红书笔记\"、\"视频号脚本\"、\"YouTube脚本\"、\"口播稿\"、\"分镜脚本\"、\"带货话术\"、\"内容创作\"、\"帮我写一个视频\"、\"开场白\"、\"钩子\"、\"封面文案\"、\"话题标签\"等关键词时激活。支持知识科普、情感故事、产品测评、带货直播等多种内容类型。",
-      "purpose": "2. **完整视频脚本**：开场钩子 → 内容展开 → 结尾CTA 完整结构 3. **口播稿**：自然口语化，含停顿标注、语气词、节奏控制 4. **分镜脚本**：含画面描述、字幕文案、BGM建议、转场方式 5. **标题和封面**：多版本爆款标题 + 封面文案 + 话题标签 6. **多平台适配**：自动调整风格、时长、格式匹配目标平台",
-      "package_path": "skills/video-script-writer",
-      "entry_path": "skills/video-script-writer/SKILL.md",
-      "status": "ready",
-      "source_ref": "~/.codex/skills/cn-video-script-writer"
     },
     {
       "name": "viral-script-writer",

@@ -30,6 +30,14 @@ Refresh the canonical skill registry:
 python3 scripts/generate_skill_registry.py
 ```
 
+Refresh the unified project agent and skill index:
+
+刷新项目 agents 与 skills 统一目录：
+
+```bash
+python3 scripts/generate_index.py
+```
+
 The first version scans `~/.codex` and `~/.agents`, excludes system, cache, and
 sensitive paths, blocks suspected secrets, and imports only ready agents and
 skills.
@@ -45,11 +53,17 @@ lookup entry points for installable skills in this repository.
 `indexes/skill-registry.md` 和 `indexes/skill-registry.json` 是本仓库可安装
 skills 的主查找入口。
 
-`indexes/agent-skill-index.md` and `indexes/agent-skill-index.json` are the
-local scan inventory for imported agents and skills.
+For the full lookup, inspection, install, and reinstall workflow, see
+[docs/skill-lookup-and-install.md](docs/skill-lookup-and-install.md).
 
-`indexes/agent-skill-index.md` 和 `indexes/agent-skill-index.json` 是导入后的
-本地扫描库存。
+完整的查找、检查、安装和重装流程见
+[docs/skill-lookup-and-install.md](docs/skill-lookup-and-install.md)。
+
+`indexes/agent-skill-index.md` and `indexes/agent-skill-index.json` are the
+unified project index for repository agents and skills.
+
+`indexes/agent-skill-index.md` 和 `indexes/agent-skill-index.json` 是本仓库
+agents 与 skills 的统一项目目录。
 
 `indexes/skill-team-router-index.md` and `indexes/expert-team-file-list.md`
 are specialized catalogs for orchestration, not the primary install lookup.

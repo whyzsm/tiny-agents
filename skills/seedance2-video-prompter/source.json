@@ -1,5 +1,5 @@
 {
-  "name": "seedance2.0-video-prompter",
+  "name": "seedance2-video-prompter",
   "kind": "skill",
   "status": "ready",
   "source_path": "~/.codex/skills/seedance2-video-prompter",

@@ -277,7 +277,7 @@ def _render_markdown(
         "# Skill Registry",
         "",
         "- Canonical lookup for installable skills in this repository.",
-        "- Use `indexes/skill-registry.md` before the local scan inventory in `indexes/agent-skill-index.md`.",
+        "- Use `indexes/agent-skill-index.md` when you need the combined project agent and skill index.",
         f"- Project root: `{payload['project_root']}`",
         f"- Skills root: `{payload['skills_root']}`",
         f"- Generated at: `{payload['generated_at']}`",

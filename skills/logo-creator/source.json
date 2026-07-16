@@ -1,5 +1,5 @@
 {
-  "name": "muapi-logo-creator",
+  "name": "logo-creator",
   "kind": "skill",
   "status": "ready",
   "source_path": "~/.codex/skills/logo-creator",

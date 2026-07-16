@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T22:13:14+08:00",
+  "generated_at": "2026-07-16T22:34:15+08:00",
   "project_root": ".",
   "agents_root": "agents",
   "skills_root": "skills",
@@ -2432,7 +2432,7 @@
       "kind": "skill",
       "status": "ready",
       "reason": "repo-skill",
-      "description": "Convert external expert packages into repository expert-team Skill packages. Use when importing WorkBuddy, CodeBuddy, plugin, prompt, or folder-based expert teams into this repository, especially when child entries must be classified as real top-level skills, hybrid mappings, or router-internal capability labels and registry/catalog indexes must be updated.",
+      "description": "把外部专家包转换为当前仓库的专家团 Skill 包。适用于导入 WorkBuddy、CodeBuddy、插件、提示词或文件夹形式的专家团，并需要判断子项是真实顶层 skill、混合映射，还是 router 内部能力标签，同时同步更新 registry/catalog 索引。",
       "purpose": "4. Classify the team mode. Use `all-top-level-skills` when every child entry resolves to a real top-level skill, `hybrid` when only some entries resolve, and `internal-router-labels` when the entries are only local phases, roles, or ability labels.",
       "source_path": "skills/expert-team-converter",
       "entry_path": "skills/expert-team-converter/SKILL.md"

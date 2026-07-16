@@ -1,17 +1,17 @@
 ---
 name: expert-team-converter
 metadata:
-  short-description: External expert package to repository expert-team converter
-description: "Convert external expert packages into repository expert-team Skill packages. Use when importing WorkBuddy, CodeBuddy, plugin, prompt, or folder-based expert teams into this repository, especially when child entries must be classified as real top-level skills, hybrid mappings, or router-internal capability labels and registry/catalog indexes must be updated."
+  short-description: 外部专家包转项目专家团格式工具
+description: "把外部专家包转换为当前仓库的专家团 Skill 包。适用于导入 WorkBuddy、CodeBuddy、插件、提示词或文件夹形式的专家团，并需要判断子项是真实顶层 skill、混合映射，还是 router 内部能力标签，同时同步更新 registry/catalog 索引。"
 ---
 
 # Expert Team Converter
 
 ## Overview
 
-Use this skill to convert an external expert package into the repository's expert-team format. The result must be a normal Codex Skill package plus a catalog entry. Child entries can use any of the repository's three accepted expert-team modes: all real top-level skills, a hybrid of real skills and internal labels, or router-internal capability labels only.
+使用这个 skill 将外部专家包转换为当前仓库的专家团格式。转换结果必须是普通 Codex Skill 包和对应目录索引记录。子项可以使用仓库接受的三种专家团模式：全部是真实顶层 skill、真实 skill 与内部标签混合，或仅作为 router 内部能力标签。
 
-This package itself is a normal utility skill, not an expert-team entry. Register `expert-team-converter` in `indexes/skill-registry.md` / `indexes/skill-registry.json`, but do not list it in `indexes/expert-team-file-list.md`. It is not a runtime persona, plugin installer, marketplace publisher, or hidden prompt extractor.
+这个包本身是普通工具型 skill，不是专家团入口。`expert-team-converter` 只注册到 `indexes/skill-registry.md` / `indexes/skill-registry.json`，不要写入 `indexes/expert-team-file-list.md`。它不是运行时人格、插件安装器、市场发布器，也不能提取隐藏 prompt。
 
 ## Triggers
 

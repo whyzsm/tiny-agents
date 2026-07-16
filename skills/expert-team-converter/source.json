@@ -1,0 +1,21 @@
+{
+  "name": "expert-team-converter",
+  "kind": "skill",
+  "status": "ready",
+  "source_kind": "repo-authored",
+  "source_ref": "repo-local/generated-by-skill-generation-workbench",
+  "converted_for": "codex-skills",
+  "catalog_role": "ordinary-skill",
+  "expert_team_entry": false,
+  "resources": [
+    "references"
+  ],
+  "files": [
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references/guide.md",
+    "references/target-structure.md",
+    "source.json"
+  ],
+  "repo_only": true
+}

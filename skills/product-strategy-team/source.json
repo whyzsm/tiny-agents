@@ -5,6 +5,7 @@
   "source_path": "user-provided/product-strategy-team",
   "entry_path": "user-provided/product-strategy-team/skills/product-playbook/SKILL.md",
   "reason": "converted_to_harmony_expert_team_router_format",
+  "team_mode": "internal-router-labels",
   "files": [
     "skills/product-strategy-team/SKILL.md",
     "skills/product-strategy-team/agents/openai.yaml",

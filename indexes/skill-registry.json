@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-16T21:15:10+08:00",
+  "generated_at": "2026-07-16T21:52:30+08:00",
   "project_root": ".",
   "skills_root": "skills",
   "selection_rule": "Keep top-level skill packages with SKILL.md or skill.md, skip draft/candidate/blocked/conflict/skipped packages, and use the package path as the install target.",
-  "total": 617,
+  "total": 618,
   "omitted": 0,
   "entries": [
     {
@@ -2105,6 +2105,16 @@
       "entry_path": "skills/exam-generator/SKILL.md",
       "status": "ready",
       "source_ref": "repo-local/skills/exam-generator"
+    },
+    {
+      "name": "expert-team-converter",
+      "display_name": "expert-team-converter",
+      "description": "Convert external expert packages into repository expert-team Skill packages. Use when importing WorkBuddy, CodeBuddy, plugin, prompt, or folder-based expert teams into this repository, especially when child entries must be classified as real top-level skills, hybrid mappings, or router-internal capability labels and registry/catalog indexes must be updated.",
+      "purpose": "Use this skill to convert an external expert package into the repository's expert-team format. The result must be a normal Codex Skill package plus a catalog entry. Child entries can use any of the repository's three accepted expert-team modes: all real top-level skills, a hybrid of real skills and internal labels, or router-internal capability labels only.",
+      "package_path": "skills/expert-team-converter",
+      "entry_path": "skills/expert-team-converter/SKILL.md",
+      "status": "ready",
+      "source_ref": "repo-local/generated-by-skill-generation-workbench"
     },
     {
       "name": "feishu-weekly-report",

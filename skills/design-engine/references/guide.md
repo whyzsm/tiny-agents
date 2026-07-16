@@ -4,6 +4,8 @@
 
 ## 触发的能力
 
+子项模式：`internal-router-labels`。下表中的成员名是 `$design-engine` 内部路由标签，不是可以单独用 `$成员名` 直接调用的顶层 skill。
+
 | 能力 | 适用场景 |
 |---|---|
 | `$design-engine` | 设计原型专家团总入口 |
@@ -12,6 +14,16 @@
 | `prototype-builder` | HTML/CSS 高保真原型、网页、SaaS、仪表盘、移动端、PPT、文档和邮件模板 |
 | `critique-reviewer` | 5 维度质量审查、Anti-Slop 检测、P0/P1/P2 门控 |
 | `export-specialist` | HTML、PDF、PPTX、ZIP 导出和交付打包 |
+
+## 子项映射
+
+| 子项 | 类型 | 映射 | 说明 |
+|---|---|---|---|
+| `discovery-analyst` | `internal-label` | `$design-engine` 内部路由 | 来自源包成员 agent，用于需求发现阶段。 |
+| `design-system-expert` | `internal-label` | `$design-engine` 内部路由 | 汇总源包设计系统专家和 `skills/design-systems` 能力。 |
+| `prototype-builder` | `internal-label` | `$design-engine` 内部路由 | 汇总源包原型构建成员和 `skills/prototype-templates` 能力。 |
+| `critique-reviewer` | `internal-label` | `$design-engine` 内部路由 | 汇总源包质量审查成员和 `skills/quality-review` 能力。 |
+| `export-specialist` | `internal-label` | `$design-engine` 内部路由 | 来自源包导出交付成员。 |
 
 ## 我可以帮你做这些
 

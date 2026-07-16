@@ -4,6 +4,8 @@
 
 ## 触发的能力
 
+子项模式：`internal-router-labels`。下表中的成员名是 `$product-strategy-team` 内部路由标签，不是可以单独用 `$成员名` 直接调用的顶层 skill。
+
 | 能力 | 适用场景 |
 |---|---|
 | `$product-strategy-team` | 产品战略专家团工作流总入口 |
@@ -12,6 +14,16 @@
 | `competitive-analyst` | 竞品研究、功能矩阵、定位分析、市场格局、Battle Card |
 | `data-analyst` | 产品指标追踪、KPI 仪表盘、漏斗、留存、异常诊断 |
 | `roadmap-planner` | 路线图管理、RICE 优先级、Sprint 规划、利益相关者沟通 |
+
+## 子项映射
+
+| 子项 | 类型 | 映射 | 说明 |
+|---|---|---|---|
+| `requirement-analyst` | `internal-label` | `$product-strategy-team` 内部路由 | 来自源包需求分析成员，用于 PRD、规格和验收标准。 |
+| `user-researcher` | `internal-label` | `$product-strategy-team` 内部路由 | 来自源包用户研究成员，用于访谈、问卷和反馈综合。 |
+| `competitive-analyst` | `internal-label` | `$product-strategy-team` 内部路由 | 来自源包竞品分析成员，用于竞品、定位和市场分析。 |
+| `data-analyst` | `internal-label` | `$product-strategy-team` 内部路由 | 来自源包数据分析成员，用于产品指标和漏斗诊断。 |
+| `roadmap-planner` | `internal-label` | `$product-strategy-team` 内部路由 | 来自源包路线图成员，用于优先级、路线图和 Sprint 规划。 |
 
 ## 我可以帮你做这些
 

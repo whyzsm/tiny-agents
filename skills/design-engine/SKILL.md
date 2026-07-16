@@ -9,6 +9,8 @@ metadata:
 
 Use this skill as the expert-team entry point for design prototype work. It converts the imported `design-engine` team package into the same lightweight router shape as `harmony-expert-team`: coordinate design capability paths instead of requiring the original plugin runtime, avatars, or member Markdown files.
 
+Team mode: `internal-router-labels`. The role names below are internal capability labels handled inside `$design-engine`; they are not standalone `$discovery-analyst`, `$design-system-expert`, `$prototype-builder`, `$critique-reviewer`, or `$export-specialist` skills unless separate top-level packages are created later.
+
 ## Expert Roles
 
 - `discovery-analyst`: requirement discovery through a five-dimension intake: surface, audience, tone, brand context, and scale.
@@ -19,7 +21,7 @@ Use this skill as the expert-team entry point for design prototype work. It conv
 
 ## Routing
 
-Classify the task before acting:
+Classify the task before acting. Use these labels as internal routing paths within `$design-engine`, not as separate top-level skill invocations:
 
 1. Use `discovery-analyst` when the user has a vague idea, needs design requirements clarified, or has not specified surface, audience, tone, brand context, or scale.
 2. Use `design-system-expert` when the user asks for style direction, brand-grade visual language, design tokens, brand extraction, DESIGN.md, color palette, typography, component style, or a specific reference brand such as Stripe, Linear, Apple, Vercel, Notion, or Tesla.

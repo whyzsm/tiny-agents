@@ -5,6 +5,7 @@
   "source_path": "user-provided/design-engine",
   "entry_path": "user-provided/design-engine/skills/design-systems/SKILL.md",
   "reason": "converted_to_harmony_expert_team_router_format",
+  "team_mode": "internal-router-labels",
   "files": [
     "skills/design-engine/SKILL.md",
     "skills/design-engine/agents/openai.yaml",

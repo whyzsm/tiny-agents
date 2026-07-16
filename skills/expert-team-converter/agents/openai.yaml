@@ -1,0 +1,6 @@
+interface:
+  display_name: "Expert Team Converter"
+  short_description: "Convert expert packages into repository teams"
+  default_prompt: "Use $expert-team-converter to convert this external expert package into the repository expert-team format."
+policy:
+  allow_implicit_invocation: true

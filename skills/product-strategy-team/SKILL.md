@@ -9,6 +9,8 @@ metadata:
 
 Use this skill as the expert-team entry point for product strategy and product management tasks. It converts the imported product-strategy expert package into the same lightweight router shape as `harmony-expert-team`: coordinate capability paths in this bundle instead of requiring the original plugin runtime, avatars, or member Markdown files.
 
+Team mode: `internal-router-labels`. The role names below are internal capability labels handled inside `$product-strategy-team`; they are not standalone `$requirement-analyst`, `$user-researcher`, `$competitive-analyst`, `$data-analyst`, or `$roadmap-planner` skills unless separate top-level packages are created later.
+
 ## Expert Roles
 
 - `requirement-analyst`: PRD writing, feature specs, requirement breakdown, acceptance criteria, scope control, goals, non-goals, milestones, and open questions.
@@ -19,7 +21,7 @@ Use this skill as the expert-team entry point for product strategy and product m
 
 ## Routing
 
-Classify the task before acting:
+Classify the task before acting. Use these labels as internal routing paths within `$product-strategy-team`, not as separate top-level skill invocations:
 
 1. Use `requirement-analyst` when the user asks for a PRD, feature spec, requirement document, user stories, acceptance criteria, MVP scope, or scope management.
 2. Use `user-researcher` when the task includes user interviews, surveys, usability tests, NPS/CSAT, support tickets, app reviews, behavior data, or feedback synthesis.

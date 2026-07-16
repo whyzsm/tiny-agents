@@ -1,0 +1,21 @@
+{
+  "name": "tech-zcode-ane-spec-usage-doc-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_kind": "repo-authored",
+  "source_ref": "repo-local/generated-from-user-supplied-kdocs-summary",
+  "converted_for": "codex-skills",
+  "conversion_mode": "router-skill-team-package",
+  "source_note": "Derived from user-supplied KDocs source titled 前端ai落地 zcode 与 ane-spec 集成; private hosts, local paths, and user-specific details intentionally omitted from reusable package files.",
+  "resources": [
+    "references"
+  ],
+  "files": [
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references/manifest.json",
+    "references/workflow.md",
+    "source.json"
+  ],
+  "repo_only": true
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "zcode ane-spec 使用文档专家团"
+  short_description: "编排 zcode、ane-spec 与 OpenSpec 使用文档写作。"
+  default_prompt: "Use $tech-zcode-ane-spec-usage-doc-team to turn zcode and ane-spec source material into a complete usage document."
+policy:
+  allow_implicit_invocation: true

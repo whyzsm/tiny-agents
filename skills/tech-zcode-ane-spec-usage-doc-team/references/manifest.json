@@ -1,0 +1,73 @@
+{
+  "type": "router-skill-team-package",
+  "slug": "tech-zcode-ane-spec-usage-doc-team",
+  "displayName": "zcode ane-spec 使用文档专家团",
+  "summary": "把 zcode、ane-spec、OpenSpec 与 superpowers 集成资料转化为可执行、可审查、可维护的使用文档。",
+  "source": {
+    "kind": "kdocs-derived-local-package",
+    "title": "前端ai落地 zcode 与 ane-spec 集成",
+    "access": "access-controlled source material supplied by user"
+  },
+  "selectedSkills": [
+    "requirements-analysis",
+    "spec-workflow",
+    "project-technical-doc-engineer-team",
+    "project-document-generation-team",
+    "tech-test-automation-team"
+  ],
+  "teamMembers": [
+    {
+      "id": "doc-contract-analyst",
+      "skill": "requirements-analysis",
+      "ownedOutput": "reader, scope, permission, acceptance, and redaction contract"
+    },
+    {
+      "id": "spec-workflow-architect",
+      "skill": "spec-workflow",
+      "ownedOutput": "OpenSpec lifecycle, spec artifacts, command sequence, and phase gates"
+    },
+    {
+      "id": "technical-doc-engineer",
+      "skill": "project-technical-doc-engineer-team",
+      "ownedOutput": "developer-facing structure, setup steps, command explanations, and troubleshooting"
+    },
+    {
+      "id": "usage-doc-writer",
+      "skill": "project-document-generation-team",
+      "ownedOutput": "complete usage document, outline, FAQ, and revision-ready package"
+    },
+    {
+      "id": "doc-verification-reviewer",
+      "skill": "tech-test-automation-team",
+      "ownedOutput": "documentation verification checklist and runnable evidence boundaries"
+    }
+  ],
+  "routing": {
+    "quickstart": [
+      "doc-contract-analyst",
+      "technical-doc-engineer"
+    ],
+    "spec-flow": [
+      "doc-contract-analyst",
+      "spec-workflow-architect",
+      "technical-doc-engineer"
+    ],
+    "full-manual": [
+      "doc-contract-analyst",
+      "spec-workflow-architect",
+      "technical-doc-engineer",
+      "usage-doc-writer",
+      "doc-verification-reviewer"
+    ],
+    "review-only": [
+      "doc-contract-analyst",
+      "spec-workflow-architect",
+      "doc-verification-reviewer"
+    ]
+  },
+  "exclusions": [
+    "No avatar assets",
+    "No installation execution by default",
+    "No private host, IP, credential, or local absolute path in reusable package files"
+  ]
+}

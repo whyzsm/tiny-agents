@@ -1,6 +1,6 @@
 # 专家团列表
 
-共 238 个专家团。按前端分类顺序整理；“专家团”是入口，“子技能”是该入口会协调调用的能力包。
+共 239 个专家团。按前端分类顺序整理；“专家团”是入口，“子技能”是该入口会协调调用的能力包。
 
 普通 skill 查找请先看 `indexes/skill-registry.md` / `indexes/skill-registry.json`；本文件只列固定专家团入口。
 
@@ -10,6 +10,7 @@ For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/ski
 |---|---|---|---|
 | 技术 | [`harmony-expert-team`](../skills/harmony-expert-team/SKILL.md) | HarmonyOS 专家团 | `harmony-os-ask`<br>`harmony-os-act`<br>`generate-ui-code`<br>`service-widget` |
 | 技术 | [`tech-api-documentation`](../skills/tech-api-documentation-team/SKILL.md) | API 文档专家团 | `sovereign-api-docs-generator`<br>`api-dev`<br>`api-doc-writer`<br>`qa-api-tester`<br>`afrexai-api-docs` |
+| 技术 | [`tech-zcode-ane-spec-usage-doc`](../skills/tech-zcode-ane-spec-usage-doc-team/SKILL.md) | zcode ane-spec 使用文档专家团 | `requirements-analysis`<br>`spec-workflow`<br>`project-technical-doc-engineer-team`<br>`project-document-generation-team`<br>`tech-test-automation-team` |
 | 技术 | [`tech-bug-troubleshooting`](../skills/tech-bug-troubleshooting-team/SKILL.md) | BUG 排查专家团 | `log-analyzer`<br>`debug-pro`<br>`code-error-fixer`<br>`superpowers-systematic-debugging`<br>`bug-fixing-openclaw`<br>`nexus-error-explain` |
 | 技术 | [`tech-code-refactoring`](../skills/tech-code-refactoring-team/SKILL.md) | 代码重构专家团 | `code-analyzer`<br>`agent-git-oracle`<br>`uncle-bob`<br>`code-refactoring`<br>`system-architect`<br>`simplify` |
 | 技术 | [`tech-code-review`](../skills/tech-code-review-team/SKILL.md) | 代码审查专家团 | `pr-reviewer`<br>`critical-code-reviewer`<br>`project-code-standard`<br>`security-audit`<br>`clean-code-review`<br>`code-review-assistant` |

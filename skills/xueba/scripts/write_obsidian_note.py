@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 """Write a Markdown note into a resolved Obsidian vault.
 
-The script validates that the target stays inside the vault and under the
-resolved learning root. A docs-site vault that contains docs/xueba uses
-docs/xueba/88-学习; other vaults use 88-学习.
+The script validates that the target stays inside the vault and under 88-学习/.
 It defaults to creating a unique filename instead of overwriting existing notes.
 """
 
@@ -16,7 +14,6 @@ from typing import Any
 
 
 LEARNING_ROOT = "88-学习"
-DOCS_XUEBA_ROOT = Path("docs") / "xueba"
 
 
 def fail(message: str, code: int = 2) -> int:
@@ -62,21 +59,6 @@ def ensure_inside(parent: Path, child: Path) -> None:
         raise ValueError("Target path escapes the vault.") from exc
 
 
-def learning_root_for(vault: Path) -> Path:
-    docs_xueba = vault / DOCS_XUEBA_ROOT
-    if docs_xueba.is_dir():
-        return DOCS_XUEBA_ROOT / LEARNING_ROOT
-    return Path(LEARNING_ROOT)
-
-
-def map_relative_dir(vault: Path, relative_dir: Path) -> Path:
-    if not relative_dir.parts or relative_dir.parts[0] != LEARNING_ROOT:
-        raise ValueError("Relative directory must start with 88-学习/.")
-
-    learning_root = learning_root_for(vault)
-    return learning_root / Path(*relative_dir.parts[1:])
-
-
 def unique_path(path: Path) -> Path:
     if not path.exists():
         return path
@@ -106,7 +88,7 @@ def cleanup(paths: list[str]) -> dict[str, Any]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Write a Markdown note into an Obsidian vault under the resolved learning root.")
+    parser = argparse.ArgumentParser(description="Write a Markdown note into an Obsidian vault under 88-学习/.")
     parser.add_argument("--vault", required=True, help="Resolved Obsidian vault path.")
     parser.add_argument("--relative-dir", required=True, help="Target directory relative to vault. Must start with 88-学习.")
     parser.add_argument("--filename", required=True, help="Target Markdown filename.")
@@ -125,10 +107,8 @@ def main() -> int:
     relative_dir = Path(args.relative_dir)
     if relative_dir.is_absolute() or ".." in relative_dir.parts:
         return fail("Relative directory must be a safe path inside the vault.")
-    try:
-        mapped_relative_dir = map_relative_dir(vault, relative_dir)
-    except ValueError as exc:
-        return fail(str(exc))
+    if not relative_dir.parts or relative_dir.parts[0] != LEARNING_ROOT:
+        return fail("Relative directory must start with 88-学习/.")
 
     filename = sanitize_filename(args.filename)
     if Path(filename).name != filename:
@@ -139,7 +119,7 @@ def main() -> int:
     except OSError as exc:
         return fail(f"Could not read content file: {exc}")
 
-    target_dir = (vault / mapped_relative_dir).resolve()
+    target_dir = (vault / relative_dir).resolve()
     target_path = (target_dir / filename).resolve()
     try:
         ensure_inside(vault, target_dir)
@@ -161,8 +141,6 @@ def main() -> int:
         "dry_run": args.dry_run,
         "saved_path": str(target_path),
         "relative_path": str(target_path.relative_to(vault)),
-        "logical_relative_dir": str(relative_dir),
-        "learning_root": str(learning_root_for(vault)),
         "overwritten": overwritten,
         "cleanup": {"requested": len(args.cleanup), "removed": 0, "failed": 0},
     }

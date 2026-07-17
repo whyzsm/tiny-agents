@@ -1,0 +1,7 @@
+.xueba-eval-report/
+.xueba-runtime/
+xueba-workspace/
+model-eval-workspace/
+*-workspace/
+__pycache__/
+*.pyc

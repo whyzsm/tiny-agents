@@ -1,14 +1,19 @@
 ---
 name: xueba
-description: Use this skill whenever the user wants to deeply study, digest, restructure, and save learning materials into an Obsidian vault using a tag-first knowledge system, or wants to inspect an existing Obsidian vault to find notes, concepts, tags, links, or knowledge areas that can be upgraded. Trigger for requests like “帮我学习这个资料/网站/论文/视频”, “系统学习后整理到 Obsidian”, “生成学习笔记、概念卡、费曼自测、练习题、复习计划”, “沉淀成 TAG 流知识资产”, “看看 Obsidian 里哪些知识可以升级”, “帮我体检知识库”, “找出过时/重复/薄弱/可合并的笔记”, “优化我的标签和双链”, or learning from login-required sources such as Feishu, Notion, Yuque, DingTalk, private wiki, internal docs, and authenticated web pages. This skill should be used even when the user only says “整理/消化/学习/沉淀/升级/改善/体检” and mentions Obsidian, 标签, 双链, 费曼, 复习, 知识库, existing notes, 飞书, 私有文档, 登录, 权限, 授权, or 内部资料.
+description: Use when the user wants to study, digest, restructure, or save learning material into Obsidian TAG-flow Markdown; create human-learnable and AI-readable notes, concept maps, Feynman questions, exercises, or review plans; audit or upgrade an existing Obsidian vault; learn from authenticated Feishu/Notion/Yuque/DingTalk/private docs; generate a learning expert prompt, learning expert operating system, or xueba expert mode; or clarify/agentize xueba as a skill, expert mode, agent object, or runtime agent. Trigger on 学霸, Obsidian, TAG流, 双链, 概念关系, AI读取区, 费曼, 复习计划, 知识库体检/升级, 学习专家, 专家提示词, 技能还是智能体, Xueba Agent, 智能体化学霸.
 ---
 
 # 学霸
 
-Use this skill in two modes:
+Current target version: xueba v2.0 local runtime harness. This is a Codex Skill plus Learning Expert Mode plus Agent Object Layer plus a deterministic local runtime harness. It is not yet a deployed autonomous daemon or cloud service.
+
+Use this skill in five modes:
 
 1. Study Mode: turn dense or fragmented learning material into one coherent Obsidian study note by default, with optional asset-package expansion only when requested.
 2. Upgrade Mode: inspect an existing Obsidian vault or selected notes and identify knowledge that can be improved, merged, split, linked, retagged, verified, or turned into learning assets.
+3. Learning Expert Mode: generate, refine, or explain xueba as a productized learning expert operating system with role anchoring, stable personality, capability modules, workflow, delivery contract, and quality gate.
+4. Agent Design Mode: explain or design xueba as an agent object, including the boundary between skill, expert mode, and independent runtime agent.
+5. Runtime Harness Mode: manage local deterministic task records, event logs, and memory-index scaffolds for xueba runtime experiments without claiming autonomous LLM execution.
 
 The goal is not to summarize a source. The goal is to create and maintain notes that support understanding, retrieval, review, transfer, and long-term knowledge growth. The first learning output should usually be one complete Markdown note that explains the topic end to end in the style of a "systematic topic note"; many files are useful only after the user wants long-term decomposition.
 
@@ -18,23 +23,35 @@ The user's preferred knowledge style is TAG flow: light folders, strong tags, st
 
 - Optimize for learning, not note volume. A large MOC or many files does not mean the user has learned the topic.
 - Keep every important claim traceable to a source, or mark it as an inference.
+- Mark missing, uncertain, inferred, and source-grounded knowledge explicitly with labels such as `待补充`, `待验证`, `推论`, and `原文依据`.
 - Use tags as controlled metadata. Do not invent near-duplicate tags.
-- Default to no Obsidian double links in Study Mode. Use `[[...]]` only when the target note already exists in the vault or is created in the same task. Otherwise write the concept as plain text and mark it as `可拆卡`.
+- Use double links only for durable concepts, models, methods, people, technologies, or questions worth reusing.
 - Distinguish source claims, AI synthesis, and user-context inference.
+- Make the note useful for both human study and future AI reuse: stable headings, concept IDs, aliases, keywords, and explicit concept relationships are useful when they do not bloat the note.
 - Produce exercises that force recall, explanation, transfer, and real work.
 - Default to report-first when upgrading existing notes. Do not rewrite the user's notes unless they explicitly ask you to apply changes.
 - Default to one-file output in Study Mode. The single note should resemble a polished Obsidian system topic note: abstract, mental map, concept network, Why/What/How, boundaries, Feynman loop, exercises, sources, and QA. Do not split into MOC, concepts, questions, and exercises as separate files unless the user explicitly asks for a knowledge asset package, concept cards, or long-term vault decomposition.
 - Treat authenticated sources as a normal input class. Try safe authorization paths before giving up, but never bypass access controls, scrape cookies/tokens, ask for passwords, or fabricate content from a login page.
-- Save durable learning notes into the resolved Obsidian learning root, not into machine-specific folders, existing personal taxonomies, or a generated-output scratch area. The learning root is usually `88-学习/`; when the resolved vault contains a docs site such as `docs/xueba/`, use `docs/xueba/88-学习/` and never create a sibling `88-学习/` at the vault root. Use generated-output folders only for drafts, tests, failure reports, or intermediate artifacts when the user explicitly wants them.
+- Treat installing Obsidian or changing host applications as a host-system change. Explain the official source and command, use a dry run when useful, and proceed only when explicit user or host approval is available. If approval is unavailable, still prepare the learning draft, but do not claim it was saved to Obsidian.
+- Save durable learning notes into the resolved Obsidian vault under `88-学习/`, not into machine-specific folders, existing personal taxonomies, or a generated-output scratch area. Use generated-output folders only for drafts, tests, failure reports, or intermediate artifacts when the user explicitly wants them.
 - Saving to Obsidian means writing into the user's actual Obsidian vault, not merely the current Codex workspace. Resolve the live vault before saving.
 - Do not hard-code machine-specific vault paths or Obsidian deep links in this skill. Treat Obsidian as local software plus a set of vault directories that must be discovered or provided at runtime.
+
+## Safety Checkpoints
+
+Stop and get explicit user or host approval before any action that changes the user's environment, existing vault, or task state beyond creating a new learning note.
+
+- 🔴 CHECKPOINT / STOP 🛑: Before installing Obsidian or changing host applications, show the official source, dry-run result when available, and the exact command to run.
+- 🔴 CHECKPOINT / STOP 🛑: Before rewriting, moving, splitting, merging, or retagging existing vault notes, present a report and wait for explicit permission to apply edits.
+- 🔴 CHECKPOINT / STOP 🛑: Before creating a multi-file asset package, confirm that the user wants files beyond the default single system note.
+- 🔴 CHECKPOINT / STOP 🛑: Before using an authenticated browser/session path, state what visible content will be read and confirm that no passwords, cookies, tokens, headers, or session storage will be requested or extracted.
+- 🔴 CHECKPOINT / STOP 🛑: Before claiming runtime autonomy, verify that a scheduler, model executor, permission service, observability, deployment, and lifecycle manager actually exist. If not, describe only the local deterministic runtime harness.
 
 ## Supported Inputs
 
 Accept these source types:
 
 - Web URL: read the page when network/browser access is available. If inaccessible, ask for pasted content or a local export.
-- Dynamic web URL: if a page is rendered by JavaScript, CMS data, a documentation-center shell, or encoded script state, read and follow `references/dynamic-web-sources.md` before declaring the source empty or inaccessible.
 - Authenticated URL: Feishu, Notion, Yuque, DingTalk, private wiki, LMS, Google Docs, and internal docs may require a login session. Use the Authenticated Source Workflow before declaring failure.
 - PDF or paper: extract title, author, date, abstract, section structure, page references, and formulas when available.
 - Markdown, text, DOCX, slides, or spreadsheet notes: read with the appropriate local tool.
@@ -54,6 +71,22 @@ If the source cannot be parsed, return a structured failure with:
 
 Do not fabricate content to cover missing source text.
 
+## Anti-Patterns And Blacklist
+
+Do not perform these actions. If a user request seems to require one of them, stop, explain the boundary, and offer the safe alternative.
+
+| Anti-pattern | Why it is unsafe or low quality | Safe alternative |
+|---|---|---|
+| Summarize a login page as if it were the source | It fabricates learning content and hides access failure | Use the Authenticated Source Workflow or return the structured failure block |
+| Ask for passwords, 2FA codes, cookies, bearer tokens, authorization headers, or session storage | It bypasses normal access boundaries and exposes secrets | Use public access, official export/API/connector, already-open visible browser content, or user-pasted/exported text |
+| Save final notes to the current workspace, generated-output, `/tmp`, `/private/tmp`, or an `obsidian://` link | It falsely reports Obsidian persistence | Resolve the real vault and write under `88-学习/` |
+| Hard-code a machine-specific vault path or personal taxonomy | It breaks portability and may write to the wrong place | Resolve the vault at runtime and classify under `88-学习/[大学科]/[章节]/` |
+| Default to many files, MOCs, concept cards, question files, and exercise files | It increases note volume without guaranteeing learning | Produce one coherent system note unless the user explicitly asks for an asset package |
+| Create double links for ordinary keywords | It pollutes the graph and weakens retrieval | Link only durable reusable concepts, models, methods, people, technologies, or questions |
+| Rewrite existing vault notes during an audit by default | It can destroy user organization before review | Report first; edit only after explicit approval |
+| Claim the local runtime harness is an autonomous deployed agent | It overstates capability | State that it records tasks, state transitions, events, and memory-index scaffolds, but does not call an LLM or run in the background |
+| Generate exercises without answers, scoring criteria, or expected outputs | The learner cannot self-check | Provide reference answers, rubrics, or expected deliverables for every exercise |
+
 ## Authenticated Source Workflow
 
 When a source returns a login page, no-permission page, SSO page, empty shell, or JavaScript app without document text, read and follow `references/authenticated-sources.md`.
@@ -68,25 +101,9 @@ When choosing tags, domain labels, folder categories, or double-link candidates,
 
 Every Study Mode note should include these tag dimensions: `status/*`, `type/system-note`, `domain/*`, `source/*`, `access/*`, and `confidence/*`.
 
-## Double-Link Safety
-
-Do not create unresolved Obsidian links by default. Empty `[[...]]` targets create confusing blank notes for the user.
-
-Before the final write:
-
-1. Prefer plain text concept names in the default single-file note.
-2. If using `[[...]]`, verify the target `.md` exists in the resolved vault or is one of the files created in the same task.
-3. Run `scripts/check_obsidian_links.py` when local script execution is available.
-4. If any link is unresolved, convert it to plain text and keep `可拆卡` in the concept table instead of leaving the link.
-
 ## Study Mode Output
 
-Default output for Study Mode is a single Markdown file saved under the resolved learning root in the resolved Obsidian vault. First locate the vault, then resolve the learning root:
-
-- use `docs/xueba/88-学习/` when the vault has `docs/xueba/`
-- otherwise use `88-学习/`
-
-Choose content-based subfolders under that learning root.
+Default output for Study Mode is a single Markdown file saved under `88-学习/` in the resolved Obsidian vault. First locate the vault/root, then create or reuse the `88-学习/` learning root and choose content-based subfolders under it.
 
 ## Obsidian Vault Resolution
 
@@ -95,18 +112,18 @@ Before writing files, resolve Obsidian and the target vault at runtime.
 Prefer this script path when local script execution is available:
 
 1. Resolve vault with `scripts/resolve_obsidian_vault.py --json`. Use `--vault` if the user provided an explicit vault path.
-2. If `obsidian_installed` is false, install Obsidian from the official GitHub releases repository by running `scripts/install_obsidian.py --json`, then rerun `scripts/resolve_obsidian_vault.py --json`. Request the required host/network/system approval instead of only giving a download link.
-3. Classify the note with `scripts/classify_learning_path.py`.
-4. Check double links with `scripts/check_obsidian_links.py` if the draft contains `[[...]]`.
-5. Write the note with `scripts/write_obsidian_note.py`, which maps `88-学习/...` to the resolved learning root.
+2. If Obsidian is installed but no `selected_vault` is found, rerun with `scripts/resolve_obsidian_vault.py --json --search`. Ask the user to choose only when multiple valid vaults remain or no vault can be resolved.
+3. If `obsidian_installed` is false, request explicit approval to install Obsidian from the official GitHub releases repository. Use `scripts/install_obsidian.py --json --dry-run` to show the matched release/asset when helpful, then run `scripts/install_obsidian.py --json` only after approval, and rerun `scripts/resolve_obsidian_vault.py --json`.
+4. Classify the note with `scripts/classify_learning_path.py`.
+5. Write the note with `scripts/write_obsidian_note.py`.
 
 If scripts are unavailable, read and follow `references/obsidian-workflow.md`.
 
-Saving to Obsidian means writing a Markdown file into the resolved vault directory under the resolved learning root. Do not use current workspaces, generated-output directories, `/tmp`, `obsidian://` links, or a download prompt as save destinations.
+Saving to Obsidian means writing a Markdown file into the resolved vault directory under `88-学习/`. Do not use current workspaces, generated-output directories, `/tmp`, `obsidian://` links, or a download prompt as save destinations.
 
 Use one coherent note that contains the full learning experience. When writing the default single-file note, read and follow `references/note-template.md`.
 
-Use Obsidian double links only after link-safety verification. If a concept deserves a future card but no target note exists, keep it as plain text and mark it as "可拆卡"; do not create the separate card unless requested. Avoid making the output look like many small disconnected notes pasted together; the note must read as one complete explanation.
+Use Obsidian double links selectively inside this single note. If a concept deserves a future card, link it and mark it as "可拆卡", but do not create the separate card unless requested. Avoid making the output look like many small disconnected notes pasted together; the note must read as one complete explanation.
 
 ## Optional Asset Package
 
@@ -119,7 +136,7 @@ Only create a multi-file asset package when:
 When needed, create this package:
 
 ```text
-学霸/[topic]/
+88-学习/[大学科]/[章节或知识要点]/[topic]/
   index.md
   overview.md
   notes.md
@@ -154,6 +171,21 @@ Choose Upgrade Mode when the user asks to:
 
 If the user asks for both, run Upgrade Mode first to understand the existing knowledge base, then run Study Mode for new material and connect it to existing notes.
 
+Choose Learning Expert Mode when the user asks to:
+
+- generate a learning expert, learning expert prompt, or xueba expert mode
+- productize a learning workflow into an expert/agent/skill
+- explain how xueba should behave as a learning expert
+- design a xueba expert team or multi-agent learning team
+
+When using Learning Expert Mode, read and follow `references/learning-expert.md`, plus `references/expert-personality.md` when the task involves identity/style/self-introduction, and `references/expert-capabilities.md` when the task involves capability design, expert upgrade, or expert-mode evaluation. Do not simulate a multi-agent team by default; keep ordinary learning tasks in single-expert mode unless the user explicitly asks for team design.
+
+Choose Agent Design Mode when the user asks whether xueba is a skill or agent, wants to agentize xueba, asks for an agent object/model/runtime, or wants to turn xueba into an independent long-running learning agent.
+
+When using Agent Design Mode, read and follow `references/xueba-agent.md`, `references/agent-object.md`, and `references/runtime-agent.md` when runtime behavior is requested. Make the current boundary explicit: xueba now includes a local deterministic runtime harness for task state, event logs, and memory-index scaffolding, but it is not a deployed autonomous runtime agent unless a separate scheduler, model executor, permission service, observability, deployment, and lifecycle manager are built and verified.
+
+Choose Runtime Harness Mode when the user asks to create, list, update, or inspect xueba runtime tasks, queue state, event logs, or memory-index scaffolds. Use `scripts/xueba_runtime.py`; do not simulate background autonomy.
+
 ## Workflow
 
 This workflow describes Study Mode. Use the Upgrade Mode workflow below when the user asks to improve existing Obsidian content.
@@ -166,6 +198,7 @@ Before generating notes, infer or ask for:
 - User goal: overview, work application, exam prep, research, or decision support
 - Target difficulty: beginner, intermediate, advanced
 - Prior knowledge
+- Target reader or use case when it changes the depth or examples
 - Desired output location if saving files; if not provided, save under `88-学习/` and infer content-based subfolders from the topic
 
 If the user wants you to continue without clarification, make conservative assumptions and record them in the single output note.
@@ -180,10 +213,9 @@ Extract:
 - Section map
 - Important definitions, claims, numbers, formulas, code, and examples
 - Source anchors: URL, page number, heading, paragraph, timestamp, or file path
+- Source-grounded facts, author opinions, inferred conclusions, missing parts, and items that need verification
 
 Remove ads, navigation, repeated boilerplate, and low-value filler. Preserve technical details.
-
-For Web URLs, if normal HTML extraction returns only navigation, placeholders, mount nodes, or a thin SPA shell, read `references/dynamic-web-sources.md` and run `scripts/extract_web_source.py --url [url] --json` when available. Use decoded public CMS/API/script-state text as source content only when it comes from the requested origin. If only metadata or navigation can be read, state that limitation in the note and do not invent article/API details.
 
 ### 3. Build The Learning Model
 
@@ -197,9 +229,17 @@ Reconstruct the material using this order:
 
 Do not copy the original table of contents unless it is already the best learning structure.
 
+Adapt the emphasis to the knowledge type:
+
+- Technical knowledge: include application scenarios, implementation pattern, prerequisites, and common pitfalls.
+- Theoretical knowledge: include definitions, assumptions, reasoning chain, boundary conditions, and counterexamples.
+- Practical knowledge: include procedure, inputs, outputs, checklist, example, and failure checks.
+
 ### 4. Handle Concepts
 
 In default one-file mode, include concepts in a table inside the note. Do not create separate concept files.
+
+Use stable concept IDs such as `C001` inside the concept table when the note has multiple reusable concepts. Keep the human-facing concept name as the primary label, and use the ID only as a retrieval/relationship handle.
 
 Create separate concept cards only in optional asset-package mode or when the user explicitly asks for cards.
 
@@ -233,9 +273,9 @@ tags:
 ## 应用场景
 
 ## 关联
-- 前置：[概念名；仅在目标笔记已存在时使用双链]
-- 后续：[概念名；仅在目标笔记已存在时使用双链]
-- 易混：[概念名；仅在目标笔记已存在时使用双链]
+- 前置：[[...]]
+- 后续：[[...]]
+- 易混：[[...]]
 
 ## 来源
 - [source-anchor]
@@ -258,7 +298,7 @@ Every question needs a reference answer, scoring criteria, or expected output. D
 
 Use spaced review intervals by default:
 
-- Day 1: recall core concepts and explain the MOC from memory.
+- Day 1: recall core concepts and explain the topic map from memory.
 - Day 3: answer Feynman questions and correct weak concepts.
 - Day 7: complete transfer exercise.
 - Day 14: solve a real task or write a one-page synthesis.
@@ -268,7 +308,7 @@ Adapt the plan if the user has an exam date, project deadline, or weekly cadence
 
 ### 7. Run Quality Gate
 
-In default one-file mode, include the quality checklist from `references/note-template.md` under `## 5. 来源`. In asset-package mode, create `qa.md` with the same checks adapted to the generated package.
+In default one-file mode, apply `references/quality-gate.md` and include the quality checklist from `references/note-template.md` under `## 5. 来源`. In asset-package mode, create `qa.md` with the same checks adapted to the generated package.
 
 If an item cannot pass, explain the gap and how to fix it.
 
@@ -278,11 +318,17 @@ Use Upgrade Mode to evaluate and improve existing Obsidian knowledge. This mode 
 
 When auditing or upgrading a vault, read and follow `references/upgrade-mode.md`.
 
+When saving an Upgrade Mode report into the vault, use `88-学习/工具/Obsidian/知识库升级报告/YYYY-MM-DD-知识库升级报告.md` unless the user names another vault-relative path.
+
 Default to report-only. Do not rewrite existing notes unless the user explicitly asks you to apply changes.
 
 ## Markdown Templates
 
-Default single-file notes use `references/note-template.md`. Upgrade reports use `references/upgrade-mode.md`.
+Default single-file notes use `references/note-template.md` and the completion criteria in `references/quality-gate.md`. Upgrade reports use `references/upgrade-mode.md`.
+
+Learning Expert Mode uses `references/learning-expert.md`, with `references/expert-personality.md` and `references/expert-capabilities.md` loaded when the user asks about expert identity, expert behavior, capability design, or upgrading xueba into an expert.
+
+Agent Design Mode uses `references/xueba-agent.md`, `references/agent-object.md`, and `references/runtime-agent.md` when runtime behavior is in scope.
 
 ## Final Response
 
@@ -293,5 +339,7 @@ When done, report:
 - Main generated assets
 - Quality gate status
 - Next recommended review action
+
+Do not report temporary draft paths as final saved paths.
 
 Keep the response concise. The files should carry the detail.

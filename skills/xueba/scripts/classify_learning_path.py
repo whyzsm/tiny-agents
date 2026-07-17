@@ -78,7 +78,7 @@ RULES: list[dict[str, Any]] = [
     {
         "relative_dir": "88-学习/技术/前端",
         "domain_tag": "domain/tech/frontend",
-        "keywords": ["frontend", "react", "vue", "前端", "arkui", "arkts", "harmonyos", "鸿蒙", "声明式 ui", "移动端 ui"],
+        "keywords": ["frontend", "react", "vue", "前端"],
     },
     {
         "relative_dir": "88-学习/技术/后端",

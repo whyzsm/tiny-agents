@@ -1,0 +1,16 @@
+{
+  "name": "harmony-quality-review-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "workbuddy-expert-center/wardrobe-review-team",
+  "source_kind": "workbuddy-visible-expert-generalized",
+  "source_ref": "WorkBuddy visible expert card and member prompts",
+  "converted_for": "codex-skills",
+  "child_entry_mode": "internal-router-labels",
+  "internal_child_labels": [
+    "harmony-quality-review-lead",
+    "harmony-function-flow-reviewer",
+    "harmony-ui-visual-reviewer",
+    "harmony-interaction-motion-reviewer"
+  ]
+}

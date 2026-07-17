@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-16T22:34:15+08:00",
+  "generated_at": "2026-07-17T17:21:00+08:00",
   "project_root": ".",
   "agents_root": "agents",
   "skills_root": "skills",
   "selection_rule": "Scan project agents/ and skills/, exclude blocked/conflict/draft/skipped packages, and keep repository-relative paths.",
-  "total": 628,
+  "total": 629,
   "entries": [
     {
       "name": ".codex",
@@ -2755,6 +2755,17 @@
       "purpose": "HarmonyOS Ask-style technical assistant for answering HarmonyOS/OpenHarmony, DevEco Studio, ArkTS, ArkUI, hvigor, module.json5, app.json5, main_pages.json, SDK API, lifecycle, state management, service widget, page generation, build, debugging, profiling, packaging, and publishing questions. Use when the user asks for explanation, diagnosis, guidance, best practices, API usage, or project-aware Q&A without primarily requesting code edits, or mentions HarmonyOS Ask, harmony_os_chat, 鸿蒙问答, ArkTS, ArkUI, DevEco, or CodeGenie Ask.",
       "source_path": "skills/harmony-os-ask",
       "entry_path": "skills/harmony-os-ask/SKILL.md"
+    },
+    {
+      "name": "harmony-quality-review-team",
+      "display_name": "harmony-quality-review-team",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "repo-skill",
+      "description": "HarmonyOS/OpenHarmony 三线质量评审工作流。Use when a user asks to statically review a Harmony project, test functionality and business flows, audit UI and accessibility, inspect interaction and motion, run a regression review, or produce a P0/P1/P2 quality report.",
+      "purpose": "metadata: short-description: HarmonyOS functionality, UI, and interaction quality review source: WorkBuddy visible expert card, generalized for HarmonyOS projects child_entry_mode: internal-router-labels",
+      "source_path": "skills/harmony-quality-review-team",
+      "entry_path": "skills/harmony-quality-review-team/SKILL.md"
     },
     {
       "name": "harness-accept",
@@ -6897,9 +6908,9 @@
       "display_name": "xueba",
       "kind": "skill",
       "status": "ready",
-      "reason": "standard_skill",
-      "description": "Use this skill whenever the user wants to deeply study, digest, restructure, and save learning materials into an Obsidian vault using a tag-first knowledge system, or wants to inspect an existing Obsidian vault to find notes, concepts, tags, links, or knowledge areas that can be upgraded. Trigger for requests like “帮我学习这个资料/网站/论文/视频”, “系统学习后整理到 Obsidian”, “生成学习笔记、概念卡、费曼自测、练习题、复习计划”, “沉淀成 TAG 流知识资产”, “看看 Obsidian 里哪些知识可以升级”, “帮我体检知识库”, “找出过时/重复/薄弱/可合并的笔记”, “优化我的标签和双链”, or learning from login-required sources such as Feishu, Notion, Yuque, DingTalk, private wiki, internal docs, and authenticated web pages. This skill should be used even when the user only says “整理/消化/学习/沉淀/升级/改善/体检” and mentions Obsidian, 标签, 双链, 费曼, 复习, 知识库, existing notes, 飞书, 私有文档, 登录, 权限, 授权, or 内部资料.",
-      "purpose": "Distinguish source claims, AI synthesis, and user-context inference. Produce exercises that force recall, explanation, transfer, and real work. Default to report-first when upgrading existing notes. Do not rewrite the user's notes unless they explicitly ask you to apply changes.",
+      "reason": "repo-skill",
+      "description": "Use when the user wants to study, digest, restructure, or save learning material into Obsidian TAG-flow Markdown; create human-learnable and AI-readable notes, concept maps, Feynman questions, exercises, or review plans; audit or upgrade an existing Obsidian vault; learn from authenticated Feishu/Notion/Yuque/DingTalk/private docs; generate a learning expert prompt, learning expert operating system, or xueba expert mode; or clarify/agentize xueba as a skill, expert mode, agent object, or runtime agent. Trigger on 学霸, Obsidian, TAG流, 双链, 概念关系, AI读取区, 费曼, 复习计划, 知识库体检/升级, 学习专家, 专家提示词, 技能还是智能体, Xueba Agent, 智能体化学霸.",
+      "purpose": "The goal is not to summarize a source. The goal is to create and maintain notes that support understanding, retrieval, review, transfer, and long-term knowledge growth. The first learning output should usually be one complete Markdown note that explains the topic end to end in the style of a \"systematic topic note\"; many files are useful only after the user wants long-term decomposition.",
       "source_path": "skills/xueba",
       "entry_path": "skills/xueba/SKILL.md"
     },

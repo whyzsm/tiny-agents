@@ -1,0 +1,6 @@
+interface:
+  display_name: "HarmonyOS Test Quality Review Team"
+  short_description: "HarmonyOS function, UI, and interaction test review"
+  default_prompt: "Use $harmony-quality-review-team to run a three-track HarmonyOS test review with evidence and P0/P1/P2 remediation priorities."
+policy:
+  allow_implicit_invocation: true

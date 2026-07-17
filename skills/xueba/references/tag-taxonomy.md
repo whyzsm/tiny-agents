@@ -103,19 +103,11 @@ If the domain is unclear, use `domain/unknown`. Do not force second or third lev
 
 ## Folder Classification
 
-Default logical note path:
+Default note path:
 
 ```text
 88-学习/[大学科]/[章节或知识要点]/[主题].md
 ```
-
-When the resolved vault contains `docs/xueba/`, the physical path is:
-
-```text
-docs/xueba/88-学习/[大学科]/[章节或知识要点]/[主题].md
-```
-
-Do not write learning notes into a root-level `88-学习/` sibling when `docs/xueba/` exists.
 
 Use short, direct folders:
 
@@ -138,11 +130,10 @@ Rules:
 
 ## Double Links
 
-Default to plain text concept names in single-file Study Mode. Use `[[double links]]` only for durable concepts, models, methods, people, technologies, or recurring questions whose target notes already exist or are created in the same task.
+Use `[[double links]]` only for durable concepts, models, methods, people, technologies, or recurring questions.
 
 Avoid pseudo-links:
 
 - Do not link ordinary nouns just to increase link count.
 - Do not link a concept if it is unlikely to be reused outside the current note.
-- Do not leave unresolved links that would create empty notes in Obsidian.
 - Mark concept candidates as `可拆卡`, but do not create separate concept files unless the user asks for asset-package mode.

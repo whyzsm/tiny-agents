@@ -66,10 +66,10 @@ Prioritize high-impact, high-confidence, low-effort changes.
 
 ## Report Template
 
-Create report:
+Create report inside the resolved Obsidian vault unless the user only wants a chat report:
 
 ```text
-学霸/知识库升级报告/YYYY-MM-DD-知识库升级报告.md
+88-学习/工具/Obsidian/知识库升级报告/YYYY-MM-DD-知识库升级报告.md
 ```
 
 ```markdown

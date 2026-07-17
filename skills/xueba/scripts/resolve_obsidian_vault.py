@@ -18,9 +18,7 @@ from typing import Any
 
 
 INSTALL_SOURCE_URL = "https://github.com/obsidianmd/obsidian-releases"
-INSTALLER_COMMAND = "python scripts/install_obsidian.py --json"
-LEARNING_ROOT = "88-学习"
-DOCS_XUEBA_ROOT = Path("docs") / "xueba"
+INSTALLER_COMMAND = "python3 scripts/install_obsidian.py --json"
 
 
 def _home() -> Path:
@@ -249,15 +247,6 @@ def choose_vault(vaults: list[dict[str, Any]]) -> tuple[str | None, list[str]]:
     return None, warnings
 
 
-def learning_root_for(vault_path: str | None) -> str | None:
-    if not vault_path:
-        return None
-    vault = Path(vault_path).expanduser()
-    if (vault / DOCS_XUEBA_ROOT).is_dir():
-        return str(DOCS_XUEBA_ROOT / LEARNING_ROOT)
-    return LEARNING_ROOT
-
-
 def main() -> int:
     parser = argparse.ArgumentParser(description="Resolve local Obsidian installation and vault candidates.")
     parser.add_argument("--json", action="store_true", help="Print JSON output. This is the default.")
@@ -291,7 +280,6 @@ def main() -> int:
         "installer_command": obsidian["installer_command"],
         "vaults": vaults,
         "selected_vault": selected_vault,
-        "selected_learning_root": learning_root_for(selected_vault),
         "warnings": warnings,
         "next_action": None,
     }

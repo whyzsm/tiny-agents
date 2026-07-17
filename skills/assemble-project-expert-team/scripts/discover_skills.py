@@ -222,6 +222,9 @@ class TeamEntry:
     path: str
     path_exists: bool | None
     child_skills: tuple[str, ...]
+    child_entry_mode: str
+    top_level_child_skills: tuple[str, ...]
+    internal_child_labels: tuple[str, ...]
     available_child_skills: tuple[str, ...]
     unverified_child_skills: tuple[str, ...]
     child_skill_sources: tuple[str, ...]
@@ -312,6 +315,14 @@ def classify_child_skills(
     return tuple(available), tuple(unresolved)
 
 
+def child_entry_mode(top_level: tuple[str, ...], internal_labels: tuple[str, ...]) -> str:
+    if top_level and internal_labels:
+        return "hybrid"
+    if top_level:
+        return "all-top-level-skills"
+    return "internal-router-labels"
+
+
 def remote_child_sources(index_url: str, child_skills: tuple[str, ...]) -> tuple[str, ...]:
     return tuple(
         urljoin(index_url, f"../skills/{quote(name)}/SKILL.md") for name in child_skills
@@ -335,10 +346,12 @@ def parse_index(
                 catalog_root, index_path, match.group("link").strip()
             )
             available, unresolved = classify_child_skills(catalog_root, child_skills)
+            mode = child_entry_mode(available, unresolved)
             child_sources = tuple(f"skills/{name}/SKILL.md" for name in child_skills)
         elif index_url is not None:
             path = urljoin(index_url, match.group("link").strip())
             path_exists = None
+            mode = "unverified"
             available = ()
             unresolved = child_skills
             child_sources = remote_child_sources(index_url, child_skills)
@@ -353,6 +366,9 @@ def parse_index(
                 path=path,
                 path_exists=path_exists,
                 child_skills=child_skills,
+                child_entry_mode=mode,
+                top_level_child_skills=available,
+                internal_child_labels=unresolved if mode != "unverified" else (),
                 available_child_skills=available,
                 unverified_child_skills=unresolved,
                 child_skill_sources=child_sources,
@@ -451,6 +467,9 @@ def rank(entries: list[TeamEntry], query: str) -> list[TeamEntry]:
                     path=entry.path,
                     path_exists=entry.path_exists,
                     child_skills=entry.child_skills,
+                    child_entry_mode=entry.child_entry_mode,
+                    top_level_child_skills=entry.top_level_child_skills,
+                    internal_child_labels=entry.internal_child_labels,
                     available_child_skills=entry.available_child_skills,
                     unverified_child_skills=entry.unverified_child_skills,
                     child_skill_sources=entry.child_skill_sources,
@@ -470,12 +489,13 @@ def render_markdown(entries: list[TeamEntry], query: str, index_path: str) -> st
         f"Index: `{index_path}`",
         f"Query: `{query or '(none)'}`",
         "",
-        "| Score | Category | Team | Name | Available child skills | Unverified | Path |",
-        "|---:|---|---|---|---|---|---|",
+        "| Score | Category | Team | Name | Mode | Top-level child skills | Internal labels / Unverified | Path |",
+        "|---:|---|---|---|---|---|---|---|",
     ]
     for entry in entries:
-        available = ", ".join(f"`{skill}`" for skill in entry.available_child_skills) or "-"
-        unverified = ", ".join(f"`{skill}`" for skill in entry.unverified_child_skills) or "-"
+        available = ", ".join(f"`{skill}`" for skill in entry.top_level_child_skills) or "-"
+        internal = entry.internal_child_labels or entry.unverified_child_skills
+        unresolved = ", ".join(f"`{skill}`" for skill in internal) or "-"
         if entry.path.startswith(("http://", "https://")):
             source = f"[SKILL.md]({entry.path})"
         else:
@@ -483,7 +503,7 @@ def render_markdown(entries: list[TeamEntry], query: str, index_path: str) -> st
         missing = " (missing)" if entry.path_exists is False else ""
         lines.append(
             f"| {entry.score} | {entry.category} | `{entry.router_name}` | "
-            f"{entry.display_name} | {available} | {unverified} | {source}{missing} |"
+            f"{entry.display_name} | `{entry.child_entry_mode}` | {available} | {unresolved} | {source}{missing} |"
         )
     return "\n".join(lines) + "\n"
 

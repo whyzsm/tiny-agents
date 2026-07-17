@@ -40,10 +40,31 @@ Require the following. 必须满足以下要求：
 - `SKILL.md` frontmatter contains `name` and a trigger-rich `description`; keep extra fields aligned with local conventions. `SKILL.md` frontmatter 必须包含 `name` 和触发条件清晰的 `description`，其他字段遵循本地规范。
 - Include a routing table mapping request types to the narrowest selected Skills. 提供将请求类型映射到最窄 Skill 的路由表。
 - Define phases with explicit inputs, outputs, dependencies, gates, and exclusions. 定义明确的输入、输出、依赖、质量门和排除项的阶段流程。
-- `manifest.json` contains the team slug, display name, summary, and selected Skill names. `manifest.json` 包含团队 slug、展示名称、摘要和选中的 Skill 名称。
+- `manifest.json` contains the team slug, display name, summary, child-entry mode, selected top-level Skill names, internal labels, and unresolved children. `manifest.json` 包含团队 slug、展示名称、摘要、子项模式、选中的顶层 Skill 名称、内部标签和未解析子项。
 - `agents/openai.yaml` contains quoted `display_name`, a 25-64 character `short_description`, and a one-sentence `default_prompt` mentioning `$<team-name>-team`. `agents/openai.yaml` 包含带引号的 `display_name`、25-64 字符的 `short_description` 和提及 `$<team-name>-team` 的单句 `default_prompt`。
 
 Keep identities and personalities out of router Skills. Router Skill 不承载身份和人格。
+
+### Child entry modes / 子项模式
+
+Router Skill packages may use the same three child-entry modes accepted by `expert-team-converter`. Router Skill 包可使用与 `expert-team-converter` 一致的三种子项模式。
+
+- `all-top-level-skills`: every child entry resolves to a real top-level `skills/<name>/SKILL.md`. Use child Skills directly after verifying frontmatter names. 每个子项都解析为真实顶层 `skills/<name>/SKILL.md`；校验 frontmatter 名称后直接使用子 Skill。
+- `hybrid`: some child entries are real top-level Skills and some are router-local labels. Use only the real top-level Skills as dispatchable members; preserve internal labels as routing evidence, phase names, exclusions, or unresolved package notes. 部分子项是真实顶层 Skill，部分是 router 内部标签；只有真实顶层 Skill 可作为成员调度，内部标签只保留为路由证据、阶段名、排除项或包说明。
+- `internal-router-labels`: every child entry is a local role, phase, or capability label inside the router. Do not invoke labels as `$label`; select the router Skill itself when it is verified and suitable, or report a capability gap. 所有子项都是入口内部角色、阶段或能力标签；不要把标签当 `$label` 调用，应在入口 Skill 本身校验且适配时选择入口，否则报告能力缺口。
+
+Use these manifest fields when a package contains child entries. 包含子项时使用以下 manifest 字段：
+
+```json
+{
+  "child_entry_mode": "all-top-level-skills | hybrid | internal-router-labels",
+  "top_level_child_skills": ["real-skill-name"],
+  "internal_child_labels": ["router-local-label"],
+  "unresolved_child_skills": ["ambiguous-or-unverified-name"]
+}
+```
+
+Never imply that an internal label has its own `SKILL.md` or can be installed independently unless that package actually exists. 除非对应包真实存在，否则不得暗示内部标签拥有独立 `SKILL.md` 或可被单独安装。
 
 ## 3. 正式专家团 Plugin / Formal Expert-Team Plugin
 

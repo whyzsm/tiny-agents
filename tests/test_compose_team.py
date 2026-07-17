@@ -88,6 +88,59 @@ class ComposeTeamTest(unittest.TestCase):
         self.assertEqual(phases[1]["depends_on"], ["phase-1-contract"])
         self.assertTrue(phases[1]["parallel"])
 
+    def test_catalog_child_entry_modes_are_classified(self):
+        catalog = (self.root / "catalog").resolve()
+        skills = catalog / "skills"
+        index = catalog / "indexes/expert-team-file-list.md"
+        for name in ("real-one", "real-two", "hybrid-real"):
+            (skills / name).mkdir(parents=True)
+            (skills / name / "SKILL.md").write_text(
+                f"---\nname: {name}\ndescription: test\n---\n# {name}\n",
+                encoding="utf-8",
+            )
+        index.parent.mkdir(parents=True)
+        index.write_text(
+            "\n".join(
+                [
+                    "| 分类 | 专家团 | 名称 | 子技能 |",
+                    "|---|---|---|---|",
+                    "| 技术 | [`all-team`](../skills/all-team/SKILL.md) | All Team | `real-one`<br>`real-two` |",
+                    "| 技术 | [`hybrid-team`](../skills/hybrid-team/SKILL.md) | Hybrid Team | `hybrid-real`<br>`internal-label` |",
+                    "| 技术 | [`internal-team`](../skills/internal-team/SKILL.md) | Internal Team | `intake`<br>`handoff` |",
+                ]
+            ),
+            encoding="utf-8",
+        )
+
+        entries = {entry.team_id: entry for entry in COMPOSE.discover.read_local_index(catalog, index.resolve())}
+
+        self.assertEqual(entries["all-team"].child_entry_mode, "all-top-level-skills")
+        self.assertEqual(entries["all-team"].top_level_child_skills, ("real-one", "real-two"))
+        self.assertEqual(entries["hybrid-team"].child_entry_mode, "hybrid")
+        self.assertEqual(entries["hybrid-team"].top_level_child_skills, ("hybrid-real",))
+        self.assertEqual(entries["hybrid-team"].internal_child_labels, ("internal-label",))
+        self.assertEqual(entries["internal-team"].child_entry_mode, "internal-router-labels")
+        self.assertEqual(entries["internal-team"].internal_child_labels, ("intake", "handoff"))
+
+    def test_hybrid_catalog_candidates_do_not_dispatch_internal_labels(self):
+        task = "安全审计和质量 review"
+        scan = COMPOSE.scan_project(self.root, task)
+        index = REPO_ROOT / "indexes/expert-team-file-list.md"
+        entries = [
+            entry
+            for entry in COMPOSE.discover.read_local_index(REPO_ROOT, index)
+            if entry.team_id == "tech-software-workshop"
+        ]
+
+        candidates = COMPOSE.build_candidates(entries, task, scan, True)
+        review_skills = {candidate["skill"] for candidate in candidates["review"]}
+        selected_entry_kinds = {candidate["selected_entry_kind"] for candidate in candidates["review"]}
+
+        self.assertIn("security-audit", review_skills)
+        self.assertNotIn("code-review", review_skills)
+        self.assertNotIn("qa-testing", review_skills)
+        self.assertEqual(selected_entry_kinds, {"top-level-child-skill"})
+
     def test_local_installed_capabilities_precede_catalog_and_use_name_boundaries(self):
         installed = self.root / "installed-skills"
         (installed / "playwright").mkdir(parents=True)

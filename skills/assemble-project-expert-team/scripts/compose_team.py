@@ -574,8 +574,37 @@ def candidate_score(skill_name: str, team: Any, slot: Slot, task: str, scan: dic
 
 def build_candidates(entries: list[Any], task: str, scan: dict[str, Any], local_mode: bool) -> dict[str, list[dict[str, Any]]]:
     candidates: dict[str, list[dict[str, Any]]] = {slot.key: [] for slot in SLOTS}
+
+    def add_candidate(
+        slot: Slot,
+        team: Any,
+        skill: str,
+        source: str | None,
+        score: int,
+        *,
+        selected_entry_kind: str,
+    ) -> None:
+        candidates[slot.key].append(
+            {
+                "skill": skill,
+                "team_id": team.team_id,
+                "team_name": team.display_name,
+                "team_path": team.path,
+                "source": source,
+                "source_kind": "catalog-local" if local_mode else "remote-catalog",
+                "availability": "catalog-local" if local_mode else "remote",
+                "child_entry_mode": getattr(team, "child_entry_mode", "unknown"),
+                "selected_entry_kind": selected_entry_kind,
+                "top_level_child_skills": list(getattr(team, "top_level_child_skills", ())),
+                "internal_child_labels": list(getattr(team, "internal_child_labels", ())),
+                "unverified_child_skills": list(getattr(team, "unverified_child_skills", ())),
+                "score": score,
+                "matched_terms": list(team.matched_terms),
+            }
+        )
+
     for team in entries:
-        children = team.available_child_skills if local_mode else team.child_skills
+        children = team.top_level_child_skills if local_mode else team.child_skills
         source_by_name = dict(zip(team.child_skills, team.child_skill_sources))
         for child in children:
             for slot in SLOTS:
@@ -591,19 +620,25 @@ def build_candidates(entries: list[Any], task: str, scan: dict[str, Any], local_
                 score = candidate_score(child, team, slot, task, scan)
                 if score <= team.score:
                     continue
-                candidates[slot.key].append(
-                    {
-                        "skill": child,
-                        "team_id": team.team_id,
-                        "team_name": team.display_name,
-                        "team_path": team.path,
-                        "source": source_by_name.get(child),
-                        "source_kind": "catalog-local" if local_mode else "remote-catalog",
-                        "availability": "catalog-local" if local_mode else "remote",
-                        "score": score,
-                        "matched_terms": list(team.matched_terms),
-                    }
-                )
+                add_candidate(slot, team, child, source_by_name.get(child), score, selected_entry_kind="top-level-child-skill")
+
+        should_consider_router = (
+            team.child_entry_mode in {"internal-router-labels", "unverified"}
+            or (team.child_entry_mode == "hybrid" and not team.top_level_child_skills)
+        )
+        if not should_consider_router:
+            continue
+        labels = " ".join(getattr(team, "internal_child_labels", ()) or getattr(team, "unverified_child_skills", ()))
+        router_text = f"{team.team_id} {team.router_name} {team.display_name} {labels}".lower()
+        for slot in SLOTS:
+            direct_match = (
+                team.router_name in slot.preferred
+                or any(keyword.lower() in router_text for keyword in slot.keywords)
+            )
+            if not direct_match:
+                continue
+            score = candidate_score(team.router_name, team, slot, task, scan) + 5
+            add_candidate(slot, team, team.router_name, team.path, score, selected_entry_kind="router-skill")
     for key in candidates:
         candidates[key].sort(key=lambda item: (-item["score"], item["skill"]))
     return candidates
@@ -855,11 +890,11 @@ def render_markdown(result: dict[str, Any]) -> str:
         "",
         "## Roster / 成员",
         "",
-        "| ID | Role / 角色 | Skill | Source kind / 来源 | Source / 地址 | Verification / 校验 |",
-        "|---|---|---|---|---|---|",
+        "| ID | Role / 角色 | Skill | Entry / 条目 | Mode / 模式 | Source kind / 来源 | Source / 地址 | Verification / 校验 |",
+        "|---|---|---|---|---|---|---|---|",
     ]
     for member in result["roster"]:
-        lines.append(f"| `{member['id']}` | {member['role']['en']} / {member['role']['zh']} | `{member['skill']}` | `{member.get('source_kind', 'unknown')}` | `{member['source']}` | `{member['verification']['status']}` |")
+        lines.append(f"| `{member['id']}` | {member['role']['en']} / {member['role']['zh']} | `{member['skill']}` | `{member.get('selected_entry_kind', 'unknown')}` | `{member.get('child_entry_mode', 'unknown')}` | `{member.get('source_kind', 'unknown')}` | `{member['source']}` | `{member['verification']['status']}` |")
     lines.extend(["", "## Phases / 阶段", ""])
     for phase in result["phases"]:
         lines.append(f"- **{phase['id']}** {phase['name']['en']} / {phase['name']['zh']}: `{', '.join(phase['members'])}`; depends on `{', '.join(phase['depends_on']) or 'none'}`; gate: {phase['gate']}")

@@ -65,10 +65,10 @@ unified project index for repository agents and skills.
 `indexes/agent-skill-index.md` 和 `indexes/agent-skill-index.json` 是本仓库
 agents 与 skills 的统一项目目录。
 
-`indexes/skill-team-router-index.md` and `indexes/expert-team-file-list.md`
+`indexes/expert-team-skill-index.md` and `indexes/expert-team-file-list.md`
 are specialized catalogs for orchestration, not the primary install lookup.
 
-`indexes/skill-team-router-index.md` 和 `indexes/expert-team-file-list.md` 是
+`indexes/expert-team-skill-index.md` 和 `indexes/expert-team-file-list.md` 是
 编排专用目录，不是主安装查找入口。
 
 ## Agent And Skill Boundary

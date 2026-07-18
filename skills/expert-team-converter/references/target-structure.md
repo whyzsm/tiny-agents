@@ -76,7 +76,7 @@ Use this order:
 
 4. Increase the expert-team count at the top by exactly the number of new rows added.
 
-Do not update `indexes/agent-skill-index.md` or `indexes/agent-skill-index.json` unless the user asks for a fresh local scan inventory. Do not update `indexes/skill-team-router-index.md` unless the user asks for that specialized router catalog.
+Do not update `indexes/agent-skill-index.md` or `indexes/agent-skill-index.json` unless the user asks for a fresh local scan inventory. Do not update `indexes/expert-team-skill-index.md` unless the user asks for that specialized expert-team Skill catalog.
 
 ## Acceptance Criteria
 

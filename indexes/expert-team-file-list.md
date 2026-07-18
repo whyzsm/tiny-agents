@@ -1,6 +1,6 @@
 # 专家团列表
 
-共 242 个专家团。按前端分类顺序整理；“专家团”是入口，“子技能”列可能是真实顶层 skill，也可能是该入口内部的能力标签。
+共 244 个专家团。按前端分类顺序整理；“专家团”是入口，“子技能”列可能是真实顶层 skill，也可能是该入口内部的能力标签。
 
 普通 skill 查找请先看 `indexes/skill-registry.md` / `indexes/skill-registry.json`；本文件只列固定专家团入口。
 
@@ -17,7 +17,6 @@ For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/ski
 | 技术 | [`tech-code-review`](../skills/tech-code-review-team/SKILL.md) | 代码审查专家团 | `pr-reviewer`<br>`critical-code-reviewer`<br>`project-code-standard`<br>`security-audit`<br>`clean-code-review`<br>`code-review-assistant` |
 | 技术 | [`tech-tencentcloud-expert`](../skills/tech-tencentcloud-expert-team/SKILL.md) | 腾讯云专家团 | `tencentcloud-infra`<br>`tencentcloud-lighthouse-skill`<br>`tencentcloud-dnspod-skill`<br>`cloudbase`<br>`tencent-cos-skill`<br>`tencent-agent-storage`<br>`tencentcloud-ocr-general`<br>`tencentcloud-asr`<br>`web-development`<br>`miniprogram-development` |
 | 技术 | [`tech-test-automation`](../skills/tech-test-automation-team/SKILL.md) | 测试自动化专家团 | `superpowers-tdd`<br>`test-case-generator`<br>`test-patterns`<br>`e2e-testing-patterns`<br>`api-test-automation` |
-| 技术 | [`skill-generation-workbench`](../skills/skill-generation-workbench/SKILL.md) | Skill 生成工作台 | `skill-creator` |
 | 技术 | [`tech-software-workshop`](../skills/tech-software-workshop-team/SKILL.md) | 软件工坊专家团 | `product-review`<br>`code-review`<br>`security-audit`<br>`qa-testing`<br>`design-system`<br>`debug-operations` |
 | 技术 | [`tech-software-development`](../skills/tech-software-development-team/SKILL.md) | 软件开发团队 | `product-requirements`<br>`architecture-design`<br>`task-breakdown`<br>`parallel-implementation`<br>`qa-validation`<br>`delivery-management` |
 | 技术 | [`tech-mvp-development`](../skills/tech-mvp-development-team/SKILL.md) | MVP 开发专家团 | `requirement-discovery`<br>`competitive-research`<br>`three-doc-package`<br>`spec-lock`<br>`frontend-backend-build`<br>`test-deploy`<br>`user-feedback-loop` |
@@ -194,7 +193,10 @@ For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/ski
 | 法务安全 | [`legal-blockchain-security-auditor`](../skills/legal-blockchain-security-auditor-team/SKILL.md) | 区块链安全审计师 | `legal-blockchain-security-auditor-intake`<br>`legal-blockchain-security-auditor-strategy`<br>`legal-blockchain-security-auditor-execution`<br>`legal-blockchain-security-auditor-quality`<br>`legal-blockchain-security-auditor-measurement`<br>`legal-blockchain-security-auditor-handoff` |
 | 法务安全 | [`legal-contract-risk-advisor`](../skills/legal-contract-risk-advisor-team/SKILL.md) | 合同风控顾问 | `legal-contract-risk-advisor-intake`<br>`legal-contract-risk-advisor-strategy`<br>`legal-contract-risk-advisor-execution`<br>`legal-contract-risk-advisor-quality`<br>`legal-contract-risk-advisor-measurement`<br>`legal-contract-risk-advisor-handoff` |
 | 法务安全 | [`legal-marketing-copy-reviewer`](../skills/legal-marketing-copy-reviewer-team/SKILL.md) | 营销文案审查官 | `legal-marketing-copy-reviewer-intake`<br>`legal-marketing-copy-reviewer-strategy`<br>`legal-marketing-copy-reviewer-execution`<br>`legal-marketing-copy-reviewer-quality`<br>`legal-marketing-copy-reviewer-measurement`<br>`legal-marketing-copy-reviewer-handoff` |
+| 学术 | [`academic-paper-search`](../skills/academic-paper-search-team/SKILL.md) | 论文检索专家团 | `academic-research-hub`<br>`literature-search`<br>`deepxiv-cli` |
+| 学术 | [`academic-statistical-analysis`](../skills/academic-statistical-analysis-team/SKILL.md) | 统计分析专家团 | `r-stats`<br>`biostatistics`<br>`data-analysis-workflow`<br>`statistics-2`<br>`data-analyst-cn` |
 | 学术 | [`academic-literature-review`](../skills/academic-literature-review-team/SKILL.md) | 文献综述专家团 | `academic-deep-research-pro`<br>`academic-researcher`<br>`paper-analyzer`<br>`ai-powered-literature-review-skills`<br>`thesis-helper`<br>`academic-writing` |
+| 教育 | [`academic-gaokao-expert`](../skills/academic-gaokao-expert-team/SKILL.md) | 高考规划专家团 | `tencent-docs`<br>`tencent-yuanbao-gaokao-regional-passing-scores`<br>`tencent-yuanbao-gaokao-score-to-rank-lookup`<br>`gaokao-tool`<br>`business-writing` |
 | 教育 | [`education-lesson-planning`](../skills/education-lesson-planning-team/SKILL.md) | 教案设计专家团 | `teaching-plan-writer`<br>`teacher-assistant`<br>`classroom-lesson-pack`<br>`creator-course-outline`<br>`teacher-prep`<br>`ppt-lecture-notes` |
 | 教育 | [`education-quiz-generation`](../skills/education-quiz-generation-team/SKILL.md) | 题库生成专家团 | `quiz-creator`<br>`exam-generator`<br>`math-edu-assistant`<br>`exam-analyzer`<br>`k12-smart-teacher`<br>`exam` |
 | 教育 | [`education-student-assessment`](../skills/education-student-assessment-team/SKILL.md) | 学生评估专家团 | `teacher-assistant`<br>`rubric-gap-analyzer`<br>`error-analysis`<br>`k12-smart-teacher`<br>`student-growth-ops`<br>`xueersi-parent-comment` |

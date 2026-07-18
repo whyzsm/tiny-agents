@@ -72,7 +72,7 @@ class ScaffoldSkillTest(unittest.TestCase):
             scaffold_skill.parse_resources("references,unknown")
 
     def test_is_registered_in_skill_team_router_index(self):
-        index = (REPO_ROOT / "indexes/skill-team-router-index.md").read_text()
+        index = (REPO_ROOT / "indexes/expert-team-skill-index.md").read_text()
 
         self.assertIn("skill-generation-workbench", index)
         self.assertIn("Skill 生成工作台", index)

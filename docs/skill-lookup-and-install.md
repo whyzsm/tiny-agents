@@ -24,7 +24,7 @@ skills/<name>/skill.md
 需要看专家团入口时，看：
 
 - `indexes/expert-team-file-list.md`: 固定专家团入口
-- `indexes/skill-team-router-index.md`: 动态编排或生成 skill 包的 router
+- `indexes/expert-team-skill-index.md`: 专家团路由、转换和 Skill 工作台目录
 
 专家团的“子技能”列不是安装清单。子技能可能是真实顶层 skill，也可能只是 router 内部阶段名、角色名或能力槽位。只有能解析到 `skills/<name>/SKILL.md` 或 `skills/<name>/skill.md` 的名称，才是可单独 `$<name>` 调用和安装的 skill。
 

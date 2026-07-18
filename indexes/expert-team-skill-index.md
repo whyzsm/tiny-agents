@@ -1,16 +1,19 @@
-# Skill Team Router Index
+# Expert-Team Skill Index
 
-本索引登记“负责动态编排专家团或生成 Skill 包的 Skill”，不登记固定专家团、Agent 成员或具体业务专家。
+本索引登记本仓库自建或适配的专家团路由 Skill、专家团转换 Skill 和 Skill 工作台。固定专家团入口统一登记在 `expert-team-file-list.md`；本文件可以同时引用需要说明其 Skill 实现的专家团。
 
-普通 skill 查找请先看 `indexes/skill-registry.md` / `indexes/skill-registry.json`；本文件只保留动态编排类 Skill。
+普通 skill 查找请先看 `indexes/skill-registry.md` / `indexes/skill-registry.json`；本文件只保留专家团路由、转换和 Skill 工作台类 Skill。
 
-For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/skill-registry.json`; this file only keeps dynamic orchestration Skills.
+For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/skill-registry.json`; this file only keeps expert-team routers, converters, and Skill workbenches.
 
-| 类型 / Type | Skill | 位置 / Location | 作用 / Purpose |
-|---|---|---|---|
-| 动态专家团编排 Skill / Dynamic expert-team assembler | [`assemble-project-expert-team`](../skills/assemble-project-expert-team/SKILL.md) | `skills/assemble-project-expert-team/` | 扫描目标项目，读取远端专家团目录，自动生成成员 roster、成员 Prompt、阶段 DAG 和质量门，并按运行时能力协调执行 / Scan the target project, read the remote expert-team catalog, generate the roster, member prompts, phase DAG, and quality gates, then coordinate execution according to runtime capabilities |
-| Skill 生成工作台 / Skill generation workbench | [`skill-generation-workbench`](../skills/skill-generation-workbench/SKILL.md) | `skills/skill-generation-workbench/` | 设计、生成、转换、升级和验证 Codex Skill 包，产出 `SKILL.md`、`agents/openai.yaml`、引用文件和脚本 / Design, generate, convert, upgrade, and validate Codex Skill packages; produce `SKILL.md`, `agents/openai.yaml`, references, and scripts |
-| Skill 拆解与写作工作台 / Skill breakdown and writing coach | [`skill-breakdown-workbench`](../skills/skill-breakdown-workbench/SKILL.md) | `skills/skill-breakdown-workbench/` | 分析 Skill/Agent 的写法，并输出中英双语教学、模板和改写建议 / Analyze Skill and agent writing, then produce bilingual teaching notes, templates, and rewrite guidance |
+| 类型 / Type | Skill | 位置 / Location | 作用 / Purpose | 能力来源 / Source |
+|---|---|---|---|---|
+| HarmonyOS 专家团路由 Skill / HarmonyOS expert-team router | [`harmony-expert-team`](../skills/harmony-expert-team/SKILL.md) | `skills/harmony-expert-team/` | HarmonyOS/OpenHarmony 项目专家团入口；负责协调问答、实现、UI 生成和服务卡片能力 / Expert-team entry for HarmonyOS/OpenHarmony work; coordinates Q&A, implementation, UI generation, and service-card capabilities | `repo-local/skills/harmony-expert-team` |
+| 设计引擎路由 Skill / Design-engine expert-team router | [`design-engine`](../skills/design-engine/SKILL.md) | `skills/design-engine/` | 设计需求澄清、设计系统、原型构建、质量评审和导出交付的专家团路由 / Expert-team router for design discovery, design systems, prototype building, quality critique, and export delivery | `user-provided/design-engine` |
+| 动态专家团编排 Skill / Dynamic expert-team assembler | [`assemble-project-expert-team`](../skills/assemble-project-expert-team/SKILL.md) | `skills/assemble-project-expert-team/` | 扫描目标项目，读取远端专家团目录，自动生成成员 roster、成员 Prompt、阶段 DAG 和质量门，并按运行时能力协调执行 / Scan the target project, read the remote expert-team catalog, generate the roster, member prompts, phase DAG, and quality gates, then coordinate execution according to runtime capabilities | `https://github.com/whyzsm/tiny-agents/tree/main/indexes` |
+| Skill 生成工作台 / Skill generation workbench | [`skill-generation-workbench`](../skills/skill-generation-workbench/SKILL.md) | `skills/skill-generation-workbench/` | 设计、生成、转换、升级和验证 Codex Skill 包，产出 `SKILL.md`、`agents/openai.yaml`、引用文件和脚本 / Design, generate, convert, upgrade, and validate Codex Skill packages; produce `SKILL.md`, `agents/openai.yaml`, references, and scripts | `repo-local/skills/skill-generation-workbench` |
+| Skill 拆解与写作工作台 / Skill breakdown and writing coach | [`skill-breakdown-workbench`](../skills/skill-breakdown-workbench/SKILL.md) | `skills/skill-breakdown-workbench/` | 分析 Skill/Agent 的写法，并输出中英双语教学、模板和改写建议 / Analyze Skill and agent writing, then produce bilingual teaching notes, templates, and rewrite guidance | `repo-local/skills/skill-breakdown-workbench` |
+| 外部专家团转换 Skill / External expert-team converter | [`expert-team-converter`](../skills/expert-team-converter/SKILL.md) | `skills/expert-team-converter/` | 将 WorkBuddy、CodeBuddy、插件或提示词形式的外部专家包转换为当前仓库的专家团 Skill 包，判断真实顶层 Skill、混合映射或 router 内部标签，并同步索引 / Convert WorkBuddy, CodeBuddy, plugin, or prompt-based expert packages into repository expert-team Skill packages, classify child entries, and update indexes | `repo-local/skills/expert-team-converter` |
 
 ## assemble-project-expert-team
 
@@ -30,6 +33,8 @@ For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/ski
 ## 使用边界
 
 `expert-team-file-list.md` 只登记固定专家团入口；本文件登记能够动态选择或协调专家团的 Skill。具体被选中的专家团和子技能，必须以任务上下文和远端目录读取结果为准，不在本索引中预先固定成员名单。
+
+`harmony-expert-team` is intentionally listed in both indexes: `expert-team-file-list.md` records it as an expert-team entry, while this file records the repository-authored router Skill and its implementation boundary. `harmony-expert-team` 有意同时登记在两个索引中：`expert-team-file-list.md` 将其登记为专家团入口，本文件记录其自建路由 Skill 和实现边界。
 
 `assemble-project-expert-team` 运行后应返回成员 ID、选中 Skill、来源校验、成员 Prompt、阶段依赖、交接契约、前置条件和剩余缺口。没有团队或多 Agent 原语时，只能标记为协调式能力执行，不得声称已经创建真实成员。
 
@@ -54,3 +59,11 @@ After execution, `assemble-project-expert-team` should return member IDs, select
 - **默认产物 / Default outputs**：中英双语拆解、写作建议、可复用模板和改写方向 / bilingual breakdowns, writing advice, reusable templates, and rewrite directions
 - **默认边界 / Default boundary**：只分析可见内容；不猜隐藏 prompt；默认不安装、不提交、不发布 / analyze only visible content; do not guess hidden prompts; do not install, commit, or publish by default
 - **验证 / Validation**：每个结论都能回指到可见文件，且中英部分结构对齐 / every conclusion must map back to visible files, with aligned Chinese and English sections
+
+## expert-team-converter
+
+- **分类 / Classification**：本仓库自建的工具型 Skill / repo-authored utility Skill
+- **不是 / Not**：固定专家团、专家团成员、运行时 Agent 或 `expert-team-file-list.md` 中的专家团入口 / a fixed expert team, team member, runtime Agent, or an entry in `expert-team-file-list.md`
+- **作用 / Purpose**：转换外部专家包，复用已有 Skill，判断子项是顶层 Skill、混合映射还是 router 内部能力标签 / convert external expert packages, reuse existing Skills, and classify child entries
+- **索引职责 / Index responsibility**：更新 `skill-registry.md`、`skill-registry.json`，并在转换出专家团入口时更新 `expert-team-file-list.md` / update the Skill registry and update `expert-team-file-list.md` only for the converted expert-team entry
+- **资源边界 / Asset boundary**：不提取隐藏 Prompt，不默认安装、提交、推送或生成头像资源 / do not extract hidden prompts, install, commit, push, or generate avatar assets by default

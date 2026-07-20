@@ -1,14 +1,15 @@
 # Expert-Team Skill Index
 
-本索引登记本仓库自建或适配的专家团路由 Skill、专家团转换 Skill 和 Skill 工作台。固定专家团入口统一登记在 `expert-team-file-list.md`；本文件可以同时引用需要说明其 Skill 实现的专家团。
+本索引登记本仓库自建或适配的专家团路由 Skill、专家团转换 Skill、Skill 工作台和与专家团路由协作的项目质量门禁 Skill。固定专家团入口统一登记在 `expert-team-file-list.md`；本文件可以同时引用需要说明其 Skill 实现的专家团。
 
-普通 skill 查找请先看 `indexes/skill-registry.md` / `indexes/skill-registry.json`；本文件只保留专家团路由、转换和 Skill 工作台类 Skill。
+普通 skill 查找请先看 `indexes/skill-registry.md` / `indexes/skill-registry.json`；本文件保留专家团路由、转换、Skill 工作台，以及支撑专家团交付的项目质量门禁 Skill。
 
-For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/skill-registry.json`; this file only keeps expert-team routers, converters, and Skill workbenches.
+For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/skill-registry.json`; this file keeps expert-team routers, converters, Skill workbenches, and project quality-gate Skills that support expert-team delivery.
 
 | 类型 / Type | Skill | 位置 / Location | 作用 / Purpose | 能力来源 / Source |
 |---|---|---|---|---|
 | HarmonyOS 专家团路由 Skill / HarmonyOS expert-team router | [`harmony-expert-team`](../skills/harmony-expert-team/SKILL.md) | `skills/harmony-expert-team/` | HarmonyOS/OpenHarmony 项目专家团入口；负责协调问答、实现、UI 生成和服务卡片能力 / Expert-team entry for HarmonyOS/OpenHarmony work; coordinates Q&A, implementation, UI generation, and service-card capabilities | `repo-local/skills/harmony-expert-team` |
+| HarmonyOS 上架自检 Skill / HarmonyOS AppGallery release self-check | [`harmonyos-app-store-self-check`](../skills/harmonyos-app-store-self-check/SKILL.md) | `skills/harmonyos-app-store-self-check/` | HarmonyOS 应用发布前质量门禁；检查工程、签名、隐私、权限、发布包和市场素材，支持 AGC 实测读取与基于 AGC 报告的五类自检模拟 / Pre-release quality gate for HarmonyOS apps; checks project structure, signing, privacy, permissions, artifacts, and listing evidence, with AGC live-result reading and report-driven simulation across five AGC dimensions | `repo-local/skills/harmonyos-app-store-self-check` |
 | 动态专家团编排 Skill / Dynamic expert-team assembler | [`assemble-project-expert-team`](../skills/assemble-project-expert-team/SKILL.md) | `skills/assemble-project-expert-team/` | 扫描目标项目，读取远端专家团目录，自动生成成员 roster、成员 Prompt、阶段 DAG 和质量门，并按运行时能力协调执行 / Scan the target project, read the remote expert-team catalog, generate the roster, member prompts, phase DAG, and quality gates, then coordinate execution according to runtime capabilities | `https://github.com/whyzsm/tiny-agents/tree/main/indexes` |
 | Skill 生成工作台 / Skill generation workbench | [`skill-generation-workbench`](../skills/skill-generation-workbench/SKILL.md) | `skills/skill-generation-workbench/` | 设计、生成、转换、升级和验证 Codex Skill 包，产出 `SKILL.md`、`agents/openai.yaml`、引用文件和脚本 / Design, generate, convert, upgrade, and validate Codex Skill packages; produce `SKILL.md`, `agents/openai.yaml`, references, and scripts | `repo-local/skills/skill-generation-workbench` |
 | Skill 拆解与写作工作台 / Skill breakdown and writing coach | [`skill-breakdown-workbench`](../skills/skill-breakdown-workbench/SKILL.md) | `skills/skill-breakdown-workbench/` | 分析 Skill/Agent 的写法，并输出中英双语教学、模板和改写建议 / Analyze Skill and agent writing, then produce bilingual teaching notes, templates, and rewrite guidance | `repo-local/skills/skill-breakdown-workbench` |
@@ -38,6 +39,16 @@ For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/ski
 `assemble-project-expert-team` 运行后应返回成员 ID、选中 Skill、来源校验、成员 Prompt、阶段依赖、交接契约、前置条件和剩余缺口。没有团队或多 Agent 原语时，只能标记为协调式能力执行，不得声称已经创建真实成员。
 
 After execution, `assemble-project-expert-team` should return member IDs, selected Skills, source verification, member prompts, phase dependencies, handoff contracts, prerequisites, and remaining gaps. When team or multi-agent primitives are unavailable, it must label the run as coordinated capability execution instead of claiming that real members were created.
+
+## harmonyos-app-store-self-check
+
+- **Skill 类型 / Skill type**：项目质量门禁与 AGC 报告驱动模拟 / project quality gate and AGC report-driven simulation
+- **本地预检 / Local preflight**：检查 HarmonyOS 工程结构、应用身份、权限、隐私、网络能力、签名泄露、市场截图和 `.app/.hap` 包完整性 / inspect project structure, identity, permissions, privacy, network capability, signing leaks, listing screenshots, and `.app/.hap` integrity
+- **AGC 实测 / AGC live validation**：读取登录后的 AGC 软件包管理和上架自检报告，记录兼容性、稳定性、功耗、性能、UX 五类结果 / read the logged-in AGC package-management and self-check report, recording compatibility, stability, power, performance, and UX results
+- **报告模拟 / Report simulation**：以用户提供的 AGC 报告为历史参考，重新核对当前项目和发布包；历史 `通过` 不会被复制为当前 `AGC_READY` / use a supplied AGC report as historical reference and re-check the current project and artifact; a historical `通过` never becomes the current `AGC_READY`
+- **模拟脚本 / Simulation script**：`skills/harmonyos-app-store-self-check/scripts/simulate_agc_self_check.py`
+- **结果边界 / Result boundary**：`SIMULATED_BLOCKED` 或 `SIMULATED_UNVERIFIED` 只能表示本地模拟结果；只有 AGC 当前“上架自检 = 已达标”才可记录为 `AGC_READY` / simulated statuses are local evidence only; `AGC_READY` requires the current AGC self-check state to be `已达标`
+- **不是 / Not**：华为审核承诺、自动创建证书、自动上传发布包或自动提交审核 / not a Huawei approval guarantee, certificate creator, automatic uploader, or submission agent
 
 ## skill-generation-workbench
 

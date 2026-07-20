@@ -9,10 +9,12 @@ never prints secret values.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import subprocess
 import sys
+import zipfile
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Iterable
@@ -51,6 +53,8 @@ SECRET_MARKERS = (
 )
 SIGNING_FILE_MARKERS = (".p12", ".pfx", ".cer", ".p7b", ".csr")
 HOME_PATH_PATTERN = re.compile(r"(?:/Users/|/home/|[A-Za-z]:\\Users\\)")
+ARTIFACT_SUFFIXES = {".app", ".hap"}
+ARTIFACT_METADATA_NAMES = {"app.json", "module.json", "pack.info", "config.json"}
 
 
 @dataclass(frozen=True)
@@ -471,7 +475,128 @@ def check_listing_evidence(root: Path, findings: list[Finding]) -> None:
         )
 
 
-def run(root: Path, forbid_network: bool) -> list[Finding]:
+def _display_path(root: Path, path: Path) -> str:
+    try:
+        return path.relative_to(root).as_posix()
+    except ValueError:
+        return path.name
+
+
+def check_artifact(root: Path, artifact: Path | None, findings: list[Finding]) -> None:
+    """Validate the selected release archive without uploading or installing it."""
+    if artifact is None:
+        return
+
+    artifact_path = artifact.expanduser()
+    if not artifact_path.is_absolute():
+        artifact_path = root / artifact_path
+    evidence_path = _display_path(root, artifact_path)
+
+    if not artifact_path.is_file():
+        add(
+            findings,
+            "ARTIFACT-1",
+            "FAIL",
+            "P0",
+            "待检发布包不存在",
+            evidence_path,
+            "提供实际生成的 release .app 或 .hap，再继续发布检查。",
+        )
+        return
+    if artifact_path.suffix.lower() not in ARTIFACT_SUFFIXES:
+        add(
+            findings,
+            "ARTIFACT-1",
+            "FAIL",
+            "P0",
+            "待检文件不是支持的 HarmonyOS 发布包",
+            evidence_path,
+            "传入 .app 或 .hap 文件，不要把证书、Profile 或压缩源码当作发布包。",
+        )
+        return
+
+    digest = hashlib.sha256()
+    try:
+        with artifact_path.open("rb") as stream:
+            for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+                digest.update(chunk)
+    except OSError as exc:
+        add(
+            findings,
+            "ARTIFACT-1",
+            "FAIL",
+            "P0",
+            "无法读取待检发布包",
+            f"{evidence_path}: {exc.__class__.__name__}",
+            "确认文件权限和路径后重新提供发布包。",
+        )
+        return
+
+    size_bytes = artifact_path.stat().st_size
+    add(
+        findings,
+        "ARTIFACT-1",
+        "PASS",
+        "P0",
+        "发现待检 release 发布包并生成摘要",
+        f"{evidence_path}; size={size_bytes} bytes; sha256={digest.hexdigest()}",
+        "将此摘要与上传到 AGC 的同一文件核对；本地摘要不等于 AGC 自检结果。",
+    )
+
+    try:
+        with zipfile.ZipFile(artifact_path) as archive:
+            broken_member = archive.testzip()
+            members = archive.namelist()
+    except (OSError, zipfile.BadZipFile) as exc:
+        add(
+            findings,
+            "ARTIFACT-2",
+            "FAIL",
+            "P0",
+            "发布包不是可读取的 HarmonyOS 压缩包",
+            f"{evidence_path}: {exc.__class__.__name__}",
+            "重新生成完整的 release .app/.hap，确认构建未被截断。",
+        )
+        return
+
+    if broken_member:
+        add(
+            findings,
+            "ARTIFACT-2",
+            "FAIL",
+            "P0",
+            "发布包包含校验失败的成员文件",
+            f"{evidence_path}: {broken_member}",
+            "重新生成发布包并在上传前复核产物完整性。",
+        )
+        return
+
+    metadata_members = sorted(
+        member for member in members if Path(member).name.lower() in ARTIFACT_METADATA_NAMES
+    )
+    if metadata_members:
+        add(
+            findings,
+            "ARTIFACT-2",
+            "PASS",
+            "P0",
+            "发布包可解压且包含 HarmonyOS 元数据文件",
+            f"{evidence_path}: {', '.join(metadata_members[:8])}",
+            "继续核对包名、版本、签名和 AGC 软件包管理行是否一致。",
+        )
+    else:
+        add(
+            findings,
+            "ARTIFACT-2",
+            "UNVERIFIED",
+            "P1",
+            "发布包可解压但未发现常见元数据文件名",
+            evidence_path,
+            "确认该产物布局符合当前 DevEco/HarmonyOS 构建格式，再上传 AGC。",
+        )
+
+
+def run(root: Path, forbid_network: bool, artifact: Path | None = None) -> list[Finding]:
     findings: list[Finding] = []
     check_structure(root, findings)
     check_identity(root, findings)
@@ -479,6 +604,7 @@ def run(root: Path, forbid_network: bool) -> list[Finding]:
     check_permissions(root, findings, forbid_network)
     check_signing_leaks(root, findings)
     check_listing_evidence(root, findings)
+    check_artifact(root, artifact, findings)
     return findings
 
 
@@ -510,6 +636,11 @@ def render_text(root: Path, findings: list[Finding]) -> str:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--project-root", required=True, type=Path)
+    parser.add_argument(
+        "--artifact",
+        type=Path,
+        help="Optional release .app/.hap to inspect locally; it is never uploaded.",
+    )
     parser.add_argument("--format", choices=("text", "json"), default="text")
     parser.add_argument("--forbid-network", action="store_true")
     parser.add_argument("--strict", action="store_true")
@@ -522,7 +653,7 @@ def main() -> int:
     if not root.is_dir():
         print(f"project root is not a directory: {root}", file=sys.stderr)
         return 2
-    findings = run(root, args.forbid_network)
+    findings = run(root, args.forbid_network, args.artifact)
     if args.format == "json":
         blocking = any(finding.status in {"FAIL", "BLOCKED"} for finding in findings)
         unknown = any(finding.status == "UNVERIFIED" for finding in findings)

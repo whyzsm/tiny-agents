@@ -5,6 +5,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 
 
@@ -88,6 +89,37 @@ class HarmonyReleaseCheckerTests(unittest.TestCase):
             self.assertEqual(result.returncode, 1)
             payload = json.loads(result.stdout)
             self.assertTrue(any(item["check_id"] == "DATA-3" for item in payload["findings"]))
+
+    def test_release_artifact_is_checked_without_upload(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(root)
+            artifact = root / "build" / "release.app"
+            artifact.parent.mkdir()
+            with zipfile.ZipFile(artifact, "w") as archive:
+                archive.writestr("module.json", '{"module":{"name":"entry"}}')
+            result = self.run_checker(root, "--artifact", str(artifact))
+            self.assertEqual(result.returncode, 0)
+            payload = json.loads(result.stdout)
+            artifact_findings = {
+                item["check_id"]: item for item in payload["findings"] if item["check_id"].startswith("ARTIFACT-")
+            }
+            self.assertEqual(artifact_findings["ARTIFACT-1"]["status"], "PASS")
+            self.assertEqual(artifact_findings["ARTIFACT-2"]["status"], "PASS")
+
+    def test_missing_release_artifact_is_blocking(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(root)
+            result = self.run_checker(root, "--artifact", "missing.app", "--strict")
+            self.assertEqual(result.returncode, 1)
+            payload = json.loads(result.stdout)
+            self.assertTrue(
+                any(
+                    item["check_id"] == "ARTIFACT-1" and item["status"] == "FAIL"
+                    for item in payload["findings"]
+                )
+            )
 
 
 if __name__ == "__main__":

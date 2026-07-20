@@ -8,7 +8,18 @@ description: "Audit HarmonyOS applications for AppGallery/AGC release readiness.
 ## Overview
 
 Audit a HarmonyOS/OpenHarmony project before an AppGallery/AGC submission. The
-output is an evidence-backed release gate, not a promise that Huawei will
+Skill has two deliberately separate modes:
+
+- **Local preflight**: inspect the project and release artifact without sending
+  anything to Huawei. This finds likely blockers before upload.
+- **AGC live validation**: use the logged-in AGC console and its real-device
+  "上架自检" flow. Only AGC's own result is allowed to become an AGC pass.
+- **Report-driven simulation**: use a supplied AGC report as a reference
+  profile and re-check the current project/package locally. This reproduces
+  the report shape and conservative status handling, but never copies a
+  historical device result into the current package's AGC result.
+
+The output is an evidence-backed release gate, not a promise that Huawei will
 approve the application. Keep three kinds of evidence separate:
 
 - `confirmed`: observed in the repository, a successful command, a device run,
@@ -18,9 +29,12 @@ approve the application. Keep three kinds of evidence separate:
 - `unverified`: a current AGC policy, account setting, device behavior, or
   artifact property that was not checked.
 
-This Skill is for release readiness and submission preparation. It does not
-upload packages, create certificates, modify signing material, or silently fix
-project files.
+This Skill is for release readiness and submission preparation. Local preflight
+does not upload packages, create certificates, modify signing material, or
+silently fix project files. AGC live validation may upload the explicitly
+selected release package only after the user confirms that external action at
+the moment of upload; it still does not create certificates or change signing
+material.
 
 ## Triggers And Inputs
 
@@ -32,18 +46,26 @@ Use it for requests such as:
 
 Accept a project root, an optional target module/product, target API/OS version,
 AGC listing metadata, privacy/legal material, screenshots, and an already-built
-HAP/APP. If a path or artifact is not supplied, inspect the repository first;
-ask only for information that blocks the next useful check.
+HAP/APP. For AGC live validation, also require a logged-in AGC console, the
+target app, and the exact release package to test. If a path or artifact is not
+supplied, inspect the repository first; ask only for information that blocks the
+next useful check.
 
 ## Outputs And Completion
 
 Return a Chinese report unless the user asks for another language. Include:
 
-1. `READY`, `BLOCKED`, or `UNVERIFIED` overall gate status.
+1. `READY`, `BLOCKED`, or `UNVERIFIED` local gate status. When AGC was run,
+   include a separate `AGC_READY`, `AGC_NOT_READY`, `AGC_PENDING`, or
+   `AGC_EXECUTION_FAILED` result copied from the AGC console.
 2. A flat table with check ID, status (`PASS`/`FAIL`/`BLOCKED`/`UNVERIFIED`),
    severity (`P0`/`P1`/`P2`), evidence path or command, and remediation.
 3. A short release artifact checklist and the exact commands that were run.
 4. Assumptions, unavailable AGC/device evidence, and the next smallest action.
+
+Never merge a local `READY` result into `AGC_READY`. A local pass means that
+the inspected evidence has no known blocker; it does not mean that Huawei's
+cloud devices accepted the package.
 
 The gate is `READY` only when no P0/P1 release blocker remains and all checks
 that are required for the chosen product are confirmed. Otherwise use
@@ -65,15 +87,16 @@ missing. Never turn an unrun check into a pass.
    `main_pages.json`, source modules, tests, privacy/legal pages, listing
    screenshots, and project QA/release notes. Record the target product,
    module, API level, and build mode.
-3. **Run the static preflight.** From this package, run:
+3. **Run the local preflight.** From this package, run:
 
    ```bash
    python3 scripts/check_harmony_release.py --project-root <project-root> --format text
    ```
 
-   Add `--forbid-network` for a local-first app and `--strict` when the report
-   should exit non-zero on failures. The helper is advisory; inspect every
-   finding before making a release decision.
+   Add `--forbid-network` for a local-first app, `--artifact <path>` for the
+   exact `.app`/`.hap` under review, and `--strict` when the report should exit
+   non-zero on failures. The helper is advisory; inspect every finding before
+   making a release decision.
 4. **Check identity and packaging.** Verify bundle name, label, version code,
    version name, module/ability entry, route registry, device types, target and
    compatible SDKs, and release-mode configuration. Confirm that the artifact
@@ -104,11 +127,53 @@ missing. Never turn an unrun check into a pass.
    offline behavior, core CRUD, permission denial, restart persistence, data
    deletion, migration, and crash/error recovery. Label static-only checks and
    unavailable device/AGC checks explicitly.
-9. **Synthesize the gate.** Deduplicate findings, classify P0 (submission or
+9. **Run AGC live validation when requested.** Use the browser capability on
+   the logged-in AGC console, open the target app's `应用上架 > 软件包管理`,
+   and verify the uploaded row before starting a test:
+
+   - `合法性 = 已达标` confirms the package was accepted as an upload. It is
+     not the same as passing the full self-check.
+   - `上架自检 = 检测中` means the official test is still running. Do not
+     report a result yet.
+   - Click `启动自检` only for the exact release package and device scope that
+     matches the listing. Wait for the report rather than inferring a result
+     from the upload status.
+   - Read the AGC report's overview and each available category: `兼容性`,
+     `稳定性`, `功耗`, `性能`, and `UX`. Record report ID, package identity,
+     API level, tested devices, total/failed/warning/passed counts, test result,
+     and any failed or warning test name.
+   - Map the final `上架自检` state exactly: `已达标` -> `AGC_READY`, `待优化`
+     -> `AGC_NOT_READY`, `检测中` -> `AGC_PENDING`, and `执行失败` ->
+     `AGC_EXECUTION_FAILED`. Any missing category or incomplete device coverage
+     remains `UNVERIFIED`.
+
+   Follow `references/agc-live-validation.md`. Uploading a package and starting
+   a cloud test are external actions; obtain confirmation immediately before
+   the first upload or test start.
+10. **Synthesize the gate.** Deduplicate findings, classify P0 (submission or
    core workflow blocked, data/privacy/security can be false or lost), P1
    (must fix before release), and P2 (lower-risk polish or evidence gap), then
    report the smallest remediation order. Ask before edits, signing, upload,
    commit, push, or other external side effects.
+
+## Report-Driven Simulation
+
+When the user supplies an AGC report URL, screenshot, PDF, HTML, or structured
+content, read the report with the browser/document capability and normalize the
+visible fields using `references/agc-report-driven-simulation.md`. Then:
+
+1. Preserve the report's `通过`/`警告`/`不通过` values as historical AGC
+   evidence, including report ID, test time, device scope, and issue names.
+2. Check the new `.app`/`.hap` and project identity locally. Compare bundle name,
+   version, API level, and declared device types when the report exposes them.
+3. Recreate the five AGC sections (`兼容性`, `稳定性`, `功耗`, `性能`, `UX`),
+   but mark device-only measurements as `UNVERIFIED` unless a fresh device
+   trace is supplied. A report from an older upload is not a fresh trace.
+4. Flag inconsistent report totals or missing category data as evidence issues;
+   do not silently repair or average them.
+5. Use `SIMULATED_BLOCKED` when local P0 blockers exist and
+   `SIMULATED_UNVERIFIED` when the package is locally clean but dynamic AGC
+   evidence is missing. The simulation must never emit `AGC_READY`.
 
 ## Harmony Wardrobe Adapter
 
@@ -150,10 +215,12 @@ support from that inconsistency.
 
 ## Guardrails
 
-- Do not log, copy, upload, install, generate, or expose signing secrets.
-- Do not perform AGC login/upload, certificate creation, publication, commit,
-  push, deletion, dependency installation, or deployment without explicit user
-  authorization.
+- Do not log, copy, upload, install, generate, or expose signing secrets; never
+  upload a certificate, Profile, keystore, password, token, or other secret.
+- Do not perform AGC login, package upload, self-check start, certificate
+  creation, publication, commit, push, deletion, dependency installation, or
+  deployment without explicit user authorization. Confirm at action-time for
+  the selected package and destination account.
 - Do not claim “审核通过” from static code inspection, a successful debug
   build, or an unverified screenshot. Distinguish build success from signed
   release readiness and from AGC approval.
@@ -170,14 +237,24 @@ support from that inconsistency.
 For this Skill package, validate the helper script and check for obvious issues:
 
 ```bash
-# Run the preflight checker against a fixture
-python3 scripts/check_harmony_release.py --project-root <project-root> --format text
+# Run local preflight against the exact release artifact
+python3 scripts/check_harmony_release.py \
+  --project-root <project-root> \
+  --artifact <project-root>/path/to/release.app \
+  --format text
 
 # Run unit tests
 python3 -m unittest discover -s tests -p 'test_*.py'
 
 # Quick smoke test with --strict and --forbid-network
 python3 scripts/check_harmony_release.py --project-root <project-root> --forbid-network --strict --format json
+
+# Validate a normalized AGC report and simulate its result locally
+python3 scripts/simulate_agc_self_check.py \
+  --report <normalized-agc-report.json> \
+  --project-root <project-root> \
+  --artifact <project-root>/path/to/release.app \
+  --format text
 ```
 
 When validating against the actual Harmony Wardrobe project, also run the
@@ -188,5 +265,9 @@ repository-level checks listed in the project's AGENTS.md.
 - Read `references/harmonyos-appgallery-self-check.md` before producing a full
   report; it contains the check IDs, workshop baseline mapping, and the
   Harmony Wardrobe evidence map.
+- Read `references/agc-live-validation.md` when the user asks for the same
+  result as AGC's `上架自检` or provides an AGC console/report URL.
+- Read `references/agc-report-driven-simulation.md` when a historical AGC
+  report is supplied as the simulation baseline.
 - Read only the relevant reference sections for focused checks. Keep current
   official AGC/Huawei documentation above the workshop-derived baseline.

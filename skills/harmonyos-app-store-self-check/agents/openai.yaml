@@ -1,0 +1,6 @@
+interface:
+  display_name: "HarmonyOS App Store Self Check"
+  short_description: "Audit HarmonyOS release readiness for AppGallery"
+  default_prompt: "Use $harmonyos-app-store-self-check to audit this HarmonyOS project for AppGallery release readiness, produce evidence-backed blockers, and state which checks remain unverified."
+policy:
+  allow_implicit_invocation: true

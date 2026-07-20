@@ -1,0 +1,24 @@
+{
+  "name": "harmonyos-app-store-self-check",
+  "kind": "skill",
+  "status": "ready",
+  "source_kind": "visible-external-material-derived",
+  "source_ref": "external/harmonyos-code-workshop-5.0.0/SKILL.md",
+  "converted_for": "codex-skills",
+  "derived_from": [
+    "harmonyos-code-workshop visible SKILL.md release, security, build, and QA sections",
+    "repo-local HarmonyOS expert-team routing conventions",
+    "Harmony Wardrobe project AGENTS.md and release documentation"
+  ],
+  "policy_boundary": "Workshop-derived baseline only; current Huawei AppGallery/AGC policy remains unverified until checked against official sources or AGC UI.",
+  "resources": [
+    "references",
+    "scripts"
+  ],
+  "files": [
+    "SKILL.md",
+    "agents/openai.yaml",
+    "source.json"
+  ],
+  "repo_only": true
+}

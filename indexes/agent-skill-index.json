@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-17T17:21:00+08:00",
+  "generated_at": "2026-07-22T21:31:21+08:00",
   "project_root": ".",
   "agents_root": "agents",
   "skills_root": "skills",
   "selection_rule": "Scan project agents/ and skills/, exclude blocked/conflict/draft/skipped packages, and keep repository-relative paths.",
-  "total": 629,
+  "total": 631,
   "entries": [
     {
       "name": ".codex",
@@ -1613,6 +1613,17 @@
       "entry_path": "skills/court-prep/SKILL.md"
     },
     {
+      "name": "create-enterprise-react-app",
+      "display_name": "create-enterprise-react-app",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "repo-skill",
+      "description": "Scaffold and verify a production-ready enterprise React application shell. Use when creating a new React admin project, initializing a blank Vite workspace, or applying the React 19, Ant Design 6, React Router 7, TanStack Query, Zustand, Axios, Tailwind CSS 4, Storybook, Vitest, and Playwright architecture baseline.",
+      "purpose": "Do not invent backend contracts, authentication endpoints, organization rules, tokens, private registries, or remote repository URLs. Do not initialize Git, commit, push, install global tools, install browser binaries, deploy, or publish unless the user explicitly authorizes that action.",
+      "source_path": "skills/create-enterprise-react-app",
+      "entry_path": "skills/create-enterprise-react-app/SKILL.md"
+    },
+    {
       "name": "creator-course-outline",
       "display_name": "creator-course-outline",
       "kind": "skill",
@@ -2766,6 +2777,17 @@
       "purpose": "metadata: short-description: HarmonyOS functionality, UI, and interaction quality review source: WorkBuddy visible expert card, generalized for HarmonyOS projects child_entry_mode: internal-router-labels",
       "source_path": "skills/harmony-quality-review-team",
       "entry_path": "skills/harmony-quality-review-team/SKILL.md"
+    },
+    {
+      "name": "harmonyos-app-store-self-check",
+      "display_name": "harmonyos-app-store-self-check",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "repo-skill",
+      "description": "Audit HarmonyOS applications for AppGallery/AGC release readiness. Use when users ask for 鸿蒙上架自检、应用市场审核、AGC发布前检查、签名/隐私/权限/截图核对或 release 包门禁，especially for Stage-model projects with module.json5, build-profile.json5, hvigorw, and local-first data constraints.",
+      "purpose": "Audit HarmonyOS applications for AppGallery/AGC release readiness. Use when users ask for 鸿蒙上架自检、应用市场审核、AGC发布前检查、签名/隐私/权限/截图核对或 release 包门禁，especially for Stage-model projects with module.json5, build-profile.json5, hvigorw, and local-first data constraints.",
+      "source_path": "skills/harmonyos-app-store-self-check",
+      "entry_path": "skills/harmonyos-app-store-self-check/SKILL.md"
     },
     {
       "name": "harness-accept",

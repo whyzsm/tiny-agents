@@ -1,0 +1,6 @@
+interface:
+  display_name: "Enterprise React App"
+  short_description: "Create a verified enterprise React application shell"
+  default_prompt: "Use $create-enterprise-react-app to create and verify a new enterprise React project in the target directory."
+policy:
+  allow_implicit_invocation: true

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-17T17:21:00+08:00",
+  "generated_at": "2026-07-22T21:31:21+08:00",
   "project_root": ".",
   "skills_root": "skills",
   "selection_rule": "Keep top-level skill packages with SKILL.md or skill.md, skip draft/candidate/blocked/conflict/skipped packages, and use the package path as the install target.",
-  "total": 619,
+  "total": 621,
   "omitted": 0,
   "entries": [
     {
@@ -1367,6 +1367,16 @@
       "source_ref": "repo-local/skills/court-prep"
     },
     {
+      "name": "create-enterprise-react-app",
+      "display_name": "create-enterprise-react-app",
+      "description": "Scaffold and verify a production-ready enterprise React application shell. Use when creating a new React admin project, initializing a blank Vite workspace, or applying the React 19, Ant Design 6, React Router 7, TanStack Query, Zustand, Axios, Tailwind CSS 4, Storybook, Vitest, and Playwright architecture baseline.",
+      "purpose": "Create a new, blank enterprise React project with clear UI, routing, state, request, security, testing, and build boundaries. Use the bundled deterministic template for an empty destination; adapt the process instead of overwriting files when the user asks to apply the baseline to an existing project.",
+      "package_path": "skills/create-enterprise-react-app",
+      "entry_path": "skills/create-enterprise-react-app/SKILL.md",
+      "status": "ready",
+      "source_ref": "repo-local/skills/create-enterprise-react-app"
+    },
+    {
       "name": "creator-course-outline",
       "display_name": "creator-course-outline",
       "description": "为创作者课程生成模块结构、单元目标、作业与里程碑。；use for course, creator, curriculum workflows；do not use for 承诺学员结果, 替代正式教学设计评审.",
@@ -2415,6 +2425,16 @@
       "entry_path": "skills/harmony-quality-review-team/SKILL.md",
       "status": "ready",
       "source_ref": "WorkBuddy visible expert card and member prompts"
+    },
+    {
+      "name": "harmonyos-app-store-self-check",
+      "display_name": "harmonyos-app-store-self-check",
+      "description": "Audit HarmonyOS applications for AppGallery/AGC release readiness. Use when users ask for 鸿蒙上架自检、应用市场审核、AGC发布前检查、签名/隐私/权限/截图核对或 release 包门禁，especially for Stage-model projects with module.json5, build-profile.json5, hvigorw, and local-first data constraints.",
+      "purpose": "Audit a HarmonyOS/OpenHarmony project before an AppGallery/AGC submission. The Skill has two deliberately separate modes:",
+      "package_path": "skills/harmonyos-app-store-self-check",
+      "entry_path": "skills/harmonyos-app-store-self-check/SKILL.md",
+      "status": "ready",
+      "source_ref": "external/harmonyos-code-workshop-5.0.0/SKILL.md"
     },
     {
       "name": "harness-accept",

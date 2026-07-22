@@ -10,6 +10,7 @@ For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/ski
 |---|---|---|---|---|
 | HarmonyOS 专家团路由 Skill / HarmonyOS expert-team router | [`harmony-expert-team`](../skills/harmony-expert-team/SKILL.md) | `skills/harmony-expert-team/` | HarmonyOS/OpenHarmony 项目专家团入口；负责协调问答、实现、UI 生成和服务卡片能力 / Expert-team entry for HarmonyOS/OpenHarmony work; coordinates Q&A, implementation, UI generation, and service-card capabilities | `repo-local/skills/harmony-expert-team` |
 | HarmonyOS 上架自检 Skill / HarmonyOS AppGallery release self-check | [`harmonyos-app-store-self-check`](../skills/harmonyos-app-store-self-check/SKILL.md) | `skills/harmonyos-app-store-self-check/` | HarmonyOS 应用发布前质量门禁；检查工程、签名、隐私、权限、发布包和市场素材，支持 AGC 实测读取与基于 AGC 报告的五类自检模拟 / Pre-release quality gate for HarmonyOS apps; checks project structure, signing, privacy, permissions, artifacts, and listing evidence, with AGC live-result reading and report-driven simulation across five AGC dimensions | `repo-local/skills/harmonyos-app-store-self-check` |
+| 企业级 React 应用创建 Skill / Enterprise React app creator | [`create-enterprise-react-app`](../skills/create-enterprise-react-app/SKILL.md) | `skills/create-enterprise-react-app/` | 创建并验证生产级企业 React 应用基础架构，覆盖 Vite、React、路由、状态、请求、样式、Storybook、Vitest 和 Playwright 基线 / Scaffold and verify a production-ready enterprise React application baseline covering Vite, React, routing, state, requests, styling, Storybook, Vitest, and Playwright | `repo-local/skills/create-enterprise-react-app` |
 | 动态专家团编排 Skill / Dynamic expert-team assembler | [`assemble-project-expert-team`](../skills/assemble-project-expert-team/SKILL.md) | `skills/assemble-project-expert-team/` | 扫描目标项目，读取远端专家团目录，自动生成成员 roster、成员 Prompt、阶段 DAG 和质量门，并按运行时能力协调执行 / Scan the target project, read the remote expert-team catalog, generate the roster, member prompts, phase DAG, and quality gates, then coordinate execution according to runtime capabilities | `https://github.com/whyzsm/tiny-agents/tree/main/indexes` |
 | Skill 生成工作台 / Skill generation workbench | [`skill-generation-workbench`](../skills/skill-generation-workbench/SKILL.md) | `skills/skill-generation-workbench/` | 设计、生成、转换、升级和验证 Codex Skill 包，产出 `SKILL.md`、`agents/openai.yaml`、引用文件和脚本 / Design, generate, convert, upgrade, and validate Codex Skill packages; produce `SKILL.md`, `agents/openai.yaml`, references, and scripts | `repo-local/skills/skill-generation-workbench` |
 | Skill 拆解与写作工作台 / Skill breakdown and writing coach | [`skill-breakdown-workbench`](../skills/skill-breakdown-workbench/SKILL.md) | `skills/skill-breakdown-workbench/` | 分析 Skill/Agent 的写法，并输出中英双语教学、模板和改写建议 / Analyze Skill and agent writing, then produce bilingual teaching notes, templates, and rewrite guidance | `repo-local/skills/skill-breakdown-workbench` |
@@ -49,6 +50,13 @@ After execution, `assemble-project-expert-team` should return member IDs, select
 - **模拟脚本 / Simulation script**：`skills/harmonyos-app-store-self-check/scripts/simulate_agc_self_check.py`
 - **结果边界 / Result boundary**：`SIMULATED_BLOCKED` 或 `SIMULATED_UNVERIFIED` 只能表示本地模拟结果；只有 AGC 当前“上架自检 = 已达标”才可记录为 `AGC_READY` / simulated statuses are local evidence only; `AGC_READY` requires the current AGC self-check state to be `已达标`
 - **不是 / Not**：华为审核承诺、自动创建证书、自动上传发布包或自动提交审核 / not a Huawei approval guarantee, certificate creator, automatic uploader, or submission agent
+
+## create-enterprise-react-app
+
+- **Skill 类型 / Skill type**：企业级 React 项目创建与验证 / enterprise React project scaffolding and verification
+- **主要能力 / Capabilities**：创建空白 Vite 工程，提供路由、状态管理、请求客户端、样式、Storybook、Vitest 和 Playwright 基线 / scaffold a blank Vite workspace with routing, state, request client, styling, Storybook, Vitest, and Playwright baselines
+- **默认产物 / Default output**：可运行的企业 React 应用壳层和确定性模板 / runnable enterprise React app shell and deterministic template
+- **边界 / Boundary**：不虚构后端契约、认证接口、组织规则、密钥、私有仓库地址，也不默认初始化 Git、提交、推送或部署 / does not invent backend contracts, auth endpoints, organization rules, secrets, or private registry URLs, and does not initialize Git, commit, push, or deploy by default
 
 ## skill-generation-workbench
 

@@ -1,0 +1,17 @@
+{
+  "name": "screenshot-ui-prompt",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "screenshot-ui-prompt",
+  "entry_path": "screenshot-ui-prompt/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "screenshot-ui-prompt/SKILL.md",
+    "screenshot-ui-prompt/references/prompt_templates.md",
+    "screenshot-ui-prompt/scripts/extract_colors.py"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "screenshot-ui-prompt",
+  "scan_generated_at": "2026-07-24T14:47:21+08:00"
+}

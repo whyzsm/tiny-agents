@@ -1,14 +1,14 @@
 # Agent And Skill Index
 
 - Scope: project agents and skills in this repository.
-- Generated at: `2026-07-22T21:31:21+08:00`
+- Generated at: `2026-07-24T14:50:32+08:00`
 - Project root: `.`
 - Agents root: `agents`
 - Skills root: `skills`
 - Selection rule: Scan project agents/ and skills/, exclude blocked/conflict/draft/skipped packages, and keep repository-relative paths.
-- Total: `631`
+- Total: `632`
 - Agents: `10`
-- Skills: `621`
+- Skills: `622`
 
 ## Agents
 
@@ -512,6 +512,7 @@
 | sales-revenue-growth-team | 营收增长师。用于小企业营收增长师，从线索打分到内容策略再到营销活动，一条龙驱动营收增长。来源于 WorkBuddy 销售商务卡片，并转换为 Codex 可安装的专家入口格式。 | 营收增长师。用于小企业营收增长师，从线索打分到内容策略再到营销活动，一条龙驱动营收增长。来源于 WorkBuddy 销售商务卡片，并转换为 Codex 可安装的专家入口格式。 | `skills/sales-revenue-growth-team` |
 | sales-sg-business-development-team | Sg Business Development。用于帮助企业在新加坡发现客户、伙伴、渠道、供应商与代理商，对接园区、展会、招商资源并确认市场进入路径。来源于 WorkBuddy 销售商务卡片，并转换为 Codex 可安装的专家入口格式。 | Sg Business Development。用于帮助企业在新加坡发现客户、伙伴、渠道、供应商与代理商，对接园区、展会、招商资源并确认市场进入路径。来源于 WorkBuddy 销售商务卡片，并转换为 Codex 可安装的专家入口格式。 | `skills/sales-sg-business-development-team` |
 | sales-war-room-team | 销售作战团队。用于销售攻坚体系，客户研究锁定目标、外联策略提升触达、竞品情报预警风险、销售预测优化资源分配。来源于 WorkBuddy 销售商务卡片，并转换为 Codex 可安装的专家团入口格式。 | metadata: source: "workbuddy-expert-center/销售商务/sales-war-room" workbuddy_card: "销售作战团队" workbuddy_category: "销售商务" | `skills/sales-war-room-team` |
+| screenshot-ui-prompt | 此技能用于：用户上传 UI 截图并希望生成精准、可直接复制的 AI 提示词（用于 v0、Lovable、Cursor、CodeBuddy、图像生成器等）以复刻该界面。它先识别截图属于前端元素（组件 / 页面 / 区块）还是非前端元素（流程图、图表、照片、文档），再确认使用设计令牌还是从图片提取配色，最后输出包含显式风格词的完整 UI/UX 交互设计提示词。触发场景：把这张图写成提示词、根据截图生成组件提示词、describe this UI as a prompt、screenshot to prompt。 | 此技能用于：用户上传 UI 截图并希望生成精准、可直接复制的 AI 提示词（用于 v0、Lovable、Cursor、CodeBuddy、图像生成器等）以复刻该界面。它先识别截图属于前端元素（组件 / 页面 / 区块）还是非前端元素（流程图、图表、照片、文档），再确认使用设计令牌还是从图片提取配色，最后输出包含显式风格词的完整 UI/UX 交互设计提示词。触发场景：把这张图写成提示词、根据截图生成组件提示词、describe this UI as a prompt、screenshot to prompt。 | `skills/screenshot-ui-prompt` |
 | script-to-storyboard | 将电影/视频剧本转换为分镜脚本表格。适用于：(1) 将剧本文本解析为结构化分镜，(2) 根据场景描述生成拍摄计划，(3) 提取视觉元素并输出标准分镜表格（镜号、景别/拍摄角度、画面内容、出场人物、场景、音效）。当用户提到分镜、storyboard、镜头脚本、剧本转换时触发。 | 将电影/视频剧本转换为分镜脚本表格。适用于：(1) 将剧本文本解析为结构化分镜，(2) 根据场景描述生成拍摄计划，(3) 提取视觉元素并输出标准分镜表格（镜号、景别/拍摄角度、画面内容、出场人物、场景、音效）。当用户提到分镜、storyboard、镜头脚本、剧本转换时触发。 | `skills/script-to-storyboard` |
 | security-audit | Repository and deployment security audit workflow for exposed credentials, insecure configuration, open ports, weak permissions, dependency risks, authentication/authorization gaps, and actionable remediation. Use when the user asks for a security audit, secret scan, vulnerability review, deployment hardening, or security findings in a codebase. | Repository and deployment security audit workflow for exposed credentials, insecure configuration, open ports, weak permissions, dependency risks, authentication/authorization gaps, and actionable remediation. Use when the user asks for a security audit, secret scan, vulnerability review, deployment hardening, or security findings in a codebase. | `skills/security-audit` |
 | seedance2-storyboard-generator | Professional AI video script and storyboard generator for Seedance 2.0 platform. Use when user asks to: (1) Convert articles/stories into video scripts, (2) Generate Seedance 2.0 storyboard prompts, (3) Plan multi-episode AI video series, (4) Create character/scene/prop generation prompts for image models like Nana Banana Pro. Input can be full novels, articles, or brief story outlines. Output includes four-act script structure, episode breakdown, asset generation prompts, and Seedance 2.0 formatted storyboard scripts. | ``` | `skills/seedance2-storyboard-generator` |

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-22T21:31:21+08:00",
+  "generated_at": "2026-07-24T14:50:32+08:00",
   "project_root": ".",
   "skills_root": "skills",
   "selection_rule": "Keep top-level skill packages with SKILL.md or skill.md, skip draft/candidate/blocked/conflict/skipped packages, and use the package path as the install target.",
-  "total": 621,
+  "total": 622,
   "omitted": 0,
   "entries": [
     {
@@ -4835,6 +4835,16 @@
       "entry_path": "skills/sales-war-room-team/SKILL.md",
       "status": "ready",
       "source_ref": "WorkBuddy v5.2.3 Expert Center card: 销售商务 / 销售作战团队"
+    },
+    {
+      "name": "screenshot-ui-prompt",
+      "display_name": "screenshot-ui-prompt",
+      "description": "此技能用于：用户上传 UI 截图并希望生成精准、可直接复制的 AI 提示词（用于 v0、Lovable、Cursor、CodeBuddy、图像生成器等）以复刻该界面。它先识别截图属于前端元素（组件 / 页面 / 区块）还是非前端元素（流程图、图表、照片、文档），再确认使用设计令牌还是从图片提取配色，最后输出包含显式风格词的完整 UI/UX 交互设计提示词。触发场景：把这张图写成提示词、根据截图生成组件提示词、describe this UI as a prompt、screenshot to prompt。",
+      "purpose": "Turn a screenshot into a precise, structured AI prompt that recreates the UI. The skill enforces a three-phase flow: **classify → gather design constraints → emit prompt**, and always includes an explicit **风格词 (style words)** section so the generated prompt carries visual authority, not just",
+      "package_path": "skills/screenshot-ui-prompt",
+      "entry_path": "skills/screenshot-ui-prompt/SKILL.md",
+      "status": "ready",
+      "source_ref": "screenshot-ui-prompt"
     },
     {
       "name": "script-to-storyboard",

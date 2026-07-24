@@ -1,0 +1,6 @@
+interface:
+  display_name: "Screenshot UI Prompt"
+  short_description: "从 UI 截图生成可复刻界面的中英双语设计提示词与配色说明"
+  default_prompt: "Use $screenshot-ui-prompt to turn this UI screenshot into a copy-pasteable UI recreation prompt."
+policy:
+  allow_implicit_invocation: true

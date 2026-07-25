@@ -4,6 +4,8 @@ Use this checklist before reporting a generated Skill as complete.
 
 ## Intake
 
+- [ ] Before writing, `find-skills` was searched first and SkillHub was searched second.
+- [ ] Search queries, candidate sources, verification status, rejected overlaps, and the final reuse/upgrade/convert/create decision are recorded.
 - [ ] Capability and target user are concrete.
 - [ ] At least two natural-language trigger examples are recorded.
 - [ ] Inputs, outputs, success criteria, and failure behavior are clear.
@@ -22,6 +24,7 @@ Use this checklist before reporting a generated Skill as complete.
 
 ## Verification
 
+- [ ] Search failures or unavailable external sources are reported as evidence gaps, not treated as proof that no Skill exists.
 - [ ] `quick_validate.py <skill-directory>` passes.
 - [ ] `agents/openai.yaml` parses as YAML and its key values match `SKILL.md`.
 - [ ] Every new script runs successfully on a temporary fixture.

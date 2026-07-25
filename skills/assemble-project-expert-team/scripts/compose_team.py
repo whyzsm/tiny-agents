@@ -186,6 +186,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--index", help="Local index path; enables offline catalog mode")
     parser.add_argument("--index-url", default=DEFAULT_INDEX_URL)
     parser.add_argument(
+        "--skillhub-search-url",
+        default=discover.DEFAULT_SKILLHUB_SEARCH_URL,
+        help="SkillHub search API URL used after project/local and expert-team sources",
+    )
+    parser.add_argument("--skillhub-limit", type=int, default=20)
+    parser.add_argument("--no-skillhub", action="store_true", help="Skip SkillHub discovery")
+    parser.add_argument("--no-find-skills", action="store_true", help="Skip npx skills find discovery")
+    parser.add_argument(
         "--skill-root",
         action="append",
         dest="skill_roots",
@@ -644,6 +652,63 @@ def build_candidates(entries: list[Any], task: str, scan: dict[str, Any], local_
     return candidates
 
 
+def build_external_skill_candidates(
+    results: list[dict[str, Any]], task: str, scan: dict[str, Any], source_kind: str
+) -> dict[str, list[dict[str, Any]]]:
+    candidates: dict[str, list[dict[str, Any]]] = {slot.key: [] for slot in SLOTS}
+    query = f"{task} {' '.join(scan['stack'])} {' '.join(scan['affected_files'])}".lower()
+
+    for result in results:
+        skill = str(result.get("slug") or "").strip()
+        if not skill:
+            continue
+        searchable = " ".join(
+            str(result.get(key) or "") for key in ("slug", "name", "description", "summary")
+        ).lower()
+        for slot in SLOTS:
+            matched_terms = sorted(
+                {
+                    keyword
+                    for keyword in slot.keywords
+                    if discover.contains_term(searchable, keyword.lower())
+                }
+            )
+            if not matched_terms and skill not in slot.preferred:
+                continue
+            score = len(matched_terms) * 18
+            if skill in slot.preferred:
+                score += 30 - slot.preferred.index(skill) * 3
+            score += sum(2 for keyword in slot.keywords if keyword.lower() in query)
+            if not score:
+                continue
+            candidates[slot.key].append(
+                {
+                    "skill": skill,
+                    "team_id": f"{source_kind}:{skill}",
+                    "team_name": str(result.get("name") or skill),
+                    "team_path": str(result.get("detail_url") or result.get("source") or ""),
+                    "source": str(result.get("source") or result.get("detail_url") or ""),
+                    "source_kind": source_kind,
+                    "availability": "remote",
+                    "child_entry_mode": "standalone-skill",
+                    "selected_entry_kind": "standalone-skill",
+                    "top_level_child_skills": [skill],
+                    "internal_child_labels": [],
+                    "unverified_child_skills": [],
+                    "score": score,
+                    "matched_terms": matched_terms,
+                    "discovery": {
+                        key: value
+                        for key, value in result.items()
+                        if key not in {"description", "summary"}
+                    },
+                }
+            )
+    for key in candidates:
+        candidates[key].sort(key=lambda item: (-item["score"], item["skill"], item["source"]))
+    return candidates
+
+
 def merge_candidates(
     local_candidates: dict[str, list[dict[str, Any]]],
     catalog_candidates: dict[str, list[dict[str, Any]]],
@@ -688,6 +753,10 @@ def verify_candidate(
             "status": "local-ready",
             "path": candidate.get("local_path") or candidate.get("source"),
         }
+    if candidate.get("source_kind") == "skillhub":
+        return discover.verify_skillhub_package(candidate.get("source", ""), candidate["skill"], timeout)
+    if candidate.get("source_kind") == "find-skills":
+        return discover.verify_find_skill(candidate, candidate["skill"], timeout)
     return verify_skill(candidate.get("source"), candidate["skill"], local_mode, timeout, catalog_root)
 
 
@@ -820,10 +889,19 @@ def compose(args: argparse.Namespace) -> dict[str, Any]:
         entries = discover.rank(discover.read_local_index(catalog_root, index_path), build_query(args.task, scan))
         index_source = index_path.relative_to(catalog_root).as_posix()
         local_mode = True
+        catalog_error = None
     else:
         index_source = discover.normalize_index_url(args.index_url)
-        entries = discover.rank(discover.read_remote_index(index_source, args.timeout), build_query(args.task, scan))
+        entries = []
         local_mode = False
+        catalog_error = None
+        try:
+            entries = discover.rank(
+                discover.read_remote_index(index_source, args.timeout),
+                build_query(args.task, scan),
+            )
+        except ValueError as error:
+            catalog_error = str(error)
     candidate_entries = entries[: args.candidate_limit]
     catalog_candidates = build_candidates(candidate_entries, args.task, scan, local_mode)
     required_slots = {
@@ -836,7 +914,51 @@ def compose(args: argparse.Namespace) -> dict[str, Any]:
         for key in required_slots:
             if not catalog_candidates[key]:
                 catalog_candidates[key] = all_candidates[key]
+    skillhub_results: list[dict[str, Any]] = []
+    skillhub_error = None
+    skillhub_candidates = build_external_skill_candidates([], args.task, scan, "skillhub")
+    find_skills_results: list[dict[str, Any]] = []
+    find_skills_error = None
+    find_skills_candidates = build_external_skill_candidates([], args.task, scan, "find-skills")
+
+    missing_after_catalog = {
+        key
+        for key in required_slots
+        if not local_candidates[key]
+    }
+    if missing_after_catalog and not args.no_skillhub:
+        try:
+            skillhub_results = discover.fetch_skillhub_results(
+                build_query(args.task, scan),
+                args.skillhub_limit,
+                args.timeout,
+                args.skillhub_search_url,
+            )
+            skillhub_candidates = build_external_skill_candidates(
+                skillhub_results, args.task, scan, "skillhub"
+            )
+        except ValueError as error:
+            skillhub_error = str(error)
+
+    missing_after_skillhub = {
+        key
+        for key in required_slots
+        if not local_candidates[key]
+        and not skillhub_candidates[key]
+    }
+    if missing_after_skillhub and not args.no_find_skills:
+        find_skills_results = discover.fetch_find_skills_results(
+            build_query(args.task, scan),
+            args.skillhub_limit,
+            args.timeout,
+        )
+        find_skills_candidates = build_external_skill_candidates(
+            find_skills_results, args.task, scan, "find-skills"
+        )
+
     candidates = merge_candidates(local_candidates, catalog_candidates)
+    candidates = merge_candidates(candidates, skillhub_candidates)
+    candidates = merge_candidates(candidates, find_skills_candidates)
     roster = choose_roster(candidates, args.task, scan, mode, local_mode, catalog_root, args.timeout, args.max_members, not args.skip_verify)
     for member in roster:
         member["prompt"] = prompt_for_member(member, str(root), args.task, mode, scan)
@@ -846,25 +968,53 @@ def compose(args: argparse.Namespace) -> dict[str, Any]:
     rejected = []
     for slot in SLOTS:
         if slot_is_required(slot, args.task, scan, mode) and slot.key not in {member["slot"] for member in roster}:
-            rejected.append({"slot": slot.key, "reason": "no indexed candidate or max-members limit"})
+            rejected.append({"slot": slot.key, "reason": "no verified local, expert-team, SkillHub, or find-skills candidate; or max-members limit"})
     remote_selected = [member["skill"] for member in roster if member.get("source_kind") == "remote-catalog"]
     local_selected = [member["skill"] for member in roster if member.get("source_kind") in LOCAL_SOURCE_KINDS]
+    skillhub_selected = [member["skill"] for member in roster if member.get("source_kind") == "skillhub"]
+    find_skills_selected = [member["skill"] for member in roster if member.get("source_kind") == "find-skills"]
     prerequisites = []
     if remote_selected:
         prerequisites.append("remote access to selected SKILL.md sources")
     if local_selected:
         prerequisites.append("local Skill or Agent files are readable")
+    if skillhub_selected:
+        prerequisites.append("remote access to selected SkillHub packages")
+    if find_skills_selected:
+        prerequisites.append("remote access to selected GitHub SKILL.md sources discovered by find-skills")
     prerequisites.append("project-specific credentials, services, test data, and browser runner when required")
+    warnings = []
+    if catalog_error:
+        warnings.append(catalog_error)
+    if skillhub_error:
+        warnings.append(skillhub_error)
     return {
         "schema": "expert-team-composition.v1",
         "project": {"root": str(root), "task": args.task, "mode": mode},
         "catalog": {
             "index": index_source,
             "local": local_mode,
-            "selection_policy": "project expert team > project/local Skill or Agent > verified catalog capability",
+            "selection_policy": "project expert team > project/local Skill or Agent > verified expert-team catalog > verified SkillHub Skill > verified find-skills Skill",
             "local_discovery": local_discovery,
             "local_selected": local_selected,
             "remote_selected": remote_selected,
+            "skillhub": {
+                "home": discover.DEFAULT_SKILLHUB_URL,
+                "search_url": args.skillhub_search_url,
+                "searched": bool(skillhub_results),
+                "result_count": len(skillhub_results),
+                "selected": skillhub_selected,
+                "error": skillhub_error,
+            },
+            "find_skills": {
+                "home": "https://skills.sh/",
+                "command": "npx --yes skills find",
+                "searched": bool(find_skills_results),
+                "result_count": len(find_skills_results),
+                "selected": find_skills_selected,
+                "error": find_skills_error,
+            },
+            "warnings": warnings,
         },
         "scan": scan,
         "query": build_query(args.task, scan),

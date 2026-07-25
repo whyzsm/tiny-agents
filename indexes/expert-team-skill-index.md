@@ -1,42 +1,42 @@
 # Expert-Team Skill Index
 
-本索引登记本仓库自建或适配的专家团路由 Skill、专家团转换 Skill、Skill 工作台和与专家团路由协作的项目质量门禁 Skill。固定专家团入口统一登记在 `expert-team-file-list.md`；本文件可以同时引用需要说明其 Skill 实现的专家团。
+本索引登记本仓库自建或适配、且需要单独说明职责边界的能力 Skill：包括专家团路由、动态编排、项目质量门禁、项目创建、提示词生成和 Skill 工作台。它不是固定专家团清单，也不是所有普通 Skill 的总目录；固定专家团入口统一登记在 `expert-team-file-list.md`。
 
-普通 skill 查找请先看 `indexes/skill-registry.md` / `indexes/skill-registry.json`；本文件保留专家团路由、转换、Skill 工作台，以及支撑专家团交付的项目质量门禁 Skill。
+普通 Skill 查找请先看 `indexes/skill-registry.md` / `indexes/skill-registry.json`；本文件只保留需要参与专家团路由、项目交付或 Skill 生命周期管理的自建/适配能力。
 
-For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/skill-registry.json`; this file keeps expert-team routers, converters, Skill workbenches, and project quality-gate Skills that support expert-team delivery.
+For ordinary Skill lookup, start with `indexes/skill-registry.md` / `indexes/skill-registry.json`; this file only keeps repository-authored or adapted capabilities whose routing, project-delivery, or Skill-lifecycle boundaries need to be documented here.
 
-| 类型 / Type | Skill | 位置 / Location | 作用 / Purpose | 能力来源 / Source |
+| 能力类型 / Capability type | Skill | 位置 / Location | 准确职责与边界 / Responsibility & boundary | 实现与依赖 / Implementation & sources |
 |---|---|---|---|---|
-| HarmonyOS 专家团路由 Skill / HarmonyOS expert-team router | [`harmony-expert-team`](../skills/harmony-expert-team/SKILL.md) | `skills/harmony-expert-team/` | HarmonyOS/OpenHarmony 项目专家团入口；负责协调问答、实现、UI 生成和服务卡片能力 / Expert-team entry for HarmonyOS/OpenHarmony work; coordinates Q&A, implementation, UI generation, and service-card capabilities | `repo-local/skills/harmony-expert-team` |
-| HarmonyOS 上架自检 Skill / HarmonyOS AppGallery release self-check | [`harmonyos-app-store-self-check`](../skills/harmonyos-app-store-self-check/SKILL.md) | `skills/harmonyos-app-store-self-check/` | HarmonyOS 应用发布前质量门禁；检查工程、签名、隐私、权限、发布包和市场素材，支持 AGC 实测读取与基于 AGC 报告的五类自检模拟 / Pre-release quality gate for HarmonyOS apps; checks project structure, signing, privacy, permissions, artifacts, and listing evidence, with AGC live-result reading and report-driven simulation across five AGC dimensions | `repo-local/skills/harmonyos-app-store-self-check` |
-| 企业级 React 应用创建 Skill / Enterprise React app creator | [`create-enterprise-react-app`](../skills/create-enterprise-react-app/SKILL.md) | `skills/create-enterprise-react-app/` | 创建并验证生产级企业 React 应用基础架构，覆盖 Vite、React、路由、状态、请求、样式、Storybook、Vitest 和 Playwright 基线 / Scaffold and verify a production-ready enterprise React application baseline covering Vite, React, routing, state, requests, styling, Storybook, Vitest, and Playwright | `repo-local/skills/create-enterprise-react-app` |
-| 截图转 UI 提示词 Skill / Screenshot-to-UI prompt skill | [`screenshot-ui-prompt`](../skills/screenshot-ui-prompt/SKILL.md) | `skills/screenshot-ui-prompt/` | 将 UI 截图分类为组件、区块、页面或非前端元素，先确认功能与异常/控制要求，再收集设计令牌和风格约束，输出中英双语、可复制的生产级 UI 提示词 / Classifies a screenshot as component, section, page, or non-front-end content, confirms functional and exception/control requirements first, gathers design constraints, and emits copyable bilingual production-grade UI prompts | `repo-local/skills/screenshot-ui-prompt` |
-| 动态专家团编排 Skill / Dynamic expert-team assembler | [`assemble-project-expert-team`](../skills/assemble-project-expert-team/SKILL.md) | `skills/assemble-project-expert-team/` | 扫描目标项目，读取远端专家团目录，自动生成成员 roster、成员 Prompt、阶段 DAG 和质量门，并按运行时能力协调执行 / Scan the target project, read the remote expert-team catalog, generate the roster, member prompts, phase DAG, and quality gates, then coordinate execution according to runtime capabilities | `https://github.com/whyzsm/tiny-agents/tree/main/indexes` |
-| Skill 生成工作台 / Skill generation workbench | [`skill-generation-workbench`](../skills/skill-generation-workbench/SKILL.md) | `skills/skill-generation-workbench/` | 设计、生成、转换、升级和验证 Codex Skill 包，产出 `SKILL.md`、`agents/openai.yaml`、引用文件和脚本 / Design, generate, convert, upgrade, and validate Codex Skill packages; produce `SKILL.md`, `agents/openai.yaml`, references, and scripts | `repo-local/skills/skill-generation-workbench` |
-| Skill 拆解与写作工作台 / Skill breakdown and writing coach | [`skill-breakdown-workbench`](../skills/skill-breakdown-workbench/SKILL.md) | `skills/skill-breakdown-workbench/` | 分析 Skill/Agent 的写法，并输出中英双语教学、模板和改写建议 / Analyze Skill and agent writing, then produce bilingual teaching notes, templates, and rewrite guidance | `repo-local/skills/skill-breakdown-workbench` |
-| 外部专家团转换 Skill / External expert-team converter | [`expert-team-converter`](../skills/expert-team-converter/SKILL.md) | `skills/expert-team-converter/` | 将 WorkBuddy、CodeBuddy、插件或提示词形式的外部专家包转换为当前仓库的专家团 Skill 包，判断真实顶层 Skill、混合映射或 router 内部标签，并同步索引 / Convert WorkBuddy, CodeBuddy, plugin, or prompt-based expert packages into repository expert-team Skill packages, classify child entries, and update indexes | `repo-local/skills/expert-team-converter` |
+| 鸿蒙专家团 / HarmonyOS expert team | [`harmony-expert-team`](../skills/harmony-expert-team/SKILL.md) | `skills/harmony-expert-team/` | HarmonyOS/OpenHarmony 任务入口；按任务类型选择问答、实现、UI 生成或服务卡片子 Skill，混合任务按阶段串联，不替代子 Skill / Routes HarmonyOS/OpenHarmony work to the Q&A, implementation, UI-generation, or service-widget child Skills; sequences mixed work by phase and does not replace the child Skills | 本地 router；子能力：`harmony-os-ask`、`harmony-os-act`、`generate-ui-code`、`service-widget` / local router with four child Skills |
+| 鸿蒙项目质量门禁 / HarmonyOS project quality gate | [`harmonyos-app-store-self-check`](../skills/harmonyos-app-store-self-check/SKILL.md) | `skills/harmonyos-app-store-self-check/` | 对 HarmonyOS 工程和 `.app/.hap` 做本地发布预检；可读取登录后的 AGC 上架自检结果，也可基于历史报告做保守模拟，但本地通过不等于 AGC 通过 / Runs local release preflight for HarmonyOS projects and `.app/.hap`; can read logged-in AGC self-check results and conservatively simulate from historical reports, but a local pass is never an AGC pass | 本地 Skill、AGC 控制台和 `check_harmony_release.py` / local Skill, AGC console, and `check_harmony_release.py` |
+| React企业级空白项目创建 / Enterprise React blank project creator | [`create-enterprise-react-app`](../skills/create-enterprise-react-app/SKILL.md) | `skills/create-enterprise-react-app/` | 为新建或明确要求适配的 React 项目生成企业级空白壳层；覆盖 React 19、Ant Design 6、React Router 7、TanStack Query、Zustand、Axios、Tailwind CSS 4、Storybook、Vitest 和 Playwright，并要求验证构建质量 / Scaffolds a new or explicitly adapted React project shell using React 19, Ant Design 6, React Router 7, TanStack Query, Zustand, Axios, Tailwind CSS 4, Storybook, Vitest, and Playwright, then verifies the quality gates | 本地模板与 `scripts/create_project.py`；不覆盖非空目录、不默认提交或发布 / local template and `scripts/create_project.py`; refuses non-empty targets and does not commit or publish by default |
+| 根据截图生成UI提示词 / Screenshot-to-UI prompt generator | [`screenshot-ui-prompt`](../skills/screenshot-ui-prompt/SKILL.md) | `skills/screenshot-ui-prompt/` | 需要视觉输入时，将截图判定为组件、区块、页面或非前端元素；先确认功能、异常和控制，再处理设计令牌/配色，输出中文优先、英文补充的可复制提示词 / With visual input, classifies a screenshot as a component, section, page, or non-front-end element; confirms behavior, exceptions, and controls before design tokens/colors, then emits a Chinese-first, English-follow-up copyable prompt | 本地 Skill、`references/prompt_templates.md` 和可选 `scripts/extract_colors.py` / local Skill, prompt templates, and optional color extractor |
+| 根据现有的技能（skill）手搓专家团 / Assemble an expert team from existing Skills | [`assemble-project-expert-team`](../skills/assemble-project-expert-team/SKILL.md) | `skills/assemble-project-expert-team/` | 优先检查目标仓库和本机 Skill/Agent；能力不足时依次读取远端专家团目录、SkillHub 和 find-skills，并只纳入通过 `SKILL.md` 校验的能力 / Inspects project and local Skills/Agents first; when a capability is missing, queries the remote expert-team catalog, SkillHub, and find-skills in order, admitting only sources whose `SKILL.md` verifies | 本地 router/编排脚本；远端数据源：`expert-team-file-list.md`、`https://skillhub.cn/`、`https://skills.sh/` / local router and composer; remote sources: expert-team index, SkillHub, and skills.sh |
+| skill生成器 / Skill generator | [`skill-generation-workbench`](../skills/skill-generation-workbench/SKILL.md) | `skills/skill-generation-workbench/` | 写入前先用 find-skills 查找，再用 SkillHub 查询可复用能力；然后从想法、现有 Skill、外部提示词或专家卡片设计、生成、升级和验证 Skill 包，默认不安装、提交或发布 / Searches find-skills first and SkillHub second before writing; then designs, generates, upgrades, and validates Skill packages from ideas, existing Skills, external prompts, or expert cards without installing, committing, or publishing by default | 本地工作台、find-skills、`https://skillhub.cn/` 及其 `references/`、`scripts/` / local workbench, find-skills, SkillHub, references, and scripts |
+| 拆解现有的skill / Break down existing Skill | [`skill-breakdown-workbench`](../skills/skill-breakdown-workbench/SKILL.md) | `skills/skill-breakdown-workbench/` | 读取可见的 `SKILL.md`/Agent manifest，生成必须落盘为 `.md` 的中英双语拆解、写作教学、公式和模板；不猜隐藏 Prompt / Reads visible Skill/Agent manifests and writes a required bilingual Markdown teardown with writing lessons, formulas, and templates; never guesses hidden prompts | 本地工作台及其 `references/guide.md` / local workbench and `references/guide.md` |
+| 外部专家团转换成Codex专家团 / External expert-team to Codex expert-team converter | [`expert-team-converter`](../skills/expert-team-converter/SKILL.md) | `skills/expert-team-converter/` | 将 WorkBuddy、CodeBuddy、插件或提示词包转换为仓库 Skill/专家团格式；复用已有能力并区分顶层 Skill、混合映射和 router 内部标签，按转换结果更新对应索引 / Converts WorkBuddy, CodeBuddy, plugin, or prompt packages into repository Skill/expert-team format; reuses existing capabilities, classifies top-level Skills versus hybrid or internal router labels, and updates the relevant indexes | 本地转换工作台及其 `references/`；不提取隐藏 Prompt、不默认安装或发布 / local converter and references; no hidden-prompt extraction, installation, or publication by default |
 
 ## assemble-project-expert-team
 
-- **Skill 类型 / Skill type**：动态路由与自动编排 / dynamic routing and automatic orchestration
+- **Skill 类型 / Skill type**：动态专家团路由与编排，不是固定专家团 / dynamic expert-team routing and orchestration, not a fixed team
 - **不是 / Not**：固定专家团、单个 Agent、Agent 成员清单 / a fixed team, a single Agent, or a static member list
 - **目标项目 / Target project**：可以是任意代码仓库，不要求本地存在 `tiny-agents` / any repository; a local `tiny-agents` checkout is not required
-- **默认目录 / Default catalog**：远端 `expert-team-file-list.md` / remote `expert-team-file-list.md`
+- **默认目录 / Default catalog**：从 GitHub 远端读取 `indexes/expert-team-file-list.md`；本地 `tiny-agents` 不是必需依赖 / read `indexes/expert-team-file-list.md` from GitHub; a local `tiny-agents` checkout is not required
 - **离线目录 / Offline catalog**：可显式传入本地 `indexes/expert-team-file-list.md` / pass a local copy explicitly
 - **编排脚本 / Composer**：`skills/assemble-project-expert-team/scripts/compose_team.py`
 - **默认模式 / Default mode**：`auto-execute`；只有明确要求只规划、模拟或不执行时才使用 `blueprint` / use `blueprint` only for explicit planning, simulation, or no-execution requests
-- **运行时协议 / Runtime protocol**：支持 `TeamCreate`、`Agent`、`SendMessage`；Codex 环境映射到可用的 `spawn_agent`、`send_input`、`wait_agent` 和 `resume_agent` / use formal team primitives or their Codex-compatible equivalents when available
+- **运行时协议 / Runtime protocol**：有正式团队或多 Agent 原语时才创建/调度成员；否则由当前协调者按同一阶段契约执行，并明确标记为协调式能力执行 / create and dispatch members only when formal team or multi-agent primitives exist; otherwise the coordinator executes the same phase contract and labels it coordinated capability execution
 - **常见编排能力 / Common capabilities**：需求澄清、测试设计、E2E 测试、API 契约验证、架构、实现、审查和交付 / requirements, test design, E2E, API contracts, architecture, implementation, review, and delivery
 - **资源边界 / Asset boundary**：不安装 Skill、不把能力复制到目标项目、不生成头像资源 / never install or copy Skills into the target project, and do not generate avatar assets
-- **来源优先级 / Source priority**：目标仓库专家团 > 目标仓库 Skill/Agent > 本机已安装 Skill/Agent > 已校验的远端目录能力 / project expert team > project Skill/Agent > installed local Skill/Agent > verified remote catalog capability
-- **远端可用性 / Remote usability**：远端入口只有在 router 和选中子 `SKILL.md` 均可访问、名称匹配时才能直接使用 / a remote entry is usable only when its router and selected child `SKILL.md` files are reachable with matching names
+- **来源优先级 / Source priority**：目标仓库专家团 > 目标仓库 Skill/Agent > 本机已安装 Skill/Agent > 已校验的远端专家团目录 > 已校验的 SkillHub > 已校验的 find-skills / project expert team > project Skill/Agent > installed local Skill/Agent > verified expert-team catalog > verified SkillHub > verified find-skills
+- **远端可用性 / Remote usability**：远端专家团入口需校验 router 和选中子 `SKILL.md`；SkillHub 需校验包内 `SKILL.md`；find-skills 需解析并校验 GitHub `SKILL.md` / remote expert-team entries require router and selected child `SKILL.md` verification; SkillHub requires package `SKILL.md` verification; find-skills requires a matching GitHub `SKILL.md`
 
 ## 使用边界
 
-`expert-team-file-list.md` 只登记固定专家团入口；本文件登记能够动态选择或协调专家团的 Skill。具体被选中的专家团和子技能，必须以任务上下文和远端目录读取结果为准，不在本索引中预先固定成员名单。
+`expert-team-file-list.md` 只登记固定专家团入口；本文件登记需要说明实现职责的自建/适配 Skill，不代表表内每一项都是专家团。具体被选中的专家团和子技能，必须以任务上下文、目标仓库证据和远端目录读取结果为准，不在本索引中预先固定动态团队成员。
 
-`harmony-expert-team` is intentionally listed in both indexes: `expert-team-file-list.md` records it as an expert-team entry, while this file records the repository-authored router Skill and its implementation boundary. `harmony-expert-team` 有意同时登记在两个索引中：`expert-team-file-list.md` 将其登记为专家团入口，本文件记录其自建路由 Skill 和实现边界。
+`harmony-expert-team` is intentionally listed in both indexes: `expert-team-file-list.md` records the fixed expert-team entry, while this file records the repository-authored router Skill and its implementation boundary. `harmony-expert-team` 有意同时登记在两个索引中：`expert-team-file-list.md` 登记固定专家团入口，本文件登记自建 router Skill 及其实现边界。
 
 `assemble-project-expert-team` 运行后应返回成员 ID、选中 Skill、来源校验、成员 Prompt、阶段依赖、交接契约、前置条件和剩余缺口。没有团队或多 Agent 原语时，只能标记为协调式能力执行，不得声称已经创建真实成员。
 
@@ -70,6 +70,7 @@ After execution, `assemble-project-expert-team` should return member IDs, select
 
 ## skill-generation-workbench
 
+- **旧名称 / Previous display name**：`Skill 生成工作台`；当前展示名为 `skill生成器` / previous display name: `Skill 生成工作台`; current display name: `skill生成器`
 - **Skill 类型 / Skill type**：Skill 生成、转换、升级与验证工作台 / skill generation, conversion, upgrade, and validation workbench
 - **不是 / Not**：固定专家团、Agent 成员、自动安装器或自动发布器 / a fixed expert team, agent roster, auto-installer, or auto-publisher
 - **目标 / Target**：为新 Skill 或现有 Skill 生成可验证的仓库包 / generate verifiable repository packages for new or existing Skills
@@ -80,6 +81,7 @@ After execution, `assemble-project-expert-team` should return member IDs, select
 
 ## skill-breakdown-workbench
 
+- **旧名称 / Previous display name**：`Skill 拆解与写作工作台`；当前展示名为 `拆解现有的skill` / previous display name: `Skill 拆解与写作工作台`; current display name: `拆解现有的skill`
 - **Skill 类型 / Skill type**：Skill 和 agent 的拆解、教学与写作教练 / breakdown, teaching, and writing coach for Skills and agents
 - **不是 / Not**：自动发布器、隐藏提示词猜测器、固定专家团或简单摘要器 / auto-publisher, hidden-prompt guesser, fixed expert team, or plain summarizer
 - **目标 / Target**：分析现有 Skill 或 agent manifest 的写法，并教会用户如何写出更好的 Skill 和 Agent / analyze an existing Skill or agent manifest and teach better Skill and Agent authorship

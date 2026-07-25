@@ -9,7 +9,7 @@ skills:
 source: "https://github.com/whyzsm/tiny-agents/tree/main/indexes"
 ---
 
-# 项目专家团编排器工作流 / Project Expert-Team Assembler Workflow
+# 根据现有的技能（skill）手搓专家团工作流 / Existing-Skill Expert-Team Assembly Workflow
 
 Select only the steps required by the task; do not load every bootstrap capability mechanically. 按任务范围选择必要步骤，不要机械加载全部启动能力。
 
@@ -35,7 +35,7 @@ Output facts, assumptions, risks, and verification boundaries. 输出事实、�
 
 ## 步骤 3：索引路由 / Step 3: Catalog Routing
 
-Use `scripts/discover_skills.py` to query the remote `expert-team-file-list.md`. 使用 `scripts/discover_skills.py` 查询远端 `expert-team-file-list.md`。
+Use `scripts/discover_skills.py` to query the remote `expert-team-file-list.md`; when the catalog leaves a required capability gap, let `compose_team.py` query SkillHub and `find-skills` as standalone Skill sources. 使用 `scripts/discover_skills.py` 查询远端 `expert-team-file-list.md`；目录无法填满必需能力时，再由 `compose_team.py` 查询 SkillHub 和 `find-skills` 作为独立 Skill 来源。
 
 Keep relevant expert-team entries and child-skill names, then read complete `SKILL.md` files for shortlisted routers and candidate children. 保留相关专家团入口和子技能名称，再读取入选入口及候选子 Skill 的完整 `SKILL.md`。
 

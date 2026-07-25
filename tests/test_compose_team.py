@@ -1,9 +1,13 @@
+import io
 import importlib.util
 import json
 import sys
 import tempfile
 import unittest
+import zipfile
 from pathlib import Path
+from types import SimpleNamespace
+from unittest.mock import patch
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -179,6 +183,40 @@ class ComposeTeamTest(unittest.TestCase):
         }
         merged = COMPOSE.merge_candidates(local, catalog)
         self.assertEqual(merged["e2e-testing"][0]["skill"], "playwright")
+
+    def test_skillhub_package_verification_reads_matching_skill_file(self):
+        package = io.BytesIO()
+        with zipfile.ZipFile(package, "w") as archive:
+            archive.writestr(
+                "SKILL.md",
+                "---\nname: api-contract-check\ndescription: test\n---\n# API Contract Check\n" + "x" * 100,
+            )
+
+        with patch.object(COMPOSE.discover, "fetch_bytes", return_value=package.getvalue()):
+            result = COMPOSE.discover.verify_skillhub_package(
+                "https://api.skillhub.cn/api/v1/download?slug=api-contract-check",
+                "api-contract-check",
+                1,
+            )
+
+        self.assertEqual(result["status"], "verified")
+        self.assertEqual(result["declared_name"], "api-contract-check")
+
+    def test_find_skills_output_is_parsed_without_installing(self):
+        output = (
+            "Install with npx skills add <owner/repo@skill>\n"
+            "owner/testing-skills@test-helper 1.2K installs\n"
+            "└ https://skills.sh/owner/testing-skills/test-helper\n"
+        )
+        completed = SimpleNamespace(stdout=output, returncode=0)
+        with patch.object(COMPOSE.discover.shutil, "which", return_value="/usr/bin/npx"), patch.object(
+            COMPOSE.discover.subprocess, "run", return_value=completed
+        ) as run:
+            results = COMPOSE.discover.fetch_find_skills_results("testing", 5, 1)
+
+        run.assert_called_once()
+        self.assertEqual(results[0]["package_ref"], "owner/testing-skills@test-helper")
+        self.assertEqual(results[0]["source_kind"], "find-skills")
 
 
 if __name__ == "__main__":

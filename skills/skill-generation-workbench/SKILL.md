@@ -1,13 +1,13 @@
 ---
 name: skill-generation-workbench
-description: "设计、生成和验证 Codex Skill 包。用于用户提出创建 Skill、开发 Skill、把流程或专家能力封装成 Skill、把外部专家卡片或提示词转换为 Skill，或需要升级已有 Skill 时；先澄清触发场景、输入输出、边界和副作用，再生成符合约定的 SKILL.md、agents/openai.yaml、引用文件和可选脚本。"
+description: "设计、生成和验证 Codex Skill 包。用于用户提出创建 Skill、开发 Skill、把流程或专家能力封装成 Skill、把外部专家卡片或提示词转换为 Skill，或需要升级已有 Skill 时；写入前先用 find-skills 再查 SkillHub，核对可复用能力，然后澄清触发场景、输入输出、边界和副作用，最后生成符合约定的 SKILL.md、agents/openai.yaml、引用文件和可选脚本。"
 ---
 
-# Skill Generation Workbench
+# skill生成器 / Skill Generator
 
 ## Overview
 
-将模糊的“帮我做一个 Skill”请求整理成可执行的 Skill 蓝图，并生成一个可验证、可维护、不会默认安装或发布的 Skill 包。保持 Skill 是能力与工作流，不把人格、身份或专家灵魂写进 `SKILL.md`。
+将模糊的“帮我做一个 Skill”请求整理成可执行的 Skill 蓝图，并生成一个可验证、可维护、不会默认安装或发布的 Skill 包。写入文件前先查找可复用能力，避免重复造 Skill。保持 Skill 是能力与工作流，不把人格、身份或专家灵魂写进 `SKILL.md`。
 
 ## Operating Modes
 
@@ -31,12 +31,52 @@ description: "设计、生成和验证 Codex Skill 包。用于用户提出创�
 
 ## Workflow
 
+### 0. Capability Discovery Before Writing (MANDATORY)
+
+For **create**, **upgrade**, and **convert** modes, complete this discovery phase before creating,
+editing, or scaffolding any package file. Review-only mode may skip it when no files will be written.
+The order is mandatory: **find-skills first, then SkillHub**.
+
+1. Build a focused query from the domain, user task, stack, inputs, outputs, and risk terms. Keep it
+   short enough to search, for example `react form validation`, `harmonyos app release`, or
+   `api contract testing`.
+2. Use the `find-skills` discovery workflow first:
+
+   ```bash
+   npx --yes skills find "<domain> <task> <stack>"
+   ```
+
+   Read the candidate name, repository, `skills.sh` URL, install count, and source. This is search
+   only; do not run `npx skills add` or install a candidate.
+3. Query SkillHub second, using the local CLI when available:
+
+   ```bash
+   skillhub --skip-self-upgrade search "<domain> <task> <stack>" --json --search-limit 20
+   ```
+
+   The CLI searches `https://skillhub.cn/`. If the CLI is unavailable, read the public search API at
+   `https://api.skillhub.cn/api/v1/search` with `q` and `limit`; do not infer results from the home page.
+4. Compare both result sets with the repository registries and installed local roots. For every
+   serious candidate, inspect its visible `SKILL.md` or package metadata when reachable, and record
+   name, source, capability overlap, input/output compatibility, version or install evidence, and
+   verification status. Search metadata alone is not proof that a Skill is usable.
+5. Make one explicit decision before writing:
+   - **reuse** an existing local or verified external capability when it already owns the task;
+   - **upgrade** the existing package when the request is an extension of its scope;
+   - **convert** an external package when the user supplied a visible expert/prompt package;
+   - **create** a new package only when no verified candidate owns the required workflow or the
+     boundary is materially different.
+6. Record the query, both source results, rejected candidates, and the reuse/upgrade/convert/create
+   decision in the blueprint. A failed or unavailable search must be reported as an evidence gap,
+   not silently treated as “no matching Skill”.
+
 ### 1. Inspect
 
-先确认当前工作区和目标目录，再检查是否存在同名或功能重叠的 Skill：
+先完成第 0 阶段的能力发现，再确认当前工作区和目标目录，检查是否存在同名或功能重叠的 Skill：
 
 - 查看 `git status --short --branch -uall`，不要覆盖用户已有改动。
 - 用 `rg` 搜索现有 `SKILL.md` 的 `name`、描述和触发词；在 `tiny-agents` 中优先查看 `indexes/skill-registry.md`，若要看本地扫描库存再看 `indexes/agent-skill-index.md`。
+- 将第 0 阶段的 `find-skills` 和 SkillHub 结果与本地 registry 一起比较，不因远端搜索结果存在就覆盖本地 Skill。
 - 若输入来自截图或外部专家卡片，只把可见的名称、摘要、标签和流程当作来源；缺失的隐藏 prompt 不得臆造。
 - 选择短的、动词导向的 hyphen-case 名称；已存在相同能力时优先升级或复用，而不是创建重复包。
 
@@ -106,7 +146,8 @@ git diff --check
 1. 可触发的 `SKILL.md`，frontmatter 完整且没有 TODO 占位内容。
 2. 与内容一致的 `agents/openai.yaml`。
 3. 必要时提供引用文件或确定性脚本；没有实际用途的目录不保留。
-4. 结构校验、安全扫描和相关测试的真实结果。
+4. 能力发现记录：查询词、find-skills 结果、SkillHub 结果、候选验证、拒绝原因和最终复用/升级/转换/新建决策。
+5. 结构校验、安全扫描和相关测试的真实结果。
 
 详细字段、蓝图和检查表见：
 

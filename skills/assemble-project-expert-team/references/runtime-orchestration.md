@@ -71,7 +71,7 @@ An execution member may edit only the files required by its assignment and must 
 
 The composer is read-only. Package mode may write requested text manifests or Agent prompts, but it must never write to the target project unless the user explicitly requests implementation. 编排器是只读的；团队包模式可以写用户要求的文本 manifest 或 Agent Prompt，但除非用户明确要求实现，否则不得写入目标项目。
 
-Remote Skills remain remote references. A source marked `unverified` is a prerequisite to check, not evidence that the capability was executed. 远端 Skill 保持为远程引用；标记为 `unverified` 的源只是待核对前置条件，不是能力已执行的证据。
+Remote Skills from the expert-team catalog, SkillHub, and find-skills remain remote references. A source marked `unverified` is a prerequisite to check, not evidence that the capability was executed. 来自专家团目录、SkillHub 和 find-skills 的远端 Skill 都保持为远程引用；标记为 `unverified` 的源只是待核对前置条件，不是能力已执行的证据。
 
 An indexed expert-team router is directly usable only when its router and selected child sources both verify successfully. A broken child source must be reported as a catalog gap and replaced by a local capability or another verified remote candidate. 远端索引中的专家团入口只有在入口和选中的子源均校验成功时才能直接使用；子源损坏时必须报告为目录缺口，并替换为本地能力或其他已校验的远端候选。
 

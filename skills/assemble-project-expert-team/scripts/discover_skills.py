@@ -4,18 +4,31 @@
 from __future__ import annotations
 
 import argparse
+import io
 import json
 import re
+import shutil
+import subprocess
+import zipfile
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import quote, urljoin, urlparse
+from urllib.parse import quote, urlencode, urljoin, urlparse
 from urllib.request import Request, urlopen
+from typing import Any
 
 
 DEFAULT_CATALOG_ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_INDEX_URL = "https://github.com/whyzsm/tiny-agents/tree/main/indexes"
+DEFAULT_SKILLHUB_URL = "https://skillhub.cn/"
+DEFAULT_SKILLHUB_SEARCH_URL = "https://api.skillhub.cn/api/v1/search"
 INDEX_FILENAME = "expert-team-file-list.md"
+ANSI_ESCAPE_RE = re.compile(r"\x1b\[[0-?]*[ -/]*[@-~]")
+FIND_SKILLS_RESULT_RE = re.compile(
+    r"^\s*(?P<package>[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+@[A-Za-z0-9_.-]+)"
+    r"\s+(?P<installs>[0-9][0-9.,]*[KkMm]?)\s+installs\s*$"
+)
+SKILLS_SH_URL_RE = re.compile(r"https://skills\.sh/[^\s]+")
 WORD_RE = re.compile(r"[a-zA-Z0-9][a-zA-Z0-9+.#_-]*|[\u4e00-\u9fff]+")
 TEAM_ROW_RE = re.compile(
     r"^\|\s*(?P<category>[^|]+?)\s*"
@@ -291,6 +304,198 @@ def fetch_text(url: str, timeout: float) -> str:
             return response.read().decode(encoding)
     except (HTTPError, URLError, TimeoutError, UnicodeDecodeError) as error:
         raise ValueError(f"Cannot read remote expert-team index: {url}: {error}") from error
+
+
+def fetch_bytes(url: str, timeout: float, limit: int = 12_000_000) -> bytes:
+    request = Request(url, headers={"User-Agent": "tiny-agents-expert-team-index/1.0"})
+    try:
+        with urlopen(request, timeout=timeout) as response:
+            body = response.read(limit + 1)
+    except (HTTPError, URLError, TimeoutError) as error:
+        raise ValueError(f"Cannot read remote Skill package: {url}: {error}") from error
+    if len(body) > limit:
+        raise ValueError(f"Remote Skill package is larger than {limit} bytes: {url}")
+    return body
+
+
+def fetch_skillhub_results(
+    query: str,
+    limit: int,
+    timeout: float,
+    search_url: str = DEFAULT_SKILLHUB_SEARCH_URL,
+) -> list[dict[str, Any]]:
+    parsed = urlparse(search_url)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        raise ValueError(f"SkillHub search URL must use HTTP(S): {search_url}")
+    params = urlencode({"q": query, "limit": max(1, int(limit))})
+    url = parsed._replace(query=params, fragment="").geturl()
+    request = Request(
+        url,
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "tiny-agents-expert-team-skillhub/1.0",
+        },
+    )
+    try:
+        with urlopen(request, timeout=timeout) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except (HTTPError, URLError, TimeoutError, UnicodeDecodeError, json.JSONDecodeError) as error:
+        raise ValueError(f"Cannot read SkillHub search results: {url}: {error}") from error
+    if not isinstance(payload, dict) or not isinstance(payload.get("results"), list):
+        raise ValueError(f"SkillHub search returned an invalid response: {url}")
+
+    results: list[dict[str, Any]] = []
+    for item in payload["results"]:
+        if not isinstance(item, dict):
+            continue
+        slug = str(item.get("slug") or "").strip()
+        if not slug:
+            continue
+        results.append(
+            {
+                "slug": slug,
+                "name": str(item.get("displayName") or item.get("name") or slug).strip() or slug,
+                "description": str(
+                    item.get("summary") or item.get("description") or item.get("description_zh") or ""
+                ).strip(),
+                "source": f"https://api.skillhub.cn/api/v1/download?slug={quote(slug)}",
+                "detail_url": str(item.get("homepage") or DEFAULT_SKILLHUB_URL).strip(),
+                "source_kind": "skillhub",
+                "version": str(item.get("version") or "").strip(),
+                "installs": item.get("installs"),
+                "stars": item.get("stars"),
+                "skillhub_url": DEFAULT_SKILLHUB_URL,
+            }
+        )
+    return results
+
+
+def fetch_find_skills_results(query: str, limit: int, timeout: float) -> list[dict[str, Any]]:
+    npx = shutil.which("npx")
+    if not npx:
+        return []
+    terms = [part for part in query.split() if part][:16]
+    if not terms:
+        return []
+    try:
+        completed = subprocess.run(
+            [npx, "--yes", "skills", "find", *terms],
+            capture_output=True,
+            text=True,
+            timeout=max(1.0, timeout),
+            check=False,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return []
+    output = ANSI_ESCAPE_RE.sub("", completed.stdout or "")
+    lines = output.splitlines()
+    results: list[dict[str, Any]] = []
+    for index, line in enumerate(lines):
+        match = FIND_SKILLS_RESULT_RE.match(line)
+        if not match:
+            continue
+        package_ref = match.group("package")
+        owner_repo, skill = package_ref.rsplit("@", 1)
+        source_url = ""
+        for following in lines[index + 1 : index + 4]:
+            url_match = SKILLS_SH_URL_RE.search(following)
+            if url_match:
+                source_url = url_match.group(0).rstrip(".,)")
+                break
+        if not source_url:
+            source_url = f"https://skills.sh/{owner_repo}/{skill}"
+        results.append(
+            {
+                "slug": skill,
+                "name": package_ref,
+                "description": "Skill discovered through the skills.sh find-skills catalog.",
+                "source": source_url,
+                "detail_url": source_url,
+                "source_kind": "find-skills",
+                "package_ref": package_ref,
+                "repository": f"https://github.com/{owner_repo}",
+                "installs": match.group("installs"),
+                "skills_sh_url": "https://skills.sh/",
+            }
+        )
+        if len(results) >= limit:
+            break
+    return results
+
+
+def _frontmatter_name(text: str) -> str | None:
+    if not text.startswith("---"):
+        return None
+    end = text.find("\n---", 3)
+    if end < 0:
+        return None
+    match = re.search(r"^name:\s*[\"']?([^\"'\s]+)", text[3:end], re.MULTILINE)
+    return match.group(1) if match else None
+
+
+def verify_skillhub_package(url: str, expected_name: str, timeout: float) -> dict[str, Any]:
+    try:
+        body = fetch_bytes(url, timeout)
+        with zipfile.ZipFile(io.BytesIO(body)) as archive:
+            names = [name for name in archive.namelist() if name.rstrip("/").endswith("SKILL.md")]
+            if not names:
+                return {"status": "invalid", "expected_name": expected_name, "error": "package has no SKILL.md"}
+            skill_name = min(names, key=lambda name: (name.count("/"), len(name)))
+            text = archive.read(skill_name).decode("utf-8", errors="ignore")
+    except (OSError, ValueError, zipfile.BadZipFile, KeyError, UnicodeDecodeError) as error:
+        return {"status": "unverified", "expected_name": expected_name, "error": str(error)}
+    declared_name = _frontmatter_name(text)
+    valid_name = declared_name == expected_name
+    return {
+        "status": "verified" if valid_name and len(text.strip()) > 80 else "invalid",
+        "expected_name": expected_name,
+        "declared_name": declared_name,
+        "content_bytes": len(text.encode("utf-8")),
+        "package_skill_path": skill_name,
+        "source": url,
+    }
+
+
+def verify_find_skill(candidate: dict[str, Any], expected_name: str, timeout: float) -> dict[str, Any]:
+    package_ref = str(candidate.get("package_ref") or "")
+    if "@" not in package_ref:
+        return {"status": "unverified", "expected_name": expected_name, "error": "missing package reference"}
+    owner_repo, _ = package_ref.rsplit("@", 1)
+    if owner_repo.count("/") != 1:
+        return {"status": "unverified", "expected_name": expected_name, "error": "invalid GitHub package reference"}
+    owner, repository = owner_repo.split("/", 1)
+    tree_url = f"https://api.github.com/repos/{quote(owner)}/{quote(repository)}/git/trees/HEAD?recursive=1"
+    try:
+        tree = json.loads(fetch_text(tree_url, timeout))
+        paths = [
+            item.get("path", "")
+            for item in tree.get("tree", [])
+            if item.get("type") == "blob" and str(item.get("path", "")).lower().endswith("skill.md")
+        ]
+        candidates = sorted(
+            paths,
+            key=lambda path: (
+                0 if f"/{expected_name.lower()}/skill.md" in f"/{path.lower()}" else 1,
+                len(path),
+            ),
+        )
+        if not candidates:
+            return {"status": "unverified", "expected_name": expected_name, "error": "repository has no SKILL.md"}
+        for path in candidates:
+            raw_url = f"https://raw.githubusercontent.com/{owner}/{repository}/HEAD/{quote(path, safe='/')}"
+            text = fetch_text(raw_url, timeout)
+            declared_name = _frontmatter_name(text)
+            if declared_name == expected_name or Path(path).parent.name == expected_name:
+                return {
+                    "status": "verified" if len(text.strip()) > 80 else "invalid",
+                    "expected_name": expected_name,
+                    "declared_name": declared_name,
+                    "content_bytes": len(text.encode("utf-8")),
+                    "source": raw_url,
+                }
+    except (OSError, ValueError, json.JSONDecodeError) as error:
+        return {"status": "unverified", "expected_name": expected_name, "error": str(error)}
+    return {"status": "invalid", "expected_name": expected_name, "error": "SKILL.md name does not match"}
 
 
 def catalog_path(catalog_root: Path, index: Path, link: str) -> tuple[str, bool]:

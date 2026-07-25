@@ -3,7 +3,7 @@ name: harmonyos-app-store-self-check
 description: "Audit HarmonyOS applications for AppGallery/AGC release readiness. Use when users ask for 鸿蒙上架自检、应用市场审核、AGC发布前检查、签名/隐私/权限/截图核对或 release 包门禁，especially for Stage-model projects with module.json5, build-profile.json5, hvigorw, and local-first data constraints."
 ---
 
-# HarmonyOS App Store Self Check
+# 鸿蒙项目质量门禁 / HarmonyOS Project Quality Gate
 
 ## Overview
 

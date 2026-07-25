@@ -1,4 +1,4 @@
-# 项目专家团编排器 / Project Expert-Team Assembler
+# 根据现有的技能（skill）手搓专家团 / Assemble an Expert Team from Existing Skills
 
 `$assemble-project-expert-team` is a project-quality dynamic expert-team entry point. `$assemble-project-expert-team` 是项目质量类动态专家团入口。
 
@@ -8,6 +8,8 @@ It separates target-project evidence from the remote expert capability catalog; 
 
 - Capability catalog / 能力目录: `https://github.com/whyzsm/tiny-agents/tree/main/indexes`
 - Catalog file / 目录文件: `expert-team-file-list.md`
+- SkillHub / SkillHub: `https://skillhub.cn/`；只读取搜索结果并校验选中包内的 `SKILL.md`，不自动安装 / read search results and verify the selected package's `SKILL.md`; never install automatically
+- find-skills / find-skills: `npx --yes skills find`，来源目录为 `https://skills.sh/`；只查找并校验 GitHub `SKILL.md`，不自动安装 / search and verify GitHub `SKILL.md`; never install automatically
 - Target project / 目标项目: the repository the user asks to inspect or deliver / 用户要求检查或交付的代码仓库
 - Skill directory / Skill 目录: the installed directory containing this skill's script and rules / 包含本 Skill 脚本和规则的已安装目录
 
@@ -36,9 +38,9 @@ The generated JSON is the roster and dispatch contract. It includes project sign
 
 ### Local-first source selection / 本地优先来源选择
 
-Before reading the remote catalog, inspect qualified expert-team packages, Skills, and Agents already present in the target repository. Then inspect installed local roots such as `$CODEX_HOME/skills`, `~/.agents/skills`, and their Agent roots. 在读取远端目录前，先检查目标仓库已有且符合条件的专家团包、Skill 和 Agent；再检查 `$CODEX_HOME/skills`、`~/.agents/skills` 及其 Agent 目录。
+Before reading any remote source, inspect qualified expert-team packages, Skills, and Agents already present in the target repository. Then inspect installed local roots such as `$CODEX_HOME/skills`, `~/.agents/skills`, and their Agent roots. Only after those sources leave a required slot unfilled should the composer read the remote expert-team catalog, SkillHub, and finally find-skills. 在读取任何远端来源前，先检查目标仓库已有且符合条件的专家团包、Skill 和 Agent；再检查 `$CODEX_HOME/skills`、`~/.agents/skills` 及其 Agent 目录。只有这些来源无法填满必需能力槽位时，才依次读取远端专家团目录、SkillHub 和 find-skills。
 
-Use the remote catalog only to fill capability gaps. A remote router is directly usable only after its selected child sources are verified; an index row with 404 child sources must be rejected and recorded as a gap. 远端目录只用于填补能力缺口；远端入口只有在选中子源校验通过后才能直接使用，子源返回 404 的索引行必须排除并记录为缺口。
+Use remote sources only to fill capability gaps. A remote router is directly usable only after its selected child sources are verified; an index row with 404 child sources must be rejected and recorded as a gap. SkillHub and find-skills results are standalone candidates, not expert-team entries, and must pass their own `SKILL.md` verification before selection. 远端来源只用于填补能力缺口；远端入口只有在选中子源校验通过后才能直接使用，子源返回 404 的索引行必须排除并记录为缺口。SkillHub 和 find-skills 返回的是独立 Skill 候选，不是专家团入口，必须分别完成 `SKILL.md` 校验后才能入选。
 
 The composer exposes `source_kind` and `local_discovery` in its JSON output so the lead can explain why each member was selected. 编排器会在 JSON 中输出 `source_kind` 和 `local_discovery`，主理人可以解释每个成员为何被选中。
 
@@ -83,6 +85,8 @@ The remote flow works without a local `tiny-agents` checkout. 远端流程不要
 `compose_team.py` reads the index first and verifies only the selected child `SKILL.md` sources. It does not bulk-download or install the catalog. `compose_team.py` 先读取索引，只校验被选中的子 `SKILL.md`，不会批量下载或安装目录内容。
 
 Use a local offline catalog only when the user explicitly requests it or provides a local copy. 只有用户明确要求离线或提供本地副本时，才使用本地目录。
+
+When the catalog cannot fill a required slot, the composer queries `https://skillhub.cn/` through its search API and verifies a selected package without installing it. If a slot is still missing, it runs `npx --yes skills find` and resolves selected `owner/repository@skill` results to a matching GitHub `SKILL.md`. Search failures and unverified results remain visible in the composition metadata. 当专家团目录无法填满必需能力槽位时，编排器通过 SkillHub 搜索 API 查询 `https://skillhub.cn/`，并在不安装的前提下校验选中包；如果仍然缺少能力，再运行 `npx --yes skills find`，将选中的 `owner/repository@skill` 解析到匹配的 GitHub `SKILL.md`。搜索失败和未校验候选会保留在编排结果元数据中。
 
 ```bash
 python3 <assemble-project-expert-team-dir>/scripts/discover_skills.py \

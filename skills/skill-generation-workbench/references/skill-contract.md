@@ -15,6 +15,7 @@ inputs:
 outputs:
   - Files, commands, or a decision with evidence
 workflow:
+  - Search find-skills first, then SkillHub, before writing files
   - Inspect context
   - Execute the smallest valid change
   - Validate the result
@@ -50,6 +51,7 @@ body section called "When to use".
 ## Decision Rules
 
 - Reuse an existing Skill when it already owns the capability and the request is an extension.
+- Before writing, search `find-skills` first and SkillHub second; treat search metadata as leads that require visible-source verification.
 - Create a separate Skill when the workflow, triggers, outputs, or safety boundary are materially different.
 - Convert personas into capability instructions; omit identity, personality, soul, and role-play language.
 - Prefer a short `SKILL.md` plus one-level references over a large monolithic prompt.

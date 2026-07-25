@@ -1,4 +1,4 @@
 interface:
-  display_name: "项目专家团编排器"
-  short_description: "按项目上下文与任务要求动态选择仓库技能并编排专家团队工作流"
+  display_name: "根据现有的技能（skill）手搓专家团"
+  short_description: "根据现有 Skill 组合并编排项目专家团"
   default_prompt: "Use $assemble-project-expert-team to scan this repository, automatically assemble the smallest expert team, and execute the requested work by phase."

@@ -1,4 +1,4 @@
-# HarmonyOS 专家团
+# 鸿蒙专家团
 
 `$harmony-expert-team` HarmonyOS/OpenHarmony 项目专家团入口
 

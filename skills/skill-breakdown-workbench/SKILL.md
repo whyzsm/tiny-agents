@@ -3,7 +3,7 @@ name: skill-breakdown-workbench
 description: "Analyze Codex Skills and agent manifests. Use when the user wants to拆解 a Skill, explain how a Skill or agent is written, or learn how to write one with bilingual Chinese/English guidance, reusable Skill formulas, and templates, especially when the target is an existing SKILL.md or agents/openai.yaml."
 ---
 
-# Skill 拆解工作台
+# 拆解现有的skill / Existing Skill Breakdown
 
 ## Overview
 

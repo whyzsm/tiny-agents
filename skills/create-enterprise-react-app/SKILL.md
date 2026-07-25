@@ -3,7 +3,7 @@ name: create-enterprise-react-app
 description: "Scaffold and verify a production-ready enterprise React application shell. Use when creating a new React admin project, initializing a blank Vite workspace, or applying the React 19, Ant Design 6, React Router 7, TanStack Query, Zustand, Axios, Tailwind CSS 4, Storybook, Vitest, and Playwright architecture baseline."
 ---
 
-# Enterprise React App
+# React企业级空白项目创建 / Enterprise React Blank Project Creator
 
 ## Overview
 

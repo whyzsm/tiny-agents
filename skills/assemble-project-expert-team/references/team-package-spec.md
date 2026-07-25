@@ -20,7 +20,7 @@ Use a router Skill package when the target is a Codex capability repository and 
 
 Use a formal expert-team plugin only when the user requests standalone Agents, marketplace metadata, team runtime behavior, or publication artifacts. 只有用户要求独立 Agent、市场元数据、团队运行时行为或发布产物时，才使用正式专家团 Plugin。
 
-Do not duplicate existing Skills. Select from `https://github.com/whyzsm/tiny-agents/tree/main/indexes`, reference exact frontmatter names, and verify every selected remote address returns a valid `SKILL.md`. 不要复制已有 Skill；从远端索引选择，引用准确的 frontmatter 名称，并确认每个选中的远端地址都返回有效 `SKILL.md`。
+Do not duplicate existing Skills. Select from the project, installed local roots, `https://github.com/whyzsm/tiny-agents/tree/main/indexes`, SkillHub, or find-skills in that priority order; reference exact frontmatter names, and verify every selected remote source returns a valid `SKILL.md`. 不要复制已有 Skill；按目标项目、本机能力、远端索引、SkillHub、find-skills 的优先级选择，引用准确的 frontmatter 名称，并确认每个选中的远端来源都返回有效的 `SKILL.md`。
 
 ## 2. Router Skill 包 / Router Skill Package
 

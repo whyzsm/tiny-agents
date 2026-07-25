@@ -8,7 +8,7 @@ For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/ski
 
 | 分类 | 专家团 | 名称 | 子技能 |
 |---|---|---|---|
-| 技术 | [`harmony-expert-team`](../skills/harmony-expert-team/SKILL.md) | HarmonyOS 专家团 | `harmony-os-ask`<br>`harmony-os-act`<br>`generate-ui-code`<br>`service-widget` |
+| 技术 | [`harmony-expert-team`](../skills/harmony-expert-team/SKILL.md) | 鸿蒙专家团 | `harmony-os-ask`<br>`harmony-os-act`<br>`generate-ui-code`<br>`service-widget` |
 | 技术 | [`harmony-quality-review-team`](../skills/harmony-quality-review-team/SKILL.md) | HarmonyOS 测试质量评审专家团 | `harmony-quality-review-lead`<br>`harmony-function-flow-reviewer`<br>`harmony-ui-visual-reviewer`<br>`harmony-interaction-motion-reviewer` |
 | 技术 | [`tech-api-documentation`](../skills/tech-api-documentation-team/SKILL.md) | API 文档专家团 | `sovereign-api-docs-generator`<br>`api-dev`<br>`api-doc-writer`<br>`qa-api-tester`<br>`afrexai-api-docs` |
 | 技术 | [`tech-bug-troubleshooting`](../skills/tech-bug-troubleshooting-team/SKILL.md) | BUG 排查专家团 | `log-analyzer`<br>`debug-pro`<br>`code-error-fixer`<br>`superpowers-systematic-debugging`<br>`bug-fixing-openclaw`<br>`nexus-error-explain` |

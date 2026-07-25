@@ -1,17 +1,17 @@
 ---
 name: assemble-project-expert-team
-description: "项目专家团编排器。用于读取远端专家团索引，根据目标项目和任务要求动态选择最小充分的专家团，覆盖需求澄清、架构、实现、测试、调试、审查、发布和质量验证。 Project expert-team assembler. Use it to read the remote expert-team catalog and dynamically select the smallest sufficient team for a target project and task, including requirements clarification, architecture, implementation, testing, debugging, review, release, and quality verification."
+description: "项目专家团编排器。用于优先读取目标项目和本机已有 Skill/Agent，必要时读取远端专家团索引、SkillHub 和 find-skills，根据目标项目和任务要求动态选择最小充分的专家团，覆盖需求澄清、架构、实现、测试、调试、审查、发布和质量验证。 Project expert-team assembler. Use it to inspect project and installed capabilities first, then fill gaps from the remote expert-team catalog, SkillHub, and find-skills while selecting the smallest sufficient team for requirements clarification, architecture, implementation, testing, debugging, review, release, and quality verification."
 metadata:
   source: "https://github.com/whyzsm/tiny-agents/tree/main/indexes"
   catalog: "expert-team-file-list.md"
   team_type: "dynamic-router"
 ---
 
-# 项目专家团编排器 / Project Expert-Team Assembler
+# 根据现有的技能（skill）手搓专家团 / Assemble an Expert Team from Existing Skills
 
 Use this skill as the dynamic expert-team entry point for project work. 使用本 Skill 作为项目工作的动态专家团入口。
 
-It reads the remote expert-team catalog, inspects the target repository, and composes a small capability-based team instead of using a fixed persona bundle. 它读取远端专家团目录、检查目标代码仓库，并按能力组合小型专家团，而不是使用固定人格包。
+It inspects the target repository and installed capabilities first, then reads the remote expert-team catalog, SkillHub, or find-skills only to fill verified capability gaps. 它先检查目标代码仓库和本机已有能力，只有能力不足时才读取远端专家团目录、SkillHub 或 find-skills，并且只纳入通过校验的能力；它按能力组合小型专家团，而不是使用固定人格包。
 
 ## 工作流 / Workflow
 
@@ -41,11 +41,11 @@ The JSON is the dispatch contract. Each roster item contains an exact Skill sour
 
 ## 本地优先 / Local-First Routing
 
-Select sources in this order: qualified expert teams already in the target repository; target-repository Skills or Agents; locally installed Skills and Agents from `$CODEX_HOME/skills`, `~/.agents/skills`, and their Agent roots; then catalog entries. 按以下顺序选择来源：目标仓库中已符合条件的专家团；目标仓库已有 Skill 或 Agent；`$CODEX_HOME/skills`、`~/.agents/skills` 及其 Agent 目录中的本机能力；最后才使用目录中的远端能力。
+Select sources in this order: qualified expert teams already in the target repository; target-repository Skills or Agents; locally installed Skills and Agents from `$CODEX_HOME/skills`, `~/.agents/skills`, and their Agent roots; verified remote `expert-team-file-list.md` entries; verified SkillHub packages; then verified `find-skills` GitHub sources. 按以下顺序选择来源：目标仓库中已符合条件的专家团；目标仓库已有 Skill 或 Agent；`$CODEX_HOME/skills`、`~/.agents/skills` 及其 Agent 目录中的本机能力；已校验的远端 `expert-team-file-list.md`；已校验的 SkillHub 包；最后是已校验的 `find-skills` GitHub 源。
 
-The composer marks every member with `project-expert-team`, `project-skill`, `project-agent`, `installed-skill`, `installed-agent`, `catalog-local`, or `remote-catalog`. 编排器会为每个成员标记 `source_kind`，明确它来自仓库专家团、仓库 Skill/Agent、本机安装能力、本地目录还是远端目录。
+The composer marks every member with `project-expert-team`, `project-skill`, `project-agent`, `installed-skill`, `installed-agent`, `catalog-local`, `remote-catalog`, `skillhub`, or `find-skills`. 编排器会用 `source_kind` 标记成员来自仓库专家团、仓库 Skill/Agent、本机安装能力、专家团目录、SkillHub 还是 find-skills。
 
-Only use a remote expert-team entry directly when its router and selected child `SKILL.md` files are reachable and have matching frontmatter names. A catalog row with broken child sources is a candidate gap, not a usable team. 只有远端专家团入口及选中的子 `SKILL.md` 均可访问且 frontmatter 名称匹配时，才可直接使用；子源损坏的目录行只是候选缺口，不是可用专家团。
+Only use a remote expert-team entry directly when its router and selected child `SKILL.md` files are reachable and have matching frontmatter names. SkillHub candidates must contain a readable matching `SKILL.md` inside the downloaded package. `find-skills` candidates must resolve to a readable matching GitHub `SKILL.md`. Broken or unverified sources are candidate gaps, not usable team members. 只有远端专家团入口及选中的子 `SKILL.md` 均可访问且 frontmatter 名称匹配时，才可直接使用；SkillHub 候选必须能从包内读取名称匹配的 `SKILL.md`，find-skills 候选必须能解析到可读取且名称匹配的 GitHub `SKILL.md`；损坏或未校验的来源只是候选缺口，不是可用成员。
 
 Use `--skill-root` or `--agent-root` to add an explicit local installation path, and `--no-local` only for testing remote-only routing. 使用 `--skill-root` 或 `--agent-root` 添加明确的本机路径；只有测试纯远端路由时才使用 `--no-local`。
 
@@ -59,6 +59,8 @@ Do not generate avatar assets for dynamic teams or draft packages. 动态专家�
 - `test-patterns` — unit, integration, mocking, coverage, and test-runner workflows. 提供单元测试、集成测试、Mock、覆盖率和测试运行器流程。
 - `e2e-testing-patterns` — browser journeys, stable selectors, network isolation, and flaky-test control. 提供浏览器流程、稳定选择器、网络隔离和不稳定测试治理。
 - `qa-api-tester` — HTTP contract checks, response validation, auth cases, and executable API test plans. 提供 HTTP 契约检查、响应校验、认证场景和可执行 API 测试计划。
+- `find-skills` — discover standalone Skills from the skills.sh ecosystem when indexed and local sources leave a gap; discovery does not install. 当索引和本地来源仍有缺口时，从 skills.sh 生态查找独立 Skill；只查找，不安装。
+- `https://skillhub.cn/` — search SkillHub metadata and verify a selected package's `SKILL.md`; package discovery does not install. 查询 SkillHub 元数据并校验选中包内的 `SKILL.md`；只查找和校验，不安装。
 
 These are bootstrap capabilities for common requests, not a fixed roster. 这些是常见请求的启动能力，不是固定成员名单。
 

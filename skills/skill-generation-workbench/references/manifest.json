@@ -1,11 +1,13 @@
 {
   "name": "skill-generation-workbench",
-  "display_name": "Skill 生成工作台",
+  "display_name": "skill生成器",
   "category": "技术",
   "source_kind": "repo-authored",
   "converted_for": "tiny-agents-repository",
   "capability_modules": [
     "skill-creator",
+    "find-skills",
+    "skillhub-discovery",
     "intake",
     "blueprint",
     "scaffold",

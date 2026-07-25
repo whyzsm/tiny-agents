@@ -1,8 +1,8 @@
 {
   "type": "dynamic-expert-team-router",
   "slug": "assemble-project-expert-team",
-  "displayName": "项目专家团编排器",
-  "summary": "读取远端专家团索引，按项目上下文和任务要求动态选择最小充分的专家团。",
+  "displayName": "根据现有的技能（skill）手搓专家团",
+  "summary": "优先使用目标项目和本机已有 Skill/Agent，必要时依次补充远端专家团目录、SkillHub 和 find-skills 能力，组合最小充分的项目专家团。",
   "source": "https://github.com/whyzsm/tiny-agents/tree/main/indexes",
   "catalog": "expert-team-file-list.md",
   "selectionMode": "dynamic",
@@ -13,7 +13,9 @@
     "project-agent",
     "installed-skill",
     "installed-agent",
-    "verified-catalog"
+    "verified-catalog",
+    "skillhub",
+    "find-skills"
   ],
   "localDiscovery": true,
   "composer": "scripts/compose_team.py",

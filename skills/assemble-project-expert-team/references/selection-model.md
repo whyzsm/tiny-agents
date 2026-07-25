@@ -34,9 +34,9 @@ Keep slots separate when one member must independently review another. 如果一
 
 ## 2. 对候选 Skill 评分 / Score Shortlisted Skills
 
-Shortlist team entries from `https://github.com/whyzsm/tiny-agents/tree/main/indexes`. 从远端索引中筛选专家团入口。
+Shortlist team entries from `https://github.com/whyzsm/tiny-agents/tree/main/indexes`; use SkillHub and find-skills only as fallback sources for missing standalone capabilities. 从远端索引中筛选专家团入口；只有能力缺口仍存在时，才使用 SkillHub 和 find-skills 补充独立能力。
 
-Read each shortlisted router and considered child Skill's complete remote `SKILL.md`, then score it. 完整读取入选入口及候选子 Skill 的远端 `SKILL.md` 后再评分。
+Read each shortlisted router and considered child Skill's complete remote `SKILL.md`, then score it. For SkillHub and find-skills candidates, resolve and read the matching package or GitHub `SKILL.md` before scoring it. 完整读取入选入口及候选子 Skill 的远端 `SKILL.md` 后再评分；SkillHub 和 find-skills 候选也必须先解析并读取匹配的包内或 GitHub `SKILL.md`。
 
 | 因素 / Factor | 分值 / Score | 判断问题 / Question |
 |---|---:|---|

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-24T14:50:32+08:00",
+  "generated_at": "2026-07-25T17:57:43+08:00",
   "project_root": ".",
   "agents_root": "agents",
   "skills_root": "skills",
   "selection_rule": "Scan project agents/ and skills/, exclude blocked/conflict/draft/skipped packages, and keep repository-relative paths.",
-  "total": 632,
+  "total": 631,
   "entries": [
     {
       "name": ".codex",
@@ -6319,17 +6319,6 @@
       "purpose": "微信小程序开发者。用于精通微信小程序开发框架和生态，打造流畅微信原生体验应用。来源于 WorkBuddy 技术卡片，并转换为 Codex 可安装的专家入口格式。",
       "source_path": "skills/tech-wechat-miniprogram-developer-team",
       "entry_path": "skills/tech-wechat-miniprogram-developer-team/SKILL.md"
-    },
-    {
-      "name": "tech-zcode-ane-spec-usage-doc-team",
-      "display_name": "tech-zcode-ane-spec-usage-doc-team",
-      "kind": "skill",
-      "status": "ready",
-      "reason": "repo-skill",
-      "description": "zcode 与 ane-spec 使用文档专家团。用于根据 KDocs、内部说明、安装日志或项目仓库资料，撰写、重构或审查 zcode 配置、ane-spec 脚手架安装、OpenSpec/spec 变更流程、superpowers 插件、spsx/opsx 命令、验证门和故障排查相关的使用文档。",
-      "purpose": "3. For source extraction and audience definition, use `requirements-analysis`. 4. For spec workflow sections, use `spec-workflow` and make OpenSpec artifacts, phase gates, and `/spsx` or `/opsx` commands explicit. 5. For technical documentation structure and wording, use `project-technical-doc-engineer-team`.",
-      "source_path": "skills/tech-zcode-ane-spec-usage-doc-team",
-      "entry_path": "skills/tech-zcode-ane-spec-usage-doc-team/SKILL.md"
     },
     {
       "name": "tencent-agent-storage",

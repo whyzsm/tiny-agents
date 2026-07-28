@@ -8,9 +8,96 @@
   "derived_from": [
     "harmonyos-code-workshop visible SKILL.md release, security, build, and QA sections",
     "repo-local HarmonyOS expert-team routing conventions",
-    "Harmony Wardrobe project AGENTS.md and release documentation"
+    "Harmony Wardrobe project AGENTS.md and release documentation",
+    "Huawei official 通用应用 UX 体验标准 V30, including section1353515481417 视觉风格",
+    "Huawei official HarmonyOS V7 performance experience guidance for latency, frame rate, content display, memory, and CPU",
+    "Huawei official HarmonyOS 控件总览 V6, including navigation, display, operation, input, selection, and container controls",
+    "Huawei official HarmonyOS 系统特性总览 V6, including navigation bar, notification, live view, multi-window, service card, PiP, dark mode, status bar, and broadcasting control",
+    "Huawei official 人机交互 page tree V6 and input-specific child pages",
+    "Huawei official 元服务设计概述 V4 and its basic elements, experience scenarios, design principles, and best practices",
+    "Huawei official HarmonyOS 设计理念 V6, including One, Harmonious, and Universe"
   ],
-  "policy_boundary": "Workshop-derived baseline only; current Huawei AppGallery/AGC policy remains unverified until checked against official sources or AGC UI.",
+  "policy_boundary": "Workshop-derived release baseline plus official Huawei UX V30, performance V7, controls V6, design concepts V6, system-features V6, HMI V6, and atomic-service design reference snapshots; current AppGallery/AGC execution status and any policy not visible in the cited official sources remain unverified until checked against current official sources, device traces, or AGC UI.",
+  "official_sources": [
+    {
+      "title": "通用应用 UX 体验标准",
+      "version": "V30",
+      "url": "https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-general-0000001760708152",
+      "anchor_url": "https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-general-0000001760708152#section1353515481417",
+      "accessed_on": "2026-07-28",
+      "scope": "基础体验、人机交互、视觉风格、动效、系统特性"
+    },
+    {
+      "title": "应用性能体验建议",
+      "version": "V7",
+      "urls": [
+        "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/performance-overview-V5",
+        "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/performance-delay-V5",
+        "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/performance-frame-rate-V5",
+        "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/performance-content-display-V5",
+        "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/performance-memory-usage-V5",
+        "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/performance-cpu-usage-V5"
+      ],
+      "accessed_on": "2026-07-28",
+      "scope": "时延、帧率、内容显示、内存占用、CPU 占用"
+    },
+    {
+      "title": "概览（控件总览）",
+      "version": "V6",
+      "url": "https://developer.huawei.com/consumer/cn/doc/design-guides/general_overview-0000001929599380",
+      "accessed_on": "2026-07-28",
+      "scope": "导航类、展示类、操作类、输入类、选择类、容器类控件"
+    },
+    {
+      "title": "系统特性",
+      "version": "V6",
+      "url": "https://developer.huawei.com/consumer/cn/doc/design-guides/system-features-0000001826860773",
+      "accessed_on": "2026-07-28",
+      "updated_on": "2025-06-20 00:31:10",
+      "scope": "导航条、通知、实况窗、多窗口交互、服务卡片、画中画、深色模式、状态栏、播控中心"
+    },
+    {
+      "title": "人机交互",
+      "version": "V6 overview",
+      "urls": [
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-overview-0000001795410269",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touchscreen-0000001928273206",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-cursor-0000001795531205",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-focus-0000001748650376",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-mouse-0000001930021626",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-keyboard-0000001928070488",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-touchpad-0000002464444730",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scenes-0000001748650380",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scenes-drag-0000001795410277",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-scenes-selection-0000001957005521",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/hmi-interaction-events-0000001795531217"
+      ],
+      "accessed_on": "2026-07-28",
+      "scope": "手势、光标、焦点导航、鼠标、键盘、触控板、拖拽、框选、交互事件归一"
+    },
+    {
+      "title": "元服务设计概述",
+      "version": "V4",
+      "url": "https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001938867005",
+      "accessed_on": "2026-07-28",
+      "updated_on": "2025-06-20 02:19:00",
+      "related_urls": [
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001939135629",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900218352",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/ux-guidelines-overview-0000001900378248",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/best-practices-0000002004044485",
+        "https://developer.huawei.com/consumer/cn/doc/design-guides/accounts-0000001967444380"
+      ],
+      "scope": "元服务定位、服务发现/使用/管理/分享、基础信息、服务卡片、设计原则、元服务账号与最佳设计实践"
+    },
+    {
+      "title": "设计理念",
+      "version": "V6",
+      "url": "https://developer.huawei.com/consumer/cn/doc/design-guides/design-concepts-0000001795698445",
+      "accessed_on": "2026-07-28",
+      "scope": "One、Harmonious、Universe 三项 HarmonyOS 设计原则"
+    }
+  ],
   "resources": [
     "references",
     "scripts"

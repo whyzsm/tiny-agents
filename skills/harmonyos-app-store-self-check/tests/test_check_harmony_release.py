@@ -121,6 +121,49 @@ class HarmonyReleaseCheckerTests(unittest.TestCase):
                 )
             )
 
+    def test_ux_audit_requires_explicit_evidence_manifest(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(root)
+            result = self.run_checker(root, "--ux-audit")
+            self.assertEqual(result.returncode, 0)
+            payload = json.loads(result.stdout)
+            self.assertEqual(payload["overall"], "UNVERIFIED")
+            self.assertTrue(
+                any(
+                    item["check_id"] == "UX-1" and item["status"] == "UNVERIFIED"
+                    for item in payload["findings"]
+                )
+            )
+
+    def test_ux_evidence_is_checked_without_inferencing_other_standards(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_fixture(root)
+            evidence = root / "ux-evidence.json"
+            evidence.write_text(
+                json.dumps(
+                    {
+                        "target_devices": ["phone"],
+                        "standards": [
+                            {
+                                "id": "2.1.1.1",
+                                "status": "PASS",
+                                "evidence": ["docs/qa/back-navigation.mp4"],
+                                "notes": "冷启动后验证系统返回。",
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            result = self.run_checker(root, "--ux-evidence", str(evidence))
+            self.assertEqual(result.returncode, 0)
+            payload = json.loads(result.stdout)
+            findings = {item["check_id"]: item for item in payload["findings"]}
+            self.assertEqual(findings["UX-2.1.1.1"]["status"], "PASS")
+            self.assertEqual(findings["UX-2.1.2.1"]["status"], "UNVERIFIED")
+
 
 if __name__ == "__main__":
     unittest.main()

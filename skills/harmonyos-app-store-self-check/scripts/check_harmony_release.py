@@ -55,6 +55,47 @@ SIGNING_FILE_MARKERS = (".p12", ".pfx", ".cer", ".p7b", ".csr")
 HOME_PATH_PATTERN = re.compile(r"(?:/Users/|/home/|[A-Za-z]:\\Users\\)")
 ARTIFACT_SUFFIXES = {".app", ".hap"}
 ARTIFACT_METADATA_NAMES = {"app.json", "module.json", "pack.info", "config.json"}
+UX_STANDARD_GRADES = {
+    "2.1.1.1": ("系统返回", "必须"),
+    "2.1.2.1": ("布局基础要求", "必须"),
+    "2.1.2.2": ("挖孔区适配", "必须"),
+    "2.1.3.1": ("避免与系统手势冲突", "必须"),
+    "2.1.3.2": ("典型手势时长设计", "必须"),
+    "2.1.3.3": ("点击热区", "必须"),
+    "2.1.3.4": ("可滑动控件高度", "必须"),
+    "2.1.4.1": ("色彩对比度", "推荐"),
+    "2.1.4.2": ("字体大小", "必须"),
+    "2.1.4.3.1": ("应用图标", "必须"),
+    "2.1.4.3.2": ("界面图标", "必须"),
+    "2.1.4.3.3": ("图标清晰度", "必须"),
+    "2.1.4.3.4": ("光标清晰度", "必须"),
+    "2.1.5.1.1.1": ("层级转场：左右平移", "强烈推荐"),
+    "2.1.5.1.1.2": ("层级转场：淡入淡出", "强烈推荐"),
+    "2.1.5.1.2.1": ("搜索转场：共享元素", "强烈推荐"),
+    "2.1.5.1.2.2": ("搜索转场：淡入淡出", "强烈推荐"),
+    "2.1.5.1.3.1": ("新建转场：手机通用转场", "推荐"),
+    "2.1.5.1.3.2": ("新建转场：宽屏场景", "推荐"),
+    "2.1.5.1.4": ("编辑转场", "推荐"),
+    "2.1.5.1.5.1": ("共享容器转场", "强烈推荐"),
+    "2.1.5.1.5.2": ("共享元素转场", "强烈推荐"),
+    "2.1.5.1.6": ("秩序感元素转场", "推荐"),
+    "2.1.5.2.1": ("动效无缺失", "必须"),
+    "2.1.5.2.2": ("转场动效时长下限", "必须"),
+    "2.1.5.3.1": ("启动页动效时长", "强烈推荐"),
+    "2.1.5.3.2": ("滑动跟手反馈动效一致性", "必须"),
+    "2.1.5.3.3": ("滑动过界反馈动效一致性", "强烈推荐"),
+    "2.1.5.3.4": ("离手减速动效一致性", "必须"),
+    "2.2.1": ("底部导航条适配", "必须"),
+    "2.2.2": ("通知", "必须"),
+    "2.2.3": ("实况窗", "必须（使用时）"),
+    "2.2.4.1": ("悬浮窗适配", "必须（支持时）"),
+    "2.2.4.2": ("分屏适配", "必须（支持时）"),
+    "2.2.4.3": ("画中画适配", "推荐（适用时）"),
+    "2.2.5": ("深色模式", "必须"),
+    "2.2.6": ("状态栏", "必须"),
+    "2.2.7.1": ("滑动沉浸", "推荐（浏览场景）"),
+    "2.2.7.2": ("短视频沉浸", "推荐（短视频场景）"),
+}
 
 
 @dataclass(frozen=True)
@@ -596,7 +637,182 @@ def check_artifact(root: Path, artifact: Path | None, findings: list[Finding]) -
         )
 
 
-def run(root: Path, forbid_network: bool, artifact: Path | None = None) -> list[Finding]:
+def check_ux_audit(
+    root: Path, findings: list[Finding], evidence_path: Path | None
+) -> None:
+    """Validate an explicit UX evidence manifest without claiming visual PASS."""
+    path = evidence_path.expanduser() if evidence_path else root / "docs/qa/huawei-ux-evidence.json"
+    if not path.is_absolute():
+        path = root / path
+    display = _display_path(root, path)
+    if not path.is_file():
+        add(
+            findings,
+            "UX-1",
+            "UNVERIFIED",
+            "P1",
+            "未提供华为官方 UX 标准证据清单",
+            display,
+            "按 references/huawei-ux-guidelines-v30.md 建立清单，并为适用标准补充当前版本的截图、源码/资源或设备记录。",
+        )
+        return
+
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        add(
+            findings,
+            "UX-1",
+            "FAIL",
+            "P1",
+            "华为官方 UX 证据清单不是可读取的 JSON",
+            f"{display}: {exc.__class__.__name__}",
+            "修复证据清单格式；不要用空对象代替未完成的 UX 检查。",
+        )
+        return
+
+    if not isinstance(payload, dict):
+        add(
+            findings,
+            "UX-1",
+            "FAIL",
+            "P1",
+            "华为官方 UX 证据清单必须是 JSON 对象",
+            display,
+            "提供 target_devices 和 standards 字段。",
+        )
+        return
+
+    target_devices = payload.get("target_devices")
+    if not isinstance(target_devices, list) or not target_devices:
+        add(
+            findings,
+            "UX-1",
+            "FAIL",
+            "P1",
+            "UX 证据清单缺少目标设备范围",
+            f"{display}: target_devices",
+            "明确记录项目声明并实际检查的设备类型，再逐项判断适用性。",
+        )
+
+    entries = payload.get("standards")
+    if not isinstance(entries, list):
+        add(
+            findings,
+            "UX-1",
+            "FAIL",
+            "P1",
+            "UX 证据清单缺少 standards 数组",
+            f"{display}: standards",
+            "按官方标准编号填写 standards 数组，不要把 AGC 总体结果当成逐项证据。",
+        )
+        return
+
+    by_id: dict[str, dict[str, object]] = {}
+    for entry in entries:
+        if not isinstance(entry, dict):
+            add(
+                findings,
+                "UX-1",
+                "FAIL",
+                "P1",
+                "UX standards 中存在非对象条目",
+                display,
+                "每个条目必须至少包含 id、status、evidence 和 notes。",
+            )
+            continue
+        standard_id = entry.get("id")
+        if not isinstance(standard_id, str) or standard_id not in UX_STANDARD_GRADES:
+            add(
+                findings,
+                "UX-1",
+                "FAIL",
+                "P1",
+                "UX 证据清单包含未知官方标准编号",
+                str(standard_id),
+                "只使用 references/huawei-ux-guidelines-v30.md 中的官方编号。",
+            )
+            continue
+        if standard_id in by_id:
+            add(
+                findings,
+                "UX-1",
+                "FAIL",
+                "P1",
+                "UX 证据清单存在重复标准编号",
+                standard_id,
+                "每个官方标准只保留一条当前版本结论。",
+            )
+            continue
+        by_id[standard_id] = entry
+
+    for standard_id, (title, grade) in UX_STANDARD_GRADES.items():
+        severity = "P1" if grade.startswith("必须") else "P2"
+        entry = by_id.get(standard_id)
+        finding_id = f"UX-{standard_id}"
+        if entry is None:
+            add(
+                findings,
+                finding_id,
+                "UNVERIFIED",
+                severity,
+                f"未记录官方 UX 标准 {standard_id}：{title}",
+                display,
+                "补充适用性、状态和当前版本证据；不适用时写明理由。",
+            )
+            continue
+
+        status = entry.get("status")
+        evidence = entry.get("evidence")
+        notes = entry.get("notes")
+        if status not in {"PASS", "FAIL", "UNVERIFIED", "NOT_APPLICABLE"}:
+            add(
+                findings,
+                finding_id,
+                "FAIL",
+                severity,
+                f"官方 UX 标准 {standard_id} 的状态无效",
+                str(status),
+                "使用 PASS、FAIL、UNVERIFIED 或 NOT_APPLICABLE。",
+            )
+            continue
+        if not isinstance(evidence, list) or not evidence or not all(
+            isinstance(item, str) and item.strip() for item in evidence
+        ):
+            add(
+                findings,
+                finding_id,
+                "FAIL" if status in {"PASS", "FAIL"} else "UNVERIFIED",
+                severity,
+                f"官方 UX 标准 {standard_id} 缺少可复核证据",
+                display,
+                "填写截图、源码/资源、设备记录或 AGC 详情的证据引用。",
+            )
+            continue
+        if status == "NOT_APPLICABLE" and not (notes is None or isinstance(notes, str)):
+            status = "FAIL"
+            notes = "NOT_APPLICABLE 必须提供书面原因。"
+        if status == "NOT_APPLICABLE" and not str(notes or "").strip():
+            status = "FAIL"
+            notes = "NOT_APPLICABLE 必须提供书面原因。"
+        add(
+            findings,
+            finding_id,
+            str(status),
+            severity,
+            f"官方 UX 标准 {standard_id}：{title}",
+            "; ".join(evidence),
+            str(notes or "保留适用设备、证据版本和复核时间。"),
+        )
+
+
+def run(
+    root: Path,
+    forbid_network: bool,
+    artifact: Path | None = None,
+    ux_audit: bool = False,
+    ux_evidence: Path | None = None,
+) -> list[Finding]:
     findings: list[Finding] = []
     check_structure(root, findings)
     check_identity(root, findings)
@@ -605,6 +821,8 @@ def run(root: Path, forbid_network: bool, artifact: Path | None = None) -> list[
     check_signing_leaks(root, findings)
     check_listing_evidence(root, findings)
     check_artifact(root, artifact, findings)
+    if ux_audit:
+        check_ux_audit(root, findings, ux_evidence)
     return findings
 
 
@@ -643,6 +861,16 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--format", choices=("text", "json"), default="text")
     parser.add_argument("--forbid-network", action="store_true")
+    parser.add_argument(
+        "--ux-audit",
+        action="store_true",
+        help="Validate the optional Huawei UX evidence manifest; never infers visual/device PASS.",
+    )
+    parser.add_argument(
+        "--ux-evidence",
+        type=Path,
+        help="Optional UX evidence JSON; defaults to docs/qa/huawei-ux-evidence.json.",
+    )
     parser.add_argument("--strict", action="store_true")
     return parser.parse_args()
 
@@ -653,7 +881,13 @@ def main() -> int:
     if not root.is_dir():
         print(f"project root is not a directory: {root}", file=sys.stderr)
         return 2
-    findings = run(root, args.forbid_network, args.artifact)
+    findings = run(
+        root,
+        args.forbid_network,
+        args.artifact,
+        ux_audit=args.ux_audit or args.ux_evidence is not None,
+        ux_evidence=args.ux_evidence,
+    )
     if args.format == "json":
         blocking = any(finding.status in {"FAIL", "BLOCKED"} for finding in findings)
         unknown = any(finding.status == "UNVERIFIED" for finding in findings)

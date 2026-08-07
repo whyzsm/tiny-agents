@@ -3,7 +3,7 @@ name: harmonyos-app-store-self-check
 description: "Audit HarmonyOS applications for AppGallery/AGC release readiness, including Huawei UX/HMI controls, system-feature integrations, and performance gates for multi-input interaction, latency, frame rate, content display, memory, and CPU. Use when users ask for 鸿蒙上架自检、应用市场审核、AGC发布前检查、控件/系统特性/人机交互/签名/隐私/权限/截图/性能核对或 release 包门禁, especially for Stage-model projects with module.json5, build-profile.json5, hvigorw, and local-first data constraints."
 ---
 
-# 鸿蒙项目质量门禁 / HarmonyOS Project Quality Gate
+# 鸿蒙项目自检 / HarmonyOS Project Self-Check
 
 ## Overview
 

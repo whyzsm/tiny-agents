@@ -1,0 +1,20 @@
+{
+  "name": "consulting-html-report",
+  "kind": "skill",
+  "status": "ready",
+  "source_ref": "user-provided/consulting-html-report",
+  "source_path": "consulting-html-report",
+  "entry_path": "consulting-html-report/SKILL.md",
+  "reason": "standard_skill",
+  "files": [
+    "consulting-html-report/README.md",
+    "consulting-html-report/SKILL.md",
+    "consulting-html-report/assets/report-template.html",
+    "consulting-html-report/evals/evals.json",
+    "consulting-html-report/scripts/render_check.cjs"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "consulting-html-report",
+  "scan_generated_at": "2026-08-08T17:13:59+08:00"
+}

@@ -1,0 +1,23 @@
+{
+  "skill_name": "consulting-html-report",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我列了几个部门AI实践：AI产品平台、AI问数、企业知识问答、桌面agent平台、语音操作助手，还有一张知识库文档数截图。请生成一份艾瑞咨询风格的部门AI落地研究汇报报告，格式用单文件HTML，放到09_生成输出，要求有核心发现、实践全景、重点项目成果、成熟度、路线图和指标体系。",
+      "expected_output": "A standalone consulting-style Chinese HTML report under 09_生成输出 with embedded CSS, KPI cards, initiative matrix, charts/diagrams, source note, print-friendly layout, and render screenshots under outputs. The report should structure messy AI-practice notes into facts, judgments, diagnosis, roadmap, and metrics.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "这个HTML报告里天玑平台的数据卡旧口径是完整走完24个、闭环率20.3%。帮我改成整体提效40%-63%、交付质量提升至99%，并把全文旧口径同步删掉，避免前后矛盾。",
+      "expected_output": "The existing HTML is edited in place: KPI cards show 40%-63% overall efficiency gain and 99% delivery quality; old wording such as 完整闭环率, 20.3%, and 24 / 118 is removed from visible report copy; render_check confirms required new text exists, forbidden old text is absent, and desktop/mobile rendering has no horizontal overflow.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "报告里传统研发流程和AI研发流程对比这块不要只有文字，需要有图表和示意图表达。请改成能看出哪些环节提效、哪些环节范围增加或耗时增加的咨询报告图。",
+      "expected_output": "The target section is transformed from text-heavy cards into visual components such as process swimlanes, cost-transfer map, and impact bars. It explicitly labels efficiency gains and increased scope/time, keeps the report visually coherent, and passes desktop/mobile render validation.",
+      "files": []
+    }
+  ]
+}

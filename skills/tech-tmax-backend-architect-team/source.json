@@ -1,0 +1,41 @@
+{
+  "name": "tech-tmax-backend-architect-team",
+  "kind": "skill",
+  "status": "ready",
+  "source_package": "tech-backend-architect-team",
+  "source_kind": "repo-local-independent-copy-upgrade",
+  "source_ref": "repo-local/skills/tech-backend-architect-team",
+  "adapted_with": "tmax-backend-stack",
+  "converted_for": "codex-skills",
+  "conversion_mode": "independent-project-aware-single-agent-rule-package",
+  "execution_model": "single-agent-with-rule-package",
+  "dispatcher_agent": "tmax-backend-dispatch-agent",
+  "concurrency": 1,
+  "delegation": "disabled",
+  "child_entry_mode": "single-agent-internal-rule-tracks-with-optional-in-process-skills",
+  "internal_tracks": [
+    "repo-intake",
+    "architecture-design",
+    "api-data-contract",
+    "implementation-diagnosis",
+    "quality-security-review",
+    "verification-handoff"
+  ],
+  "files": [
+    "skills/tech-tmax-backend-architect-team/SKILL.md",
+    "skills/tech-tmax-backend-architect-team/agents/openai.yaml",
+    "skills/tech-tmax-backend-architect-team/references/dispatch-protocol.md",
+    "skills/tech-tmax-backend-architect-team/references/guide.md",
+    "skills/tech-tmax-backend-architect-team/references/stack-profile.md",
+    "skills/tech-tmax-backend-architect-team/references/architecture-method.md",
+    "skills/tech-tmax-backend-architect-team/references/workflow.md",
+    "skills/tech-tmax-backend-architect-team/references/validation-matrix.md",
+    "skills/tech-tmax-backend-architect-team/references/manifest.json"
+  ],
+  "source_refs": [
+    "repo-local/skills/tech-backend-architect-team",
+    "repo-adaptation/tmax-backend-stack"
+  ],
+  "repo_only": true,
+  "installed": false
+}

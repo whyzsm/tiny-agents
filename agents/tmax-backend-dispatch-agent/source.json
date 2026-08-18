@@ -1,0 +1,17 @@
+{
+  "name": "tmax-backend-dispatch-agent",
+  "kind": "agent",
+  "status": "ready",
+  "source_path": "repo-local/agents/tmax-backend-dispatch-agent/tmax-backend-dispatch-agent.md",
+  "entry_path": "repo-local/agents/tmax-backend-dispatch-agent/tmax-backend-dispatch-agent.md",
+  "reason": "single-agent-dispatch-role",
+  "bound_rule_package": "skills/tech-tmax-backend-architect-team",
+  "execution_model": "single-agent-with-rule-package",
+  "concurrency": 1,
+  "delegation": "disabled",
+  "files": [
+    "agents/tmax-backend-dispatch-agent/tmax-backend-dispatch-agent.md"
+  ],
+  "warnings": [],
+  "secret_findings": []
+}

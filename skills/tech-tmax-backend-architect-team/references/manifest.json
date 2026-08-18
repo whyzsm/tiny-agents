@@ -1,0 +1,52 @@
+{
+  "type": "repo-adapted-expert-rule-package",
+  "slug": "tech-tmax-backend-architect-team",
+  "displayName": "T-MAX 后端架构专家团",
+  "summary": "供单个 T-MAX 后端调度 Agent 使用的架构、接口数据、实现诊断、质量验证和交付边界规则包。",
+  "source": {
+    "basePackage": "skills/tech-backend-architect-team",
+    "adaptedCapability": "tmax-backend-stack",
+    "adaptationMode": "independent-copy-with-project-aware-embedded-workflow"
+  },
+  "runtimeArchitecture": {
+    "model": "single-agent-with-rule-package",
+    "dispatcherAgent": "tmax-backend-dispatch-agent",
+    "concurrency": 1,
+    "delegation": "disabled",
+    "trackExecution": "in-process-sequential"
+  },
+  "childEntryMode": "single-agent-internal-rule-tracks-with-optional-in-process-skills",
+  "internalTracks": [
+    "repo-intake",
+    "architecture-design",
+    "api-data-contract",
+    "implementation-diagnosis",
+    "quality-security-review",
+    "verification-handoff"
+  ],
+  "optionalCompanionSkills": [
+    "tmax-backend-stack",
+    "system-architect",
+    "api-dev",
+    "tech-api-development-testing-team",
+    "tech-code-review-team",
+    "tech-bug-troubleshooting-team",
+    "security-audit"
+  ],
+  "stackFamilies": [
+    "Java 8 and Maven multi-module",
+    "Spring Boot and Kylin",
+    "MyBatis XML and TiDB/MySQL",
+    "Apollo and Nacos",
+    "Feign and Kylin RPC",
+    "AnePageHelper and DataGridResult",
+    "UEP and EasyExcel export",
+    "Redis and RabbitMQ"
+  ],
+  "privacy": {
+    "containsLocalAbsolutePaths": false,
+    "containsCredentials": false,
+    "containsPrivateHosts": false,
+    "requiresRepositoryVerification": true
+  }
+}

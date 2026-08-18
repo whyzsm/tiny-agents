@@ -1,0 +1,6 @@
+interface:
+  display_name: "T-MAX 后端架构专家团"
+  short_description: "供单个调度 Agent 使用的 T-MAX 后端架构、排障与验证规则包"
+  default_prompt: "使用 $tech-tmax-backend-architect-team，以单 Agent 顺序轨道和有界小循环完成 T-MAX 后端任务。"
+policy:
+  allow_implicit_invocation: true

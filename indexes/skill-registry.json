@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-08T17:17:18+08:00",
+  "generated_at": "2026-08-18T13:27:27+08:00",
   "project_root": ".",
   "skills_root": "skills",
   "selection_rule": "Keep top-level skill packages with SKILL.md or skill.md, skip draft/candidate/blocked/conflict/skipped packages, and use the package path as the install target.",
-  "total": 622,
+  "total": 623,
   "omitted": 0,
   "entries": [
     {
@@ -5645,6 +5645,16 @@
       "entry_path": "skills/tech-threat-detection-team/SKILL.md",
       "status": "ready",
       "source_ref": "WorkBuddy v5.2.3 Expert Center card: 技术 / 威胁检测工程师"
+    },
+    {
+      "name": "tech-tmax-backend-architect-team",
+      "display_name": "tech-tmax-backend-architect-team",
+      "description": "Single-Agent T-MAX Java backend architecture and engineering rule package. Use when Codex must design, implement, review, or diagnose T-MAX backend services involving Java 8, Spring Boot, Kylin, MyBatis XML, TiDB/MySQL, Apollo/Nacos, Feign, AnePageHelper, ResponseResult/DataGridResult, UEP export, Redis, RabbitMQ, or Maven multi-module repositories. Routes one Agent through repository intake, architecture decisions, API/data contracts, implementation diagnosis, quality/security review, and bounded evidence loops while keeping builds, tests, live calls, commits, and pushes as separate authority boundaries.",
+      "purpose": "Use this skill as the rule package for `tmax-backend-dispatch-agent`. Preserve the original `tech-backend-architect-team`; this package is an independent adaptation with executable T-MAX workflows and a sanitized standalone stack profile. One Agent executes all selected tracks sequentially.",
+      "package_path": "skills/tech-tmax-backend-architect-team",
+      "entry_path": "skills/tech-tmax-backend-architect-team/SKILL.md",
+      "status": "ready",
+      "source_ref": "repo-local/skills/tech-backend-architect-team"
     },
     {
       "name": "tech-wechat-miniprogram-developer-team",

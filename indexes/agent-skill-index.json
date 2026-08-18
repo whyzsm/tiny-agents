@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-25T17:57:43+08:00",
+  "generated_at": "2026-08-18T13:28:16+08:00",
   "project_root": ".",
   "agents_root": "agents",
   "skills_root": "skills",
   "selection_rule": "Scan project agents/ and skills/, exclude blocked/conflict/draft/skipped packages, and keep repository-relative paths.",
-  "total": 631,
+  "total": 634,
   "entries": [
     {
       "name": ".codex",
@@ -104,6 +104,17 @@
       "purpose": "Scan the project directory provided in the prompt and produce a JSON inventory. The work splits into deterministic and LLM-driven parts:",
       "source_path": "agents/project-scanner",
       "entry_path": "agents/project-scanner/project-scanner.md"
+    },
+    {
+      "name": "tmax-backend-dispatch-agent",
+      "display_name": "tmax-backend-dispatch-agent",
+      "kind": "agent",
+      "status": "ready",
+      "reason": "single-agent-dispatch-role",
+      "description": "T-MAX Backend Dispatch Agent",
+      "purpose": "Turn each authorized backend request into the smallest ordered track plan, execute it through bounded evidence loops, enforce state-changing gates, and return an evidence-separated handoff.",
+      "source_path": "agents/tmax-backend-dispatch-agent",
+      "entry_path": "agents/tmax-backend-dispatch-agent/tmax-backend-dispatch-agent.md"
     },
     {
       "name": "tour-builder",
@@ -617,7 +628,7 @@
       "kind": "skill",
       "status": "ready",
       "reason": "repo-skill",
-      "description": "项目专家团编排器。用于读取远端专家团索引，根据目标项目和任务要求动态选择最小充分的专家团，覆盖需求澄清、架构、实现、测试、调试、审查、发布和质量验证。 Project expert-team assembler. Use it to read the remote expert-team catalog and dynamically select the smallest sufficient team for a target project and task, including requirements clarification, architecture, implementation, testing, debugging, review, release, and quality verification.",
+      "description": "项目专家团编排器。用于优先读取目标项目和本机已有 Skill/Agent，必要时读取远端专家团索引、SkillHub 和 find-skills，根据目标项目和任务要求动态选择最小充分的专家团，覆盖需求澄清、架构、实现、测试、调试、审查、发布和质量验证。 Project expert-team assembler. Use it to inspect project and installed capabilities first, then fill gaps from the remote expert-team catalog, SkillHub, and find-skills while selecting the smallest sufficient team for requirements clarification, architecture, implementation, testing, debugging, review, release, and quality verification.",
       "purpose": "metadata: source: \"https://github.com/whyzsm/tiny-agents/tree/main/indexes\" catalog: \"expert-team-file-list.md\" team_type: \"dynamic-router\"",
       "source_path": "skills/assemble-project-expert-team",
       "entry_path": "skills/assemble-project-expert-team/SKILL.md"
@@ -1193,6 +1204,17 @@
       "purpose": "经营总管。用于经营总管调度四位领域专家，覆盖财务、营收、客户合规和运营，小企业管理一站搞定。来源于 WorkBuddy 行业顾问卡片，并转换为 Codex 可安装的专家团入口格式。",
       "source_path": "skills/consulting-business-general-manager-team",
       "entry_path": "skills/consulting-business-general-manager-team/SKILL.md"
+    },
+    {
+      "name": "consulting-html-report",
+      "display_name": "consulting-html-report",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "standard_skill",
+      "description": "Create polished consulting-style single-file HTML research reports from messy business notes, screenshots, metrics, and iterative user feedback. Use this skill whenever the user asks for a 咨询风/艾瑞咨询风/研究报告/汇报报告/HTML报告, wants business or AI landing-practice material turned into a management-facing report, asks to add charts/diagrams, or asks to update report metrics and keep the whole HTML report consistent.",
+      "purpose": "Create polished consulting-style single-file HTML research reports from messy business notes, screenshots, metrics, and iterative user feedback. Use this skill whenever the user asks for a 咨询风/艾瑞咨询风/研究报告/汇报报告/HTML报告, wants business or AI landing-practice material turned into a management-facing report, asks to add charts/diagrams, or asks to update report metrics and keep the whole HTML report consistent.",
+      "source_path": "skills/consulting-html-report",
+      "entry_path": "skills/consulting-html-report/SKILL.md"
     },
     {
       "name": "consulting-ket-exam-prep-team",
@@ -2784,8 +2806,8 @@
       "kind": "skill",
       "status": "ready",
       "reason": "repo-skill",
-      "description": "Audit HarmonyOS applications for AppGallery/AGC release readiness. Use when users ask for 鸿蒙上架自检、应用市场审核、AGC发布前检查、签名/隐私/权限/截图核对或 release 包门禁，especially for Stage-model projects with module.json5, build-profile.json5, hvigorw, and local-first data constraints.",
-      "purpose": "Audit HarmonyOS applications for AppGallery/AGC release readiness. Use when users ask for 鸿蒙上架自检、应用市场审核、AGC发布前检查、签名/隐私/权限/截图核对或 release 包门禁，especially for Stage-model projects with module.json5, build-profile.json5, hvigorw, and local-first data constraints.",
+      "description": "Audit HarmonyOS applications for AppGallery/AGC release readiness, including Huawei UX/HMI controls, system-feature integrations, and performance gates for multi-input interaction, latency, frame rate, content display, memory, and CPU. Use when users ask for 鸿蒙上架自检、应用市场审核、AGC发布前检查、控件/系统特性/人机交互/签名/隐私/权限/截图/性能核对或 release 包门禁, especially for Stage-model projects with module.json5, build-profile.json5, hvigorw, and local-first data constraints.",
+      "purpose": "Audit HarmonyOS applications for AppGallery/AGC release readiness, including Huawei UX/HMI controls, system-feature integrations, and performance gates for multi-input interaction, latency, frame rate, content display, memory, and CPU. Use when users ask for 鸿蒙上架自检、应用市场审核、AGC发布前检查、控件/系统特性/人机交互/签名/隐私/权限/截图/性能核对或 release 包门禁, especially for Stage-model projects with module.json5, build-profile.json5, hvigorw, and local-first data constraints.",
       "source_path": "skills/harmonyos-app-store-self-check",
       "entry_path": "skills/harmonyos-app-store-self-check/SKILL.md"
     },
@@ -5622,7 +5644,7 @@
       "kind": "skill",
       "status": "ready",
       "reason": "repo-skill",
-      "description": "设计、生成和验证 Codex Skill 包。用于用户提出创建 Skill、开发 Skill、把流程或专家能力封装成 Skill、把外部专家卡片或提示词转换为 Skill，或需要升级已有 Skill 时；先澄清触发场景、输入输出、边界和副作用，再生成符合约定的 SKILL.md、agents/openai.yaml、引用文件和可选脚本。",
+      "description": "设计、生成和验证 Codex Skill 包。用于用户提出创建 Skill、开发 Skill、把流程或专家能力封装成 Skill、把外部专家卡片或提示词转换为 Skill，或需要升级已有 Skill 时；写入前先用 find-skills 再查 SkillHub，核对可复用能力，然后澄清触发场景、输入输出、边界和副作用，最后生成符合约定的 SKILL.md、agents/openai.yaml、引用文件和可选脚本。",
       "purpose": "1. 这个 Skill 解决什么任务，用户会用哪些自然语言请求触发它？至少收集 2 个真实例句。 2. 它接收哪些输入，应该产出什么结果或文件？哪些结果算完成？ 3. 目标位置是当前仓库、某个项目，还是用户的 Skill 目录？是否只生成仓库包，不安装？ 4. 是否会执行提交、推送、安装、删除、部署或其他外部副作用？没有明确授权时一律只生成和验证。",
       "source_path": "skills/skill-generation-workbench",
       "entry_path": "skills/skill-generation-workbench/SKILL.md"
@@ -6308,6 +6330,17 @@
       "purpose": "威胁检测工程师。用于专精构建威胁检测系统，在攻击者造成损害前发现拦截威胁。来源于 WorkBuddy 技术卡片，并转换为 Codex 可安装的专家入口格式。",
       "source_path": "skills/tech-threat-detection-team",
       "entry_path": "skills/tech-threat-detection-team/SKILL.md"
+    },
+    {
+      "name": "tech-tmax-backend-architect-team",
+      "display_name": "tech-tmax-backend-architect-team",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "repo-skill",
+      "description": "Single-Agent T-MAX Java backend architecture and engineering rule package. Use when Codex must design, implement, review, or diagnose T-MAX backend services involving Java 8, Spring Boot, Kylin, MyBatis XML, TiDB/MySQL, Apollo/Nacos, Feign, AnePageHelper, ResponseResult/DataGridResult, UEP export, Redis, RabbitMQ, or Maven multi-module repositories. Routes one Agent through repository intake, architecture decisions, API/data contracts, implementation diagnosis, quality/security review, and bounded evidence loops while keeping builds, tests, live calls, commits, and pushes as separate authority boundaries.",
+      "purpose": "Use this skill as the rule package for `tmax-backend-dispatch-agent`. Preserve the original `tech-backend-architect-team`; this package is an independent adaptation with executable T-MAX workflows and a sanitized standalone stack profile. One Agent executes all selected tracks sequentially.",
+      "source_path": "skills/tech-tmax-backend-architect-team",
+      "entry_path": "skills/tech-tmax-backend-architect-team/SKILL.md"
     },
     {
       "name": "tech-wechat-miniprogram-developer-team",

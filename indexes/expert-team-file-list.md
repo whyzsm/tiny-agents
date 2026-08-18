@@ -1,6 +1,6 @@
 # 专家团列表
 
-共 243 个专家团。按前端分类顺序整理；“专家团”是入口，“子技能”列可能是真实顶层 skill，也可能是该入口内部的能力标签。
+共 244 个专家团。按前端分类顺序整理；“专家团”是入口，“子技能”列可能是真实顶层 skill，也可能是该入口内部的能力标签。
 
 普通 skill 查找请先看 `indexes/skill-registry.md` / `indexes/skill-registry.json`；本文件只列固定专家团入口。
 
@@ -32,6 +32,7 @@ For ordinary skill lookup, start with `indexes/skill-registry.md` / `indexes/ski
 | 技术 | [`tech-software-architect`](../skills/tech-software-architect-team/SKILL.md) | 软件架构师 | `tech-software-architect-intake`<br>`tech-software-architect-strategy`<br>`tech-software-architect-execution`<br>`tech-software-architect-quality`<br>`tech-software-architect-measurement`<br>`tech-software-architect-handoff` |
 | 技术 | [`tech-embedded-firmware-engineer`](../skills/tech-embedded-firmware-engineer-team/SKILL.md) | 嵌入式固件工程师 | `tech-embedded-firmware-engineer-intake`<br>`tech-embedded-firmware-engineer-strategy`<br>`tech-embedded-firmware-engineer-execution`<br>`tech-embedded-firmware-engineer-quality`<br>`tech-embedded-firmware-engineer-measurement`<br>`tech-embedded-firmware-engineer-handoff` |
 | 技术 | [`tech-backend-architect`](../skills/tech-backend-architect-team/SKILL.md) | 后端架构师 | `tech-backend-architect-intake`<br>`tech-backend-architect-strategy`<br>`tech-backend-architect-execution`<br>`tech-backend-architect-quality`<br>`tech-backend-architect-measurement`<br>`tech-backend-architect-handoff` |
+| 技术 | [`tech-tmax-backend-architect`](../skills/tech-tmax-backend-architect-team/SKILL.md) | T-MAX 后端架构专家团（单 Agent + 规则包） | `repo-intake`<br>`architecture-design`<br>`api-data-contract`<br>`implementation-diagnosis`<br>`quality-security-review`<br>`verification-handoff` |
 | 技术 | [`tech-mobile-app-engineer`](../skills/tech-mobile-app-engineer-team/SKILL.md) | 移动应用开发工程师 | `tech-mobile-app-engineer-intake`<br>`tech-mobile-app-engineer-strategy`<br>`tech-mobile-app-engineer-execution`<br>`tech-mobile-app-engineer-quality`<br>`tech-mobile-app-engineer-measurement`<br>`tech-mobile-app-engineer-handoff` |
 | 技术 | [`tech-infrastructure-ops`](../skills/tech-infrastructure-ops-team/SKILL.md) | 基础设施运维专家 | `tech-infrastructure-ops-intake`<br>`tech-infrastructure-ops-strategy`<br>`tech-infrastructure-ops-execution`<br>`tech-infrastructure-ops-quality`<br>`tech-infrastructure-ops-measurement`<br>`tech-infrastructure-ops-handoff` |
 | 技术 | [`tech-modern-web-developer`](../skills/tech-modern-web-developer-team/SKILL.md) | 现代Web开发专家 | `tech-modern-web-developer-intake`<br>`tech-modern-web-developer-strategy`<br>`tech-modern-web-developer-execution`<br>`tech-modern-web-developer-quality`<br>`tech-modern-web-developer-measurement`<br>`tech-modern-web-developer-handoff` |

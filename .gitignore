@@ -4,3 +4,4 @@ __pycache__/
 reports/*.json
 reports/*.md
 workbuddy-extracted/
+skills/uap-ops/scripts/uap-gateway.local.json

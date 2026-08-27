@@ -1,0 +1,22 @@
+{
+  "name": "uap-ops",
+  "kind": "skill",
+  "status": "ready",
+  "source_path": "~/Documents/AI/xiaoneng/skills/op-uap-ops",
+  "entry_path": "~/Documents/AI/xiaoneng/skills/op-uap-ops/SKILL.md",
+  "reason": "repo-skill",
+  "files": [
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references/uap-tool-recipes.md",
+    "references/uap-gateway-protocol.md",
+    "scripts/uap.mjs",
+    "scripts/data/application-all.json",
+    "scripts/uap-gateway.local.json.example"
+  ],
+  "warnings": [],
+  "secret_findings": [],
+  "source_root": "~/Documents/AI/xiaoneng",
+  "notes": "从 xiaoneng 仓库 op-uap-ops 抽取的独立版；剥离小能团队语境，凭据文件不随仓库分发（用 scripts/uap-gateway.local.json.example 自配）。",
+  "scan_generated_at": "2026-08-27T00:00:00+08:00"
+}

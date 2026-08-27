@@ -1,0 +1,7 @@
+interface:
+  display_name: Yuque Requirement Intake
+  short_description: 经 MCP 读取语雀文档/需求链接，归一化成 RequirementBundle JSON。
+  default_prompt: Use $yuque-requirement-intake to read the requirement link and produce
+    a normalized RequirementBundle.
+policy:
+  allow_implicit_invocation: true

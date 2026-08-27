@@ -1,0 +1,7 @@
+interface:
+  display_name: UAP Ops
+  short_description: 直连公司 UAP 统一授权平台，做菜单/功能点登记与角色赋权。
+  default_prompt: Use $uap-ops to register menus/functions and assign role permissions
+    on UAP.
+policy:
+  allow_implicit_invocation: true

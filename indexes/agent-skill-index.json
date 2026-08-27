@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-18T13:28:16+08:00",
+  "generated_at": "2026-08-27T15:32:55+08:00",
   "project_root": ".",
   "agents_root": "agents",
   "skills_root": "skills",
   "selection_rule": "Scan project agents/ and skills/, exclude blocked/conflict/draft/skipped packages, and keep repository-relative paths.",
-  "total": 634,
+  "total": 636,
   "entries": [
     {
       "name": ".codex",
@@ -6585,6 +6585,17 @@
       "entry_path": "skills/tushare-data/SKILL.md"
     },
     {
+      "name": "uap-ops",
+      "display_name": "uap-ops",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "repo-skill",
+      "description": "UAP（统一授权平台）运维技能：菜单/功能点登记、用户角色绑定、角色权限赋权。不经 @ane/uap-mcp npm 包，用零依赖 Node 脚本经 AgentForge MCP Gateway（Streamable HTTP + JSON-RPC）直连 UAP 白名单接口。用于：页面交付后在 UAP 建菜单、登记功能点、给角色赋权、给用户绑角色、查应用 appId、按名/路由/resCode 找资源。当用户提到「对接 UAP」「UAP 登记」「登记菜单」「功能点」「赋权」「角色权限」「天象 appId」时使用。读命令即查即用；写命令必须先展示拟变更并取得用户当前消息确认后才加 --yes 执行。",
+      "purpose": "UAP（统一授权平台）运维技能：菜单/功能点登记、用户角色绑定、角色权限赋权。不经 @ane/uap-mcp npm 包，用零依赖 Node 脚本经 AgentForge MCP Gateway（Streamable HTTP + JSON-RPC）直连 UAP 白名单接口。用于：页面交付后在 UAP 建菜单、登记功能点、给角色赋权、给用户绑角色、查应用 appId、按名/路由/resCode 找资源。当用户提到「对接 UAP」「UAP 登记」「登记菜单」「功能点」「赋权」「角色权限」「天象 appId」时使用。读命令即查即用；写命令必须先展示拟变更并取得用户当前消息确认后才加 --yes 执行。",
+      "source_path": "skills/uap-ops",
+      "entry_path": "skills/uap-ops/SKILL.md"
+    },
+    {
       "name": "ui",
       "display_name": "ui",
       "kind": "skill",
@@ -6979,6 +6990,17 @@
       "purpose": "Xueersi Parent Comment Generator: Generate warm, appropriate parent signature comments for report cards, homework books, and school communication forms based on the child''s performance. 学而思(Xueersi) 家长签字评语生成器 — 输入学习情况，生成得体评语。By Xueersi-AI.'",
       "source_path": "skills/xueersi-parent-comment",
       "entry_path": "skills/xueersi-parent-comment/SKILL.md"
+    },
+    {
+      "name": "yuque-requirement-intake",
+      "display_name": "yuque-requirement-intake",
+      "kind": "skill",
+      "status": "ready",
+      "reason": "repo-skill",
+      "description": "需求链接 intake 技能：把语雀（Yuque）文档 URL 或任意 MCP 可读链接，经 Streamable HTTP MCP 服务器读取并归一化成统一 RequirementBundle JSON（正文/评论/标题/更新时间/contentHash/分段/confidence/evidence）。Python 实现，唯一运行时依赖 mcp Python SDK。用于：贴了语雀需求文档链接要读原文、需求链接结构化摄入、yuque_get_doc 工具调用、MCP 需求源适配。当用户说「读这个语雀文档」「抓取需求链接」「把链接转成需求输入」时使用。只读不回写；抓取失败保留原链接并如实记录缺失。",
+      "purpose": "3. **失败如实**：链接不可访问、MCP 不可用或内容不足时，保留原始链接并把缺失点写进 openQuestions/缺失说明，不伪装成需求完成。 4. **去重缓存**：同一链接重复读取时先比 `contentHash`/`updatedAt` 再决定是否重读。 5. **溯源留在 evidence**：来源差异（provider、host、repo_id、doc_id、模式）都留在 `evidence` 字段，不让后续阶段自己猜。 6. 本技能不决定页面类型、组件选型或实现范围——那是后续需求/方案阶段的事。",
+      "source_path": "skills/yuque-requirement-intake",
+      "entry_path": "skills/yuque-requirement-intake/SKILL.md"
     }
   ]
 }

@@ -12,7 +12,7 @@ description: UAP（统一授权平台）运维技能：菜单/功能点登记、
 网关地址与 appKey 属内网凭据，不随仓库分发。二选一配置：
 
 1. 环境变量 `UAP_GATEWAY_URL` + `UAP_GATEWAY_APP_KEY`（二者须同时提供）；
-2. 复制 `scripts/uap-gateway.local.json.example` 为同目录 `uap-gateway.local.json`（已被 gitignore）。example 里已预填网关端点与 appKey（与 @ane/uap-mcp 源码同源的内网共享值），复制即用；若失效则取值来源：`@ane/uap-mcp` 源码 `dist/infra/uap-config.js`（`UAP_GATEWAY` 常量），或找网关平台组。配置细节与排障见 `references/uap-gateway-protocol.md`。
+2. 复制 `scripts/uap-gateway.local.json.example` 为同目录 `uap-gateway.local.json`（已被 gitignore），再从 `@ane/uap-mcp` 源码 `dist/infra/uap-config.js` 的 `UAP_GATEWAY` 常量或网关平台组获取 appKey 填入本机文件；example 不携带真实凭据。配置细节与排障见 `references/uap-gateway-protocol.md`。
 
 配置好后先跑连通性自检：
 

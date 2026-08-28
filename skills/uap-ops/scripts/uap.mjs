@@ -124,6 +124,9 @@ class GatewayClient {
       'x-app-key': this.config.appKey,
       ...extra,
     };
+    if (this.protocolVersion) {
+      h['MCP-Protocol-Version'] = this.protocolVersion;
+    }
     return h;
   }
 

@@ -33,6 +33,12 @@ Accept: application/json, text/event-stream
 x-app-key: <appKey>
 ```
 
+初始化成功后，后续请求还必须携带服务端协商返回的协议版本：
+
+```text
+MCP-Protocol-Version: <initialize.result.protocolVersion>
+```
+
 ### 1. initialize（建会话）
 
 ```json

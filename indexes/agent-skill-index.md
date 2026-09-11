@@ -1,14 +1,14 @@
 # Agent And Skill Index
 
 - Scope: project agents and skills in this repository.
-- Generated at: `2026-08-27T15:32:55+08:00`
+- Generated at: `2026-09-11T17:38:54+08:00`
 - Project root: `.`
 - Agents root: `agents`
 - Skills root: `skills`
 - Selection rule: Scan project agents/ and skills/, exclude blocked/conflict/draft/skipped packages, and keep repository-relative paths.
-- Total: `636`
+- Total: `635`
 - Agents: `11`
-- Skills: `625`
+- Skills: `624`
 
 ## Agents
 
@@ -617,7 +617,6 @@
 | training-course-designer | Professional training course design for corporate L&D with ONE-CLICK generation of complete training packages including course materials, marketing copy, and assessments. Use when designing training courses, workshops, or learning programs. | Professional training course design for corporate L&D with ONE-CLICK generation of complete training packages including course materials, marketing copy, and assessments. Use when designing training courses, workshops, or learning programs. | `skills/training-course-designer` |
 | transcript-to-content | This skill transforms training and onboarding meeting transcripts into structured learning materials, documentation, and actionable review content. Use this skill when processing meeting transcripts from onboarding sessions, training meetings, or knowledge transfer conversations to extract key information and generate study guides, quick reference sheets, checklists, FAQ documents, action item lists, and training effectiveness assessments. | \| **FAQ Document** \| Common questions and answers from training content \| \| **Action Items List** \| Tasks, owners, and deadlines from meeting discussions \| | `skills/transcript-to-content` |
 | tushare-data | 面向中文自然语言的 Tushare 数据研究技能。用于把“看看这只股票最近怎么样”“帮我查财报趋势”“最近哪个板块最强”“北向资金在买什么”“给我导出一份行情数据”这类请求，转成可执行的数据获取、清洗、对比、筛选、导出与简要分析流程。适用于 A 股、指数、ETF/基金、财务、估值、资金流、公告新闻、板块概念与宏观数据等研究场景。 | 优先把： | `skills/tushare-data` |
-| uap-ops | UAP（统一授权平台）运维技能：菜单/功能点登记、用户角色绑定、角色权限赋权。不经 @ane/uap-mcp npm 包，用零依赖 Node 脚本经 AgentForge MCP Gateway（Streamable HTTP + JSON-RPC）直连 UAP 白名单接口。用于：页面交付后在 UAP 建菜单、登记功能点、给角色赋权、给用户绑角色、查应用 appId、按名/路由/resCode 找资源。当用户提到「对接 UAP」「UAP 登记」「登记菜单」「功能点」「赋权」「角色权限」「天象 appId」时使用。读命令即查即用；写命令必须先展示拟变更并取得用户当前消息确认后才加 --yes 执行。 | UAP（统一授权平台）运维技能：菜单/功能点登记、用户角色绑定、角色权限赋权。不经 @ane/uap-mcp npm 包，用零依赖 Node 脚本经 AgentForge MCP Gateway（Streamable HTTP + JSON-RPC）直连 UAP 白名单接口。用于：页面交付后在 UAP 建菜单、登记功能点、给角色赋权、给用户绑角色、查应用 appId、按名/路由/resCode 找资源。当用户提到「对接 UAP」「UAP 登记」「登记菜单」「功能点」「赋权」「角色权限」「天象 appId」时使用。读命令即查即用；写命令必须先展示拟变更并取得用户当前消息确认后才加 --yes 执行。 | `skills/uap-ops` |
 | ui | Explicit helper for UI components, hero sections, forms, feedback, and contact surfaces. Do NOT load for: authentication, backend implementation, database work, or business logic. | Explicit helper for UI components, hero sections, forms, feedback, and contact surfaces. Do NOT load for: authentication, backend implementation, database work, or business logic. | `skills/ui` |
 | ui-audit | AI skill for automated UI audits. Evaluate interfaces against proven UX principles for visual hierarchy, accessibility, cognitive load, navigation, and more. Based on Making UX Decisions by Tommy Geoco. | AI skill for automated UI audits. Evaluate interfaces against proven UX principles for visual hierarchy, accessibility, cognitive load, navigation, and more. Based on Making UX Decisions by Tommy Geoco. | `skills/ui-audit` |
 | ui-design | Comprehensive UI design skill covering fundamentals, patterns, and anti-patterns. Layout, typography, color, spacing, accessibility, motion, and component design. Use when building any web interface, reviewing design quality, or creating distinctive UIs. | tags: [ui, design, frontend, accessibility, typography, color, layout, motion] | `skills/ui-design` |

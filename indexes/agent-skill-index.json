@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-27T15:32:55+08:00",
+  "generated_at": "2026-09-11T17:38:54+08:00",
   "project_root": ".",
   "agents_root": "agents",
   "skills_root": "skills",
   "selection_rule": "Scan project agents/ and skills/, exclude blocked/conflict/draft/skipped packages, and keep repository-relative paths.",
-  "total": 636,
+  "total": 635,
   "entries": [
     {
       "name": ".codex",
@@ -6583,17 +6583,6 @@
       "purpose": "优先把：",
       "source_path": "skills/tushare-data",
       "entry_path": "skills/tushare-data/SKILL.md"
-    },
-    {
-      "name": "uap-ops",
-      "display_name": "uap-ops",
-      "kind": "skill",
-      "status": "ready",
-      "reason": "repo-skill",
-      "description": "UAP（统一授权平台）运维技能：菜单/功能点登记、用户角色绑定、角色权限赋权。不经 @ane/uap-mcp npm 包，用零依赖 Node 脚本经 AgentForge MCP Gateway（Streamable HTTP + JSON-RPC）直连 UAP 白名单接口。用于：页面交付后在 UAP 建菜单、登记功能点、给角色赋权、给用户绑角色、查应用 appId、按名/路由/resCode 找资源。当用户提到「对接 UAP」「UAP 登记」「登记菜单」「功能点」「赋权」「角色权限」「天象 appId」时使用。读命令即查即用；写命令必须先展示拟变更并取得用户当前消息确认后才加 --yes 执行。",
-      "purpose": "UAP（统一授权平台）运维技能：菜单/功能点登记、用户角色绑定、角色权限赋权。不经 @ane/uap-mcp npm 包，用零依赖 Node 脚本经 AgentForge MCP Gateway（Streamable HTTP + JSON-RPC）直连 UAP 白名单接口。用于：页面交付后在 UAP 建菜单、登记功能点、给角色赋权、给用户绑角色、查应用 appId、按名/路由/resCode 找资源。当用户提到「对接 UAP」「UAP 登记」「登记菜单」「功能点」「赋权」「角色权限」「天象 appId」时使用。读命令即查即用；写命令必须先展示拟变更并取得用户当前消息确认后才加 --yes 执行。",
-      "source_path": "skills/uap-ops",
-      "entry_path": "skills/uap-ops/SKILL.md"
     },
     {
       "name": "ui",
